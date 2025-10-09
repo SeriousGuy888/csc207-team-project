@@ -2,53 +2,42 @@ All members must trust and respect JASON.
 
 # Communication
 
-We will use this Discord chat as our primary communication channel.
+ - We will use the Discord group chat as our primary communication channel. Members will check for updates on Discord everyday.
+ - All communications will remain friendly, respectful and professional.
+ - Criticisms are welcomed only if they are constructive, project-focused and accompanied by suggestions for improvement.
+ - Asking for help is absolutely encouraged when member become stuck after making honest attempts. Members will not judge when somebody reaches out for help❤️.
 
-actively contribute ideas
+## Participation
 
-Be nice
-
-If stuck on something reach out for help and if someone reaches out for help don't judge ❤️
-
-Constructive criticism only!
-
-## Exist
-
-Don't disappear (eg. go on a trip, locked in for reviewing for a week) without noticing other members
-
-Members will attend all scheduled classes and team meetings unless illness or emergencies occur. (Let us know if you can't make it prior)
+ - Members will not disappear (eg. go on a trip, locked in for reviewing for a week) without priorly noticing other members
+ - Members will attend all scheduled classes, labs, and team meetings unless illness or emergencies occur. (Let others know if member cannot make it prior)
+ - Members will actively participate in discussions, contribute ideas and find solutions to existing problems rather than passively waiting for others to assign tasks to them.
 
 ## Collaboration
 
-Each Pull Request will be reviewed by at least two team members.
-
-review each other's work?
-(and be nice while reviewing)
-
-no pushing without pull request!
+ - Each Pull Request will be reviewed by at least two team members before getting merged.
+ - Members will constructively review each other's work whenever they are able to.
 
 # Accountability
 
-Finish the task assigned by deadline, or notice the group members beforehand
+ - Members will finish the task assigned by deadline or notice other members beforehand.
+ - Members will try their best to ensure their submitted work can function properly as expected.
+ - Members will provide honest and fair peer evaluations.
 
-## Team Activities
+## Preparation
 
-make an attempt to do the readings (so we can get marks on the tRAT)
+ - Members will make an attempt to read the assigned materials before class so we are able to complete the tRATs.
 
-## Vibecoding
+## AI Usages
 
-if you use chat just let people know lol
-
-( chat : any genrative AI)
-
-pls don't submit untested vibecode 🙏
-
-make sure you understand the AI generated code (at least)
+ - Members will let others know when a piece of code is AI-generated.
+ - Members will test AI-generated code prior to committing them.
+ - Members will ensure that they understand the AI-generated code they committed.
 
 # Decision-Making
 
-Decisions will be made by consensus when possible. If consensus cannot be reached, a vote will be taken; majority rules.
+- Decisions will be made by consensus when possible. If consensus cannot be reached, a vote will be taken following the majority rules.
 
 # Conflict resolution
 
-resolve merge conflicts in a civil manner
+ - resolve merge conflicts in a civil manner (note from Phoebe: I think this part refers to interpersonal conflicts other than merge conflicts?)
