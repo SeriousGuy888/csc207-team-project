@@ -2,7 +2,7 @@ All members must trust and respect JASON.
 
 # Communication
 
- - We will use the Discord group chat as our primary communication channel. Members will check for updates on Discord everyday.
+ - We will use the Discord group chat as our primary communication channel. Members will check for updates on Discord every day.
  - All communications will remain friendly, respectful and professional.
  - Criticisms are welcomed only if they are constructive, project-focused and accompanied by suggestions for improvement.
  - Asking for help is absolutely encouraged when member become stuck after making honest attempts. Members will not judge when somebody reaches out for help❤️.
