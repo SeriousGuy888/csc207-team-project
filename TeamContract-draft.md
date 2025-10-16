@@ -16,7 +16,8 @@ All members must trust and respect JASON.
 
 ## Collaboration
 
- - Each Pull Request will be reviewed by at least two team members before getting merged.
+ - No member should directly push to the `main` branch of the team project repository, and should instead make a pull request.
+ - Each pull request to `main` should be reviewed by at least two team members before getting merged.
  - Members will constructively review each other's work whenever they are able to.
 
 # Accountability
