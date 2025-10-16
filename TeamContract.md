@@ -34,7 +34,7 @@ This contract sets out shared expectations and commitments for how the members o
 
   - Members should not disappear (e.g. go on a sudden vacation; become excessively locked in to review for an exam for a week, thus not responding to team messages) without first notifying other members.
 
-- All communications should remain friendly, respectful and professional.
+- All communications should remain friendly, respectful, and professional.
 
 - Criticisms are welcomed only if they are constructive, project-focused, and accompanied by suggestions for improvement.
 
