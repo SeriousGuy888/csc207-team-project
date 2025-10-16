@@ -28,7 +28,7 @@ All members must trust and respect JASON.
 
  - Members will make an attempt to read the assigned materials before class so we are able to complete the tRATs.
 
-## AI Usages
+## AI Usage
 
  - Members will let others know when a piece of code is AI-generated.
  - Members will test AI-generated code prior to committing them.
