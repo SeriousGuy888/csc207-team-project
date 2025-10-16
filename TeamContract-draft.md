@@ -36,7 +36,7 @@ All members must trust and respect JASON.
 
 # Decision-Making
 
-- Decisions will be made by consensus when possible. If consensus cannot be reached, a vote will be taken following the majority rules.
+- Decisions will be made by consensus when possible. If consensus cannot be reached, a vote will be taken, and the majority opinion will be implemented.
 
 # Conflict resolution
 
