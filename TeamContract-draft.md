@@ -21,7 +21,7 @@ All members must trust and respect JASON.
 
 # Accountability
 
- - Members will finish the task assigned by deadline or notice other members beforehand.
+ - Members should either finish tasks that they agreed to complete by the agreed deadline, or notify other members beforehand if they cannot.
  - Members will try their best to ensure their submitted work can function properly as expected.
  - Members will provide honest and fair peer evaluations.
 
