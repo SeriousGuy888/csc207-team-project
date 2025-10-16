@@ -32,7 +32,7 @@ All members must trust and respect JASON.
 ## AI Usage
 
  - Members will let others know when a piece of code is AI-generated.
- - Members will test AI-generated code prior to committing them.
+ - Members will test AI-generated code prior to committing it.
  - Members will ensure that they understand the AI-generated code they committed.
 
 # Decision-Making
