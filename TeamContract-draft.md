@@ -11,7 +11,7 @@ All members must trust and respect JASON.
 ## Participation
 
  - Members will not disappear (e.g. go on a trip, become excessively locked in to review for an exam for a week) without first notifying other members.
- - Members will attend all scheduled classes, labs, and team meetings unless illness or emergencies occur. (Let others know if member cannot make it prior)
+ - Members will attend all scheduled classes, labs, and team meetings unless illness or an emergency occurs. (Members should let others know beforehand if they cannot make it.)
  - Members will actively participate in discussions, contribute ideas and find solutions to existing problems rather than passively waiting for others to assign tasks to them.
 
 ## Collaboration
