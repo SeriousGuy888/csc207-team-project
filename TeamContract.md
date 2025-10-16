@@ -88,7 +88,7 @@ By signing below, we acknowledge that we have read, discussed, and agreed to the
 **Team Member Signatures:**
 
 1. (type name here)
-2. (type name here)
+2. Bardiya Momeni
 3. (type name here)
 4. (type name here)
 5. (type name here)
