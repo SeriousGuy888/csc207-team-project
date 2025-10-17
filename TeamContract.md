@@ -89,7 +89,7 @@ By signing below, we acknowledge that we have read, discussed, and agreed to the
 
 1. (type name here)
 2. Bardiya Momeni
-3. (type name here)
+3. Phoebe Kuang
 4. (type name here)
 5. (type name here)
 6. (type name here)
