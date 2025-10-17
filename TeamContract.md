@@ -1,61 +1,95 @@
-# Team Contract
+# Team Contract of JASON
 
+<!--
 **Your team is free to revise this contract as your team wishes; we have scaffolded it with a recommended structure similar to the provided sample on Quercus.**
 
-After you reflect on past teamwork experiences and brainstorm a list of actions required for a positive teamwork experience, answer these questions. 
+After you reflect on past teamwork experiences and brainstorm a list of actions required for a positive teamwork experience, answer these questions.
 
 Once you have all agreed on the contents of the team contract, make a PR to merge your team contract into the main branch of your team's repo on GitHub.
 
 **Please remember to remove any of the initial instruction text when your team finalizes your team contract; it should resemble the provided sample once complete, but with details specific to the expectations and norms agreed to by your entire team.**
+-->
 
----
 ## Purpose of this Contract
 
-This contract sets out shared expectations and commitments for how our team will collaborate during the course. It is designed to promote accountability, professionalism, and mutual support as we complete individual preparation, readiness assurance tests, in-class activities, and our course project.
+<!-- kept and slightly modified from the template provided -->
 
----
+This contract sets out shared expectations and commitments for how the members of JASON will collaborate during the course. It is designed to promote accountability, professionalism, and mutual support as we complete individual preparation, readiness assurance tests, in-class activities, and our course project.
+
+## Definitions
+
+- "**JASON**" is the name of our team. The constituent parts of this acronym are left as an exercise to the reader.
+- "**Members**" refers to all members of JASON.
+- The "**group chat**" refers to our Discord group chat.
+- The "**(team) project repository**" refers to [our GitHub repository](https://github.com/SeriousGuy888/csc207-team-project) for the team project.
+- Being "**locked in**" refers to being in a state of intense focus upon a single task or responsibility.
+
 ## Team Norms and Expectations
 
 ### Communication
 
-* Which platform will you use for communication outside of class, when required for work on your course project? (Examples: Text message, Discord, WeChat, etc.)
+- We will use the Discord group chat as our primary communication channel.
 
-* Each teammate agrees to respond to messages in at most how long? 1 day? 2 days? Some other amount of time? 
+  - Members should check the group chat every day or notify other members if they will be unavailable for an extended period of time.
 
-* What things should a teammate notify you about? (Examples: if they think they won't be able to meet a deadline, if they have to miss lecture, etc.)
+  - Members should not disappear (e.g. go on a sudden vacation; become excessively locked in to review for an exam for a week, thus not responding to team messages) without first notifying other members.
 
-* Respectful and inclusive behaviour are necessary for smooth and productive communication. What are some respectful and inclusive behaviours you expect when communicating with each other during lectures, labs, or outside of class? (Examples: Actively listening to each team members ideas, giving everyone a chance to meaningfully contribute, etc.)
+- All communications should remain friendly, respectful, and professional.
 
----
+- Criticisms are welcomed only if they are constructive, project-focused, and accompanied by suggestions for improvement.
 
-### [Other Categories of norms and expectations go here]
+- Members are absolutely encouraged to ask for help if they get stuck after making honest attempts.
 
-* Based on your previous teamwork experiences, what other behaviours do you agree upon as a team?
-    - some examples of possible additional team norms and expectations are included in the sample team contract in case your team needs some help getting ideas for what else you want to include.
+  - Members will not be judgemental (e.g. make unkind remarks) when another member requests help ❤️.
 
----
+### Participation
 
-## Decision Making
+- Members will attend all scheduled CSC207 lectures, CSC207 labs, and JASON team meetings unless illness or an emergency occurs.
 
-* How will decisions about your team project be made? (Examples: By majority vote, by unanimous vote, etc.)
+  - Members should let others know beforehand if they cannot make it to any such scheduled meeting.
 
----
-## Conflict resolution
+- Members will actively participate in discussions, contribute ideas, and find solutions to existing problems rather than passively waiting for others to assign tasks to them.
 
-* How will your team resolve conflicts? (Example: by listening to each other's side of the issue and attempting to reach a compromise. By consulting a TA or instructor as a team, if a resolution has not yet been reached.)
+#### Preparation
 
----
+- Members will make an attempt to read the assigned materials before class so we are able to complete the tRATs with optimal results.
 
-## Accountability
+### Collaboration
 
-* Reliability and accountability are also important aspects of teamwork. What are the responsibilities of each team member? (Example: completing their share of the work in a timely manner, seeking assistance from teammates/TAs/instructors when required, etc.)
+- No member should directly push to the `main` branch of the team project repository, and should instead make a pull request.
 
----
+- Each pull request to `main` should be reviewed by at least two team members before getting merged.
 
----
+- Members will constructively review each other's work (e.g. pull requests, work-in-progress uncommitted code) whenever they are able to.
+
+### Accountability
+
+- Members should either finish tasks that they agreed to complete by the agreed deadline, or notify other members beforehand if they cannot.
+
+- Members will try their best to ensure their submitted work (e.g. contributions to the project codebase) function properly as expected.
+
+- Members will provide honest and fair peer evaluations.
+
+#### AI Usage
+
+- Members will let others know when a piece of code is AI-generated.
+- Members will test AI-generated code prior to committing it.
+- Members will ensure that they understand the AI-generated code they commit.
+
+## Decision Making and Conflict Resolution
+
+- Decisions will be made by consensus when possible. If a consensus cannot be reached, a vote will be taken, and the majority opinion will be implemented.
+- If the issue persists, the team will involve a member of the course teaching team as mediator. <!-- stolen directly from the sample contract -->
+
+## Signatures
 
 By signing below, we acknowledge that we have read, discussed, and agreed to these terms. We understand that this contract is binding for the duration of the course and may be revised with the agreement of all team members.
 
-Team Member Signatures:
+**Team Member Signatures:**
 
-(type names here)
+1. Victoria Cai
+2. Bardiya Momeni
+3. Phoebe Kuang
+4. Caroline Lyu
+5. Bill Huang
+6. Abish Kulkarni
