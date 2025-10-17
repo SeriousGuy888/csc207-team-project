@@ -91,5 +91,5 @@ By signing below, we acknowledge that we have read, discussed, and agreed to the
 2. Bardiya Momeni
 3. Phoebe Kuang
 4. (type name here)
-5. (type name here)
+5. Bill Huang
 6. (type name here)
