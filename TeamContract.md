@@ -87,7 +87,7 @@ By signing below, we acknowledge that we have read, discussed, and agreed to the
 
 **Team Member Signatures:**
 
-1. (type name here)
+1. Victoria Cai
 2. Bardiya Momeni
 3. Phoebe Kuang
 4. Caroline Lyu
