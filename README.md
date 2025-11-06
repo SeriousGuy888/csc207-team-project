@@ -11,3 +11,12 @@ The readme should include information such as:
 By keeping this README up-to-date,
 your team will find it easier to prepare for the final presentation
 at the end of the term.
+
+## Group Members
+
+- Victoria Cai
+- Bardiya Momeni
+- Phoebe Kuang
+- Caroline Lyu
+- Bill Huang
+- Abish Kulkarni
