@@ -22,7 +22,7 @@ public class ClassHours {
         // This constructor allows for instantiating by providing the actual hours.
         // This is an implementation detail that should only be used by methods within this class.
 
-        if (halfHours.length() != NUMBER_OF_BITS) {
+        if (halfHours.size() != NUMBER_OF_BITS) {
             throw new IllegalArgumentException(
                     String.format("Must provide BitSet with %d bits.", NUMBER_OF_BITS));
         }
@@ -47,7 +47,7 @@ public class ClassHours {
      * either of the two given ClassHours were occupied.
      */
     public ClassHours union(ClassHours other) {
-        BitSet newHalfHours = halfHours;
+        BitSet newHalfHours = (BitSet) halfHours.clone();
         newHalfHours.or(other.getHalfHours());
         return new ClassHours(newHalfHours);
     }
