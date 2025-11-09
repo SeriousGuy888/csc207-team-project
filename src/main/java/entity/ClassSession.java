@@ -9,14 +9,10 @@ package entity;
  * session might be in a different location/time from the others.
  */
 public class ClassSession {
-    // This could be replaced with a dedicated UoftLocation class in the future, if needed
-    // doing so might make it more convenient to convert between uoft locations and
-    // street addresses for walk time estimations.
-    private String location;
-
+    private UofTLocation location;
     private ClassHours time; // must be contiguous timespan
 
-    public String getLocation() {
+    public UofTLocation getLocation() {
         return location;
     }
 
