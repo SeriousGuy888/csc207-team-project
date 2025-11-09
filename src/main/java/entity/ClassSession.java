@@ -19,4 +19,8 @@ public class ClassSession {
     public String getLocation() {
         return location;
     }
+
+    public ClassHours getTime() {
+        return time;
+    }
 }
