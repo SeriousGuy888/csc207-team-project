@@ -8,7 +8,7 @@ package entity;
  * such as once on Monday, once on Tuesday, once on Thursday, and each
  * session might be in a different location/time from the others.
  */
-public class ClassSession {
+public class Meeting {
     private UofTLocation location;
     private ClassHours time; // must be contiguous timespan
 
