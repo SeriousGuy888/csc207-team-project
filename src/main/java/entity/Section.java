@@ -8,12 +8,12 @@ import java.util.stream.Collectors;
 public class Section {
     private CourseOffering courseOffering;
     private String sectionCode;
-    private SectionType type;
+    private TeachingMethod teachingMethod;
     private final Set<ClassSession> classSessions = new HashSet<>();
 
     /**
      * @return Union of all time slots that are occupied by the sessions in this section,
-     *         in other words, the times at which this section has class.
+     * in other words, the times at which this section has class.
      */
     public ClassHours getOccupiedTime() {
         List<ClassHours> hoursList = classSessions
@@ -24,7 +24,8 @@ public class Section {
     }
 }
 
-enum SectionType {
+enum TeachingMethod {
     LECTURE,
-    TUTORIAL
+    TUTORIAL,
+    PRACTICAL,
 }
