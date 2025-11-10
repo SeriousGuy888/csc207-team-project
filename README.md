@@ -27,7 +27,7 @@ at the end of the term.
 
 We aim to create a user interface that looks a little bit like this:
 
-![](./images/ui-overview.png)
+![](/images/ui-overview.png)
 
 ## Terminology
 
