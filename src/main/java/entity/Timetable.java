@@ -1,19 +1,39 @@
 package entity;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
  * Represents timetable created by a user, consisting of the course sections they selected.
  */
 public class Timetable {
-    private Set<Section> selectedSections;
+    private final Set<Section> sections;
 
-    public void addSection(Section section) {
-        selectedSections.add(section);
+    public Timetable() {
+        this.sections = new HashSet<>();
     }
 
-    public void removeSection(Section section) {
-        selectedSections.remove(section);
+    /**
+     * @param section The section to add to this timetable
+     * @return `true` if the section added was not already in this timetable.
+     */
+    public boolean addSection(Section section) {
+        return sections.add(section);
+    }
+
+    /**
+     * @param section The section to remove from this timetable
+     * @return `true` if the timetable did actually contain the section removed
+     */
+    public boolean removeSection(Section section) {
+        return sections.remove(section);
+    }
+
+    /**
+     * @return a <strong>copy</strong> of the set of sections included in this timetable.
+     */
+    public Set<Section> getSections() {
+        return new HashSet<>(sections);
     }
 
     public Set<Section> getConflicts() {
