@@ -22,10 +22,10 @@ public class Section {
                 .collect(Collectors.toList());
         return ClassHours.union(hoursList);
     }
-}
 
-enum TeachingMethod {
-    LECTURE,
-    TUTORIAL,
-    PRACTICAL,
+    public enum TeachingMethod {
+        LECTURE,
+        TUTORIAL,
+        PRACTICAL,
+    }
 }
