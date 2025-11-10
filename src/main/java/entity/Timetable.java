@@ -20,14 +20,4 @@ public class Timetable {
         // todo: implement timetable conflict checking
         throw new UnsupportedOperationException();
     }
-
-    public String serialise() {
-        // todo: implement timetable serialisation
-        throw new UnsupportedOperationException();
-    }
-
-    public static Timetable deserialise(String serialisedTimetable) {
-        // todo: implement timetable deserialisation
-        throw new UnsupportedOperationException();
-    }
 }
