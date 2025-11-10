@@ -36,15 +36,22 @@ public class CourseCode {
 
     /**
      * @param designator must be three letters.
-     * @param number must be three numerals.
-     * @param weight the weight of this course (H/Y)
-     * @param campus the campus of this course
+     * @param number     must be three numerals.
+     * @param weight     the weight of this course (H/Y)
+     * @param campus     the campus of this course
      */
     public CourseCode(String designator, String number, CourseCodeWeight weight, CourseCodeCampus campus) {
         this.designator = designator.toUpperCase();
         this.number = number;
         this.weight = weight;
         this.campus = campus;
+    }
+
+    /**
+     * @return The first six characters of a course code, e.g. MAT137.
+     */
+    public String getAbbreviatedCourseCode() {
+        return designator + number;
     }
 
     @Override
@@ -56,7 +63,7 @@ public class CourseCode {
      * @param courseCodeString Eight character course code in the format MAT137Y1.
      */
     public CourseCode(String courseCodeString) {
-        if(courseCodeString.length() != 8) {
+        if (courseCodeString.length() != 8) {
             throw new IllegalArgumentException("String provided must be exactly 8 characters long.");
         }
 
@@ -77,7 +84,7 @@ public class CourseCode {
                 .stream(CourseCodeCampus.values())
                 .filter(campus -> campus.getNumber() == campusChar)
                 .findFirst();
-        if(matchingCampus.isEmpty()) {
+        if (matchingCampus.isEmpty()) {
             throw new IllegalArgumentException("Invalid campus indicator specified.");
         }
         campus = matchingCampus.get();
@@ -88,6 +95,7 @@ public class CourseCode {
         FULL_CREDIT('Y');
 
         private final char letter;
+
         CourseCodeWeight(char letter) {
             this.letter = letter;
         }
@@ -104,6 +112,7 @@ public class CourseCode {
         MISSISSAUGA('5');
 
         private final char number;
+
         CourseCodeCampus(char number) {
             this.number = number;
         }
