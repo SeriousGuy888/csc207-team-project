@@ -1,5 +1,6 @@
 package entity;
 
+import java.time.DayOfWeek;
 import java.util.BitSet;
 
 /**
@@ -22,8 +23,47 @@ public class WeeklyOccupancy {
 
     private BitSet halfHourSlots = new BitSet(NUMBER_OF_TIMESLOTS);
 
-    public WeeklyOccupancy() {
-        // todo: come up with a friendly and inviting way to instantiate this class
+
+    /**
+     * Instantiate a WeeklyOccupancy with one time block that does not take place across multiple days.
+     * Specify the start and end time in milliseconds and WeeklyOccupancy will be created, with
+     * <ul>
+     *     <li>timeslot containing start time marked occupied</li>
+     *     <li>timeslots up to but excluding end time marked occupied</li>
+     * </ul>
+     *
+     * @param dayOfTheWeek          the day on which this time block occurs
+     * @param startTimeMilliseconds start time, between 0 and 86,400,000
+     * @param endTimeMilliseconds   end time, between 0 and 86,400,000. Should be later than start time.
+     */
+    public WeeklyOccupancy(DayOfTheWeek dayOfTheWeek,
+                           int startTimeMilliseconds,
+                           int endTimeMilliseconds) {
+        // todo: test this constructor to make sure it actually works
+        // i haven't written any tests yet because I don't know yet if we are actually going to use this constructor
+        // or if we're gonna need a separate constructor anyway, depending on what format our data is in
+
+        // This constructor uses milliseconds because I noticed the official TTB's data specifies
+        // start and end times in milliseconds, and this constructor would be convenient if we
+        // use that data.
+        final int MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
+        final int MILLISECONDS_PER_TIMESLOT = MILLISECONDS_PER_DAY / HALF_HOURS_PER_DAY;
+
+        if (startTimeMilliseconds < 0 || startTimeMilliseconds > MILLISECONDS_PER_DAY ||
+                endTimeMilliseconds < 0 || endTimeMilliseconds > MILLISECONDS_PER_DAY) {
+            throw new IllegalArgumentException("Start/end time specified was out of bounds of one day.");
+        }
+        if (endTimeMilliseconds - startTimeMilliseconds < MILLISECONDS_PER_TIMESLOT) {
+            throw new IllegalArgumentException(String.format(
+                    "End time must be greater than start time by at least %d milliseconds.",
+                    MILLISECONDS_PER_TIMESLOT));
+        }
+
+        int dayBitOffset = dayOfTheWeek.bitOffset;
+        int startTimeBitOffset = startTimeMilliseconds / MILLISECONDS_PER_TIMESLOT;
+        int endTimeBitOffset = endTimeMilliseconds / MILLISECONDS_PER_TIMESLOT;
+
+        halfHourSlots.set(dayBitOffset + startTimeBitOffset, dayBitOffset + endTimeBitOffset);
     }
 
     private WeeklyOccupancy(BitSet halfHourSlots) {
@@ -102,5 +142,21 @@ public class WeeklyOccupancy {
         // shouldn't be seen by other classes, but is needed by some of the static
         // methods in this class.
         return halfHourSlots;
+    }
+
+    public enum DayOfTheWeek {
+        MONDAY(0),
+        TUESDAY(HALF_HOURS_PER_DAY),
+        WEDNESDAY(HALF_HOURS_PER_DAY * 2),
+        THURSDAY(HALF_HOURS_PER_DAY * 3),
+        FRIDAY(HALF_HOURS_PER_DAY * 4),
+        SATURDAY(HALF_HOURS_PER_DAY * 5),
+        SUNDAY(HALF_HOURS_PER_DAY * 6);
+
+        final int bitOffset;
+
+        DayOfTheWeek(int bitOffset) {
+            this.bitOffset = bitOffset;
+        }
     }
 }
