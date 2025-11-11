@@ -10,9 +10,9 @@ package entity;
  */
 public class Meeting {
     private final UofTLocation location;
-    private final ClassHours time; // must be contiguous timespan
+    private final WeeklyOccupancy time; // must be contiguous timespan
 
-    public Meeting(UofTLocation location, ClassHours time) {
+    public Meeting(UofTLocation location, WeeklyOccupancy time) {
         this.location = location;
         this.time = time;
     }
@@ -21,7 +21,7 @@ public class Meeting {
         return location;
     }
 
-    public ClassHours getTime() {
+    public WeeklyOccupancy getTime() {
         return time;
     }
 }

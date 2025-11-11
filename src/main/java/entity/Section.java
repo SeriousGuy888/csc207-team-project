@@ -26,12 +26,12 @@ public class Section {
      * @return Union of all time slots that are occupied by the sessions in this section,
      * in other words, the times at which this section has class.
      */
-    public ClassHours getOccupiedTime() {
-        List<ClassHours> hoursList = meetings
+    public WeeklyOccupancy getOccupiedTime() {
+        List<WeeklyOccupancy> hoursList = meetings
                 .stream()
                 .map(Meeting::getTime)
                 .collect(Collectors.toList());
-        return ClassHours.union(hoursList);
+        return WeeklyOccupancy.union(hoursList);
     }
 
     public CourseOffering getCourseOffering() {
