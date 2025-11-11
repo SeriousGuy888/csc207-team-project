@@ -1,7 +1,9 @@
 const axios = require('axios')
 
+// the sessions we want to pull data for
 const current_sessions = ["20259", "20261", "20259-20261"]
 
+// updated pageSize to 9000
 const payload = {
   courseCodeAndTitleProps: {
     courseCode: "",
