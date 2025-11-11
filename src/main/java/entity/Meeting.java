@@ -1,7 +1,7 @@
 package entity;
 
 /**
- * Represents a session of a section.
+ * Represents a meeting of a course section.
  * <p>
  * This is needed because
  * each section of a class might have class multiples a week,
@@ -9,8 +9,13 @@ package entity;
  * session might be in a different location/time from the others.
  */
 public class Meeting {
-    private UofTLocation location;
-    private ClassHours time; // must be contiguous timespan
+    private final UofTLocation location;
+    private final ClassHours time; // must be contiguous timespan
+
+    public Meeting(UofTLocation location, ClassHours time) {
+        this.location = location;
+        this.time = time;
+    }
 
     public UofTLocation getLocation() {
         return location;
