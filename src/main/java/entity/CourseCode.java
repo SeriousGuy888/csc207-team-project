@@ -48,18 +48,6 @@ public class CourseCode {
     }
 
     /**
-     * @return The first six characters of a course code, e.g. MAT137.
-     */
-    public String getAbbreviatedCourseCode() {
-        return designator + number;
-    }
-
-    @Override
-    public String toString() {
-        return designator + number + weight.getLetter() + campus.getNumber();
-    }
-
-    /**
      * @param courseCodeString Eight character course code in the format MAT137Y1.
      */
     public CourseCode(String courseCodeString) {
@@ -88,6 +76,33 @@ public class CourseCode {
             throw new IllegalArgumentException("Invalid campus indicator specified.");
         }
         campus = matchingCampus.get();
+    }
+
+    /**
+     * @return The first six characters of a course code, e.g. MAT137.
+     */
+    public String getAbbreviatedCourseCode() {
+        return designator + number;
+    }
+
+    @Override
+    public String toString() {
+        return designator + number + weight.getLetter() + campus.getNumber();
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (!(other instanceof CourseCode)) {
+            return false;
+        }
+
+        CourseCode otherCourseCode = (CourseCode) other;
+
+        return (otherCourseCode.designator.equals(this.designator) &&
+                otherCourseCode.number.equals(this.number) &&
+                otherCourseCode.weight == this.weight &&
+                otherCourseCode.campus == this.campus
+        );
     }
 
     public enum CourseCodeWeight {
