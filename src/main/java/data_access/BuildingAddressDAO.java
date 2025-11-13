@@ -26,7 +26,7 @@ public class BuildingAddressDAO {
 
     /**
      * Loads the building codes and addresses from the JSON file into a Map.
-     * * @return An unmodifiable Map of Building Code (String) to Address (String).
+     * @return An unmodifiable Map of Building Code (String) to Address (String).
      */
     private Map<String, String> loadBuildingAddresses() {
         Map<String, String> addresses = new HashMap<>();
