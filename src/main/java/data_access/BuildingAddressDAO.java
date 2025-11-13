@@ -60,7 +60,7 @@ public class BuildingAddressDAO {
 
     /**
      * Reads the entire content of a file from the application's resources directory.
-     * * @param fileName The path to the file in the resources folder (e.g., /BuildingCodes.json).
+     * @param fileName The path to the file in the resources folder (e.g., /BuildingCodes.json).
      * @return The file content as a single String.
      * @throws IOException If the file cannot be read.
      */
