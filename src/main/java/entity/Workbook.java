@@ -11,7 +11,7 @@ public class Workbook {
     private final List<Timetable> timetables;
 
     public Workbook(List<Timetable> timetables) {
-        this.timetables = new ArrayList<>();
+        this.timetables = new ArrayList<>(timetables);
     }
 
     /**
