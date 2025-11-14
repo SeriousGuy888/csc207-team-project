@@ -2,17 +2,23 @@ package entity;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Represents a project file created by a user.
  * Can hold potentially multiple timetables, all saved as part of one file.
  */
 public class Workbook implements Serializable {
-    private final List<Timetable> timetables;
+    private static final long serialVersionUID = 42L;
+
+    private final Set<Timetable> timetables;
+//    private final List<Timetable> timetables;
 
     public Workbook(List<Timetable> timetables) {
-        this.timetables = new ArrayList<>();
+        this.timetables = new HashSet<>(timetables);
+//        this.timetables = timetables;
     }
 
     /**
