@@ -1,5 +1,6 @@
 package use_case.save_workbook;
 
+import data_access.workbook_persistence.FileWorkbookDataAccessObject;
 import data_access.workbook_persistence.InMemoryWorkbookDataAccessObject;
 import data_access.workbook_persistence.strategies.GsonWorkbookSerialiser;
 import entity.*;
@@ -14,7 +15,8 @@ import java.util.List;
 public class SaveWorkbookInteractorTest {
     @Test
     void doTheThing() {
-        InMemoryWorkbookDataAccessObject dao = new InMemoryWorkbookDataAccessObject();
+//        InMemoryWorkbookDataAccessObject dao = new InMemoryWorkbookDataAccessObject();
+        FileWorkbookDataAccessObject dao = new FileWorkbookDataAccessObject();
         GsonWorkbookSerialiser serialiser = new GsonWorkbookSerialiser();
         SaveWorkbookPresenter presenter = new SaveWorkbookPresenter();
         SaveWorkbookInteractor interactor = new SaveWorkbookInteractor(dao, presenter, serialiser);
@@ -31,21 +33,21 @@ public class SaveWorkbookInteractorTest {
                 Section.TeachingMethod.LECTURE
         ));
         Workbook workbook = new Workbook(List.of(timetable));
-        Path destination = Paths.get("fake", "file", "system", "path", "file.json");
+        Path destination = Paths.get("sandbox", "workbook.json");
         SaveWorkbookInputData inputData = new SaveWorkbookInputData(workbook, destination);
 
 
         interactor.execute(inputData);
 
-        Workbook deserialisedWorkbook;
-        try {
-            deserialisedWorkbook = serialiser.deserialise(dao.load(destination));
-        } catch (IOException e) {
-            System.out.println(":( " + e);
-            return;
-        }
-
-        System.out.println(workbook);
-        System.out.println(deserialisedWorkbook);
+//        Workbook deserialisedWorkbook;
+//        try {
+//            deserialisedWorkbook = serialiser.deserialise(dao.load(destination));
+//        } catch (IOException e) {
+//            System.out.println(":( " + e);
+//            return;
+//        }
+//
+//        System.out.println(workbook);
+//        System.out.println(deserialisedWorkbook);
     }
 }
