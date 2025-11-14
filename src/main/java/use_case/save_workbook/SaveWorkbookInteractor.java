@@ -1,27 +1,24 @@
 package use_case.save_workbook;
 
-import com.google.gson.Gson;
-import entity.*;
+import data_access.workbook_persistence.strategies.WorkbookSerialiser;
+import entity.Workbook;
 
-import java.util.List;
+import java.nio.file.Path;
 
 public class SaveWorkbookInteractor {
-    private final Gson gson = new Gson();
+    private final SaveWorkbookDataAccessInterface dataAccessObject;
+    private final WorkbookSerialiser workbookSerialiser;
 
-    public void execute() {
-        Timetable timetable = new Timetable();
-        timetable.addSection(new Section(
-                new CourseOffering(
-                        new CourseCode("MAT137Y1"),
-                        "Pain",
-                        "Agony"
-                ),
-                "LEC0101",
-                Section.TeachingMethod.LECTURE
-        ));
-        Workbook workbook = new Workbook(List.of(timetable));
+    public SaveWorkbookInteractor(SaveWorkbookDataAccessInterface dataAccessObject,
+                                  WorkbookSerialiser workbookSerialiser) {
+        this.dataAccessObject = dataAccessObject;
+        this.workbookSerialiser = workbookSerialiser;
+    }
 
-        String json = gson.toJson(workbook);
-        System.out.println(json);
+    public void execute(SaveWorkbookInputData inputData) {
+        Workbook workbook = inputData.getWorkbook();
+        Path destination = inputData.getDestination();
+        String serialised = workbookSerialiser.serialise(workbook);
+        dataAccessObject.save(serialised, destination);
     }
 }
