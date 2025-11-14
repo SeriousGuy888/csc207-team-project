@@ -1,11 +1,12 @@
 package entity;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class Section {
+public class Section implements Serializable {
     private final CourseOffering courseOffering;
     private final String sectionName;
     private final TeachingMethod teachingMethod;
@@ -69,7 +70,7 @@ public class Section {
         return new HashSet<>(meetings);
     }
 
-    public enum TeachingMethod {
+    public enum TeachingMethod implements Serializable {
         LECTURE,
         TUTORIAL,
         PRACTICAL,

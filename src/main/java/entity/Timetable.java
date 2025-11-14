@@ -1,5 +1,6 @@
 package entity;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -8,7 +9,7 @@ import java.util.Set;
 /**
  * Represents timetable created by a user, consisting of the course sections they selected.
  */
-public class Timetable {
+public class Timetable implements Serializable {
     private final Set<Section> sections;
 
     public Timetable() {

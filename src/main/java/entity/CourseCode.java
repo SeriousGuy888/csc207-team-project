@@ -1,12 +1,13 @@
 package entity;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Optional;
 
 /**
  * Represents course codes for easy equivalence checking.
  */
-public class CourseCode {
+public class CourseCode implements Serializable {
     // Based on specification at https://artsci.calendar.utoronto.ca/understanding-courses
 
     /**

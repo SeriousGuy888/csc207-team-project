@@ -1,5 +1,6 @@
 package entity;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,7 +8,7 @@ import java.util.List;
  * Represents a project file created by a user.
  * Can hold potentially multiple timetables, all saved as part of one file.
  */
-public class Workbook {
+public class Workbook implements Serializable {
     private final List<Timetable> timetables;
 
     public Workbook(List<Timetable> timetables) {

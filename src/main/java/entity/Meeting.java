@@ -1,5 +1,7 @@
 package entity;
 
+import java.io.Serializable;
+
 /**
  * Represents a meeting of a course section.
  * <p>
@@ -8,7 +10,7 @@ package entity;
  * such as once on Monday, once on Tuesday, once on Thursday, and each
  * session might be in a different location/time from the others.
  */
-public class Meeting {
+public class Meeting implements Serializable {
     private final UofTLocation location;
     private final WeeklyOccupancy time; // must be contiguous timespan
 

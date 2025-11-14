@@ -1,5 +1,6 @@
 package entity;
 
+import java.io.Serializable;
 import java.time.DayOfWeek;
 import java.util.BitSet;
 
@@ -8,7 +9,7 @@ import java.util.BitSet;
  * (since classes can sometimes end at halfhour intervals),
  * where every half-hour is marked as either occupied or unoccupied.
  */
-public class WeeklyOccupancy {
+public class WeeklyOccupancy implements Serializable {
     /*
         I don't _think_ classes can every occur on weekends or outside the 09:00-21:00 range,
         so since we're representing all the timeslots on all seven days, some of these bits

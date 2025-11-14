@@ -1,6 +1,8 @@
 package entity;
 
-public class UofTLocation {
+import java.io.Serializable;
+
+public class UofTLocation implements Serializable {
     private final String buildingCode;
     private final String roomNumber;
 
