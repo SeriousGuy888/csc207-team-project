@@ -36,9 +36,10 @@ async function fetchCourses() {
       payload, 
       {headers: { 'Content-Type': 'application/json' }
       });
-    console.log(JSON.stringify(response.data, null, 4));
+    // console.log(JSON.stringify(response.data, null, 4));
     return response.data;
   }
+  // adding debug incase we want to reuse in future 
   catch(err){
     if (err.response) {
       console.error('Request failed with status', err.response.status);
