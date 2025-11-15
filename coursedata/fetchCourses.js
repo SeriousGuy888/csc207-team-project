@@ -1,9 +1,11 @@
 const axios = require('axios');
+// to write coursedata to a file
+const fs = require("fs");
 
 // the sessions we want to pull data for, yyyym
 const current_sessions = ["20259", "20261", "20259-20261"];
 
-// updated pageSize to 9000
+// updated pageSize to 9000, taken from ttb 
 const payload = {
   courseCodeAndTitleProps: {
     courseCode: "",
@@ -34,8 +36,8 @@ async function fetchCourses() {
       payload, 
       {headers: { 'Content-Type': 'application/json' }
       });
-
-    console.log(JSON.stringify(response.data));
+    console.log(JSON.stringify(response.data, null, 4));
+    return response.data;
   }
   catch(err){
     if (err.response) {
@@ -44,4 +46,23 @@ async function fetchCourses() {
   }
 }
 
-fetchCourses();
+
+async function main() {
+  // Get course data 
+  const responsedata = await fetchCourses();
+  const finalresponseData = JSON.stringify(responsedata, null, 4); 
+
+  // Specify the file path to will save courses in 
+  const datafilePath = "fetchedcourses.json";
+
+  // Write the JSON string to the file
+  fs.writeFile(datafilePath, finalresponseData,(err) => {
+    if (err) {
+      console.error('Error writing to file:', err);
+      return;
+    }
+    console.log('Coursedata saved to', datafilePath);
+  });
+}
+
+main();
