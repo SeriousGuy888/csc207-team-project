@@ -1,7 +1,7 @@
-const axios = require('axios')
+const axios = require('axios');
 
-// the sessions we want to pull data for
-const current_sessions = ["20259", "20261", "20259-20261"]
+// the sessions we want to pull data for, yyyym
+const current_sessions = ["20259", "20261", "20259-20261"];
 
 // updated pageSize to 9000
 const payload = {
@@ -28,8 +28,20 @@ const payload = {
   direction: "asc"
 };
 
-axios({
-  method: 'post',
-  url: 'https://api.easi.utoronto.ca/ttb/getPageableCourses',
-  data: payload
-});
+async function fetchCourses() {
+  try{
+    const response = await axios.post('https://api.easi.utoronto.ca/ttb/getPageableCourses', 
+      payload, 
+      {headers: { 'Content-Type': 'application/json' }
+      });
+
+    console.log(JSON.stringify(response.data));
+  }
+  catch(err){
+    if (err.response) {
+      console.error('Request failed with status', err.response.status);
+    }
+  }
+}
+
+fetchCourses();
