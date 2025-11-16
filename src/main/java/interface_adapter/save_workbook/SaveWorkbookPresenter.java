@@ -6,7 +6,7 @@ import use_case.save_workbook.SaveWorkbookOutputData;
 public class SaveWorkbookPresenter implements SaveWorkbookOutputBoundary {
     @Override
     public void prepareSuccessView(SaveWorkbookOutputData outputData) {
-        System.out.println(outputData);
+        System.out.println(outputData.getDestination());
     }
 
     @Override
