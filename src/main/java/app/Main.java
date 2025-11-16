@@ -1,5 +1,10 @@
 package app;
 
+import data_access.BuildingAddressDAO;
+import entity.UofTLocation;
+import use_case.AddressDataAccessInterface;
+import use_case.AddressLookupUseCase;
+
 import javax.swing.*;
 
 public class Main {
