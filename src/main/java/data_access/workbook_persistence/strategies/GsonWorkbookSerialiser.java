@@ -1,11 +1,16 @@
 package data_access.workbook_persistence.strategies;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonSyntaxException;
+import com.google.gson.*;
+import entity.CourseCode;
+import entity.CourseOffering;
 import entity.Workbook;
 
+import java.lang.reflect.Type;
+
 public class GsonWorkbookSerialiser extends WorkbookSerialiser {
-    private final Gson gson = new Gson();
+    private final Gson gson = new GsonBuilder()
+            .registerTypeAdapter(CourseOffering.class, new CourseOfferingJsonSerializerAndDeserializer())
+            .create();
 
     @Override
     public String serialise(Workbook workbook) {
@@ -18,6 +23,27 @@ public class GsonWorkbookSerialiser extends WorkbookSerialiser {
             return gson.fromJson(serialisedWorkbook, Workbook.class);
         } catch (JsonSyntaxException e) {
             throw new IllegalArgumentException(e);
+        }
+    }
+
+    static class CourseOfferingJsonSerializerAndDeserializer
+            implements JsonSerializer<CourseOffering>, JsonDeserializer<CourseOffering> {
+        @Override
+        public JsonElement serialize(CourseOffering courseOffering,
+                                     Type type,
+                                     JsonSerializationContext context) {
+            // todo: make this into a unique identifier rather than just the course code
+            //  (the same course can be taught twice in one session)
+            return new JsonPrimitive(courseOffering.getCourseCode().toString());
+        }
+
+        @Override
+        public CourseOffering deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext context)
+                throws JsonParseException {
+            // todo: make this retrieve the course based on the unique identifier from some data access object
+            //  that is storing a list of available course offerings.
+            CourseCode courseCode = new CourseCode(jsonElement.getAsJsonPrimitive().getAsString());
+            return new CourseOffering(courseCode, "test", "ing");
         }
     }
 }
