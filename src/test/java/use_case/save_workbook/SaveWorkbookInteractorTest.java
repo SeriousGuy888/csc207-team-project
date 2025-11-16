@@ -23,7 +23,7 @@ public class SaveWorkbookInteractorTest {
 
 
         Timetable timetable = new Timetable();
-        timetable.addSection(new Section(
+        Section section = new Section(
                 new CourseOffering(
                         new CourseCode("MAT137Y1"),
                         "Pain and Agony",
@@ -31,7 +31,15 @@ public class SaveWorkbookInteractorTest {
                 ),
                 "LEC0101",
                 Section.TeachingMethod.LECTURE
+        );
+        section.addMeeting(new Meeting(
+                new UofTLocation("MY", "150"),
+                new WeeklyOccupancy(WeeklyOccupancy.DayOfTheWeek.THURSDAY,
+                        1000 * 60 * 60 * 13,
+                        1000 * 60 * 60 * 15)
         ));
+
+        timetable.addSection(section);
         Workbook workbook = new Workbook(List.of(timetable));
         Path destination = Paths.get("sandbox", "workbook.json");
         SaveWorkbookInputData inputData = new SaveWorkbookInputData(workbook, destination);
