@@ -29,6 +29,7 @@ public class SaveWorkbookInteractor implements SaveWorkbookInputBoundary {
             dataAccessObject.save(serialised, destination);
         } catch (IOException e) {
             presenter.prepareFailView(e.getMessage());
+            return;
         }
 
         SaveWorkbookOutputData outputData = new SaveWorkbookOutputData(destination);
