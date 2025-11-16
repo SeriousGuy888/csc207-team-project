@@ -9,6 +9,7 @@ import java.nio.file.Path;
 public class FileWorkbookDataAccessObject implements SaveWorkbookDataAccessInterface {
     @Override
     public void save(String serialisedWorkbook, Path destination) throws IOException {
+        Files.createDirectories(destination.subpath(0, destination.getNameCount() - 1));
         Files.writeString(destination, serialisedWorkbook);
     }
 }
