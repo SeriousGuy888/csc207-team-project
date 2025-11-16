@@ -6,6 +6,7 @@ import entity.CourseOffering;
 import entity.Workbook;
 
 import java.lang.reflect.Type;
+import java.text.ParseException;
 
 public class GsonWorkbookSerialiser extends WorkbookSerialiser {
     private final Gson gson = new GsonBuilder()
@@ -18,7 +19,7 @@ public class GsonWorkbookSerialiser extends WorkbookSerialiser {
     }
 
     @Override
-    public Workbook deserialise(String serialisedWorkbook) throws IllegalArgumentException {
+    public Workbook deserialise(String serialisedWorkbook) throws ParseException {
         try {
             return gson.fromJson(serialisedWorkbook, Workbook.class);
         } catch (JsonSyntaxException e) {
