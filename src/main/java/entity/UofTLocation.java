@@ -1,32 +1,30 @@
 package entity;
-import data_access.BuildingAddressDAO;
 
+/**
+ * Represents a specific location at UofT, defined by a building and room.
+ *
+ * This is an Entity and contains no references to outer layers (like data access
+ * or the UI). It only holds data and, if needed, enterprise-wide business rules.
+ */
 public class UofTLocation {
     private final String buildingCode;
     private final String roomNumber;
-
-    // Initializes the DAO once. This instance handles reading the JSON file.
-    private static final BuildingAddressDAO ADDRESS_DAO = new BuildingAddressDAO();
 
     public UofTLocation(String buildingCode, String roomNumber) {
         this.buildingCode = buildingCode;
         this.roomNumber = roomNumber;
     }
 
+    public String getBuildingCode() {
+        return buildingCode;
+    }
+
+    public String getRoomNumber() {
+        return roomNumber;
+    }
+
     @Override
     public String toString() {
         return buildingCode + " " + roomNumber;
-    }
-
-    public String toStreetAddress() {
-        String address = ADDRESS_DAO.getAddressByCode(this.buildingCode);
-
-        if (address != null) {
-            // Success: Return the address with the specific room number
-            return address;
-        } else {
-            // Failure: Address not found
-            return "Address not found for building code: " + this.buildingCode;
-        }
     }
 }
