@@ -4,13 +4,76 @@ import use_case.constraints.Constraint;
 import entity.Section;
 import java.util.*;
 
+/**A DFS (Depth First Search) timetable generator that uses recursion + backtracking to find a suitable path of generation  **/
 public class DfsBacktracker {
-    private List<Variable> variables;
-    private List<Constraint> constraints;
 
+    private final List<Variable> variables;
+    private final List<Constraint> constraints;
+    /**
+     * @param variables The List of variables (each containing a course, and it's domain) that need to be
+     *                  generated in the timetable
+     * @param constraints The list of constraints that need to be met for this timetable generation
+     */
     public DfsBacktracker(List<Variable> variables, List<Constraint> constraints) {
         this.variables = variables;
         this.constraints = constraints;
     }
 
+    /**
+     *
+     * @return the search result containing the generated timetable (hopefully)
+     * If it's a fail it means no possible combinations found (atleast using DFS given current constraints)
+     */
+    public SearchResult search(){
+        Assignment initial = new Assignment();
+        return dfs(0, initial);
+    }
+
+    /**
+     *
+     * @param index The current index number in the variables set that's having its section assigned
+     * @param assignment The assignment (generated timetable) so far
+     * @return A SearchResult, if true contains a sucesfully generated timetable,
+     * else false, and it backtracks and tries a different path
+     */
+    private SearchResult dfs(int index, Assignment assignment){
+        // This is the base case, that all variables have succesfully been assigned,
+        // and we have a fully generated timetable!
+        if(index == variables.size()){
+            return new SearchResult(true, assignment.getChosen());
+        }
+
+        //Choses the variable we will try finding a suitable lecture section for
+        Variable var = variables.get(index);
+        for(Section candidate : var.getDomain()){ //Iterates through all possible candidates in variable's domain
+            //tries a possible assignment by adding a candidate to it
+            Assignment next = new Assignment();
+            next.add(candidate);
+
+            //checks if this new temporary assignment is valid
+            if (isConsistent(next)){
+                //if valid it checks if the rest of this path works (recursive step)
+                SearchResult result = dfs(index+1, next);
+                //Valid path found then it succesfully returns this result so far
+                if (result.success){
+                    return result;
+                }
+            }
+        }
+        return new SearchResult(false, Set.of()); //if no valid path found then returns false here so new-
+        //-path can be tried in the earlier recursive call
+
+    }
+
+
+    /** Checks if constraints are met, using the classes in the constraints package **/
+    private boolean isConsistent(Assignment assignment){
+        Set<Section> chosen = assignment.getChosen();
+        for(Constraint c : constraints){
+            if(!c.isSatisfiedBy(chosen)){
+                return false;
+            }
+        }
+        return true;
+    }
 }

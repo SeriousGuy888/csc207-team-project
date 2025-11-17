@@ -8,6 +8,10 @@ import java.util.Set;
 /** Current partial selection of sections during search. */
 public class Assignment {
     private final Set<Section> chosen =  new HashSet<>();
+    /**
+     * param chosen The set of lecture/tutorial/prac sections that have been assigned to the timetable generated so far
+     */
+
     public Assignment(){}
 
     public Assignment(Assignment assignment){

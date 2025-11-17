@@ -9,6 +9,11 @@ public class Variable {
     private final String courseName;
     private final Set<Section> domain;
 
+    /**
+     *
+     * @param courseName The name of the course that the user requires
+     * @param domain The set of all sections that are part of this domain
+     */
     public Variable(String courseName, Set<Section> domain) {
         this.courseName = courseName;
         this.domain = domain;
