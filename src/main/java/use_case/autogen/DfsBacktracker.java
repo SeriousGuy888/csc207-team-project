@@ -67,13 +67,20 @@ public class DfsBacktracker {
 
 
     /** Checks if constraints are met, using the classes in the constraints package **/
+    /**
+     *
+     * @param assignment The timetable assinment that is being checked for consistency
+     * @return true if all constraints met, else false
+     */
     private boolean isConsistent(Assignment assignment){
         Set<Section> chosen = assignment.getChosen();
         for(Constraint c : constraints){
+            //Iterates through all constraints, if a single one is not met function returns false
             if(!c.isSatisfiedBy(chosen)){
                 return false;
             }
         }
+        //Returns true by default if all constraints met
         return true;
     }
 }
