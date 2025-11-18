@@ -1,13 +1,11 @@
 package use_case.save_workbook;
 
 import data_access.workbook_persistence.FileWorkbookDataAccessObject;
-import data_access.workbook_persistence.InMemoryWorkbookDataAccessObject;
 import data_access.workbook_persistence.strategies.GsonWorkbookSerialiser;
 import entity.*;
 import interface_adapter.save_workbook.SaveWorkbookPresenter;
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
@@ -25,6 +23,7 @@ public class SaveWorkbookInteractorTest {
         Timetable timetable = new Timetable();
         Section section = new Section(
                 new CourseOffering(
+                        "MAT237Y1-F-20259",
                         new CourseCode("MAT137Y1"),
                         "Pain and Agony",
                         "two semesters of it"

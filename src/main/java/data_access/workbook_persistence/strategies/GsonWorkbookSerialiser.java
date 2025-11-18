@@ -35,7 +35,7 @@ public class GsonWorkbookSerialiser extends WorkbookSerialiser {
                                      JsonSerializationContext context) {
             // todo: make this into a unique identifier rather than just the course code
             //  (the same course can be taught twice in one session)
-            return new JsonPrimitive(courseOffering.getCourseCode().toString());
+            return new JsonPrimitive(courseOffering.getUniqueIdentifier());
         }
 
         @Override
@@ -44,7 +44,7 @@ public class GsonWorkbookSerialiser extends WorkbookSerialiser {
             // todo: make this retrieve the course based on the unique identifier from some data access object
             //  that is storing a list of available course offerings.
             CourseCode courseCode = new CourseCode(jsonElement.getAsJsonPrimitive().getAsString());
-            return new CourseOffering(courseCode, "test", "ing");
+            return new CourseOffering("MAT237Y1-F-20259", courseCode, "test", "ing");
         }
     }
 }
