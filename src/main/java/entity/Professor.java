@@ -25,8 +25,11 @@ public class Professor {
         this.link = link;
     }
 
-    // return a formatted string with the professor info
-    public String stringProf() {
+    /**
+    * @return a formatted string with the professor info
+    */
+    @Override
+    public String toString() {
         return "first: " + this.firstName + " | last: " + this.lastName + " | avgRating: " + this.avgRating +
                 " | numRatings: " + this.numRatings + " | avgDifficulty: " + this.avgDifficultyRating +
                 " | department: " + this.department + " | link: " + this.link;
