@@ -29,30 +29,30 @@ const payload = {
   direction: "asc"
 };
 
-async function fetchCourses() {
-  try{
-    const response = await axios.post(
-      'https://api.easi.utoronto.ca/ttb/getPageableCourses', 
-      payload, 
-      {
-        headers: { 'Content-Type': 'application/json' }
-      });
-  console.log(JSON.stringify(response.data, null, 4));
-  }
+// async function fetchCourses() {
+//   try{
+//     const response = await axios.post(
+//       'https://api.easi.utoronto.ca/ttb/getPageableCourses', 
+//       payload, 
+//         headers: { 'Content-Type': 'application/json' }
+//       });
+//   console.log(JSON.stringify(response.data, null, 4));
+//   }
 
-  catch(err){
-    if (err.response) {
-      console.error('Request failed with status', err.response.status);
-    }
-  }
-}
+//   catch(err){
+//     if (err.response) {
+//       console.error('Request failed with status', err.response.status);
+//     }
+//   }
+// }
 
 async function fetchAllCourses() {
-  const stream = fs.createWriteStream('allfetchedcourses.json');
+  let allPages = [];
+  // const stream = fs.createWriteStream('allfetchedcourses.json');
   let hasmorecourses = true; 
 
   try {
-    stream.write('[');
+    // stream.write('[');
     let isFirst = true;
 
     while (hasmorecourses) {
@@ -63,27 +63,53 @@ async function fetchAllCourses() {
         { headers: { 'Content-Type': 'application/json' }}
       );
       const data = response.data;
-      console.log(JSON.stringify(data, null, 2));
-
-      // save it to fetchedcourses.json by page 
-      if (!isFirst) {stream.write(',\n')};
-
-      console.log(`Saving page ${payload.page}...`);
-      stream.write(JSON.stringify(data, null, 2) + '\n');
-
-      isFirst = false;
+      allPages.push(...data.payload.pageableCourse.courses);
       hasmorecourses = data.payload.pageableCourse.courses.length != 0;
 
       if (!hasmorecourses) {console.log(`No more courses to fetch.`)}
       payload.page++;
+    } 
+  } catch (err) { 
+    console.error('Error fetching courses:', err.message);
+  }
+  restructureCourses(allPages);
+}
+
+function restructureCourses(allPages) {
+  try {
+    const coursesBySubject = {};
+    
+    allPages.forEach(course => {
+      // Extract subject code "EUR")
+      const subjectCode =  course.code.substring(0, 3); 
+      
+      // Create the full key for this specific instance
+      const fullKey = `${course.code}-${course.sectionCode}-${course.sessions[0]}`;
+      
+      // Initialize the subject group if it doesn't exist
+      if (!coursesBySubject[subjectCode]) {
+        coursesBySubject[subjectCode] = {};
+      }
+      
+      // Add this course instance under its full key
+      coursesBySubject[subjectCode][fullKey] = course;
+    });
+
+    // Save one file per subject code
+    if (!fs.existsSync('courses')) {
+      fs.mkdirSync('courses');
     }
 
-    stream.write(']');
-    stream.end();
-    console.log('All courses fetched and saved to fetchedcourses.json');  
-  } catch (err) { 
-    stream.end();
-    console.error('Error fetching courses:', err.message);
+    for (const [subjectCode, instances] of Object.entries(coursesBySubject)) {
+      const filename = `courses/${subjectCode}.json`;
+      fs.writeFileSync(filename, JSON.stringify(instances, null, 2));
+      console.log(`Saved ${subjectCode}.json with ${Object.keys(instances).length} courses`);
+    }
+
+    console.log(`✓ Created ${Object.keys(coursesBySubject).length} subject files`);
+
+  } catch (err) {
+    console.error('Error:', err.message);
   }
 }
 
