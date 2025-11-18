@@ -28,7 +28,6 @@ public class BuildingAddressDAO implements AddressDataAccessInterface {
 
     /**
      * Loads the building codes and addresses from the JSON file using org.json.
-     * This is far more robust than regex.
      *
      * @return An unmodifiable Map of Building Code (String) to Address (String).
      */
