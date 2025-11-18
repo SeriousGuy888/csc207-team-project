@@ -1,4 +1,4 @@
-package use_case.constraints;
+package entity.constraints;
 
 import entity.Section;
 import java.util.Set;

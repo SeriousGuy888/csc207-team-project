@@ -1,15 +1,13 @@
-package use_case.autogen;
+package entity;
 
-import entity.CourseOffering;
-import entity.Section;
 import java.util.Set;
 
 /** One course variable with its candidate sections (sections of a single CourseOffering). */
-public class Variable {
+public class CourseVariable {
     private final CourseOffering courseOffering;
     private final Set<Section> domain;
 
-    public Variable(CourseOffering courseOffering, Set<Section> domain) {
+    public CourseVariable(CourseOffering courseOffering, Set<Section> domain) {
         this.courseOffering = courseOffering;
         this.domain = domain;
     }

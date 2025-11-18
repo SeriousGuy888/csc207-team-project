@@ -1,20 +1,17 @@
 // src/main/java/use_case/autogen/VariableFactory.java  (or inside an interactor)
-package use_case.autogen;
-
-import entity.CourseOffering;
-import entity.Section;
+package entity;
 
 import java.util.*;
 
-public class VariableFactory {
+public class CourseVariableFactory {
 
     /**
      * @param offerings   the courses the user wants in their timetable
      * @param lockedSections sections the user has explicitly locked/pinned
      */
-    public static List<Variable> buildVariables(List<CourseOffering> offerings,
-                                                Set<Section> lockedSections) {
-        List<Variable> variables = new ArrayList<>();
+    public static List<CourseVariable> buildVariables(List<CourseOffering> offerings,
+                                                      Set<Section> lockedSections) {
+        List<CourseVariable> variables = new ArrayList<>();
 
         for (CourseOffering offering : offerings) {
             Set<Section> allSections = offering.getAvailableSections();
@@ -37,7 +34,7 @@ public class VariableFactory {
                 domain = allSections;
             }
 
-            variables.add(new Variable(offering, domain));
+            variables.add(new CourseVariable(offering, domain));
         }
 
         return variables;

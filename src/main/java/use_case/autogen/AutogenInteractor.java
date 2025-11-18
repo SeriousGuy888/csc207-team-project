@@ -1,21 +1,22 @@
 package use_case.autogen;
 
-import use_case.constraints.Constraint;
+import entity.CourseVariable;
+import entity.constraints.Constraint;
 import entity.Section;
 import java.util.*;
 
 /**A DFS (Depth First Search) timetable generator that uses recursion + backtracking
  * to find a suitable path of generation  **/
-public class DfsBacktracker {
+public class AutogenInteractor implements AutogenInputBoundary {
 
-    private final List<Variable> variables;
+    private final List<CourseVariable> variables;
     private final List<Constraint> constraints;
     /**
      * @param variables The List of variables (each containing a course, and it's domain) that need to be
      *                  generated in the timetable
      * @param constraints The list of constraints that need to be met for this timetable generation
      */
-    public DfsBacktracker(List<Variable> variables, List<Constraint> constraints) {
+    public AutogenInteractor(List<CourseVariable> variables, List<Constraint> constraints) {
         this.variables = variables;
         this.constraints = constraints;
     }
@@ -44,9 +45,8 @@ public class DfsBacktracker {
         if(index == variables.size()){
             return new PotentialTimetable(true, assignment);
         }
-
         //Choses the variable we will try finding a suitable lecture section for
-        Variable var = variables.get(index);
+        CourseVariable var = variables.get(index);
         for(Section candidate : var.getDomain()){ //Iterates through all possible candidates in variable's domain
             //tries a possible assignment by adding a candidate to it
             Set<Section> next = new HashSet<>();
