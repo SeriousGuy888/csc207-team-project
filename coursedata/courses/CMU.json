@@ -10,6 +10,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -75,128 +76,6 @@
           }
         ]
       },
-      "LEC-1010": {
-        "schedule": {
-          "-": {
-            "meetingDay": null,
-            "meetingStartTime": null,
-            "meetingEndTime": null,
-            "meetingScheduleId": null,
-            "assignedRoom1": null,
-            "assignedRoom2": null
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Roger",
-            "lastName": "Bergs"
-          }
-        },
-        "meetingId": "LEC1010",
-        "teachingMethod": "LEC",
-        "sectionNumber": "1010",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "1",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-1012": {
-        "schedule": {
-          "-": {
-            "meetingDay": null,
-            "meetingStartTime": null,
-            "meetingEndTime": null,
-            "meetingScheduleId": null,
-            "assignedRoom1": null,
-            "assignedRoom2": null
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Christos",
-            "lastName": "Hatzis"
-          }
-        },
-        "meetingId": "LEC1012",
-        "teachingMethod": "LEC",
-        "sectionNumber": "1012",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "1",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-1011": {
         "schedule": {
           "-": {
@@ -218,122 +97,6 @@
         "meetingId": "LEC1011",
         "teachingMethod": "LEC",
         "sectionNumber": "1011",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "1",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-0101": {
-        "schedule": {
-          "-": {
-            "meetingDay": null,
-            "meetingStartTime": null,
-            "meetingEndTime": null,
-            "meetingScheduleId": null,
-            "assignedRoom1": null,
-            "assignedRoom2": null
-          }
-        },
-        "instructors": {},
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "R",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "1",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-1014": {
-        "schedule": {
-          "-": {
-            "meetingDay": null,
-            "meetingStartTime": null,
-            "meetingEndTime": null,
-            "meetingScheduleId": null,
-            "assignedRoom1": null,
-            "assignedRoom2": null
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Larysa",
-            "lastName": "Kuzmenko"
-          }
-        },
-        "meetingId": "LEC1014",
-        "teachingMethod": "LEC",
-        "sectionNumber": "1014",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -495,6 +258,244 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-0101": {
+        "schedule": {
+          "-": {
+            "meetingDay": null,
+            "meetingStartTime": null,
+            "meetingEndTime": null,
+            "meetingScheduleId": null,
+            "assignedRoom1": null,
+            "assignedRoom2": null
+          }
+        },
+        "instructors": {},
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "R",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "1",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-1014": {
+        "schedule": {
+          "-": {
+            "meetingDay": null,
+            "meetingStartTime": null,
+            "meetingEndTime": null,
+            "meetingScheduleId": null,
+            "assignedRoom1": null,
+            "assignedRoom2": null
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Larysa",
+            "lastName": "Kuzmenko"
+          }
+        },
+        "meetingId": "LEC1014",
+        "teachingMethod": "LEC",
+        "sectionNumber": "1014",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "1",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-1010": {
+        "schedule": {
+          "-": {
+            "meetingDay": null,
+            "meetingStartTime": null,
+            "meetingEndTime": null,
+            "meetingScheduleId": null,
+            "assignedRoom1": null,
+            "assignedRoom2": null
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Roger",
+            "lastName": "Bergs"
+          }
+        },
+        "meetingId": "LEC1010",
+        "teachingMethod": "LEC",
+        "sectionNumber": "1010",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "1",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-1012": {
+        "schedule": {
+          "-": {
+            "meetingDay": null,
+            "meetingStartTime": null,
+            "meetingEndTime": null,
+            "meetingScheduleId": null,
+            "assignedRoom1": null,
+            "assignedRoom2": null
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Christos",
+            "lastName": "Hatzis"
+          }
+        },
+        "meetingId": "LEC1012",
+        "teachingMethod": "LEC",
+        "sectionNumber": "1012",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "1",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -505,10 +506,11 @@
     "courseDescription": "Material to be covered includes notation and preparation of scores and parts; introduction to linear writing in instrumental and vocal textures; motives and their extensions; short, strict forms for 2-3 instruments, based on traditional and contemporary models. Primarily for students with an interest in composition.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<p>TMU112H1</p>",
+    "exclusion": "TMU112H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -616,12 +618,13 @@
     "courseTitle": "Introduction to Composition II",
     "code": "CMU113H1",
     "courseDescription": "An extension of the material taught in TMU112H1.",
-    "prerequisite": "<p>CMU112H1</p>",
+    "prerequisite": "CMU112H1",
     "corequisite": "",
-    "exclusion": "<p>TMU113H1</p>",
+    "exclusion": "TMU113H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -702,77 +705,17 @@
     "courseTitle": "Composition",
     "code": "CMU210Y1",
     "courseDescription": "Short pieces in modern idioms with a focus on chamber music or equivalent (e.g. small-scale electroacoustic projects). Public performance of composition expected. One hour of individual instruction per week. For students admitted to Composition as a major concentration.",
-    "prerequisite": "<p><a href=\"https://music.calendar.utoronto.ca/course/TMU130H1\">TMU130H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU131H1\">TMU131H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU132H1\">TMU132H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU133H1\">TMU133H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU105Y1\">TMU105Y1</a>/<a href=\"https://music.calendar.utoronto.ca/course/TMU107Y1\">TMU107Y1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU112H1\">TMU112H1</a> and <a href=\"https://music.calendar.utoronto.ca/course/TMU113H1\">TMU113H1</a>. Admission by Interview.</p>",
+    "prerequisite": "TMU130H1, TMU131H1, TMU132H1, TMU133H1, TMU105Y1/TMU107Y1, TMU112H1 and TMU113H1. Admission by Interview.",
     "corequisite": "",
-    "exclusion": "<p>TMU210Y1</p>",
+    "exclusion": "TMU210Y1",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "LEC-1016": {
-        "schedule": {
-          "-": {
-            "meetingDay": null,
-            "meetingStartTime": null,
-            "meetingEndTime": null,
-            "meetingScheduleId": null,
-            "assignedRoom1": null,
-            "assignedRoom2": null
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "James",
-            "lastName": "Rolfe"
-          }
-        },
-        "meetingId": "LEC1016",
-        "teachingMethod": "LEC",
-        "sectionNumber": "1016",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-1015": {
         "schedule": {
           "-": {
@@ -834,7 +777,7 @@
           }
         ]
       },
-      "LEC-1011": {
+      "LEC-1016": {
         "schedule": {
           "-": {
             "meetingDay": null,
@@ -848,74 +791,13 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Abigail",
-            "lastName": "Richardson"
+            "firstName": "James",
+            "lastName": "Rolfe"
           }
         },
-        "meetingId": "LEC1011",
+        "meetingId": "LEC1016",
         "teachingMethod": "LEC",
-        "sectionNumber": "1011",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-1013": {
-        "schedule": {
-          "-": {
-            "meetingDay": null,
-            "meetingStartTime": null,
-            "meetingEndTime": null,
-            "meetingScheduleId": null,
-            "assignedRoom1": null,
-            "assignedRoom2": null
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Gary",
-            "lastName": "Kulesha"
-          }
-        },
-        "meetingId": "LEC1013",
-        "teachingMethod": "LEC",
-        "sectionNumber": "1013",
+        "sectionNumber": "1016",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -1032,6 +914,67 @@
         "meetingId": "LEC1010",
         "teachingMethod": "LEC",
         "sectionNumber": "1010",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-1013": {
+        "schedule": {
+          "-": {
+            "meetingDay": null,
+            "meetingStartTime": null,
+            "meetingEndTime": null,
+            "meetingScheduleId": null,
+            "assignedRoom1": null,
+            "assignedRoom2": null
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Gary",
+            "lastName": "Kulesha"
+          }
+        },
+        "meetingId": "LEC1013",
+        "teachingMethod": "LEC",
+        "sectionNumber": "1013",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -1193,6 +1136,67 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-1011": {
+        "schedule": {
+          "-": {
+            "meetingDay": null,
+            "meetingStartTime": null,
+            "meetingEndTime": null,
+            "meetingScheduleId": null,
+            "assignedRoom1": null,
+            "assignedRoom2": null
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Abigail",
+            "lastName": "Richardson"
+          }
+        },
+        "meetingId": "LEC1011",
+        "teachingMethod": "LEC",
+        "sectionNumber": "1011",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -1201,12 +1205,13 @@
     "courseTitle": "Composition",
     "code": "CMU211Y1",
     "courseDescription": "Short pieces in modern idioms with a focus on chamber music or equivalent (e.g. small-scale electroacoustic projects). A mixture of two-hour group classes and individual instruction. For students admitted to Composition as a minor concentration.",
-    "prerequisite": "<p><a href=\"https://music.calendar.utoronto.ca/course/TMU130H1\">TMU130H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU131H1\">TMU131H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU132H1\">TMU132H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU133H1\">TMU133H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU105Y1\">TMU105Y1</a>/<a href=\"https://music.calendar.utoronto.ca/course/TMU107Y1\">TMU107Y1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU112H1\">TMU112H1</a> and <a href=\"https://music.calendar.utoronto.ca/course/TMU113H1\">TMU113H1</a>. Admission by interview.</p>",
+    "prerequisite": "TMU130H1, TMU131H1, TMU132H1, TMU133H1, TMU105Y1/TMU107Y1, TMU112H1 and TMU113H1. Admission by interview.",
     "corequisite": "",
-    "exclusion": "<p>TMU211Y1</p>",
+    "exclusion": "TMU211Y1",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1287,17 +1292,18 @@
     "courseTitle": "Composition",
     "code": "CMU310Y1",
     "courseDescription": "Continuation of TMU210Y1, including extended works for small chamber ensembles. Public performance of composition expected. One hour of individual instruction per week. For students admitted to Composition as a major concentration.",
-    "prerequisite": "<p><a href=\"https://music.calendar.utoronto.ca/course/TMU230H1\">TMU230H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU231H1\">TMU231H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU232H1\">TMU232H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU105Y1\">TMU105Y1</a>/<a href=\"https://music.calendar.utoronto.ca/course/TMU107Y1\">TMU107Y1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU210Y1\">TMU210Y1</a>. For Composition majors only. Part of the course requirement is to have at least one piece performed publicly at the Faculty of Music.</p>",
+    "prerequisite": "TMU230H1, TMU231H1, TMU232H1, TMU105Y1/TMU107Y1, TMU210Y1. For Composition majors only. Part of the course requirement is to have at least one piece performed publicly at the Faculty of Music.",
     "corequisite": "",
-    "exclusion": "<p>TMU310Y1</p>",
+    "exclusion": "TMU310Y1",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "LEC-1010": {
+      "LEC-1013": {
         "schedule": {
           "-": {
             "meetingDay": null,
@@ -1311,13 +1317,74 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Roger",
-            "lastName": "Bergs"
+            "firstName": "Gary",
+            "lastName": "Kulesha"
           }
         },
-        "meetingId": "LEC1010",
+        "meetingId": "LEC1013",
         "teachingMethod": "LEC",
-        "sectionNumber": "1010",
+        "sectionNumber": "1013",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-1011": {
+        "schedule": {
+          "-": {
+            "meetingDay": null,
+            "meetingStartTime": null,
+            "meetingEndTime": null,
+            "meetingScheduleId": null,
+            "assignedRoom1": null,
+            "assignedRoom2": null
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Abigail",
+            "lastName": "Richardson"
+          }
+        },
+        "meetingId": "LEC1011",
+        "teachingMethod": "LEC",
+        "sectionNumber": "1011",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -1379,67 +1446,6 @@
         "meetingId": "LEC1015",
         "teachingMethod": "LEC",
         "sectionNumber": "1015",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-1013": {
-        "schedule": {
-          "-": {
-            "meetingDay": null,
-            "meetingStartTime": null,
-            "meetingEndTime": null,
-            "meetingScheduleId": null,
-            "assignedRoom1": null,
-            "assignedRoom2": null
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Gary",
-            "lastName": "Kulesha"
-          }
-        },
-        "meetingId": "LEC1013",
-        "teachingMethod": "LEC",
-        "sectionNumber": "1013",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -1602,7 +1608,7 @@
           }
         ]
       },
-      "LEC-1011": {
+      "LEC-1012": {
         "schedule": {
           "-": {
             "meetingDay": null,
@@ -1616,13 +1622,13 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Abigail",
-            "lastName": "Richardson"
+            "firstName": "Christos",
+            "lastName": "Hatzis"
           }
         },
-        "meetingId": "LEC1011",
+        "meetingId": "LEC1012",
         "teachingMethod": "LEC",
-        "sectionNumber": "1011",
+        "sectionNumber": "1012",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -1718,7 +1724,7 @@
           }
         ]
       },
-      "LEC-1012": {
+      "LEC-1010": {
         "schedule": {
           "-": {
             "meetingDay": null,
@@ -1732,13 +1738,13 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Christos",
-            "lastName": "Hatzis"
+            "firstName": "Roger",
+            "lastName": "Bergs"
           }
         },
-        "meetingId": "LEC1012",
+        "meetingId": "LEC1010",
         "teachingMethod": "LEC",
-        "sectionNumber": "1012",
+        "sectionNumber": "1010",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -1786,12 +1792,13 @@
     "courseTitle": "Composition",
     "code": "CMU311Y1",
     "courseDescription": "Continuation of TMU211Y1, including works for small chamber ensembles. A mixture of two-hour group classes and individual instruction. For students admitted to Composition as a minor concentration.",
-    "prerequisite": "<p><a href=\"https://music.calendar.utoronto.ca/course/TMU230H1\">TMU230H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU231H1\">TMU231H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU232H1\">TMU232H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU105Y1\">TMU105Y1</a>/<a href=\"https://music.calendar.utoronto.ca/course/TMU107Y1\">TMU107Y1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU211Y1\">TMU211Y1</a>. For Composition majors only. Part of the course requirement is to have at least one piece performed publicly at the Faculty of Music.</p>",
+    "prerequisite": "TMU230H1, TMU231H1, TMU232H1, TMU105Y1/TMU107Y1, TMU211Y1. For Composition majors only. Part of the course requirement is to have at least one piece performed publicly at the Faculty of Music.",
     "corequisite": "",
-    "exclusion": "<p>TMU311Y1</p>",
+    "exclusion": "TMU311Y1",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1872,12 +1879,13 @@
     "courseTitle": "Orchestration",
     "code": "CMU314Y1",
     "courseDescription": "A study of the individual capabilities of standard orchestral instruments. Writing and arranging for small groups - strings, brass, woodwinds and percussion. In-class readings of student assignments. Study of selected scores.",
-    "prerequisite": "<p><a href=\"https://music.calendar.utoronto.ca/course/TMU230H1\">TMU230H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU231H1\">TMU231H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU232H1\">TMU232H1</a>, Composition majors or minors.</p>",
+    "prerequisite": "TMU230H1, TMU231H1, TMU232H1, Composition majors or minors.",
     "corequisite": "",
-    "exclusion": "<p>TMU314Y1</p>",
+    "exclusion": "TMU314Y1",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1985,12 +1993,13 @@
     "courseTitle": "Advanced Orchestration",
     "code": "CMU401H1",
     "courseDescription": "This course will focus on extended techniques for orchestral instruments and incorporating such techniques in chamber and orchestral compositions.",
-    "prerequisite": "<p>TMU230H1, TMU231H1, TMU232H1, Composition majors or minors, or P.I.</p>",
+    "prerequisite": "TMU230H1, TMU231H1, TMU232H1, Composition majors or minors, or P.I.",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -2144,12 +2153,13 @@
     "courseTitle": "Songwriting",
     "code": "CMU409H1",
     "courseDescription": "The course focuses on song as the pre-eminent form of 20th Century musical expression in several different genres and musical traditions. Students are exposed to a range of techniques for composing songs in a variety of genres and styles: the parallel and reciprocal relationship and development of textual and sonic materials; writing for the amplified voice; prosody and intelligibility of the text in a song setting; addressing a target audience; genre and stylistic convergence in the Internet Age, etc. Traditional song writing formulas and other musical structures are examined under the light of psychoacoustic perception and auditory function of the brain and strategies of how art-music composers can apply their advanced compositional skills to achieve similar psychoacoustic results with more unconventional means will be discussed and developed throughout the course.",
-    "prerequisite": "<p>Year 3</p>",
+    "prerequisite": "Year 3",
     "corequisite": "",
-    "exclusion": "<p>TMU409H1</p>",
+    "exclusion": "TMU409H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -2600,12 +2610,13 @@
     "courseTitle": "Composition",
     "code": "CMU410Y1",
     "courseDescription": "Continuation of TMU310Y1, including writing for orchestra. At least two compositions to be prepared for student performance. One hour.",
-    "prerequisite": "<p><a href=\"https://music.calendar.utoronto.ca/course/TMU310Y1\">TMU310Y1</a>. For Composition majors.</p>",
+    "prerequisite": "TMU310Y1. For Composition majors.",
     "corequisite": "",
-    "exclusion": "<p>TMU410Y1</p>",
+    "exclusion": "TMU410Y1",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -2732,7 +2743,7 @@
           }
         ]
       },
-      "LEC-1011": {
+      "LEC-1015": {
         "schedule": {
           "-": {
             "meetingDay": null,
@@ -2746,13 +2757,13 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Abigail",
-            "lastName": "Richardson"
+            "firstName": "Norbert",
+            "lastName": "Palej"
           }
         },
-        "meetingId": "LEC1011",
+        "meetingId": "LEC1015",
         "teachingMethod": "LEC",
-        "sectionNumber": "1011",
+        "sectionNumber": "1015",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -2793,7 +2804,7 @@
           }
         ]
       },
-      "LEC-1015": {
+      "LEC-1011": {
         "schedule": {
           "-": {
             "meetingDay": null,
@@ -2807,13 +2818,13 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Norbert",
-            "lastName": "Palej"
+            "firstName": "Abigail",
+            "lastName": "Richardson"
           }
         },
-        "meetingId": "LEC1015",
+        "meetingId": "LEC1011",
         "teachingMethod": "LEC",
-        "sectionNumber": "1015",
+        "sectionNumber": "1011",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -2970,67 +2981,6 @@
           }
         ]
       },
-      "LEC-1013": {
-        "schedule": {
-          "-": {
-            "meetingDay": null,
-            "meetingStartTime": null,
-            "meetingEndTime": null,
-            "meetingScheduleId": null,
-            "assignedRoom1": null,
-            "assignedRoom2": null
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Gary",
-            "lastName": "Kulesha"
-          }
-        },
-        "meetingId": "LEC1013",
-        "teachingMethod": "LEC",
-        "sectionNumber": "1013",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "4",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-1010": {
         "schedule": {
           "-": {
@@ -3091,6 +3041,67 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-1013": {
+        "schedule": {
+          "-": {
+            "meetingDay": null,
+            "meetingStartTime": null,
+            "meetingEndTime": null,
+            "meetingScheduleId": null,
+            "assignedRoom1": null,
+            "assignedRoom2": null
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Gary",
+            "lastName": "Kulesha"
+          }
+        },
+        "meetingId": "LEC1013",
+        "teachingMethod": "LEC",
+        "sectionNumber": "1013",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "4",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -3099,12 +3110,13 @@
     "courseTitle": "Composing for Piano",
     "code": "CMU415H1",
     "courseDescription": "The course provides insights into composing idiomatic, original and virtuosic music for the piano, based on the study of selected piano repertoire since 1830, as well as readings of scholarly literature and influential piano methods. The theoretical side of the course is balanced by practical composition projects for the piano.",
-    "prerequisite": "<p><a href=\"https://music.calendar.utoronto.ca/course/TMU230H1\">TMU230H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU231H1\">TMU231H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU232H1\">TMU232H1</a>, Composition majors or minors, or P.I.</p>",
+    "prerequisite": "TMU230H1, TMU231H1, TMU232H1, Composition majors or minors, or P.I.",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3312,12 +3324,13 @@
     "courseTitle": "Composing for Film",
     "code": "CMU430H1",
     "courseDescription": "Composing for film will concentrate on technical and aesthetic aspects of writing music for film. Various approaches to film music by well known practitioners in the field. Projects will include creating original music for new films by film students.",
-    "prerequisite": "<p>Year 3</p>",
+    "prerequisite": "Year 3",
     "corequisite": "",
-    "exclusion": "<p>TMU430H1</p>",
+    "exclusion": "TMU430H1",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",

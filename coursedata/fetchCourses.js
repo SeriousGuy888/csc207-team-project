@@ -115,14 +115,14 @@ function convertFormat(course) {
     // orgName: course.department?.name || "",
     courseTitle: course.name,
     code: course.code,
-    courseDescription: course.cmCourseInfo?.description ?? "",
-    prerequisite: course.cmCourseInfo?.prerequisitesText ?? "",
-    corequisite: course.cmCourseInfo?.corequisitesText ?? "",
-    exclusion: course.cmCourseInfo?.exclusionsText ?? "",
-    recommendedPreparation: course.cmCourseInfo?.recommendedPreparation ?? "",
+    courseDescription: cleanHTML(course.cmCourseInfo?.description ?? ""),
+    prerequisite: cleanHTML(course.cmCourseInfo?.prerequisitesText ?? ""),
+    corequisite: cleanHTML(course.cmCourseInfo?.corequisitesText ?? ""),
+    exclusion: cleanHTML(course.cmCourseInfo?.exclusionsText ?? ""),
+    recommendedPreparation: cleanHTML(course.cmCourseInfo?.recommendedPreparation ?? ""),
     section: course.sectionCode,
     session: course.sessions[0] || "",
-    // webTimetableInstructions: course.notes?.find(n => n.type === 'COURSE')?.content || "",
+    webTimetableInstructions: cleanHTML(course.notes?.find(n => n.type === 'COURSE')?.content || ""),
     deliveryInstructions: null,
     breadthCategories: course.cmCourseInfo?.breadthRequirements?.join(", ") || "",
     distributionCategories: course.cmCourseInfo?.distributionRequirements?.join(", ") || "",
@@ -249,6 +249,15 @@ function convertEnrollmentControls(controls) {
     adminOrgCode: ctrl.adminOrg?.code || "*",
     adminOrgName: ctrl.adminOrg?.name || ""
   }));
+}
+
+function cleanHTML(text) {
+  if (!text) return "";
+  return text
+    .replace(/<[^>]*>/g, '') // Remove all HTML tags
+    .replace(/&nbsp;/g, ' ') // Replace &nbsp; with space
+    .replace(/\s+/g, ' ')     // Replace multiple spaces with single space
+    .trim();                  // Remove leading/trailing spaces
 }
 
 

@@ -10,10 +10,74 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
+      "LEC-0201": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "16:30",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "16:30",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
+          }
+        },
+        "instructors": {},
+        "meetingId": "LEC0201",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "35",
+        "actualEnrolment": "28",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "E",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -107,69 +171,6 @@
         "online": "In Person",
         "enrollmentCapacity": "35",
         "actualEnrolment": "25",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "E",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-0201": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "16:30",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          },
-          "MO-1": {
-            "meetingDay": "MO",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "16:30",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          }
-        },
-        "instructors": {},
-        "meetingId": "LEC0201",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "35",
-        "actualEnrolment": "28",
         "actualWaitlist": "0",
         "enrollmentIndicator": "E",
         "meetingStatusNotes": null,

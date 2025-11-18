@@ -10,10 +10,80 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
+      "LEC-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "21:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "GB",
+            "assignedRoom2": "GB"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Alexander",
+            "lastName": "Kaju"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "75",
+        "actualEnrolment": "69",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "APSC",
+            "primaryOrgName": "Faculty of Applied Science & Engineering",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "TUT-0101": {
         "schedule": {
           "MO-0": {
@@ -68,75 +138,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "LEC-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "GB",
-            "assignedRoom2": "GB"
-          },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "21:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Alexander",
-            "lastName": "Kaju"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "75",
-        "actualEnrolment": "69",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "APSC",
-            "primaryOrgName": "Faculty of Applied Science & Engineering",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -151,6 +152,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -290,71 +292,11 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "LEC-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MY",
-            "assignedRoom2": "MY"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Lydia",
-            "lastName": "Wilkinson"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "36",
-        "actualEnrolment": "36",
-        "actualWaitlist": "6",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "APSC",
-            "primaryOrgName": "Faculty of Applied Science & Engineering",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "TUT-0101": {
         "schedule": {
           "TU-0": {
@@ -415,6 +357,67 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MY",
+            "assignedRoom2": "MY"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Lydia",
+            "lastName": "Wilkinson"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "36",
+        "actualEnrolment": "36",
+        "actualWaitlist": "6",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "APSC",
+            "primaryOrgName": "Faculty of Applied Science & Engineering",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -429,6 +432,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -568,6 +572,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -646,6 +651,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -724,6 +730,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -802,71 +809,11 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "LEC-0102": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "WB",
-            "assignedRoom2": "WB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Samina",
-            "lastName": "Hashmi"
-          }
-        },
-        "meetingId": "LEC0102",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "50",
-        "actualEnrolment": "48",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "APSC",
-            "primaryOrgName": "Faculty of Applied Science & Engineering",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -927,53 +874,36 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "TEP343H1-S-20261": {
-    "courseId": "683de74969ee8765db5f971e",
-    "courseTitle": "Engineering Leadership",
-    "code": "TEP343H1",
-    "courseDescription": "Complementary Studies elective Develop a practical approach to being a more productive engineer, based on the premise that for technology to become a reality, it must be translated through people. A key is understanding engineers lead in ways that reflect their skills and mind set. Learning frameworks and personal working styles inventories provide practical tools to assist the student to understand human nature and to become a competent leader of self and of teams. The student prepares to become a competent leader by first developing a deeper understanding of self and then undertaking to learn (understand and integrate) key skills, character attributes,and purposeful behaviours. Strategies for development of high-performance teams are also presented. The material is delivered through lectures, readings, in-class discussion and a team project. Attendance is mandatory to enable learning through experiential activities and critical reflection.The project is based on the team interviewing a senior leader at an engineering-intensive company or senior leader in the community",
-    "prerequisite": "",
-    "corequisite": "",
-    "exclusion": "",
-    "recommendedPreparation": "",
-    "section": "S",
-    "session": "20261",
-    "deliveryInstructions": null,
-    "breadthCategories": "",
-    "distributionCategories": "",
-    "meetings": {
-      "LEC-0101": {
+      },
+      "LEC-0102": {
         "schedule": {
           "MO-0": {
             "meetingDay": "MO",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "15:00",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
+            "assignedRoom1": "WB",
+            "assignedRoom2": "WB"
           }
         },
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Patricia",
-            "lastName": "Sheridan"
+            "firstName": "Samina",
+            "lastName": "Hashmi"
           }
         },
-        "meetingId": "LEC0101",
+        "meetingId": "LEC0102",
         "teachingMethod": "LEC",
-        "sectionNumber": "0101",
+        "sectionNumber": "0102",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "50",
-        "actualEnrolment": "50",
-        "actualWaitlist": "15",
+        "actualEnrolment": "48",
+        "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
         "enrollmentControls": [
@@ -1005,7 +935,25 @@
             "adminOrgName": "All"
           }
         ]
-      },
+      }
+    }
+  },
+  "TEP343H1-S-20261": {
+    "courseId": "683de74969ee8765db5f971e",
+    "courseTitle": "Engineering Leadership",
+    "code": "TEP343H1",
+    "courseDescription": "Complementary Studies elective Develop a practical approach to being a more productive engineer, based on the premise that for technology to become a reality, it must be translated through people. A key is understanding engineers lead in ways that reflect their skills and mind set. Learning frameworks and personal working styles inventories provide practical tools to assist the student to understand human nature and to become a competent leader of self and of teams. The student prepares to become a competent leader by first developing a deeper understanding of self and then undertaking to learn (understand and integrate) key skills, character attributes,and purposeful behaviours. Strategies for development of high-performance teams are also presented. The material is delivered through lectures, readings, in-class discussion and a team project. Attendance is mandatory to enable learning through experiential activities and critical reflection.The project is based on the team interviewing a senior leader at an engineering-intensive company or senior leader in the community",
+    "prerequisite": "",
+    "corequisite": "",
+    "exclusion": "",
+    "recommendedPreparation": "",
+    "section": "S",
+    "session": "20261",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "",
+    "distributionCategories": "",
+    "meetings": {
       "LEC-0102": {
         "schedule": {
           "MO-0": {
@@ -1066,6 +1014,67 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Patricia",
+            "lastName": "Sheridan"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "50",
+        "actualEnrolment": "50",
+        "actualWaitlist": "15",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "APSC",
+            "primaryOrgName": "Faculty of Applied Science & Engineering",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -1074,12 +1083,13 @@
     "courseTitle": "To Engineer is Human",
     "code": "TEP440H1",
     "courseDescription": "Behind every engineering feat is a human story. Students will learn to examine this often-overlooked perspective of engineering and its implications for engineering work. Engineering is at its core a human activity geared at helping to attain human goals, which requires the integration of many viewpoints, technical and non-technical. Drawing on perspectives from humanities and social science disciplines (e.g., sociology, anthropology, psychology, history, and political science) students will explore aspects of the human condition as it relates to engineering work: particularly the complexity of individuals, the contexts in which they operate, and how this shapes collaborative work. They will develop an appreciation for and skills to engage in the interdisciplinary work that engineering entails by examining conceptions of engineering, as well as the humanities and social and their intersections with engineering. Students will integrate these themes in projects that investigate the human stories behind various technologies.",
-    "prerequisite": "<p>4.0 full courses</p>",
+    "prerequisite": "4.0 full courses",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1227,6 +1237,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1305,71 +1316,11 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "LEC-0102": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "OI",
-            "assignedRoom2": "OI"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Robin",
-            "lastName": "Sacks"
-          }
-        },
-        "meetingId": "LEC0102",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "80",
-        "actualEnrolment": "75",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "APSC",
-            "primaryOrgName": "Faculty of Applied Science & Engineering",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -1430,6 +1381,67 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-0102": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "OI",
+            "assignedRoom2": "OI"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Robin",
+            "lastName": "Sacks"
+          }
+        },
+        "meetingId": "LEC0102",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0102",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "80",
+        "actualEnrolment": "75",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "APSC",
+            "primaryOrgName": "Faculty of Applied Science & Engineering",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -1444,6 +1456,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1522,6 +1535,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1600,6 +1614,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1686,6 +1701,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",

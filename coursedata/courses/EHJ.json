@@ -10,27 +10,28 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BF",
-            "assignedRoom2": "BF"
-          },
-          "TH-1": {
+          "TH-0": {
             "meetingDay": "TH",
             "meetingStartTime": "15:00",
             "meetingEndTime": "16:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "BA",
             "assignedRoom2": "BA"
+          },
+          "TU-1": {
+            "meetingDay": "TU",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "BF",
+            "assignedRoom2": "BF"
           }
         },
         "instructors": {

@@ -4,16 +4,195 @@
     "courseTitle": "Applications of Linear Programming",
     "code": "APM236H1",
     "courseDescription": "Introduction to linear programming including a rapid review of linear algebra (row reduction, matrix inversion, linear independence), the simplex method with applications, the duality theorem, complementary slackness, the dual simplex method and the revised simplex method.",
-    "prerequisite": "<p>MAT221H1/ MAT223H1/ MAT223H5/ MATA22H3/ MATA23H3/ MAT240H1/ MAT240H5</p>",
+    "prerequisite": "MAT221H1/ MAT223H1/ MAT223H5/ MATA22H3/ MATA23H3/ MAT240H1/ MAT240H5",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
+      "TUT-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MS",
+            "assignedRoom2": "MS"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "80",
+        "actualEnrolment": "70",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>August 19, 2025: room changed</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-5101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "SF",
+            "assignedRoom2": "SF"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Jonathan",
+            "lastName": "Korman"
+          }
+        },
+        "meetingId": "LEC5101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "5101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "140",
+        "actualEnrolment": "123",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARTSC",
+            "primaryOrgName": "Faculty of Arts and Science",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARCLA",
+            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "5",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -274,184 +453,6 @@
           }
         ]
       },
-      "LEC-5101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          },
-          "MO-1": {
-            "meetingDay": "MO",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "SF",
-            "assignedRoom2": "SF"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Jonathan",
-            "lastName": "Korman"
-          }
-        },
-        "meetingId": "LEC5101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "5101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "140",
-        "actualEnrolment": "123",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARTSC",
-            "primaryOrgName": "Faculty of Arts and Science",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARCLA",
-            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "5",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MS",
-            "assignedRoom2": "MS"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "80",
-        "actualEnrolment": "70",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>August 19, 2025: room changed</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "TUT-0102": {
         "schedule": {
           "WE-0": {
@@ -514,12 +515,13 @@
     "courseTitle": "Applications of Linear Programming",
     "code": "APM236H1",
     "courseDescription": "Introduction to linear programming including a rapid review of linear algebra (row reduction, matrix inversion, linear independence), the simplex method with applications, the duality theorem, complementary slackness, the dual simplex method and the revised simplex method.",
-    "prerequisite": "<p>MAT221H1/ MAT223H1/ MAT223H5/ MATA22H3/ MATA23H3/ MAT240H1/ MAT240H5</p>",
+    "prerequisite": "MAT221H1/ MAT223H1/ MAT223H5/ MATA22H3/ MATA23H3/ MAT240H1/ MAT240H5",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -702,28 +704,28 @@
           }
         ]
       },
-      "TUT-5201": {
+      "TUT-0101": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "18:00",
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "SU",
-            "assignedRoom2": "SU"
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
           }
         },
         "instructors": {},
-        "meetingId": "TUT5201",
+        "meetingId": "TUT0101",
         "teachingMethod": "TUT",
-        "sectionNumber": "5201",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "49",
-        "actualEnrolment": "20",
+        "actualEnrolment": "48",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -812,28 +814,28 @@
           }
         ]
       },
-      "TUT-0101": {
+      "TUT-5201": {
         "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "18:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
+            "assignedRoom1": "SU",
+            "assignedRoom2": "SU"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0101",
+        "meetingId": "TUT5201",
         "teachingMethod": "TUT",
-        "sectionNumber": "0101",
+        "sectionNumber": "5201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "49",
-        "actualEnrolment": "48",
+        "actualEnrolment": "20",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -874,12 +876,13 @@
     "courseTitle": "Mathematics and Law",
     "code": "APM306Y1",
     "courseDescription": "This course examines the relationship between legal reasoning and mathematical logic; provides a mathematical perspective on the legal treatment of interest and actuarial present value; critiques ethical issues; analyzes how search engine techniques on massive databases transform legal research and considers the impact of statistical analysis and game theory on litigation strategies. NOTE This course counts as 0.5 credit in BR=3 and 0.5 credit in BR=5. This course will only contribute 0.5 credit to the Math Minor program.",
-    "prerequisite": "<p>MAT133Y1/ MAT135H1/ MAT135H5/ MAT136H1/ MAT136H5/ MAT137Y1/ MAT137Y5/ (MAT137H5, MAT139H5)/ MAT157Y1/ MAT157Y5/ (MAT157H5, MAT159H5), MAT221H1/ MAT223H1/ MAT240H1</p>",
+    "prerequisite": "MAT133Y1/ MAT135H1/ MAT135H5/ MAT136H1/ MAT136H5/ MAT137Y1/ MAT137Y5/ (MAT137H5, MAT139H5)/ MAT157Y1/ MAT157Y5/ (MAT157H5, MAT159H5), MAT221H1/ MAT223H1/ MAT240H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5), Society and its Institutions (3)",
     "distributionCategories": "Science",
@@ -1143,230 +1146,11 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SK",
-            "assignedRoom2": "SK"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "45",
-        "actualEnrolment": "44",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-5101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SK",
-            "assignedRoom2": "SK"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT5101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "5101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "45",
-        "actualEnrolment": "40",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0301": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "FE",
-            "assignedRoom2": "FE"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0301",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0301",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "45",
-        "actualEnrolment": "42",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0201": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "OI",
-            "assignedRoom2": "OI"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0201",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "40",
-        "actualEnrolment": "38",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -1516,100 +1300,28 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "APM346H1-S-20261": {
-    "courseId": "67f998c7de40c67f1da3346b",
-    "courseTitle": "Partial Differential Equations",
-    "code": "APM346H1",
-    "courseDescription": "Sturm-Liouville problems, Green's functions, special functions (Bessel, Legendre), partial differential equations of second order, separation of variables, integral equations, Fourier transform, stationary phase method.",
-    "prerequisite": "MAT235Y1/ MAT235Y5/ (MAT232H5, MAT236H5)/ (MATB41H3, MATB42H3)/ MAT237Y1/ MAT237Y5/ MAT257Y1, (MAT244H1/ MATB44H3/ MAT244H5/ MAT267H1)",
-    "corequisite": "",
-    "exclusion": "MAT351Y1",
-    "recommendedPreparation": "",
-    "section": "S",
-    "session": "20261",
-    "deliveryInstructions": null,
-    "breadthCategories": "The Physical and Mathematical Universes (5)",
-    "distributionCategories": "Science",
-    "meetings": {
-      "TUT-0501": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0501",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0501",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "38",
-        "actualEnrolment": "2",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>November 13, 2025: Delivery time changed</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       },
-      "TUT-0401": {
+      "TUT-0201": {
         "schedule": {
           "TH-0": {
             "meetingDay": "TH",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "16:00",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
+            "assignedRoom1": "OI",
+            "assignedRoom2": "OI"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0401",
+        "meetingId": "TUT0201",
         "teachingMethod": "TUT",
-        "sectionNumber": "0401",
+        "sectionNumber": "0201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "38",
+        "enrollmentCapacity": "40",
         "actualEnrolment": "38",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
@@ -1644,43 +1356,226 @@
           }
         ]
       },
-      "LEC-0101": {
+      "TUT-0301": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "FE",
+            "assignedRoom2": "FE"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0301",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0301",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "45",
+        "actualEnrolment": "42",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-5101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SK",
+            "assignedRoom2": "SK"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT5101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "5101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "45",
+        "actualEnrolment": "40",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SK",
+            "assignedRoom2": "SK"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "45",
+        "actualEnrolment": "44",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      }
+    }
+  },
+  "APM346H1-S-20261": {
+    "courseId": "67f998c7de40c67f1da3346b",
+    "courseTitle": "Partial Differential Equations",
+    "code": "APM346H1",
+    "courseDescription": "Sturm-Liouville problems, Green's functions, special functions (Bessel, Legendre), partial differential equations of second order, separation of variables, integral equations, Fourier transform, stationary phase method.",
+    "prerequisite": "MAT235Y1/ MAT235Y5/ (MAT232H5, MAT236H5)/ (MATB41H3, MATB42H3)/ MAT237Y1/ MAT237Y5/ MAT257Y1, (MAT244H1/ MATB44H3/ MAT244H5/ MAT267H1)",
+    "corequisite": "",
+    "exclusion": "MAT351Y1",
+    "recommendedPreparation": "",
+    "section": "S",
+    "session": "20261",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "The Physical and Mathematical Universes (5)",
+    "distributionCategories": "Science",
+    "meetings": {
+      "LEC-5101": {
         "schedule": {
           "MO-0": {
             "meetingDay": "MO",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "19:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
           },
           "TH-1": {
             "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "18:00",
             "meetingScheduleId": "1",
-            "assignedRoom1": "KP",
-            "assignedRoom2": "KP"
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
           }
         },
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Victor",
-            "lastName": "Ivrii"
+            "firstName": "Yulun",
+            "lastName": "Xu"
           }
         },
-        "meetingId": "LEC0101",
+        "meetingId": "LEC5101",
         "teachingMethod": "LEC",
-        "sectionNumber": "0101",
+        "sectionNumber": "5101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "160",
-        "actualEnrolment": "160",
-        "actualWaitlist": "14",
+        "enrollmentCapacity": "182",
+        "actualEnrolment": "182",
+        "actualWaitlist": "2",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
         "enrollmentControls": [
@@ -1767,36 +1662,50 @@
           }
         ]
       },
-      "TUT-0402": {
+      "LEC-0101": {
         "schedule": {
           "TH-0": {
             "meetingDay": "TH",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "16:00",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "EM",
-            "assignedRoom2": "EM"
+            "assignedRoom1": "KP",
+            "assignedRoom2": "KP"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
           }
         },
-        "instructors": {},
-        "meetingId": "TUT0402",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0402",
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Victor",
+            "lastName": "Ivrii"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
-        "waitlist": "N",
+        "waitlist": "Y",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "38",
-        "actualEnrolment": "38",
-        "actualWaitlist": "0",
+        "enrollmentCapacity": "160",
+        "actualEnrolment": "160",
+        "actualWaitlist": "14",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
         "enrollmentControls": [
           {
             "postId": "1",
-            "postCode": "*",
-            "postName": "All",
+            "postCode": "",
+            "postName": "",
             "subjectId": "1",
             "subjectCode": "*",
             "subjectName": "All",
@@ -1808,8 +1717,8 @@
             "typeOfProgramCode": "*",
             "typeOfProgramName": "All",
             "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
+            "primaryOrgCode": "ARTSC",
+            "primaryOrgName": "Faculty of Arts and Science",
             "secondaryOrgId": "1",
             "secondaryOrgCode": "*",
             "secondaryOrgName": "All",
@@ -1819,37 +1728,36 @@
             "adminOrgId": "1",
             "adminOrgCode": "*",
             "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0201": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "OI",
-            "assignedRoom2": "OI"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0201",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "38",
-        "actualEnrolment": "37",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
+          },
           {
-            "postId": "1",
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARCLA",
+            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "5",
             "postCode": "*",
             "postName": "All",
             "subjectId": "1",
@@ -2042,50 +1950,91 @@
           }
         ]
       },
-      "LEC-5101": {
+      "TUT-0501": {
         "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          },
-          "TH-1": {
+          "TH-0": {
             "meetingDay": "TH",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
           }
         },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Yulun",
-            "lastName": "Xu"
-          }
-        },
-        "meetingId": "LEC5101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "5101",
+        "instructors": {},
+        "meetingId": "TUT0501",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0501",
         "subtitle": "",
         "cancel": "",
-        "waitlist": "Y",
+        "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "182",
-        "actualEnrolment": "182",
-        "actualWaitlist": "2",
+        "enrollmentCapacity": "38",
+        "actualEnrolment": "2",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>November 13, 2025: Delivery time changed</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0402": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EM",
+            "assignedRoom2": "EM"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0402",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0402",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "38",
+        "actualEnrolment": "38",
+        "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
         "enrollmentControls": [
           {
             "postId": "1",
-            "postCode": "",
-            "postName": "",
+            "postCode": "*",
+            "postName": "All",
             "subjectId": "1",
             "subjectCode": "*",
             "subjectName": "All",
@@ -2097,8 +2046,8 @@
             "typeOfProgramCode": "*",
             "typeOfProgramName": "All",
             "primaryOrgId": "1",
-            "primaryOrgCode": "ARTSC",
-            "primaryOrgName": "Faculty of Arts and Science",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
             "secondaryOrgId": "1",
             "secondaryOrgCode": "*",
             "secondaryOrgName": "All",
@@ -2108,36 +2057,37 @@
             "adminOrgId": "1",
             "adminOrgCode": "*",
             "adminOrgName": "All"
-          },
+          }
+        ]
+      },
+      "TUT-0201": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "OI",
+            "assignedRoom2": "OI"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0201",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "38",
+        "actualEnrolment": "37",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
           {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARCLA",
-            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "5",
+            "postId": "1",
             "postCode": "*",
             "postName": "All",
             "subjectId": "1",
@@ -2274,6 +2224,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0401": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0401",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0401",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "38",
+        "actualEnrolment": "38",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -2282,16 +2287,72 @@
     "courseTitle": "Mathematical Modelling",
     "code": "APM348H1",
     "courseDescription": "An overview of mathematical modelling. A variety of approaches for representing physical situations mathematically followed by analytical techniques and numerical simulations to gain insight. Questions from biology, economics, engineering, medicine, physics, physiology, and the social sciences formulated as problems in optimization, differential equations, and probability. Precise content varies with instructor.",
-    "prerequisite": "<p>MAT244H1/ MAT267H1, MAT224H1/MAT247H1, STA237H1/ STA247H1/ STA257H1/ MAT370H1/ MAT377H1</p>",
+    "prerequisite": "MAT244H1/ MAT267H1, MAT224H1/MAT247H1, STA237H1/ STA247H1/ STA257H1/ MAT370H1/ MAT377H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
+      "PRA-0101": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MY",
+            "assignedRoom2": "MY"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "35",
+        "actualEnrolment": "31",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -2414,61 +2475,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MY",
-            "assignedRoom2": "MY"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "35",
-        "actualEnrolment": "31",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -2477,12 +2483,13 @@
     "courseTitle": "Mathematical Foundations of Quantum Mechanics and Quantum Information Theory",
     "code": "APM421H1",
     "courseDescription": "Key concepts and mathematical structure of Quantum Mechanics, with applications to topics of current interest such as quantum information theory. The core part of the course covers the following topics: Schroedinger equation, quantum observables, spectrum and evolution, motion in electro-magnetic field, angular momentum and O(3) and SU(2) groups, spin and statistics, semi-classical asymptotics, perturbation theory. More advanced topics may include: adiabatic theory and geometrical phases, Hartree-Fock theory, Bose-Einstein condensation, the second quantization, density matrix and quantum statistics, open systems and Lindblad evolution, quantum entropy, quantum channels, quantum Shannon theorems. Joint undergraduate/graduate course - APM421H1/MAT1723H",
-    "prerequisite": "<p>(MAT224H1/MAT247H1, MAT337H1)/ MAT357H1</p>",
+    "prerequisite": "(MAT224H1/MAT247H1, MAT337H1)/ MAT357H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -2650,27 +2657,28 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          },
-          "TU-1": {
+          "TU-0": {
             "meetingDay": "TU",
             "meetingStartTime": "13:00",
             "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "ES",
             "assignedRoom2": "ES"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
           }
         },
         "instructors": {
@@ -2790,6 +2798,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -2978,12 +2987,13 @@
     "courseTitle": "Combinatorial Methods",
     "code": "APM461H1",
     "courseDescription": "A selection of topics from such areas as graph theory, combinatorial algorithms, enumeration, construction of combinatorial identities. Joint undergraduate/graduate course - APM461H1/MAT1302H",
-    "prerequisite": "<p>MAT224H1/ MAT247H1, MAT137Y1/ MAT137Y5/ (MAT137H5, MAT139H5)/ MAT157Y1/ MAT157Y5/ (MAT157H5, MAT159H5), MAT301H1/ MAT347Y1</p>",
+    "prerequisite": "MAT224H1/ MAT247H1, MAT137Y1/ MAT137Y5/ (MAT137H5, MAT139H5)/ MAT157Y1/ MAT157Y5/ (MAT157H5, MAT159H5), MAT301H1/ MAT347Y1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "MAT344H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -3137,16 +3147,167 @@
     "courseTitle": "Nonlinear Optimization",
     "code": "APM462H1",
     "courseDescription": "An introduction to first and second order conditions for finite and infinite dimensional optimization problems with mention of available software. Topics include Lagrange multipliers, Kuhn-Tucker conditions, convexity and calculus of variations. Basic numerical search methods and software packages which implement them will be discussed.",
-    "prerequisite": "<p>(MAT223H1,MAT224H1)/ MAT247H1, MAT235Y1/ MAT237Y1/ MAT257Y1</p>",
+    "prerequisite": "(MAT223H1,MAT224H1)/ MAT247H1, MAT235Y1/ MAT237Y1/ MAT257Y1",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>MAT336H1/ MAT337H1</p>",
+    "recommendedPreparation": "MAT336H1/ MAT337H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
+      "LEC-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "KP",
+            "assignedRoom2": "KP"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Jonathan",
+            "lastName": "Korman"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "104",
+        "actualEnrolment": "99",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>June 9, 2025: Delivery time changed</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARTSC",
+            "primaryOrgName": "Faculty of Arts and Science",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARCLA",
+            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "3",
+            "postCode": "AS   NDEGI",
+            "postName": "Non-Degree: Incoming Exchange",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "6",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0102": {
         "schedule": {
           "TU-0": {
@@ -3296,156 +3457,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "LEC-0101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          },
-          "TU-1": {
-            "meetingDay": "TU",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "KP",
-            "assignedRoom2": "KP"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Jonathan",
-            "lastName": "Korman"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "104",
-        "actualEnrolment": "99",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>June 9, 2025: Delivery time changed</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARTSC",
-            "primaryOrgName": "Faculty of Arts and Science",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARCLA",
-            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "3",
-            "postCode": "AS   NDEGI",
-            "postName": "Non-Degree: Incoming Exchange",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "6",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -3454,33 +3465,34 @@
     "courseTitle": "Nonlinear Optimization",
     "code": "APM462H1",
     "courseDescription": "An introduction to first and second order conditions for finite and infinite dimensional optimization problems with mention of available software. Topics include Lagrange multipliers, Kuhn-Tucker conditions, convexity and calculus of variations. Basic numerical search methods and software packages which implement them will be discussed.",
-    "prerequisite": "<p>(MAT223H1,MAT224H1)/ MAT247H1, MAT235Y1/ MAT237Y1/ MAT257Y1</p>",
+    "prerequisite": "(MAT223H1,MAT224H1)/ MAT247H1, MAT235Y1/ MAT237Y1/ MAT257Y1",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>MAT336H1/ MAT337H1</p>",
+    "recommendedPreparation": "MAT336H1/ MAT337H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          },
-          "WE-1": {
+          "WE-0": {
             "meetingDay": "WE",
             "meetingStartTime": "09:00",
             "meetingEndTime": "10:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "HS",
             "assignedRoom2": "HS"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
           }
         },
         "instructors": {
@@ -3600,10 +3612,72 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
+      "LEC-2001": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "VC",
+            "assignedRoom2": "VC"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Luis",
+            "lastName": "Seco"
+          }
+        },
+        "meetingId": "LEC2001",
+        "teachingMethod": "LEC",
+        "sectionNumber": "2001",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "16",
+        "actualEnrolment": "5",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "R1",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "APSC",
+            "primaryOrgName": "Faculty of Applied Science & Engineering",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -3745,67 +3819,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "LEC-2001": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "VC",
-            "assignedRoom2": "VC"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Luis",
-            "lastName": "Seco"
-          }
-        },
-        "meetingId": "LEC2001",
-        "teachingMethod": "LEC",
-        "sectionNumber": "2001",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "16",
-        "actualEnrolment": "5",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "APSC",
-            "primaryOrgName": "Faculty of Applied Science & Engineering",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -3820,6 +3833,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -3892,6 +3906,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",

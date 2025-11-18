@@ -6,10 +6,11 @@
     "courseDescription": "Survey of digital music technology, covering engraving, MIDI, sound and digital audio, sequencing, synthesis, recording and sampling, signal processing, and mixing and mastering. Throughout this course will be an overview of the supporting hardware and software ecosystem, and an emphasis on listening and analyzing a diverse cross-section of electronic music. Coursework is practical, with a focus on creative and proficient use of a digital audio workstation, culminating in a final project.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<p>TMU111H1</p>",
+    "exclusion": "TMU111H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -136,31 +137,24 @@
     "courseTitle": "Introduction to Music Recording",
     "code": "DMU313H1",
     "courseDescription": "Recording music has become an essential part of a musician’s career. With technological advancements and the ability to reach people worldwide, music has never been more accessible. Through lectures and hands-on tutorials, this course will introduce the student to the basic theory and practical skills required to record music.",
-    "prerequisite": "<p>Year 3</p>",
+    "prerequisite": "Year 3",
     "corequisite": "",
-    "exclusion": "<p>TMU313H1</p>",
+    "exclusion": "TMU313H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "TUT-0101": {
+      "LEC-0101": {
         "schedule": {
           "TU-0": {
             "meetingDay": "TU",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "13:00",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "10:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TU-1": {
-            "meetingDay": "TU",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "1",
             "assignedRoom1": "EJ",
             "assignedRoom2": "EJ"
           }
@@ -172,18 +166,18 @@
             "lastName": "Martin"
           }
         },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
         "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "18",
-        "actualEnrolment": "11",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "20",
         "actualWaitlist": "0",
-        "enrollmentIndicator": "",
+        "enrollmentIndicator": "R",
         "meetingStatusNotes": null,
         "enrollmentControls": [
           {
@@ -392,13 +386,21 @@
           }
         ]
       },
-      "LEC-0101": {
+      "TUT-0101": {
         "schedule": {
           "TU-0": {
             "meetingDay": "TU",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TU-1": {
+            "meetingDay": "TU",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "1",
             "assignedRoom1": "EJ",
             "assignedRoom2": "EJ"
           }
@@ -410,18 +412,18 @@
             "lastName": "Martin"
           }
         },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
         "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "20",
+        "enrollmentCapacity": "18",
+        "actualEnrolment": "11",
         "actualWaitlist": "0",
-        "enrollmentIndicator": "R",
+        "enrollmentIndicator": "",
         "meetingStatusNotes": null,
         "enrollmentControls": [
           {
@@ -514,12 +516,13 @@
     "courseTitle": "MAX/MSP",
     "code": "DMU406H1",
     "courseDescription": "Max is a visual programming language for music and media with an emphasis on interactivity. This course will cover the Max language and environment, MIDI, external and programmatic control, sequencing, synthesis, sampling, spatialization, signal processing, granulation, and analysis. Coursework is practical, with a focus on designing and implementing software for live performance, culminating in a final project. Previous computer programming experience is not required.",
-    "prerequisite": "<p><a href=\"https://music.calendar.utoronto.ca/course/TMU231H1\">TMU231H1</a>, <a href=\"https://music.calendar.utoronto.ca/course/TMU232H1\">TMU232H1</a></p>",
+    "prerequisite": "TMU231H1, TMU232H1",
     "corequisite": "",
-    "exclusion": "<p>TMU406H1</p>",
+    "exclusion": "TMU406H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -619,12 +622,13 @@
     "courseTitle": "Interactive Music & Sound - Video Games I",
     "code": "DMU411H1",
     "courseDescription": "Working in music and sound for video games means not only composing music or designing sounds but building and maintaining complex interactive systems that take players' input and translate it into sonic feedback. This course provides students with the opportunity to create their own interactive music and sound systems for video games, acquiring the relevant technical skills and the experience of team-based video game development.",
-    "prerequisite": "<p><a href=\"https://music.calendar.utoronto.ca/course/TMU111H1\">DMU111H1</a> and Year 3 or P.I.</p>",
+    "prerequisite": "DMU111H1 and Year 3 or P.I.",
     "corequisite": "",
-    "exclusion": "<p>TMU411H1</p>",
+    "exclusion": "TMU411H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -994,12 +998,13 @@
     "courseTitle": "Interactive Music & Sound - Video Games II",
     "code": "DMU412H1",
     "courseDescription": "Students expand on their knowledge of game audio implementation by using RTPCs to create real-time dynamic and modular sound design and music systems using middleware software such as FMOD and Wwise. Students work on a cross-discipline video game development project in collaboration with students specializing in computer science and animation/design.",
-    "prerequisite": "<p>DMU411H1 or P.I.</p>",
+    "prerequisite": "DMU411H1 or P.I.",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",

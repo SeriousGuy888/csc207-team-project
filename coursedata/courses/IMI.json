@@ -4,16 +4,78 @@
     "courseTitle": "Fundamentals of Marketing",
     "code": "IMI201H5",
     "courseDescription": "An introduction to the fundamentals of market definition, consumer behaviour, and the principal marketing functions: product line development, pricing, distribution, promotion, salesforce management, advertising, research, and planning.",
-    "prerequisite": "<p>ECO101H5 or ECO105Y1</p>",
+    "prerequisite": "ECO101H5 or ECO105Y1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Social Science",
     "meetings": {
+      "LEC-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Hadi",
+            "lastName": "Ahmad"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "50",
+        "actualEnrolment": "39",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "R",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0102": {
         "schedule": {
           "TH-0": {
@@ -74,67 +136,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "LEC-0101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Hadi",
-            "lastName": "Ahmad"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "50",
-        "actualEnrolment": "39",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "R",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -143,77 +144,17 @@
     "courseTitle": "Principles of Human Resource Management",
     "code": "IMI202H5",
     "courseDescription": "Human Resource Management involves everything related to the employer-employee relationship and is about supporting and managing the organisation’s people and associated processes.",
-    "prerequisite": "<p>ECO101H5 or ECO105Y1</p>",
+    "prerequisite": "ECO101H5 or ECO105Y1",
     "corequisite": "",
-    "exclusion": "<p>MGT260H5</p>",
+    "exclusion": "MGT260H5",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Social Science",
     "meetings": {
-      "LEC-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Phanikiran",
-            "lastName": "Radhakrishnan"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "50",
-        "actualEnrolment": "39",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "R",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0102": {
         "schedule": {
           "MO-0": {
@@ -241,7 +182,68 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "50",
-        "actualEnrolment": "31",
+        "actualEnrolment": "30",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "R",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Phanikiran",
+            "lastName": "Radhakrishnan"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "50",
+        "actualEnrolment": "39",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R",
         "meetingStatusNotes": null,
@@ -282,77 +284,17 @@
     "courseTitle": "Essentials of Accounting: Financial & Managerial",
     "code": "IMI203H5",
     "courseDescription": "Financial accounting revolves around the preparation and understanding of financial statements, including income statements, and balance sheets which help management and other stakeholders understand the state of affairs within an organization. Managerial accounting provides management with information, analysis and reports that support management's decision making.",
-    "prerequisite": "<p>ECO101H5 or ECO105Y1</p>",
+    "prerequisite": "ECO101H5 or ECO105Y1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Social Science",
     "meetings": {
-      "LEC-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Michael",
-            "lastName": "Marin"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "50",
-        "actualEnrolment": "40",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "R",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0102": {
         "schedule": {
           "TU-0": {
@@ -414,36 +356,42 @@
           }
         ]
       },
-      "TUT-9998": {
+      "LEC-0101": {
         "schedule": {
-          "-": {
-            "meetingDay": null,
-            "meetingStartTime": null,
-            "meetingEndTime": null,
-            "meetingScheduleId": null,
-            "assignedRoom1": null,
-            "assignedRoom2": null
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
           }
         },
-        "instructors": {},
-        "meetingId": "TUT9998",
-        "teachingMethod": "TUT",
-        "sectionNumber": "9998",
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Michael",
+            "lastName": "Marin"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "ASYNC",
-        "online": "Online",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
         "enrollmentCapacity": "50",
-        "actualEnrolment": "48",
+        "actualEnrolment": "40",
         "actualWaitlist": "0",
-        "enrollmentIndicator": "",
+        "enrollmentIndicator": "R",
         "meetingStatusNotes": null,
         "enrollmentControls": [
           {
             "postId": "1",
-            "postCode": "*",
-            "postName": "All",
+            "postCode": "",
+            "postName": "",
             "subjectId": "1",
             "subjectCode": "*",
             "subjectName": "All",
@@ -523,6 +471,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-9998": {
+        "schedule": {
+          "-": {
+            "meetingDay": null,
+            "meetingStartTime": null,
+            "meetingEndTime": null,
+            "meetingScheduleId": null,
+            "assignedRoom1": null,
+            "assignedRoom2": null
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT9998",
+        "teachingMethod": "TUT",
+        "sectionNumber": "9998",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "ASYNC",
+        "online": "Online",
+        "enrollmentCapacity": "50",
+        "actualEnrolment": "48",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -531,12 +534,13 @@
     "courseTitle": "Essentials of Finance",
     "code": "IMI301H5",
     "courseDescription": "The two main fields of finance are investments and the financing of corporations. In the investments segment, students first learn how individual investors decide on their investments based on the time value of money and risk and return trade-offs. In the corporate finance segment students will build on the insights from the investments segment to understand the financing of firms within the context of capital markets.",
-    "prerequisite": "<p>ECO101H5 or ECO105Y1</p>",
+    "prerequisite": "ECO101H5 or ECO105Y1",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>IMI203H5</p>",
+    "recommendedPreparation": "IMI203H5",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Social Science",
@@ -780,12 +784,13 @@
     "courseTitle": "Managing Projects, Operations & Preparing a Business Plan",
     "code": "IMI302H5",
     "courseDescription": "Every business needs to formulate the strategies by which it will compete successfully in the market place, and plan for the implementation of these strategies, which may include joint ventures, strategic alliances, etc. This requires operational capabilities, the preparation of business plans and project management skills.",
-    "prerequisite": "<p>IMI201H5 and IMI202H5 and IMI203H5 and IMI301H5 and IMI303H5</p>",
+    "prerequisite": "IMI201H5 and IMI202H5 and IMI203H5 and IMI301H5 and IMI303H5",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Social Science",
@@ -913,12 +918,13 @@
     "courseTitle": "Technology Strategy",
     "code": "IMI303H5",
     "courseDescription": "Businesses typically want to grow and compete. Science oriented businesses rely on innovation, protected by intellectual property rights and patents, to gain and sustain competitive advantage. Entrepreneurial science-based start-up ventures especially need a strong intellectual foundation, and they need to raise capital.",
-    "prerequisite": "<p>ECO101H5 or ECO105Y1</p>",
+    "prerequisite": "ECO101H5 or ECO105Y1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Social Science",
@@ -991,12 +997,13 @@
     "courseTitle": "Technology Strategy",
     "code": "IMI303H5",
     "courseDescription": "Businesses typically want to grow and compete. Science oriented businesses rely on innovation, protected by intellectual property rights and patents, to gain and sustain competitive advantage. Entrepreneurial science-based start-up ventures especially need a strong intellectual foundation, and they need to raise capital.",
-    "prerequisite": "<p>ECO101H5 or ECO105Y1</p>",
+    "prerequisite": "ECO101H5 or ECO105Y1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Social Science",
@@ -1028,7 +1035,7 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "50",
-        "actualEnrolment": "40",
+        "actualEnrolment": "39",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R",
         "meetingStatusNotes": null,
@@ -1075,6 +1082,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1147,12 +1155,13 @@
     "courseTitle": "Innovation and Entrepreneurship",
     "code": "IMI400H5",
     "courseDescription": "Students in this course will analyze business cases, read academic studies, and interact with guest lecturers to gain familiarity with the major challenges that entrepreneurs encounter in successfully bringing innovations to market. Topics to be addressed include market and industry analysis, managing value chains, competing and positioning in the marketplace, negotiating for and obtaining financial resources, defining a business model, writing a business plan, and growth and exit strategies. In addition to more \"traditional\" lectures, there will be a number of guest lectures, especially in the second half of the course, provided from practitioners in different areas of interest, including current entrepreneurs, technologists, early-stage investors, and IP lawyers.",
-    "prerequisite": "<p>IMI201H5 and IMI202H5 and IMI203H5 and IMI301H5 and IMI303H5</p>",
+    "prerequisite": "IMI201H5 and IMI202H5 and IMI203H5 and IMI301H5 and IMI303H5",
     "corequisite": "",
     "exclusion": "MGT494H5",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Social Science",
@@ -1225,12 +1234,13 @@
     "courseTitle": "Innovation and Entrepreneurship",
     "code": "IMI400H5",
     "courseDescription": "Students in this course will analyze business cases, read academic studies, and interact with guest lecturers to gain familiarity with the major challenges that entrepreneurs encounter in successfully bringing innovations to market. Topics to be addressed include market and industry analysis, managing value chains, competing and positioning in the marketplace, negotiating for and obtaining financial resources, defining a business model, writing a business plan, and growth and exit strategies. In addition to more \"traditional\" lectures, there will be a number of guest lectures, especially in the second half of the course, provided from practitioners in different areas of interest, including current entrepreneurs, technologists, early-stage investors, and IP lawyers.",
-    "prerequisite": "<p>IMI201H5 and IMI202H5 and IMI203H5 and IMI301H5 and IMI303H5</p>",
+    "prerequisite": "IMI201H5 and IMI202H5 and IMI203H5 and IMI301H5 and IMI303H5",
     "corequisite": "",
     "exclusion": "MGT494H5",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Social Science",

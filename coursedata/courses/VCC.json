@@ -10,25 +10,81 @@
     "recommendedPreparation": "CCT109H5 or (FAH101H5 or FAH202H5)",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
     "meetings": {
-      "TUT-0112": {
+      "TUT-0102": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "16:00",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
+            "assignedRoom1": "DH",
+            "assignedRoom2": "DH"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0112",
+        "meetingId": "TUT0102",
         "teachingMethod": "TUT",
-        "sectionNumber": "0112",
+        "sectionNumber": "0102",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "25",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0108": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DH",
+            "assignedRoom2": "DH"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0108",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0108",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -234,226 +290,6 @@
           }
         ]
       },
-      "TUT-0106": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0106",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0106",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "25",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0118": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0118",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0118",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "23",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0103": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DH",
-            "assignedRoom2": "DH"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0103",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0103",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "25",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0102": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DH",
-            "assignedRoom2": "DH"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0102",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "25",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "FR-0": {
@@ -597,21 +433,21 @@
           }
         ]
       },
-      "TUT-0101": {
+      "TUT-0103": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
             "meetingStartTime": "13:00",
             "meetingEndTime": "14:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
+            "assignedRoom1": "DH",
+            "assignedRoom2": "DH"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0101",
+        "meetingId": "TUT0103",
         "teachingMethod": "TUT",
-        "sectionNumber": "0101",
+        "sectionNumber": "0103",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -652,21 +488,21 @@
           }
         ]
       },
-      "TUT-0114": {
+      "TUT-0110": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "16:00",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0114",
+        "meetingId": "TUT0110",
         "teachingMethod": "TUT",
-        "sectionNumber": "0114",
+        "sectionNumber": "0110",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -674,6 +510,61 @@
         "online": "In Person",
         "enrollmentCapacity": "25",
         "actualEnrolment": "25",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0120": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0120",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0120",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -817,6 +708,116 @@
           }
         ]
       },
+      "TUT-0106": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0106",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0106",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "25",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0118": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0118",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0118",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "23",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "TUT-0116": {
         "schedule": {
           "FR-0": {
@@ -872,21 +873,21 @@
           }
         ]
       },
-      "TUT-0108": {
+      "TUT-0101": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "DH",
-            "assignedRoom2": "DH"
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0108",
+        "meetingId": "TUT0101",
         "teachingMethod": "TUT",
-        "sectionNumber": "0108",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -1092,21 +1093,21 @@
           }
         ]
       },
-      "TUT-0110": {
+      "TUT-0112": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "16:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "IB",
             "assignedRoom2": "IB"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0110",
+        "meetingId": "TUT0112",
         "teachingMethod": "TUT",
-        "sectionNumber": "0110",
+        "sectionNumber": "0112",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -1147,28 +1148,28 @@
           }
         ]
       },
-      "TUT-0120": {
+      "TUT-0114": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "16:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0120",
+        "meetingId": "TUT0114",
         "teachingMethod": "TUT",
-        "sectionNumber": "0120",
+        "sectionNumber": "0114",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "25",
-        "actualEnrolment": "0",
+        "actualEnrolment": "25",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1215,65 +1216,11 @@
     "recommendedPreparation": "VCC101H5 or VCC201H5",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
     "meetings": {
-      "TUT-0102": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0102",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "28",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "FR-0": {
@@ -1416,30 +1363,13 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "VCC290H5-F-20259": {
-    "courseId": "6830bf33729a4e534ee936fb",
-    "courseTitle": "Topics in Visual Culture and Communication",
-    "code": "VCC290H5",
-    "courseDescription": "An examination of a topic in Visual Culture. Topics vary from year to year; the content in any given year depends on the instructor. This will be a lecture course. [24L, 12T]",
-    "prerequisite": "",
-    "corequisite": "",
-    "exclusion": "",
-    "recommendedPreparation": "VCC101H5 or VCC201H5",
-    "section": "F",
-    "session": "20259",
-    "deliveryInstructions": null,
-    "breadthCategories": "",
-    "distributionCategories": "Humanities",
-    "meetings": {
+      },
       "TUT-0102": {
         "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "19:00",
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "MN",
             "assignedRoom2": "MN"
@@ -1455,7 +1385,7 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "30",
-        "actualEnrolment": "29",
+        "actualEnrolment": "28",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1488,7 +1418,25 @@
             "adminOrgName": "All"
           }
         ]
-      },
+      }
+    }
+  },
+  "VCC290H5-F-20259": {
+    "courseId": "6830bf33729a4e534ee936fb",
+    "courseTitle": "Topics in Visual Culture and Communication",
+    "code": "VCC290H5",
+    "courseDescription": "An examination of a topic in Visual Culture. Topics vary from year to year; the content in any given year depends on the instructor. This will be a lecture course. [24L, 12T]",
+    "prerequisite": "",
+    "corequisite": "",
+    "exclusion": "",
+    "recommendedPreparation": "VCC101H5 or VCC201H5",
+    "section": "F",
+    "session": "20259",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "",
+    "distributionCategories": "Humanities",
+    "meetings": {
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -1631,6 +1579,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0102": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0102",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0102",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "29",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -1645,6 +1648,7 @@
     "recommendedPreparation": "VCC101H5 or VCC201H5",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -1737,61 +1741,6 @@
           }
         ]
       },
-      "TUT-0102": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "20:00",
-            "meetingEndTime": "21:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0102",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "20",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "TUT-0101": {
         "schedule": {
           "WE-0": {
@@ -1846,6 +1795,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0102": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "20:00",
+            "meetingEndTime": "21:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0102",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0102",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "20",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -1860,6 +1864,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -2154,6 +2159,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -2259,65 +2265,11 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
     "meetings": {
-      "PRA-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "21:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "CC",
-            "assignedRoom2": "CC"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "50",
-        "actualEnrolment": "13",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -2675,28 +2627,11 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "VCC338H5-F-20259": {
-    "courseId": "6830bf33729a4e534ee936fe",
-    "courseTitle": "Picturing the Suburbs",
-    "code": "VCC338H5",
-    "courseDescription": "This course considers how images of suburbia circulate between two interrelated but often counter-posed realms of visual culture: the popular genres of film, television, and new media entertainment and the iconography of \"high\" art practices such as painting, photography, and avant-garde film. In the process it addresses such fundamental issues as the relation between art and mass production, the aesthetics of private and public space, and the role that visual media play in constructing the socio-political space of the built environment.",
-    "prerequisite": "VCC101H5 or VCC201H5",
-    "corequisite": "",
-    "exclusion": "",
-    "recommendedPreparation": "",
-    "section": "F",
-    "session": "20259",
-    "deliveryInstructions": null,
-    "breadthCategories": "",
-    "distributionCategories": "Humanities",
-    "meetings": {
+      },
       "PRA-0101": {
         "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
+          "WE-0": {
+            "meetingDay": "WE",
             "meetingStartTime": "18:00",
             "meetingEndTime": "21:00",
             "meetingScheduleId": "0",
@@ -2714,7 +2649,7 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "50",
-        "actualEnrolment": "20",
+        "actualEnrolment": "13",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -2747,7 +2682,25 @@
             "adminOrgName": "All"
           }
         ]
-      },
+      }
+    }
+  },
+  "VCC338H5-F-20259": {
+    "courseId": "6830bf33729a4e534ee936fe",
+    "courseTitle": "Picturing the Suburbs",
+    "code": "VCC338H5",
+    "courseDescription": "This course considers how images of suburbia circulate between two interrelated but often counter-posed realms of visual culture: the popular genres of film, television, and new media entertainment and the iconography of \"high\" art practices such as painting, photography, and avant-garde film. In the process it addresses such fundamental issues as the relation between art and mass production, the aesthetics of private and public space, and the role that visual media play in constructing the socio-political space of the built environment.",
+    "prerequisite": "VCC101H5 or VCC201H5",
+    "corequisite": "",
+    "exclusion": "",
+    "recommendedPreparation": "",
+    "section": "F",
+    "session": "20259",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "",
+    "distributionCategories": "Humanities",
+    "meetings": {
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -2835,6 +2788,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "21:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "CC",
+            "assignedRoom2": "CC"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "50",
+        "actualEnrolment": "20",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -2849,6 +2857,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -2954,6 +2963,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -3053,12 +3063,13 @@
     "courseTitle": "Comics and Visual Culture",
     "code": "VCC394H5",
     "courseDescription": "Examines comics and graphic novels and their histories in print and digital media, including production, dissemination, and reception. Develops a foundational understanding of the visual grammar of comics and addresses theories of narrative.",
-    "prerequisite": "<p>VCC101H5</p>",
+    "prerequisite": "VCC101H5",
     "corequisite": "",
-    "exclusion": "<p>CCT336H5</p>",
+    "exclusion": "CCT336H5",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -3212,12 +3223,13 @@
     "courseTitle": "History of Communication Design",
     "code": "VCC397H5",
     "courseDescription": "This course examines the historical development of communication design from the industrial revolution to the present. Focuses on the emergence of design theory in changing economic, technological, and social contexts.",
-    "prerequisite": "<p>VCC101H5</p>",
+    "prerequisite": "VCC101H5",
     "corequisite": "",
-    "exclusion": "<p>CCT352H5</p>",
+    "exclusion": "CCT352H5",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -3377,6 +3389,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -3665,6 +3678,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -3959,6 +3973,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -4064,6 +4079,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",

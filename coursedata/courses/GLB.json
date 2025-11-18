@@ -4,16 +4,80 @@
     "courseTitle": "Global Leadership: Past, Present, Futures",
     "code": "GLB201H5",
     "courseDescription": "The evolution and exercise of leadership is examined in the context of globalization. Terminology, case studies, and practical examples are used to consider questions such as: Why did globalization become a dominant frame? How have narratives of globalization changed over time? How does late 20th century globalization differ from earlier processes of colonization? What are expectations going forward? The assumed scale of globalization and how it manifests differently in various geographies, societies, and contexts is assessed. Students reflect on the uneven experiences of globalization in their own lives, communities, and worlds they observe and pass through. Students challenge ideas of how good leadership is conceived, the dynamics that are assumed (e.g., leaders and followers), and who/what might be left out (e.g., gender, race, class), today and in the future.",
-    "prerequisite": "<p>Completion of 4.0 credits.</p>",
+    "prerequisite": "Completion of 4.0 credits.",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Social Science, Humanities",
     "meetings": {
+      "TUT-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "20:00",
+            "meetingEndTime": "21:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "SYNC",
+        "online": "Online",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "19",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>Note day/time change.</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -75,69 +139,6 @@
           },
           {
             "postId": "3",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "20:00",
-            "meetingEndTime": "21:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "SYNC",
-        "online": "Online",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "19",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>Note day/time change.</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
             "postCode": "*",
             "postName": "All",
             "subjectId": "1",
@@ -227,16 +228,72 @@
     "courseTitle": "Global Leadership: Capstone Project",
     "code": "GLB401Y1",
     "courseDescription": "This culminating capstone course draws students together in a studio course to work on a group project with an external partner organization. Students will work in multidisciplinary teams, mentored by a faculty expert, to draw on content and experiences from their previous coursework and experience. The goal is for students to demonstrate leadership in addressing an issue that is active, real, and seen as having global reach, relevance, or implications. This course will challenge students to draw on their own learning to date, analogize to other fields where relevant, and to collaborate with peers to address complex questions. In addition to submitting a final capstone report, students will present their projects at an annual capstone event. This course will be delivered primarily online through synchronous/asynchronous delivery with specific in-person activities scheduled throughout the course.",
-    "prerequisite": "<p>GLBC01H3</p>",
-    "corequisite": "<p>None</p>",
+    "prerequisite": "GLBC01H3",
+    "corequisite": "None",
     "exclusion": "",
-    "recommendedPreparation": "<p>None</p>",
+    "recommendedPreparation": "None",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
+      "TUT-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ON",
+            "assignedRoom2": "ON"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "SYNC",
+        "online": "Online",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "17",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -405,61 +462,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ON",
-            "assignedRoom2": "ON"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "SYNC",
-        "online": "Online",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "17",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -468,12 +470,13 @@
     "courseTitle": "Global Leadership: Theory, Research and Practice",
     "code": "GLBC01H3",
     "courseDescription": "Whether corporate, not for profit or governmental, modern organizations require leaders who are willing to take on complex challenges and work with a global community. Effective leaders must learn how to consider and recognize diverse motivations, behaviours, and perspectives across teams and networks. Building upon content learned in GLB201H5 and focusing on applications and real-life case studies; this course will provide students with knowledge and skills to become global leaders of the future. Upon completion of this course, students will be able to adapt culturally sensitive communication, motivation and negotiation techniques, preparing them to apply new principled, inclusive, and appreciative approaches to the practice of global leadership. In preparation for GLB401Y1, this course will include group-based activities in which students collaborate on current issues of global importance. An experiential learning component will help develop skills through interactions with guest lecturers and community partners. Community partners will present real-world global leadership problems to the class, which students will work to analyze and solve. At the end of the term, students will meet in person for final group presentations to deliver key solutions to community partners. This course will be delivered primarily online through synchronous/asynchronous delivery, with specific in-person activities scheduled throughout the course.",
-    "prerequisite": "<p>GLB201H5</p>",
+    "prerequisite": "GLB201H5",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>None</p>",
+    "recommendedPreparation": "None",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Social & Behavioural Sciences",
     "distributionCategories": "",

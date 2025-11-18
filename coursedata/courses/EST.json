@@ -10,6 +10,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -150,6 +151,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -290,6 +292,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -430,6 +433,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -570,6 +574,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "",
@@ -702,6 +707,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "",
@@ -834,6 +840,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "",
@@ -960,12 +967,13 @@
     "courseTitle": "Estonian Language through Contemporary Media",
     "code": "EST300H1",
     "courseDescription": "Advanced Estonian language course focusing on media and communication. We will read and discuss the main national news channels - Aktuaalne Kaamera, Eesti Päevaleht, Vikerraadio Uudis +, as well as read the Estonian cultural weekly Sirp and observe the monthly newspaper Müürileht to get a grip of Estonian youth culture. Public speeches by the Estonian President, as well as scholars and scientists will be discussed.",
-    "prerequisite": "<p>EST201H1 or permission of instructor.</p>",
+    "prerequisite": "EST201H1 or permission of instructor.",
     "corequisite": "",
-    "exclusion": "<p>EST300Y1</p>",
+    "exclusion": "EST300Y1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -1098,10 +1106,66 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Social & Behavioural Sciences",
     "distributionCategories": "",
     "meetings": {
+      "TUT-0001": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IA",
+            "assignedRoom2": "IA"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0001",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0001",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "120",
+        "actualEnrolment": "86",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-01": {
         "schedule": {
           "WE-0": {
@@ -1189,29 +1253,47 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "TUT-0001": {
+      }
+    }
+  },
+  "ESTB03H3-F-20259": {
+    "courseId": "6818a9640982ec3a6ff6e211",
+    "courseTitle": "Land",
+    "code": "ESTB03H3",
+    "courseDescription": "In this course students will learn about sustainability thinking, its key concepts, historical development and applications to current environmental challenges. More specifically, students will gain a better understanding of the complexity of values, knowledge, and problem framings that sustainability practice engages with through a focused interdisciplinary study of land. This is a required course for the Certificate in Sustainability, a certificate available to any student at UTSC. Same as VPHB69H3.",
+    "prerequisite": "",
+    "corequisite": "",
+    "exclusion": "VPHB69H3",
+    "recommendedPreparation": "",
+    "section": "F",
+    "session": "20259",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "Social & Behavioural Sciences",
+    "distributionCategories": "",
+    "meetings": {
+      "PRA-0001": {
         "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "15:00",
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "14:00",
             "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "IA",
-            "assignedRoom2": "IA"
+            "assignedRoom1": "EV",
+            "assignedRoom2": "EV"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0001",
-        "teachingMethod": "TUT",
+        "meetingId": "PRA0001",
+        "teachingMethod": "PRA",
         "sectionNumber": "0001",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "120",
-        "actualEnrolment": "86",
+        "enrollmentCapacity": "22",
+        "actualEnrolment": "18",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1244,24 +1326,7 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "ESTB03H3-F-20259": {
-    "courseId": "6818a9640982ec3a6ff6e211",
-    "courseTitle": "Land",
-    "code": "ESTB03H3",
-    "courseDescription": "In this course students will learn about sustainability thinking, its key concepts, historical development and applications to current environmental challenges. More specifically, students will gain a better understanding of the complexity of values, knowledge, and problem framings that sustainability practice engages with through a focused interdisciplinary study of land. This is a required course for the Certificate in Sustainability, a certificate available to any student at UTSC. Same as VPHB69H3.",
-    "prerequisite": "",
-    "corequisite": "",
-    "exclusion": "<p>VPHB69H3</p>",
-    "recommendedPreparation": "",
-    "section": "F",
-    "session": "20259",
-    "deliveryInstructions": null,
-    "breadthCategories": "Social & Behavioural Sciences",
-    "distributionCategories": "",
-    "meetings": {
+      },
       "LEC-01": {
         "schedule": {
           "WE-0": {
@@ -1349,61 +1414,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0001": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EV",
-            "assignedRoom2": "EV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0001",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0001",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "22",
-        "actualEnrolment": "18",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -1412,12 +1422,13 @@
     "courseTitle": "Addressing the Climate Crisis",
     "code": "ESTB04H3",
     "courseDescription": "Addressing the climate crisis is a profound challenge for society. This course explores climate change and what people are doing about it. This course emphasizes the human dimensions of the climate crisis. It introduces students to potential solutions, ethical and justice considerations, climate change policies and politics, and barriers standing in the way of effective action. With an emphasis on potential solutions, students will learn how society can eliminate greenhouse gas emissions through potential climate change mitigation actions and about adaptation actions that can help reduce the impacts of climate change on humans. This course is intended for students from all backgrounds interested in understanding the human dimensions of the climate crisis and developing their ability to explain potential solutions.",
-    "prerequisite": "<p>Any 4.0 credits</p>",
+    "prerequisite": "Any 4.0 credits",
     "corequisite": "",
-    "exclusion": "<p>GGR314H1</p>",
+    "exclusion": "GGR314H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Social & Behavioural Sciences",
     "distributionCategories": "",
@@ -1517,71 +1528,17 @@
     "courseTitle": "Sustainability in Practice",
     "code": "ESTC34H3",
     "courseDescription": "This course is intended for students who would like to apply theoretical principles of environmental sustainability learned in other courses to real world problems. Students will identify a problem of interest related either to campus sustainability, a local NGO, or municipal, provincial, or federal government. Class meetings will consist of group discussions investigating key issues, potential solutions, and logistical matters to be considered for the implementation of proposed solutions. Students who choose campus issues will also have the potential to actually implement their solutions. Grades will be based on participation in class discussions, as well as a final report and presentation. Same as EESC34H3",
-    "prerequisite": "<p>Any 9.5 credits</p>",
+    "prerequisite": "Any 9.5 credits",
     "corequisite": "",
     "exclusion": "EESC34H3",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
     "meetings": {
-      "TUT-0001": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "KW",
-            "assignedRoom2": "KW"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0001",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0001",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "60",
-        "actualEnrolment": "51",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-01": {
         "schedule": {
           "WE-0": {
@@ -1696,6 +1653,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0001": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "KW",
+            "assignedRoom2": "KW"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0001",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0001",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "60",
+        "actualEnrolment": "51",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -1710,6 +1722,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Social & Behavioural Sciences",
     "distributionCategories": "",
@@ -1842,6 +1855,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Social & Behavioural Sciences",
     "distributionCategories": "",
@@ -1968,12 +1982,13 @@
     "courseTitle": "Energy and Sustainability",
     "code": "ESTC37H3",
     "courseDescription": "This course will address energy systems and policy, focusing on opportunities and constraints for sustainable energy transitions. The course introduces energy systems, including how energy is used in society, decarbonization pathways for energy, and the social and political challenges of transitioning to zero carbon and resilient energy systems. Drawing on real-world case studies, students will learn about energy sources, end uses, technologies, institutions, politics, policy tools and the social and ecological impacts of energy. Students will learn integrated and interdisciplinary approaches to energy systems analysis and gain skills in imagining and planning sustainable energy futures.",
-    "prerequisite": "<p>10.0 credits including ESTB04H3 </p>",
+    "prerequisite": "10.0 credits including ESTB04H3",
     "corequisite": "",
-    "exclusion": "<p>ENV350H1</p>",
+    "exclusion": "ENV350H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Social & Behavioural Sciences",
     "distributionCategories": "",
@@ -2106,6 +2121,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
@@ -2300,6 +2316,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
@@ -2514,6 +2531,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Enrolment Indicator: RP Initially restricted to students in the following groups: Year 3 - SCMAJ2735 - Major Program in Environmental Studies Year 4 - SCMAJ2735 - Major Program in Environmental Studies Year 3 - SCMAJPUBP - Major Program in Public Policy Year 4 - SCMAJPUBP - Major Program in Public Policy Year 4 - SCMAJPUBPC - Major (Co-operative) Program In Public Policy Year 3 - SCMAJPUBPC - Major (Co-operative) Program In Public Policy At 10:00am on July 23, 2025, enrollment will open to students in the following groups: Year 3 - ALL UTSC Year 4 - ALL UTSC",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",

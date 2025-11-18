@@ -10,40 +10,41 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "LEC-0201": {
+      "LEC-0101": {
         "schedule": {
           "MO-0": {
             "meetingDay": "MO",
             "meetingStartTime": "11:30",
             "meetingEndTime": "13:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
+            "assignedRoom1": "AB",
+            "assignedRoom2": "AB"
           },
           "MO-1": {
             "meetingDay": "MO",
             "meetingStartTime": "11:30",
             "meetingEndTime": "13:00",
             "meetingScheduleId": "1",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
+            "assignedRoom1": "AB",
+            "assignedRoom2": "AB"
           }
         },
         "instructors": {},
-        "meetingId": "LEC0201",
+        "meetingId": "LEC0101",
         "teachingMethod": "LEC",
-        "sectionNumber": "0201",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "35",
-        "actualEnrolment": "27",
+        "actualEnrolment": "23",
         "actualWaitlist": "0",
         "enrollmentIndicator": "E",
         "meetingStatusNotes": null,
@@ -77,36 +78,36 @@
           }
         ]
       },
-      "LEC-0101": {
+      "LEC-0201": {
         "schedule": {
           "MO-0": {
             "meetingDay": "MO",
             "meetingStartTime": "11:30",
             "meetingEndTime": "13:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "AB",
-            "assignedRoom2": "AB"
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
           },
           "MO-1": {
             "meetingDay": "MO",
             "meetingStartTime": "11:30",
             "meetingEndTime": "13:00",
             "meetingScheduleId": "1",
-            "assignedRoom1": "AB",
-            "assignedRoom2": "AB"
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
           }
         },
         "instructors": {},
-        "meetingId": "LEC0101",
+        "meetingId": "LEC0201",
         "teachingMethod": "LEC",
-        "sectionNumber": "0101",
+        "sectionNumber": "0201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "35",
-        "actualEnrolment": "23",
+        "actualEnrolment": "27",
         "actualWaitlist": "0",
         "enrollmentIndicator": "E",
         "meetingStatusNotes": null,

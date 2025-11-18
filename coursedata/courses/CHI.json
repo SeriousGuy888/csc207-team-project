@@ -4,71 +4,17 @@
     "courseTitle": "Introductory Chinese I",
     "code": "CHI103H5",
     "courseDescription": "Intended for students with none or minimal background in Mandarin or any Chinese dialects, this course provides a comprehensive introduction to phonetics and written form of Modern Standard Chinese (Mandarin) and covers the topics of functional Chinese at beginner level. All students are REQUIRED to complete the Chinese Language Assessment Questionnaire before enrolling in this course. Please visit https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires and complete the Chinese Language Assessment Questionnaire by no later than August 29th. Late assessment submissions will not be accepted.",
-    "prerequisite": "<p>All students are REQUIRED to complete the Chinese Language Assessment Questionnaire (<a href=\"https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires\">https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires</a>) before enrolling in this course.</p>",
+    "prerequisite": "All students are REQUIRED to complete the Chinese Language Assessment Questionnaire (https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires) before enrolling in this course.",
     "corequisite": "",
-    "exclusion": "<p>CHI100Y5 or EAS100Y1 or EAS101Y1 or LGGA60H3 or LGGA61H3</p>",
+    "exclusion": "CHI100Y5 or EAS100Y1 or EAS101Y1 or LGGA60H3 or LGGA61H3",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Student enrol in LEC0101 must enrol in PRA0101 Student enrol in LEC0201 must enrol in PRA0201",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
     "meetings": {
-      "PRA-0201": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DH",
-            "assignedRoom2": "DH"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0201",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "35",
-        "actualEnrolment": "26",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -138,6 +84,61 @@
           },
           {
             "postId": "2",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0201": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DH",
+            "assignedRoom2": "DH"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0201",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "35",
+        "actualEnrolment": "26",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
             "postCode": "*",
             "postName": "All",
             "subjectId": "1",
@@ -329,10 +330,107 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Student enrol in LEC0101 must enrol in PRA0101 Student enrol in LEC0201 must enrol in PRA0201",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
     "meetings": {
+      "LEC-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Xinliang",
+            "lastName": "Jiang"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "35",
+        "actualEnrolment": "23",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "A",
+        "meetingStatusNotes": "<ul>\n<li>Students enrolling in a CHI language course for the first time MUST complete the  <a href='https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires' target='_blank'>Language Course Assessment Questionnaire</a> by the deadline posted on the DLS website.</li>\n</ul>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ERIN",
+            "primaryOrgName": "University of Toronto Mississauga",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "PRA-0101": {
         "schedule": {
           "TH-0": {
@@ -355,6 +453,61 @@
         "online": "In Person",
         "enrollmentCapacity": "35",
         "actualEnrolment": "20",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0201": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0201",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "35",
+        "actualEnrolment": "13",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -483,107 +636,29 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "LEC-0101": {
+      }
+    }
+  },
+  "CHI203H5-F-20259": {
+    "courseId": "682f754f729a4e534ee9319d",
+    "courseTitle": "Intermediate Low Chinese I",
+    "code": "CHI203H5",
+    "courseDescription": "As a continuation of Introductory Chinese, this course aims at developing students' language comprehension, expanding their vocabulary and grammar, and improving their skills in listening, speaking, reading, writing and translation in Modern Standard Chinese (Mandarin) at intermediate level. The course content is focused on functional topics. Students who have not completed the listed prerequisite are REQUIRED to complete the Chinese Language Assessment Questionnaire (https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires) by August 29th. Late assessment submissions will not be accepted.",
+    "prerequisite": "CHI104H5 or as indicated by the Chinese Language Assessment Questionnaire (https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires).",
+    "corequisite": "",
+    "exclusion": "CHI200Y5 or CHI201H5 or CHI202H5 or EAS200Y1 or EAS201H1 or LGGB60H3 or LGGB61H3 or LGGB62H3 or LGGB63H3 or LGGB64H3 or LGGB65H3",
+    "recommendedPreparation": "",
+    "section": "F",
+    "session": "20259",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "",
+    "distributionCategories": "Humanities",
+    "meetings": {
+      "PRA-0101": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Xinliang",
-            "lastName": "Jiang"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "35",
-        "actualEnrolment": "23",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "A",
-        "meetingStatusNotes": "<ul>\n<li>Students enrolling in a CHI language course for the first time MUST complete the  <a href='https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires' target='_blank'>Language Course Assessment Questionnaire</a> by the deadline posted on the DLS website.</li>\n</ul>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ERIN",
-            "primaryOrgName": "University of Toronto Mississauga",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0201": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
+          "WE-0": {
+            "meetingDay": "WE",
             "meetingStartTime": "16:00",
             "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
@@ -592,16 +667,16 @@
           }
         },
         "instructors": {},
-        "meetingId": "PRA0201",
+        "meetingId": "PRA0101",
         "teachingMethod": "PRA",
-        "sectionNumber": "0201",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "35",
-        "actualEnrolment": "13",
+        "actualEnrolment": "7",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -634,24 +709,7 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "CHI203H5-F-20259": {
-    "courseId": "682f754f729a4e534ee9319d",
-    "courseTitle": "Intermediate Low Chinese I",
-    "code": "CHI203H5",
-    "courseDescription": "As a continuation of Introductory Chinese, this course aims at developing students' language comprehension, expanding their vocabulary and grammar, and improving their skills in listening, speaking, reading, writing and translation in Modern Standard Chinese (Mandarin) at intermediate level. The course content is focused on functional topics. Students who have not completed the listed prerequisite are REQUIRED to complete the Chinese Language Assessment Questionnaire (https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires) by August 29th. Late assessment submissions will not be accepted.",
-    "prerequisite": "CHI104H5 or as indicated by the Chinese Language Assessment Questionnaire (https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires).",
-    "corequisite": "",
-    "exclusion": "CHI200Y5 or CHI201H5 or CHI202H5 or EAS200Y1 or EAS201H1 or LGGB60H3 or LGGB61H3 or LGGB62H3 or LGGB63H3 or LGGB64H3 or LGGB65H3",
-    "recommendedPreparation": "",
-    "section": "F",
-    "session": "20259",
-    "deliveryInstructions": null,
-    "breadthCategories": "",
-    "distributionCategories": "Humanities",
-    "meetings": {
+      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -747,61 +805,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "35",
-        "actualEnrolment": "7",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -816,6 +819,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -972,20 +976,163 @@
     "courseTitle": "Chinese for Academic Purposes I",
     "code": "CHI211H5",
     "courseDescription": "This course, designed for native or near-native speakers of Mandarin Chinese, develops rhetorical knowledge and critical thinking skills for effective academic reading and writing. Students will also receive training in conducting effective formal presentations with supporting media and public speaking skills.",
-    "prerequisite": "<p>Appropriate language level as indicated in the Chinese Language Assessment Questionnaire (<a href=\"https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires\">https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires</a>) or interview.</p>",
+    "prerequisite": "Appropriate language level as indicated in the Chinese Language Assessment Questionnaire (https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires) or interview.",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Student enrol in LEC0101 must enrol in PRA0101 Student enrol in LEC0201 must enrol in PRA0201 Student enrol in LEC0301 must enrol in PRA0301 Student enrol in LEC0401 must enrol in PRA0401",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
     "meetings": {
-      "LEC-0401": {
+      "LEC-0201": {
         "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Chiu-Hung",
+            "lastName": "Chen"
+          }
+        },
+        "meetingId": "LEC0201",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "30",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "AP",
+        "meetingStatusNotes": "<ul>\n<li>Students enrolling in a CHI language course for the first time MUST complete the  <a href='https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires' target='_blank'>Language Course Assessment Questionnaire</a> by the deadline posted on the DLS website.</li>\n</ul>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "1",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ERIN",
+            "primaryOrgName": "University of Toronto Mississauga",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "2",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ERIN",
+            "primaryOrgName": "University of Toronto Mississauga",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "3",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ERIN",
+            "primaryOrgName": "University of Toronto Mississauga",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "4",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
             "meetingStartTime": "09:00",
             "meetingEndTime": "11:00",
             "meetingScheduleId": "0",
@@ -996,13 +1143,13 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Jing",
-            "lastName": "Li"
+            "firstName": "Chiu-Hung",
+            "lastName": "Chen"
           }
         },
-        "meetingId": "LEC0401",
+        "meetingId": "LEC0101",
         "teachingMethod": "LEC",
-        "sectionNumber": "0401",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
@@ -1124,96 +1271,36 @@
           }
         ]
       },
-      "LEC-0201": {
+      "PRA-0101": {
         "schedule": {
           "TU-0": {
             "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "IB",
             "assignedRoom2": "IB"
           }
         },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Chiu-Hung",
-            "lastName": "Chen"
-          }
-        },
-        "meetingId": "LEC0201",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0201",
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
-        "waitlist": "Y",
+        "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "30",
-        "actualEnrolment": "30",
+        "actualEnrolment": "27",
         "actualWaitlist": "0",
-        "enrollmentIndicator": "AP",
-        "meetingStatusNotes": "<ul>\n<li>Students enrolling in a CHI language course for the first time MUST complete the  <a href='https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires' target='_blank'>Language Course Assessment Questionnaire</a> by the deadline posted on the DLS website.</li>\n</ul>",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
         "enrollmentControls": [
           {
             "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "1",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ERIN",
-            "primaryOrgName": "University of Toronto Mississauga",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "2",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ERIN",
-            "primaryOrgName": "University of Toronto Mississauga",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "3",
-            "postCode": "",
-            "postName": "",
+            "postCode": "*",
+            "postName": "All",
             "subjectId": "1",
             "subjectCode": "*",
             "subjectName": "All",
@@ -1225,8 +1312,8 @@
             "typeOfProgramCode": "*",
             "typeOfProgramName": "All",
             "primaryOrgId": "1",
-            "primaryOrgCode": "ERIN",
-            "primaryOrgName": "University of Toronto Mississauga",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
             "secondaryOrgId": "1",
             "secondaryOrgCode": "*",
             "secondaryOrgName": "All",
@@ -1236,9 +1323,37 @@
             "adminOrgId": "1",
             "adminOrgCode": "*",
             "adminOrgName": "All"
-          },
+          }
+        ]
+      },
+      "PRA-0301": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0301",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0301",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "28",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
           {
-            "postId": "4",
+            "postId": "1",
             "postCode": "*",
             "postName": "All",
             "subjectId": "1",
@@ -1518,10 +1633,10 @@
           }
         ]
       },
-      "LEC-0101": {
+      "LEC-0401": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
+          "FR-0": {
+            "meetingDay": "FR",
             "meetingStartTime": "09:00",
             "meetingEndTime": "11:00",
             "meetingScheduleId": "0",
@@ -1532,13 +1647,13 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Chiu-Hung",
-            "lastName": "Chen"
+            "firstName": "Jing",
+            "lastName": "Li"
           }
         },
-        "meetingId": "LEC0101",
+        "meetingId": "LEC0401",
         "teachingMethod": "LEC",
-        "sectionNumber": "0101",
+        "sectionNumber": "0401",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
@@ -1659,8 +1774,168 @@
             "adminOrgName": "All"
           }
         ]
+      }
+    }
+  },
+  "CHI212H5-S-20261": {
+    "courseId": "682f754f729a4e534ee931a0",
+    "courseTitle": "Chinese for Academic Purposes II",
+    "code": "CHI212H5",
+    "courseDescription": "This course, designed for native or near-native speakers of Mandarin Chinese, continues the study of rhetorical knowledge and critical thinking skills for effective academic reading and writing. It also prepares students for upper level courses which demand in-depth reading, writing, as well as professional presentation skills.",
+    "prerequisite": "CHI211H5 or appropriate language level as indicated by the Chinese Language Assessment Questionnaire (https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires) or interview.",
+    "corequisite": "",
+    "exclusion": "",
+    "recommendedPreparation": "",
+    "section": "S",
+    "session": "20261",
+    "webTimetableInstructions": "Student enrol in LEC0101 must enrol in PRA0101 Student enrol in LEC0201 must enrol in PRA0201 Student enrol in LEC0301 must enrol in PRA0301",
+    "deliveryInstructions": null,
+    "breadthCategories": "",
+    "distributionCategories": "Humanities",
+    "meetings": {
+      "LEC-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Jing",
+            "lastName": "Li"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "30",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "AP",
+        "meetingStatusNotes": "<ul>\n<li>Students enrolling in a CHI language course for the first time MUST complete the  <a href='https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires' target='_blank'>Language Course Assessment Questionnaire</a> by the deadline posted on the DLS website.</li>\n</ul>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "1",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ERIN",
+            "primaryOrgName": "University of Toronto Mississauga",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "2",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ERIN",
+            "primaryOrgName": "University of Toronto Mississauga",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "3",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ERIN",
+            "primaryOrgName": "University of Toronto Mississauga",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "4",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       },
-      "PRA-0101": {
+      "PRA-0201": {
         "schedule": {
           "TU-0": {
             "meetingDay": "TU",
@@ -1672,143 +1947,16 @@
           }
         },
         "instructors": {},
-        "meetingId": "PRA0101",
+        "meetingId": "PRA0201",
         "teachingMethod": "PRA",
-        "sectionNumber": "0101",
+        "sectionNumber": "0201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "30",
-        "actualEnrolment": "27",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0301": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0301",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0301",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "28",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      }
-    }
-  },
-  "CHI212H5-S-20261": {
-    "courseId": "682f754f729a4e534ee931a0",
-    "courseTitle": "Chinese for Academic Purposes II",
-    "code": "CHI212H5",
-    "courseDescription": "This course, designed for native or near-native speakers of Mandarin Chinese, continues the study of rhetorical knowledge and critical thinking skills for effective academic reading and writing. It also prepares students for upper level courses which demand in-depth reading, writing, as well as professional presentation skills.",
-    "prerequisite": "<p>CHI211H5 or appropriate language level as indicated by the Chinese Language Assessment Questionnaire (<a href=\"https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires\">https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires</a>) or interview.</p>",
-    "corequisite": "",
-    "exclusion": "",
-    "recommendedPreparation": "",
-    "section": "S",
-    "session": "20261",
-    "deliveryInstructions": null,
-    "breadthCategories": "",
-    "distributionCategories": "Humanities",
-    "meetings": {
-      "PRA-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "28",
+        "actualEnrolment": "17",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -2039,170 +2187,28 @@
           }
         ]
       },
-      "LEC-0101": {
+      "PRA-0101": {
         "schedule": {
           "MO-0": {
             "meetingDay": "MO",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Jing",
-            "lastName": "Li"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "30",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "AP",
-        "meetingStatusNotes": "<ul>\n<li>Students enrolling in a CHI language course for the first time MUST complete the  <a href='https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires' target='_blank'>Language Course Assessment Questionnaire</a> by the deadline posted on the DLS website.</li>\n</ul>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "1",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ERIN",
-            "primaryOrgName": "University of Toronto Mississauga",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "2",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ERIN",
-            "primaryOrgName": "University of Toronto Mississauga",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "3",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ERIN",
-            "primaryOrgName": "University of Toronto Mississauga",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "4",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0201": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "IB",
             "assignedRoom2": "IB"
           }
         },
         "instructors": {},
-        "meetingId": "PRA0201",
+        "meetingId": "PRA0101",
         "teachingMethod": "PRA",
-        "sectionNumber": "0201",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "30",
-        "actualEnrolment": "17",
+        "actualEnrolment": "28",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -2391,10 +2397,66 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
     "meetings": {
+      "PRA-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "7",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -2482,61 +2544,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "7",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -2551,6 +2558,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -2705,12 +2713,13 @@
     "courseTitle": "Chinese Cultural Studies Seminar",
     "code": "CHI308H5",
     "courseDescription": "This seminar course provides a platform for critical discussion of what we call \"Chinese culture\". Students will consider ideas of invented traditions, the essentialization of culture, and questions about modern states and regions. Topics may include Chinese civilization, customs, rituals, religion, philosophy, ideology, morals, literature, folk art and craft, performance arts, martial arts, cuisine, medicine, etc. The discussions will draw from historical and contemporary topics.",
-    "prerequisite": "<p>CHI211H5 and CHI212H5</p>",
+    "prerequisite": "CHI211H5 and CHI212H5",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -2865,71 +2874,17 @@
     "courseTitle": "Chinese for Career Development",
     "code": "CHI310H5",
     "courseDescription": "This course is designed for near-native or native speakers of Mandarin Chinese who are interested in advancing their careers in Chinese-speaking regions and in North America. Students will develop knowledge in career planning from cross-cultural perspectives, from job search, to applications and interview processes in Chinese-speaking regions of Asia and in North America. They will build a solid foundation for reading, writing, and speaking Chinese in a business setting.",
-    "prerequisite": "<p>CHI211H5</p>",
+    "prerequisite": "CHI211H5",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
     "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "35",
-        "actualEnrolment": "18",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -3025,24 +2980,7 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "CHI310H5-S-20261": {
-    "courseId": "682f754f729a4e534ee931a5",
-    "courseTitle": "Chinese for Career Development",
-    "code": "CHI310H5",
-    "courseDescription": "This course is designed for near-native or native speakers of Mandarin Chinese who are interested in advancing their careers in Chinese-speaking regions and in North America. Students will develop knowledge in career planning from cross-cultural perspectives, from job search, to applications and interview processes in Chinese-speaking regions of Asia and in North America. They will build a solid foundation for reading, writing, and speaking Chinese in a business setting.",
-    "prerequisite": "<p>CHI211H5</p>",
-    "corequisite": "",
-    "exclusion": "",
-    "recommendedPreparation": "",
-    "section": "S",
-    "session": "20261",
-    "deliveryInstructions": null,
-    "breadthCategories": "",
-    "distributionCategories": "Humanities",
-    "meetings": {
+      },
       "TUT-0101": {
         "schedule": {
           "WE-0": {
@@ -3050,8 +2988,8 @@
             "meetingStartTime": "18:00",
             "meetingEndTime": "19:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
           }
         },
         "instructors": {},
@@ -3064,7 +3002,7 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "35",
-        "actualEnrolment": "11",
+        "actualEnrolment": "18",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -3097,7 +3035,25 @@
             "adminOrgName": "All"
           }
         ]
-      },
+      }
+    }
+  },
+  "CHI310H5-S-20261": {
+    "courseId": "682f754f729a4e534ee931a5",
+    "courseTitle": "Chinese for Career Development",
+    "code": "CHI310H5",
+    "courseDescription": "This course is designed for near-native or native speakers of Mandarin Chinese who are interested in advancing their careers in Chinese-speaking regions and in North America. Students will develop knowledge in career planning from cross-cultural perspectives, from job search, to applications and interview processes in Chinese-speaking regions of Asia and in North America. They will build a solid foundation for reading, writing, and speaking Chinese in a business setting.",
+    "prerequisite": "CHI211H5",
+    "corequisite": "",
+    "exclusion": "",
+    "recommendedPreparation": "",
+    "section": "S",
+    "session": "20261",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "",
+    "distributionCategories": "Humanities",
+    "meetings": {
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -3179,30 +3135,13 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "CHI311H5-F-20259": {
-    "courseId": "682f754f729a4e534ee931a6",
-    "courseTitle": "Classical Chinese Literature",
-    "code": "CHI311H5",
-    "courseDescription": "This course will examine representative genres of traditional Chinese literature—poetry, prose, fiction, and drama—with an emphasis on language structure, style, and the influence on modern Chinese society and culture. We will also analyze the aesthetic features of classics and discuss the influences of traditional Chinese society on literature in terms of religion, philosophy, the imperial system, gender, family, and ethnicity.",
-    "prerequisite": "<p>CHI211H5 and CHI212H5</p>",
-    "corequisite": "",
-    "exclusion": "EAS358Y1 and EAS306Y1 and LGGC66H3 and LGGC67H3",
-    "recommendedPreparation": "",
-    "section": "F",
-    "session": "20259",
-    "deliveryInstructions": null,
-    "breadthCategories": "",
-    "distributionCategories": "Humanities",
-    "meetings": {
+      },
       "TUT-0101": {
         "schedule": {
           "WE-0": {
             "meetingDay": "WE",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "20:00",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "19:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "IB",
             "assignedRoom2": "IB"
@@ -3218,7 +3157,7 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "35",
-        "actualEnrolment": "22",
+        "actualEnrolment": "11",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -3251,7 +3190,25 @@
             "adminOrgName": "All"
           }
         ]
-      },
+      }
+    }
+  },
+  "CHI311H5-F-20259": {
+    "courseId": "682f754f729a4e534ee931a6",
+    "courseTitle": "Classical Chinese Literature",
+    "code": "CHI311H5",
+    "courseDescription": "This course will examine representative genres of traditional Chinese literature—poetry, prose, fiction, and drama—with an emphasis on language structure, style, and the influence on modern Chinese society and culture. We will also analyze the aesthetic features of classics and discuss the influences of traditional Chinese society on literature in terms of religion, philosophy, the imperial system, gender, family, and ethnicity.",
+    "prerequisite": "CHI211H5 and CHI212H5",
+    "corequisite": "",
+    "exclusion": "EAS358Y1 and EAS306Y1 and LGGC66H3 and LGGC67H3",
+    "recommendedPreparation": "",
+    "section": "F",
+    "session": "20259",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "",
+    "distributionCategories": "Humanities",
+    "meetings": {
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -3339,6 +3296,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "35",
+        "actualEnrolment": "22",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -3347,12 +3359,13 @@
     "courseTitle": "Chinese Diaspora Literature and Culture",
     "code": "CHI312H5",
     "courseDescription": "This course examines literary and cinematic works as well as visual art by authors of the Chinese diaspora. The course covers topics such as multiculturalism, racism, cultural preservation, invented traditions, and agency through the lens of overseas Chinese writers and creators.",
-    "prerequisite": "<p>CHI211H5 and CHI212H5</p>",
+    "prerequisite": "CHI211H5 and CHI212H5",
     "corequisite": "",
-    "exclusion": "<p>LGGC62H3 or LGGC63H3</p>",
+    "exclusion": "LGGC62H3 or LGGC63H3",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -3507,71 +3520,17 @@
     "courseTitle": "Chinese Diaspora Literature and Culture",
     "code": "CHI312H5",
     "courseDescription": "This course examines literary and cinematic works as well as visual art by authors of the Chinese diaspora. The course covers topics such as multiculturalism, racism, cultural preservation, invented traditions, and agency through the lens of overseas Chinese writers and creators.",
-    "prerequisite": "<p>CHI211H5 and CHI212H5</p>",
+    "prerequisite": "CHI211H5 and CHI212H5",
     "corequisite": "",
-    "exclusion": "<p>LGGC62H3 or LGGC63H3</p>",
+    "exclusion": "LGGC62H3 or LGGC63H3",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
     "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DH",
-            "assignedRoom2": "DH"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "35",
-        "actualEnrolment": "23",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -3659,6 +3618,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DH",
+            "assignedRoom2": "DH"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "35",
+        "actualEnrolment": "23",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -3667,12 +3681,13 @@
     "courseTitle": "The Wisdom of Life in Traditional Chinese Culture",
     "code": "CHI313H5",
     "courseDescription": "This course explores different thought systems, ideas and the wisdom of human life rooted in traditional Chinese culture from the following two approaches: a theoretical discussion of the purpose, meaning, and value of human life, ideals and ways of life, existential questions and multiple solutions; and a historical as well as critical examination of the conventional wisdom originated by Chinese cultural figures like Laozi, Confucius, Mencius, Sima Qian, Zhu Xi, Qian Mu, Qian Zhongshu and more. The goal of the course is to facilitate student consideration of the essence of human life and the understanding of contemporary Chinese views by ascertaining traditional Chinese erudition. Through the examination of traditional Chinese scholarship, students will develop an understanding of the connection between such teachings and contemporary Chinese views.",
-    "prerequisite": "<p>CHI211H5 and CHI212H5</p>",
+    "prerequisite": "CHI211H5 and CHI212H5",
     "corequisite": "",
     "exclusion": "EAS414H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -3827,16 +3842,72 @@
     "courseTitle": "The Wisdom of Life in Traditional Chinese Culture",
     "code": "CHI313H5",
     "courseDescription": "This course explores different thought systems, ideas and the wisdom of human life rooted in traditional Chinese culture from the following two approaches: a theoretical discussion of the purpose, meaning, and value of human life, ideals and ways of life, existential questions and multiple solutions; and a historical as well as critical examination of the conventional wisdom originated by Chinese cultural figures like Laozi, Confucius, Mencius, Sima Qian, Zhu Xi, Qian Mu, Qian Zhongshu and more. The goal of the course is to facilitate student consideration of the essence of human life and the understanding of contemporary Chinese views by ascertaining traditional Chinese erudition. Through the examination of traditional Chinese scholarship, students will develop an understanding of the connection between such teachings and contemporary Chinese views.",
-    "prerequisite": "<p>CHI211H5 and CHI212H5</p>",
+    "prerequisite": "CHI211H5 and CHI212H5",
     "corequisite": "",
     "exclusion": "EAS414H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
     "meetings": {
+      "TUT-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "35",
+        "actualEnrolment": "15",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -3924,61 +3995,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "35",
-        "actualEnrolment": "15",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -3987,12 +4003,13 @@
     "courseTitle": "Chinese Culture through Media",
     "code": "CHI314H5",
     "courseDescription": "This course examines Chinese cultural traditions and values through contemporary media produced in China, Taiwan and Hong Kong. Background readings and literary works will provide students with the necessary historical and cultural context for each work. Class discussions will focus on the political, social and cultural transformations presented in the media. Special attention will be paid to topics such as family, class issues, gender and identity.",
-    "prerequisite": "<p>CHI211H5 and CHI212H5</p>",
+    "prerequisite": "CHI211H5 and CHI212H5",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -4147,12 +4164,13 @@
     "courseTitle": "Chinese Culture through Media",
     "code": "CHI314H5",
     "courseDescription": "This course examines Chinese cultural traditions and values through contemporary media produced in China, Taiwan and Hong Kong. Background readings and literary works will provide students with the necessary historical and cultural context for each work. Class discussions will focus on the political, social and cultural transformations presented in the media. Special attention will be paid to topics such as family, class issues, gender and identity.",
-    "prerequisite": "<p>CHI211H5 and CHI212H5</p>",
+    "prerequisite": "CHI211H5 and CHI212H5",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -4301,12 +4319,13 @@
     "courseTitle": "Reading Confucianism  in Modern Chinese",
     "code": "CHI408H5",
     "courseDescription": "This advanced level course covers seminal readings on Confucianism written in modern Chinese language. The course examines Confucian doctrines and the development of Confucianism from ancient time to the contemporary era. Critical reading and essay writing skills will be emphasized.",
-    "prerequisite": "<p>CHI211H5 and CHI212H5</p>",
+    "prerequisite": "CHI211H5 and CHI212H5",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -4461,71 +4480,17 @@
     "courseTitle": "Influence of Confucianism on Chinese Culture",
     "code": "CHI409H5",
     "courseDescription": "This advanced level course discusses the cultural influence of Confucianism on Chinese writing, philosophy, religion, education, literature, customs, ethics, society and so forth. The readings covered in this course are mainly in modern Chinese language. Critical reading and essay writing skills will be stressed.",
-    "prerequisite": "<p>CHI211H5 and CHI212H5</p>",
+    "prerequisite": "CHI211H5 and CHI212H5",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
     "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "35",
-        "actualEnrolment": "22",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -4613,6 +4578,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "35",
+        "actualEnrolment": "22",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -4621,12 +4641,13 @@
     "courseTitle": "Modern Chinese Literature Studies",
     "code": "CHI410H5",
     "courseDescription": "This seminar course offers a critical examination of modern Chinese literature. modern Chinese literature. The primary focus will be on representative works of poetry, prose, drama, and fiction. Discussions will emphasize historical, cultural, and social-political contexts. Emphasis will be placed on building writing skills in literary criticism and analyzing literary devices and themes.",
-    "prerequisite": "<p>CHI211H5 and CHI212H5</p>",
+    "prerequisite": "CHI211H5 and CHI212H5",
     "corequisite": "",
     "exclusion": "EAS284H1 or EAS309H1 or EAS334H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -4781,16 +4802,72 @@
     "courseTitle": "Theory and Practice in English/Chinese Translation",
     "code": "CHI411H5",
     "courseDescription": "This course is an introduction to the major theories, methods and techniques involved in translating from English into Chinese. The course focuses on practical training for novice translators. Through practice, students will familiarize themselves with the translation process and develop a variety of translation skills and strategies. Students will discuss and reflect upon issues encountered during translation and develop decision-making ability to deal with translation challenges. This course provides a solid foundation for students to continue their studies in translation at the advanced level.",
-    "prerequisite": "<p>CHI211H5</p>",
+    "prerequisite": "CHI211H5",
     "corequisite": "",
     "exclusion": "ECTB61H3",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
     "meetings": {
+      "PRA-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "35",
+        "actualEnrolment": "9",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -4852,61 +4929,6 @@
           },
           {
             "postId": "2",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "35",
-        "actualEnrolment": "9",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
             "postCode": "*",
             "postName": "All",
             "subjectId": "1",

@@ -10,6 +10,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -123,6 +124,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -154,7 +156,7 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "200",
-        "actualEnrolment": "200",
+        "actualEnrolment": "199",
         "actualWaitlist": "1",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -228,10 +230,66 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
     "meetings": {
+      "PRA-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "24",
+        "actualEnrolment": "22",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -432,61 +490,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "24",
-        "actualEnrolment": "22",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -501,6 +504,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -799,329 +803,15 @@
     "courseDescription": "Forensic science is the application of any scientific inquiry into criminal investigation. The results of such inquiry are ultimately for presentation in courts of law. Specialists in forensic science will lecture on a variety of topics that will include crime scene investigation, the role of the coroner, forensic pathology, forensic chemistry, forensic botany, forensic entomology, forensic anthropology, forensic dentistry, psychology and toxicology. Case studies will be reviewed, and the role of the expert witness will be examined.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<br /> <div></div>",
+    "exclusion": "",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
     "meetings": {
-      "TUT-0102": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0102",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "52",
-        "actualEnrolment": "52",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "52",
-        "actualEnrolment": "51",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0103": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0103",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0103",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "52",
-        "actualEnrolment": "52",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0105": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0105",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0105",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "52",
-        "actualEnrolment": "51",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0108": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0108",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0108",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "51",
-        "actualEnrolment": "50",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -1140,21 +830,21 @@
             "assignedRoom1": "CC",
             "assignedRoom2": "CC"
           },
-          "TH-2": {
-            "meetingDay": "TH",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          },
-          "TU-3": {
+          "TU-2": {
             "meetingDay": "TU",
             "meetingStartTime": "12:00",
             "meetingEndTime": "13:00",
-            "meetingScheduleId": "3",
+            "meetingScheduleId": "2",
             "assignedRoom1": "CC",
             "assignedRoom2": "CC"
+          },
+          "TH-3": {
+            "meetingDay": "TH",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "3",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
           }
         },
         "instructors": {
@@ -1476,6 +1166,321 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0102": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0102",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0102",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "52",
+        "actualEnrolment": "52",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "52",
+        "actualEnrolment": "51",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0103": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0103",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0103",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "52",
+        "actualEnrolment": "52",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0105": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0105",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0105",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "52",
+        "actualEnrolment": "51",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0108": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0108",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0108",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "51",
+        "actualEnrolment": "50",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -1490,6 +1495,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -1784,6 +1790,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -2078,33 +2085,34 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "This course is restricted at all times for specific groups of students listed under Enrolment Controls. Beginning on July 23, 2025, the course will remain available to the groups indicated under Enrolment Controls and also will become available to students in the following groups: All students in the University of Toronto Mississauga in the Major - Forensic Science All students in the University of Toronto Mississauga in the Minor - Forensic Science",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
     "meetings": {
-      "PRA-0102": {
+      "PRA-0101": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "DV",
             "assignedRoom2": "DV"
           },
           "FR-1": {
             "meetingDay": "FR",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
             "meetingScheduleId": "1",
             "assignedRoom1": "DV",
             "assignedRoom2": "DV"
           }
         },
         "instructors": {},
-        "meetingId": "PRA0102",
+        "meetingId": "PRA0101",
         "teachingMethod": "PRA",
-        "sectionNumber": "0102",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -2112,69 +2120,6 @@
         "online": "In Person",
         "enrollmentCapacity": "22",
         "actualEnrolment": "22",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0103": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          },
-          "FR-1": {
-            "meetingDay": "FR",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0103",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0103",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -2404,29 +2349,92 @@
           }
         ]
       },
-      "PRA-0101": {
+      "PRA-0103": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "DV",
             "assignedRoom2": "DV"
           },
           "FR-1": {
             "meetingDay": "FR",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
             "meetingScheduleId": "1",
             "assignedRoom1": "DV",
             "assignedRoom2": "DV"
           }
         },
         "instructors": {},
-        "meetingId": "PRA0101",
+        "meetingId": "PRA0103",
         "teachingMethod": "PRA",
-        "sectionNumber": "0101",
+        "sectionNumber": "0103",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0102": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          },
+          "FR-1": {
+            "meetingDay": "FR",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0102",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0102",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -2480,6 +2488,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "This course is restricted at all times for specific groups of students listed under Enrolment Controls. Beginning on July 23, 2025, the course will remain available to the groups indicated under Enrolment Controls and also will become available to students in the following groups: All students in the University of Toronto Mississauga in the Major - Forensic Science All students in the University of Toronto Mississauga in the Minor - Forensic Science",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -2514,6 +2523,69 @@
         "online": "In Person",
         "enrollmentCapacity": "20",
         "actualEnrolment": "20",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0103": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          },
+          "FR-1": {
+            "meetingDay": "FR",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0103",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0103",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -2805,69 +2877,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0103": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          },
-          "FR-1": {
-            "meetingDay": "FR",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0103",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0103",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -2876,31 +2885,32 @@
     "courseTitle": "Techniques of Crime Scene Investigation",
     "code": "FSC303H5",
     "courseDescription": "This course will provide students with an introduction to forensic photography, crime scene processing, and forensic identification. Topics include, but are not limited to: fingerprint identification, chance impression evidence, physical evidence, crime scene and victim photography, and proper documentation of a crime scene. Students will gain an understanding of the basic \"toolkit\" required for crime scene processing, and learn the fundamentals of proper collection and analysis of physical evidence. As an alternative to (FSC300H5, FSC302H5), this course satisfies the third year IDENT requirement needed for non-IDENT capstone enrolment. Note: This course does not satisfy the IDENT requirement for an IDENT placement. Students seeking a placement in police services MUST complete FSC302H5. Similarly, this course does not satisfy the IDENT requirement for FSC407H5.",
-    "prerequisite": "<p>FSC239Y5 and FSC271H5</p>",
+    "prerequisite": "FSC239Y5 and FSC271H5",
     "corequisite": "",
-    "exclusion": "<p>FSC300H5 or FSC302H5</p>",
+    "exclusion": "FSC300H5 or FSC302H5",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
     "meetings": {
-      "PRA-0102": {
+      "PRA-0105": {
         "schedule": {
           "TH-0": {
             "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "DV",
             "assignedRoom2": "DV"
           }
         },
         "instructors": {},
-        "meetingId": "PRA0102",
+        "meetingId": "PRA0105",
         "teachingMethod": "PRA",
-        "sectionNumber": "0102",
+        "sectionNumber": "0105",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -3018,171 +3028,6 @@
         "online": "In Person",
         "enrollmentCapacity": "20",
         "actualEnrolment": "4",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0105": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0105",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0105",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "20",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0103": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0103",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0103",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "20",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "21:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "20",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -3465,6 +3310,171 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "21:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "20",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0102": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0102",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0102",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "20",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0103": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0103",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0103",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "20",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -3473,12 +3483,13 @@
     "courseTitle": "Missing Persons DVI and Unidentified Human Remains",
     "code": "FSC307H5",
     "courseDescription": "The goal of this course is to gain a basic understanding of the case management involved in missing persons, disaster victim identification, and unidentified human remains cases. Topics covered will include the interdisciplinary interactions between anthropology, odontology, fingerprinting and forensic genetics in the identification and databasing of both missing persons and recovered unidentified human remains.",
-    "prerequisite": "<p>ANT202H5 or (BIO206H5, BIO207H5).</p>",
+    "prerequisite": "ANT202H5 or (BIO206H5, BIO207H5).",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -3746,10 +3757,176 @@
     "recommendedPreparation": "FSC239Y5 and CHM311H5",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
     "meetings": {
+      "PRA-0102": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0102",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0102",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "16",
+        "actualEnrolment": "16",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "16",
+        "actualEnrolment": "16",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0103": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "21:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0103",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0103",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "16",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "TH-0": {
@@ -4080,171 +4257,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0102": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0102",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "16",
-        "actualEnrolment": "16",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "16",
-        "actualEnrolment": "16",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0103": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "21:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0103",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0103",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "16",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -4259,65 +4271,11 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
     "meetings": {
-      "PRA-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "24",
-        "actualEnrolment": "22",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -4486,6 +4444,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "24",
+        "actualEnrolment": "22",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -4494,12 +4507,13 @@
     "courseTitle": "Forensic Anatomy",
     "code": "FSC316H5",
     "courseDescription": "This course examines the body as forensic evidence. Human gross anatomy and histology will be examined from the perspective of forensic pathology, students will learn about the role of the body in crime scene analysis, autopsy procedures such as fingerprinting and forensic imaging of the deceased, and address anatomical anomalies useful for forensic purposes such as identification. Other topics include bodily decomposition, disease, and injuries.",
-    "prerequisite": "<p>FSC239Y5 and FSC271H5</p> <div> </div>",
-    "corequisite": "<br /> <div></div>",
+    "prerequisite": "FSC239Y5 and FSC271H5",
+    "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -4559,28 +4573,83 @@
           }
         ]
       },
-      "PRA-0101": {
+      "PRA-0103": {
         "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "21:00",
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "DV",
             "assignedRoom2": "DV"
           }
         },
         "instructors": {},
-        "meetingId": "PRA0101",
+        "meetingId": "PRA0103",
         "teachingMethod": "PRA",
-        "sectionNumber": "0101",
+        "sectionNumber": "0103",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "20",
-        "actualEnrolment": "17",
+        "actualEnrolment": "16",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0104": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0104",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0104",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "11",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -4864,83 +4933,28 @@
           }
         ]
       },
-      "PRA-0103": {
+      "PRA-0101": {
         "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "21:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "DV",
             "assignedRoom2": "DV"
           }
         },
         "instructors": {},
-        "meetingId": "PRA0103",
+        "meetingId": "PRA0101",
         "teachingMethod": "PRA",
-        "sectionNumber": "0103",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "20",
-        "actualEnrolment": "16",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0104": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0104",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0104",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "11",
+        "actualEnrolment": "17",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -4987,6 +5001,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -5173,6 +5188,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -5359,6 +5375,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -5547,16 +5564,72 @@
     "courseTitle": "Research Design",
     "code": "FSC340H5",
     "courseDescription": "This course introduces students to common methods of research design and the nature of data collection. Students will learn how to pose a meaningful research questions, to select appropriate data types, to define variables, examine bias, confounding factors, and select appropriate statistics that address their purpose.",
-    "prerequisite": "<p>FSC271H5</p>",
+    "prerequisite": "FSC271H5",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>It is <em><strong>highly recommended</strong></em> that students complete FSC341H5 prior to enrolment in this course.</p>",
+    "recommendedPreparation": "It is highly recommended that students complete FSC341H5 prior to enrolment in this course.",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "This course is restricted at all times for specific groups of students listed under Enrolment Controls. Beginning on July 23, 2025, the course will remain available to the groups indicated under Enrolment Controls and also will become available to students in the following groups: All students in the University of Toronto Mississauga in the Major - Forensic Science All students in the University of Toronto Mississauga in the Minor - Forensic Science",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
     "meetings": {
+      "PRA-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "40",
+        "actualEnrolment": "37",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -5752,61 +5825,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "40",
-        "actualEnrolment": "37",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -5817,10 +5835,11 @@
     "courseDescription": "Designed as a companion course to FSC340H5, Forensic Statistics will introduce students to basic analytic methods necessary to evaluate quantitative data in forensic science. Students will learn methods of visualizing and analyzing univariate, bivariate, and multivariate data in forensic science, with emphasis on practical applications of statistics in various forensic sub-disciplines. No prior knowledge of statistics and mathematics is required.",
     "prerequisite": "FSC239Y5",
     "corequisite": "",
-    "exclusion": "<p>STA246H5 or STA258H5 or STA260H5 or STA238H1 or STA255H1</p>",
+    "exclusion": "STA246H5 or STA258H5 or STA260H5 or STA238H1 or STA255H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -6035,6 +6054,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -6275,6 +6295,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Social Science",
@@ -6542,6 +6563,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Social Science",
@@ -6814,6 +6836,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -7000,6 +7023,7 @@
     "recommendedPreparation": "FSC271H5",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -7342,6 +7366,7 @@
     "recommendedPreparation": "FSC271H5",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -7474,10 +7499,74 @@
     "recommendedPreparation": "CHM311H5 and FSC402H5",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
     "meetings": {
+      "PRA-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          },
+          "TU-1": {
+            "meetingDay": "TU",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "16",
+        "actualEnrolment": "16",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -7735,69 +7824,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          },
-          "TU-1": {
-            "meetingDay": "TU",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "16",
-        "actualEnrolment": "16",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -7806,12 +7832,13 @@
     "courseTitle": "Forensic Identification Field School",
     "code": "FSC407H5",
     "courseDescription": "A field course to complement the material covered in both FSC300H5, Forensic Identification & FSC302H5, Advanced Forensic Identification. The field school will be held on the U of T Mississauga Campus over a 2-week period during the summer term and during weekly two hour labs in the fall term. In these classes, students will experience practical exposure to field and laboratory methods related to evidence recognition, collection and interpretation. Emphasis will be placed on the types of evidence collected, processed, and analyzed by forensic identification specialists. General evidence and small object photography techniques will be an important component of the course. Course Application is required. See the Forensic Science Program website for details.",
-    "prerequisite": "<p>(FSC239Y5 and FSC302H5) or Permission of Instructor.</p> <p>Students seeking to use FSC407H5 as their capstone placement must have:</p> <ul> <li>Completion of FSC302H5</li> <li>Completion of (ANT407H5 or BIO259H5 or FSC341H5 or STA215H5 or STA220H5 or PSY201H5)</li> <li>Enrolment in a Forensic Science Specialist Program and Permission of Instructor.</li> </ul> <p>Course Application is required. See the Forensic Science Program website for details.</p>",
+    "prerequisite": "(FSC239Y5 and FSC302H5) or Permission of Instructor. Students seeking to use FSC407H5 as their capstone placement must have: Completion of FSC302H5 Completion of (ANT407H5 or BIO259H5 or FSC341H5 or STA215H5 or STA220H5 or PSY201H5) Enrolment in a Forensic Science Specialist Program and Permission of Instructor. Course Application is required. See the Forensic Science Program website for details.",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -7979,6 +8006,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -8187,12 +8215,13 @@
     "courseTitle": "Population Genetics",
     "code": "FSC416H5",
     "courseDescription": "This course introduces students to the genetic variation between and within populations. The topics include evolutionary forces, quantitative genetics, and Baysian statistics as it applies to forensic biology.",
-    "prerequisite": "<p>(ANT202H5 or BIO207H5) and BIO259H5 and FSC315H5</p>",
+    "prerequisite": "(ANT202H5 or BIO207H5) and BIO259H5 and FSC315H5",
     "corequisite": "",
     "exclusion": "EEB459H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -8325,6 +8354,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Social Science",
@@ -8593,6 +8623,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science, Social Science",
@@ -8719,71 +8750,17 @@
     "courseTitle": "Forensic Anthropology Case Analysis",
     "code": "FSC439H5",
     "courseDescription": "This course offers a case-based approach to forensic anthropology. Students will critically evaluate real forensic anthropological cases, in addition to completing their own mock cases - from the transfer of evidence to a mock trial.",
-    "prerequisite": "ANT439H5 ",
+    "prerequisite": "ANT439H5",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
     "meetings": {
-      "PRA-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "16:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "DV",
-            "assignedRoom2": "DV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "24",
-        "actualEnrolment": "19",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -8979,6 +8956,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DV",
+            "assignedRoom2": "DV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "24",
+        "actualEnrolment": "19",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -8987,12 +9019,13 @@
     "courseTitle": "Internship in Forensic Science",
     "code": "FSC481Y5",
     "courseDescription": "As the capstone experience for the Forensic Science Specialist Programs, this course provides students with professional practice and research experience. Students are required to attend classes that address proper research design and methodology, as well as issues of professional practice in the forensic sciences including: ethics; research protocols; written and verbal communication skills; professional communication (interviews, letters, emails, reports, presentations, and publications); and expert witness testimony. Students will also be placed with a participating forensic agency to conduct research and gain an understanding of the unit's daily operations. In addition to practice presentations, critiques, an ethics approval application, a 10-15 page research proposal, and a mock interview, students are required to formally present the results of their research at the annual Forensic Science Day symposium and submit a publication quality manuscript of their work. Note: Internship Placements are arranged by the FSC Program. Students MUST apply for this course and the Course Application is due in the February preceding the placement. See the Forensic Science Program website for details on course application, information, and procedures. There will be an information session regarding Internship Placements, preceding the application period. Students must have one free day (Monday - Friday) to work at their internship placement site and must be in the final year before graduation. Students are expected to provide their own transportation to placement work site.",
-    "prerequisite": "<ul> <li>Completion of FSC340H5 or (PSY201H5 and PSY202H5)</li> <li>Completion of (ANT407H5 or BIO259H5 or FSC341H5 or STA215H5 or STA220H5 or PSY201H5)</li> <li>Enrolment in a Forensic Science Specialist Program and Permission of Instructor.</li> <li>Students seeking an IDENT capstone placement must also have completed FSC302H5.</li> </ul> <div>Course application is required. See the Forensic Science Program website for details.</div>",
-    "corequisite": "<br /> <div></div>",
-    "exclusion": "<p>FSC482H5 or FSC483H5 or FSC484H5 or FSC485H5</p> <div> </div>",
+    "prerequisite": "Completion of FSC340H5 or (PSY201H5 and PSY202H5) Completion of (ANT407H5 or BIO259H5 or FSC341H5 or STA215H5 or STA220H5 or PSY201H5) Enrolment in a Forensic Science Specialist Program and Permission of Instructor. Students seeking an IDENT capstone placement must also have completed FSC302H5. Course application is required. See the Forensic Science Program website for details.",
+    "corequisite": "",
+    "exclusion": "FSC482H5 or FSC483H5 or FSC484H5 or FSC485H5",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -9111,6 +9144,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -9210,16 +9244,105 @@
     "courseTitle": "Collaborative Research Internship",
     "code": "FSC483H5",
     "courseDescription": "As the alternative capstone experience, this course provides students the opportunity to work in a cross-disciplinary collaborative environment to address case-based research questions. Note: Topics will be made available at the time of application. Students MUST apply for this course and the course application is due in the February preceding the internship. See the Forensic Science Program website for details on course application, information and procedures. There will be an information session regarding this course, preceding the application period. Students must have one free day (Monday - Friday) to work on their collaborative research internship and must be in the final year before graduation.",
-    "prerequisite": "<ul> <li>Completion of FSC340H5 or (PSY201H5 and PSY202H5)</li> <li>Completion of (ANT407H5 or BIO259H5 or FSC341H5 or STA215H5 or STA220H5 or PSY201H5)</li> <li>Enrolment in a Forensic Science Specialist Program and Permission of Instructor.</li> <li>Students seeking 'crime scene' related research must have completed FSC302H5 or FSC303H5.</li> </ul> <p>Course application is required. See the Forensic Science Program website for details.</p>",
+    "prerequisite": "Completion of FSC340H5 or (PSY201H5 and PSY202H5) Completion of (ANT407H5 or BIO259H5 or FSC341H5 or STA215H5 or STA220H5 or PSY201H5) Enrolment in a Forensic Science Specialist Program and Permission of Instructor. Students seeking 'crime scene' related research must have completed FSC302H5 or FSC303H5. Course application is required. See the Forensic Science Program website for details.",
     "corequisite": "FSC482H5",
-    "exclusion": "<p>FSC481Y5 or FSC484H5 or FSC485H5</p>",
+    "exclusion": "FSC481Y5 or FSC484H5 or FSC485H5",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
     "meetings": {
+      "LEC-0105": {
+        "schedule": {
+          "-": {
+            "meetingDay": null,
+            "meetingStartTime": null,
+            "meetingEndTime": null,
+            "meetingScheduleId": null,
+            "assignedRoom1": null,
+            "assignedRoom2": null
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Shelby",
+            "lastName": "Scott"
+          }
+        },
+        "meetingId": "LEC0105",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0105",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "5",
+        "actualEnrolment": "4",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "AR",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "FSC",
+            "subjectName": "FORENSIC SCIENCE",
+            "designationId": "1",
+            "designationCode": "SPE",
+            "designationName": "Specialist",
+            "yearOfStudy": "4",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ERIN",
+            "primaryOrgName": "University of Toronto Mississauga",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "FSC",
+            "subjectName": "FORENSIC SCIENCE",
+            "designationId": "1",
+            "designationCode": "SPE",
+            "designationName": "Specialist",
+            "yearOfStudy": "5",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ERIN",
+            "primaryOrgName": "University of Toronto Mississauga",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0107": {
         "schedule": {
           "-": {
@@ -9308,7 +9431,7 @@
           }
         ]
       },
-      "LEC-0101": {
+      "LEC-0103": {
         "schedule": {
           "-": {
             "meetingDay": null,
@@ -9322,19 +9445,19 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Caitlin",
-            "lastName": "Pakosh"
+            "firstName": "Jamie",
+            "lastName": "McGregor"
           }
         },
-        "meetingId": "LEC0101",
+        "meetingId": "LEC0103",
         "teachingMethod": "LEC",
-        "sectionNumber": "0101",
+        "sectionNumber": "0103",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "6",
+        "enrollmentCapacity": "5",
         "actualEnrolment": "4",
         "actualWaitlist": "0",
         "enrollmentIndicator": "AR",
@@ -9654,7 +9777,7 @@
           }
         ]
       },
-      "LEC-0105": {
+      "LEC-0101": {
         "schedule": {
           "-": {
             "meetingDay": null,
@@ -9668,107 +9791,19 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Shelby",
-            "lastName": "Scott"
+            "firstName": "Caitlin",
+            "lastName": "Pakosh"
           }
         },
-        "meetingId": "LEC0105",
+        "meetingId": "LEC0101",
         "teachingMethod": "LEC",
-        "sectionNumber": "0105",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "5",
-        "actualEnrolment": "4",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "AR",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "FSC",
-            "subjectName": "FORENSIC SCIENCE",
-            "designationId": "1",
-            "designationCode": "SPE",
-            "designationName": "Specialist",
-            "yearOfStudy": "4",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ERIN",
-            "primaryOrgName": "University of Toronto Mississauga",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "FSC",
-            "subjectName": "FORENSIC SCIENCE",
-            "designationId": "1",
-            "designationCode": "SPE",
-            "designationName": "Specialist",
-            "yearOfStudy": "5",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ERIN",
-            "primaryOrgName": "University of Toronto Mississauga",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-0103": {
-        "schedule": {
-          "-": {
-            "meetingDay": null,
-            "meetingStartTime": null,
-            "meetingEndTime": null,
-            "meetingScheduleId": null,
-            "assignedRoom1": null,
-            "assignedRoom2": null
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Jamie",
-            "lastName": "McGregor"
-          }
-        },
-        "meetingId": "LEC0103",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0103",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "5",
+        "enrollmentCapacity": "6",
         "actualEnrolment": "4",
         "actualWaitlist": "0",
         "enrollmentIndicator": "AR",
@@ -9837,12 +9872,13 @@
     "courseTitle": "Communicating Forensic Science",
     "code": "FSC484H5",
     "courseDescription": "As a pre-professional training experience, this capstone course will prepare students in media literacy for communicating their forensic sub-discipline in a variety of avenues. Students will learn how to present forensic content through writing, digital media (podcasts, vlogs, etc.), interviews, and outreach engagement. The course will develop skills as they pertain to converting complex science to accessible testimony, both for public and academic/educational settings, as well as handling/engaging with journalism media. Elements of course completion will include commitments external to class time, including, but not limited to: Forensic Skills Development workshops, HMALC workshops, RGASC workshops, and Forensic Outreach programming, all in conjunction with lecture components. Students are required to complete a minimum of 20 hours of communication experience outside of scheduled class time. Major assignments will include presentations through various media of the student's choice, as well as a cumulative interviews with police forensic science and professionals. Course application is required. See the Forensic Science Program website for details.",
-    "prerequisite": "<ul> <li>Completion of FSC340H5 or (PSY201H5 and PSY202H5)</li> <li>Completion of (ANT407H5 or BIO259H5 or FSC341H5 or STA215H5 or STA220H5 or PSY201H5)</li> <li>Enrolment in a Forensic Science Specialist Program and Permission of Instructor.</li> </ul> <p>Course application is required. See the Forensic Science Program website for details.</p>",
-    "corequisite": "<br /> <div></div>",
-    "exclusion": "<div> <div> <div> <div> <div>FSC481H5 or FSC483H5 or FSC485H5</div> </div> </div> </div> </div> <div> <div> <div> <div> <div> <div> </div> </div> </div> </div> </div> </div> <div> </div>",
-    "recommendedPreparation": "<br /> <div></div>",
+    "prerequisite": "Completion of FSC340H5 or (PSY201H5 and PSY202H5) Completion of (ANT407H5 or BIO259H5 or FSC341H5 or STA215H5 or STA220H5 or PSY201H5) Enrolment in a Forensic Science Specialist Program and Permission of Instructor. Course application is required. See the Forensic Science Program website for details.",
+    "corequisite": "",
+    "exclusion": "FSC481H5 or FSC483H5 or FSC485H5",
+    "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -9990,12 +10026,13 @@
     "courseTitle": "Professional Opportunity in Forensic Science",
     "code": "FSC485H5",
     "courseDescription": "This course provides students with the opportunity to engage in, and reflect on, a professional forensic experience that contributes to their employment eligibility after graduation. They will develop networking skills, enhance professional competencies, and are given the opportunity to locate and select their own experience relevant to their career goals, which may include (but is not limited to) a possible: work-study position, conference workshop, professional certification, field school, paid or unpaid internship or agency co-op. All opportunities must be approved by the program director in the term prior to enrolment. Course application is required. See the Forensic Science Program website for details.",
-    "prerequisite": "<div> <ul> <li>Completion of (ANT407H5 or BIO259H5 or FSC341H5 or STA215H5 or STA220H5 or PSY201H5)</li> <li>Enrolment in a Forensic Science Specialist Program and Permission of Instructor.</li> <li>Students seeking 'crime scene' related experiences must have completed FSC302H5 or FSC303H5.</li> </ul> </div> <div>Course application is required. See the Forensic Science Program website for details.</div>",
-    "corequisite": "<p>FSC482H5</p> <div> </div>",
-    "exclusion": "<p>FSC481Y5 or FSC483H5 or FSC484H5</p>",
+    "prerequisite": "Completion of (ANT407H5 or BIO259H5 or FSC341H5 or STA215H5 or STA220H5 or PSY201H5) Enrolment in a Forensic Science Specialist Program and Permission of Instructor. Students seeking 'crime scene' related experiences must have completed FSC302H5 or FSC303H5. Course application is required. See the Forensic Science Program website for details.",
+    "corequisite": "FSC482H5",
+    "exclusion": "FSC481Y5 or FSC483H5 or FSC484H5",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -10163,6 +10200,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -10376,6 +10414,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -10583,6 +10622,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -10790,6 +10830,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",

@@ -4,16 +4,127 @@
     "courseTitle": "Foundations in Effective Academic Communication",
     "code": "CTLA01H3",
     "courseDescription": "This highly interactive course for English Language Learners who find Academic English a challenge aims to fast-track the development of critical thinking, reading, writing and oral communication skills. Through emphasizing academic writing and rapid expansion of vocabulary, students will gain practical experience with university-level academic texts and assignment expectations.",
-    "prerequisite": "No more than 10.0 credits completed. Students are required to take a diagnostic test of academic English skills to be conducted by the English Language Development Support,  Centre for Teaching and Learning, in advance of the first day of class.",
+    "prerequisite": "No more than 10.0 credits completed. Students are required to take a diagnostic test of academic English skills to be conducted by the English Language Development Support, Centre for Teaching and Learning, in advance of the first day of class.",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Enrolment Indicator: RP Initially restricted to students in the following groups: Year 1 - ALL UTSC Year 2 - ALL UTSC At 10:00am on July 23, 2025, enrollment will open to students in the following groups: Year 3 - ALL UTSCAll students must enroll into PRA001 WED 12-1pm or PRA002 WED 11-12pm. Practicums start in Week 2. Students are also recommended to take the diagnostic test Academic English Health Check (AEHC) conducted by English Language Development Support in advance of the first day of class. Link to schedule and sign-up: https://uoft.me/aehc",
     "deliveryInstructions": null,
     "breadthCategories": "Arts, Literature & Language",
     "distributionCategories": "",
     "meetings": {
+      "PRA-0002": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BV",
+            "assignedRoom2": "BV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0002",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0002",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "22",
+        "actualEnrolment": "16",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0001": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BV",
+            "assignedRoom2": "BV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0001",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0001",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "22",
+        "actualEnrolment": "20",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-01": {
         "schedule": {
           "TU-0": {
@@ -128,116 +239,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0001": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BV",
-            "assignedRoom2": "BV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0001",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0001",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "22",
-        "actualEnrolment": "20",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0002": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BV",
-            "assignedRoom2": "BV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0002",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0002",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "22",
-        "actualEnrolment": "16",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -246,12 +247,13 @@
     "courseTitle": "Foundations in Effective Academic Communication",
     "code": "CTLA01H3",
     "courseDescription": "This highly interactive course for English Language Learners who find Academic English a challenge aims to fast-track the development of critical thinking, reading, writing and oral communication skills. Through emphasizing academic writing and rapid expansion of vocabulary, students will gain practical experience with university-level academic texts and assignment expectations.",
-    "prerequisite": "No more than 10.0 credits completed. Students are required to take a diagnostic test of academic English skills to be conducted by the English Language Development Support,  Centre for Teaching and Learning, in advance of the first day of class.",
+    "prerequisite": "No more than 10.0 credits completed. Students are required to take a diagnostic test of academic English skills to be conducted by the English Language Development Support, Centre for Teaching and Learning, in advance of the first day of class.",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Enrolment Indicator: RP Initially restricted to students in the following groups: Year 1 - ALL UTSC Year 2 - ALL UTSC At 10:00am on July 23, 2025, enrollment will open to students in the following groups: Year 3 - ALL UTSCAll students must enroll in Practicum 001 scheduled on Wednesdays 12pm - 1pm. Practicums start in Week 2. Students are also recommended to take the diagnostic test Academic English Health Check (AEHC) conducted by English Language Development Support in advance of the first day of class. Link to schedule and sign-up: https://uoft.me/aehc",
     "deliveryInstructions": null,
     "breadthCategories": "Arts, Literature & Language",
     "distributionCategories": "",

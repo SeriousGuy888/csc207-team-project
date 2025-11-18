@@ -10,10 +10,132 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
+      "PRA-0102": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "WB",
+            "assignedRoom2": "WB"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Daniel",
+            "lastName": "Grozea"
+          },
+          "1": {
+            "instructorId": "1",
+            "firstName": "Jane",
+            "lastName": "Howe"
+          }
+        },
+        "meetingId": "PRA0102",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0102",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "50",
+        "actualEnrolment": "42",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0102": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0102",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0102",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "69",
+        "actualEnrolment": "58",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "PRA-0103": {
         "schedule": {
           "MO-0": {
@@ -242,127 +364,6 @@
           }
         ]
       },
-      "TUT-0102": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0102",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "69",
-        "actualEnrolment": "58",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0102": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "WB",
-            "assignedRoom2": "WB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Daniel",
-            "lastName": "Grozea"
-          },
-          "1": {
-            "instructorId": "1",
-            "firstName": "Jane",
-            "lastName": "Howe"
-          }
-        },
-        "meetingId": "PRA0102",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "50",
-        "actualEnrolment": "42",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "TUT-0101": {
         "schedule": {
           "FR-0": {
@@ -431,87 +432,33 @@
     "recommendedPreparation": "CIV102H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "TUT-0103": {
+      "TUT-0102": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "WB",
-            "assignedRoom2": "WB"
+            "assignedRoom1": "MB",
+            "assignedRoom2": "MB"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0103",
+        "meetingId": "TUT0102",
         "teachingMethod": "TUT",
-        "sectionNumber": "0103",
+        "sectionNumber": "0102",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "53",
-        "actualEnrolment": "43",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "53",
-        "actualEnrolment": "48",
+        "actualEnrolment": "45",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -655,28 +602,138 @@
           }
         ]
       },
-      "TUT-0102": {
+      "TUT-0103": {
         "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "MB",
-            "assignedRoom2": "MB"
+            "assignedRoom1": "WB",
+            "assignedRoom2": "WB"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0102",
+        "meetingId": "TUT0103",
         "teachingMethod": "TUT",
-        "sectionNumber": "0102",
+        "sectionNumber": "0103",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "53",
-        "actualEnrolment": "45",
+        "actualEnrolment": "43",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "53",
+        "actualEnrolment": "48",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0104": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MC",
+            "assignedRoom2": "MC"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0104",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0104",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "53",
+        "actualEnrolment": "44",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -791,61 +848,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "TUT-0104": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MC",
-            "assignedRoom2": "MC"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0104",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0104",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "53",
-        "actualEnrolment": "44",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -860,6 +862,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -932,77 +935,17 @@
     "courseTitle": "Thermodynamics I",
     "code": "MSE202H1",
     "courseDescription": "Fundamental Thermodynamics Laws. Thermodynamic Variables and Relationships. Understanding Reversible and Irreversible Processes. Thermodynamic Equilibrium and the Gibbs Phase Rule. Exploring the Clausius-Clapeyron Equation. Practical Thermodynamic Applications for Unary Phase Diagrams. Multicomponent Multiphase Reacting Systems in Standard State. Analyzing the Ellingham Diagram and Pre-dominance Diagrams. Binary Phase Diagrams for Materials Processing and Properties.",
-    "prerequisite": "<p>APS110H1/MSE160H1; ESC195H1/MAT187H1; or equivalent</p>",
-    "corequisite": "<p>MAT294H1 or equivalent</p>",
+    "prerequisite": "APS110H1/MSE160H1; ESC195H1/MAT187H1; or equivalent",
+    "corequisite": "MAT294H1 or equivalent",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "GB",
-            "assignedRoom2": "GB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Liyang",
-            "lastName": "Dai-Hattrick"
-          }
-        },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "101",
-        "actualEnrolment": "90",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -1098,6 +1041,67 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "GB",
+            "assignedRoom2": "GB"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Liyang",
+            "lastName": "Dai-Hattrick"
+          }
+        },
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "101",
+        "actualEnrolment": "90",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -1106,12 +1110,13 @@
     "courseTitle": "Diffusion and Kinetics",
     "code": "MSE217H1",
     "courseDescription": "Topics in the Diffusion part include: diffusion mechanisms, steady-state and non-steady-state diffusion, Fick's first and second laws, Kirkendall effect, short-circuit diffusions, diffusion in metallic, polymeric, ionic and semiconducting materials, Darken's first and second equations, marker's velocity, thin film diffusion. Topics in the Kinetics part include: experimental rate laws, reaction orders, determination of order of reaction (integral, differential, and half-life methods), Arrhenius equation, elucidation of mechanism, fluid-particle reactions, kinetic models (progressive-conversion, unreacted core, shrinking core model), reactor design (batch, plug flow, and mixed flow reactors).",
-    "prerequisite": "<p>APS110H1/MSE160H1; ESC195H1/MAT187H1</p>",
+    "prerequisite": "APS110H1/MSE160H1; ESC195H1/MAT187H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1280,77 +1285,17 @@
     "courseTitle": "PHASE TRANSFORMATIONS",
     "code": "MSE218H1",
     "courseDescription": "A key part of MSE is focused on explaining how material systems transform from one condensed phase to another. These phase transformations are a critical aspect of understanding the behaviour of a material. MSE 218 builds on the thermodynamics and phase stability of MSE 202 and runs in parallel to the rates of transformation seen in MSE 217. In MSE 218 we will consider phase transformations in one component, two component, and multicomponent systems. We will look at both diffusional and diffusionless transformations, focusing on the nucleation and growth aspects of each case. Specific examples will include: solidification, precipitation, recrystallization, spinodal, massive, and order-disorder transformations. Both experimental and computational labs will be used to outline specific transformations in more depth.",
-    "prerequisite": "<p>MSE202H1, MSE219H1; or equivalent</p>",
-    "corequisite": "<p>MSE217H1</p>",
+    "prerequisite": "MSE202H1, MSE219H1; or equivalent",
+    "corequisite": "MSE217H1",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Glenn",
-            "lastName": "Hibbard"
-          }
-        },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "82",
-        "actualEnrolment": "63",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -1515,40 +1460,23 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "MSE219H1-F-20259": {
-    "courseId": "683de74969ee8765db5f96e6",
-    "courseTitle": "Structure and Characterization of Materials",
-    "code": "MSE219H1",
-    "courseDescription": "Introduction to two and three-dimensional crystallography and crystal structures of solids. Topics include: Pearson and Hermann-Mauguin symbols, reciprocal space, point group and space group symmetry analysis, stereographic projections. Introduction to tensor analysis of crystalline material properties, and symmetry breakdown by imperfections in crystals. Experimental techniques used to interpret structure and chemistry of solids and their defects will be covered theoretically and in the laboratory including: X-ray diffractometry, optical, electron and scanning probe microscopy, and surface/bulk spectroscopies based on optical, X-ray, electron and ion-beam analysis methods.",
-    "prerequisite": "<p>APS110H1/MSE120H1/MSE160H1 or equivalent</p>",
-    "corequisite": "",
-    "exclusion": "",
-    "recommendedPreparation": "",
-    "section": "F",
-    "session": "20259",
-    "deliveryInstructions": null,
-    "breadthCategories": "",
-    "distributionCategories": "",
-    "meetings": {
+      },
       "TUT-0101": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "10:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "SF",
-            "assignedRoom2": "SF"
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
           }
         },
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Doug",
-            "lastName": "Perovic"
+            "firstName": "Glenn",
+            "lastName": "Hibbard"
           }
         },
         "meetingId": "TUT0101",
@@ -1560,7 +1488,7 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "82",
-        "actualEnrolment": "60",
+        "actualEnrolment": "63",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1593,68 +1521,25 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "WB",
-            "assignedRoom2": "WB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Daniel",
-            "lastName": "Grozea"
-          }
-        },
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "41",
-        "actualEnrolment": "23",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
+      }
+    }
+  },
+  "MSE219H1-F-20259": {
+    "courseId": "683de74969ee8765db5f96e6",
+    "courseTitle": "Structure and Characterization of Materials",
+    "code": "MSE219H1",
+    "courseDescription": "Introduction to two and three-dimensional crystallography and crystal structures of solids. Topics include: Pearson and Hermann-Mauguin symbols, reciprocal space, point group and space group symmetry analysis, stereographic projections. Introduction to tensor analysis of crystalline material properties, and symmetry breakdown by imperfections in crystals. Experimental techniques used to interpret structure and chemistry of solids and their defects will be covered theoretically and in the laboratory including: X-ray diffractometry, optical, electron and scanning probe microscopy, and surface/bulk spectroscopies based on optical, X-ray, electron and ion-beam analysis methods.",
+    "prerequisite": "APS110H1/MSE120H1/MSE160H1 or equivalent",
+    "corequisite": "",
+    "exclusion": "",
+    "recommendedPreparation": "",
+    "section": "F",
+    "session": "20259",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "",
+    "distributionCategories": "",
+    "meetings": {
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -1743,6 +1628,128 @@
           }
         ]
       },
+      "PRA-0101": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "WB",
+            "assignedRoom2": "WB"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Daniel",
+            "lastName": "Grozea"
+          }
+        },
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "41",
+        "actualEnrolment": "23",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SF",
+            "assignedRoom2": "SF"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Doug",
+            "lastName": "Perovic"
+          }
+        },
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "82",
+        "actualEnrolment": "60",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "PRA-0102": {
         "schedule": {
           "FR-0": {
@@ -1811,25 +1818,26 @@
     "courseTitle": "Mechanics of Solid Materials",
     "code": "MSE222H1",
     "courseDescription": "Principles of stress and strains; Axial loading; Torsion; Shear forces and bending moments; Stresses in Beams; Plane stresses and strains; Pressure vessels; Deflection of beams; Introduction to Finite Element Analysis",
-    "prerequisite": "<p>APS110H1/MSE160H1; CIV100H1/CIV102H1; ESC195H1/MAT187H1</p>",
+    "prerequisite": "APS110H1/MSE160H1; CIV100H1/CIV102H1; ESC195H1/MAT187H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "PRA-0101": {
+      "TUT-0101": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "15:00",
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "GB",
-            "assignedRoom2": "GB"
+            "assignedRoom1": "MY",
+            "assignedRoom2": "MY"
           }
         },
         "instructors": {
@@ -1839,8 +1847,8 @@
             "lastName": "Dai-Hattrick"
           }
         },
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
         "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
@@ -1882,15 +1890,15 @@
           }
         ]
       },
-      "TUT-0101": {
+      "PRA-0101": {
         "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "15:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "MY",
-            "assignedRoom2": "MY"
+            "assignedRoom1": "GB",
+            "assignedRoom2": "GB"
           }
         },
         "instructors": {
@@ -1900,8 +1908,8 @@
             "lastName": "Dai-Hattrick"
           }
         },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
         "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
@@ -2019,25 +2027,26 @@
     "courseTitle": "Engineering Statistics and Numerical Methods",
     "code": "MSE238H1",
     "courseDescription": "This course will teach engineering statistics and numerical methods with Python. Topics on statistics will include probability theory, hypothesis testing, discrete and continuous distribution, analysis of variance, sampling distributions, parameter estimation, regression analysis, statistical quality control and six-sigma. The topics on numerical methods will include curve fitting and interpolation, solving linear and nonlinear equations, numerical differentiation and integration, solution of ordinary and partial differential equations, initial and boundary value problems.",
-    "prerequisite": "<p>APS106H1/ESC180H1; MAT294H1</p>",
+    "prerequisite": "APS106H1/ESC180H1; MAT294H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "PRA-0101": {
+      "TUT-0101": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "MY",
-            "assignedRoom2": "MY"
+            "assignedRoom1": "SF",
+            "assignedRoom2": "SF"
           }
         },
         "instructors": {
@@ -2047,8 +2056,8 @@
             "lastName": "Hattrick-Simpers"
           }
         },
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
         "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
@@ -2159,15 +2168,15 @@
           }
         ]
       },
-      "TUT-0101": {
+      "PRA-0101": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "SF",
-            "assignedRoom2": "SF"
+            "assignedRoom1": "MY",
+            "assignedRoom2": "MY"
           }
         },
         "instructors": {
@@ -2177,8 +2186,8 @@
             "lastName": "Hattrick-Simpers"
           }
         },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
         "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
@@ -2227,82 +2236,17 @@
     "courseTitle": "Inorganic Materials Chemistry and Processing",
     "code": "MSE244H1",
     "courseDescription": "Review of atomic, molecular, and crystal structures. Covering acid-base and redox reactions and chemical properties of the groups in the periodic table. Concluding with an introduction to materials and energy balance in reactions, as well as kinetics and catalysis. Hands-on qualitative and quantitative analyses of inorganic compounds, by both classical \"wet\" volumetric and instrumental methods. Emphasis will be placed on a chemistry-based motivation of the course content.",
-    "prerequisite": "<p>APS110H1/MSE160H1</p>",
+    "prerequisite": "APS110H1/MSE160H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Anatole",
-            "lastName": "von Lilienfeld Toal"
-          },
-          "1": {
-            "instructorId": "1",
-            "firstName": "Kai",
-            "lastName": "Huang"
-          }
-        },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "72",
-        "actualEnrolment": "53",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -2437,6 +2381,72 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Anatole",
+            "lastName": "von Lilienfeld Toal"
+          },
+          "1": {
+            "instructorId": "1",
+            "firstName": "Kai",
+            "lastName": "Huang"
+          }
+        },
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "72",
+        "actualEnrolment": "53",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -2445,12 +2455,13 @@
     "courseTitle": "Organic Materials Chemistry and Properties",
     "code": "MSE245H1",
     "courseDescription": "Introduction to organic chemistry and organic materials. Naming, bonding and shapes of organic molecules. Properties and reactions of organic compounds. Key mechanisms including electrophilic addition, nucleophilic aliphatic substitution, β-elimination reactions and electrophilic aromatic substitution. Syntheses of polymers (step-growth and radical chain growth polymerization) and processing methods. Structure and properties of polymeric materials (amorphous, crystalline, elastomeric). Thermo-transition properties of polymers. Life-cycle of polymers, mechanisms of degradation and strategies of polymer recycle. Hands-on organic syntheses and separation experiments.",
-    "prerequisite": "<p>MSE244H1</p>",
+    "prerequisite": "MSE244H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -2524,67 +2535,6 @@
           }
         ]
       },
-      "TUT-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SF",
-            "assignedRoom2": "SF"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Christopher",
-            "lastName": "Sutton"
-          }
-        },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "72",
-        "actualEnrolment": "56",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "PRA-0101": {
         "schedule": {
           "MO-0": {
@@ -2645,53 +2595,23 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "MSE294H1-F-20259": {
-    "courseId": "683de74969ee8765db5f96eb",
-    "courseTitle": "Communications I",
-    "code": "MSE294H1",
-    "courseDescription": "This is part I of two laboratory, tutorial, and lecture courses building on the communication principles students learned in first year. Students will work in teams on open-ended design projects, and scaffolded assignments will provide students the opportunity to report on their projects in written reports, podium presentations, and poster presentations. The projects in this course are supported by laboratory exercises and tutorial activities.",
-    "prerequisite": "<p>APS112H1/ESC102H1</p>",
-    "corequisite": "",
-    "exclusion": "MSE298Y1H",
-    "recommendedPreparation": "<p>APS111H1, APS112H1</p>",
-    "section": "F",
-    "session": "20259",
-    "deliveryInstructions": null,
-    "breadthCategories": "",
-    "distributionCategories": "",
-    "meetings": {
+      },
       "TUT-0101": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "SF",
             "assignedRoom2": "SF"
-          },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "MY",
-            "assignedRoom2": "MY"
           }
         },
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Scott",
-            "lastName": "Ramsay"
-          },
-          "1": {
-            "instructorId": "1",
-            "firstName": "Jennifer",
-            "lastName": "Lofgreen"
+            "firstName": "Christopher",
+            "lastName": "Sutton"
           }
         },
         "meetingId": "TUT0101",
@@ -2703,7 +2623,7 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "72",
-        "actualEnrolment": "48",
+        "actualEnrolment": "56",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -2736,7 +2656,25 @@
             "adminOrgName": "All"
           }
         ]
-      },
+      }
+    }
+  },
+  "MSE294H1-F-20259": {
+    "courseId": "683de74969ee8765db5f96eb",
+    "courseTitle": "Communications I",
+    "code": "MSE294H1",
+    "courseDescription": "This is part I of two laboratory, tutorial, and lecture courses building on the communication principles students learned in first year. Students will work in teams on open-ended design projects, and scaffolded assignments will provide students the opportunity to report on their projects in written reports, podium presentations, and poster presentations. The projects in this course are supported by laboratory exercises and tutorial activities.",
+    "prerequisite": "APS112H1/ESC102H1",
+    "corequisite": "",
+    "exclusion": "MSE298Y1H",
+    "recommendedPreparation": "APS111H1, APS112H1",
+    "section": "F",
+    "session": "20259",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "",
+    "distributionCategories": "",
+    "meetings": {
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -2802,6 +2740,80 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SF",
+            "assignedRoom2": "SF"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "MY",
+            "assignedRoom2": "MY"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Scott",
+            "lastName": "Ramsay"
+          },
+          "1": {
+            "instructorId": "1",
+            "firstName": "Jennifer",
+            "lastName": "Lofgreen"
+          }
+        },
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "72",
+        "actualEnrolment": "48",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -2810,16 +2822,83 @@
     "courseTitle": "Communications II",
     "code": "MSE295H1",
     "courseDescription": "This is part II of two laboratory, tutorial, and lecture courses building on the communication principles students learned in first year. Students will work in teams on open-ended design projects, and scaffolded assignments will provide students the opportunity to report on their projects in written reports, podium presentations, and poster presentations. The projects in this course are supported by laboratory exercises and tutorial activities.",
-    "prerequisite": "<p>MSE294H1</p>",
+    "prerequisite": "MSE294H1",
     "corequisite": "",
-    "exclusion": "<p>MSE298Y1</p>",
-    "recommendedPreparation": "<p>APS111H1, APS112H1</p>",
+    "exclusion": "MSE298Y1",
+    "recommendedPreparation": "APS111H1, APS112H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
+      "LEC-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "GB",
+            "assignedRoom2": "GB"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Scott",
+            "lastName": "Ramsay"
+          },
+          "1": {
+            "instructorId": "1",
+            "firstName": "Jennifer",
+            "lastName": "Lofgreen"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "72",
+        "actualEnrolment": "53",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "APSC",
+            "primaryOrgName": "Faculty of Applied Science & Engineering",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "TUT-0101": {
         "schedule": {
           "TH-0": {
@@ -2893,72 +2972,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "LEC-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "GB",
-            "assignedRoom2": "GB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Scott",
-            "lastName": "Ramsay"
-          },
-          "1": {
-            "instructorId": "1",
-            "firstName": "Jennifer",
-            "lastName": "Lofgreen"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "72",
-        "actualEnrolment": "53",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "APSC",
-            "primaryOrgName": "Faculty of Applied Science & Engineering",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -2967,12 +2980,13 @@
     "courseTitle": "Thermodynamics II",
     "code": "MSE302H1",
     "courseDescription": "Ternary Phase Diagrams for Materials Processing and Properties. Introduction to Statistical Thermodynamics. Exploring the Concept of Chemical Potential in Solution Thermodynamics. Understanding Solution Models. Equilibrium in Multi-component Multi-phase Systems. Utilizing Thermodynamic Models for Creating Binary Phase Diagrams. Practical Applications of Thermodynamics with Industrial Examples. Analyzing Equilibrium Conditions in Electrochemical Systems and Their Practical Uses. Computational Thermodynamics for Advanced Understanding.",
-    "prerequisite": "<p>MSE202H1</p>",
+    "prerequisite": "MSE202H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3073,67 +3087,6 @@
           }
         ]
       },
-      "TUT-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Liyang",
-            "lastName": "Dai-Hattrick"
-          }
-        },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "82",
-        "actualEnrolment": "53",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "PRA-0101": {
         "schedule": {
           "WE-0": {
@@ -3194,6 +3147,67 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Liyang",
+            "lastName": "Dai-Hattrick"
+          }
+        },
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "82",
+        "actualEnrolment": "53",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -3202,12 +3216,13 @@
     "courseTitle": "Mechanical Behaviour of Materials",
     "code": "MSE316H1",
     "courseDescription": "The mechanical behaviour of engineering materials including metals, alloys, ceramics and polymeric materials. The following topics will be discussed: macro- and micro-structural response of materials to external loads; load-displacement and stress-strain relationships, processes and mechanisms of elastic, visco-elastic, plastic and creep deformation, crystallographic aspects of plastic flow, effect of defects on mechanical behaviour, strain hardening theory, strengthening mechanisms and mechanical testing.",
-    "prerequisite": "<p>MSE218H1; MSE219H1; MSE222H1; or equivalent</p>",
+    "prerequisite": "MSE218H1; MSE219H1; MSE222H1; or equivalent",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3437,12 +3452,13 @@
     "courseTitle": "Heat and Mass Transfer for Materials Processing",
     "code": "MSE332H1",
     "courseDescription": "Fundamental concepts of momentum, heat, and mass transfer as applied in materials engineering. Development of approximate analytical descriptions of fluid velocity, temperature, and concentration distributions, including momentum, mass, and thermal boundary layers. Steady state and transient analyses of heat and mass transport in slabs, cylinders, and spheres. Emphasis on appreciating physical behaviour through solutions of problems in metallurgy and material processing.",
-    "prerequisite": "<p>ESC195H1/MAT187H1, MSE202H1; MSE217H1</p>",
+    "prerequisite": "ESC195H1/MAT187H1, MSE202H1; MSE217H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3592,12 +3608,13 @@
     "courseTitle": "MATERIALS PHYSICS",
     "code": "MSE335H1",
     "courseDescription": "Application of solid state physics to describe properties of materials. Thermal properties of solids: lattice vibrations (phonons), heat capacity, thermal conductivity. Electrical properties of metals: simple circuits, resistivity of metals (classical and quantum descriptions), Seebeck, Peltier, and Thomson effects. Electrical properties of semiconductors: band structure and occupancy, conductivity, Hall effect, simple devices. Electrical properties of insulators: polarization, capacitance, optical properties, ferroelectric and piezoelectric materials. Magnetic properties: diamagnetism and paramagnetism, ferromagnetic and ferrimagnetic materials, magnetic domains, B-H curves.",
-    "prerequisite": "<p>MAT294H1, MSE219H1; or equivalent</p>",
+    "prerequisite": "MAT294H1, MSE219H1; or equivalent",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3772,6 +3789,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3948,25 +3966,34 @@
     "courseTitle": "Design and Simulation of Materials Processes",
     "code": "MSE351H1",
     "courseDescription": "An overview of computer modeling approaches to analyze various macro-scale phenomena involved in materials processing, product design, and manufacturing. These approaches will include weighted residual methods, finite element and finite difference methods, computational fluid dynamics, and multiphysics simulations. The students will apply these methods to study heat transfer, fluid flow, stress analysis, structural dynamics, and coupled behavior. Practical experience will be provided on commercial finite element (FE) and computer-aided design (CAD) packages such as ANSYS and SOLIDWORKS.",
-    "prerequisite": "<p>MSE218H1; MSE238H1; MSE316H1; MSE332H1</p>",
+    "prerequisite": "MSE218H1; MSE238H1; MSE316H1; MSE332H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "TUT-0101": {
+      "LEC-0101": {
         "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "SF",
-            "assignedRoom2": "SF"
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
           }
         },
         "instructors": {
@@ -3976,12 +4003,12 @@
             "lastName": "Singh"
           }
         },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
         "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
-        "waitlist": "N",
+        "waitlist": "Y",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "72",
@@ -3992,8 +4019,8 @@
         "enrollmentControls": [
           {
             "postId": "1",
-            "postCode": "*",
-            "postName": "All",
+            "postCode": "",
+            "postName": "",
             "subjectId": "1",
             "subjectCode": "*",
             "subjectName": "All",
@@ -4005,8 +4032,8 @@
             "typeOfProgramCode": "*",
             "typeOfProgramName": "All",
             "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
+            "primaryOrgCode": "APSC",
+            "primaryOrgName": "Faculty of Applied Science & Engineering",
             "secondaryOrgId": "1",
             "secondaryOrgCode": "*",
             "secondaryOrgName": "All",
@@ -4080,23 +4107,15 @@
           }
         ]
       },
-      "LEC-0101": {
+      "TUT-0101": {
         "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          },
-          "TH-1": {
-            "meetingDay": "TH",
+          "FR-0": {
+            "meetingDay": "FR",
             "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SF",
+            "assignedRoom2": "SF"
           }
         },
         "instructors": {
@@ -4106,78 +4125,6 @@
             "lastName": "Singh"
           }
         },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "72",
-        "actualEnrolment": "46",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "APSC",
-            "primaryOrgName": "Faculty of Applied Science & Engineering",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      }
-    }
-  },
-  "MSE355H1-S-20261": {
-    "courseId": "683de74969ee8765db5f96f3",
-    "courseTitle": "Materials Production",
-    "code": "MSE355H1",
-    "courseDescription": "Materials life cycle, primary and secondary resources, resource life and sustainability. Technologies and unit operations used in the production of light metals, non-ferrous and ferrous metals. Energy use and conservation in production of materials. Benefits and technologies of recycling. Treatment of waste streams for value recovery and safe disposal",
-    "prerequisite": "<p>MSE217H1, MSE302H1</p>",
-    "corequisite": "",
-    "exclusion": "",
-    "recommendedPreparation": "",
-    "section": "S",
-    "session": "20261",
-    "deliveryInstructions": null,
-    "breadthCategories": "",
-    "distributionCategories": "",
-    "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MY",
-            "assignedRoom2": "MY"
-          }
-        },
-        "instructors": {},
         "meetingId": "TUT0101",
         "teachingMethod": "TUT",
         "sectionNumber": "0101",
@@ -4220,7 +4167,25 @@
             "adminOrgName": "All"
           }
         ]
-      },
+      }
+    }
+  },
+  "MSE355H1-S-20261": {
+    "courseId": "683de74969ee8765db5f96f3",
+    "courseTitle": "Materials Production",
+    "code": "MSE355H1",
+    "courseDescription": "Materials life cycle, primary and secondary resources, resource life and sustainability. Technologies and unit operations used in the production of light metals, non-ferrous and ferrous metals. Energy use and conservation in production of materials. Benefits and technologies of recycling. Treatment of waste streams for value recovery and safe disposal",
+    "prerequisite": "MSE217H1, MSE302H1",
+    "corequisite": "",
+    "exclusion": "",
+    "recommendedPreparation": "",
+    "section": "S",
+    "session": "20261",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "",
+    "distributionCategories": "",
+    "meetings": {
       "LEC-0101": {
         "schedule": {
           "TH-0": {
@@ -4275,6 +4240,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MY",
+            "assignedRoom2": "MY"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "72",
+        "actualEnrolment": "46",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -4283,16 +4303,86 @@
     "courseTitle": "Materials Manufact. & Design I",
     "code": "MSE396H1",
     "courseDescription": "Bringing together concepts from across our entire curriculum, including Mechanical Behaviour of Materials, Phase Transformations, Heat and Mass Transport, and Thermodynamics, this course explains the processing-microstructure-properties-performance paradigm underlying several manufacturing techniques. This part I of two courses connecting materials selection, CAD drawing (and simulation) and the basics of manufacturing methods for component and product design. The course culminates in a project in which students complete the design, prototyping, simulation, cost modelling and validation for product design of their own choosing.",
-    "prerequisite": "<p>MSE222H1; MSE295H1</p>",
+    "prerequisite": "MSE222H1; MSE295H1",
     "corequisite": "",
-    "exclusion": "<p>MSE398Y1</p>",
+    "exclusion": "MSE398Y1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
+      "LEC-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "10:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Scott",
+            "lastName": "Ramsay"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "72",
+        "actualEnrolment": "47",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "APSC",
+            "primaryOrgName": "Faculty of Applied Science & Engineering",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "PRA-0103": {
         "schedule": {
           "TU-0": {
@@ -4329,67 +4419,6 @@
         "online": "In Person",
         "enrollmentCapacity": "24",
         "actualEnrolment": "10",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MY",
-            "assignedRoom2": "MY"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Scott",
-            "lastName": "Ramsay"
-          }
-        },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "72",
-        "actualEnrolment": "47",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -4492,6 +4521,67 @@
           }
         ]
       },
+      "TUT-0101": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MY",
+            "assignedRoom2": "MY"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Scott",
+            "lastName": "Ramsay"
+          }
+        },
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "72",
+        "actualEnrolment": "47",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "PRA-0101": {
         "schedule": {
           "TU-0": {
@@ -4560,75 +4650,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "LEC-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Scott",
-            "lastName": "Ramsay"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "72",
-        "actualEnrolment": "47",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "APSC",
-            "primaryOrgName": "Faculty of Applied Science & Engineering",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -4637,12 +4658,13 @@
     "courseTitle": "Materials Manufac. & Design II",
     "code": "MSE397H1",
     "courseDescription": "Bringing together concepts from across our entire curriculum, including Mechanical Behaviour of Materials, Phase Transformations, Heat and Mass Transport, and Thermodynamics, this course explains the processing-microstructure-properties-performance paradigm underlying several manufacturing techniques. This part II of two courses connecting materials selection, CAD drawing (and simulation) and the basics of manufacturing methods for component and product design. The course culminates in a project in which students complete the design, prototyping, simulation, cost modelling and validation for product design of their own choosing.",
-    "prerequisite": "<p>MSE396H1</p>",
+    "prerequisite": "MSE396H1",
     "corequisite": "",
     "exclusion": "MSE398Y1Y",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -4716,6 +4738,75 @@
           }
         ]
       },
+      "PRA-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "WB",
+            "assignedRoom2": "WB"
+          },
+          "TU-1": {
+            "meetingDay": "TU",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "WB",
+            "assignedRoom2": "WB"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Scott",
+            "lastName": "Ramsay"
+          }
+        },
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "24",
+        "actualEnrolment": "16",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "TUT-0101": {
         "schedule": {
           "FR-0": {
@@ -4744,6 +4835,75 @@
         "online": "In Person",
         "enrollmentCapacity": "72",
         "actualEnrolment": "48",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0102": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "WB",
+            "assignedRoom2": "WB"
+          },
+          "TU-1": {
+            "meetingDay": "TU",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "WB",
+            "assignedRoom2": "WB"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Scott",
+            "lastName": "Ramsay"
+          }
+        },
+        "meetingId": "PRA0102",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0102",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "24",
+        "actualEnrolment": "16",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -4872,144 +5032,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "WB",
-            "assignedRoom2": "WB"
-          },
-          "TU-1": {
-            "meetingDay": "TU",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "WB",
-            "assignedRoom2": "WB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Scott",
-            "lastName": "Ramsay"
-          }
-        },
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "24",
-        "actualEnrolment": "16",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0102": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "WB",
-            "assignedRoom2": "WB"
-          },
-          "TU-1": {
-            "meetingDay": "TU",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "WB",
-            "assignedRoom2": "WB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Scott",
-            "lastName": "Ramsay"
-          }
-        },
-        "meetingId": "PRA0102",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "24",
-        "actualEnrolment": "16",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -5024,6 +5046,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -5226,93 +5249,17 @@
     "courseTitle": "Advanced A.I. for Accelerated Materials Discovery",
     "code": "MSE403H1",
     "courseDescription": "Delving into the cutting- edge field of AI-driven materials discovery, equipping students with the tools to develop advanced algorithms that can autonomously learn from data, make predictions, and direct future experiments. Students will explore how AI models such as decision trees, Bayesian optimization, and other statistical methods can be combined with adaptive strategies to propose new experiments and calculations in an iterative loop. Building on the foundations from MSE 465, with a hands-on emphasis on the design and implementation of AI workflows. Students will practice balancing exploration and exploitation strategies, as well as design their own. Culminating in a final project where students will deploy their workflows to control a self-driving lab, guiding an autonomous materials optimization campaign.",
-    "prerequisite": "<p>MSE465H1</p>",
+    "prerequisite": "MSE465H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "LEC-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          },
-          "FR-1": {
-            "meetingDay": "FR",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          },
-          "TH-2": {
-            "meetingDay": "TH",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "GB",
-            "assignedRoom2": "GB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Jason",
-            "lastName": "Hattrick-Simpers"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "9",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "APSC",
-            "primaryOrgName": "Faculty of Applied Science & Engineering",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "PRA-0101": {
         "schedule": {
           "MO-0": {
@@ -5373,60 +5320,59 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "MSE415H1-F-20259": {
-    "courseId": "683de74969ee8765db5f96f8",
-    "courseTitle": "ENV. DEGRADATION OF MATERIALS",
-    "code": "MSE415H1",
-    "courseDescription": "This course deals with four major areas: electrochemistry of low temperature aqueous solvents, the corrosion of materials, mechano-chemical effects in materials and corrosion prevention in design. Electrochemistry deals with thermodynamics of material-electrolyte systems involving ion-solvent, ion-ion interactions, activity coefficients, Nernst equation and Pourbaix diagrams, and rate theory through activation and concentration polarization. Corrosion of metallic, polymeric, ceramic, composite, electronic and biomaterials will be explored along with mechano-chemical effects of stress corrosion, hydrogen embrittlement and corrosion fatigue. Corrosion prevention in terms of case histories and the use of expert systems in materials selection.",
-    "prerequisite": "<p>MSE244H1; MSE245H1; MSE302H1</p>",
-    "corequisite": "",
-    "exclusion": "",
-    "recommendedPreparation": "",
-    "section": "F",
-    "session": "20259",
-    "deliveryInstructions": null,
-    "breadthCategories": "",
-    "distributionCategories": "",
-    "meetings": {
-      "TUT-0101": {
+      },
+      "LEC-0101": {
         "schedule": {
-          "FR-0": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "GB",
+            "assignedRoom2": "GB"
+          },
+          "TU-1": {
+            "meetingDay": "TU",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          },
+          "FR-2": {
             "meetingDay": "FR",
             "meetingStartTime": "10:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MY",
-            "assignedRoom2": "MY"
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
           }
         },
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Steven",
-            "lastName": "Thorpe"
+            "firstName": "Jason",
+            "lastName": "Hattrick-Simpers"
           }
         },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
         "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
-        "waitlist": "N",
+        "waitlist": "Y",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "72",
-        "actualEnrolment": "48",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "9",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
         "enrollmentControls": [
           {
             "postId": "1",
-            "postCode": "*",
-            "postName": "All",
+            "postCode": "",
+            "postName": "",
             "subjectId": "1",
             "subjectCode": "*",
             "subjectName": "All",
@@ -5438,8 +5384,8 @@
             "typeOfProgramCode": "*",
             "typeOfProgramName": "All",
             "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
+            "primaryOrgCode": "APSC",
+            "primaryOrgName": "Faculty of Applied Science & Engineering",
             "secondaryOrgId": "1",
             "secondaryOrgCode": "*",
             "secondaryOrgName": "All",
@@ -5451,7 +5397,25 @@
             "adminOrgName": "All"
           }
         ]
-      },
+      }
+    }
+  },
+  "MSE415H1-F-20259": {
+    "courseId": "683de74969ee8765db5f96f8",
+    "courseTitle": "ENV. DEGRADATION OF MATERIALS",
+    "code": "MSE415H1",
+    "courseDescription": "This course deals with four major areas: electrochemistry of low temperature aqueous solvents, the corrosion of materials, mechano-chemical effects in materials and corrosion prevention in design. Electrochemistry deals with thermodynamics of material-electrolyte systems involving ion-solvent, ion-ion interactions, activity coefficients, Nernst equation and Pourbaix diagrams, and rate theory through activation and concentration polarization. Corrosion of metallic, polymeric, ceramic, composite, electronic and biomaterials will be explored along with mechano-chemical effects of stress corrosion, hydrogen embrittlement and corrosion fatigue. Corrosion prevention in terms of case histories and the use of expert systems in materials selection.",
+    "prerequisite": "MSE244H1; MSE245H1; MSE302H1",
+    "corequisite": "",
+    "exclusion": "",
+    "recommendedPreparation": "",
+    "section": "F",
+    "session": "20259",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "",
+    "distributionCategories": "",
+    "meetings": {
       "LEC-0101": {
         "schedule": {
           "TH-0": {
@@ -5555,6 +5519,67 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MY",
+            "assignedRoom2": "MY"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Steven",
+            "lastName": "Thorpe"
+          }
+        },
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "72",
+        "actualEnrolment": "48",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -5569,6 +5594,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -5743,6 +5769,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -5909,71 +5936,11 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "GB",
-            "assignedRoom2": "GB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Doug",
-            "lastName": "Perovic"
-          }
-        },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "89",
-        "actualEnrolment": "48",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -6061,6 +6028,67 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "10:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "GB",
+            "assignedRoom2": "GB"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Doug",
+            "lastName": "Perovic"
+          }
+        },
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "89",
+        "actualEnrolment": "48",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -6075,6 +6103,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -6214,10 +6243,72 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
+      "TUT-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "GB",
+            "assignedRoom2": "GB"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Benjamin",
+            "lastName": "Hatton"
+          }
+        },
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "60",
+        "actualEnrolment": "16",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -6313,67 +6404,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "GB",
-            "assignedRoom2": "GB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Benjamin",
-            "lastName": "Hatton"
-          }
-        },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "60",
-        "actualEnrolment": "16",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -6388,71 +6418,11 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Steven",
-            "lastName": "Thorpe"
-          }
-        },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "9",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -6556,6 +6526,67 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Steven",
+            "lastName": "Thorpe"
+          }
+        },
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "9",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -6564,16 +6595,78 @@
     "courseTitle": "Synthesis of Nanostructured Materials",
     "code": "MSE459H1",
     "courseDescription": "Various synthesis techniques to produce nanostructured materials will be introduced. These synthesis techniques are categorized into chemical methods and physical methods. The chemical methods module discusses the general principles of nucleation and growth and covers specific chemical reactions for nanomaterial synthesis. The physical methods module introduces nanomaterials synthesis by solid-state processing, liquid-phase processing, vapor-phase processing, etc. In addition, the fundamental properties of nanomaterials introduced and the basic solid-state physics for nanocrystalline materials and advanced technologies for nanomaterial characterizations reviewed.",
-    "prerequisite": "<p>MSE219H1; MSE244H1; or equivalent</p>",
+    "prerequisite": "MSE219H1; MSE244H1; or equivalent",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
+      "PRA-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "RW",
+            "assignedRoom2": "RW"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Kai",
+            "lastName": "Huang"
+          }
+        },
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "24",
+        "actualEnrolment": "20",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -6669,67 +6762,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "RW",
-            "assignedRoom2": "RW"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Kai",
-            "lastName": "Huang"
-          }
-        },
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "24",
-        "actualEnrolment": "20",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -6744,6 +6776,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -6923,74 +6956,14 @@
     "prerequisite": "",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>A strong background in math, programming, AI, and machine learning</p>",
+    "recommendedPreparation": "A strong background in math, programming, AI, and machine learning",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "PRA-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "WB",
-            "assignedRoom2": "WB"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Chandra Veer",
-            "lastName": "Singh"
-          }
-        },
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "40",
-        "actualEnrolment": "23",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -7078,6 +7051,67 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "WB",
+            "assignedRoom2": "WB"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Chandra Veer",
+            "lastName": "Singh"
+          }
+        },
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "40",
+        "actualEnrolment": "23",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -7092,6 +7126,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -7170,6 +7205,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -7275,6 +7311,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -7374,77 +7411,17 @@
     "courseTitle": "Design of Materials Processes",
     "code": "MSE498Y1",
     "courseDescription": "The students, working in small groups complete a project involving design of a materials processing plant, leading to a design report delivered at the conclusion of the course. The topics covered in the lectures and design process include basic materials processing flowsheet for primary processing and recycling of materials, materials and energy balance of individual units and of overall process flowsheets, use of computer software for flowsheet evaluation, translating process flowsheets to resource and utility requirements, energy analysis, capital/operating cost, basics of equipment sizing, operation scheduling, safety and HAZOP, plant layout, and design for sustainability.",
-    "prerequisite": "<p>All Y3 core courses.</p>",
+    "prerequisite": "All Y3 core courses.",
     "corequisite": "",
     "exclusion": "CHM499Y1",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "LEC-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SF",
-            "assignedRoom2": "SF"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Mansoor",
-            "lastName": "Barati Sedeh"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "70",
-        "actualEnrolment": "32",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "APSC",
-            "primaryOrgName": "Faculty of Applied Science & Engineering",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "TUT-0101": {
         "schedule": {
           "MO-0": {
@@ -7494,6 +7471,67 @@
             "primaryOrgId": "1",
             "primaryOrgCode": "*",
             "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SF",
+            "assignedRoom2": "SF"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Mansoor",
+            "lastName": "Barati Sedeh"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "70",
+        "actualEnrolment": "32",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "APSC",
+            "primaryOrgName": "Faculty of Applied Science & Engineering",
             "secondaryOrgId": "1",
             "secondaryOrgCode": "*",
             "secondaryOrgName": "All",
@@ -7574,12 +7612,13 @@
     "courseTitle": "Composite Materials Engineering",
     "code": "MSE543H1",
     "courseDescription": "This course is designed to provide an integrated approach to composite materials design, and provide a strong foundation for further studies and research on these materials. Topics include: structure, processing, and properties of composite materials; design of fillers reinforcements and matrices reinforcements, reinforcement forms, nanocomposites systems, manufacturing processes, testing and properties, micro and macromechanics modeling of composite systems; and new applications of composites in various sectors.",
-    "prerequisite": "<p>MSE245H1, MSE316H1 or equivalent</p>",
+    "prerequisite": "MSE245H1, MSE316H1 or equivalent",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",

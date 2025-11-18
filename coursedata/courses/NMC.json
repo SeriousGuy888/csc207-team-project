@@ -10,32 +10,33 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
     "meetings": {
-      "TUT-0301": {
+      "TUT-0101": {
         "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "",
             "assignedRoom2": ""
           }
         },
         "instructors": {},
-        "meetingId": "TUT0301",
+        "meetingId": "TUT0101",
         "teachingMethod": "TUT",
-        "sectionNumber": "0301",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "SYNC",
         "online": "Online",
         "enrollmentCapacity": "25",
-        "actualEnrolment": "21",
+        "actualEnrolment": "22",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -69,7 +70,7 @@
           }
         ]
       },
-      "TUT-0102": {
+      "TUT-0103": {
         "schedule": {
           "WE-0": {
             "meetingDay": "WE",
@@ -81,16 +82,71 @@
           }
         },
         "instructors": {},
-        "meetingId": "TUT0102",
+        "meetingId": "TUT0103",
         "teachingMethod": "TUT",
-        "sectionNumber": "0102",
+        "sectionNumber": "0103",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "SYNC",
         "online": "Online",
         "enrollmentCapacity": "25",
-        "actualEnrolment": "25",
+        "actualEnrolment": "24",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0302": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0302",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0302",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "SYNC",
+        "online": "Online",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "20",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -302,7 +358,7 @@
           }
         ]
       },
-      "TUT-0101": {
+      "TUT-0102": {
         "schedule": {
           "WE-0": {
             "meetingDay": "WE",
@@ -314,16 +370,16 @@
           }
         },
         "instructors": {},
-        "meetingId": "TUT0101",
+        "meetingId": "TUT0102",
         "teachingMethod": "TUT",
-        "sectionNumber": "0101",
+        "sectionNumber": "0102",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "SYNC",
         "online": "Online",
         "enrollmentCapacity": "25",
-        "actualEnrolment": "22",
+        "actualEnrolment": "25",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -357,62 +413,7 @@
           }
         ]
       },
-      "TUT-0103": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0103",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0103",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "SYNC",
-        "online": "Online",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "24",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0302": {
+      "TUT-0301": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
@@ -424,16 +425,16 @@
           }
         },
         "instructors": {},
-        "meetingId": "TUT0302",
+        "meetingId": "TUT0301",
         "teachingMethod": "TUT",
-        "sectionNumber": "0302",
+        "sectionNumber": "0301",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "SYNC",
         "online": "Online",
         "enrollmentCapacity": "25",
-        "actualEnrolment": "20",
+        "actualEnrolment": "21",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -590,175 +591,11 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
     "meetings": {
-      "TUT-0102": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MP",
-            "assignedRoom2": "MP"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0102",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "24",
-        "actualEnrolment": "10",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0201": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "16:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0201",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "24",
-        "actualEnrolment": "9",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0401": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0401",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0401",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "24",
-        "actualEnrolment": "5",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TH-0": {
@@ -991,46 +828,29 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "NMC103H1-F-20259": {
-    "courseId": "67fcf9bede40c67f1da33d28",
-    "courseTitle": "The Islamic World",
-    "code": "NMC103H1",
-    "courseDescription": "A broad introduction to Islam, including the history, culture, and religion of the people and places that came to be influenced by Islam and that constitute a world civilization. What makes something (an empire or state, or a work of art or music) Islamic? When and how did that which we think of today as Islamic come about? How has “the Islamic” changed over time? With these questions in mind, this course introduces students to major figures, events, themes, institutions, and intellectual currents in Islamic history, from its beginnings in the 7th century to the modern period. Key topics to be covered include the rise and spread of Islam, the Qur’an and the role of Arabic, political thought, law and society, and literary and artistic expressions. Attention is paid to the geographical and ethno-linguistic scope of the Muslim world, demonstrating the diversity of peoples and traditions that make up Islamic civilizations.",
-    "prerequisite": "",
-    "corequisite": "",
-    "exclusion": "",
-    "recommendedPreparation": "",
-    "section": "F",
-    "session": "20259",
-    "deliveryInstructions": null,
-    "breadthCategories": "Society and its Institutions (3)",
-    "distributionCategories": "Humanities",
-    "meetings": {
-      "TUT-0101": {
+      },
+      "TUT-0102": {
         "schedule": {
           "TH-0": {
             "meetingDay": "TH",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
+            "assignedRoom1": "MP",
+            "assignedRoom2": "MP"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0101",
+        "meetingId": "TUT0102",
         "teachingMethod": "TUT",
-        "sectionNumber": "0101",
+        "sectionNumber": "0102",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "22",
+        "enrollmentCapacity": "24",
+        "actualEnrolment": "10",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1064,23 +884,151 @@
           }
         ]
       },
-      "LEC-0101": {
+      "TUT-0201": {
         "schedule": {
           "TH-0": {
             "meetingDay": "TH",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0201",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "24",
+        "actualEnrolment": "9",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0401": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
             "meetingStartTime": "11:00",
             "meetingEndTime": "12:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          },
-          "TU-1": {
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0401",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0401",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "24",
+        "actualEnrolment": "5",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      }
+    }
+  },
+  "NMC103H1-F-20259": {
+    "courseId": "67fcf9bede40c67f1da33d28",
+    "courseTitle": "The Islamic World",
+    "code": "NMC103H1",
+    "courseDescription": "A broad introduction to Islam, including the history, culture, and religion of the people and places that came to be influenced by Islam and that constitute a world civilization. What makes something (an empire or state, or a work of art or music) Islamic? When and how did that which we think of today as Islamic come about? How has “the Islamic” changed over time? With these questions in mind, this course introduces students to major figures, events, themes, institutions, and intellectual currents in Islamic history, from its beginnings in the 7th century to the modern period. Key topics to be covered include the rise and spread of Islam, the Qur’an and the role of Arabic, political thought, law and society, and literary and artistic expressions. Attention is paid to the geographical and ethno-linguistic scope of the Muslim world, demonstrating the diversity of peoples and traditions that make up Islamic civilizations.",
+    "prerequisite": "",
+    "corequisite": "",
+    "exclusion": "",
+    "recommendedPreparation": "",
+    "section": "F",
+    "session": "20259",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "Society and its Institutions (3)",
+    "distributionCategories": "Humanities",
+    "meetings": {
+      "LEC-0101": {
+        "schedule": {
+          "TU-0": {
             "meetingDay": "TU",
             "meetingStartTime": "11:00",
             "meetingEndTime": "12:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "RW",
             "assignedRoom2": "RW"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
           }
         },
         "instructors": {
@@ -1323,33 +1271,16 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "NMC104H1-F-20259": {
-    "courseId": "67fcf9bede40c67f1da33d29",
-    "courseTitle": "The Biblical World",
-    "code": "NMC104H1",
-    "courseDescription": "Examine the history, lands, peoples, religions, literatures and cultures that produced the Hebrew Bible/Old Testament. Topics to be covered include an overview of the geography and history of Ancient Israel and Judea, the role of the Hebrew, Aramaic, and Greek languages, the literary genres reflected in biblical and some contemporary non-biblical texts, and the scholarly methods by which the Bible is studied.",
-    "prerequisite": "",
-    "corequisite": "",
-    "exclusion": "",
-    "recommendedPreparation": "",
-    "section": "F",
-    "session": "20259",
-    "deliveryInstructions": null,
-    "breadthCategories": "Society and its Institutions (3)",
-    "distributionCategories": "Humanities",
-    "meetings": {
+      },
       "TUT-0101": {
         "schedule": {
           "TH-0": {
             "meetingDay": "TH",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
           }
         },
         "instructors": {},
@@ -1361,8 +1292,8 @@
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "24",
-        "actualEnrolment": "18",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "22",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1395,7 +1326,25 @@
             "adminOrgName": "All"
           }
         ]
-      },
+      }
+    }
+  },
+  "NMC104H1-F-20259": {
+    "courseId": "67fcf9bede40c67f1da33d29",
+    "courseTitle": "The Biblical World",
+    "code": "NMC104H1",
+    "courseDescription": "Examine the history, lands, peoples, religions, literatures and cultures that produced the Hebrew Bible/Old Testament. Topics to be covered include an overview of the geography and history of Ancient Israel and Judea, the role of the Hebrew, Aramaic, and Greek languages, the literary genres reflected in biblical and some contemporary non-biblical texts, and the scholarly methods by which the Bible is studied.",
+    "prerequisite": "",
+    "corequisite": "",
+    "exclusion": "",
+    "recommendedPreparation": "",
+    "section": "F",
+    "session": "20259",
+    "webTimetableInstructions": "Delivery InstructionsThis is a hybrid course includes one Asynchronous lecture, one in-person lecture, and in-person tutorials.",
+    "deliveryInstructions": null,
+    "breadthCategories": "Society and its Institutions (3)",
+    "distributionCategories": "Humanities",
+    "meetings": {
       "LEC-0101": {
         "schedule": {
           "TH-0": {
@@ -1593,6 +1542,61 @@
           }
         ]
       },
+      "TUT-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "24",
+        "actualEnrolment": "18",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "TUT-0301": {
         "schedule": {
           "FR-0": {
@@ -1661,6 +1665,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -1739,6 +1744,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -1811,12 +1817,13 @@
     "courseTitle": "The Persian Empire: Superpower of the Ancient World",
     "code": "NMC238H1",
     "courseDescription": "The Achaemenid Persian Empire (550-323 BCE) ruled communities stretching from Egypt and Greece to Central Asia and the Indus River. Persian rule transformed the eastern Mediterranean and Middle East: the Persians conquered the great civilizations of Mesopotamia and Egypt, they were the first rivals of the Greek world, and they impacted the formation of Judaism. This course will survey the political, cultural, religious, social, and economic history of the Persian Empire. Students will read primary written sources in translation such as Greek historical texts, Egyptian papyri, and cuneiform tablets. Students will also learn about the archaeology of the Persian heartland in Iran, as well as the Persian impact in places like Turkey, Israel, and Afghanistan.",
-    "prerequisite": "<p>4.0 credits </p>",
+    "prerequisite": "4.0 credits",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>NMC102H1</p>",
+    "recommendedPreparation": "NMC102H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and Its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -1943,12 +1950,13 @@
     "courseTitle": "Health and Healing on the Nile: Ancient Egyptian Medicine",
     "code": "NMC249H1",
     "courseDescription": "The course provides an overview of medicine and medical practices from ancient Egypt between the 3rd millennium BCE to first millennium CE, primarily drawing on Egyptian evidence. Materials from neighbouring cultures are also included for comparative reasons. The focus of the class is on interpreting and reconstructing ancient healing practices and theories based on original sources (in translation) through a modern methodological approach, combining perspectives from both the humanities and the medical sciences. Both written and material sources are examined and discussed. One of the main objectives of the module is to make students aware of the importance of culture in interpreting ancient medicine.",
-    "prerequisite": "<p>2.0 100-level credits</p>",
+    "prerequisite": "2.0 100-level credits",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Thought, Belief and Behaviour (2)",
     "distributionCategories": "Humanities",
@@ -2081,6 +2089,7 @@
     "recommendedPreparation": "NMC101H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -2213,6 +2222,7 @@
     "recommendedPreparation": "NMC104H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -2345,32 +2355,33 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Thought, Belief and Behaviour (2)",
     "distributionCategories": "Humanities",
     "meetings": {
-      "TUT-5101": {
+      "TUT-5201": {
         "schedule": {
           "TU-0": {
             "meetingDay": "TU",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "18:00",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "19:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
+            "assignedRoom1": "KP",
+            "assignedRoom2": "KP"
           }
         },
         "instructors": {},
-        "meetingId": "TUT5101",
+        "meetingId": "TUT5201",
         "teachingMethod": "TUT",
-        "sectionNumber": "5101",
+        "sectionNumber": "5201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "25",
-        "actualEnrolment": "22",
+        "actualEnrolment": "8",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -2519,28 +2530,28 @@
           }
         ]
       },
-      "TUT-0201": {
+      "TUT-5101": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "18:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "SK",
-            "assignedRoom2": "SK"
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0201",
+        "meetingId": "TUT5101",
         "teachingMethod": "TUT",
-        "sectionNumber": "0201",
+        "sectionNumber": "5101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "25",
-        "actualEnrolment": "8",
+        "actualEnrolment": "22",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -2574,21 +2585,21 @@
           }
         ]
       },
-      "TUT-5201": {
+      "TUT-0201": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "19:00",
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "KP",
-            "assignedRoom2": "KP"
+            "assignedRoom1": "SK",
+            "assignedRoom2": "SK"
           }
         },
         "instructors": {},
-        "meetingId": "TUT5201",
+        "meetingId": "TUT0201",
         "teachingMethod": "TUT",
-        "sectionNumber": "5201",
+        "sectionNumber": "0201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -2697,27 +2708,28 @@
     "recommendedPreparation": "1.0 credit in Humanities/BR=1 or 2",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "WW",
-            "assignedRoom2": "WW"
-          },
-          "TU-1": {
+          "TU-0": {
             "meetingDay": "TU",
             "meetingStartTime": "13:00",
             "meetingEndTime": "14:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "PB",
             "assignedRoom2": "PB"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "WW",
+            "assignedRoom2": "WW"
           }
         },
         "instructors": {
@@ -2864,6 +2876,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Thought, Belief and Behaviour (2)",
     "distributionCategories": "Humanities",
@@ -2996,6 +3009,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3128,6 +3142,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3260,6 +3275,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -3400,27 +3416,28 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BF",
-            "assignedRoom2": "BF"
-          },
-          "MO-1": {
+          "MO-0": {
             "meetingDay": "MO",
             "meetingStartTime": "13:00",
             "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "AP",
             "assignedRoom2": "AP"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "BF",
+            "assignedRoom2": "BF"
           }
         },
         "instructors": {},
@@ -3534,6 +3551,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3666,6 +3684,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3798,6 +3817,7 @@
     "recommendedPreparation": "NMC102H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -3930,6 +3950,7 @@
     "recommendedPreparation": "NMC101H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -4056,12 +4077,13 @@
     "courseTitle": "Data Science Applications in Archaeology",
     "code": "NMC268H1",
     "courseDescription": "Digital technology and the growth of “big data” are transforming not only the ways in which archaeologists present and communicate their research, but also increasingly the ways they collect and analyze data. This course uses underlying concepts from the emerging field of data science and helps students develop hands-on skills in various critical techniques in archaeological data analysis and modelling, focusing on case studies from the Near East.",
-    "prerequisite": "<p>3.0 credits at the 100-level.</p>",
+    "prerequisite": "3.0 credits at the 100-level.",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "",
@@ -4194,6 +4216,7 @@
     "recommendedPreparation": "NMC102H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -4320,12 +4343,13 @@
     "courseTitle": "Hajj and History",
     "code": "NMC272H1",
     "courseDescription": "The history of the hajj (Muslim pilgrimage to Mecca) reflects important political, theological, social, artistic, and technological developments in Middle Eastern and Islamic history. This course begins with an exploration of Mecca as a pilgrimage site before the Islamic era and continues with an examination of how the history of the hajj reflects and intersects with important moments and trends in the history of Muslims around the world from medieval times to the 21st century. We will discuss the significance of the pilgrimage especially during periods of transformation such as the fitna (civil wars) of early Islamic history, the rise of hadith scholars and the ulama as religious leaders in the Abbasid era, the aesthetic and political Ottomanization of the Arab world, British naval domination over the Indian ocean and colonization of India, the evolution the Saudi state and its religious program, pan-Islamic movement in the post-colonial era, and the growth of Muslim minority communities around the world in the 21st century.",
-    "prerequisite": "<p><span><span>4</span><span>.0 </span><span>credits</span></span><span> </span></p>",
+    "prerequisite": "4.0 credits",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>NMC103H1</p>",
+    "recommendedPreparation": "NMC103H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Thought, Belief and Behaviour (2)",
     "distributionCategories": "Humanities",
@@ -4458,6 +4482,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsLEC0101: Introduction to Israeli Society from Mizrahi Perspectives: Literature and Cinema This course explores Israeli society through works by Israeli Mizrahi writers and creators whose origins lie in the Jewish communities of the Muslim world. We will examine how Mizrahi identity is constructed in Israel as a \"third option\" that both relates to and differs from European Jewish and Middle Eastern Muslim Arabic cultures. Through novels, poetry, and cinema created from this position, we will discover Mizrahi voices that tell stories of displacement, subjection, belonging, and resistance that challenge Israel's dominant narratives. The course introduces Israeli history and relevant theoretical concepts from postcolonial, ethnic, and literary studies to understand the dynamics of ethnicity, heritage, and culture in the land and the diasporas that relate to it. All texts will be read in English.",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Humanities",
@@ -4590,6 +4615,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsLEC0101: From Bible to Quran The Near and Middle East in the years from the canonization of the Hebrew Bible (~late fourth -third century BCE) to the rise of Islam and the Quran (~seventh century CE) was home to a multitude of cultures, civilizations, and religious traditions. This course will give an overview of peoples, languages, texts, and religions.",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Humanities",
@@ -4722,6 +4748,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsLEC0101: Eve: Villain, Victim, Visionary? It's all Eve's fault! Or is it? For millennia, the character Eve has received the lion's share of the blame for \"The Fall\" for being the first to eat the forbidden fruit, and there is no question that this has had a negative impact on the treatment of women to this day. Yet Eve as \"villain\" is not the only possible interpretation of the story of the Garden of Eden. In this course, we will look closely at Eve's appearances in the biblical text and consider the story in its ancient context. We will then consider a wide variety of interpretations of Eve: ancient and modern; Muslim, Jewish, and Christian; scholarly and artistic. All readings will be in English.",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Humanities",
@@ -4854,10 +4881,176 @@
     "recommendedPreparation": "NMC103H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
     "meetings": {
+      "TUT-0201": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0201",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "3",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0401": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SK",
+            "assignedRoom2": "SK"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0401",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0401",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "15",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "FE",
+            "assignedRoom2": "FE"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "15",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -5000,116 +5193,6 @@
           }
         ]
       },
-      "TUT-0201": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0201",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "3",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "FE",
-            "assignedRoom2": "FE"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "15",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "TUT-0301": {
         "schedule": {
           "WE-0": {
@@ -5164,61 +5247,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "TUT-0401": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SK",
-            "assignedRoom2": "SK"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0401",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0401",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "15",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -5229,36 +5257,37 @@
     "courseDescription": "The formative period of Islam, including the Prophet and origins of the caliphate. This course surveys the history of the Middle East and its religious, social, and political transformations between late antiquity and the medieval period, from roughly the 6th to the 10th century CE. Starting with the available evidence on pre-Islamic Arabs, we study the making of the Islamic empire from Spain to Central Asia, the early caliphates (Umayyads, Abbasids, and Fatimids), the emergence of competing traditions in Islam (Sunnis, Shi‘is, and Ibadis), and other developments of enduring significance. Particular attention is paid to primary sources and scholarly debates on the challenges of early Islamic historiography.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<p>NMC273Y1</p>",
-    "recommendedPreparation": "<p>NMC103H1</p>",
+    "exclusion": "NMC273Y1",
+    "recommendedPreparation": "NMC103H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
     "meetings": {
-      "TUT-5101": {
+      "TUT-5102": {
         "schedule": {
           "TH-0": {
             "meetingDay": "TH",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "16:00",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "OI",
             "assignedRoom2": "OI"
           }
         },
         "instructors": {},
-        "meetingId": "TUT5101",
+        "meetingId": "TUT5102",
         "teachingMethod": "TUT",
-        "sectionNumber": "5101",
+        "sectionNumber": "5102",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "25",
-        "actualEnrolment": "16",
+        "actualEnrolment": "5",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": "<p>June 20, 2025: Delivery day/time change</p>",
@@ -5407,28 +5436,28 @@
           }
         ]
       },
-      "TUT-5102": {
+      "TUT-5101": {
         "schedule": {
           "TH-0": {
             "meetingDay": "TH",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "16:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "OI",
             "assignedRoom2": "OI"
           }
         },
         "instructors": {},
-        "meetingId": "TUT5102",
+        "meetingId": "TUT5101",
         "teachingMethod": "TUT",
-        "sectionNumber": "5102",
+        "sectionNumber": "5101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "25",
-        "actualEnrolment": "5",
+        "actualEnrolment": "16",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": "<p>June 20, 2025: Delivery day/time change</p>",
@@ -5471,10 +5500,11 @@
     "courseDescription": "The medieval Islamic world from the decline of the early empire and the fall of Baghdad to the flourishing commonwealth during the lifetime of Ibn Khaldun. This course surveys key developments in religion, politics, and society across the Middle East from the 11th century up to the 15th century CE. Starting with the situation on the eve of the Crusades, we trace broader patterns in Islamic history through the emergence of various sultanates (including the dynasty of Salah al-Din Ayyubi and the Mamluks) as well as regional dynamics from North Africa and Spain in the West to Iran and India in the East.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<p>NMC273Y1</p>",
-    "recommendedPreparation": "<p>NMC103H1</p>",
+    "exclusion": "NMC273Y1",
+    "recommendedPreparation": "NMC103H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -5501,61 +5531,6 @@
         "online": "In Person",
         "enrollmentCapacity": "27",
         "actualEnrolment": "13",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>July 3, 2025: Day/time changed</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0102": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "OI",
-            "assignedRoom2": "OI"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0102",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "23",
-        "actualEnrolment": "10",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": "<p>July 3, 2025: Day/time changed</p>",
@@ -5703,6 +5678,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0102": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "OI",
+            "assignedRoom2": "OI"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0102",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0102",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "23",
+        "actualEnrolment": "10",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>July 3, 2025: Day/time changed</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -5717,6 +5747,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Thought, Belief and Behaviour (2)",
     "distributionCategories": "Humanities",
@@ -5870,12 +5901,13 @@
     "courseTitle": "Getting Justice: Women, Slaves, and Religious Minorities in the Courts in the Pre-modern Middle East",
     "code": "NMC308H1",
     "courseDescription": "Legal systems play an important role in the lives of vulnerable people. Courts both enforce laws which render people vulnerable in the first place and also help protect those same people from further harm. Because legal documents constitute our main source of information about the experiences of lower-status people, they are also important for historians of the Middle East. In this course, we use legal documents to learn about women, slaves, and non-Muslims. Students learn about women’s personal and property rights, their roles as petitioners and witnesses, and the intersection of public legal appearances with modesty concerns. We examine how enslaved people accessed court systems, and how the law treated those who were considered both possessions of others and, at the same time, possessors of free will. Finally, we explore the dhimma system; the existence of separate, non-Muslim laws and courts; and the experiences of non-Muslims in Islamic courtrooms.",
-    "prerequisite": "<p>9.0 credits </p>",
+    "prerequisite": "9.0 credits",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>NMC103H1</p>",
+    "recommendedPreparation": "NMC103H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -6002,12 +6034,13 @@
     "courseTitle": "King David: Musician, Monarch, or Murderer?",
     "code": "NMC330H1",
     "courseDescription": "For many people, King David is one of the most beloved characters in the Bible. But where did our ideas about David come from? Was he a brilliant poet who wrote many of the Psalms, a youthful champion who defeated the giant Goliath or as a ruthless monarch capable of killing his political opponents? This course will explore attempts to reconstruct the historical David from various biblical texts, comparable ancient literature, and what historians know (and don’t know) about the time in which his story is set. All readings will be in English. No knowledge of Hebrew is required.",
-    "prerequisite": "<p>4.0 credits at the 200-level</p>",
+    "prerequisite": "4.0 credits at the 200-level",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Thought, Belief and Behaviour (2)",
     "distributionCategories": "Humanities",
@@ -6134,12 +6167,13 @@
     "courseTitle": "Samson: Lover, Liar, lion-slayer",
     "code": "NMC331H1",
     "courseDescription": "Over the centuries, Samson has captured the imagination of countless scholars, artists, and poets. Although often stereotyped as little more than a thoughtless strong man prone to violent outbursts, he is actually one of the most complex and enigmatic characters in the Bible. This course will explore biblical depictions of this often misunderstood figure and his complicated relationships with his family, his lovers, and his enemies. We will analyze his story within its ancient historical context and in some more recent interpretations. All readings will be in English. No knowledge of Hebrew is required.",
-    "prerequisite": "<p>4.0 credits at the 200-level</p>",
+    "prerequisite": "4.0 credits at the 200-level",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Thought, Belief and Behaviour (2)",
     "distributionCategories": "Humanities",
@@ -6272,6 +6306,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -6398,6 +6433,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -6524,12 +6560,13 @@
     "courseTitle": "Kurdish Studies: A Critical Introduction",
     "code": "NMC348H1",
     "courseDescription": "This is a 300-level course that will provide a holistic exploration of the multifaceted aspects of Kurdish life, delving deep into the vibrant traditions, struggles, and achievements of the Kurdish people. As we traverse through the diverse regions of Kurdistan and its diasporas, we will critically examine the current situations, challenges, and triumphs, offering an insightful perspective on a community that has played a significant role in the socio-political landscape of the Middle East. We will critically engage with classic and modern texts in Kurdish studies and examine them in the context of modern Middle East studies. We will aim to foster a deep understanding of the Kurdish identity and the complex forces that have shaped it.",
-    "prerequisite": "<p>1.5 NMC credits at the 200-level</p>",
+    "prerequisite": "1.5 NMC credits at the 200-level",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -6650,12 +6687,13 @@
     "courseTitle": "Climate and Collapse in the Ancient Near East",
     "code": "NMC349H1",
     "courseDescription": "Discussions of climate change and its repercussions for modern society have become pervasive in the media and in general social discourse. The past offers a deep timescale within which to examine the plethora of ways in which humans have interacted with their environment and responded and adapted to climate variability in various periods. However, when we find stories about past civilizations and their relationship with their environment in the media, these are almost exclusively framed as stories of unavoidable collapse. Is this legitimate, or over-dramatic? What can we learn from past societies and how they adapted to ancient climate change—or perhaps failed to do so? This course addresses the methods used to reconstruct past climate, the details of what we know about Near Eastern palaeoclimate, and the frameworks of collapse and resilience that are frequently employed in explaining episodes of rapid climate change in the Near East.",
-    "prerequisite": "<p>9.0 credits, including one of: ARH100Y1, ARH205H1, NMC260H1, NMC262H1. Students who do not meet the prerequisites are encouraged to contact the department.</p>",
+    "prerequisite": "9.0 credits, including one of: ARH100Y1, ARH205H1, NMC260H1, NMC262H1. Students who do not meet the prerequisites are encouraged to contact the department.",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -6788,6 +6826,7 @@
     "recommendedPreparation": "NMC104H1 or NMC252H1, or equivalent in another humanities department",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -6955,6 +6994,7 @@
     "recommendedPreparation": "NMC101H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -7087,6 +7127,7 @@
     "recommendedPreparation": "NMC278H1, NMC377Y1, NMC378H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -7219,6 +7260,7 @@
     "recommendedPreparation": "4.0 credits in Humanities",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -7345,12 +7387,13 @@
     "courseTitle": "The World of the Last Pharaohs: History, Culture, and Society in Graeco-Roman Egypt",
     "code": "NMC362H1",
     "courseDescription": "Graeco-Roman Egypt is one of the best-documented ancient societies, affording us unparalleled opportunities to reconstruct the lives and thoughts of the people living along the two banks of the Nile at the time. The course provides a holistic view of Egypt from the conquest of Alexander in the 4th century BCE, until the 3rd century CE. In addition to a chronological overview of the region’s political history, topics include religion and religious change, multiculturalism, intellectual, social and economic history, and the impact of foreign domination on everyday life. The course also examines how Egypt’s incorporation into ancient Mediterranean empires affected these realms. Both written sources in Greek and Egyptian (in translation) and material culture – archaeology, art, and architecture – are studied to understand Egyptian society in the Graeco-Roman period. One of the goals of the course is to provide students with a foundational understanding of historiographical practices. This includes how combining critical thinking and different approaches to writing history with various sources can yield a more nuanced and balanced view of one of the most significant and richly recorded regions of the ancient world.",
-    "prerequisite": "<p>2.0 credits at the 200+ level in BR 1 or BR 2 or BR 3 or a combination of BR 1, BR 2, and BR 3.</p>",
+    "prerequisite": "2.0 credits at the 200+ level in BR 1 or BR 2 or BR 3 or a combination of BR 1, BR 2, and BR 3.",
     "corequisite": "",
-    "exclusion": "<p>CLAC05H3 and HISC10H3 </p>",
+    "exclusion": "CLAC05H3 and HISC10H3",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -7587,12 +7630,13 @@
     "courseTitle": "Topics in Hebrew Bible",
     "code": "NMC371H1",
     "courseDescription": "This course will cover various aspects of the Hebrew Bible, from the study of a book (e.g., Genesis), a group of books (e.g., the Prophetic books) to a topic (e.g., women in the Bible).",
-    "prerequisite": "<p>2.0 credits at the 200+-level</p>",
+    "prerequisite": "2.0 credits at the 200+-level",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>NMC252H1</p>",
+    "recommendedPreparation": "NMC252H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -7725,6 +7769,7 @@
     "recommendedPreparation": "NMC278H1, NMC283Y1, RLG204Y1/RLG204H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Thought, Belief and Behaviour (2)",
     "distributionCategories": "Humanities",
@@ -7857,6 +7902,7 @@
     "recommendedPreparation": "NMC241H1, NMC278H1, NMC355H1, NMC377Y1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -7983,12 +8029,13 @@
     "courseTitle": "Women, Gender, and Sexuality in the Ottoman Empire",
     "code": "NMC387H1",
     "courseDescription": "The course explores key aspects of the history of women, gender, and sexuality in the Ottoman Empire from the early fourteenth century until the empire’s collapse over the course of the First World War. It examines the experiences of women of various social and religious backgrounds, and the transformation of concepts and expressions of sexuality. Topics include gender and law, the harem as a social and political institution, discourses of sexuality, reproductive politics, women’s movements, labour history, fashion, and gendered experiences of displacement, violence, and war.",
-    "prerequisite": "<p>2.0 credits at the 200+-level</p>",
+    "prerequisite": "2.0 credits at the 200+-level",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>At least 0.5 credits from the following courses: NMC278H1, NMC355H1, NMC357H1, NMC358H1, NMC386H1, NMC388H1, and NMC389H1</p>",
+    "recommendedPreparation": "At least 0.5 credits from the following courses: NMC278H1, NMC355H1, NMC357H1, NMC358H1, NMC386H1, NMC388H1, and NMC389H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Thought, Belief and Behaviour (2), Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -8117,10 +8164,11 @@
     "courseDescription": "A survey of the Ottoman Turks from their late 13th–early 14th century origins on the frontiers of the Seljuk, Mongol, and Byzantine empires to their establishment of an Islamic empire. Topics include the principalities known as beyliks that came into being in Anatolia as the above empires declined, the nature of the early Ottoman beylik, conquests in the Balkans, the destruction of the early Ottoman state by Timur and its rebirth, and Mehmed II’s conquest of Constantinople. Coverage includes Ottoman institutions, economy, society, and culture.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<p>NMC377Y1</p>",
-    "recommendedPreparation": "<p>NMC280H1</p>",
+    "exclusion": "NMC377Y1",
+    "recommendedPreparation": "NMC280H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -8249,10 +8297,11 @@
     "courseDescription": "A survey of the Ottoman Empire in the 16th and 17th centuries. From the victory by Selim I the Grim over Safavid Iran and conquest of Syria and Egypt to the resplendent age of Süleyman the Magnificent to the internal and external challenges that forced transformation or decline. Topics include wars in Europe, the Mediterranean and Black Seas, and with Iran; internally, the rise of the harem and “sultanate of the women,” rebellions in Anatolia, military reform, religious controversies, and art and architecture. The endpoint is the Treaty of Karlowitz (1699) when the expansion of the empire ended.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<p>NMC377Y1</p>",
-    "recommendedPreparation": "<p>NMC274H1, NMC388H1</p>",
+    "exclusion": "NMC377Y1",
+    "recommendedPreparation": "NMC274H1, NMC388H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -8385,6 +8434,7 @@
     "recommendedPreparation": "NMC260H1 or NMC363H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -8517,6 +8567,7 @@
     "recommendedPreparation": "NMC102H1, NMC346H1/NMC347H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -8649,6 +8700,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -8781,6 +8833,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -8913,65 +8966,11 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Delivery InstructionsThe hybrid course includes one Tuesday in-person lab and one Thursday online lecture.",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Social Science",
     "meetings": {
-      "PRA-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "3",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-5101": {
         "schedule": {
           "TH-0": {
@@ -9065,6 +9064,61 @@
           },
           {
             "postId": "5",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "3",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
             "postCode": "*",
             "postName": "All",
             "subjectId": "1",
@@ -9105,10 +9159,66 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Delivery InstructionsThe hybrid courses includes one Tuesday in-person lab and one Thursday online lecture.",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Social Science",
     "meetings": {
+      "PRA-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "2",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-5101": {
         "schedule": {
           "TH-0": {
@@ -9228,61 +9338,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "2",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -9297,125 +9352,11 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsLEC0101: The Archaeology of Gaza Thanks to its strategic location between Africa and Asia, its vantage point overlooking the Mediterranean Sea, and its role as a crucial (vital) stop for supplies and water before and after crossing the Sinai Desert, Gaza boasts a rich and complex archaeological and cultural heritage that spans thousands of years, bearing witness to its growth and prosperity during many periods of its history. At the same time, this very location has made Gaza a stage for successive wars throughout history—either to seize control of it or to use it as a passageway for ancient civilizations' armies coming from or heading toward Egypt. The recent conflict in the region has destroyed or threatened many of Gaza’s archaeological sites, meaning that understanding and documenting Gaza’s archaeological significance is of greater importance than ever before. This course will explore the archaeology of Gaza from the earliest periods to the Islamic period, focusing on key sites and examining challenges to heritage preservation in the region. LEC5101: Revolts and Internal Conflicts in Islamic History, 610-1600Religious Revolts, Popular Uprisings, and Internal Conflicts in Islamic History 610-1600 CE Throughout the course students will examine several revolts, revolutions, and socio-religious movements from the earliest periods of Islamic history to the early 17th century in a series of seminars. These sessions will examine both common and unique themes across these movements and the intersections of religious, political, social, racial, and economic factors within the broader context of the history of these revolts.",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
     "meetings": {
-      "LEC-0101": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BF",
-            "assignedRoom2": "BF"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Mohammedmoin",
-            "lastName": "Sadeq"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "The Archaeology of Gaza",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "9",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>June 5, 2025: Section added</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARTSC",
-            "primaryOrgName": "Faculty of Arts and Science",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARCLA",
-            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "5",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-5101": {
         "schedule": {
           "WE-0": {
@@ -9530,6 +9471,121 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-0101": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BF",
+            "assignedRoom2": "BF"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Mohammedmoin",
+            "lastName": "Sadeq"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "The Archaeology of Gaza",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "9",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>June 5, 2025: Section added</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARTSC",
+            "primaryOrgName": "Faculty of Arts and Science",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARCLA",
+            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "5",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -9544,6 +9600,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsLEC0101: GIS Applications in Archaeology Rather than being a specific technical skill, the use of Geographical Information Systems (GIS) has now become so ubiquitous in the field of archaeology that it is an essential component of archaeological training. This course covers the fundamentals of the application of GIS and remote sensing data to archaeological research, as well as introducing common forms of archaeological spatial analysis. It focuses on hands-on training in GIS software, and the direct application of basic spatial analysis methods to archaeological datasets. LEC0201: Hebrew Without Borders: The Contemporary Diasporic Hebrew Novel Can there be Hebrew literature beyond the State of Israel? This course explores Hebrew literature written in and about places outside Israel and Palestine through selected prose and poetry from the last two decades. We will examine terms like \"homeland,\" \"diaspora,\" and \"nation\" while exploring how they connect to personal experiences of love, estrangement, and belonging. The works include texts by Israeli authors writing about experiences in North America and Germany, including Maya Arad, Ayelet Tsabari, Sayed Kashua, and others. Alongside these literary works, we will read theoretical texts in diaspora studies to understand cultural movement, identity across borders, and how Hebrew literature positions itself between Middle Eastern and Global North contexts. No prior knowledge of Hebrew or literature is required. LEC0301: Archaeology of House and Home in the Ancient Near EastArchaeology of House and Home in the Ancient Near East The domestic unit or the household has been recognized as a primary component in the make-up of communities. We define the household here as a social unit whose members cooperate in various subsistence, economic, and ideological spheres and contributing to acts of production, consumption, transmission, and social reproduction (see Wilk and Netting 1984; Wilk and Rathje 1982). As conditions around the household change, so do the structures and dynamics of the household, making them an ideal microcosm and building-block for understanding greater transformations that took place in society at large.",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -9902,9 +9959,10 @@
     "prerequisite": "Permission of the instructor",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "NMC260H1 or NMC363H1 ",
+    "recommendedPreparation": "NMC260H1 or NMC363H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -10037,6 +10095,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Humanities",
@@ -10109,6 +10168,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Humanities",
@@ -10187,6 +10247,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Humanities",

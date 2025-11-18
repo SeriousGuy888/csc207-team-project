@@ -4,236 +4,17 @@
     "courseTitle": "Neuroanatomy Laboratory",
     "code": "NROB60H3",
     "courseDescription": "This course focuses on functional neuroanatomy of the brain at both the human and animal level. Topics include gross anatomy of the brain, structure and function of neurons and glia, neurotransmitters and their receptors, and examples of major functional systems. Content is delivered through lecture and laboratories.",
-    "prerequisite": "<p>BIOA01H3 and BIOA02H3 and CHMA10H3 and [CHMA11H3 or CHMA12H3] and PSYA01H3 and PSYA02H3</p>",
+    "prerequisite": "BIOA01H3 and BIOA02H3 and CHMA10H3 and [CHMA11H3 or CHMA12H3] and PSYA01H3 and PSYA02H3",
     "corequisite": "",
     "exclusion": "CSB332H, HMB320H, PSY290H, PSY391H, (ZOO332H)",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
     "meetings": {
-      "PRA-0001": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SW",
-            "assignedRoom2": "SW"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0001",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0001",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "23",
-        "actualEnrolment": "23",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0004": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SW",
-            "assignedRoom2": "SW"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0004",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0004",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "23",
-        "actualEnrolment": "20",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0008": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SW",
-            "assignedRoom2": "SW"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0008",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0008",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "23",
-        "actualEnrolment": "22",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0002": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SW",
-            "assignedRoom2": "SW"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0002",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0002",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "23",
-        "actualEnrolment": "23",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-01": {
         "schedule": {
           "TU-0": {
@@ -592,28 +373,28 @@
           }
         ]
       },
-      "PRA-0003": {
+      "PRA-0005": {
         "schedule": {
           "TH-0": {
             "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "19:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "SW",
             "assignedRoom2": "SW"
           }
         },
         "instructors": {},
-        "meetingId": "PRA0003",
+        "meetingId": "PRA0005",
         "teachingMethod": "PRA",
-        "sectionNumber": "0003",
+        "sectionNumber": "0005",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "23",
-        "actualEnrolment": "21",
+        "actualEnrolment": "11",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -647,28 +428,83 @@
           }
         ]
       },
-      "PRA-0005": {
+      "PRA-0001": {
         "schedule": {
           "TH-0": {
             "meetingDay": "TH",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "19:00",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "SW",
             "assignedRoom2": "SW"
           }
         },
         "instructors": {},
-        "meetingId": "PRA0005",
+        "meetingId": "PRA0001",
         "teachingMethod": "PRA",
-        "sectionNumber": "0005",
+        "sectionNumber": "0001",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "23",
-        "actualEnrolment": "11",
+        "actualEnrolment": "23",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0004": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SW",
+            "assignedRoom2": "SW"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0004",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0004",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "23",
+        "actualEnrolment": "20",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -811,46 +647,29 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "NROB61H3-S-20261": {
-    "courseId": "6818a9640982ec3a6ff6e3e4",
-    "courseTitle": "Neurophysiology",
-    "code": "NROB61H3",
-    "courseDescription": "This course focuses on the electrical properties of neurons and the ways in which electrical signals are generated, received, and integrated to underlie neuronal communication. Topics include principles of bioelectricity, the ionic basis of the resting potential and action potential, neurotransmission, synaptic integration, and neural coding schemes. Content will be delivered through lectures, labs, and tutorials.",
-    "prerequisite": "<p>BIOA01H3 and BIOA02H3 and CHMA10H3 and [CHMA11H3 or CHMA12H3] and PSYA01H3 and PSYA02H3</p>",
-    "corequisite": "<p>NROB60H3</p>",
-    "exclusion": "",
-    "recommendedPreparation": "",
-    "section": "S",
-    "session": "20261",
-    "deliveryInstructions": null,
-    "breadthCategories": "Natural Sciences",
-    "distributionCategories": "",
-    "meetings": {
-      "PRA-0006": {
+      },
+      "PRA-0002": {
         "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "14:00",
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "SW",
             "assignedRoom2": "SW"
           }
         },
         "instructors": {},
-        "meetingId": "PRA0006",
+        "meetingId": "PRA0002",
         "teachingMethod": "PRA",
-        "sectionNumber": "0006",
+        "sectionNumber": "0002",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "22",
-        "actualEnrolment": "22",
+        "enrollmentCapacity": "23",
+        "actualEnrolment": "23",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -884,6 +703,134 @@
           }
         ]
       },
+      "PRA-0003": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SW",
+            "assignedRoom2": "SW"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0003",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0003",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "23",
+        "actualEnrolment": "21",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0008": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SW",
+            "assignedRoom2": "SW"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0008",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0008",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "23",
+        "actualEnrolment": "22",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      }
+    }
+  },
+  "NROB61H3-S-20261": {
+    "courseId": "6818a9640982ec3a6ff6e3e4",
+    "courseTitle": "Neurophysiology",
+    "code": "NROB61H3",
+    "courseDescription": "This course focuses on the electrical properties of neurons and the ways in which electrical signals are generated, received, and integrated to underlie neuronal communication. Topics include principles of bioelectricity, the ionic basis of the resting potential and action potential, neurotransmission, synaptic integration, and neural coding schemes. Content will be delivered through lectures, labs, and tutorials.",
+    "prerequisite": "BIOA01H3 and BIOA02H3 and CHMA10H3 and [CHMA11H3 or CHMA12H3] and PSYA01H3 and PSYA02H3",
+    "corequisite": "NROB60H3",
+    "exclusion": "",
+    "recommendedPreparation": "",
+    "section": "S",
+    "session": "20261",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "Natural Sciences",
+    "distributionCategories": "",
+    "meetings": {
       "LEC-01": {
         "schedule": {
           "TU-0": {
@@ -1242,6 +1189,61 @@
           }
         ]
       },
+      "PRA-0005": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SW",
+            "assignedRoom2": "SW"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0005",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0005",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "22",
+        "actualEnrolment": "13",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "PRA-0001": {
         "schedule": {
           "TH-0": {
@@ -1352,7 +1354,62 @@
           }
         ]
       },
-      "PRA-0007": {
+      "PRA-0008": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SW",
+            "assignedRoom2": "SW"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0008",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0008",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "22",
+        "actualEnrolment": "22",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0006": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
@@ -1364,16 +1421,16 @@
           }
         },
         "instructors": {},
-        "meetingId": "PRA0007",
+        "meetingId": "PRA0006",
         "teachingMethod": "PRA",
-        "sectionNumber": "0007",
+        "sectionNumber": "0006",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "22",
-        "actualEnrolment": "21",
+        "actualEnrolment": "22",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1517,83 +1574,28 @@
           }
         ]
       },
-      "PRA-0005": {
+      "PRA-0007": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "14:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "SW",
             "assignedRoom2": "SW"
           }
         },
         "instructors": {},
-        "meetingId": "PRA0005",
+        "meetingId": "PRA0007",
         "teachingMethod": "PRA",
-        "sectionNumber": "0005",
+        "sectionNumber": "0007",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "22",
-        "actualEnrolment": "13",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0008": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "16:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SW",
-            "assignedRoom2": "SW"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0008",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0008",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "22",
-        "actualEnrolment": "22",
+        "actualEnrolment": "21",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1634,12 +1636,13 @@
     "courseTitle": "Molecular Neuroscience",
     "code": "NROC36H3",
     "courseDescription": "This course will focus on the molecular mechanisms underlying neuronal communication in the central nervous system. The first module will look into synaptic transmission at the molecular level, spanning pre and postsynaptic mechanisms. The second module will focus on molecular mechanisms of synaptic plasticity and learning and memory. Additional topics will include an introduction to the molecular mechanisms of neurodegenerative diseases and channelopathies.",
-    "prerequisite": "<p>BIOB11H3 and NROB60H3 and NROB61H3 and PSYB55H3 and [PSYB07H3 or STAB22H3] and PSYB70H3</p>",
+    "prerequisite": "BIOB11H3 and NROB60H3 and NROB61H3 and PSYB55H3 and [PSYB07H3 or STAB22H3] and PSYB70H3",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "BIOC13H3",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Enrolment Indicator: RP Initially restricted to students in the following groups: SCSPE1272 - Specialist Program in Neuroscience Cellular/Molecular Stream SCSPE1272C - Specialist Program in Neuroscience Cellular/Molecular Co-op Stream At 10:00am on July 23, 2025, enrollment will open to students in the following groups: SCMAJ1472 - Major Program in Neuroscience SCMAJ1472C - Major (Co-operative) Program in Neuroscience SCSPE1072 - Specialist Program in Neuroscience (Stage 1) SCSPE1072C - Specialist (Co-operative) Program in Neuroscience SCSPE1172 - Specialist Program in Neuroscience Cognitive Stream SCSPE1172C - Specialist Program in Neuroscience Cognitive Co-op Stream SCSPE1372 - Specialist Program in Neuroscience Systems/Behavioural Stream SCSPE1372C - Specialist Program in Neuroscience Systems/Behavioural Co-op Stream",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
@@ -1982,12 +1985,13 @@
     "courseTitle": "Cellular Neuroscience Laboratory",
     "code": "NROC60H3",
     "courseDescription": "This course involves a theoretical and a hands-on cellular neuroscience laboratory component. Advanced systems, cellular and molecular neuroscience techniques will be covered within the context of understanding how the brain processes complex behaviour. Practical experience on brain slicing, immunohistochemistry and cell counting will feature in the completion of a lab project examining the cellular mechanisms underlying schizophrenia-like behavioural deficits. These experiments do not involve contact with animals.",
-    "prerequisite": "<p>BIOB10H3 and NROB60H3 and NROB61H3 and PSYB55H3 and [PSYB07H3 or STAB22H3] and PSYB70H3</p>",
-    "corequisite": "<p>NROC69H3 and PSYC08H3</p>",
+    "prerequisite": "BIOB10H3 and NROB60H3 and NROB61H3 and PSYB55H3 and [PSYB07H3 or STAB22H3] and PSYB70H3",
+    "corequisite": "NROC69H3 and PSYC08H3",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Enrolment Indicator: RP* Initially restricted to students in the following groups: SCSPE1272 - Specialist Program in Neuroscience Cellular/Molecular Stream SCSPE1272C - Specialist Program in Neuroscience Cellular/Molecular Co-op Stream At 10:00am on July 23, 2025, enrollment will open to students in the following groups: SCMAJ1472 - Major Program in Neuroscience SCMAJ1472C - Major (Co-operative) Program in Neuroscience SCSPE1372 - Specialist Program in Neuroscience Systems/Behavioural Stream SCSPE1372C - Specialist Program in Neuroscience Systems/Behavioural Co-op Stream Students request the course on ACORN but will not be officially enrolled until approval has been granted. Check your status through ACORN to see whether you have been approved. (APP = approval; REF = refused; INT = no decision yet)Students are limited to completing only one of NROC60 or NROC63.",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
@@ -2222,71 +2226,17 @@
     "courseTitle": "Learning and Motivation",
     "code": "NROC61H3",
     "courseDescription": "This course will explore the neural and neurochemical bases of learning and motivation. Topics covered under the category of learning include: Pavlovian learning, instrumental learning, multiple memory systems, and topics covered under motivation include: regulation of eating, drinking, reward, stress and sleep.",
-    "prerequisite": "<p>BIOB10H3 and NROB60H3 and NROB61H3 and PSYB55H3 and [PSYB07H3 or STAB22H3] and PSYB70H3</p>",
+    "prerequisite": "BIOB10H3 and NROB60H3 and NROB61H3 and PSYB55H3 and [PSYB07H3 or STAB22H3] and PSYB70H3",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Enrolment Indicator: RP Initially restricted to students in the following groups: SCMAJ1472 - Major Program in Neuroscience SCMAJ1472C - Major (Co-operative) Program in Neuroscience SCSPE1172 - Specialist Program in Neuroscience Cognitive Stream SCSPE1172C - Specialist Program in Neuroscience Cognitive Co-op Stream SCSPE1272 - Specialist Program in Neuroscience Cellular/Molecular Stream SCSPE1272C - Specialist Program in Neuroscience Cellular/Molecular Co-op Stream SCSPE1372 - Specialist Program in Neuroscience Systems/Behavioural Stream SCSPE1372C - Specialist Program in Neuroscience Systems/Behavioural Co-op Stream At 10:00am on July 23, 2025, enrollment will open to students in the following groups: SCSPE1072 - Specialist Program in Neuroscience (Stage 1) SCSPE1072C - Specialist (Co-operative) Program in Neuroscience",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
     "meetings": {
-      "TUT-0002": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BV",
-            "assignedRoom2": "BV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0002",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0002",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "25",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "TUT-0004": {
         "schedule": {
           "TH-0": {
@@ -2782,6 +2732,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0002": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BV",
+            "assignedRoom2": "BV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0002",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0002",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "25",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -2790,12 +2795,13 @@
     "courseTitle": "Learning and Motivation",
     "code": "NROC61H3",
     "courseDescription": "This course will explore the neural and neurochemical bases of learning and motivation. Topics covered under the category of learning include: Pavlovian learning, instrumental learning, multiple memory systems, and topics covered under motivation include: regulation of eating, drinking, reward, stress and sleep.",
-    "prerequisite": "<p>BIOB10H3 and NROB60H3 and NROB61H3 and PSYB55H3 and [PSYB07H3 or STAB22H3] and PSYB70H3</p>",
+    "prerequisite": "BIOB10H3 and NROB60H3 and NROB61H3 and PSYB55H3 and [PSYB07H3 or STAB22H3] and PSYB70H3",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Enrolment Indicator: RP Initially restricted to students in the following groups: SCMAJ1472 - Major Program in Neuroscience SCMAJ1472C - Major (Co-operative) Program in Neuroscience SCSPE1172 - Specialist Program in Neuroscience Cognitive Stream SCSPE1172C - Specialist Program in Neuroscience Cognitive Co-op Stream SCSPE1272 - Specialist Program in Neuroscience Cellular/Molecular Stream SCSPE1272C - Specialist Program in Neuroscience Cellular/Molecular Co-op Stream SCSPE1372 - Specialist Program in Neuroscience Systems/Behavioural Stream SCSPE1372C - Specialist Program in Neuroscience Systems/Behavioural Co-op Stream At 10:00am on July 23, 2025, enrollment will open to students in the following groups: SCSPE1072 - Specialist Program in Neuroscience (Stage 1) SCSPE1072C - Specialist (Co-operative) Program in Neuroscience",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
@@ -3152,28 +3158,28 @@
           }
         ]
       },
-      "TUT-0001": {
+      "TUT-0004": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "KW",
             "assignedRoom2": "KW"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0001",
+        "meetingId": "TUT0004",
         "teachingMethod": "TUT",
-        "sectionNumber": "0001",
+        "sectionNumber": "0004",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "25",
-        "actualEnrolment": "0",
+        "actualEnrolment": "22",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -3207,28 +3213,28 @@
           }
         ]
       },
-      "TUT-0004": {
+      "TUT-0002": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "KW",
             "assignedRoom2": "KW"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0004",
+        "meetingId": "TUT0002",
         "teachingMethod": "TUT",
-        "sectionNumber": "0004",
+        "sectionNumber": "0002",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "25",
-        "actualEnrolment": "22",
+        "actualEnrolment": "19",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -3317,28 +3323,28 @@
           }
         ]
       },
-      "TUT-0002": {
+      "TUT-0001": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "10:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "KW",
             "assignedRoom2": "KW"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0002",
+        "meetingId": "TUT0001",
         "teachingMethod": "TUT",
-        "sectionNumber": "0002",
+        "sectionNumber": "0001",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "25",
-        "actualEnrolment": "19",
+        "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -3379,12 +3385,13 @@
     "courseTitle": "Behavioural Neuroscience Laboratory",
     "code": "NROC63H3",
     "courseDescription": "This is a lecture and hands-on laboratory course that provides instruction on various experimental approaches, design, data analysis and scientific communication of research outcomes in the field of systems/behavioural neuroscience, with a focus on the neural basis of normal and abnormal learning and cognition. Topics covered include advanced pharmacological and neurological manipulation techniques, behavioural techniques and animal models of psychological disease (e.g., anxiety, schizophrenia). The class involves the use of experimental animals.",
-    "prerequisite": "<p>BIOB10H3 and NROB60H3 and NROB61H3 and PSYB55H3 and [PSYB07H3 or STAB22H3] and PSYB70H3</p>",
-    "corequisite": "<p>NROC61H3 and PSYC08H3</p>",
+    "prerequisite": "BIOB10H3 and NROB60H3 and NROB61H3 and PSYB55H3 and [PSYB07H3 or STAB22H3] and PSYB70H3",
+    "corequisite": "NROC61H3 and PSYC08H3",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Enrolment Indicator: RP* Initially restricted to students in the following groups: SCSPE1372 - Specialist Program in Neuroscience Systems/Behavioural Stream SCSPE1372C - Specialist Program in Neuroscience Systems/Behavioural Co-op Stream At 10:00am on July 23, 2025, enrollment will open to students in the following groups: SCMAJ1472 - Major Program in Neuroscience SCMAJ1472C - Major (Co-operative) Program in Neuroscience SCSPE1272 - Specialist Program in Neuroscience Cellular/Molecular Stream SCSPE1272C - Specialist Program in Neuroscience Cellular/Molecular Co-op Stream Students request the course on ACORN but will not be officially enrolled until approval has been granted. Check your status through ACORN to see whether you have been approved. (APP = approval; REF = refused; INT = no decision yet)Students are limited to completing only one of NROC60 or NROC63.",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
@@ -3619,12 +3626,13 @@
     "courseTitle": "Sensorimotor Systems",
     "code": "NROC64H3",
     "courseDescription": "A focus on the mechanisms by which the nervous system processes sensory information and controls movement. The topics include sensory transduction and the physiology for sensory systems (visual, somatosensory, auditory, vestibular). Both spinal and central mechanisms of motor control are also covered.",
-    "prerequisite": "<p>BIOB10H3 and NROB60H3 and NROB61H3 and PSYB55H3 and [PSYB07H3 or STAB22H3] and PSYB70H3</p>",
+    "prerequisite": "BIOB10H3 and NROB60H3 and NROB61H3 and PSYB55H3 and [PSYB07H3 or STAB22H3] and PSYB70H3",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Enrolment Indicator: RP Initially restricted to students in the following groups: SCMAJ1472 - Major Program in Neuroscience SCMAJ1472C - Major (Co-operative) Program in Neuroscience SCSPE1172 - Specialist Program in Neuroscience Cognitive Stream SCSPE1172C - Specialist Program in Neuroscience Cognitive Co-op Stream SCSPE1272 - Specialist Program in Neuroscience Cellular/Molecular Stream SCSPE1272C - Specialist Program in Neuroscience Cellular/Molecular Co-op Stream SCSPE1372 - Specialist Program in Neuroscience Systems/Behavioural Stream SCSPE1372C - Specialist Program in Neuroscience Systems/Behavioural Co-op Stream At 10:00am on July 23, 2025, enrollment will open to students in the following groups: SCSPE1072 - Specialist Program in Neuroscience (Stage 1) SCSPE1072C - Specialist (Co-operative) Program in Neuroscience",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
@@ -3994,12 +4002,13 @@
     "courseTitle": "Synaptic Organization and Physiology of the Brain",
     "code": "NROC69H3",
     "courseDescription": "The course will provide an in-depth examination of neural circuits, synaptic connectivity and cellular mechanisms of synaptic function. Similarities and differences in circuit organization and intrinsic physiology of structures such as the thalamus, hippocampus, basal ganglia and neocortex will also be covered. The goal is to engender a deep and current understanding of cellular mechanisms of information processing in the CNS.",
-    "prerequisite": "<p>BIOB10H3 and NROB60H3 and NROB61H3 and PSYB55H3 and [PSYB07H3 or STAB22H3] and PSYB70H3</p>",
+    "prerequisite": "BIOB10H3 and NROB60H3 and NROB61H3 and PSYB55H3 and [PSYB07H3 or STAB22H3] and PSYB70H3",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Enrolment Indicator: RP Initially restricted to students in the following groups: SCSPE1272 - Specialist Program in Neuroscience Cellular/Molecular Stream SCSPE1272C - Specialist Program in Neuroscience Cellular/Molecular Co-op Stream SCSPE1372 - Specialist Program in Neuroscience Systems/Behavioural Stream SCSPE1372C - Specialist Program in Neuroscience Systems/Behavioural Co-op Stream At 10:00am on July 23, 2025, enrollment will open to students in the following groups: SCMAJ1472 - Major Program in Neuroscience SCMAJ1472C - Major (Co-operative) Program in Neuroscience SCSPE1072 - Specialist Program in Neuroscience (Stage 1) SCSPE1072C - Specialist (Co-operative) Program in Neuroscience SCSPE1172 - Specialist Program in Neuroscience Cognitive Stream SCSPE1172C - Specialist Program in Neuroscience Cognitive Co-op Stream",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
@@ -4369,12 +4378,13 @@
     "courseTitle": "Supervised Study in Neuroscience",
     "code": "NROC90H3",
     "courseDescription": "An intensive research project intended to provide laboratory/field experience in data collection and analysis. The project must be completed over 2 consecutive terms. NROC90H and NROC93H3 provide an opportunity to engage in research in an area after completing basic coverage in regularly scheduled courses. The student must demonstrate a background adequate for the project proposed and should present a clear rationale to prospective supervisors. Regular consultation with the supervisor is necessary, and extensive data collection and analysis will be required. Such a project will culminate in a written research report. Students must first find a supervisor before the start of the academic term in which the project will be initiated. They must then obtain a permission form from the Department of Psychology's website that is to be completed and signed by the intended supervisor, and returned to the Psychology Office. Students seeking supervision off campus are further advised to check the appropriateness of the proposed advisor with the Program Supervisor. If the proposed supervisor is not appointed to the Neuroscience faculty at UTSC then a secondary supervisor who is a member of the Neuroscience group at UTSC will be required.",
-    "prerequisite": "<p>BIOB10H3 and NROB60H3 and NROB61H3 and [(PSYB01H3) or (PSYB04H3) or PSYB70H3] and [PSYB07H3 or STAB22H3] and [PSYB55H3 or (PSYB65H3)] and permission of the proposed supervisor.</p>",
+    "prerequisite": "BIOB10H3 and NROB60H3 and NROB61H3 and [(PSYB01H3) or (PSYB04H3) or PSYB70H3] and [PSYB07H3 or STAB22H3] and [PSYB55H3 or (PSYB65H3)] and permission of the proposed supervisor.",
     "corequisite": "",
     "exclusion": "PSYC90H3",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "SUPERVISED STUDY/RESEARCH & INDEPENDENT STUDY COURSES Step 1: Request the course on ACORN. Your status will be INT. You will not be officially enrolled until you complete the remaining steps (below). Step 2: Meet with your Supervisor and obtain their virtual signature on a 'Supervised Study form'. Make sure the course code, supervisor name and title of the project are clearly printed on the form as this information will appear on your transcript. Print off your ACORN transcripts, and have your supervisor(s) sign each page of your transcript. The Form is available on the Psychology website at: https://utoronto.sharepoint.com/sites/utsc-psychology/SitePages/UG_Research-Courses.aspx Step 3: Submit the signed Supervised Study form to psych.academic.utsc@utoronto.ca by the posted deadline found on the website above. Staff will update your course status on ACORN from interim (INT) to approved (APP).",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -4711,12 +4721,13 @@
     "courseTitle": "Supervised Study in Neuroscience",
     "code": "NROC93H3",
     "courseDescription": "An intensive research project intended to provide laboratory/field experience in data collection and analysis. The project must be completed over 2 consecutive terms. NROC90H3 and NROC93H3 provide an opportunity to engage in research in an area after completing basic coverage in regularly scheduled courses. The student must demonstrate a background adequate for the project proposed and should present a clear rationale to prospective supervisors. Regular consultation with the supervisor is necessary, and extensive data collection and analysis will be required. Such a project will culminate in a written research report. Students must first find a supervisor before the start of the academic term in which the project will be initiated. They must then obtain a permission form from the Department of Psychology's website that is to be completed and signed by the intended supervisor, and returned to the Psychology Office. Students seeking supervision off campus are further advised to check the appropriateness of the proposed advisor with the Program Supervisor. If the proposed supervisor is not appointed to the Neuroscience faculty at UTSC then a secondary supervisor who is a member of the Neuroscience group at UTSC will be required.",
-    "prerequisite": "<p>BIOB10H3 and NROB60H3 and NROB61H3 and [(PSYB01H3) or (PSYB04H3) or PSYB70H3] and [PSYB07H3 or STAB22H3] and [PSYB55H3 or (PSYB65H3)] and permission of the proposed supervisor.</p>",
+    "prerequisite": "BIOB10H3 and NROB60H3 and NROB61H3 and [(PSYB01H3) or (PSYB04H3) or PSYB70H3] and [PSYB07H3 or STAB22H3] and [PSYB55H3 or (PSYB65H3)] and permission of the proposed supervisor.",
     "corequisite": "",
     "exclusion": "PSYC93H3",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "SUPERVISED STUDY/RESEARCH & INDEPENDENT STUDY COURSES Step 1: Request the course on ACORN. Your status will be INT. You will not be officially enrolled until you complete the remaining steps (below). Step 2: Meet with your Supervisor and obtain their virtual signature on a 'Supervised Study form'. Make sure the course code, supervisor name and title of the project are clearly printed on the form as this information will appear on your transcript. Print off your ACORN transcripts, and have your supervisor(s) sign each page of your transcript. The Form is available on the Psychology website at: https://utoronto.sharepoint.com/sites/utsc-psychology/SitePages/UG_Research-Courses.aspx Step 3: Submit the signed Supervised Study form to psych.academic.utsc@utoronto.ca by the posted deadline found on the website above. Staff will update your course status on ACORN from interim (INT) to approved (APP).",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -5053,12 +5064,13 @@
     "courseTitle": "Current Topics in Neuroscience",
     "code": "NROD60H3",
     "courseDescription": "An intensive examination of selected issues and research problems in the Neurosciences.",
-    "prerequisite": "<p>0.5 credit from the following: [BIOC44H3/(NROC34H3) or NROC36H3 or NROC61H3 or NROC64H3 or NROC69H3]</p>",
-    "corequisite": "<p>An additional 0.5 credit from the following: [BIOC44H3/(NROC34H3) or NROC36H3 or NROC61H3 or NROC64H3 or NROC69H3]</p>",
+    "prerequisite": "0.5 credit from the following: [BIOC44H3/(NROC34H3) or NROC36H3 or NROC61H3 or NROC64H3 or NROC69H3]",
+    "corequisite": "An additional 0.5 credit from the following: [BIOC44H3/(NROC34H3) or NROC36H3 or NROC61H3 or NROC64H3 or NROC69H3]",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Enrolment Indicator: RP* Initially restricted to students in the following groups: Year 4 - SCMAJ1472 - Major Program in Neuroscience Year 4 - SCMAJ1472C - Major (Co-operative) Program in Neuroscience Year 4 - SCSPE1172 - Specialist Program in Neuroscience Cognitive Stream Year 4 - SCSPE1172C - Specialist Program in Neuroscience Cognitive Co-op Stream Year 4 - SCSPE1272 - Specialist Program in Neuroscience Cellular/Molecular Stream Year 4 - SCSPE1272C - Specialist Program in Neuroscience Cellular/Molecular Co-op Stream Year 4 - SCSPE1372 - Specialist Program in Neuroscience Systems/Behavioural Stream Year 4 - SCSPE1372C - Specialist Program in Neuroscience Systems/Behavioural Co-op Stream At 10:00am on July 23, 2025, enrollment will open to students in the following groups: Year 3 - SCMAJ1472 - Major Program in Neuroscience Year 3 - SCMAJ1472C - Major (Co-operative) Program in Neuroscience Year 3 - SCSPE1172 - Specialist Program in Neuroscience Cognitive Stream Year 3 - SCSPE1172C - Specialist Program in Neuroscience Cognitive Co-op Stream Year 3 - SCSPE1272 - Specialist Program in Neuroscience Cellular/Molecular Stream Year 3 - SCSPE1272C - Specialist Program in Neuroscience Cellular/Molecular Co-op Stream Year 3 - SCSPE1372 - Specialist Program in Neuroscience Systems/Behavioural Stream Year 3 - SCSPE1372C - Specialist Program in Neuroscience Systems/Behavioural Co-op Stream Students request the course on ACORN but will not be officially enrolled until approval has been granted. Check your status through ACORN to see whether you have been approved. (APP = approval; REF = refused; INT = no decision yet)NOTE: You may only complete 0.5 PSY/NRO D-level credits if you are in a Major Program in Psychology, Mental Health Studies, or Neuroscience, and you may only complete 1.0 PSY/NRO D-level credits if you are a Specialist Program in Psychology, Mental Health Studies, or Neuroscience, or a Double Major in Psychology/Mental Health Studies and Neuroscience. You will be automatically refused from enrollment in any PSY/NRO D-levels beyond this limit. PSYD98 and NROD98 are excluded from this requirement. Please see the following website for more information: https://utoronto.sharepoint.com/sites/utsc-psychology/SitePages/UG_D-level-Courses.aspx Students request the course on ACORN but will not be officially enrolled until approval has been granted. Check your status through ACORN to see whether you have been approved. (APP = approval; REF = refused; INT = no decision yet)",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
@@ -5563,12 +5575,13 @@
     "courseTitle": "Thesis in Neuroscience",
     "code": "NROD98Y3",
     "courseDescription": "This course offers the opportunity to engage in a year long research project under the supervision of an interested member of the faculty in Neuroscience. The project will culminate in a written report in the form of a thesis and a poster presentation. During the course of the year, at appropriate times, students will meet to present their own research proposals, to appraise the proposals of others, and to discuss the results of their investigation. Students must first find a supervisor, which is usually confirmed before the start of the academic term in which the project will be initiated. Students will meet as a group with the coordinator as well as individually with their supervisor. Students planning to pursue graduate studies are especially encouraged to enrol in the course. Students must obtain a permission form from the Department of Psychology's website that is to be completed and signed by the intended supervisor, and submitted to the Psychology Office. Students seeking supervision off campus will need to arrange co supervision with a faculty member in Neuroscience at UTSC.",
-    "prerequisite": "<p>BIOB10H3 and NROB60H3 and NROB61H3 and [PSYB07H3 or STAB22H3] and PSYB55H3 and PSYB70H3 and [0.5 credits from the NRO C-level courses or PSY 50-series C-level courses or BIOC44H3] and [enrolment in the Specialist Co-op, Specialist, or Major Program in Neuroscience] and [GPA of 3.3 or higher over the last 5.0 credit equivalents completed] and permission of the proposed neuroscience faculty supervisor.</p>",
-    "corequisite": "<p>[PSYC08H3 or PSYC09H3]</p>",
-    "exclusion": "<p>BIOD98Y3, BIOD99Y3, PSYD98Y3</p>",
+    "prerequisite": "BIOB10H3 and NROB60H3 and NROB61H3 and [PSYB07H3 or STAB22H3] and PSYB55H3 and PSYB70H3 and [0.5 credits from the NRO C-level courses or PSY 50-series C-level courses or BIOC44H3] and [enrolment in the Specialist Co-op, Specialist, or Major Program in Neuroscience] and [GPA of 3.3 or higher over the last 5.0 credit equivalents completed] and permission of the proposed neuroscience faculty supervisor.",
+    "corequisite": "[PSYC08H3 or PSYC09H3]",
+    "exclusion": "BIOD98Y3, BIOD99Y3, PSYD98Y3",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "SUPERVISED STUDY/RESEARCH & INDEPENDENT STUDY COURSES Step 1: Request the course on ACORN. Your status will be INT. You will not be officially enrolled until you complete the remaining steps (below). Step 2: Meet with your Supervisor and obtain their virtual signature on a 'Supervised Study form'. Make sure the course code, supervisor name and title of the project are clearly printed on the form as this information will appear on your transcript. Print off your ACORN transcripts, and have your supervisor(s) sign each page of your transcript. The Form is available on the Psychology website at: https://utoronto.sharepoint.com/sites/utsc-psychology/SitePages/UG_Research-Courses.aspx Step 3: Submit the signed Supervised Study form to psych.academic.utsc@utoronto.ca by the posted deadline found on the website above. Staff will update your course status on ACORN from interim (INT) to approved (APP).",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",

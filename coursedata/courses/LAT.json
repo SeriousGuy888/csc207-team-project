@@ -10,46 +10,63 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
-      "LEC-0401": {
+      "LEC-0101": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
+          "MO-0": {
+            "meetingDay": "MO",
             "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
+            "meetingEndTime": "10:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "LI",
             "assignedRoom2": "LI"
           },
-          "TH-1": {
-            "meetingDay": "TH",
+          "WE-1": {
+            "meetingDay": "WE",
             "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
+            "meetingEndTime": "10:00",
             "meetingScheduleId": "1",
             "assignedRoom1": "LI",
             "assignedRoom2": "LI"
+          },
+          "TU-2": {
+            "meetingDay": "TU",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "10:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "OI",
+            "assignedRoom2": "OI"
+          },
+          "TH-3": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "10:00",
+            "meetingScheduleId": "3",
+            "assignedRoom1": "OI",
+            "assignedRoom2": "OI"
           }
         },
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Michael",
-            "lastName": "Dewar"
+            "firstName": "Elliott",
+            "lastName": "Fuller"
           }
         },
-        "meetingId": "LEC0401",
+        "meetingId": "LEC0101",
         "teachingMethod": "LEC",
-        "sectionNumber": "0401",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "35",
-        "actualEnrolment": "23",
+        "actualEnrolment": "9",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": "<p>August 15, 2025: Room change</p>",
@@ -260,6 +277,252 @@
           }
         ]
       },
+      "LEC-0501": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
+          },
+          "TU-1": {
+            "meetingDay": "TU",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "CR",
+            "assignedRoom2": "CR"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "David Lee",
+            "lastName": "Jacks II"
+          }
+        },
+        "meetingId": "LEC0501",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0501",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "35",
+        "actualEnrolment": "14",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARTSC",
+            "primaryOrgName": "Faculty of Arts and Science",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARCLA",
+            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "5",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-0401": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "LI",
+            "assignedRoom2": "LI"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "LI",
+            "assignedRoom2": "LI"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Michael",
+            "lastName": "Dewar"
+          }
+        },
+        "meetingId": "LEC0401",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0401",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "35",
+        "actualEnrolment": "23",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>August 15, 2025: Room change</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARTSC",
+            "primaryOrgName": "Faculty of Arts and Science",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARCLA",
+            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "5",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0301": {
         "schedule": {
           "MO-0": {
@@ -382,268 +645,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "LEC-0501": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "CR",
-            "assignedRoom2": "CR"
-          },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "David Lee",
-            "lastName": "Jacks II"
-          }
-        },
-        "meetingId": "LEC0501",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0501",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "35",
-        "actualEnrolment": "14",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARTSC",
-            "primaryOrgName": "Faculty of Arts and Science",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARCLA",
-            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "5",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "OI",
-            "assignedRoom2": "OI"
-          },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "OI",
-            "assignedRoom2": "OI"
-          },
-          "MO-2": {
-            "meetingDay": "MO",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "LI",
-            "assignedRoom2": "LI"
-          },
-          "WE-3": {
-            "meetingDay": "WE",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
-            "meetingScheduleId": "3",
-            "assignedRoom1": "LI",
-            "assignedRoom2": "LI"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Elliott",
-            "lastName": "Fuller"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "35",
-        "actualEnrolment": "9",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>August 15, 2025: Room change</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARTSC",
-            "primaryOrgName": "Faculty of Arts and Science",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARCLA",
-            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "5",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -658,133 +659,11 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
-      "LEC-0201": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "OI",
-            "assignedRoom2": "OI"
-          },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "OI",
-            "assignedRoom2": "OI"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Jarrett",
-            "lastName": "Welsh"
-          }
-        },
-        "meetingId": "LEC0201",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "35",
-        "actualEnrolment": "14",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARTSC",
-            "primaryOrgName": "Faculty of Arts and Science",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARCLA",
-            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "5",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -907,6 +786,129 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-0201": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "OI",
+            "assignedRoom2": "OI"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "OI",
+            "assignedRoom2": "OI"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Jarrett",
+            "lastName": "Welsh"
+          }
+        },
+        "meetingId": "LEC0201",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "35",
+        "actualEnrolment": "14",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARTSC",
+            "primaryOrgName": "Faculty of Arts and Science",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARCLA",
+            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "5",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -917,31 +919,32 @@
     "courseDescription": "An introduction to Latin for students who have no knowledge of the language. This course also serves as a preparation for Intermediate Language courses.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<p>LAT211H5 or LAT100Y5 or LAT101H1</p>",
+    "exclusion": "LAT211H5 or LAT100Y5 or LAT101H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          },
-          "TH-1": {
+          "TH-0": {
             "meetingDay": "TH",
             "meetingStartTime": "13:00",
             "meetingEndTime": "14:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "CC",
             "assignedRoom2": "CC"
+          },
+          "TU-1": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
           }
         },
         "instructors": {
@@ -1097,62 +1100,47 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
-      "LEC-0101": {
+      "LEC-0201": {
         "schedule": {
           "MO-0": {
             "meetingDay": "MO",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "LI",
-            "assignedRoom2": "LI"
+            "assignedRoom1": "OI",
+            "assignedRoom2": "OI"
           },
-          "TU-1": {
-            "meetingDay": "TU",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "LI",
-            "assignedRoom2": "LI"
-          },
-          "WE-2": {
+          "WE-1": {
             "meetingDay": "WE",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "LI",
-            "assignedRoom2": "LI"
-          },
-          "TH-3": {
-            "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
-            "meetingScheduleId": "3",
-            "assignedRoom1": "LI",
-            "assignedRoom2": "LI"
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "FE",
+            "assignedRoom2": "FE"
           }
         },
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Angus Gordon",
-            "lastName": "Wilson"
+            "firstName": "Drew",
+            "lastName": "Davis"
           }
         },
-        "meetingId": "LEC0101",
+        "meetingId": "LEC0201",
         "teachingMethod": "LEC",
-        "sectionNumber": "0101",
+        "sectionNumber": "0201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "35",
-        "actualEnrolment": "9",
+        "actualEnrolment": "28",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1363,42 +1351,58 @@
           }
         ]
       },
-      "LEC-0201": {
+      "LEC-0101": {
         "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "FE",
-            "assignedRoom2": "FE"
-          },
-          "MO-1": {
+          "MO-0": {
             "meetingDay": "MO",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "10:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "LI",
+            "assignedRoom2": "LI"
+          },
+          "TU-1": {
+            "meetingDay": "TU",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "10:00",
             "meetingScheduleId": "1",
-            "assignedRoom1": "OI",
-            "assignedRoom2": "OI"
+            "assignedRoom1": "LI",
+            "assignedRoom2": "LI"
+          },
+          "WE-2": {
+            "meetingDay": "WE",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "10:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "LI",
+            "assignedRoom2": "LI"
+          },
+          "TH-3": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "10:00",
+            "meetingScheduleId": "3",
+            "assignedRoom1": "LI",
+            "assignedRoom2": "LI"
           }
         },
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Drew",
-            "lastName": "Davis"
+            "firstName": "Angus Gordon",
+            "lastName": "Wilson"
           }
         },
-        "meetingId": "LEC0201",
+        "meetingId": "LEC0101",
         "teachingMethod": "LEC",
-        "sectionNumber": "0201",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "35",
-        "actualEnrolment": "28",
+        "actualEnrolment": "9",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1493,16 +1497,80 @@
     "courseTitle": "Introductory Latin II",
     "code": "LAT102H5",
     "courseDescription": "A continuation of the introduction to Latin for students who have some training in the language, but have not completed a whole credit course at university or a final-year (Grade 12) course in secondary school. This course also serves as a preparation for Intermediate Language courses.",
-    "prerequisite": "<p>LAT101H5 or LAT211H5 or LAT101H1</p>",
+    "prerequisite": "LAT101H5 or LAT211H5 or LAT101H1",
     "corequisite": "",
-    "exclusion": "<p>LAT100Y5 or LAT212H5 or LAT102H1</p>",
+    "exclusion": "LAT100Y5 or LAT212H5 or LAT102H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
     "meetings": {
+      "TUT-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "11",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -1598,69 +1666,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "11",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -1675,6 +1680,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -1815,6 +1821,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -1949,12 +1956,13 @@
     "courseTitle": "Introductory Latin III",
     "code": "LAT213H5",
     "courseDescription": "The final course of the introduction to Latin for students who have some training in the language. This course also serves as a preparation for Intermediate Latin courses.",
-    "prerequisite": "<p>LAT102H5 or LAT212H5 or LAT102H1</p>",
+    "prerequisite": "LAT102H5 or LAT212H5 or LAT102H1",
     "corequisite": "",
     "exclusion": "LAT200Y5 or LAT201H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -2127,10 +2135,11 @@
     "courseDescription": "Reading of selections of Latin prose and verse with a systematic study of the Latin Language.",
     "prerequisite": "LAT213H5 or LAT201H1 or Grade 12 Latin (with permission of instructor)",
     "corequisite": "",
-    "exclusion": "<p>LAT202H1</p>",
+    "exclusion": "LAT202H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -2307,6 +2316,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -2447,6 +2457,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -2587,6 +2598,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -2727,6 +2739,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -2867,6 +2880,7 @@
     "recommendedPreparation": "Usually 1.0 credit from 300-level LAT courses",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -2939,6 +2953,7 @@
     "recommendedPreparation": "Usually 1.0 credit from 300-level LAT courses",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3011,6 +3026,7 @@
     "recommendedPreparation": "Usually 1.0 credit from 300-level LAT courses",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3083,6 +3099,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3223,6 +3240,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3363,6 +3381,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3503,6 +3522,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",

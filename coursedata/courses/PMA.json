@@ -4,85 +4,17 @@
     "courseTitle": "Lyric Diction",
     "code": "PMA135Y1",
     "courseDescription": "A study of English, Italian, German, and French phonetics, with focus on authentic pronunciation for the stage.",
-    "prerequisite": "Voice Majors or P.I. ",
+    "prerequisite": "Voice Majors or P.I.",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "PRA-0201": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "FR-1": {
-            "meetingDay": "FR",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Jason",
-            "lastName": "Nedecky"
-          }
-        },
-        "meetingId": "PRA0201",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "2",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "MS   ACP",
-            "postName": "Advanced Cert. in Performance",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "PRA-0101": {
         "schedule": {
           "FR-0": {
@@ -151,6 +83,75 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0201": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "FR-1": {
+            "meetingDay": "FR",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Jason",
+            "lastName": "Nedecky"
+          }
+        },
+        "meetingId": "PRA0201",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "2",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "MS   ACP",
+            "postName": "Advanced Cert. in Performance",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -165,6 +166,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -251,6 +253,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -379,22 +382,230 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "PRA-1006": {
+      "PRA-0901": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "21:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "21:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Stephen",
+            "lastName": "Tam"
+          }
+        },
+        "meetingId": "PRA0901",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0901",
+        "subtitle": "Flute & Clarinet",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "MS   ACP",
+            "postName": "Advanced Cert. in Performance",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-1003": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "21:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "21:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Diane",
+            "lastName": "Leung"
+          }
+        },
+        "meetingId": "PRA1003",
+        "teachingMethod": "PRA",
+        "sectionNumber": "1003",
+        "subtitle": "Viola",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "5",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "MS   ACP",
+            "postName": "Advanced Cert. in Performance",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0501": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Anita",
+            "lastName": "McAlister"
+          }
+        },
+        "meetingId": "PRA0501",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0501",
+        "subtitle": "Trumpet",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "MS   ACP",
+            "postName": "Advanced Cert. in Performance",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-1007": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
             "meetingStartTime": "17:00",
             "meetingEndTime": "19:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "EJ",
             "assignedRoom2": "EJ"
           },
-          "TH-1": {
-            "meetingDay": "TH",
+          "MO-1": {
+            "meetingDay": "MO",
             "meetingStartTime": "17:00",
             "meetingEndTime": "19:00",
             "meetingScheduleId": "1",
@@ -405,24 +616,19 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Jeffrey",
-            "lastName": "McFadden"
-          },
-          "1": {
-            "instructorId": "1",
-            "firstName": "Jorge",
-            "lastName": "Caballero"
+            "firstName": "Angela",
+            "lastName": "Schwarzkopf"
           }
         },
-        "meetingId": "PRA1006",
+        "meetingId": "PRA1007",
         "teachingMethod": "PRA",
-        "sectionNumber": "1006",
-        "subtitle": "Guitar",
+        "sectionNumber": "1007",
+        "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "10",
+        "enrollmentCapacity": "2",
         "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
@@ -556,6 +762,425 @@
         "teachingMethod": "PRA",
         "sectionNumber": "0401",
         "subtitle": "Horn",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "MS   ACP",
+            "postName": "Advanced Cert. in Performance",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Beverley",
+            "lastName": "Johnston"
+          }
+        },
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "Percussion",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "1",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "MS   ACP",
+            "postName": "Advanced Cert. in Performance",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-1004": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "FR-1": {
+            "meetingDay": "FR",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Wallace",
+            "lastName": "Halladay"
+          }
+        },
+        "meetingId": "PRA1004",
+        "teachingMethod": "PRA",
+        "sectionNumber": "1004",
+        "subtitle": "Saxophone",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "5",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "MS   ACP",
+            "postName": "Advanced Cert. in Performance",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0301": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Shauna",
+            "lastName": "Rolston"
+          }
+        },
+        "meetingId": "PRA0301",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0301",
+        "subtitle": "Cello",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "MS   ACP",
+            "postName": "Advanced Cert. in Performance",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-1005": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Aaron",
+            "lastName": "James"
+          }
+        },
+        "meetingId": "PRA1005",
+        "teachingMethod": "PRA",
+        "sectionNumber": "1005",
+        "subtitle": "Saxophone",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "5",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "MS   ACP",
+            "postName": "Advanced Cert. in Performance",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-1009": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "21:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "19:00",
+            "meetingEndTime": "21:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Eric",
+            "lastName": "Hall"
+          }
+        },
+        "meetingId": "PRA1009",
+        "teachingMethod": "PRA",
+        "sectionNumber": "1009",
+        "subtitle": "Bassoon",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "MS   ACP",
+            "postName": "Advanced Cert. in Performance",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "1",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-1006": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Jeffrey",
+            "lastName": "McFadden"
+          },
+          "1": {
+            "instructorId": "1",
+            "firstName": "Jorge",
+            "lastName": "Caballero"
+          }
+        },
+        "meetingId": "PRA1006",
+        "teachingMethod": "PRA",
+        "sectionNumber": "1006",
+        "subtitle": "Guitar",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
@@ -871,627 +1496,6 @@
           }
         ]
       },
-      "PRA-0301": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Shauna",
-            "lastName": "Rolston"
-          }
-        },
-        "meetingId": "PRA0301",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0301",
-        "subtitle": "Cello",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "MS   ACP",
-            "postName": "Advanced Cert. in Performance",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0901": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "21:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "MO-1": {
-            "meetingDay": "MO",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "21:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Stephen",
-            "lastName": "Tam"
-          }
-        },
-        "meetingId": "PRA0901",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0901",
-        "subtitle": "Flute & Clarinet",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "MS   ACP",
-            "postName": "Advanced Cert. in Performance",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-1003": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "21:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "MO-1": {
-            "meetingDay": "MO",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "21:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Diane",
-            "lastName": "Leung"
-          }
-        },
-        "meetingId": "PRA1003",
-        "teachingMethod": "PRA",
-        "sectionNumber": "1003",
-        "subtitle": "Viola",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "5",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "MS   ACP",
-            "postName": "Advanced Cert. in Performance",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Beverley",
-            "lastName": "Johnston"
-          }
-        },
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "Percussion",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "1",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "MS   ACP",
-            "postName": "Advanced Cert. in Performance",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-1004": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "FR-1": {
-            "meetingDay": "FR",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Wallace",
-            "lastName": "Halladay"
-          }
-        },
-        "meetingId": "PRA1004",
-        "teachingMethod": "PRA",
-        "sectionNumber": "1004",
-        "subtitle": "Saxophone",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "5",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "MS   ACP",
-            "postName": "Advanced Cert. in Performance",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-1005": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Aaron",
-            "lastName": "James"
-          }
-        },
-        "meetingId": "PRA1005",
-        "teachingMethod": "PRA",
-        "sectionNumber": "1005",
-        "subtitle": "Saxophone",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "5",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "MS   ACP",
-            "postName": "Advanced Cert. in Performance",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0501": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "MO-1": {
-            "meetingDay": "MO",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Anita",
-            "lastName": "McAlister"
-          }
-        },
-        "meetingId": "PRA0501",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0501",
-        "subtitle": "Trumpet",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "MS   ACP",
-            "postName": "Advanced Cert. in Performance",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-1007": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "MO-1": {
-            "meetingDay": "MO",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Angela",
-            "lastName": "Schwarzkopf"
-          }
-        },
-        "meetingId": "PRA1007",
-        "teachingMethod": "PRA",
-        "sectionNumber": "1007",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "2",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "MS   ACP",
-            "postName": "Advanced Cert. in Performance",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-1009": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "21:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "MO-1": {
-            "meetingDay": "MO",
-            "meetingStartTime": "19:00",
-            "meetingEndTime": "21:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Eric",
-            "lastName": "Hall"
-          }
-        },
-        "meetingId": "PRA1009",
-        "teachingMethod": "PRA",
-        "sectionNumber": "1009",
-        "subtitle": "Bassoon",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "MS   ACP",
-            "postName": "Advanced Cert. in Performance",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "1",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "PRA-0801": {
         "schedule": {
           "WE-0": {
@@ -1643,79 +1647,11 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "PRA-0201": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "MO-1": {
-            "meetingDay": "MO",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Nathalie",
-            "lastName": "Paulin"
-          }
-        },
-        "meetingId": "PRA0201",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "1",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "MS   ACP",
-            "postName": "Advanced Cert. in Performance",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "PRA-0101": {
         "schedule": {
           "MO-0": {
@@ -1784,6 +1720,75 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0201": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Nathalie",
+            "lastName": "Paulin"
+          }
+        },
+        "meetingId": "PRA0201",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "1",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "MS   ACP",
+            "postName": "Advanced Cert. in Performance",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -1798,6 +1803,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1963,6 +1969,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -2049,137 +2056,11 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "PRA-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TU-1": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TU-2": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TU-3": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "3",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TU-4": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "4",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TU-5": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "5",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TU-6": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "6",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TU-7": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "7",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Steven",
-            "lastName": "Philcox"
-          },
-          "1": {
-            "instructorId": "1",
-            "firstName": "Lydia",
-            "lastName": "Wong"
-          },
-          "2": {
-            "instructorId": "2",
-            "firstName": "James",
-            "lastName": "Parker"
-          }
-        },
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "MS   ACP",
-            "postName": "Advanced Cert. in Performance",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "PRA-0201": {
         "schedule": {
           "TU-0": {
@@ -2306,6 +2187,133 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TU-1": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TU-2": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TU-3": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "3",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TU-4": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "4",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TU-5": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "5",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TU-6": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "6",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TU-7": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "7",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Steven",
+            "lastName": "Philcox"
+          },
+          "1": {
+            "instructorId": "1",
+            "firstName": "Lydia",
+            "lastName": "Wong"
+          },
+          "2": {
+            "instructorId": "2",
+            "firstName": "James",
+            "lastName": "Parker"
+          }
+        },
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "MS   ACP",
+            "postName": "Advanced Cert. in Performance",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -2317,9 +2325,10 @@
     "prerequisite": "Piano majors.",
     "corequisite": "PMA451Y1",
     "exclusion": "",
-    "recommendedPreparation": " ",
+    "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -2398,6 +2407,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -2669,6 +2679,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -2744,9 +2755,10 @@
     "prerequisite": "Percussion majors.",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": " ",
+    "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -2833,6 +2845,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -2951,6 +2964,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3037,6 +3051,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3123,6 +3138,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3283,6 +3299,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3385,6 +3402,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3457,6 +3475,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3559,6 +3578,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3661,6 +3681,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3880,24 +3901,25 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "PRA-0501": {
+      "PRA-0301": {
         "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "12:00",
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "EJ",
             "assignedRoom2": "EJ"
           },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "12:00",
+          "FR-1": {
+            "meetingDay": "FR",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
             "meetingScheduleId": "1",
             "assignedRoom1": "EJ",
             "assignedRoom2": "EJ"
@@ -3906,13 +3928,82 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Aiyun",
-            "lastName": "Huang"
+            "firstName": "Eric",
+            "lastName": "Hall"
           }
         },
-        "meetingId": "PRA0501",
+        "meetingId": "PRA0301",
         "teachingMethod": "PRA",
-        "sectionNumber": "0501",
+        "sectionNumber": "0301",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "10",
+        "actualEnrolment": "2",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "MS   ACP",
+            "postName": "Advanced Cert. in Performance",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0201": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "FR-1": {
+            "meetingDay": "FR",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Annalee",
+            "lastName": "Patipatanakoon"
+          }
+        },
+        "meetingId": "PRA0201",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -4054,20 +4145,20 @@
           }
         ]
       },
-      "PRA-0201": {
+      "PRA-0501": {
         "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "12:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "EJ",
             "assignedRoom2": "EJ"
           },
-          "FR-1": {
-            "meetingDay": "FR",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "12:00",
             "meetingScheduleId": "1",
             "assignedRoom1": "EJ",
             "assignedRoom2": "EJ"
@@ -4076,13 +4167,13 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Annalee",
-            "lastName": "Patipatanakoon"
+            "firstName": "Aiyun",
+            "lastName": "Huang"
           }
         },
-        "meetingId": "PRA0201",
+        "meetingId": "PRA0501",
         "teachingMethod": "PRA",
-        "sectionNumber": "0201",
+        "sectionNumber": "0501",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -4090,75 +4181,6 @@
         "online": "In Person",
         "enrollmentCapacity": "10",
         "actualEnrolment": "1",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "MS   ACP",
-            "postName": "Advanced Cert. in Performance",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0301": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "FR-1": {
-            "meetingDay": "FR",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Eric",
-            "lastName": "Hall"
-          }
-        },
-        "meetingId": "PRA0301",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0301",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "10",
-        "actualEnrolment": "2",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -4260,6 +4282,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -4362,6 +4385,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -4512,6 +4536,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",

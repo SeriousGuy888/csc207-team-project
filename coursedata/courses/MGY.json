@@ -10,6 +10,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -90,6 +91,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -326,6 +328,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -458,6 +461,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -617,6 +621,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -791,6 +796,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Science",
@@ -856,7 +862,7 @@
           }
         ]
       },
-      "LEC-0401": {
+      "LEC-0301": {
         "schedule": {
           "-": {
             "meetingDay": null,
@@ -870,13 +876,13 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Tae-Hee",
-            "lastName": "Kim"
+            "firstName": "Tatsuya",
+            "lastName": "Tsukahara"
           }
         },
-        "meetingId": "LEC0401",
+        "meetingId": "LEC0301",
         "teachingMethod": "LEC",
-        "sectionNumber": "0401",
+        "sectionNumber": "0301",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -917,7 +923,7 @@
           }
         ]
       },
-      "LEC-0301": {
+      "LEC-0401": {
         "schedule": {
           "-": {
             "meetingDay": null,
@@ -931,13 +937,13 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Tatsuya",
-            "lastName": "Tsukahara"
+            "firstName": "Tae-Hee",
+            "lastName": "Kim"
           }
         },
-        "meetingId": "LEC0301",
+        "meetingId": "LEC0401",
         "teachingMethod": "LEC",
-        "sectionNumber": "0301",
+        "sectionNumber": "0401",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -1048,10 +1054,11 @@
     "courseDescription": "This course examines the design and interpretation of experiments that have led to our current understanding of the biological roles of DNA, RNA and proteins. Intended for students considering graduate or professional work in molecular biology or a related field or wanting a deeper understanding of these topics.",
     "prerequisite": "BIO120H1, BIO230H1/BIO255H1, BCH242Y1 (Note: BCH210H1 may be acceptable with permission of instructor)",
     "corequisite": "",
-    "exclusion": "<p>BCH311H1, CSB349H1, <a href=\"https://utm.calendar.utoronto.ca/course/JBC372H5\">JBC372H5</a>(UTM), PSL350H1</p>",
+    "exclusion": "BCH311H1, CSB349H1, JBC372H5(UTM), PSL350H1",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -1341,12 +1348,13 @@
     "courseTitle": "Principles of Genetic Analysis I",
     "code": "MGY314H1",
     "courseDescription": "Laboratory experiments in genetics, with the focus on microbial and prokaryotic genetics. Topics and experiments include mutagenesis and genetic selection, linkage and recombination, genetic crosses, gene regulation, suppressor analyses, and genetic mapping. (Approximate Lab Materials Fee: $27; Lab Manual Fee: $7)",
-    "prerequisite": "<p>BIO230H1/ BIO255H1, BIO260H1/ HMB265H1</p>",
+    "prerequisite": "BIO230H1/ BIO255H1, BIO260H1/ HMB265H1",
     "corequisite": "",
     "exclusion": "MGY312H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -1355,19 +1363,19 @@
         "schedule": {
           "TH-0": {
             "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "MS",
-            "assignedRoom2": "MS"
+            "assignedRoom1": "",
+            "assignedRoom2": ""
           },
           "TH-1": {
             "meetingDay": "TH",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "17:00",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
             "meetingScheduleId": "1",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
+            "assignedRoom1": "MS",
+            "assignedRoom2": "MS"
           }
         },
         "instructors": {
@@ -1594,12 +1602,13 @@
     "courseTitle": "Principles of Genetic Analysis II",
     "code": "MGY315H1",
     "courseDescription": "Laboratory experiments in eukaryotic genetics, using two of the most powerful eukaryotic model systems, the yeast Saccharomyces cerevisiae and fruit fly Drosophila melanogaster. The course follows MGY314H1; topics include analysis of genetic networks and pathways, meiotic segregation analysis, recombination mapping, genetic crosses, and phenotypic analyses. (Approximate Lab Materials Fee: $27; Lab Manual Fee: $20)",
-    "prerequisite": "<p>BIO230H1/ BIO255H1, BIO260H1/ HMB265H1, MGY314H1/ MGY340H1</p>",
+    "prerequisite": "BIO230H1/ BIO255H1, BIO260H1/ HMB265H1, MGY314H1/ MGY340H1",
     "corequisite": "",
     "exclusion": "MGY312H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -1845,6 +1854,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -1997,12 +2007,13 @@
     "courseTitle": "Model Systems to Disease",
     "code": "MGY350H1",
     "courseDescription": "The concepts of genetics in the context of human development, disease and evolution. Topics include genetic interactions and complex traits, variation in disease phenotype, signalling and development, stem cells and epigenetic regulation.",
-    "prerequisite": "<p>BIO120H1, BIO230H1/ BIO255H1, BIO260H1/ HMB265H1</p>",
-    "corequisite": "<p>BCH311H1/ CSB349H1/ MGY311Y1</p>",
+    "prerequisite": "BIO120H1, BIO230H1/ BIO255H1, BIO260H1/ HMB265H1",
+    "corequisite": "BCH311H1/ CSB349H1/ MGY311Y1",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -2266,6 +2277,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -2515,10 +2527,11 @@
     "courseDescription": "An in depth study of bacteria including their structure, their biology, their ability to adapt, and their effects on human health. Provides a foundation for advanced studies in bacterial physiology, bacterial genetics, molecular pathogenesis of disease, immunology, and environmental studies.",
     "prerequisite": "BCH210H1/BCH242Y1, BIO120H1, BIO230H1/BIO255H1",
     "corequisite": "",
-    "exclusion": "<p>BIO370Y5</p>",
+    "exclusion": "BIO370Y5",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -3185,6 +3198,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -3337,12 +3351,13 @@
     "courseTitle": "Microbiology Laboratory I: Bacteria",
     "code": "MGY380H1",
     "courseDescription": "A laboratory course in bacteriology. Students will perform a variety of genetic and biochemical experiments to identify and characterize unknown organisms, and learn how bacteria live together in biofilm and become resistance to antibiotics. Students will also learn important research tools and concepts including CRISPRi, transduction, and conjugation through experiments. Valuable not only for advanced work in microbiology but also in related fields that make use of bacteria and bacteriophages as research tools. (Approximate Lab Materials Fee: $27; Lab Manual Fee: $20)",
-    "prerequisite": "<p>BIO120H1, BIO230H1/ BIO255H1, HMB265H1/ BIO260H1</p>",
+    "prerequisite": "BIO120H1, BIO230H1/ BIO255H1, HMB265H1/ BIO260H1",
     "corequisite": "MGY377H1",
     "exclusion": "MGY379Y1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -3632,71 +3647,17 @@
     "courseTitle": "Microbiology Laboratory II: Viruses",
     "code": "MGY381H1",
     "courseDescription": "Hands-on experience with clinically relevant virology and immunologic assays and human viruses will provide a foundational understanding of viral dynamics, propagation, and replication kinetics. Students will explore virus-host interactions through an analysis of their own immunologic responses. Valuable not only in the study of microbiology, but also in many other areas of biomedical research, clinical practice, public health and industry. MGY380H1 is strongly recommended as preparation for this course. (Approximate Lab Materials Fee: $27; Lab Manual Fee: $20)",
-    "prerequisite": "<p>BIO120H1, BIO230H1/ BIO255H1, HMB265H1/ BIO260H1</p>",
+    "prerequisite": "BIO120H1, BIO230H1/ BIO255H1, HMB265H1/ BIO260H1",
     "corequisite": "MGY378H1",
     "exclusion": "MGY379Y1",
-    "recommendedPreparation": "<div>MGY380H1</div>",
+    "recommendedPreparation": "MGY380H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
     "meetings": {
-      "PRA-0201": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MS",
-            "assignedRoom2": "MS"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0201",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "14",
-        "actualEnrolment": "12",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>August 28, 2025: Room change</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -4379,6 +4340,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0201": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MS",
+            "assignedRoom2": "MS"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0201",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "14",
+        "actualEnrolment": "12",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>August 28, 2025: Room change</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -4393,11 +4409,12 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "LEC-0201": {
+      "LEC-0301": {
         "schedule": {
           "-": {
             "meetingDay": null,
@@ -4409,9 +4426,9 @@
           }
         },
         "instructors": {},
-        "meetingId": "LEC0201",
+        "meetingId": "LEC0301",
         "teachingMethod": "LEC",
-        "sectionNumber": "0201",
+        "sectionNumber": "0301",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -4513,7 +4530,7 @@
           }
         ]
       },
-      "LEC-0301": {
+      "LEC-0201": {
         "schedule": {
           "-": {
             "meetingDay": null,
@@ -4525,9 +4542,9 @@
           }
         },
         "instructors": {},
-        "meetingId": "LEC0301",
+        "meetingId": "LEC0201",
         "teachingMethod": "LEC",
-        "sectionNumber": "0301",
+        "sectionNumber": "0201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -4581,6 +4598,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -4731,6 +4749,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -4891,6 +4910,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -5046,6 +5066,7 @@
     "recommendedPreparation": "IMM340H1/IMM341H1, IMM350H1/IMM351H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -5550,12 +5571,13 @@
     "courseTitle": "Bioinformatics",
     "code": "MGY441H1",
     "courseDescription": "This course is an introduction to computational methods and internet resources in modern biochemistry and molecular biology. The main topics include: sequence and genome databases, sequence alignment and homology search, use and interpretation of molecular structure, and phylogenetic analysis. Assignments focus on hands-on competence building with web-based bioinformatics tools and databases, downloadable software including a molecular viewer and a multiple sequence alignment editor, and the statistics workbench and programming language “R”. Note: BCB420H1 extends this syllabus to computational topics of systems biology.",
-    "prerequisite": "<p>BCH210H1/ BCH242Y1; STA220H1/ STA288H1/ STA237H1/ STA247H1/ STA255H1/ STA257H1; BCH311H1/ MGY311Y1/ PSL350H1. Students who do not have all of the required prerequisites are encouraged to contact the course coordinator to seek a waiver.</p>",
+    "prerequisite": "BCH210H1/ BCH242Y1; STA220H1/ STA288H1/ STA237H1/ STA247H1/ STA255H1/ STA257H1; BCH311H1/ MGY311Y1/ PSL350H1. Students who do not have all of the required prerequisites are encouraged to contact the course coordinator to seek a waiver.",
     "corequisite": "",
-    "exclusion": "<p>BCH441H1</p>",
-    "recommendedPreparation": "<p>A basic understanding of <span>the R statistical language.</span></p>",
+    "exclusion": "BCH441H1",
+    "recommendedPreparation": "A basic understanding of the R statistical language.",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -5747,12 +5769,13 @@
     "courseTitle": "Genetic Analysis of Development",
     "code": "MGY460H1",
     "courseDescription": "Basic and advanced principles of genetic analysis applied to the study of the best-understood eukaryotic model organisms including the nematode worm Caenorhabditis elegans, the zebrafish, and the laboratory mouse. We emphasize the use of genetic approaches to address problems in cell biology and development, such as the regulation of cell fate and tissue development. Much of the knowledge gained from these experimentally tractable organisms has proven broadly applicable, and the same principles of developmental genetic analysis underlie efforts to understand the development of humans.",
-    "prerequisite": " BIO260H1/HMB265H1, MGY311Y1/CSB349H1/BCH311H1",
+    "prerequisite": "BIO260H1/HMB265H1, MGY311Y1/CSB349H1/BCH311H1",
     "corequisite": "",
     "exclusion": "MGY451H1, MGY452H1",
     "recommendedPreparation": "MGY340H1, MGY350H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -5903,6 +5926,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -6053,6 +6077,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",

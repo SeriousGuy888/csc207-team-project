@@ -10,6 +10,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -153,65 +154,11 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
     "meetings": {
-      "LEC-0201": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "16:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          }
-        },
-        "instructors": {},
-        "meetingId": "LEC0201",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "Cancelled",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "2",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TH-0": {
@@ -299,6 +246,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-0201": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          }
+        },
+        "instructors": {},
+        "meetingId": "LEC0201",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "Cancelled",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "2",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -313,6 +315,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -473,65 +476,11 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
     "meetings": {
-      "LEC-0201": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "16:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          }
-        },
-        "instructors": {},
-        "meetingId": "LEC0201",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "Cancelled",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "2",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TH-0": {
@@ -619,6 +568,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-0201": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          }
+        },
+        "instructors": {},
+        "meetingId": "LEC0201",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "Cancelled",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "2",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -633,6 +637,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -793,65 +798,11 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
     "meetings": {
-      "LEC-0201": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "16:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          }
-        },
-        "instructors": {},
-        "meetingId": "LEC0201",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "Cancelled",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "2",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TH-0": {
@@ -939,6 +890,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-0201": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          }
+        },
+        "instructors": {},
+        "meetingId": "LEC0201",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "Cancelled",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "2",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -953,6 +959,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
@@ -1113,6 +1120,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -1273,65 +1281,11 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
     "meetings": {
-      "LEC-0201": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "16:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          }
-        },
-        "instructors": {},
-        "meetingId": "LEC0201",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "Cancelled",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "2",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TH-0": {
@@ -1419,6 +1373,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-0201": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          }
+        },
+        "instructors": {},
+        "meetingId": "LEC0201",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "Cancelled",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "2",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -1433,6 +1442,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -1593,6 +1603,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
@@ -1753,6 +1764,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -1858,6 +1870,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -1963,6 +1976,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Delivery InstructionsExplore the science of how to cultivate a Happy Mind. This course will merge cutting-edge research from cognitive neuroscience, psychology, and contemplative traditions to investigate what it means to live a fulfilling life. Students will engage with scientific models of well-being, including computational neuroscience models, computational psychiatry, and the neuroscience of emotions. They will study how the mind constructs its reality through predictions, emotions, and habits, examining both the promises and perils of these processes. This course may count towards Breadth Requirement 5: The Physical and Mathematical Universes. If you wish to use this course towards this Breadth Category, please contact your College Registrar's Office to request for it to be manually applied.",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "None",
@@ -2100,6 +2114,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1), Thought, Belief and Behaviour (2)",
     "distributionCategories": "Humanities",
@@ -2234,12 +2249,13 @@
     "courseTitle": "New College Independent Studies",
     "code": "NEW390Y1",
     "courseDescription": "New College Independent Study courses are designed both to complement regular offerings in New College Programs and to provide an opportunity for New College students in any program to enrich their studies. The normal expectation of a project course is that the student, aided and advised by their supervisor, will read relevant literature, and plan, analyze and report on an original and independent investigation of an appropriate topic. Enrolment is by application. Written applications, which include an application form and detailed proposal, should be made through the Programs Office for approval by the Vice Principal of New College or a designate by April 15 for the Summer Session; by July 15 for the Fall Term; or by November 15 for the Winter Term. Should the deadline fall on a weekend, applications will be accepted until the following Monday. Students will be notified of the acceptance or rejection of an application. If the project requires ethics approval, please be advised that you should find and consult with a supervisor about meeting this requirement at least a semester in advance of these deadlines. For more information and application forms, please see the Independent Studies website: http://www.newcollege.utoronto.ca/new-college-academic-programs/independent-studies. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>Completion of 9.0 credits</p>",
+    "prerequisite": "Completion of 9.0 credits",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "TBA",
@@ -2306,12 +2322,13 @@
     "courseTitle": "New College Independent Studies",
     "code": "NEW391H1",
     "courseDescription": "New College Independent Study courses are designed both to complement regular offerings in New College Programs and to provide an opportunity for New College students in any program to enrich their studies. The normal expectation of a project course is that the student, aided and advised by their supervisor, will read relevant literature, and plan, analyze and report on an original and independent investigation of an appropriate topic. Enrolment is by application. Written applications, which include an application form and detailed proposal, should be made through the Programs Office for approval by the Vice Principal of New College or a designate by April 15 for the Summer Session; by July 15 for the Fall Term; or by November 15 for the Winter Term. Should the deadline fall on a weekend, applications will be accepted until the following Monday. Students will be notified of the acceptance or rejection of an application. If the project requires ethics approval, please be advised that you should find and consult with a supervisor about meeting this requirement at least a semester in advance of these deadlines. For more information and application forms, please see the Independent Studies website: http://www.newcollege.utoronto.ca/new-college-academic-programs/independent-studies. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>Completion of 9.0 credits</p>",
+    "prerequisite": "Completion of 9.0 credits",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "TBA",
@@ -2378,12 +2395,13 @@
     "courseTitle": "New College Independent Studies",
     "code": "NEW391H1",
     "courseDescription": "New College Independent Study courses are designed both to complement regular offerings in New College Programs and to provide an opportunity for New College students in any program to enrich their studies. The normal expectation of a project course is that the student, aided and advised by their supervisor, will read relevant literature, and plan, analyze and report on an original and independent investigation of an appropriate topic. Enrolment is by application. Written applications, which include an application form and detailed proposal, should be made through the Programs Office for approval by the Vice Principal of New College or a designate by April 15 for the Summer Session; by July 15 for the Fall Term; or by November 15 for the Winter Term. Should the deadline fall on a weekend, applications will be accepted until the following Monday. Students will be notified of the acceptance or rejection of an application. If the project requires ethics approval, please be advised that you should find and consult with a supervisor about meeting this requirement at least a semester in advance of these deadlines. For more information and application forms, please see the Independent Studies website: http://www.newcollege.utoronto.ca/new-college-academic-programs/independent-studies. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>Completion of 9.0 credits</p>",
+    "prerequisite": "Completion of 9.0 credits",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "TBA",
@@ -2450,12 +2468,13 @@
     "courseTitle": "New College Independent Studies",
     "code": "NEW490Y1",
     "courseDescription": "New College Independent Study courses are designed both to complement regular offerings in New College Programs and to provide an opportunity for New College students in any program to enrich their studies. The normal expectation of a project course is that the student, aided and advised by their supervisor, will read relevant literature, and plan, analyze and report on an original and independent investigation of an appropriate topic. Enrolment is by application. Written applications, which include an application form and detailed proposal, should be made through the Programs Office for approval by the Vice Principal of New College or a designate by April 15 for the Summer Session; by July 15 for the Fall Term; or by November 15 for the Winter Term. Should the deadline fall on a weekend, applications will be accepted until the following Monday. Students will be notified of the acceptance or rejection of an application. If the project requires ethics approval, please be advised that you should find and consult with a supervisor about meeting this requirement at least a semester in advance of these deadlines. For more information and application forms, please see the Independent Studies website: http://www.newcollege.utoronto.ca/new-college-academic-programs/independent-studies. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>Completion of 14.0 credits</p>",
+    "prerequisite": "Completion of 14.0 credits",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "None",
@@ -2522,12 +2541,13 @@
     "courseTitle": "New College Independent Studies",
     "code": "NEW491H1",
     "courseDescription": "New College Independent Study courses are designed both to complement regular offerings in New College Programs and to provide an opportunity for New College students in any program to enrich their studies. The normal expectation of a project course is that the student, aided and advised by their supervisor, will read relevant literature, and plan, analyze and report on an original and independent investigation of an appropriate topic. Enrolment is by application. Written applications, which include an application form and detailed proposal, should be made through the Programs Office for approval by the Vice Principal of New College or a designate by April 15 for the Summer Session; by July 15 for the Fall Term; or by November 15 for the Winter Term. Should the deadline fall on a weekend, applications will be accepted until the following Monday. Students will be notified of the acceptance or rejection of an application. If the project requires ethics approval, please be advised that you should find and consult with a supervisor about meeting this requirement at least a semester in advance of these deadlines. For more information and application forms, please see the Independent Studies website: http://www.newcollege.utoronto.ca/new-college-academic-programs/independent-studies. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>Completion of 14.0 credits</p>",
+    "prerequisite": "Completion of 14.0 credits",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "None",
@@ -2594,12 +2614,13 @@
     "courseTitle": "New College Independent Studies",
     "code": "NEW491H1",
     "courseDescription": "New College Independent Study courses are designed both to complement regular offerings in New College Programs and to provide an opportunity for New College students in any program to enrich their studies. The normal expectation of a project course is that the student, aided and advised by their supervisor, will read relevant literature, and plan, analyze and report on an original and independent investigation of an appropriate topic. Enrolment is by application. Written applications, which include an application form and detailed proposal, should be made through the Programs Office for approval by the Vice Principal of New College or a designate by April 15 for the Summer Session; by July 15 for the Fall Term; or by November 15 for the Winter Term. Should the deadline fall on a weekend, applications will be accepted until the following Monday. Students will be notified of the acceptance or rejection of an application. If the project requires ethics approval, please be advised that you should find and consult with a supervisor about meeting this requirement at least a semester in advance of these deadlines. For more information and application forms, please see the Independent Studies website: http://www.newcollege.utoronto.ca/new-college-academic-programs/independent-studies. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>Completion of 14.0 credits</p>",
+    "prerequisite": "Completion of 14.0 credits",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "None",
@@ -2666,12 +2687,13 @@
     "courseTitle": "Community Engaged Learning: Critical and Creative Perspectives on the Non-Profit Sector",
     "code": "NEW495Y1",
     "courseDescription": "A placement-based course in which students develop knowledge, practice and professional skills appropriate to the social purpose sector while working to support programming for community partners. The accompanying seminar considers critical social justice issues and creative models of community-engagement practice from grassroots, community and non-profit organizations and other perspectives that support students’ experiential, participatory and reflective learning. Not eligible for CR/NCR option. Enrolment is by application. Detailed application instructions are available on the CEL website. There are 3 enrolment application options: Apply to an in-person placement (positions posted on the CEL website) Apply to a virtual placement Apply to the course without a placement Placement positions will be posted on the CEL website by June 1. The application period is June 1 - July 15. Applications will be reviewed on a rolling basis, and match meetings will be held between June 1 - August 31.",
-    "prerequisite": "<p>Completion of 9.0 credits</p>",
+    "prerequisite": "Completion of 9.0 credits",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities, Social Science",

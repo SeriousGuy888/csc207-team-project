@@ -10,27 +10,316 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsGER100Y is a full-year German language course for absolute beginners. Students with any previous knowledge should email german.undergradadmin@utoronto.ca to take the placement test.There are no tutorials for GER100Y, but there is a co-curricular (non-mandatory) tutorial called the Multilingual German Lab (MGL). Information about MGL will be announced via email after the semester begins.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
-      "LEC-0301": {
+      "LEC-0601": {
         "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
+          "TU-0": {
+            "meetingDay": "TU",
             "meetingStartTime": "16:00",
             "meetingEndTime": "18:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
+            "assignedRoom1": "OI",
+            "assignedRoom2": "OI"
           },
-          "WE-1": {
-            "meetingDay": "WE",
+          "TH-1": {
+            "meetingDay": "TH",
             "meetingStartTime": "16:00",
             "meetingEndTime": "18:00",
             "meetingScheduleId": "1",
+            "assignedRoom1": "OI",
+            "assignedRoom2": "OI"
+          },
+          "TU-2": {
+            "meetingDay": "TU",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "OI",
+            "assignedRoom2": "OI"
+          },
+          "TH-3": {
+            "meetingDay": "TH",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "3",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Andre",
+            "lastName": "Flicker"
+          },
+          "1": {
+            "instructorId": "1",
+            "firstName": "Virginia",
+            "lastName": "Shewfelt"
+          }
+        },
+        "meetingId": "LEC0601",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0601",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "18",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARTSC",
+            "primaryOrgName": "Faculty of Arts and Science",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARCLA",
+            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "5",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          },
+          "MO-2": {
+            "meetingDay": "MO",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          },
+          "WE-3": {
+            "meetingDay": "WE",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "3",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Hannah",
+            "lastName": "Robinson"
+          },
+          "1": {
+            "instructorId": "1",
+            "firstName": "Stefana",
+            "lastName": "Gargova"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "SYNC",
+        "online": "Online",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "14",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARTSC",
+            "primaryOrgName": "Faculty of Arts and Science",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARCLA",
+            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "5",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-0301": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "0",
             "assignedRoom1": "CR",
             "assignedRoom2": "CR"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
           },
           "MO-2": {
             "meetingDay": "MO",
@@ -302,167 +591,23 @@
           }
         ]
       },
-      "LEC-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          },
-          "MO-2": {
-            "meetingDay": "MO",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          },
-          "WE-3": {
-            "meetingDay": "WE",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "3",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Hannah",
-            "lastName": "Robinson"
-          },
-          "1": {
-            "instructorId": "1",
-            "firstName": "Stefana",
-            "lastName": "Gargova"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "SYNC",
-        "online": "Online",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "14",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARTSC",
-            "primaryOrgName": "Faculty of Arts and Science",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARCLA",
-            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "5",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0501": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          },
-          "TU-1": {
+          "TU-0": {
             "meetingDay": "TU",
             "meetingStartTime": "09:00",
             "meetingEndTime": "11:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "CR",
             "assignedRoom2": "CR"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
           },
           "TH-2": {
             "meetingDay": "TH",
@@ -585,167 +730,23 @@
           }
         ]
       },
-      "LEC-0601": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "OI",
-            "assignedRoom2": "OI"
-          },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "OI",
-            "assignedRoom2": "OI"
-          },
-          "TH-2": {
-            "meetingDay": "TH",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          },
-          "TU-3": {
-            "meetingDay": "TU",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "3",
-            "assignedRoom1": "OI",
-            "assignedRoom2": "OI"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Andre",
-            "lastName": "Flicker"
-          },
-          "1": {
-            "instructorId": "1",
-            "firstName": "Virginia",
-            "lastName": "Shewfelt"
-          }
-        },
-        "meetingId": "LEC0601",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0601",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "18",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARTSC",
-            "primaryOrgName": "Faculty of Arts and Science",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARCLA",
-            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "5",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-5101": {
         "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          },
-          "MO-1": {
+          "MO-0": {
             "meetingDay": "MO",
             "meetingStartTime": "18:00",
             "meetingEndTime": "20:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "CR",
             "assignedRoom2": "CR"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
           },
           "MO-2": {
             "meetingDay": "MO",
@@ -786,145 +787,6 @@
         "online": "In Person",
         "enrollmentCapacity": "30",
         "actualEnrolment": "15",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARTSC",
-            "primaryOrgName": "Faculty of Arts and Science",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARCLA",
-            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "5",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-0201": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          },
-          "MO-2": {
-            "meetingDay": "MO",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          },
-          "WE-3": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "3",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Virginia",
-            "lastName": "Shewfelt"
-          }
-        },
-        "meetingId": "LEC0201",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "22",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1155,6 +1017,145 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-0201": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
+          },
+          "MO-2": {
+            "meetingDay": "MO",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
+          },
+          "WE-3": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "3",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Virginia",
+            "lastName": "Shewfelt"
+          }
+        },
+        "meetingId": "LEC0201",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "22",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARTSC",
+            "primaryOrgName": "Faculty of Arts and Science",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARCLA",
+            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "5",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -1169,6 +1170,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -1361,302 +1363,28 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsGER101H is the second half of GER100Y, offered in the winter term. Students placed in GER101 must be manually added to the course by the department. Enrollment on ACORN is not available. To take the placement test, please email german.undergradadmin@utoronto.ca.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
-      "LEC-0201": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          }
-        },
-        "instructors": {},
-        "meetingId": "LEC0201",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "5",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "E",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-0601": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          },
-          "TU-1": {
-            "meetingDay": "TU",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "OI",
-            "assignedRoom2": "OI"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Virginia",
-            "lastName": "Shewfelt"
-          }
-        },
-        "meetingId": "LEC0601",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0601",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "5",
-        "actualEnrolment": "1",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "E",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-0501": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "FE",
-            "assignedRoom2": "FE"
-          },
-          "TU-1": {
-            "meetingDay": "TU",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "AH",
-            "assignedRoom2": "AH"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Erol",
-            "lastName": "Boran"
-          }
-        },
-        "meetingId": "LEC0501",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0501",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "5",
-        "actualEnrolment": "1",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "E",
-        "meetingStatusNotes": "<p>June 11, 2025: Delivery time changed</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-0301": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "CR",
-            "assignedRoom2": "CR"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Tanya",
-            "lastName": "Humeniuk"
-          },
-          "1": {
-            "instructorId": "1",
-            "firstName": "ELIZA",
-            "lastName": "AUTEN"
-          }
-        },
-        "meetingId": "LEC0301",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0301",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "5",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "E",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0401": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "WW",
-            "assignedRoom2": "WW"
-          },
-          "TU-1": {
+          "TU-0": {
             "meetingDay": "TU",
             "meetingStartTime": "11:00",
             "meetingEndTime": "13:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "FE",
             "assignedRoom2": "FE"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "WW",
+            "assignedRoom2": "WW"
           }
         },
         "instructors": {
@@ -1709,20 +1437,20 @@
           }
         ]
       },
-      "LEC-5201": {
+      "LEC-0101": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "",
             "assignedRoom2": ""
           },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
             "meetingScheduleId": "1",
             "assignedRoom1": "",
             "assignedRoom2": ""
@@ -1731,18 +1459,150 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Lisa",
-            "lastName": "Lackner"
+            "firstName": "Stefana",
+            "lastName": "Gargova"
           }
         },
-        "meetingId": "LEC5201",
+        "meetingId": "LEC0101",
         "teachingMethod": "LEC",
-        "sectionNumber": "5201",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "SYNC",
         "online": "Online",
+        "enrollmentCapacity": "5",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "E",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-0601": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "OI",
+            "assignedRoom2": "OI"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Virginia",
+            "lastName": "Shewfelt"
+          }
+        },
+        "meetingId": "LEC0601",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0601",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "5",
+        "actualEnrolment": "1",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "E",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-0201": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
+          }
+        },
+        "instructors": {},
+        "meetingId": "LEC0201",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
         "enrollmentCapacity": "5",
         "actualEnrolment": "0",
         "actualWaitlist": "0",
@@ -1847,20 +1707,20 @@
           }
         ]
       },
-      "LEC-0101": {
+      "LEC-5201": {
         "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "",
             "assignedRoom2": ""
           },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
             "meetingScheduleId": "1",
             "assignedRoom1": "",
             "assignedRoom2": ""
@@ -1869,18 +1729,161 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Stefana",
-            "lastName": "Gargova"
+            "firstName": "Lisa",
+            "lastName": "Lackner"
           }
         },
-        "meetingId": "LEC0101",
+        "meetingId": "LEC5201",
         "teachingMethod": "LEC",
-        "sectionNumber": "0101",
+        "sectionNumber": "5201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "SYNC",
         "online": "Online",
+        "enrollmentCapacity": "5",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "E",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-0501": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "AH",
+            "assignedRoom2": "AH"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "FE",
+            "assignedRoom2": "FE"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Erol",
+            "lastName": "Boran"
+          }
+        },
+        "meetingId": "LEC0501",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0501",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "5",
+        "actualEnrolment": "1",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "E",
+        "meetingStatusNotes": "<p>June 11, 2025: Delivery time changed</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-0301": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "CR",
+            "assignedRoom2": "CR"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Tanya",
+            "lastName": "Humeniuk"
+          },
+          "1": {
+            "instructorId": "1",
+            "firstName": "ELIZA",
+            "lastName": "AUTEN"
+          }
+        },
+        "meetingId": "LEC0301",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0301",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
         "enrollmentCapacity": "5",
         "actualEnrolment": "0",
         "actualWaitlist": "0",
@@ -1929,6 +1932,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsThis course is taught in English.Are you curious about German culture? What comes to your mind when you think of things German? Beer and sausages, high-performance cars, the Black Forest, or a mania for efficiency? This course moves beyond these cultural stereotypes and offers a kaleidoscopic view of German culture in its varied manifestations, be it in the form of cultural artifacts, great works of literature, family histories, or big ideas. We will explore world-shaping ideas and inventions from the Reformation and the Gutenberg Press to Bauhaus and modern industrial design, the connection between the Grimm Brothers’ fairy tales and their nation-building efforts, German fantasies about Indigenous North America and the longing for untouched nature, and personal narratives that grapple with the Nazi past and divided Germany. Ideal for students from across the disciplines, the course invites you to think critically about what constitutes German culture while expanding your cross-cultural understanding and global perspective. (No knowledge of German required.)",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -2061,6 +2065,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsFirst year foundation course, taught in English.This course explores vampires as mirrors of our own experiences. With a syllabus that spans Dracula, Carmilla, True Blood, Twilight, and more, students dive deep into the lasting allure of these immortal beings.Read more about this course in the A&amp;S News.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -2139,6 +2144,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsThis course is restricted to two groups of students. Group 1 is given priority access until July 23. Beginning July 25, Group 2 can enrol in this course.Group 1: Year 1 INNIS studentsGroup 2: Year 1 FAS students",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -2217,10 +2223,155 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsGER200Y is a full year German language course. There are no tutorials for GER200Y, but there is a co-curricular (non-mandatory) tutorial called the Multilingual German Lab (MGL). Information about MGL will be announced via email after the semester begins.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
+      "LEC-5101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          },
+          "MO-2": {
+            "meetingDay": "MO",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          },
+          "WE-3": {
+            "meetingDay": "WE",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
+            "meetingScheduleId": "3",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Lisa",
+            "lastName": "Lackner"
+          },
+          "1": {
+            "instructorId": "1",
+            "firstName": "Stefana",
+            "lastName": "Gargova"
+          }
+        },
+        "meetingId": "LEC5101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "5101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "SYNC",
+        "online": "Online",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "7",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARTSC",
+            "primaryOrgName": "Faculty of Arts and Science",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARCLA",
+            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "5",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0201": {
         "schedule": {
           "TU-0": {
@@ -2508,150 +2659,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "LEC-5101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          },
-          "MO-2": {
-            "meetingDay": "MO",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          },
-          "WE-3": {
-            "meetingDay": "WE",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
-            "meetingScheduleId": "3",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Lisa",
-            "lastName": "Lackner"
-          },
-          "1": {
-            "instructorId": "1",
-            "firstName": "Stefana",
-            "lastName": "Gargova"
-          }
-        },
-        "meetingId": "LEC5101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "5101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "SYNC",
-        "online": "Online",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "7",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARTSC",
-            "primaryOrgName": "Faculty of Arts and Science",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARCLA",
-            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "5",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -2666,6 +2673,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Humanities",
@@ -2795,49 +2803,50 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsGER201H is the second half of GER200Y, offered in the winter term. Students placed in GER201 must be manually added to the course by the department. Enrollment on ACORN is not available. To take the placement test, please email german.undergradadmin@utoronto.ca.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
-      "LEC-0101": {
+      "LEC-5101": {
         "schedule": {
           "MO-0": {
             "meetingDay": "MO",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "CR",
-            "assignedRoom2": "CR"
+            "assignedRoom1": "",
+            "assignedRoom2": ""
           },
           "WE-1": {
             "meetingDay": "WE",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "20:00",
             "meetingScheduleId": "1",
-            "assignedRoom1": "CR",
-            "assignedRoom2": "CR"
+            "assignedRoom1": "",
+            "assignedRoom2": ""
           }
         },
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Rita",
-            "lastName": "Laszlo"
+            "firstName": "Stefana",
+            "lastName": "Gargova"
           }
         },
-        "meetingId": "LEC0101",
+        "meetingId": "LEC5101",
         "teachingMethod": "LEC",
-        "sectionNumber": "0101",
+        "sectionNumber": "5101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
+        "deliveryMode": "SYNC",
+        "online": "Online",
         "enrollmentCapacity": "5",
-        "actualEnrolment": "2",
+        "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "E",
-        "meetingStatusNotes": "<p>June 11, 2025: Delivery time changed</p>",
+        "meetingStatusNotes": null,
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2937,45 +2946,45 @@
           }
         ]
       },
-      "LEC-5101": {
+      "LEC-0101": {
         "schedule": {
           "MO-0": {
             "meetingDay": "MO",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
+            "assignedRoom1": "CR",
+            "assignedRoom2": "CR"
           },
           "WE-1": {
             "meetingDay": "WE",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "20:00",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
             "meetingScheduleId": "1",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
+            "assignedRoom1": "CR",
+            "assignedRoom2": "CR"
           }
         },
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Stefana",
-            "lastName": "Gargova"
+            "firstName": "Rita",
+            "lastName": "Laszlo"
           }
         },
-        "meetingId": "LEC5101",
+        "meetingId": "LEC0101",
         "teachingMethod": "LEC",
-        "sectionNumber": "5101",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
-        "deliveryMode": "SYNC",
-        "online": "Online",
+        "deliveryMode": "INPER",
+        "online": "In Person",
         "enrollmentCapacity": "5",
-        "actualEnrolment": "0",
+        "actualEnrolment": "2",
         "actualWaitlist": "0",
         "enrollmentIndicator": "E",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "<p>June 11, 2025: Delivery time changed</p>",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3015,31 +3024,32 @@
     "courseDescription": "This course offers a transition from the language courses to the topic courses on the 300-level. It introduces students to German literature and provides them with working methods and analytical tools relevant for the study of German literary texts in the original German. Note: This course is required for the major program. It should be taken as early as possible, and cannot be taken after completion of GER300Y1 or GER301H1. This course is the prerequisite course for 300-level topic courses in German.",
     "prerequisite": "GER100Y1",
     "corequisite": "GER200Y1",
-    "exclusion": "<p>GER300Y1, GER301H1</p>",
+    "exclusion": "GER300Y1, GER301H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsThis course is taught in German.A required course for the German major program and pre-requisite course for most of the 300-level topic GER courses. GER205 cannot be taken after completion of GER300Y/301H.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          },
-          "TU-1": {
+          "TU-0": {
             "meetingDay": "TU",
             "meetingStartTime": "13:00",
             "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "CR",
             "assignedRoom2": "CR"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
           }
         },
         "instructors": {
@@ -3159,6 +3169,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsThis course is taught in English. Open to all students.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3287,31 +3298,32 @@
     "courseDescription": "This course introduces Yiddish language, literature, music, theater, and cinema through interactive multi-media seminars, designed to build proficiency in reading, writing and comprehending. No prior knowledge of Yiddish is required.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<p>GER260Y1</p>",
+    "exclusion": "GER260Y1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          },
-          "MO-1": {
+          "MO-0": {
             "meetingDay": "MO",
             "meetingStartTime": "10:00",
             "meetingEndTime": "12:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "VC",
             "assignedRoom2": "VC"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
           }
         },
         "instructors": {
@@ -3425,12 +3437,13 @@
     "courseTitle": "Elementary Yiddish 2",
     "code": "GER262H1",
     "courseDescription": "This course is the continuation of GER261H1, Elementary Yiddish 1. While learning the language the course will also introduce students to Yiddish literature & culture, providing a greater understanding of the historical and contemporary, religious and secular communities that speak and spoke this language.",
-    "prerequisite": "<p>GER261H1</p>",
+    "prerequisite": "GER261H1",
     "corequisite": "",
-    "exclusion": "<p>GER260Y1</p>",
+    "exclusion": "GER260Y1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3571,6 +3584,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsThis course is taught in German. PRE-/CO-REQUISITE: GER 200Y/201H or placement testTo take the placement test, please email german.undergradadmin@utoronto.ca.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3711,6 +3725,7 @@
     "recommendedPreparation": "2.0 credits of German language instruction in consultation with department",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Delivery InstructionsWhy did Walmart’s attempt to break into the German market go down in flames? What factors have turned soccer clubs like Bayern Munich and Borussia Dortmund into global brands? How has globalization impacted traditional German culture and what is unique about the German and European experience of globalization?The course explores the contemporary character of globalization patterns and problems in German contexts and prepares students for future academic and professional opportunities in Germany and beyond. The course is highly recommended as preparation for students interested in participating in iPRAKTIKUM, the Department of German’s internationalization and experiential Learning program, which provides exciting placements in Germany and the GTA. It also fulfills a requirement for the U of T’s Global Scholar Certificate.",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -3843,65 +3858,71 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsSince you are registering for GER300Y1 which is a Y (year) course you are expected to stay in the course for the full year.Delivery InstructionsAll GER300 courses are taught in person.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
-      "LEC-0101": {
+      "LEC-0201": {
         "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "18:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "UC",
-            "assignedRoom2": "UC"
+            "assignedRoom1": "FE",
+            "assignedRoom2": "FE"
           },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "18:00",
             "meetingScheduleId": "1",
-            "assignedRoom1": "WW",
-            "assignedRoom2": "WW"
+            "assignedRoom1": "FE",
+            "assignedRoom2": "FE"
           },
-          "MO-2": {
-            "meetingDay": "MO",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
+          "TH-2": {
+            "meetingDay": "TH",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "18:00",
             "meetingScheduleId": "2",
-            "assignedRoom1": "OI",
-            "assignedRoom2": "OI"
-          },
-          "WE-3": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "3",
             "assignedRoom1": "TF",
             "assignedRoom2": "TF"
+          },
+          "TU-3": {
+            "meetingDay": "TU",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "3",
+            "assignedRoom1": "OI",
+            "assignedRoom2": "OI"
           }
         },
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Florian",
-            "lastName": "Geddes"
+            "firstName": "Felix",
+            "lastName": "Roessler"
+          },
+          "1": {
+            "instructorId": "1",
+            "firstName": "Landon",
+            "lastName": "Reitz"
           }
         },
-        "meetingId": "LEC0101",
+        "meetingId": "LEC0201",
         "teachingMethod": "LEC",
-        "sectionNumber": "0101",
+        "sectionNumber": "0201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "18",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "11",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>July 7, 2025: room changed</p>",
+        "meetingStatusNotes": null,
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4125,66 +4146,61 @@
           }
         ]
       },
-      "LEC-0201": {
+      "LEC-0101": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "18:00",
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "FE",
-            "assignedRoom2": "FE"
+            "assignedRoom1": "UC",
+            "assignedRoom2": "UC"
           },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "18:00",
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "1",
-            "assignedRoom1": "FE",
-            "assignedRoom2": "FE"
+            "assignedRoom1": "WW",
+            "assignedRoom2": "WW"
           },
-          "TH-2": {
-            "meetingDay": "TH",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "18:00",
+          "MO-2": {
+            "meetingDay": "MO",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "2",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          },
-          "TU-3": {
-            "meetingDay": "TU",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "3",
             "assignedRoom1": "OI",
             "assignedRoom2": "OI"
+          },
+          "WE-3": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "3",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
           }
         },
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Felix",
-            "lastName": "Roessler"
-          },
-          "1": {
-            "instructorId": "1",
-            "firstName": "Landon",
-            "lastName": "Reitz"
+            "firstName": "Florian",
+            "lastName": "Geddes"
           }
         },
-        "meetingId": "LEC0201",
+        "meetingId": "LEC0101",
         "teachingMethod": "LEC",
-        "sectionNumber": "0201",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "11",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "18",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "<p>July 7, 2025: room changed</p>",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4282,39 +4298,40 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsGER301H is the second half of GER300Y, offered in the winter term. Students placed in GER301 must be manually added to the course by the department. Enrollment on ACORN is not available. To take the placement test, please email german.undergradadmin@utoronto.ca.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
-      "LEC-0201": {
+      "LEC-0101": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "18:00",
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "TF",
-            "assignedRoom2": "TF"
-          },
-          "TU-1": {
-            "meetingDay": "TU",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "1",
             "assignedRoom1": "OI",
             "assignedRoom2": "OI"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "TF",
+            "assignedRoom2": "TF"
           }
         },
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Landon",
-            "lastName": "Reitz"
+            "firstName": "Florian",
+            "lastName": "Geddes"
           }
         },
-        "meetingId": "LEC0201",
+        "meetingId": "LEC0101",
         "teachingMethod": "LEC",
-        "sectionNumber": "0201",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
@@ -4324,7 +4341,7 @@
         "actualEnrolment": "1",
         "actualWaitlist": "0",
         "enrollmentIndicator": "E",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "<p>July 7, 2025: room changed</p>",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4424,20 +4441,20 @@
           }
         ]
       },
-      "LEC-0101": {
+      "LEC-0201": {
         "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "18:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "TF",
             "assignedRoom2": "TF"
           },
-          "MO-1": {
-            "meetingDay": "MO",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
+          "TU-1": {
+            "meetingDay": "TU",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "18:00",
             "meetingScheduleId": "1",
             "assignedRoom1": "OI",
             "assignedRoom2": "OI"
@@ -4446,13 +4463,13 @@
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Florian",
-            "lastName": "Geddes"
+            "firstName": "Landon",
+            "lastName": "Reitz"
           }
         },
-        "meetingId": "LEC0101",
+        "meetingId": "LEC0201",
         "teachingMethod": "LEC",
-        "sectionNumber": "0101",
+        "sectionNumber": "0201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
@@ -4462,7 +4479,7 @@
         "actualEnrolment": "1",
         "actualWaitlist": "0",
         "enrollmentIndicator": "E",
-        "meetingStatusNotes": "<p>July 7, 2025: room changed</p>",
+        "meetingStatusNotes": null,
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4506,6 +4523,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsThis course is taught in German.Pre-requisite: GER200Y/201H or placement test.Students with prior knowledge of German may take the placement test. If placed beyond GER200Y, the prerequisite may be waived. To take the test, please email german.undergradadmin@utoronto.ca.Open to students who are native German speakers.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -4638,6 +4656,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsThis course is taught in German.Pre-requisite: GER205H or placement test.Students with prior knowledge of German may take the placement test. If placed beyond GER300Y, the prerequisite may be waived. To take the test, please email german.undergradadmin@utoronto.ca.Open to students who are native German speakers.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -4764,12 +4783,13 @@
     "courseTitle": "Open Topics in German Studies",
     "code": "GER325H1",
     "courseDescription": "This third-year course taught in German offers an in-depth exploration of diverse themes within German Studies, with a focus that varies from year to year. This course covers a wide range of topics, which may include contemporary issues in German-speaking societies, seminal German-language literary works, influential films, and philosophical movements.",
-    "prerequisite": "<p>GER205H1</p>",
+    "prerequisite": "GER205H1",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>GER150H1</p>",
+    "recommendedPreparation": "GER150H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsThis course is taught in German.Pre-requisite: GER205H or placement test. Students with prior knowledge of German may take the placement test. If placed beyond GER300Y, the prerequisite may be waived. To take the test, please email german.undergradadmin@utoronto.ca. Open to students who are native German speakers.Delivery InstructionsFrom Heintje to Apache 207, from Wind of Change to 99 Luftballons – German music doesn't just entertain, it reflects and shapes society. This seminar invites you on a musical journey through (West-)German postwar history: youth rebellion, the economic miracle, protest movements, Cold War fears, reunification dreams, and post-migrant identities. We’ll explore how songs can be powerful historical sources and decode what they reveal about shifting values, political tensions, and cultural change. Come ready to listen, think – and maybe hum along.",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -4902,6 +4922,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsThis course is taught in German. Pre-requisite: GER205H or placement test. Students with prior knowledge of German may take the placement test. If placed beyond GER300Y, the prerequisite may be waived. To take the test, please email german.undergradadmin@utoronto.ca. Open to students who are native German speakers.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -5028,16 +5049,72 @@
     "courseTitle": "Nietzsche",
     "code": "GER345H1",
     "courseDescription": "This course introduces students to Nietzsche, the philosopher, critic, and cultural theorist and examines the critically enduring significance of his legacy. Students will be familiarized with his critical contributions to epistemology, ethics, psychology, the theory of history, culture, and education as well as his impact on rethinking the agenda of philosophy. A particular aspect of the course will be the contextualization of his interventions in the intellectual landscape of his period and Nietzsche’s notoriously provocative writing style.",
-    "prerequisite": "<p>4.0 credits</p>",
+    "prerequisite": "4.0 credits",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsThis course is taught in English. If you register for GER345H1F you are required to take a tutorial if they are taking place.Delivery InstructionsNotorious for The Will to Power, a book he did not write but his sister put together from a stash of notes, Nietzsche presents the exemplary enfant terrible of modern philosophy. Provocation and inspiration alike, his interventions continue to be an enduring challenge to modern thought. This course examines the central ideas of his philosophy and their epistemological, cultural, and political significance.",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
+      "TUT-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "VC",
+            "assignedRoom2": "VC"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "16",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -5153,61 +5230,6 @@
           }
         ]
       },
-      "TUT-0101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "VC",
-            "assignedRoom2": "VC"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "16",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "TUT-0201": {
         "schedule": {
           "-": {
@@ -5276,6 +5298,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -5362,6 +5385,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsThis course is taught in English and open to all students.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -5494,6 +5518,7 @@
     "recommendedPreparation": "3.0 credits in GER courses",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -5566,6 +5591,7 @@
     "recommendedPreparation": "3.0 credits in GER courses",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities",
@@ -5638,6 +5664,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -5778,6 +5805,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -5918,6 +5946,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -6050,6 +6079,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -6176,6 +6206,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -6302,6 +6333,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Humanities",
@@ -6374,6 +6406,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Humanities",
@@ -6446,6 +6479,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Humanities",

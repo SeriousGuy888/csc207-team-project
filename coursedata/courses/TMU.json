@@ -10,6 +10,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -161,152 +162,15 @@
     "courseDescription": "Performance of pieces (equivalent to RCM Grade 3); scales, chords and cadences in major and minor keys; harmonization of simple melodies utilizing a variety of accompaniments and style; sight reading of melodies, chorales, and simple two-part pieces. One hour.",
     "prerequisite": "Non-keyboard majors.",
     "corequisite": "",
-    "exclusion": "TMU105Y1.  Incoming students whose major instrument is not keyboard  may be granted exemption by passing a test during the first week of classes or showing proof of RCM Grade 3 Piano.  Students obtaining advanced standing in TMU107Y1 may enrol in TMU105Y1. ",
+    "exclusion": "TMU105Y1. Incoming students whose major instrument is not keyboard may be granted exemption by passing a test during the first week of classes or showing proof of RCM Grade 3 Piano. Students obtaining advanced standing in TMU107Y1 may enrol in TMU105Y1.",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "PRA-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "MO-1": {
-            "meetingDay": "MO",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Brian",
-            "lastName": "McDonagh"
-          }
-        },
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "16",
-        "actualEnrolment": "15",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "MUSIC",
-            "primaryOrgName": "Faculty of Music",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0401": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Brian",
-            "lastName": "McDonagh"
-          }
-        },
-        "meetingId": "PRA0401",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0401",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "16",
-        "actualEnrolment": "11",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "MUSIC",
-            "primaryOrgName": "Faculty of Music",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "PRA-0301": {
         "schedule": {
           "WE-0": {
@@ -343,6 +207,75 @@
         "online": "In Person",
         "enrollmentCapacity": "17",
         "actualEnrolment": "13",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "MUSIC",
+            "primaryOrgName": "Faculty of Music",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Brian",
+            "lastName": "McDonagh"
+          }
+        },
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "16",
+        "actualEnrolment": "15",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -444,6 +377,75 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0401": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Brian",
+            "lastName": "McDonagh"
+          }
+        },
+        "meetingId": "PRA0401",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0401",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "16",
+        "actualEnrolment": "11",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "MUSIC",
+            "primaryOrgName": "Faculty of Music",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -452,12 +454,13 @@
     "courseTitle": "Musical Skills I & II",
     "code": "TMU115H1",
     "courseDescription": "Reading and listening skills for diatonic and chromatic materials. Topics include sight singing, rhythm reading, keyboard harmony, and dictation.",
-    "prerequisite": "<p>RCM Level 8 Theory, RCM Level 9 Harmony, RCM Grade 8 level performing audition, and permission of Department.</p>",
-    "corequisite": "<p><a href=\"https://music.calendar.utoronto.ca/course/hmu111h1\">HMU111H1</a> and <a href=\"https://music.calendar.utoronto.ca/course/tmu140y1\">TMU140Y1</a>.</p>",
+    "prerequisite": "RCM Level 8 Theory, RCM Level 9 Harmony, RCM Grade 8 level performing audition, and permission of Department.",
+    "corequisite": "HMU111H1 and TMU140Y1.",
     "exclusion": "",
-    "recommendedPreparation": "<p>This course is offered simultaneously with <a href=\"https://music.calendar.utoronto.ca/course/tmu132h1\">TMU132H1</a> (F) and <a href=\"https://music.calendar.utoronto.ca/course/tmu133h1\">TMU133H1</a> (S) at the Faculty of Music.</p>",
+    "recommendedPreparation": "This course is offered simultaneously with TMU132H1 (F) and TMU133H1 (S) at the Faculty of Music.",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -611,10 +614,88 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
+      "LEC-0501": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TH-2": {
+            "meetingDay": "TH",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Mark",
+            "lastName": "Sallmen"
+          }
+        },
+        "meetingId": "LEC0501",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0501",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "22",
+        "actualEnrolment": "20",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "R",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "MUSIC",
+            "primaryOrgName": "Faculty of Music",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -659,83 +740,6 @@
         "online": "In Person",
         "enrollmentCapacity": "180",
         "actualEnrolment": "25",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "MUSIC",
-            "primaryOrgName": "Faculty of Music",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-0401": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TH-2": {
-            "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Mark",
-            "lastName": "Sallmen"
-          }
-        },
-        "meetingId": "LEC0401",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0401",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "22",
-        "actualEnrolment": "20",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1011,7 +1015,7 @@
           }
         ]
       },
-      "LEC-0501": {
+      "LEC-0401": {
         "schedule": {
           "MO-0": {
             "meetingDay": "MO",
@@ -1031,8 +1035,8 @@
           },
           "TH-2": {
             "meetingDay": "TH",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "12:00",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
             "meetingScheduleId": "2",
             "assignedRoom1": "EJ",
             "assignedRoom2": "EJ"
@@ -1045,9 +1049,9 @@
             "lastName": "Sallmen"
           }
         },
-        "meetingId": "LEC0501",
+        "meetingId": "LEC0401",
         "teachingMethod": "LEC",
-        "sectionNumber": "0501",
+        "sectionNumber": "0401",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -1056,7 +1060,7 @@
         "enrollmentCapacity": "22",
         "actualEnrolment": "20",
         "actualWaitlist": "0",
-        "enrollmentIndicator": "R",
+        "enrollmentIndicator": "",
         "meetingStatusNotes": null,
         "enrollmentControls": [
           {
@@ -1101,6 +1105,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1149,83 +1154,6 @@
         "online": "In Person",
         "enrollmentCapacity": "180",
         "actualEnrolment": "30",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "MUSIC",
-            "primaryOrgName": "Faculty of Music",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-0301": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TH-2": {
-            "meetingDay": "TH",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Mark",
-            "lastName": "Sallmen"
-          }
-        },
-        "meetingId": "LEC0301",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0301",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "24",
-        "actualEnrolment": "22",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1516,6 +1444,83 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-0301": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TH-2": {
+            "meetingDay": "TH",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Mark",
+            "lastName": "Sallmen"
+          }
+        },
+        "meetingId": "LEC0301",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0301",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "24",
+        "actualEnrolment": "22",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "MUSIC",
+            "primaryOrgName": "Faculty of Music",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -1530,6 +1535,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1611,28 +1617,28 @@
           }
         ]
       },
-      "PRA-0501": {
+      "PRA-0401": {
         "schedule": {
           "TU-0": {
             "meetingDay": "TU",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "EJ",
             "assignedRoom2": "EJ"
           },
           "WE-1": {
             "meetingDay": "WE",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
             "meetingScheduleId": "1",
             "assignedRoom1": "EJ",
             "assignedRoom2": "EJ"
           },
           "TH-2": {
             "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
             "meetingScheduleId": "2",
             "assignedRoom1": "EJ",
             "assignedRoom2": "EJ"
@@ -1645,15 +1651,15 @@
             "lastName": "Sallmen"
           }
         },
-        "meetingId": "PRA0501",
+        "meetingId": "PRA0401",
         "teachingMethod": "PRA",
-        "sectionNumber": "0501",
+        "sectionNumber": "0401",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "21",
+        "enrollmentCapacity": "20",
         "actualEnrolment": "19",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
@@ -1765,83 +1771,6 @@
           }
         ]
       },
-      "PRA-0401": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TH-2": {
-            "meetingDay": "TH",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Mark",
-            "lastName": "Sallmen"
-          }
-        },
-        "meetingId": "PRA0401",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0401",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "19",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "MUSIC",
-            "primaryOrgName": "Faculty of Music",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "PRA-0101": {
         "schedule": {
           "TU-0": {
@@ -1918,6 +1847,83 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0501": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TH-2": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "10:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Mark",
+            "lastName": "Sallmen"
+          }
+        },
+        "meetingId": "PRA0501",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0501",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "21",
+        "actualEnrolment": "19",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "MUSIC",
+            "primaryOrgName": "Faculty of Music",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -1932,6 +1938,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1972,75 +1979,6 @@
         "online": "In Person",
         "enrollmentCapacity": "22",
         "actualEnrolment": "19",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "MUSIC",
-            "primaryOrgName": "Faculty of Music",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Mark",
-            "lastName": "Sallmen"
-          }
-        },
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "35",
-        "actualEnrolment": "31",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -2212,6 +2150,75 @@
           }
         ]
       },
+      "PRA-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "10:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Mark",
+            "lastName": "Sallmen"
+          }
+        },
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "35",
+        "actualEnrolment": "31",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "MUSIC",
+            "primaryOrgName": "Faculty of Music",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "PRA-0501": {
         "schedule": {
           "TU-0": {
@@ -2288,12 +2295,13 @@
     "courseTitle": "Music Theory I & II",
     "code": "TMU140Y1",
     "courseDescription": "Diatonic harmony, including principles of voice leading and harmonic progression. Chromatic harmony, including modulation, mixture, Neapolitan and augmented sixths. Course requirements include part-writing, analysis, and keyboard harmony/skills.",
-    "prerequisite": "<p>RCM Level 8 Theory, RCM Level 9 Harmony, RCM Grade 8 level performing audition and permission of Department.<br /><br /></p>",
-    "corequisite": "<p><a href=\"https://music.calendar.utoronto.ca/course/hmu111h1\">HMU111H1</a> and <a href=\"https://music.calendar.utoronto.ca/course/tmu115h1\">TMU115H1</a></p>",
+    "prerequisite": "RCM Level 8 Theory, RCM Level 9 Harmony, RCM Grade 8 level performing audition and permission of Department.",
+    "corequisite": "HMU111H1 and TMU115H1",
     "exclusion": "",
-    "recommendedPreparation": "<p>This course is offered simultaneously with <a href=\"https://music.calendar.utoronto.ca/course/tmu130h1\">TMU130H1</a> (F), <a href=\"https://music.calendar.utoronto.ca/course/tmu131h1\">TMU131H1</a> (S) and <a href=\"https://music.calendar.utoronto.ca/course/tmu105y1\">TMU105Y</a>/<a href=\"https://music.calendar.utoronto.ca/course/tmu107y1\">107Y1</a> at the Faculty of Music.</p>",
+    "recommendedPreparation": "This course is offered simultaneously with TMU130H1 (F), TMU131H1 (S) and TMU105Y/107Y1 at the Faculty of Music.",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -2453,10 +2461,88 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
+      "LEC-0301": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TH-2": {
+            "meetingDay": "TH",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Steven",
+            "lastName": "Vande Moortele"
+          }
+        },
+        "meetingId": "LEC0301",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0301",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "23",
+        "actualEnrolment": "23",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "MUSIC",
+            "primaryOrgName": "Faculty of Music",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -2578,6 +2664,83 @@
         "online": "In Person",
         "enrollmentCapacity": "9",
         "actualEnrolment": "9",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "MUSIC",
+            "primaryOrgName": "Faculty of Music",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-0401": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TH-2": {
+            "meetingDay": "TH",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Steven",
+            "lastName": "Vande Moortele"
+          }
+        },
+        "meetingId": "LEC0401",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0401",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "21",
+        "actualEnrolment": "20",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -2764,160 +2927,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "LEC-0301": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TH-2": {
-            "meetingDay": "TH",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Steven",
-            "lastName": "Vande Moortele"
-          }
-        },
-        "meetingId": "LEC0301",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0301",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "23",
-        "actualEnrolment": "23",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "MUSIC",
-            "primaryOrgName": "Faculty of Music",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-0401": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TH-2": {
-            "meetingDay": "TH",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Steven",
-            "lastName": "Vande Moortele"
-          }
-        },
-        "meetingId": "LEC0401",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0401",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "21",
-        "actualEnrolment": "20",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "MUSIC",
-            "primaryOrgName": "Faculty of Music",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -2932,164 +2941,11 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "LEC-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TH-2": {
-            "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Ellie",
-            "lastName": "Hisama"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "24",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "MUSIC",
-            "primaryOrgName": "Faculty of Music",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "LEC-0301": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "TH-2": {
-            "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "10:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Ellie",
-            "lastName": "Hisama"
-          }
-        },
-        "meetingId": "LEC0301",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0301",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "23",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "MUSIC",
-            "primaryOrgName": "Faculty of Music",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0201": {
         "schedule": {
           "MO-0": {
@@ -3243,6 +3099,160 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TH-2": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "10:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Ellie",
+            "lastName": "Hisama"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "24",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "MUSIC",
+            "primaryOrgName": "Faculty of Music",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-0301": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "TH-2": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "10:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Ellie",
+            "lastName": "Hisama"
+          }
+        },
+        "meetingId": "LEC0301",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0301",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "23",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "MUSIC",
+            "primaryOrgName": "Faculty of Music",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -3257,24 +3267,25 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "PRA-0301": {
+      "PRA-0601": {
         "schedule": {
           "TU-0": {
             "meetingDay": "TU",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "EJ",
             "assignedRoom2": "EJ"
           },
           "WE-1": {
             "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "1",
             "assignedRoom1": "EJ",
             "assignedRoom2": "EJ"
@@ -3287,16 +3298,16 @@
             "lastName": "Vishio"
           }
         },
-        "meetingId": "PRA0301",
+        "meetingId": "PRA0601",
         "teachingMethod": "PRA",
-        "sectionNumber": "0301",
+        "sectionNumber": "0601",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "18",
-        "actualEnrolment": "17",
+        "actualEnrolment": "18",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -3428,75 +3439,6 @@
         "meetingId": "PRA0101",
         "teachingMethod": "PRA",
         "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "18",
-        "actualEnrolment": "18",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "MUSIC",
-            "primaryOrgName": "Faculty of Music",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0601": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "EJ",
-            "assignedRoom2": "EJ"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Anton",
-            "lastName": "Vishio"
-          }
-        },
-        "meetingId": "PRA0601",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0601",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -3674,6 +3616,75 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0301": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "EJ",
+            "assignedRoom2": "EJ"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Anton",
+            "lastName": "Vishio"
+          }
+        },
+        "meetingId": "PRA0301",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0301",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "18",
+        "actualEnrolment": "17",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "MUSIC",
+            "primaryOrgName": "Faculty of Music",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -3682,12 +3693,13 @@
     "courseTitle": "Music Theory III & IV",
     "code": "TMU240Y1",
     "courseDescription": "The first semester focuses on the study of forms and analysis of repertoire from c.1700-c.1900; forms to be studied include binary, ternary, sonata, rondo, variation, and fugue. The second semester focuses on post-tonal theory and analysis of music post-1900 along with reading and listening skills suitable for understanding post-tonal music.",
-    "prerequisite": "<p>TMU115H1, TMU140Y1</p>",
+    "prerequisite": "TMU115H1, TMU140Y1",
     "corequisite": "",
-    "exclusion": "<p>TMU230H1, TMU231H1, TMU232H1</p>",
+    "exclusion": "TMU230H1, TMU231H1, TMU232H1",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3841,6 +3853,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -4216,6 +4229,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -4888,6 +4902,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -5500,12 +5515,13 @@
     "courseTitle": "Counterpoint III",
     "code": "TMU318H1",
     "courseDescription": "Study of modal counterpoint; strict species technique and 16th-century procedures in vocal writing. Two hours.",
-    "prerequisite": "TMU130H1, TMU131H1, TMU132H1, TMU133H1 ",
+    "prerequisite": "TMU130H1, TMU131H1, TMU132H1, TMU133H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "If a student plans to study all counterpoint courses, it is recommended to take TMU318H1 first",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -6159,6 +6175,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -6642,6 +6659,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -6714,6 +6732,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -6786,6 +6805,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -6858,6 +6878,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",

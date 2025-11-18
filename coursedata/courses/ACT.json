@@ -4,12 +4,13 @@
     "courseTitle": "Wizard Managers of Risk: Exploring Actuarial Science",
     "code": "ACT100H1",
     "courseDescription": "Are you curious about the world of risk and insurance? This first-year introduction to Actuarial Science course takes you on a journey through the fascinating intersection of mathematics, finance, and risk management. This course will equip you with the foundational knowledge of actuarial principles while exploring real-world applications through engaging case studies. Whether you're aiming for a future career as an actuary or simply looking to enhance your analytical skills, this course is your gateway to understanding how actuaries shape the financial stability of our world.",
-    "prerequisite": "<p>High school math</p>",
+    "prerequisite": "High school math",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>High school calculus</p>",
+    "recommendedPreparation": "High school calculus",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsThis course is restricted to two groups of students. Group 1 is given priority access until July 23. Beginning July 25, Group 2 can enrol in this course.Group 1: Year 1 FAS studentsGroup 2: Year 2 FAS students",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "",
@@ -115,65 +116,11 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "UC",
-            "assignedRoom2": "UC"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "80",
-        "actualEnrolment": "38",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -316,6 +263,61 @@
           }
         ]
       },
+      "TUT-0101": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "UC",
+            "assignedRoom2": "UC"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "80",
+        "actualEnrolment": "38",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "TUT-0102": {
         "schedule": {
           "FR-0": {
@@ -378,126 +380,17 @@
     "courseTitle": "Mathematics of Investment & Credit",
     "code": "ACT240H1",
     "courseDescription": "Interest, discount and present values, as applied to determine prices and values of annuities, mortgages, bonds, equities; loan repayment schedules and consumer finance payments in general; yield rates on investments given the costs on investments. Course manuals fee: $45.",
-    "prerequisite": "<p>(MAT135H1, MAT136H1)/ MAT137Y1/ MAT157Y1</p>",
+    "prerequisite": "(MAT135H1, MAT136H1)/ MAT137Y1/ MAT157Y1",
     "corequisite": "",
     "exclusion": "ACT230H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsTutorial Enrolment Instructions:Tutorial enrolment is mandatory in this courseStudents must enrol in a tutorial section at the same time they enrol in the course.",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
-      "TUT-0102": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0102",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "60",
-        "actualEnrolment": "52",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0105": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0105",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0105",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "60",
-        "actualEnrolment": "49",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -613,7 +506,7 @@
           }
         ]
       },
-      "TUT-0104": {
+      "TUT-0105": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
@@ -625,16 +518,71 @@
           }
         },
         "instructors": {},
-        "meetingId": "TUT0104",
+        "meetingId": "TUT0105",
         "teachingMethod": "TUT",
-        "sectionNumber": "0104",
+        "sectionNumber": "0105",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "60",
-        "actualEnrolment": "53",
+        "actualEnrolment": "49",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0103": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "UC",
+            "assignedRoom2": "UC"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0103",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0103",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "60",
+        "actualEnrolment": "51",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -723,28 +671,83 @@
           }
         ]
       },
-      "TUT-0103": {
+      "TUT-0102": {
         "schedule": {
           "FR-0": {
             "meetingDay": "FR",
             "meetingStartTime": "10:00",
             "meetingEndTime": "11:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "UC",
-            "assignedRoom2": "UC"
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0103",
+        "meetingId": "TUT0102",
         "teachingMethod": "TUT",
-        "sectionNumber": "0103",
+        "sectionNumber": "0102",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "60",
-        "actualEnrolment": "51",
+        "actualEnrolment": "52",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0104": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0104",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0104",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "60",
+        "actualEnrolment": "53",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -785,38 +788,39 @@
     "courseTitle": "Financial Principles for Actuarial Science I",
     "code": "ACT245H1",
     "courseDescription": "Term structure of interest rates, cashflow duration, convexity and immunization, forward and futures contracts, interest rate swaps, introduction to investment derivatives and hedging strategies.",
-    "prerequisite": "<p>ACT240H1, (MAT135H1, MAT136H1)/ MAT137Y1/ MAT157Y1</p>",
+    "prerequisite": "ACT240H1, (MAT135H1, MAT136H1)/ MAT137Y1/ MAT157Y1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsTutorial Enrolment Instructions: • Tutorial enrolment is mandatory in this course • Students must enrol in a tutorial section at the same time they enrol in the course. • Enrol in TUT5102-5105. Enrollment in TUT5101 in currently blocked.",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
-      "TUT-5101": {
+      "TUT-5105": {
         "schedule": {
           "TU-0": {
             "meetingDay": "TU",
             "meetingStartTime": "18:00",
             "meetingEndTime": "19:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "MS",
-            "assignedRoom2": "MS"
+            "assignedRoom1": "GB",
+            "assignedRoom2": "GB"
           }
         },
         "instructors": {},
-        "meetingId": "TUT5101",
+        "meetingId": "TUT5105",
         "teachingMethod": "TUT",
-        "sectionNumber": "5101",
+        "sectionNumber": "5105",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "60",
-        "actualEnrolment": "0",
+        "actualEnrolment": "42",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": "<p>June 6, 2025: Section added.</p>",
@@ -965,6 +969,61 @@
           }
         ]
       },
+      "TUT-5103": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "GB",
+            "assignedRoom2": "GB"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT5103",
+        "teachingMethod": "TUT",
+        "sectionNumber": "5103",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "60",
+        "actualEnrolment": "59",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>June 6, 2025: Section added.</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "TUT-5104": {
         "schedule": {
           "TU-0": {
@@ -1020,28 +1079,28 @@
           }
         ]
       },
-      "TUT-5103": {
+      "TUT-5101": {
         "schedule": {
           "TU-0": {
             "meetingDay": "TU",
             "meetingStartTime": "18:00",
             "meetingEndTime": "19:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "GB",
-            "assignedRoom2": "GB"
+            "assignedRoom1": "MS",
+            "assignedRoom2": "MS"
           }
         },
         "instructors": {},
-        "meetingId": "TUT5103",
+        "meetingId": "TUT5101",
         "teachingMethod": "TUT",
-        "sectionNumber": "5103",
+        "sectionNumber": "5101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "60",
-        "actualEnrolment": "59",
+        "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": "<p>June 6, 2025: Section added.</p>",
@@ -1129,61 +1188,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "TUT-5105": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "GB",
-            "assignedRoom2": "GB"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT5105",
-        "teachingMethod": "TUT",
-        "sectionNumber": "5105",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "60",
-        "actualEnrolment": "42",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>June 6, 2025: Section added.</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -1192,126 +1196,17 @@
     "courseTitle": "Introductory Life Contingencies",
     "code": "ACT247H1",
     "courseDescription": "Probability theory applied to survival and to costs and risks of life assurances, life annuities, and pensions; analysis of survival distributions; international actuarial notation. Course manuals fee: $35.",
-    "prerequisite": "<p>ACT240H1, (MAT135H1, MAT136H1)/ MAT137Y1/ MAT157Y1</p>",
-    "corequisite": "<p>STA257H1/ STA237H1</p>",
+    "prerequisite": "ACT240H1, (MAT135H1, MAT136H1)/ MAT137Y1/ MAT157Y1",
+    "corequisite": "STA257H1/ STA237H1",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsTutorial Enrolment Instructions:Tutorial enrolment is mandatory in this course Students must enrol in a tutorial section at the same time they enrol in the course.Enrol in TUT0101, TUT0103 - TUT0105 at the time of enrolmentEnrolment in TUT0102 in currently blocked",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "NF",
-            "assignedRoom2": "NF"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "55",
-        "actualEnrolment": "51",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0103": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "NF",
-            "assignedRoom2": "NF"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0103",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0103",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "55",
-        "actualEnrolment": "54",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "TUT-0102": {
         "schedule": {
           "TH-0": {
@@ -1389,6 +1284,116 @@
         "online": "In Person",
         "enrollmentCapacity": "55",
         "actualEnrolment": "49",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "NF",
+            "assignedRoom2": "NF"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "55",
+        "actualEnrolment": "51",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0103": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "NF",
+            "assignedRoom2": "NF"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0103",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0103",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "55",
+        "actualEnrolment": "54",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1599,12 +1604,13 @@
     "courseTitle": "Life Contingencies II",
     "code": "ACT348H1",
     "courseDescription": "Determination of benefit premium and benefit reserves for life insurance and annuities; analysis of insurance loss random variables; theory of life contingencies for multiple lives. This is the second course in the life contingencies series, following ACT247H1. Course manuals fee: $40.",
-    "prerequisite": "<p>ACT240H1, ACT245H1, ACT247H1</p>",
-    "corequisite": "<p>STA257H1/ STA237H1, MAT235Y1/ MAT237Y1/ MAT257Y1</p>",
+    "prerequisite": "ACT240H1, ACT245H1, ACT247H1",
+    "corequisite": "STA257H1/ STA237H1, MAT235Y1/ MAT237Y1/ MAT257Y1",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -1731,12 +1737,13 @@
     "courseTitle": "Corporate Finance for Actuarial Science",
     "code": "ACT349H1",
     "courseDescription": "Corporate finance for actuarial science students.",
-    "prerequisite": "<p>ACT240H1, ACT245H1, ACT247H1 </p>",
-    "corequisite": "<p>STA257H1/ STA237H1, MAT235Y1/ MAT237Y1/ MAT257Y1</p>",
+    "prerequisite": "ACT240H1, ACT245H1, ACT247H1",
+    "corequisite": "STA257H1/ STA237H1, MAT235Y1/ MAT237Y1/ MAT257Y1",
     "exclusion": "ECO358H1, ECO359H1, RSM332H1, RSM333H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -1863,12 +1870,13 @@
     "courseTitle": "Applied Probability for Actuarial Science",
     "code": "ACT350H1",
     "courseDescription": "The course offers an introduction to elementary probability theory and stochastic processes. The main goal of the course is to help actuarial students understand the concept of stochastic processes with particular emphasis on Markov chains that are of great importance in Life Contingencies and Property and Casualty insurance. The course will cover the following topics: a basic review of probabilities with emphasis on conditional probabilities and expectations, discrete time Markov chains, Poisson processes, continuous time Markov chains, renewal theory and some applications, queueing theory.",
-    "prerequisite": "<p>ACT240H1, ACT245H1, ACT247H1, STA257H1/ STA237H1</p>",
-    "corequisite": "<p>MAT223H1/ MAT240H1, MAT235Y1/ MAT237Y1/ MAT257Y1</p>",
+    "prerequisite": "ACT240H1, ACT245H1, ACT247H1, STA257H1/ STA237H1",
+    "corequisite": "MAT223H1/ MAT240H1, MAT235Y1/ MAT237Y1/ MAT257Y1",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -1935,33 +1943,34 @@
     "courseTitle": "Loss Models: From Data to Decisions",
     "code": "ACT351H1",
     "courseDescription": "This course will introduce the probability models central to actuarial loss analysis. We will explore frequency and severity models, compound distributions, and the transformations of random variables to account for policy adjustments, such as deductibles, policy limits, and reinsurance structures. We will also discuss simulation techniques to estimate the distribution of aggregate losses and risk measures associated with these distributions.",
-    "prerequisite": "<p>ACT240H1, ACT245H1, ACT247H1</p>",
-    "corequisite": "<p>STA257H1/ STA237H1</p>",
-    "exclusion": "<p>ACT451H1</p>",
+    "prerequisite": "ACT240H1, ACT245H1, ACT247H1",
+    "corequisite": "STA257H1/ STA237H1",
+    "exclusion": "ACT451H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MS",
-            "assignedRoom2": "MS"
-          },
-          "TU-1": {
+          "TU-0": {
             "meetingDay": "TU",
             "meetingStartTime": "11:00",
             "meetingEndTime": "12:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "UC",
             "assignedRoom2": "UC"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "MS",
+            "assignedRoom2": "MS"
           }
         },
         "instructors": {
@@ -2075,12 +2084,13 @@
     "courseTitle": "Statistical Methods for Actuarial Loss",
     "code": "ACT352H1",
     "courseDescription": "Insurance data often exhibits unique characteristics such as deductibles, policy limits, and truncation, requiring specialized statistical methods to model and analyze losses and survival outcomes. This course introduces statistical methods for modelling and analyzing loss and survival data in actuarial science. Key topics include product-limit estimation, empirical estimation methods, moment and percentile estimation, maximum likelihood estimation, and simulation techniques. Emphasis is placed on understanding the theoretical foundations of these methods and applying them to real loss data using R.",
-    "prerequisite": "<p>ACT240H1, ACT245H1, ACT247H1, ACT351H1/ ACT451H1</p>",
-    "corequisite": "<p>STA261H1/ STA238H1</p>",
-    "exclusion": "<p>ACT452H1</p>",
+    "prerequisite": "ACT240H1, ACT245H1, ACT247H1, ACT351H1/ ACT451H1",
+    "corequisite": "STA261H1/ STA238H1",
+    "exclusion": "ACT452H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -2215,12 +2225,13 @@
     "courseTitle": "Financial Principles for Actuarial Science II",
     "code": "ACT370H1",
     "courseDescription": "Mathematical theory of financial derivatives, discrete and continuous option pricing models, hedging strategies and exotic option valuation. Arts and Science students must be enrolled in the Actuarial Science Major or Specialist, the Data Science Specialist, or the Specialist in Statistical Science: Theory and Methods.",
-    "prerequisite": "<p>(ACT240H1, ACT245H1, ACT247H1) or (STA261H1, MAT237Y1/ MAT257Y1)</p>",
-    "corequisite": "<p>STA261H1/ STA238H1, MAT235Y1/ MAT237Y1/ MAT257Y1</p>",
+    "prerequisite": "(ACT240H1, ACT245H1, ACT247H1) or (STA261H1, MAT237Y1/ MAT257Y1)",
+    "corequisite": "STA261H1/ STA238H1, MAT235Y1/ MAT237Y1/ MAT257Y1",
     "exclusion": "RSM435H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -2435,16 +2446,72 @@
     "courseTitle": "Reserving Methods For Property & Casualty Insurance",
     "code": "ACT371H1",
     "courseDescription": "Topics covered include reserving data and triangles, diagnoses methods that range from triangle of ratios of paid claims to reported claims to triangle of reported claim ratios. The syllabus also includes projection techniques. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>ACT240H1, STA257H1/ STA237H1</p>",
+    "prerequisite": "ACT240H1, STA257H1/ STA237H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
+      "TUT-5101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "PB",
+            "assignedRoom2": "PB"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT5101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "5101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "48",
+        "actualEnrolment": "34",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-5101": {
         "schedule": {
           "TU-0": {
@@ -2564,61 +2631,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "TUT-5101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "PB",
-            "assignedRoom2": "PB"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT5101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "5101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "48",
-        "actualEnrolment": "34",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -2633,6 +2645,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Science",
@@ -2765,6 +2778,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -2870,6 +2884,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -2948,6 +2963,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -3020,12 +3036,13 @@
     "courseTitle": "Advanced Life Contingencies - Modeling and Applications",
     "code": "ACT455H1",
     "courseDescription": "The course explores advanced actuarial topics such as multi-decrement theory, multi-state transition models, profit testing, pension mathematics, and retirement benefits. It places a strong emphasis on practical applications within the life insurance industry, examining areas such as disability income insurance, long-term care, critical illness insurance, workers' compensation, continuing care insurance, and universal life insurance. Additionally, the course delves into the complexities of embedded options in life insurance and annuity products, providing students with in-depth knowledge of how these concepts are applied in real-world scenarios. This course is the last in the three-course series for life contingencies, following ACT247H1 and ACT348H1.",
-    "prerequisite": "<p>ACT240H1, ACT245H1, ACT247H1, ACT348H1</p>",
-    "corequisite": "<p>ACT350H1/ STA347H1</p>",
+    "prerequisite": "ACT240H1, ACT245H1, ACT247H1, ACT348H1",
+    "corequisite": "ACT350H1/ STA347H1",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -3160,16 +3177,86 @@
     "courseTitle": "Stochastic Methods for Finance",
     "code": "ACT460H1",
     "courseDescription": "Applications of the lognormal distribution, Brownian motion, geometric Brownian motion, martingales, Ito's lemma, stochastic differential equations, interest rate models, the Black-Scholes model, volatility, value at risk, conditional tail expectation. Topics in advanced financial mathematics. Arts and Science students must be enrolled in the Actuarial Science Major or Specialist, the Data Science Specialist, or the Specialist in Statistical Science: Theory and Methods.",
-    "prerequisite": "<p>(ACT240H1, ACT245H1, ACT247H1, ACT350H1/ STA347H1) OR (ACT350H1/ STA347H1, MAT237Y1/ MAT257Y1)</p>",
+    "prerequisite": "(ACT240H1, ACT245H1, ACT247H1, ACT350H1/ STA347H1) OR (ACT350H1/ STA347H1, MAT237Y1/ MAT257Y1)",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "ACT370H1 strongly recommended",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
+      "LEC-2001": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "GB",
+            "assignedRoom2": "GB"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "NL",
+            "assignedRoom2": "NL"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Dena",
+            "lastName": "Firoozi"
+          }
+        },
+        "meetingId": "LEC2001",
+        "teachingMethod": "LEC",
+        "sectionNumber": "2001",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "32",
+        "actualEnrolment": "24",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "R1",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "APSC",
+            "primaryOrgName": "Faculty of Applied Science & Engineering",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -3346,75 +3433,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "LEC-2001": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "GB",
-            "assignedRoom2": "GB"
-          },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "16:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "NL",
-            "assignedRoom2": "NL"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Dena",
-            "lastName": "Firoozi"
-          }
-        },
-        "meetingId": "LEC2001",
-        "teachingMethod": "LEC",
-        "sectionNumber": "2001",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "32",
-        "actualEnrolment": "24",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "APSC",
-            "primaryOrgName": "Faculty of Applied Science & Engineering",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -3423,12 +3441,13 @@
     "courseTitle": "Advanced Statistical Modeling",
     "code": "ACT466H1",
     "courseDescription": "This course provides an in-depth exploration of advanced pricing and reserving techniques in Property and Casualty (P&C) insurance, with a strong focus on methodologies. It covers fundamental topics in P&C insurance ratemaking and reserving, such as Bayes credibility, Bulhmann credibility, nonparametric Bayes credibility, deterministic and stochastic Chain Ladder, Bornhuetter-Ferguson, over-dispersed Poisson model, as well as a brief introduction to modern micro level reserving approaches. Through numerous examples, case studies, and applied models, the course emphasizes the practical application of these mathematical concepts in real-world insurance scenarios.",
-    "prerequisite": "<p>ACT240H1, ACT245H1, ACT247H1, ACT351H1</p>",
-    "corequisite": "<p>STA261H1/ STA238H1</p>",
+    "prerequisite": "ACT240H1, ACT245H1, ACT247H1, ACT351H1",
+    "corequisite": "STA261H1/ STA238H1",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -3563,12 +3582,13 @@
     "courseTitle": "Advanced Statistical Modeling",
     "code": "ACT466H1",
     "courseDescription": "This course provides an in-depth exploration of advanced pricing and reserving techniques in Property and Casualty (P&C) insurance, with a strong focus on methodologies. It covers fundamental topics in P&C insurance ratemaking and reserving, such as Bayes credibility, Bulhmann credibility, nonparametric Bayes credibility, deterministic and stochastic Chain Ladder, Bornhuetter-Ferguson, over-dispersed Poisson model, as well as a brief introduction to modern micro level reserving approaches. Through numerous examples, case studies, and applied models, the course emphasizes the practical application of these mathematical concepts in real-world insurance scenarios.",
-    "prerequisite": "<p>ACT240H1, ACT245H1, ACT247H1, ACT351H1</p>",
-    "corequisite": "<p>STA261H1/ STA238H1</p>",
+    "prerequisite": "ACT240H1, ACT245H1, ACT247H1, ACT351H1",
+    "corequisite": "STA261H1/ STA238H1",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -3649,6 +3669,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -3802,10 +3823,66 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
+      "TUT-5101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MS",
+            "assignedRoom2": "MS"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT5101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "5101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "15",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-5101": {
         "schedule": {
           "MO-0": {
@@ -3925,61 +4002,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "TUT-5101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MS",
-            "assignedRoom2": "MS"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT5101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "5101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "15",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -3994,6 +4016,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -4153,6 +4176,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Delivery InstructionsMeetings arranged in collaboration with faculty supervisor",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -4225,6 +4249,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Delivery InstructionsMeetings arranged in collaboration with faculty supervisor",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -4297,6 +4322,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "Delivery InstructionsMeetings arranged in collaboration with faculty supervisor",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -4369,6 +4395,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "Delivery InstructionsMeetings arranged in collaboration with faculty supervisor",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",

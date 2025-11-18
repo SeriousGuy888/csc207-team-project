@@ -10,6 +10,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsMeeting sections do not require attendance at a specific time or location for any activities except the final exam.",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -277,6 +278,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -309,7 +311,7 @@
         "online": "In Person",
         "enrollmentCapacity": "400",
         "actualEnrolment": "400",
-        "actualWaitlist": "4",
+        "actualWaitlist": "5",
         "enrollmentIndicator": "P",
         "meetingStatusNotes": null,
         "enrollmentControls": [
@@ -517,6 +519,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -595,6 +598,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -669,10 +673,11 @@
     "courseDescription": "The emergence of society as a major geological force is considered in terms of the evolving debate about the consequences of human activity for the habitability of our planet. Major issues such as climate change, environmental pollution, and depletion of natural resources are examined.",
     "prerequisite": "Completion of at least 4.0 credits",
     "corequisite": "",
-    "exclusion": "<p>GLG205H1, ERS321H5, EEB208H1</p>",
+    "exclusion": "GLG205H1, ERS321H5, EEB208H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -828,10 +833,11 @@
     "courseDescription": "The emergence of society as a major geological force is considered in terms of the evolving debate about the consequences of human activity for the habitability of our planet. Major issues such as climate change, environmental pollution, and depletion of natural resources are examined.",
     "prerequisite": "Completion of at least 4.0 credits",
     "corequisite": "",
-    "exclusion": "<p>GLG205H1, ERS321H5, EEB208H1</p>",
+    "exclusion": "GLG205H1, ERS321H5, EEB208H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -952,16 +958,72 @@
     "courseTitle": "Introduction to Geochemistry",
     "code": "ESS223H1",
     "courseDescription": "This course introduces students to the basic principles of geochemistry that are used to understand Earth system processes. Topics will include the origin and distribution of elements and isotopes on Earth, mineral compositions, phase diagrams, weathering, and aqueous geochemistry. The course will also cover the thermodynamic and kinetic principles that govern chemical reactions in nature.",
-    "prerequisite": "<p>MAT135H1, CHM135H1</p>",
+    "prerequisite": "MAT135H1, CHM135H1",
     "corequisite": "",
     "exclusion": "ENV233H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
+      "PRA-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "60",
+        "actualEnrolment": "51",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>August 25, 2025: Room change</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -1184,61 +1246,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "60",
-        "actualEnrolment": "51",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>August 25, 2025: Room change</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -1253,65 +1260,11 @@
     "recommendedPreparation": "CHM135H1, PHY131H1, MAT135H1. For Mineral Engineering students, recommended preparation is MAT186H1 and CHE112H1.",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
-      "PRA-0301": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0301",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0301",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "32",
-        "actualEnrolment": "32",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -1672,6 +1625,61 @@
           }
         ]
       },
+      "PRA-0301": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0301",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0301",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "32",
+        "actualEnrolment": "32",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-2001": {
         "schedule": {
           "WE-0": {
@@ -1746,10 +1754,127 @@
     "recommendedPreparation": "JEG100H1/ESS262H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
+      "LEC-2001": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Daniel",
+            "lastName": "Gregory"
+          }
+        },
+        "meetingId": "LEC2001",
+        "teachingMethod": "LEC",
+        "sectionNumber": "2001",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "17",
+        "actualEnrolment": "17",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "R1",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "APSC",
+            "primaryOrgName": "Faculty of Applied Science & Engineering",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "40",
+        "actualEnrolment": "38",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -2135,122 +2260,6 @@
           }
         ]
       },
-      "LEC-2001": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Daniel",
-            "lastName": "Gregory"
-          }
-        },
-        "meetingId": "LEC2001",
-        "teachingMethod": "LEC",
-        "sectionNumber": "2001",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "17",
-        "actualEnrolment": "17",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "APSC",
-            "primaryOrgName": "Faculty of Applied Science & Engineering",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "40",
-        "actualEnrolment": "38",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "PRA-0201": {
         "schedule": {
           "TH-0": {
@@ -2313,16 +2322,72 @@
     "courseTitle": "Computational Geology",
     "code": "ESS245H1",
     "courseDescription": "A practical introduction to programming. This course will teach an operational knowledge on how to write and execute self written computer programs. Course topics touch upon using a computer without a graphical interface, using an integrated development environment, programming, documenting, debugging, reading and writing data, graphical output, how to navigate existing documentation and internet resources, and last but not least how to effectively ask for help. Students will work individually and in small groups in an inverted classroom setting on earth science related problem sets. Previous programming experience is not required.",
-    "prerequisite": "1.0 credit from first-year math, or physics courses except MAT193H1, MAT198H1, MAT199H1, PHY196H1, PHY197H1, PHY198H1, PHY199H1 ",
+    "prerequisite": "1.0 credit from first-year math, or physics courses except MAT193H1, MAT198H1, MAT199H1, PHY196H1, PHY197H1, PHY198H1, PHY199H1",
     "corequisite": "",
-    "exclusion": "<p>CSC108H1, ESS345H1</p>",
+    "exclusion": "CSC108H1, ESS345H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
+      "PRA-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "51",
+        "actualEnrolment": "19",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -2383,13 +2448,31 @@
             "adminOrgName": "All"
           }
         ]
-      },
+      }
+    }
+  },
+  "ESS261H1-S-20261": {
+    "courseId": "67f998c7de40c67f1da3379b",
+    "courseTitle": "Earth System Evolution",
+    "code": "ESS261H1",
+    "courseDescription": "Interrelationships between Earths atmosphere, hydrosphere, geosphere and biosphere through time; including patterns of evolution and extinction as they are related to changes at the earth's surface and recorded in the rock record. Laboratories cover major groups of fossils, their classification, use in biostratigraphy, and living analogues. NOTE: ESS261H1 and ESS262H1 may be taken in either order; and both are required for advanced courses.",
+    "prerequisite": "",
+    "corequisite": "",
+    "exclusion": "GLG217H1",
+    "recommendedPreparation": "",
+    "section": "S",
+    "session": "20261",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "The Physical and Mathematical Universes (5)",
+    "distributionCategories": "Science",
+    "meetings": {
       "PRA-0101": {
         "schedule": {
           "TH-0": {
             "meetingDay": "TH",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "15:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "ES",
             "assignedRoom2": "ES"
@@ -2404,8 +2487,8 @@
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "51",
-        "actualEnrolment": "19",
+        "enrollmentCapacity": "60",
+        "actualEnrolment": "52",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -2438,24 +2521,7 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "ESS261H1-S-20261": {
-    "courseId": "67f998c7de40c67f1da3379b",
-    "courseTitle": "Earth System Evolution",
-    "code": "ESS261H1",
-    "courseDescription": "Interrelationships between Earths atmosphere, hydrosphere, geosphere and biosphere through time; including patterns of evolution and extinction as they are related to changes at the earth's surface and recorded in the rock record. Laboratories cover major groups of fossils, their classification, use in biostratigraphy, and living analogues. NOTE: ESS261H1 and ESS262H1 may be taken in either order; and both are required for advanced courses.",
-    "prerequisite": "",
-    "corequisite": "",
-    "exclusion": "GLG217H1",
-    "recommendedPreparation": "",
-    "section": "S",
-    "session": "20261",
-    "deliveryInstructions": null,
-    "breadthCategories": "The Physical and Mathematical Universes (5)",
-    "distributionCategories": "Science",
-    "meetings": {
+      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -2780,61 +2846,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "60",
-        "actualEnrolment": "52",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -2845,99 +2856,51 @@
     "courseDescription": "An introduction to how our planet works, focusing on physical processes that govern the nature and composition of Earth with an emphasis on the dynamic nature of the planet. Topics include surface processes (e.g., weathering and erosion, ocean and atmospheric circulation, weather and climate), crustal processes (e.g., plate tectonics, earthquakes, volcanoes, biogeochemical cycles), and earth-environment interactions (e.g., natural hazards, resource development, and sustainability).",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<p>JEG100H1</p>",
-    "recommendedPreparation": "<p>PHY131H1/ CHM138H1/ BIO120H1. For Mineral Engineering students, recommended preparation is MAT186H1 and CHE112H1.</p>",
+    "exclusion": "JEG100H1",
+    "recommendedPreparation": "PHY131H1/ CHM138H1/ BIO120H1. For Mineral Engineering students, recommended preparation is MAT186H1 and CHE112H1.",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
-      "PRA-0201": {
+      "LEC-2001": {
         "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0201",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "47",
-        "actualEnrolment": "22",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0401": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
+          "MO-0": {
+            "meetingDay": "MO",
             "meetingStartTime": "13:00",
-            "meetingEndTime": "16:00",
+            "meetingEndTime": "15:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
           }
         },
-        "instructors": {},
-        "meetingId": "PRA0401",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0401",
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Sarah Sydney",
+            "lastName": "Ariano"
+          }
+        },
+        "meetingId": "LEC2001",
+        "teachingMethod": "LEC",
+        "sectionNumber": "2001",
         "subtitle": "",
         "cancel": "",
-        "waitlist": "N",
+        "waitlist": "Y",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "48",
-        "actualEnrolment": "43",
+        "enrollmentCapacity": "39",
+        "actualEnrolment": "36",
         "actualWaitlist": "0",
-        "enrollmentIndicator": "",
+        "enrollmentIndicator": "R1",
         "meetingStatusNotes": null,
         "enrollmentControls": [
           {
             "postId": "1",
-            "postCode": "*",
-            "postName": "All",
+            "postCode": "",
+            "postName": "",
             "subjectId": "1",
             "subjectCode": "*",
             "subjectName": "All",
@@ -2949,8 +2912,8 @@
             "typeOfProgramCode": "*",
             "typeOfProgramName": "All",
             "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
+            "primaryOrgCode": "APSC",
+            "primaryOrgName": "Faculty of Applied Science & Engineering",
             "secondaryOrgId": "1",
             "secondaryOrgCode": "*",
             "secondaryOrgName": "All",
@@ -3187,67 +3150,6 @@
           }
         ]
       },
-      "LEC-2001": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Sarah Sydney",
-            "lastName": "Ariano"
-          }
-        },
-        "meetingId": "LEC2001",
-        "teachingMethod": "LEC",
-        "sectionNumber": "2001",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "39",
-        "actualEnrolment": "36",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "APSC",
-            "primaryOrgName": "Faculty of Applied Science & Engineering",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "PRA-0101": {
         "schedule": {
           "MO-0": {
@@ -3302,6 +3204,116 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0201": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0201",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "47",
+        "actualEnrolment": "22",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "PRA-0401": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0401",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0401",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "48",
+        "actualEnrolment": "43",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -3316,6 +3328,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Science",
@@ -3385,68 +3398,14 @@
     "prerequisite": "",
     "corequisite": "",
     "exclusion": "GLG450H1",
-    "recommendedPreparation": "<p>ESS262H1, ESS311H1</p>",
+    "recommendedPreparation": "ESS262H1, ESS311H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
-      "PRA-0101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "60",
-        "actualEnrolment": "51",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>August 19, 2025: Room change</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -3561,6 +3520,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "60",
+        "actualEnrolment": "51",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>August 19, 2025: Room change</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -3575,6 +3589,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -3764,12 +3779,13 @@
     "courseTitle": "Igneous Petrology",
     "code": "ESS322H1",
     "courseDescription": "An overview of the nature and origin of igneous rocks, with particular emphasis on the interpretation of textures and mineral assemblages as they reflect rock-forming processes. Topics include the physical and chemical properties of magma, origin, and evolution of different magmatic series in specific igneous/tectonic environments, geochemical and isotopic characteristics of igneous rocks, and the assimilation, fractionation & crystallization processes.",
-    "prerequisite": "<p>ESS224H1, ESS321H1/ ESS221H1</p>",
+    "prerequisite": "ESS224H1, ESS321H1/ ESS221H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -3951,12 +3967,13 @@
     "courseTitle": "Sedimentation and Stratigraphy",
     "code": "ESS331H1",
     "courseDescription": "Formal principles of stratigraphy, types of stratigraphic unit, methods of dating and correlation (biostratigraphic methods, magnetostratigraphy, radiometric dating). Methods of study in surface and subsurface (outcrop measurement, elementary introduction to wireline logs, seismic methods). The principles of facies analysis; sediment transport - sedimentary structures, the flow regime, and sediment gravity flows. The carbonate factory and carbonate rock classification. Trace fossils. Laboratory exercises in understanding facies mapping, isopachs and isolith maps.",
-    "prerequisite": "<p>ESS224H1</p>",
+    "prerequisite": "ESS224H1",
     "corequisite": "",
-    "exclusion": "<p>GLG360H1, ERS211H5, ERS313H5</p>",
-    "recommendedPreparation": "<p>ESS222H1, ESS234H1/ESS330H1</p>",
+    "exclusion": "GLG360H1, ERS211H5, ERS313H5",
+    "recommendedPreparation": "ESS222H1, ESS234H1/ESS330H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -4144,6 +4161,7 @@
     "recommendedPreparation": "1.0 credit from: PHY131H1/PHY132H1/CHM135H1/CHM136H1/BIO120H1/MAT135H1 and ESS261H1/ESS262H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -4325,12 +4343,13 @@
     "courseTitle": "Global Biogeochemical Cycles",
     "code": "ESS363H1",
     "courseDescription": "Exchange of energy and matter (elements and minerals) between the Earth’s atmosphere, ocean, biosphere, and geosphere. Course-related topics include global biogeochemical cycling of carbon, nitrogen, phosphorous, silicon, iron, and zinc (amongst other elements) and will include both terrestrial and marine ecosystems. Examples and case studies will be viewed from the paleo-, contemporary and potential future global change perspectives.",
-    "prerequisite": "<p>8.0 credits including JEG100H1/ESS223H1/ESS262H1/ESS261H1 and 1.0 credit from: PHY131H1/ PHY132H1/ CHM135H1/ CHM136H1/ MAT135H1/ MAT136H1</p>",
+    "prerequisite": "8.0 credits including JEG100H1/ESS223H1/ESS262H1/ESS261H1 and 1.0 credit from: PHY131H1/ PHY132H1/ CHM135H1/ CHM136H1/ MAT135H1/ MAT136H1",
     "corequisite": "",
-    "exclusion": "<p>ESS462H1</p>",
+    "exclusion": "ESS462H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -4457,12 +4476,13 @@
     "courseTitle": "Directed Studies",
     "code": "ESS391H1",
     "courseDescription": "An individual study program chosen by the student with the advice, and under the supervision, of a faculty member. Such work may involve obtaining data in the field or lab and analyzing it, an interdisciplinary research project, and supervised readings. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>Enrolment in an Earth Science program of study, completion of at least 1.0 credit of 200-level ESS/ JEG/ JGA/ JPE courses.</p>",
+    "prerequisite": "Enrolment in an Earth Science program of study, completion of at least 1.0 credit of 200-level ESS/ JEG/ JGA/ JPE courses.",
     "corequisite": "",
     "exclusion": "GLG371H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Science",
@@ -4529,12 +4549,13 @@
     "courseTitle": "Directed Studies",
     "code": "ESS391H1",
     "courseDescription": "An individual study program chosen by the student with the advice, and under the supervision, of a faculty member. Such work may involve obtaining data in the field or lab and analyzing it, an interdisciplinary research project, and supervised readings. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>Enrolment in an Earth Science program of study, completion of at least 1.0 credit of 200-level ESS/ JEG/ JGA/ JPE courses.</p>",
+    "prerequisite": "Enrolment in an Earth Science program of study, completion of at least 1.0 credit of 200-level ESS/ JEG/ JGA/ JPE courses.",
     "corequisite": "",
     "exclusion": "GLG371H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Science",
@@ -4601,12 +4622,13 @@
     "courseTitle": "Directed Studies",
     "code": "ESS392Y1",
     "courseDescription": "An individual study program chosen by the student with the advice, and under the supervision, of a faculty member. Such work may involve obtaining data in the field or lab and analyzing it, an interdisciplinary research project, and supervised readings. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>Enrolment in an Earth Sciences Program of Study, completion of at least 1.0 credit of 200-level ESS/ JEG/ JGA/ JPE courses.</p>",
+    "prerequisite": "Enrolment in an Earth Sciences Program of Study, completion of at least 1.0 credit of 200-level ESS/ JEG/ JGA/ JPE courses.",
     "corequisite": "",
     "exclusion": "GLG372Y1",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Science",
@@ -4673,16 +4695,72 @@
     "courseTitle": "Mineral Deposits",
     "code": "ESS423H1",
     "courseDescription": "This course investigates the geochemistry, geology, and mineralogy of mineral systems. Practical skills that will be developed include identification of ore and gangue minerals in hand and polished sections as well as understanding ore systems from source to the deposit. This will be of interest to students interested in a career in mineral exploration and mining as it will lead to an increased understanding of mineral systems, skills used in mineral exploration, and how to use these to find mineral deposits. Additionally, it will be of interest to students interested environmental science as it will teach identification of ore minerals and associated minerals that are important for assessing and developing remediation techniques for acid mine drainage sites. Finally, it will be of interest to students interested in geochemistry as we will investigate high temperature reactions between fluids and wallrocks.",
-    "prerequisite": "<p>ESS322H1/ ESS323H1</p>",
+    "prerequisite": "ESS322H1/ ESS323H1",
     "corequisite": "",
-    "exclusion": "<p>GLG442H1</p>",
+    "exclusion": "GLG442H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
+      "PRA-0101": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "16",
+        "actualEnrolment": "12",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "TH-0": {
@@ -4797,61 +4875,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "16",
-        "actualEnrolment": "12",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -4860,12 +4883,13 @@
     "courseTitle": "Metamorphic Petrology",
     "code": "ESS424H1",
     "courseDescription": "This course provides a basic understanding of the formative processes of metamorphic rocks through quantitative applications of simple thermodynamic and kinetic principles. Topics include processes of heat and mass transport in orogenic belts, fluid-rock interaction in metasomatic systems, pressure-temperature-time paths of metamorphic rocks, temporospatial patterns of metamorphism through geologic time, and metamorphism in extreme conditions.",
-    "prerequisite": "<p>ESS222H1/ESS224H1, ESS221H1/ESS321H1</p>",
+    "prerequisite": "ESS222H1/ESS224H1, ESS221H1/ESS321H1",
     "corequisite": "",
-    "exclusion": "<p>ESS323H1</p>",
+    "exclusion": "ESS323H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -5055,16 +5079,72 @@
     "courseTitle": "Analytical Methods for the Geosciences",
     "code": "ESS425H1",
     "courseDescription": "Theory and operation of current analytical techniques applicable to geological and environmental analysis. In each lab, students receive instruction from an experienced analyst and acquire hands-on experience using state-of-the-art analytical equipment. Techniques covered include X-ray Fluorescence, X-ray Diffraction, Electron Probe Microanalysis, Scanning Electron Microscopy, Ion Chromatography, Atomic Absorption spectrometry, Inductively Coupled Plasma Mass Spectrometry, and Raman spectroscopy.",
-    "prerequisite": "<p>10.0 credits, of which 2.0 credits must be 300+ level ESS/ JEG/ JGA/ JPE courses</p>",
+    "prerequisite": "10.0 credits, of which 2.0 credits must be 300+ level ESS/ JEG/ JGA/ JPE courses",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
+      "PRA-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "18",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -5179,13 +5259,31 @@
             "adminOrgName": "All"
           }
         ]
-      },
+      }
+    }
+  },
+  "ESS441H1-F-20259": {
+    "courseId": "67f998c7de40c67f1da337a7",
+    "courseTitle": "Advanced Structural Geology",
+    "code": "ESS441H1",
+    "courseDescription": "Principles of geological mechanics: stress, strain, rheology. Faulting, folding and development of tectonic foliations and lineations. Structural analysis of fractures, folds and tectonites.",
+    "prerequisite": "ESS234H1, ESS241H1",
+    "corequisite": "",
+    "exclusion": "",
+    "recommendedPreparation": "ESS321H1, ESS322H1, ESS323H1, ESS331H1",
+    "section": "F",
+    "session": "20259",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "The Physical and Mathematical Universes (5)",
+    "distributionCategories": "Science",
+    "meetings": {
       "PRA-0101": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "18:00",
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "14:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "ES",
             "assignedRoom2": "ES"
@@ -5200,8 +5298,8 @@
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "18",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "21",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -5234,24 +5332,7 @@
             "adminOrgName": "All"
           }
         ]
-      }
-    }
-  },
-  "ESS441H1-F-20259": {
-    "courseId": "67f998c7de40c67f1da337a7",
-    "courseTitle": "Advanced Structural Geology",
-    "code": "ESS441H1",
-    "courseDescription": "Principles of geological mechanics: stress, strain, rheology. Faulting, folding and development of tectonic foliations and lineations. Structural analysis of fractures, folds and tectonites.",
-    "prerequisite": "<p>ESS234H1, ESS241H1</p>",
-    "corequisite": "",
-    "exclusion": "",
-    "recommendedPreparation": "<p>ESS321H1, ESS322H1, ESS323H1, ESS331H1</p>",
-    "section": "F",
-    "session": "20259",
-    "deliveryInstructions": null,
-    "breadthCategories": "The Physical and Mathematical Universes (5)",
-    "distributionCategories": "Science",
-    "meetings": {
+      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -5366,61 +5447,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "21",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -5432,9 +5458,10 @@
     "prerequisite": "",
     "corequisite": "",
     "exclusion": "GLG465H1",
-    "recommendedPreparation": "<p>ESS241H1, ESS322H1</p>",
+    "recommendedPreparation": "ESS241H1, ESS322H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -5561,12 +5588,13 @@
     "courseTitle": "Electrical and Electromagnetic Imaging",
     "code": "ESS452H1",
     "courseDescription": "Resistivity, induced polarization, self-potential, and electromagnetic methods are commonly used for mineral exploration and environmental surveys. Students will learn the theory and application of Maxwell's equations on which these methods are based, and apply this understanding to analysing and interpreting data acquired with these methods. Geophysicists use these methods to image the Earth to depths ranging from several meters to tens of kilometers.",
-    "prerequisite": "<p>(MAT135H1, MAT136H1)/ MAT137Y1, MAT224H1, PHY250H1, JGA305H1</p>",
+    "prerequisite": "(MAT135H1, MAT136H1)/ MAT137Y1, MAT224H1, PHY250H1, JGA305H1",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>ESS245H1, APM346H1</p>",
+    "recommendedPreparation": "ESS245H1, APM346H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -5699,10 +5727,66 @@
     "recommendedPreparation": "ESS362H1, ENV233H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
     "meetings": {
+      "PRA-0101": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "35",
+        "actualEnrolment": "18",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "FR-0": {
@@ -5817,61 +5901,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "35",
-        "actualEnrolment": "18",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -5880,12 +5909,13 @@
     "courseTitle": "Topics in Critical Zone Processes",
     "code": "ESS465H1",
     "courseDescription": "An in-depth look at a significant aspect of the Earth system. The \"critical zone\" -- defined as the outer layer reaching from the treetops into the weathered bedrock where rock, water, air and life interact -- is crucial to life and habitats, food production, water quality, and regulating climate. Topics will vary depending on instructor expertise, who may focus on biosphere-atmosphere interactions, or microbiologically driven cycling of energy and matter in the subsurface. Emphasis will be placed on approaches to quantitatively model interactions and reading of primary scientific literature.",
-    "prerequisite": "<p>ESS363H1/ESS362H1 and 9.5 credits from any ESS/ JEG/ JGA/ JPE/ MAT/ PHY/ JPH/ CHM/ JCC/ JSC/ EEB/ EHJ/ JHE/ GGR/ JGU/ JUG/ JGE/ JIG/ JGC courses</p>",
+    "prerequisite": "ESS363H1/ESS362H1 and 9.5 credits from any ESS/ JEG/ JGA/ JPE/ MAT/ PHY/ JPH/ CHM/ JCC/ JSC/ EEB/ EHJ/ JHE/ GGR/ JGU/ JUG/ JGE/ JIG/ JGC courses",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -6018,6 +6048,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -6096,6 +6127,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -6174,6 +6206,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",

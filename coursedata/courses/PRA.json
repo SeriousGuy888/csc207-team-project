@@ -10,6 +10,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -137,6 +138,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -264,6 +266,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -336,11 +339,12 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
     "meetings": {
-      "PRA-0101": {
+      "PRA-101": {
         "schedule": {
           "-": {
             "meetingDay": null,
@@ -352,15 +356,15 @@
           }
         },
         "instructors": {},
-        "meetingId": "PRA0101",
+        "meetingId": "PRA101",
         "teachingMethod": "PRA",
-        "sectionNumber": "0101",
+        "sectionNumber": "101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
-        "deliveryMode": "SYNC",
-        "online": "Online",
-        "enrollmentCapacity": "20",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "5",
         "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
@@ -395,7 +399,7 @@
           }
         ]
       },
-      "PRA-101": {
+      "PRA-0101": {
         "schedule": {
           "-": {
             "meetingDay": null,
@@ -407,15 +411,15 @@
           }
         },
         "instructors": {},
-        "meetingId": "PRA101",
+        "meetingId": "PRA0101",
         "teachingMethod": "PRA",
-        "sectionNumber": "101",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "5",
+        "deliveryMode": "SYNC",
+        "online": "Online",
+        "enrollmentCapacity": "20",
         "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",

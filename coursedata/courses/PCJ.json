@@ -4,16 +4,127 @@
     "courseTitle": "Introduction to Peace, Conflict and Justice",
     "code": "PCJ200H1",
     "courseDescription": "This course introduces students to the theories, concepts, histories, and actors that are fundamental to the field of peace, conflict, and justice. Students will discuss meanings, causes, obstacles, and sustainability of peace and justice through the discussion of historical and contemporary cases from around the world. Stemming from the interdisciplinary aspect of the field, students will learn a wide range of theoretical, empirical, and policy-oriented perspectives on thematic topics such as protection and violation of human rights, social and economic inequalities, and causes of violence and oppression. This course is intended for first year PCJ students and it serves as a gateway for all other courses offered in the PCJ program. This course is a requirement for PCJ majors and specialists.",
-    "prerequisite": "<p>Admission to PCJ</p>",
+    "prerequisite": "Admission to PCJ",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
     "meetings": {
+      "TUT-0201": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EP",
+            "assignedRoom2": "EP"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0201",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "27",
+        "actualEnrolment": "25",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>July 7, 2025: room changed</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MY",
+            "assignedRoom2": "MY"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "28",
+        "actualEnrolment": "21",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>July 7, 2025: room changed</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -101,16 +212,34 @@
             "adminOrgName": "All"
           }
         ]
-      },
+      }
+    }
+  },
+  "PCJ210H1-S-20261": {
+    "courseId": "67f998c7de40c67f1da33aab",
+    "courseTitle": "Research Methods in Peace, Conflict and Justice",
+    "code": "PCJ210H1",
+    "courseDescription": "This course introduces students to key research methods employed in the study of peace, conflict and justice. It considers both qualitative, quantitative, and mixed-methods research frameworks prominent in PCJ research drawn from a range of disciplines and approaches. Some methods explored in this course might include: descriptive analysis, correlational studies, bivariate or multivariate regression models, surveys, interviews, focus groups, and country case studies. The class teaches students how to read, understand and critique these frameworks and the scholarship they influence/produce. Concepts of internal and external validity, inductive and deductive reasoning, and ethics in research will also be covered. This course is a requirement for PCJ majors and specialists.",
+    "prerequisite": "Admission to PCJ",
+    "corequisite": "",
+    "exclusion": "",
+    "recommendedPreparation": "",
+    "section": "S",
+    "session": "20261",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "Society and its Institutions (3)",
+    "distributionCategories": "Social Science",
+    "meetings": {
       "TUT-0101": {
         "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "MY",
-            "assignedRoom2": "MY"
+            "assignedRoom1": "FE",
+            "assignedRoom2": "FE"
           }
         },
         "instructors": {},
@@ -123,7 +252,7 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "28",
-        "actualEnrolment": "21",
+        "actualEnrolment": "18",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": "<p>July 7, 2025: room changed</p>",
@@ -157,78 +286,6 @@
           }
         ]
       },
-      "TUT-0201": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EP",
-            "assignedRoom2": "EP"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0201",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "27",
-        "actualEnrolment": "25",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>July 7, 2025: room changed</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      }
-    }
-  },
-  "PCJ210H1-S-20261": {
-    "courseId": "67f998c7de40c67f1da33aab",
-    "courseTitle": "Research Methods in Peace, Conflict and Justice",
-    "code": "PCJ210H1",
-    "courseDescription": "This course introduces students to key research methods employed in the study of peace, conflict and justice. It considers both qualitative, quantitative, and mixed-methods research frameworks prominent in PCJ research drawn from a range of disciplines and approaches. Some methods explored in this course might include: descriptive analysis, correlational studies, bivariate or multivariate regression models, surveys, interviews, focus groups, and country case studies. The class teaches students how to read, understand and critique these frameworks and the scholarship they influence/produce. Concepts of internal and external validity, inductive and deductive reasoning, and ethics in research will also be covered. This course is a requirement for PCJ majors and specialists.",
-    "prerequisite": "<p>Admission to PCJ</p>",
-    "corequisite": "",
-    "exclusion": "",
-    "recommendedPreparation": "",
-    "section": "S",
-    "session": "20261",
-    "deliveryInstructions": null,
-    "breadthCategories": "Society and its Institutions (3)",
-    "distributionCategories": "Social Science",
-    "meetings": {
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -317,61 +374,6 @@
           }
         ]
       },
-      "TUT-0101": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "FE",
-            "assignedRoom2": "FE"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "28",
-        "actualEnrolment": "18",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>July 7, 2025: room changed</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "TUT-0201": {
         "schedule": {
           "FR-0": {
@@ -434,12 +436,13 @@
     "courseTitle": "Data and Applications in PCJ",
     "code": "PCJ310H1",
     "courseDescription": "The goal of this course is to introduce students to data literacy and applications in the topics of peace, conflict, and justice. The course is broadly divided into two parts. The first part will introduce data in the context of peace, conflict, and justice studies and outline the research process. Students will learn advanced quantitative research designs and will work with fundamental descriptive statistics tools. Students will work with different datasets, learn how to summarize data for different types of variables through graphs and tables, and explore measures of association between variables. In the second part of the course, students will work on data projects related to peace, conflict, and justice. Students will also design their own research relevant in PCJ. This course is a requirement for PCJ Specialists.",
-    "prerequisite": "<p>PCJ200H1, PCJ210H1</p>",
+    "prerequisite": "PCJ200H1, PCJ210H1",
     "corequisite": "",
-    "exclusion": "<p>PCJ260H1</p>",
+    "exclusion": "PCJ260H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
@@ -533,71 +536,17 @@
     "courseTitle": "The Violence of Inequality: Conflict Dynamics and Power Asymmetries",
     "code": "PCJ350H1",
     "courseDescription": "This course builds on various multi-disciplinary approaches to explore how inequalities shape violence, conflict, and post-conflict dynamics. It teaches students to understand and engage critically in debates in the field and to discover connections between the power structures that shape the emergence of violent conflicts, their dynamics, and their legacies. In addition, this course will offer students practical tools to analyze the intersection of conflict and inequality, as well as the implications of that intersection for pursuing peace. This course is a requirement for PCJ majors and specialists.",
-    "prerequisite": "<p>PCJ200H1, PCJ210H1</p>",
+    "prerequisite": "PCJ200H1, PCJ210H1",
     "corequisite": "",
-    "exclusion": "<p>PCJ261H1</p>",
+    "exclusion": "PCJ261H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
     "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "FE",
-            "assignedRoom2": "FE"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "45",
-        "actualEnrolment": "32",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>May 30, 2025: TUT delivery added</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -685,6 +634,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "FE",
+            "assignedRoom2": "FE"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "45",
+        "actualEnrolment": "32",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>May 30, 2025: TUT delivery added</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -699,6 +703,7 @@
     "recommendedPreparation": "POL208H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsThis course will explore and understand the daily lives, struggles, and resilience of people living in poverty. By delving into the tough decisions and trade-offs the poor face—often matters of life and death—we aim to shed light on how better policies and approaches can be designed to address global poverty effectively. While external solutions to poverty often dominate the conversation, we will uncover the remarkable, innovative strategies that people in poverty develop to navigate their circumstances. Surviving on meager resources requires extraordinary decision-making and adaptability. Understanding these decisions and trade-offs is a crucial starting point in the fight against poverty. Throughout the course, we will explore questions such as: How do the poor organize their social and economic lives? Why are larger families more common among the poor? How do they prepare for emergencies and old age with limited resources? By the end of the course, students will gain deep insights into the lives of the poor, understanding how seemingly irrational choices often make perfect sense in their context. While our analysis will entail an economic perspective, we will embrace a broad, interdisciplinary approach to foster rich discussions. No prior knowledge of economics is required.",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
@@ -858,6 +863,7 @@
     "recommendedPreparation": "POL208H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsSurveillance, Technology, and SocietyThis course considers how surveillance has shaped modern society. Tracing changes in surveillance over time, the course surveys how different actors, from scientists to social theorists, policymakers, and activists, have differentially conceptualized surveillance and its consequences. The course pays special attention to the social, political, and economic contexts central to emergence of data-intensive surveillance. The course assesses how new surveillance practices, including the use of artificial intelligence, are reconfiguring the relationship between industry and the state, as well as introducing human rights concerns.",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
@@ -957,12 +963,13 @@
     "courseTitle": "Experiential Learning in PCJ",
     "code": "PCJ362H1",
     "courseDescription": "This course provides students an opportunity to learn by providing valuable services to local, national, or international organizations. This model of experiential learning is called organization partner experiences, in which students work in teams on a project that is of relevance to the partner organization. The overarching theme in this course is inclusion through access to public services. Access to public services such as education, health, and public provision of services is one of the most important ways in which disadvantaged populations experience upward socioeconomic mobility. Students will gain insights about inequality of access to public service, conduct critical analysis of current issues, and produce deliverables to understand issues of socio-economic inequality in societies around the world.",
-    "prerequisite": "<p>PCJ200H1, PCJ210H1, PCJ350H1</p>",
+    "prerequisite": "PCJ200H1, PCJ210H1, PCJ350H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
@@ -1144,12 +1151,13 @@
     "courseTitle": "Justice Institutions: Crime, Violence, and Insecurity",
     "code": "PCJ380H1",
     "courseDescription": "This course examines the role of institutions that respond to crime and violence. We study the role of institutional actors centering on criminal justice: we focus in particular on criminal justice institutions, but also community organizations, government agencies, international organizations, journalists, and others–in identifying, naming, and acting upon crime and violence. We also study the strategies these institutions adopt in responding to crime, violence, and insecurity, along with evidence about how they do so and outcomes of their interventions. Finally, we attend to the relationship between criminal justice and other social outcomes, including health and well-being, collective memory, skepticism, social movements, and civic participation. Throughout the course we rely on a wide range of materials, so that in most weeks students will engage with a combination of perspectives, including social science research, legal materials, testimonies, official documents, and journalistic accounts.",
-    "prerequisite": "<p>PCJ200H1, PCJ210H1</p>",
-    "corequisite": "<p>PCJ350H1</p>",
+    "prerequisite": "PCJ200H1, PCJ210H1",
+    "corequisite": "PCJ350H1",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsThis course examines the responses of justice system institutions to concerns over crime, violence, and policing in Europe. Our substantive focus will be on how police and other justice institutions (such as prosecution and courts) respond to crime, violence, and insecurity, the outcomes of these interventions, and the views, hopes, concerns, and aspirations of individuals who experience them. We will also examine concerns and proposed solutions regarding police violence, bias, discrimination, and the effects of justice interventions for inequality and social cohesion, including the social upheavals and political disputes generated by high-profile events, current and past. Course readings will draw from a wide range of materials, ensuring that students engage with diverse perspectives, including social science research, legal texts, official documents, and journalistic accounts. Since the course is thematic, we will include research and examples from a range of countries, likely including France, Denmark, and Sweden, along with attention to the UK, and with occasional comparisons with North America. This discussion-based seminar requires students to complete all assigned readings before class and to engage in collective discussions weekly.",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
@@ -1276,12 +1284,13 @@
     "courseTitle": "Research Paper Seminar in PCJ",
     "code": "PCJ410H1",
     "courseDescription": "This course guides each student through their own individual research project, embedded in an interactive group learning process, to offer an applied introduction to research methods for peace, conflict and justice studies. Students work through the research in the field of peace, conflict and justice studies, such as: identifying a research question, learning how to write a critical literature review, developing a rigorous research design, and applying quantitative, qualitative, or mixed methods to answering research inquires. The final deliverable is a draft of a research proposal or an empirical research-based paper. This course is a requirement for PCJ Specialists and open to PCJ Majors with approval from the Director.",
-    "prerequisite": "<p>PCJ200H1, PCJ210H1, PCJ350H1</p>",
+    "prerequisite": "PCJ200H1, PCJ210H1, PCJ350H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsThis course is required for PCJ Specialists but only open to PCJ Majors with special permission by the Program Director. Please contact pcj.program@utoronto.ca if you are interested in enrolling.",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
@@ -1360,10 +1369,66 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsThe course examines the complex links between violent conflict and socio-economic development. Students will explore the macro- and micro-level processes that lead to conflict and how political violence impacts individuals and communities, particularly in terms of education, health, and labor outcomes. The course will also delve into how these micro-level effects relate to broader political, social, and economic issues, including governance and institutional development. To investigate these topics, the course will integrate theoretical frameworks and empirical data, utilizing both country-specific and cross-country evidence to critically analyze the origins of conflict and its far-reaching consequences.",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
     "meetings": {
+      "TUT-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SU",
+            "assignedRoom2": "SU"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "21",
+        "actualEnrolment": "20",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>July 7, 2025: Day/time changed</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -1451,61 +1516,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SU",
-            "assignedRoom2": "SU"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "21",
-        "actualEnrolment": "20",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>July 7, 2025: Day/time changed</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -1514,12 +1524,13 @@
     "courseTitle": "Advanced Topics in Peace, Conflict and Justice",
     "code": "PCJ460H1",
     "courseDescription": "This course explores selected issues in the field of Peace, Conflict and Justice. Topics may vary from year to year. Through a suite of recent readings, students will strive to critically examine implications and challenges of, and solutions to the issues being studied. Please visit the Trudeau Centre for Peace, Conflict and Justice website for current offering information.",
-    "prerequisite": "<p>PCJ360H1, PCJ362H1</p>",
+    "prerequisite": "PCJ360H1, PCJ362H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsThis course will examine antisemitism and responses to it. Our substantive focus will be on claims of antisemitism, challenges to them, and the evidence that is marshalled in these situations across an array of social fields and institutions — with an emphasis on issues of measurement, law, and policy. In considering concerns and claims regarding antisemitism, proposed solutions to either addressing it or mitigating its effects, and debates over approaches to anti-antisemitism, we will engage with a range of materials including social science research, legal texts, analyses, official and non-governmental documents, and journalistic accounts. Through these readings, students will acquire an understanding of issues in the definition, experience, measurement strategies, legal debates, and responses to antisemitism today. While oriented to contemporary antisemitism in legal and policy domains, we will pay some attention to historical events and longstanding legacies as elements of current political, legal, measurement, and social disputes, especially those generated by high-profile events.",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
@@ -1651,12 +1662,13 @@
     "courseTitle": "Advanced Topics in Peace, Conflict and Justice",
     "code": "PCJ460H1",
     "courseDescription": "This course explores selected issues in the field of Peace, Conflict and Justice. Topics may vary from year to year. Through a suite of recent readings, students will strive to critically examine implications and challenges of, and solutions to the issues being studied. Please visit the Trudeau Centre for Peace, Conflict and Justice website for current offering information.",
-    "prerequisite": "<p>PCJ360H1, PCJ362H1</p>",
+    "prerequisite": "PCJ360H1, PCJ362H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsThis Topics in Global Justice course hosted by the Master of Global Affairs Program is open to 4th year PCJ students only.",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
@@ -1756,12 +1768,13 @@
     "courseTitle": "Peace and Conflict Studies Independent Study Course",
     "code": "PCJ499H1",
     "courseDescription": "This course is designed to provide students with the opportunity to explore topics not covered in the curriculum, or to develop a more detailed focus on topics covered. Approval of the program director is required. The student must obtain written agreement of the instructor who will supervise the independent study, submit the proposal to and obtain approval from the director and program administrator, who will then add the student to the course. Not eligible for CR/NCR option. Applications are due two weeks before course enrolment deadlines.",
-    "prerequisite": "<p>PCJ260Y1/ (PCJ260H1, PCJ261H1)</p>",
+    "prerequisite": "PCJ260Y1/ (PCJ260H1, PCJ261H1)",
     "corequisite": "",
     "exclusion": "PCS499H1",
     "recommendedPreparation": "For students enrolled in the Peace, Conflict and Justice Major or Specialist program.",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
@@ -1888,12 +1901,13 @@
     "courseTitle": "Peace and Conflict Studies Independent Study Course",
     "code": "PCJ499H1",
     "courseDescription": "This course is designed to provide students with the opportunity to explore topics not covered in the curriculum, or to develop a more detailed focus on topics covered. Approval of the program director is required. The student must obtain written agreement of the instructor who will supervise the independent study, submit the proposal to and obtain approval from the director and program administrator, who will then add the student to the course. Not eligible for CR/NCR option. Applications are due two weeks before course enrolment deadlines.",
-    "prerequisite": "<p>PCJ260Y1/ (PCJ260H1, PCJ261H1)</p>",
+    "prerequisite": "PCJ260Y1/ (PCJ260H1, PCJ261H1)",
     "corequisite": "",
     "exclusion": "PCS499H1",
     "recommendedPreparation": "For students enrolled in the Peace, Conflict and Justice Major or Specialist program.",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
@@ -2014,12 +2028,13 @@
     "courseTitle": "Peace and Conflict Studies Independent Study Course",
     "code": "PCJ499H1",
     "courseDescription": "This course is designed to provide students with the opportunity to explore topics not covered in the curriculum, or to develop a more detailed focus on topics covered. Approval of the program director is required. The student must obtain written agreement of the instructor who will supervise the independent study, submit the proposal to and obtain approval from the director and program administrator, who will then add the student to the course. Not eligible for CR/NCR option. Applications are due two weeks before course enrolment deadlines.",
-    "prerequisite": "<p>PCJ260Y1/ (PCJ260H1, PCJ261H1)</p>",
+    "prerequisite": "PCJ260Y1/ (PCJ260H1, PCJ261H1)",
     "corequisite": "",
     "exclusion": "PCS499H1",
     "recommendedPreparation": "For students enrolled in the Peace, Conflict and Justice Major or Specialist program.",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsPlease contact the PCJ Program Coordinator and PCJ Program Director if you are interested in taking this independent study course.",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",

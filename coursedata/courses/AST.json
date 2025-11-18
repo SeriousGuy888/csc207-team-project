@@ -6,10 +6,11 @@
     "courseDescription": "Our place in the Universe. Phenomena we see in the sky. What we know about the Sun, the planets and comets, and the formation of the solar system – and how we know it. What makes planets suitable for life. Finding out about the nearest stars and their planets. This course is intended for students with no science or engineering background.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<p>AST121H1, AST101H5, ASTA01H3, ASTC25H3, <a href=\"https://engineering.calendar.utoronto.ca/course/civ100h1\">CIV100H1</a>, CIV101H1, <a href=\"https://engineering.calendar.utoronto.ca/course/civ102h1\">CIV102H1</a>. Also excluded are AST221H1, ASTC25H3 if taken previously or concurrently.</p>",
+    "exclusion": "AST121H1, AST101H5, ASTA01H3, ASTC25H3, CIV100H1, CIV101H1, CIV102H1. Also excluded are AST221H1, ASTC25H3 if taken previously or concurrently.",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -285,6 +286,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -406,35 +408,36 @@
     "recommendedPreparation": "SPH4U and MHF4U and MCV4U",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MN",
-            "assignedRoom2": "MN"
-          },
-          "TU-1": {
+          "TU-0": {
             "meetingDay": "TU",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "DH",
+            "assignedRoom2": "DH"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
             "meetingStartTime": "11:00",
             "meetingEndTime": "12:00",
             "meetingScheduleId": "1",
             "assignedRoom1": "DH",
             "assignedRoom2": "DH"
           },
-          "TH-2": {
-            "meetingDay": "TH",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
+          "MO-2": {
+            "meetingDay": "MO",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "2",
-            "assignedRoom1": "DH",
-            "assignedRoom2": "DH"
+            "assignedRoom1": "MN",
+            "assignedRoom2": "MN"
           }
         },
         "instructors": {
@@ -523,10 +526,11 @@
     "courseDescription": "This course will explore the historic and ongoing relationship between astronomy and human culture. In this course, students will approach astronomical concepts through the lens of archaeoastronomy – the exploration of astronomical practices in ancient cultures, and ethnoastronomy – the study of modern astronomical practices by cultures around the world. Topics will include cultural interpretations of the motions of the stars, planets, moon, and sun, methods of navigation and timekeeping, puzzles that have inspired important shifts in our understanding of the Universe, and varying cultural conceptions of what science is and how it is done.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<p>AST101H5 or AST101H1 or AST215H5 or AST210H1 or ASTB03H3</p>",
+    "exclusion": "AST101H5 or AST101H1 or AST215H5 or AST210H1 or ASTB03H3",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -636,10 +640,11 @@
     "courseDescription": "The origin of the Universe and all that it contains, from the chemical elements, stars and galaxies, and life. The course is intended for students who are enrolling in science and engineering courses.",
     "prerequisite": "SPH4U Physics; MCB4U Calculus",
     "corequisite": "",
-    "exclusion": "<p>AST101H1, AST201H1, AST210H1. Also excluded are AST221H1, AST222H1 if taken previously or concurrently.</p>",
+    "exclusion": "AST101H1, AST201H1, AST210H1. Also excluded are AST221H1, AST222H1 if taken previously or concurrently.",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -780,6 +785,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -858,6 +864,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -932,10 +939,11 @@
     "courseDescription": "What we know about the properties and life cycles of stars, of galaxies, and of the Universe itself – and how we know it. How astronomers develop methods for understanding phenomena that span such vast ranges in distance and time. This course is intended for students with no science or engineering background.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<p>AST121H1, AST210H1, AST201H5, ASTA02H3, CIV100H1, CIV101H1, CIV102H1. Also excluded are AST221H1, AST222H1, ASTB23H3 if taken previously or concurrently.</p>",
+    "exclusion": "AST121H1, AST210H1, AST201H5, ASTA02H3, CIV100H1, CIV101H1, CIV102H1. Also excluded are AST221H1, AST222H1, ASTB23H3 if taken previously or concurrently.",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -975,7 +983,7 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "1500",
-        "actualEnrolment": "1122",
+        "actualEnrolment": "1121",
         "actualWaitlist": "0",
         "enrollmentIndicator": "P*",
         "meetingStatusNotes": null,
@@ -1207,31 +1215,32 @@
     "courseDescription": "The Universe extends from the Sun to the most distant regions we can observe. This course explores our Sun, the other stars, the Milky Way galaxy in which our Sun lives, other galaxies that are far outside our Milky Way, and the most distant objects we can observe. In addition, the course presents evidence that everything we observe is just a small fraction of what exists in the Universe. The course content considers how the Universe began and evolved over time and the possibility of life beyond Earth.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "AST121H1 or AST201H1 or AST210H1 or AST221H1 or AST222H1 or ASTA02H3 or ASTB23H3 ",
+    "exclusion": "AST121H1 or AST201H1 or AST210H1 or AST221H1 or AST222H1 or ASTA02H3 or ASTB23H3",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IB",
-            "assignedRoom2": "IB"
-          },
-          "FR-1": {
+          "FR-0": {
             "meetingDay": "FR",
             "meetingStartTime": "14:00",
             "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "DV",
             "assignedRoom2": "DV"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "IB",
+            "assignedRoom2": "IB"
           },
           "WE-2": {
             "meetingDay": "WE",
@@ -1326,12 +1335,13 @@
     "courseTitle": "Stars and Planets",
     "code": "AST221H1",
     "courseDescription": "The (astro)physics of stars and planets, their observed variety, their structure, formation and evolution. Introduction to telescopes and instrumentation.",
-    "prerequisite": "<p>PHY132H1/ PHY152H1; MAT136H1/ MAT137Y1/ MAT157Y1</p>",
+    "prerequisite": "PHY132H1/ PHY152H1; MAT136H1/ MAT137Y1/ MAT157Y1",
     "corequisite": "",
-    "exclusion": "<p>AST221H5, ASTB23H3, ASTC25H3</p>",
+    "exclusion": "AST221H5, ASTB23H3, ASTC25H3",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -1501,12 +1511,13 @@
     "courseTitle": "Astrophysics I - Planets, Sun and Stars",
     "code": "AST221H5",
     "courseDescription": "This course explores the astrophysics of planets, Sun and stars, including their observed variety, structure, formation and evolution.",
-    "prerequisite": "<p>[MAT135H5 and MAT136H5) or (MAT137H5 and MAT139H5) or (MAT157H5 and MAT159H5) or MAT137Y5 or MAT157Y5] and [PHY146H5 and PHY147H5 (Exceptions for PHY136H5 and PHY137H5 may be made with consultation of the course instructor)].</p>",
+    "prerequisite": "[MAT135H5 and MAT136H5) or (MAT137H5 and MAT139H5) or (MAT157H5 and MAT159H5) or MAT137Y5 or MAT157Y5] and [PHY146H5 and PHY147H5 (Exceptions for PHY136H5 and PHY137H5 may be made with consultation of the course instructor)].",
     "corequisite": "",
     "exclusion": "AST221H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -1622,12 +1633,13 @@
     "courseTitle": "Galaxies and Cosmology",
     "code": "AST222H1",
     "courseDescription": "The (astro)physics of stellar systems, galaxies, and the Universe, their structure, formation, and evolution.",
-    "prerequisite": "<p>AST221H1/AST221H5</p>",
+    "prerequisite": "AST221H1/AST221H5",
     "corequisite": "",
-    "exclusion": "<p>AST222H5, ASTB23H3, ASTC25H3</p>",
+    "exclusion": "AST222H5, ASTB23H3, ASTC25H3",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -1776,6 +1788,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -1893,10 +1906,11 @@
     "courseDescription": "Scholarly discussion of the probability that there are planets with life elsewhere in the universe, from the perspective of current ideas concerning the origin and evolution of the universe, the solar system and life. Search techniques and possibilities for interstellar travel and space colonies are discussed.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<p>AST221H1, AST222H1, AST222H5, ASTB23H3, ASTC25H3</p>",
+    "exclusion": "AST221H1, AST222H1, AST222H5, ASTB23H3, ASTC25H3",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -2025,31 +2039,32 @@
     "courseDescription": "This course addresses the question of life beyond Earth. Starting with our current understanding of how life began and evolved on Earth, the course explores possibility that life might have developed elsewhere in the Universe. It summarizes the evidence that the conditions necessary for life might exist today or existed in the past on other planets in our solar system. This search for evidence of life is then extended to the thousands of planets that have been discovered orbiting other stars.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<p>AST251H1</p>",
+    "exclusion": "AST251H1",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "CC",
-            "assignedRoom2": "CC"
-          },
-          "TU-1": {
+          "TU-0": {
             "meetingDay": "TU",
             "meetingStartTime": "09:00",
             "meetingEndTime": "11:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "IB",
             "assignedRoom2": "IB"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "CC",
+            "assignedRoom2": "CC"
           }
         },
         "instructors": {
@@ -2142,6 +2157,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -2263,71 +2279,17 @@
     "courseTitle": "Observational Astronomy",
     "code": "AST301H1",
     "courseDescription": "A hands-on introduction to telescopes and observational astronomy for students with little experience in the physical sciences. Through laboratory exercises and observations of the sky, students will learn the techniques that have enabled the major discoveries of modern astronomy, from the expansion of the universe to the existence of Earth-like planets orbiting other stars. Hands-on activities will teach how telescopes work and how we can measure the distances, motion, and chemical composition of celestial objects. Basic arithmetic is used, but no advanced mathematics. This course is intended for students without a formal science background to gain experience with hands-on observational astronomy.",
-    "prerequisite": "<p>AST101H1/ AST201H1/ AST251H1</p>",
+    "prerequisite": "AST101H1/ AST201H1/ AST251H1",
     "corequisite": "",
-    "exclusion": "<p>AST221H1, AST222H1, AST325H1, AST326Y1, AST110H5, AST221H5, AST222H5, ASTB23H3, ASTC25H3</p>",
+    "exclusion": "AST221H1, AST222H1, AST325H1, AST326Y1, AST110H5, AST221H5, AST222H5, ASTB23H3, ASTC25H3",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "16:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "MY",
-            "assignedRoom2": "MY"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "50",
-        "actualEnrolment": "36",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -2452,6 +2414,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "MY",
+            "assignedRoom2": "MY"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "50",
+        "actualEnrolment": "36",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -2460,16 +2477,141 @@
     "courseTitle": "Introduction to Astrophysics",
     "code": "AST320H1",
     "courseDescription": "The formation, equilibrium and evolution of structure on all astronomical scales from the largest to the smallest: universe, clusters of galaxies, galaxies, clusters of stars, gas clouds and stars.",
-    "prerequisite": "<p>PHY252H1/ PHY294H1/ PHY242H5/ PHYB52H3; AST221H1, AST222H1 (or equivalent AST readings; consult the instructor)</p>",
+    "prerequisite": "PHY252H1/ PHY294H1/ PHY242H5/ PHYB52H3; AST221H1, AST222H1 (or equivalent AST readings; consult the instructor)",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
+      "TUT-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "AB",
+            "assignedRoom2": "AB"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "40",
+        "actualEnrolment": "40",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-2001": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Christopher",
+            "lastName": "Matzner"
+          }
+        },
+        "meetingId": "LEC2001",
+        "teachingMethod": "LEC",
+        "sectionNumber": "2001",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "4",
+        "actualEnrolment": "4",
+        "actualWaitlist": "2",
+        "enrollmentIndicator": "R1",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "APSC",
+            "primaryOrgName": "Faculty of Applied Science & Engineering",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -2647,61 +2789,6 @@
           }
         ]
       },
-      "TUT-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "16:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "AB",
-            "assignedRoom2": "AB"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "40",
-        "actualEnrolment": "40",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "TUT-0201": {
         "schedule": {
           "FR-0": {
@@ -2756,75 +2843,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "LEC-2001": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          },
-          "TU-1": {
-            "meetingDay": "TU",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Christopher",
-            "lastName": "Matzner"
-          }
-        },
-        "meetingId": "LEC2001",
-        "teachingMethod": "LEC",
-        "sectionNumber": "2001",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "4",
-        "actualEnrolment": "4",
-        "actualWaitlist": "2",
-        "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "APSC",
-            "primaryOrgName": "Faculty of Applied Science & Engineering",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -2839,6 +2857,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
@@ -2946,12 +2965,13 @@
     "courseTitle": "Introduction to Practical Astronomy",
     "code": "AST325H1",
     "courseDescription": "Through experiment and observation, develop the core skills to collect, reduce, and interpret astronomical data. Develop understanding and usage of telescopes, instruments, and detectors; reduction and analysis methods; simulations and model fitting; data and error analysis.",
-    "prerequisite": "<p>AST221H1, AST222H1 (or equivalent readings, consult the instructor)</p>",
+    "prerequisite": "AST221H1, AST222H1 (or equivalent readings, consult the instructor)",
     "corequisite": "",
     "exclusion": "AST326Y1",
-    "recommendedPreparation": "<p>Basic programming/scripting, numerical techniques (e.g., through CSC108H1/ CSC148H1).</p>",
+    "recommendedPreparation": "Basic programming/scripting, numerical techniques (e.g., through CSC108H1/ CSC148H1).",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -3138,71 +3158,17 @@
     "courseTitle": "Observational Astronomy",
     "code": "AST325H5",
     "courseDescription": "This course will guide students to develop the core skills to collect, reduce, and interpret astronomical data. Through a series of projects and observing labs, students will develop their skillset for the usage of telescopes, instruments, and detectors; reduction and statistical analysis methods; simulations and model fitting; and data and error analysis.",
-    "prerequisite": "<p>AST221H5 and AST222H5</p>",
+    "prerequisite": "AST221H5 and AST222H5",
     "corequisite": "",
-    "exclusion": "<p>AST325H1 or AST326Y1</p>",
+    "exclusion": "AST325H1 or AST326Y1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "Science",
     "meetings": {
-      "PRA-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "16:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "CC",
-            "assignedRoom2": "CC"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "17",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -3290,6 +3256,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "CC",
+            "assignedRoom2": "CC"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "17",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -3298,16 +3319,80 @@
     "courseTitle": "Practical Astronomy",
     "code": "AST326Y1",
     "courseDescription": "Through experiment and observation, develop the core skills to collect, reduce, and interpret astronomical data. Develop understanding and usage of telescopes, instruments, and detectors; reduction and analysis methods; simulations and model fitting; data and error analysis. This course is an expanded version of AST325H1 that gives a wider exposure to practical astronomy.",
-    "prerequisite": "<p>AST221H1, AST222H1 (or equivalent readings; consult the instructor)</p>",
+    "prerequisite": "AST221H1, AST222H1 (or equivalent readings; consult the instructor)",
     "corequisite": "",
     "exclusion": "AST325H1",
-    "recommendedPreparation": "<p>Basic programming/scripting, numerical techniques (e.g., through CSC108H1/ CSC148H1)</p>",
+    "recommendedPreparation": "Basic programming/scripting, numerical techniques (e.g., through CSC108H1/ CSC148H1)",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
     "meetings": {
+      "PRA-5101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "18:00",
+            "meetingEndTime": "19:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "BF",
+            "assignedRoom2": "BF"
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA5101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "5101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "40",
+        "actualEnrolment": "30",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>June 6, 2025: Section added.</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -3435,69 +3520,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "PRA-5101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          },
-          "TH-1": {
-            "meetingDay": "TH",
-            "meetingStartTime": "18:00",
-            "meetingEndTime": "19:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "BF",
-            "assignedRoom2": "BF"
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA5101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "5101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "40",
-        "actualEnrolment": "30",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>June 6, 2025: Section added.</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -3506,12 +3528,13 @@
     "courseTitle": "Introduction to Astrophysical Research",
     "code": "AST424H1",
     "courseDescription": "A literature study or guided research project that develops methods and skills applicable to the physical sciences, with an emphasis on communication, including writing proposals and reports, and delivering presentations. This course is intended for students in the final year of the Astronomy & Astrophysics Major. Students are required to attend the weekly departmental colloquia or seminars. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>AST320H1 (or AST221H1 and AST222H1 and a minimum GPA of 3.5 in Astronomy program courses and the permission of the Undergraduate Chair and the prospective adviser)</p>",
+    "prerequisite": "AST320H1 (or AST221H1 and AST222H1 and a minimum GPA of 3.5 in Astronomy program courses and the permission of the Undergraduate Chair and the prospective adviser)",
     "corequisite": "",
     "exclusion": "AST425Y1",
-    "recommendedPreparation": "<p>AST325H1/ AST326Y1</p>",
+    "recommendedPreparation": "AST325H1/ AST326Y1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Science",
@@ -3638,12 +3661,13 @@
     "courseTitle": "Introduction to Astrophysical Research",
     "code": "AST424H1",
     "courseDescription": "A literature study or guided research project that develops methods and skills applicable to the physical sciences, with an emphasis on communication, including writing proposals and reports, and delivering presentations. This course is intended for students in the final year of the Astronomy & Astrophysics Major. Students are required to attend the weekly departmental colloquia or seminars. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>AST320H1 (or AST221H1 and AST222H1 and a minimum GPA of 3.5 in Astronomy program courses and the permission of the Undergraduate Chair and the prospective adviser)</p>",
+    "prerequisite": "AST320H1 (or AST221H1 and AST222H1 and a minimum GPA of 3.5 in Astronomy program courses and the permission of the Undergraduate Chair and the prospective adviser)",
     "corequisite": "",
     "exclusion": "AST425Y1",
-    "recommendedPreparation": "<p>AST325H1/ AST326Y1</p>",
+    "recommendedPreparation": "AST325H1/ AST326Y1",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Science",
@@ -3718,12 +3742,13 @@
     "courseTitle": "Research Topic in Astronomy",
     "code": "AST425Y1",
     "courseDescription": "A research project done in consultation with an individual staff member in the Department leading to a detailed written report and oral presentation. This course is intended for students in the final year of the Astronomy and Physics specialist program. Students must enrol with the Undergraduate Secretary of the Department. Enrolment is guaranteed only for specialist students with at least a B+ average in program courses and requires identifying a supervisor. Others who wish to take AST425Y1 should consult the course coordinator or the undergraduate chair. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>AST320H1, two of AST325H1/ AST326Y1, PHY324H1, PHY350H1, PHY354H1, PHY356H1, PHY357H1, PHY358H1, PHY407H1/ PHY408H1, PHY450H1, JPE395H1</p>",
+    "prerequisite": "AST320H1, two of AST325H1/ AST326Y1, PHY324H1, PHY350H1, PHY354H1, PHY356H1, PHY357H1, PHY358H1, PHY407H1/ PHY408H1, PHY450H1, JPE395H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -3885,12 +3910,13 @@
     "courseTitle": "Supervised Study in Astronomy & Astrophysics",
     "code": "AST430H1",
     "courseDescription": "An individual study program chosen by the student with the advice of, and under the direction of, a staff member. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>Minimum GPA of 3.5 in Astronomy program courses and the permission of the Undergraduate Chair and the prospective adviser</p>",
+    "prerequisite": "Minimum GPA of 3.5 in Astronomy program courses and the permission of the Undergraduate Chair and the prospective adviser",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -3957,12 +3983,13 @@
     "courseTitle": "Supervised Study in Astronomy & Astrophysics",
     "code": "AST430H1",
     "courseDescription": "An individual study program chosen by the student with the advice of, and under the direction of, a staff member. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>Minimum GPA of 3.5 in Astronomy program courses and the permission of the Undergraduate Chair and the prospective adviser</p>",
+    "prerequisite": "Minimum GPA of 3.5 in Astronomy program courses and the permission of the Undergraduate Chair and the prospective adviser",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -4029,12 +4056,13 @@
     "courseTitle": "Supervised Study in Astronomy & Astrophysics",
     "code": "AST430H1",
     "courseDescription": "An individual study program chosen by the student with the advice of, and under the direction of, a staff member. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>Minimum GPA of 3.5 in Astronomy program courses and the permission of the Undergraduate Chair and the prospective adviser</p>",
+    "prerequisite": "Minimum GPA of 3.5 in Astronomy program courses and the permission of the Undergraduate Chair and the prospective adviser",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -4101,12 +4129,13 @@
     "courseTitle": "Supervised Study in Astronomy & Astrophysics",
     "code": "AST431H1",
     "courseDescription": "An individual study program chosen by the student with the advice of, and under the direction of, a staff member. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>Minimum GPA of 3.5 in Astronomy program courses and the permission of the Undergraduate Chair and the prospective adviser</p>",
+    "prerequisite": "Minimum GPA of 3.5 in Astronomy program courses and the permission of the Undergraduate Chair and the prospective adviser",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -4173,12 +4202,13 @@
     "courseTitle": "Supervised Study in Astronomy & Astrophysics",
     "code": "AST431Y1",
     "courseDescription": "An individual study program chosen by the student with the advice of, and under the direction of, a staff member. Not eligible for CR/NCR option.",
-    "prerequisite": "<p>Minimum GPA of 3.5 in Astronomy program courses and the permission of the Undergraduate Chair and the prospective adviser</p> <br />",
+    "prerequisite": "Minimum GPA of 3.5 in Astronomy program courses and the permission of the Undergraduate Chair and the prospective adviser",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "The Physical and Mathematical Universes (5)",
     "distributionCategories": "Science",
@@ -4257,10 +4287,66 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
     "meetings": {
+      "TUT-0001": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "AA",
+            "assignedRoom2": "AA"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0001",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0001",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "33",
+        "actualEnrolment": "22",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-01": {
         "schedule": {
           "TH-0": {
@@ -4357,61 +4443,6 @@
           }
         ]
       },
-      "TUT-0001": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "AA",
-            "assignedRoom2": "AA"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0001",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0001",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "33",
-        "actualEnrolment": "22",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "TUT-0006": {
         "schedule": {
           "TH-0": {
@@ -4480,175 +4511,11 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
     "meetings": {
-      "TUT-0002": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IC",
-            "assignedRoom2": "IC"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0002",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0002",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "1",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0005": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BV",
-            "assignedRoom2": "BV"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0005",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0005",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0003": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "AC",
-            "assignedRoom2": "AC"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0003",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0003",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "TUT-0001": {
         "schedule": {
           "TH-0": {
@@ -4671,61 +4538,6 @@
         "online": "In Person",
         "enrollmentCapacity": "25",
         "actualEnrolment": "15",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0004": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IC",
-            "assignedRoom2": "IC"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0004",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0004",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -4881,6 +4693,226 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0003": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "AC",
+            "assignedRoom2": "AC"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0003",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0003",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0004": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IC",
+            "assignedRoom2": "IC"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0004",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0004",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0002": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IC",
+            "assignedRoom2": "IC"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0002",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0002",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "1",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0005": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BV",
+            "assignedRoom2": "BV"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0005",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0005",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -4889,16 +4921,72 @@
     "courseTitle": "Astrophysics of Stars, Galaxies and the Universe",
     "code": "ASTB23H3",
     "courseDescription": "Overview of astrophysics (except planetary astrophysics). Appropriate level for science students. Structure and evolution of stars, white dwarfs, neutron stars. Structure of Milky Way. Classification of galaxies. Potential theory, rotation curves, orbits, dark matter. Spiral patterns. Galaxy clusters. Mergers. Black holes in active galactic nuclei. Expansion of universe, dark energy.",
-    "prerequisite": "<p>[MATA30H3 or MATA31H3] and [MATA36H3 or MATA37H3] and PHYA21H3</p>",
+    "prerequisite": "[MATA30H3 or MATA31H3] and [MATA36H3 or MATA37H3] and PHYA21H3",
     "corequisite": "MATB41H3",
     "exclusion": "(ASTB21H3), (ASTC22H3), [AST221H and AST222H]",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
     "meetings": {
+      "TUT-0001": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "18:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "IA",
+            "assignedRoom2": "IA"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0001",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0001",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "73",
+        "actualEnrolment": "56",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-01": {
         "schedule": {
           "TH-0": {
@@ -5121,61 +5209,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "TUT-0001": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "18:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "IA",
-            "assignedRoom2": "IA"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0001",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0001",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "73",
-        "actualEnrolment": "56",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -5190,6 +5223,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",
@@ -5431,6 +5465,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Natural Sciences",
     "distributionCategories": "",

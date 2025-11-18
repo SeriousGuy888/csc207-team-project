@@ -10,6 +10,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -143,6 +144,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsThis course is restricted to two groups of students. Group 1 is given priority access until July 23. Beginning July 25, Group 2 can enrol in this course.Group 1: Year 1 INNIS studentsGroup 2: Year 1 FAS students",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -248,6 +250,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -326,6 +329,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -465,6 +469,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Delivery InstructionsLEC0101 requires attendance at a specific time and location for the final exam. Attendance at a specific time or location is not required for any other activities.The course instructor will provide more details on Quercus.",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -524,28 +529,28 @@
           }
         ]
       },
-      "TUT-0201": {
+      "TUT-0101": {
         "schedule": {
           "WE-0": {
             "meetingDay": "WE",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "",
             "assignedRoom2": ""
           }
         },
         "instructors": {},
-        "meetingId": "TUT0201",
+        "meetingId": "TUT0101",
         "teachingMethod": "TUT",
-        "sectionNumber": "0201",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "SYNC",
         "online": "Online",
         "enrollmentCapacity": "32",
-        "actualEnrolment": "29",
+        "actualEnrolment": "27",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -579,28 +584,28 @@
           }
         ]
       },
-      "TUT-0101": {
+      "TUT-0201": {
         "schedule": {
           "WE-0": {
             "meetingDay": "WE",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "",
             "assignedRoom2": ""
           }
         },
         "instructors": {},
-        "meetingId": "TUT0101",
+        "meetingId": "TUT0201",
         "teachingMethod": "TUT",
-        "sectionNumber": "0101",
+        "sectionNumber": "0201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "SYNC",
         "online": "Online",
         "enrollmentCapacity": "32",
-        "actualEnrolment": "27",
+        "actualEnrolment": "29",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -816,6 +821,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -960,69 +966,15 @@
     "courseDescription": "The abundance of raw data in biological sciences continues to grow year after year. The skills required to navigate and thrive in this field are no longer confined to the laboratory bench as experimental results go beyond simple analyses. This course will introduce basic tools used in the analysis of big data such as dimensional reduction, visualization, and machine learning. Students will get practical experience writing code to analyze example datasets.",
     "prerequisite": "",
     "corequisite": "",
-    "exclusion": "<p>STA272H1, STA302H1</p>",
-    "recommendedPreparation": "<p>Students should familiarize themselves with basic summary and statistical analyses. Preferably, EEB125H1 or GGR274H1</p>",
+    "exclusion": "STA272H1, STA302H1",
+    "recommendedPreparation": "Students should familiarize themselves with basic summary and statistical analyses. Preferably, EEB125H1 or GGR274H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
     "meetings": {
-      "TUT-0201": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "UC",
-            "assignedRoom2": "UC"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0201",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "20",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TH-0": {
@@ -1170,6 +1122,61 @@
           }
         ]
       },
+      "TUT-0201": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "UC",
+            "assignedRoom2": "UC"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0201",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "20",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "TUT-0101": {
         "schedule": {
           "TU-0": {
@@ -1238,6 +1245,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1316,71 +1324,11 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsResearch Opportunity Program. For more information, please go to: https://www.artsci.utoronto.ca/current/academics/research-opportunities",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Science",
     "meetings": {
-      "LEC-0201": {
-        "schedule": {
-          "-": {
-            "meetingDay": null,
-            "meetingStartTime": null,
-            "meetingEndTime": null,
-            "meetingScheduleId": null,
-            "assignedRoom1": null,
-            "assignedRoom2": null
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Shelley",
-            "lastName": "Lumba"
-          }
-        },
-        "meetingId": "LEC0201",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "9999",
-        "actualEnrolment": "1",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "E",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "-": {
@@ -1441,6 +1389,67 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "LEC-0201": {
+        "schedule": {
+          "-": {
+            "meetingDay": null,
+            "meetingStartTime": null,
+            "meetingEndTime": null,
+            "meetingScheduleId": null,
+            "assignedRoom1": null,
+            "assignedRoom2": null
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Shelley",
+            "lastName": "Lumba"
+          }
+        },
+        "meetingId": "LEC0201",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "9999",
+        "actualEnrolment": "1",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "E",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -1455,6 +1464,7 @@
     "recommendedPreparation": "EEB266H1, EEB267H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsTutorial enrolment can be done on ACORN until Thursday, September 4th. For late tutorial enrolment or changes, please email Nalini Dominique-Guyah at nalini.dominique@utoronto.ca after this date with subject line: CSB325 tutorial enrolment. Please include a copy of your timetable with your request.",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -1514,28 +1524,28 @@
           }
         ]
       },
-      "TUT-0201": {
+      "TUT-5201": {
         "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "16:00",
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "17:00",
+            "meetingEndTime": "20:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "UC",
-            "assignedRoom2": "UC"
+            "assignedRoom1": "RW",
+            "assignedRoom2": "RW"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0201",
+        "meetingId": "TUT5201",
         "teachingMethod": "TUT",
-        "sectionNumber": "0201",
+        "sectionNumber": "5201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "27",
-        "actualEnrolment": "20",
+        "actualEnrolment": "15",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1624,28 +1634,28 @@
           }
         ]
       },
-      "TUT-5201": {
+      "TUT-0201": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "17:00",
-            "meetingEndTime": "20:00",
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "16:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "RW",
-            "assignedRoom2": "RW"
+            "assignedRoom1": "UC",
+            "assignedRoom2": "UC"
           }
         },
         "instructors": {},
-        "meetingId": "TUT5201",
+        "meetingId": "TUT0201",
         "teachingMethod": "TUT",
-        "sectionNumber": "5201",
+        "sectionNumber": "0201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "27",
-        "actualEnrolment": "15",
+        "actualEnrolment": "20",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -1834,27 +1844,28 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          },
-          "WE-1": {
+          "WE-0": {
             "meetingDay": "WE",
             "meetingStartTime": "09:00",
             "meetingEndTime": "11:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "BL",
             "assignedRoom2": "BL"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
           }
         },
         "instructors": {
@@ -2136,6 +2147,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -2162,61 +2174,6 @@
         "online": "In Person",
         "enrollmentCapacity": "60",
         "actualEnrolment": "58",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "PRA-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "60",
-        "actualEnrolment": "57",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -2666,6 +2623,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "60",
+        "actualEnrolment": "57",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -2680,230 +2692,11 @@
     "recommendedPreparation": "BIO260H1/HMB265H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsTutorial enrolment can be done on ACORN until Thursday, January 8th. For late tutorial enrolment or changes, please email Nalini Dominique-Guyah at nalini.dominique@utoronto.ca after this date with subject line: CSB329 tutorial enrolment. Please include a copy of your timetable with your request",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
     "meetings": {
-      "TUT-0301": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0301",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0301",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "30",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0201": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0201",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "30",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0401": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0401",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0401",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "28",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "10:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "30",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -2932,7 +2725,7 @@
         "online": "In Person",
         "enrollmentCapacity": "200",
         "actualEnrolment": "200",
-        "actualWaitlist": "32",
+        "actualWaitlist": "33",
         "enrollmentIndicator": "P",
         "meetingStatusNotes": null,
         "enrollmentControls": [
@@ -3343,6 +3136,116 @@
           }
         ]
       },
+      "TUT-0201": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0201",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0201",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "30",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "10:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "30",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "TUT-0402": {
         "schedule": {
           "TU-0": {
@@ -3365,6 +3268,116 @@
         "online": "In Person",
         "enrollmentCapacity": "30",
         "actualEnrolment": "30",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0301": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0301",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0301",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "30",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0401": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0401",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0401",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "28",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -3460,12 +3473,13 @@
     "courseTitle": "Techniques in Molecular and Cell Biology",
     "code": "CSB330H1",
     "courseDescription": "Laboratory course on molecular and cell biology research techniques used to study genes and proteins. Topics include plasmid cloning, PCR, bioinformatics, gene expression analyses, protein-protein interactions, and protein subcellular localization. (Lab Materials Fee: $53). A lab coat and safety glasses are required for use in laboratories; students are responsible for purchasing these (approximate cost is $27).",
-    "prerequisite": "<p>BIO230H1/ BIO255H1, BIO260H1/ HMB265H1</p>",
+    "prerequisite": "BIO230H1/ BIO255H1, BIO260H1/ HMB265H1",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>BCH311H1/ CSB349H1/ MGY311Y1 taken concurrently</p>",
+    "recommendedPreparation": "BCH311H1/ CSB349H1/ MGY311Y1 taken concurrently",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -3901,6 +3915,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -4283,12 +4298,13 @@
     "courseTitle": "Methods and Analysis in Behavioural Neuroscience",
     "code": "CSB334H1",
     "courseDescription": "The scale and complexity of biological data are fast expanding as biotechnology develops. How are we going to process and interpret large-scale data? Using example-based approaches in the context of behavioural neuroscience (e.g., sleep, movement, learning, decision-making), this course aims to bridge biology and computational analysis techniques. Through lectures and hands-on sessions, students will learn about modern methodology in neuroscience (e.g., electrophysiology, optogenetics, calcium imaging) and how to analyze neural data sets. Students will be introduced to programming in MATLAB tailored for neuroscience, signal processing, image processing, statistical analysis, and machine learning techniques. By developing practical skills through various neural data types (e.g., EEG, EMG, Ca2+ Imaging), this course equips students with the skills to handle neural data, basic computational approaches in neuroscience, and a quantitative understanding of brain functionality.",
-    "prerequisite": "<p>(BIO270H1, BIO271H1/ PSL300H1, PSL301H1), MAT136H1</p>",
+    "prerequisite": "(BIO270H1, BIO271H1/ PSL300H1, PSL301H1), MAT136H1",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>Students should familiarize themselves with linear algebra. A strong interest in neuroscience, data analysis, or computational biology is recommended. Recommended course: CJH332H1</p>",
+    "recommendedPreparation": "Students should familiarize themselves with linear algebra. A strong interest in neuroscience, data analysis, or computational biology is recommended. Recommended course: CJH332H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -4535,6 +4551,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -4675,6 +4692,7 @@
     "recommendedPreparation": "BCH210H1/BCH242Y1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -4841,126 +4859,17 @@
     "courseTitle": "Introductory Biology of Sleep",
     "code": "CSB345H1",
     "courseDescription": "This course will cover fundamental theories on the regulation, evolution, and function of sleep-wake states – how and why animals sleep. Sleep is a behavioural state that occurs in all vertebrates and it has also been identified in several species of invertebrates. In these animals, sleep is associated with profound changes in physiological function at the molecular, cellular and system levels. Furthermore, sleep has marked implications for the neurobiology of behaviour and the evolution of organisms because of the impact it has on cognitive function, memory consolidation, and overall health. The course will be integrative and comparative, linking together concepts from all levels of biological organization (molecular to whole organism) and drawing examples from a variety of different animals.",
-    "prerequisite": "<p>(BIO270H1, BIO271H1)/ (PSL300H1, PSL301H1)</p>",
+    "prerequisite": "(BIO270H1, BIO271H1)/ (PSL300H1, PSL301H1)",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
     "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "WE",
-            "assignedRoom2": "WE"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "20",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0301": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0301",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0301",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "23",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -5190,6 +5099,116 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0301": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0301",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0301",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "23",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "WE",
+            "assignedRoom2": "WE"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "20",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -5204,6 +5223,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -5371,6 +5391,7 @@
     "recommendedPreparation": "BIO270H1, BIO271H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -5538,80 +5559,26 @@
     "recommendedPreparation": "BCH210H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsTutorial enrolment can be done on ACORN until 5pm, Friday, September 5th. For late tutorial enrolment or changes, please email csb349.csb@utoronto.ca. Please include a copy of your timetable with your request.",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
     "meetings": {
-      "TUT-0501": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "UC",
-            "assignedRoom2": "UC"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0501",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0501",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "18",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0104": {
+      "TUT-0103": {
         "schedule": {
           "TU-0": {
             "meetingDay": "TU",
             "meetingStartTime": "15:00",
             "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
+            "assignedRoom1": "WE",
+            "assignedRoom2": "WE"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0104",
+        "meetingId": "TUT0103",
         "teachingMethod": "TUT",
-        "sectionNumber": "0104",
+        "sectionNumber": "0103",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -5762,21 +5729,131 @@
           }
         ]
       },
-      "TUT-0502": {
+      "TUT-0302": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
+            "assignedRoom1": "WI",
+            "assignedRoom2": "WI"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0502",
+        "meetingId": "TUT0302",
         "teachingMethod": "TUT",
-        "sectionNumber": "0502",
+        "sectionNumber": "0302",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "16",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0106": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BF",
+            "assignedRoom2": "BF"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0106",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0106",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "19",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0105": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BF",
+            "assignedRoom2": "BF"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0105",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0105",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -5817,10 +5894,10 @@
           }
         ]
       },
-      "TUT-0103": {
+      "TUT-0601": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
+          "TH-0": {
+            "meetingDay": "TH",
             "meetingStartTime": "15:00",
             "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
@@ -5829,9 +5906,64 @@
           }
         },
         "instructors": {},
-        "meetingId": "TUT0103",
+        "meetingId": "TUT0601",
         "teachingMethod": "TUT",
-        "sectionNumber": "0103",
+        "sectionNumber": "0601",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "17",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>September 19, 2025: room change</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0201": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "WE",
+            "assignedRoom2": "WE"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0201",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
@@ -5841,7 +5973,62 @@
         "actualEnrolment": "20",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "<p>September 19, 2025: room change</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0401": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "WE",
+            "assignedRoom2": "WE"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0401",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0401",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "14",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>September 4, 2025: Time and room changed.</p>",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -5894,6 +6081,61 @@
         "online": "In Person",
         "enrollmentCapacity": "20",
         "actualEnrolment": "19",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0501": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "UC",
+            "assignedRoom2": "UC"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0501",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0501",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "18",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -5982,23 +6224,353 @@
           }
         ]
       },
-      "LEC-0101": {
+      "TUT-0104": {
         "schedule": {
           "TU-0": {
             "meetingDay": "TU",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0104",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0104",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "20",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0203": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "EP",
+            "assignedRoom2": "EP"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0203",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0203",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "19",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0502": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
             "meetingStartTime": "13:00",
             "meetingEndTime": "15:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
-          },
-          "TH-1": {
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0502",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0502",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "20",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0402": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "WW",
+            "assignedRoom2": "WW"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0402",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0402",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "17",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "<p>September 4, 2025: Time and room changed.</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0301": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SU",
+            "assignedRoom2": "SU"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0301",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0301",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "18",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0102": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BL",
+            "assignedRoom2": "BL"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0102",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0102",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "16",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-0101": {
+        "schedule": {
+          "TH-0": {
             "meetingDay": "TH",
             "meetingStartTime": "12:00",
             "meetingEndTime": "13:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "MS",
             "assignedRoom2": "MS"
+          },
+          "TU-1": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
           }
         },
         "instructors": {
@@ -6406,556 +6978,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "TUT-0301": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SU",
-            "assignedRoom2": "SU"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0301",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0301",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "18",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0105": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BF",
-            "assignedRoom2": "BF"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0105",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0105",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "20",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0102": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BL",
-            "assignedRoom2": "BL"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0102",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "16",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0302": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "WI",
-            "assignedRoom2": "WI"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0302",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0302",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "16",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0201": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "WE",
-            "assignedRoom2": "WE"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0201",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0201",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "20",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>September 19, 2025: room change</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0401": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "WE",
-            "assignedRoom2": "WE"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0401",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0401",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "14",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>September 4, 2025: Time and room changed.</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0601": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "WE",
-            "assignedRoom2": "WE"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0601",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0601",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "17",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>September 19, 2025: room change</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0402": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "WW",
-            "assignedRoom2": "WW"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0402",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0402",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "17",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>September 4, 2025: Time and room changed.</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0203": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "EP",
-            "assignedRoom2": "EP"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0203",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0203",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "19",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0106": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BF",
-            "assignedRoom2": "BF"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0106",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0106",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "19",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -6964,71 +6986,17 @@
     "courseTitle": "Laboratory in Molecular Plant Biology",
     "code": "CSB350H1",
     "courseDescription": "Laboratory methods used in plant molecular biology research. Topics include vector construction, plant transformations, PCR, DNA blots, high-throughput screens, genetic mapping, and bioinformatic analyses. (Lab Materials Fee: $53). Lab coat and safety glasses are required for use in laboratories; students are responsible for purchasing these items (approximate cost is $27).",
-    "prerequisite": "<p>BIO230H1/ BIO255H1</p>",
+    "prerequisite": "BIO230H1/ BIO255H1",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>BIO251H1 or higher level plant biology course; BCH311H1/ CSB349H1/ MGY311Y1 concurrently</p>",
+    "recommendedPreparation": "BIO251H1 or higher level plant biology course; BCH311H1/ CSB349H1/ MGY311Y1 concurrently",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsLaboratory enrolment and attendance is mandatory. Please check Quercus for details. Laboratory enrolment can be done on ACORN until 5:00pm, Friday, September 12.",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
     "meetings": {
-      "PRA-0101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
-          }
-        },
-        "instructors": {},
-        "meetingId": "PRA0101",
-        "teachingMethod": "PRA",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "52",
-        "actualEnrolment": "44",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -7337,6 +7305,61 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "PRA-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "",
+            "assignedRoom2": ""
+          }
+        },
+        "instructors": {},
+        "meetingId": "PRA0101",
+        "teachingMethod": "PRA",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "52",
+        "actualEnrolment": "44",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -7351,32 +7374,33 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Delivery InstructionsIn-class activities, including pre-lab talk and practicals of the course, will be available only as online synchronous via Zoom (U of T Zoom accounts only) with no recording. Students must have the ability to access and use Zoom (U of T Zoom accounts only), Quercus and Coursera. Students must be able to attend classes live via Zoom (U of T Zoom accounts only) and write quizzes on Quercus during scheduled times (Eastern Standard Time) with stable internet connections. It is strongly recommended to have multiple different routes/sources of lined high speed broadband internet connection in order to prevent disconnections.",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
     "meetings": {
-      "PRA-0101": {
+      "PRA-0201": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
+          "FR-0": {
+            "meetingDay": "FR",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "",
             "assignedRoom2": ""
           }
         },
         "instructors": {},
-        "meetingId": "PRA0101",
+        "meetingId": "PRA0201",
         "teachingMethod": "PRA",
-        "sectionNumber": "0101",
+        "sectionNumber": "0201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "SYNC",
         "online": "Online",
-        "enrollmentCapacity": "80",
-        "actualEnrolment": "70",
+        "enrollmentCapacity": "40",
+        "actualEnrolment": "40",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -7410,28 +7434,28 @@
           }
         ]
       },
-      "PRA-0201": {
+      "PRA-0101": {
         "schedule": {
-          "FR-0": {
-            "meetingDay": "FR",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
             "assignedRoom1": "",
             "assignedRoom2": ""
           }
         },
         "instructors": {},
-        "meetingId": "PRA0201",
+        "meetingId": "PRA0101",
         "teachingMethod": "PRA",
-        "sectionNumber": "0201",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "SYNC",
         "online": "Online",
-        "enrollmentCapacity": "40",
-        "actualEnrolment": "40",
+        "enrollmentCapacity": "80",
+        "actualEnrolment": "70",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
         "meetingStatusNotes": null,
@@ -7917,6 +7941,7 @@
     "recommendedPreparation": "BIO251H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -8043,12 +8068,13 @@
     "courseTitle": "Genetic Foundation of Molecular Biology",
     "code": "CSB360H1",
     "courseDescription": "This course provides in depth foundational knowledge underlying molecular biology technologies. It focuses on how genetic principles were applied to develop the most commonly used molecular biology techniques today. Students will expand their genetic knowledge from introductory level genetic courses. This course does not involve explaining the basics of molecular biology such as replication, recombination, translation or gene expression. By contrast, this course expects that students already understand these concepts in detail and now apply this understanding towards how they were used to develop experimental technologies. For example, how are transformation, mutagenesis, plasmid construction, and gene expression systems used to design molecular experiments.",
-    "prerequisite": "<p>BIO230H1/ BIO255H1, BIO260H1/ HMB265H1, CSB349H1</p>",
+    "prerequisite": "BIO230H1/ BIO255H1, BIO260H1/ HMB265H1, CSB349H1",
     "corequisite": "",
-    "exclusion": "<p>MGY340H1</p>",
+    "exclusion": "MGY340H1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -8194,6 +8220,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsResearch Opportunity Program. For more information, please go to: https://www.artsci.utoronto.ca/current/academics/research-opportunitie",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -8266,6 +8293,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -8608,12 +8636,13 @@
     "courseTitle": "Cytoskeletal Networks of the Cell",
     "code": "CSB428H1",
     "courseDescription": "The cytoskeleton is a highly dynamic protein network that links all regions and components of the cell to provide a structural framework for organizing numerous cellular activities. This course will explore the molecular regulation of the actin and microtubule cytoskeletons during cell migration and other cellular processes. Topics will include (1) an overview of key regulators of the cytoskeleton, (2) how they organize specific cellular structures, and (3) how the coordinated activities of cytoskeletal networks govern complex cellular behaviours. The format of this course is mainly journal club style presentations and student-led discussions of research papers, together with supporting background lectures. Experience with critical evaluation of research papers is emphasized.",
-    "prerequisite": "<p>Minimum grade of 73% in BCH311H1/ CSB349H1/ MGY311Y1, minimum grade of 73% in BCH340H1/ CJH332H1/ CSB328H1/ CSB329H1/ CSB331H1/ CSB340H1/ CSB397Y0</p>",
+    "prerequisite": "Minimum grade of 73% in BCH311H1/ CSB349H1/ MGY311Y1, minimum grade of 73% in BCH340H1/ CJH332H1/ CSB328H1/ CSB329H1/ CSB331H1/ CSB340H1/ CSB397Y0",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -8935,6 +8964,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -9229,6 +9259,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -9571,6 +9602,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -9724,16 +9756,72 @@
     "courseTitle": "Introduction & Methods of Systems Neuroscience",
     "code": "CSB434H1",
     "courseDescription": "Our brain is highly complex with billions of neurons; how do neurons work together to produce adaptive & flexible behaviors? Systems neuroscience studies this question at the systems level. Using various animal models, it aims to provide quantitative and causal links between neural circuits/networks and perception, behavior, and cognition. Through this course, you will learn about the popular animal models with simpler brains and interpret the neural mechanisms from multiple perspectives, to acquire a quantitative understanding. Particularly, this course will emphasize interdisciplinary technology, such as large-scale optical neural recording and computational tools. Knowledge gained will provide insights into understanding mental disorders and artificial intelligence.",
-    "prerequisite": "<p>Minimum 75% in MAT136H1, and minimum 75% in BIO271H1/ CJH332H1/ PSL300H1</p>",
+    "prerequisite": "Minimum 75% in MAT136H1, and minimum 75% in BIO271H1/ CJH332H1/ PSL300H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
     "meetings": {
+      "TUT-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "12:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "24",
+        "actualEnrolment": "13",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -9875,61 +9963,6 @@
             "adminOrgName": "All"
           }
         ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "12:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "24",
-        "actualEnrolment": "13",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
       }
     }
   },
@@ -9944,6 +9977,7 @@
     "recommendedPreparation": "CJH332H1/CSB345H1/PSY397H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsThis is a ballot course. Students must submit an application form by July 28, 2025. Applications may be accepted after this date if space is available. Forms are available online: https://csb.utoronto.ca/undergraduate-studies/forms. For more information, please contact undergrad.csb@utoronto.ca.",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -10022,27 +10056,28 @@
     "recommendedPreparation": "BCH210H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          },
-          "TU-1": {
+          "TU-0": {
             "meetingDay": "TU",
             "meetingStartTime": "11:00",
             "meetingEndTime": "12:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "RW",
             "assignedRoom2": "RW"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
           }
         },
         "instructors": {
@@ -10507,12 +10542,13 @@
     "courseTitle": "Molecular Interactions Between Plants and Microorganisms",
     "code": "CSB452H1",
     "courseDescription": "This course explores the interactions between plants and both pathogenic and beneficial microorganisms at the molecular level. The course consists of two sections: 1. Plant-pathogenic microbe interactions and plant immunity and 2. Plant-beneficial microbe interactions and plant microbiome. The first section focuses on an in-depth discussion about on-going research of plant immunity against pathogenic microbes. The second section introduces the interaction of plant-beneficial microorganisms and their biotechnological usage for agriculture and food production.",
-    "prerequisite": "<p>BCH311H1/ CSB349H1/ MGY311Y1</p>",
+    "prerequisite": "BCH311H1/ CSB349H1/ MGY311Y1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "CSB353H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -10963,12 +10999,13 @@
     "courseTitle": "Topics in Cell and Developmental Biology: Biology of Adherens Junctions",
     "code": "CSB453H1",
     "courseDescription": "Understanding how epithelial cells stick together to form tissues and organs, how they withstand mechanical forces, and how the loss of this adhesion leads to diseases such as cancer and its metastasis, are important fundamental questions in biology with significant implications for human health. Adherens junctions (AJs) are known to be dynamic plasma-membrane structures that mediate cell-cell adhesion and promote tissue integrity. In this course, we will discuss primary scientific literature to understand how AJs facilitate multicellular development and how they impact disease. Lectures will be complemented by student-led presentations of important research papers published in leading scientific journals.",
-    "prerequisite": "<p>CSB331H1/ CSB328H1/ CSB349H1/ MGY311Y1/ BCH311H1, BIO230H1/ BIO255H1, BIO260H1/ HMB265H1</p>",
+    "prerequisite": "CSB331H1/ CSB328H1/ CSB349H1/ MGY311Y1/ BCH311H1, BIO230H1/ BIO255H1, BIO260H1/ HMB265H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "BIO130H1, CSB331H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -11209,6 +11246,7 @@
     "recommendedPreparation": "MGY377H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -11503,6 +11541,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -11783,6 +11822,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -12131,6 +12171,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -12433,6 +12474,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -12572,12 +12614,13 @@
     "courseTitle": "Foundational Discoveries in Genome Biology and Bioinformatics: AlphaFold2 and its implications",
     "code": "CSB471H1",
     "courseDescription": "This course is based on the critical analysis of key research articles in genome biology and bioinformatics. The format is interactive and requires students to contribute actively during class meetings. Small student groups will be assigned to present context, figures, data, methods and impact from a number of research articles during the semester. Based on the readings, small student groups will propose new genome technologies or datasets and new bioinformatics software or databases.",
-    "prerequisite": "<p>BCB330Y1/ (BCH441H1/ MGY441H1)/ CSB352H1/ CSB472H1/ EHJ352H1/ MGY428H1</p>",
+    "prerequisite": "BCB330Y1/ (BCH441H1/ MGY441H1)/ CSB352H1/ CSB472H1/ EHJ352H1/ MGY428H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -12872,6 +12915,7 @@
     "recommendedPreparation": "BIO260H1/HMB265H1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -13300,12 +13344,13 @@
     "courseTitle": "Methods in Genomics and Proteomics",
     "code": "CSB474H1",
     "courseDescription": "This is a hands-on, laboratory based course offered in conjunction with the Centre for the Analysis of Genome Evolution and Function (CAGEF). It will teach students how to produce and analyze data that are central to the fields of genomics and proteomics. Techniques taught include DNA and RNA extractions, PCR, Next Generation DNA library preparation and sequencing, expression profiling using RNAseq, protein extraction, 2D-gel electrophoresis and mass spectrometry. This will be combined with associated bioinformatics analyses. (Lab Materials Fee: $53). A lab coat and safety glasses are required for use in laboratories; students are responsible for purchasing these (approximate cost is $27).",
-    "prerequisite": "<p>BIO260H1/ HMB265H1, BIO255H1/ CSB330H1/ CSB350H1 or by permission of the instructor</p>",
+    "prerequisite": "BIO260H1/ HMB265H1, BIO255H1/ CSB330H1/ CSB350H1 or by permission of the instructor",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p>BCH311H1/ CSB349H1/ MGY311Y1</p>",
+    "recommendedPreparation": "BCH311H1/ CSB349H1/ MGY311Y1",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsThis is a ballot course. Students must submit an application form by July 28, 2025. Applications may be accepted after this date if space is available. Forms are available online: https://csb.utoronto.ca/undergraduate-studies/forms. For more information, please contact undergrad.csb@utoronto.ca.",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -13384,6 +13429,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -13524,6 +13570,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -13912,6 +13959,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -14287,6 +14335,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsStudents are expected to find their own supervisor from the list of CSB faculty. For more information about this course, please visit: https://csb.utoronto.ca/undergraduate-studies/undergraduate-courses/. To enrol in this course, please send an email with your student ID along with the completed registration form (available on the CSB website) to undergrad.csb@utoronto.ca.Delivery InstructionsTime scheduled on Fridays is for monthly workshops that are highly recommended. For more information, please contact undergrad.csb@utoronto.ca.",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -14359,6 +14408,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsStudents are expected to find their own supervisor from the list of CSB faculty. For more information about this course, please visit: https://csb.utoronto.ca/undergraduate-studies/undergraduate-courses/. To enrol in this course, please send an email with your student ID along with the completed registration form (available on the CSB website) to undergrad.csb@utoronto.ca.Delivery InstructionsTime scheduled on Fridays is for monthly workshops that are highly recommended. For more information, please contact undergrad.csb@utoronto.ca.",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -14431,6 +14481,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsStudents are expected to find their own supervisor from the list of CSB faculty. For more information about this course, please visit: https://csb.utoronto.ca/undergraduate-studies/undergraduate-courses/. To enrol in this course, please send an email with your student ID along with the completed registration form (available on the CSB website) to undergrad.csb@utoronto.ca.Delivery InstructionsTime scheduled on Fridays is for monthly mandatory workshops. For more information, please contact undergrad.csb@utoronto.ca.",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",
@@ -14505,12 +14556,13 @@
     "courseTitle": "Independent Research in Cell and Systems Biology II",
     "code": "CSB499Y1",
     "courseDescription": "Allows students to do a second independent project. Operates in the same manner as CSB497H1/ CSB498Y1. Maximum of 2.0 credits allowed among CSB497H1, CSB498Y1 and CSB499Y1. Students who have completed both CSB497H1 and CSB498Y1 are excluded from taking CSB499Y1. (Lab Materials Fee: $53). Not eligible for CR/NCR option.",
-    "prerequisite": "<p>CSB497H1/ CSB498Y1</p>",
+    "prerequisite": "CSB497H1/ CSB498Y1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsStudents are expected to find their own supervisor from the list of CSB faculty. For more information about this course, please visit: https://csb.utoronto.ca/undergraduate-studies/undergraduate-courses/. To enrol in this course, please send an email with your student ID along with the completed registration form (available on the CSB website) to undergrad.csb@utoronto.ca.Delivery InstructionsTime scheduled on Fridays is for monthly workshops that are highly recommended. For more information, please contact undergrad.csb@utoronto.ca.",
     "deliveryInstructions": null,
     "breadthCategories": "Living Things and Their Environment (4)",
     "distributionCategories": "Science",

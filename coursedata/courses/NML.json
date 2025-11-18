@@ -10,122 +10,47 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsIMPORTANT NOTES: Students enrolling in NML110Y1 MUST complete the Language Course Assessment Questionnaire by the deadline posted on the NMC website: https://www.nmc.utoronto.ca/undergraduate/program/nmc-undergraduate-language-course-assessment Tutorials: Students in LEC0101 must enroll in TUT0101. Students in LEC0201 must enroll in TUT0201. Students in LEC0301 must enroll in TUT0301.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
-      "LEC-0301": {
+      "TUT-0201": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
+            "assignedRoom1": "GB",
+            "assignedRoom2": "GB"
           },
           "TH-1": {
             "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
+            "meetingStartTime": "12:00",
+            "meetingEndTime": "13:00",
             "meetingScheduleId": "1",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          },
-          "TU-2": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          },
-          "TH-3": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "3",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
+            "assignedRoom1": "GB",
+            "assignedRoom2": "GB"
           }
         },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Samar",
-            "lastName": "Abdelgalil"
-          }
-        },
-        "meetingId": "LEC0301",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0301",
+        "instructors": {},
+        "meetingId": "TUT0201",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0201",
         "subtitle": "",
         "cancel": "",
-        "waitlist": "Y",
+        "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "20",
-        "actualEnrolment": "10",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "18",
         "actualWaitlist": "0",
-        "enrollmentIndicator": "A",
-        "meetingStatusNotes": "<p>September 2, 2025:  Winter Term Thursday room changed</p>",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
         "enrollmentControls": [
           {
             "postId": "1",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARTSC",
-            "primaryOrgName": "Faculty of Arts and Science",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "ARCLA",
-            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "5",
             "postCode": "*",
             "postName": "All",
             "subjectId": "1",
@@ -153,108 +78,23 @@
           }
         ]
       },
-      "LEC-2000": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          },
-          "MO-2": {
-            "meetingDay": "MO",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          },
-          "WE-3": {
-            "meetingDay": "WE",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "3",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Adam",
-            "lastName": "Ali"
-          }
-        },
-        "meetingId": "LEC2000",
-        "teachingMethod": "LEC",
-        "sectionNumber": "2000",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "3",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "A",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "EM   MTS",
-            "postName": "Master Theolog Stds (Emmanuel)",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          },
-          "WE-1": {
+          "WE-0": {
             "meetingDay": "WE",
             "meetingStartTime": "11:00",
             "meetingEndTime": "13:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "UC",
             "assignedRoom2": "UC"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
           },
           "MO-2": {
             "meetingDay": "MO",
@@ -377,39 +217,39 @@
           }
         ]
       },
-      "TUT-0201": {
+      "TUT-0301": {
         "schedule": {
           "TH-0": {
             "meetingDay": "TH",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "GB",
-            "assignedRoom2": "GB"
+            "assignedRoom1": "ES",
+            "assignedRoom2": "ES"
           },
           "TH-1": {
             "meetingDay": "TH",
-            "meetingStartTime": "12:00",
-            "meetingEndTime": "13:00",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
             "meetingScheduleId": "1",
-            "assignedRoom1": "GB",
-            "assignedRoom2": "GB"
+            "assignedRoom1": "SU",
+            "assignedRoom2": "SU"
           }
         },
         "instructors": {},
-        "meetingId": "TUT0201",
+        "meetingId": "TUT0301",
         "teachingMethod": "TUT",
-        "sectionNumber": "0201",
+        "sectionNumber": "0301",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "30",
-        "actualEnrolment": "18",
+        "actualEnrolment": "10",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "<p>June 20, 2025: Delivery day/time change</p>",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -669,44 +509,205 @@
           }
         ]
       },
-      "TUT-0301": {
+      "LEC-0301": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "ES",
-            "assignedRoom2": "ES"
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
           },
           "TH-1": {
             "meetingDay": "TH",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
             "meetingScheduleId": "1",
-            "assignedRoom1": "SU",
-            "assignedRoom2": "SU"
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
+          },
+          "TU-2": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
+          },
+          "TH-3": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "3",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
           }
         },
-        "instructors": {},
-        "meetingId": "TUT0301",
-        "teachingMethod": "TUT",
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Samar",
+            "lastName": "Abdelgalil"
+          }
+        },
+        "meetingId": "LEC0301",
+        "teachingMethod": "LEC",
         "sectionNumber": "0301",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "20",
+        "actualEnrolment": "10",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "A",
+        "meetingStatusNotes": "<p>September 2, 2025:  Winter Term Thursday room changed</p>",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARTSC",
+            "primaryOrgName": "Faculty of Arts and Science",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "ARCLA",
+            "primaryOrgName": "John H. Daniels Faculty of Architecture, Landscape, & Design",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "5",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "LEC-2000": {
+        "schedule": {
+          "MO-0": {
+            "meetingDay": "MO",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
+          },
+          "MO-2": {
+            "meetingDay": "MO",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "2",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
+          },
+          "WE-3": {
+            "meetingDay": "WE",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "3",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Adam",
+            "lastName": "Ali"
+          }
+        },
+        "meetingId": "LEC2000",
+        "teachingMethod": "LEC",
+        "sectionNumber": "2000",
         "subtitle": "",
         "cancel": "",
         "waitlist": "N",
         "deliveryMode": "INPER",
         "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "10",
+        "enrollmentCapacity": "3",
+        "actualEnrolment": "0",
         "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>June 20, 2025: Delivery day/time change</p>",
+        "enrollmentIndicator": "A",
+        "meetingStatusNotes": null,
         "enrollmentControls": [
           {
             "postId": "1",
-            "postCode": "*",
-            "postName": "All",
+            "postCode": "EM   MTS",
+            "postName": "Master Theolog Stds (Emmanuel)",
             "subjectId": "1",
             "subjectCode": "*",
             "subjectName": "All",
@@ -745,6 +746,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -885,6 +887,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "",
     "distributionCategories": "",
@@ -1025,73 +1028,11 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
-      "TUT-0101": {
-        "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "16:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "AB",
-            "assignedRoom2": "AB"
-          },
-          "WE-1": {
-            "meetingDay": "WE",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "16:00",
-            "meetingScheduleId": "1",
-            "assignedRoom1": "AB",
-            "assignedRoom2": "AB"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "30",
-        "actualEnrolment": "21",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "WE-0": {
@@ -1110,21 +1051,21 @@
             "assignedRoom1": "BF",
             "assignedRoom2": "BF"
           },
-          "WE-2": {
-            "meetingDay": "WE",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "AB",
-            "assignedRoom2": "AB"
-          },
-          "MO-3": {
+          "MO-2": {
             "meetingDay": "MO",
             "meetingStartTime": "13:00",
             "meetingEndTime": "15:00",
-            "meetingScheduleId": "3",
+            "meetingScheduleId": "2",
             "assignedRoom1": "BF",
             "assignedRoom2": "BF"
+          },
+          "WE-3": {
+            "meetingDay": "WE",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "3",
+            "assignedRoom1": "AB",
+            "assignedRoom2": "AB"
           }
         },
         "instructors": {
@@ -1230,6 +1171,69 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "WE-0": {
+            "meetingDay": "WE",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "AB",
+            "assignedRoom2": "AB"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "16:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "AB",
+            "assignedRoom2": "AB"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "30",
+        "actualEnrolment": "21",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -1244,6 +1248,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -1384,27 +1389,28 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BA",
-            "assignedRoom2": "BA"
-          },
-          "FR-1": {
+          "FR-0": {
             "meetingDay": "FR",
             "meetingStartTime": "13:00",
             "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "BF",
             "assignedRoom2": "BF"
+          },
+          "TU-1": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "BA",
+            "assignedRoom2": "BA"
           }
         },
         "instructors": {
@@ -1524,6 +1530,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -1664,6 +1671,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -1836,6 +1844,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -2055,27 +2064,28 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SU",
-            "assignedRoom2": "SU"
-          },
-          "TH-1": {
+          "TH-0": {
             "meetingDay": "TH",
             "meetingStartTime": "15:00",
             "meetingEndTime": "17:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "OI",
             "assignedRoom2": "OI"
+          },
+          "TU-1": {
+            "meetingDay": "TU",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "SU",
+            "assignedRoom2": "SU"
           }
         },
         "instructors": {
@@ -2195,6 +2205,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -2335,6 +2346,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsIMPORTANT NOTES: Students enrolling in NML260Y1 MUST complete the Language Course Assessment Questionnaire by the deadline posted on the NMC website: https://www.nmc.utoronto.ca/undergraduate/program/nmc-undergraduate-language-course-assessment",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -2554,6 +2566,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsIMPORTANT NOTES: Students enrolling in NML270Y1 MUST complete the Language Course Assessment Questionnaire by the deadline posted on the NMC website: https://www.nmc.utoronto.ca/undergraduate/program/nmc-undergraduate-language-course-assessment",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -2710,6 +2723,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -2866,6 +2880,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3022,6 +3037,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3194,27 +3210,28 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          },
-          "WE-1": {
+          "WE-0": {
             "meetingDay": "WE",
             "meetingStartTime": "13:00",
             "meetingEndTime": "15:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "BF",
             "assignedRoom2": "BF"
+          },
+          "MO-1": {
+            "meetingDay": "MO",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
           }
         },
         "instructors": {
@@ -3334,6 +3351,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3468,12 +3486,13 @@
     "courseTitle": "Eastern Aramaic - Babylonian Talmud",
     "code": "NML359Y1",
     "courseDescription": "This course introduces the student to Talmudic texts through selections from a particular tractate for representative study. We shall study the Mishnah of the chapter in preparation for the Talmud. Recognition of the dialogic structure of the legal discussions centered on the Mishnah and its elucidation is emphasized. The classical commentaries (Rashi, Tosafot, R. Hananel), the use of dictionaries, concordances, biographies of sages, parallels and other sources will gradually become familiar to the student as aids in understanding the text under consideration. A brief presentation of the essential features of Babylonian Aramaic will be included in the course to facilitate study. Students will also be taught to make use of the Bar Ilan Responsa Project, the Lieberman database, and the Friedberg Jewish Manuscript Society database. We shall also discuss redactional issues as they appear.",
-    "prerequisite": "Intermediate-level Hebrew or experience in Babylonian Talmud ",
+    "prerequisite": "Intermediate-level Hebrew or experience in Babylonian Talmud",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Thought, Belief and Behaviour (2)",
     "distributionCategories": "Humanities",
@@ -3614,6 +3633,7 @@
     "recommendedPreparation": "NML260Y1 and/or adequate knowledge of modern Persian",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3770,6 +3790,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -3792,21 +3813,21 @@
             "assignedRoom1": "BF",
             "assignedRoom2": "BF"
           },
-          "TU-2": {
-            "meetingDay": "TU",
-            "meetingStartTime": "09:00",
-            "meetingEndTime": "11:00",
-            "meetingScheduleId": "2",
-            "assignedRoom1": "BF",
-            "assignedRoom2": "BF"
-          },
-          "TH-3": {
+          "TH-2": {
             "meetingDay": "TH",
             "meetingStartTime": "11:00",
             "meetingEndTime": "13:00",
-            "meetingScheduleId": "3",
+            "meetingScheduleId": "2",
             "assignedRoom1": "ES",
             "assignedRoom2": "ES"
+          },
+          "TU-3": {
+            "meetingDay": "TU",
+            "meetingStartTime": "09:00",
+            "meetingEndTime": "11:00",
+            "meetingScheduleId": "3",
+            "assignedRoom1": "BF",
+            "assignedRoom2": "BF"
           }
         },
         "instructors": {
@@ -3926,6 +3947,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -4066,6 +4088,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -4200,6 +4223,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -4356,27 +4380,28 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "AP",
-            "assignedRoom2": "AP"
-          },
-          "TU-1": {
+          "TU-0": {
             "meetingDay": "TU",
             "meetingStartTime": "11:00",
             "meetingEndTime": "13:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "SS",
             "assignedRoom2": "SS"
+          },
+          "TH-1": {
+            "meetingDay": "TH",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "AP",
+            "assignedRoom2": "AP"
           },
           "TH-2": {
             "meetingDay": "TH",
@@ -4512,6 +4537,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -4652,6 +4678,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -4778,33 +4805,34 @@
     "courseTitle": "Demotic I",
     "code": "NML443H1",
     "courseDescription": "Demotic refers to both a stage of the ancient Egyptian language and the associated cursive script, which was in use for over a millennium (from the 7th century BCE to the 5th century CE). Various types of texts were written in Demotic, ranging from epic tales, scientific treatises, and religious texts to court documents, letters, and tax receipts. This course aims to introduce students to Demotic grammar and script. A small selection of original texts will be read once the grammar review is completed.",
-    "prerequisite": "<p>NML340Y1 or NML442Y1</p>",
+    "prerequisite": "NML340Y1 or NML442Y1",
     "corequisite": "",
     "exclusion": "",
-    "recommendedPreparation": "<p><span><span>NML230H1</span></span></p>",
+    "recommendedPreparation": "NML230H1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
     "meetings": {
       "LEC-0101": {
         "schedule": {
-          "WE-0": {
-            "meetingDay": "WE",
-            "meetingStartTime": "11:00",
-            "meetingEndTime": "13:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "BF",
-            "assignedRoom2": "BF"
-          },
-          "MO-1": {
+          "MO-0": {
             "meetingDay": "MO",
             "meetingStartTime": "11:00",
             "meetingEndTime": "13:00",
-            "meetingScheduleId": "1",
+            "meetingScheduleId": "0",
             "assignedRoom1": "SS",
             "assignedRoom2": "SS"
+          },
+          "WE-1": {
+            "meetingDay": "WE",
+            "meetingStartTime": "11:00",
+            "meetingEndTime": "13:00",
+            "meetingScheduleId": "1",
+            "assignedRoom1": "BF",
+            "assignedRoom2": "BF"
           }
         },
         "instructors": {
@@ -4918,12 +4946,13 @@
     "courseTitle": "Demotic II",
     "code": "NML444H1",
     "courseDescription": "The course aims at improving reading proficiency in Demotic by studying a wide array of different text genres in original, including literary, para-literary, religious and documentary texts written in early, middle, and late Demotic. This will familiarize students with the grammatical, paleographical, and orthographical developments of the language.",
-    "prerequisite": "<p>NML443H1 </p>",
+    "prerequisite": "NML443H1",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -5064,6 +5093,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -5190,12 +5220,13 @@
     "courseTitle": "Advanced Persian I",
     "code": "NML460H1",
     "courseDescription": "This course is designed for students who have already completed NML360Y1 Intermediate Persian or have an equivalent level of proficiency in Persian. This course aims to develop students’ abilities at an advanced level, with a focus on complex reading materials including historical, socio-political, media and journalistic texts. Students will improve their reading comprehension, strengthen writing skills, and advance speaking and listening skills through class discussions and oral presentations.",
-    "prerequisite": "<p>NML360Y1. Students who have an equivalent level of proficiency should contact the instructor concerning enrolling in the course.</p>",
+    "prerequisite": "NML360Y1. Students who have an equivalent level of proficiency should contact the instructor concerning enrolling in the course.",
     "corequisite": "",
-    "exclusion": "<p>Native Speakers</p>",
+    "exclusion": "Native Speakers",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -5328,6 +5359,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -5454,12 +5486,13 @@
     "courseTitle": "Advanced Persian II",
     "code": "NML463H1",
     "courseDescription": "This course is designed for students who have already completed NML460H1 Advance Persian I or have an equivalent level of proficiency in Persian. Its goal is to strengthen the students reading and writing skills and enrich their cultural and literary background. This is achieved through analysis of sophisticated authentic literary texts covering a wide range of literary genres.",
-    "prerequisite": "<p>NML460H1. Students who have an equivalent level of proficiency should contact the instructor concerning enrolling in the course.</p>",
+    "prerequisite": "NML460H1. Students who have an equivalent level of proficiency should contact the instructor concerning enrolling in the course.",
     "corequisite": "",
-    "exclusion": "<p>Native Speakers</p>",
+    "exclusion": "Native Speakers",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -5586,12 +5619,13 @@
     "courseTitle": "Old Persian",
     "code": "NML464H1",
     "courseDescription": "This course will survey the language, main epigraphical texts, historical context, and political ideology of the Old Persian inscriptions of the Achaemenid Empire (550–330 BCE). The Old Persian version of the famous inscriptions of Darius I in Bisotun will be read in the original, cuneiform script, linguistically analyzed, commented, and translated into English. By this training, students will be able to comfortably read the entire inscriptional corpus in Old Persian. By the end of the year, they will have acquired a strong understanding of the simplified Old Persian cuneiform script, the main phonological, morphological and syntactical features of the Old Persian language, and its connections with the Middle and modern Persian languages.",
-    "prerequisite": "<p>14.0 credits. Students who do not meet the prerequisites are encouraged to contact the department </p>",
+    "prerequisite": "14.0 credits. Students who do not meet the prerequisites are encouraged to contact the department",
     "corequisite": "",
-    "exclusion": "<p>NML464Y1</p>",
-    "recommendedPreparation": "<p>NMC259H1F, NML362Y1, NML465Y1 </p>",
+    "exclusion": "NML464Y1",
+    "recommendedPreparation": "NMC259H1F, NML362Y1, NML465Y1",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -5732,6 +5766,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",
@@ -5882,12 +5917,13 @@
     "courseTitle": "Selected Readings in Turkish Literature",
     "code": "NML471H1",
     "courseDescription": "This course focuses on the analysis of representative examples of both poetry and prose from various periods of Turkish literature. Students will gain familiarity with different literary genres, themes, and traditions. Focusing on major works, the course will enhance students' understanding of the cultural context in which the literature was produced. It will also help students further enrich their vocabulary and improve their grasp of grammatical phenomena.",
-    "prerequisite": "<p>NML370Y1 or adequate knowledge of Turkish (Native speakers are allowed to take this course).</p>",
+    "prerequisite": "NML370Y1 or adequate knowledge of Turkish (Native speakers are allowed to take this course).",
     "corequisite": "",
     "exclusion": "NML490H1 (Topics in Near and Middle Eastern Languages: Readings From Modern Turkish Literature and Media), offered in Fall 2021",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities",

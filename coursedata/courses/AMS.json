@@ -10,193 +10,11 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
     "meetings": {
-      "TUT-0202": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "14:00",
-            "meetingEndTime": "15:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "FE",
-            "assignedRoom2": "FE"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Stefan",
-            "lastName": "Nedeljkovic"
-          }
-        },
-        "meetingId": "TUT0202",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0202",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "14",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0102": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "FE",
-            "assignedRoom2": "FE"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Stefan",
-            "lastName": "Nedeljkovic"
-          }
-        },
-        "meetingId": "TUT0102",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "22",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "FE",
-            "assignedRoom2": "FE"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Aj",
-            "lastName": "Bedward"
-          }
-        },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "26",
-        "actualEnrolment": "24",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TH-0": {
@@ -372,6 +190,189 @@
             "adminOrgName": "All"
           }
         ]
+      },
+      "TUT-0102": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "FE",
+            "assignedRoom2": "FE"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Stefan",
+            "lastName": "Nedeljkovic"
+          }
+        },
+        "meetingId": "TUT0102",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0102",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "22",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "FE",
+            "assignedRoom2": "FE"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Aj",
+            "lastName": "Bedward"
+          }
+        },
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "26",
+        "actualEnrolment": "24",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
+      },
+      "TUT-0202": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "14:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "FE",
+            "assignedRoom2": "FE"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Stefan",
+            "lastName": "Nedeljkovic"
+          }
+        },
+        "meetingId": "TUT0202",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0202",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "14",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": null,
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ]
       }
     }
   },
@@ -386,6 +387,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsFor full course descriptions, please visit our website: https://munkschool.utoronto.ca/american-studies/courses.",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities, Social Science",
@@ -572,6 +574,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsThis introductory course will survey the interrelated history of Blackness and artistic production in the United States, Mexico, the Caribbean, and Canada. Starting in the eighteenth century with the advent of the transatlantic slave trade and covering up to Black Lives Matter movement, the course proceeds chronologically and considers the Black Art within its larger social context. By discussing the aesthetic qualities of artworks and the careers of Black artists alongside of the history of anti-Black racism in North America, we will explore both how the visual has been used as a tool of domination and how art can challenge or subvert racist ideologies. At the end of the course, students will be familiar with the primary figures, debates, and works of art that constitute the field. They will also be comfortable discussing the history anti-Black racism and its current manifestations. Topics include: the visual culture of slavery and abolition, hemispheric and transatlantic modernisms, the racial politics of “outsider” and “folk” art, the Black Arts Movement, and art and mass incarceration.",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities, Social Science",
@@ -752,12 +755,13 @@
     "courseTitle": "Theories and Methods in American Studies",
     "code": "AMS300H1",
     "courseDescription": "This course, required for majors and minors but open to all who have met the pre-requisites, explores a range of approaches to the field of American Studies. Students will be introduced to some of the many ‘theories and methods’ that have animated the field of American Studies, including historical methods; formal analysis of visual and literary texts; and key concepts, such as commodity chain analysis; ‘race,’ ‘commodity,’ ‘gender,’ ‘diaspora,’ and ‘affect.’",
-    "prerequisite": "HIS271Y1/ ENG250Y1/ GGR240H1/ GGR254H1/ POL203Y1/ POL386Y1/ (POL347H1, POL386H1).\nIf you do not have these prerequisites but would like to take the course, please contact the instructor and/or csus@utoronto.ca to discuss exceptions to the prerequisites.",
+    "prerequisite": "HIS271Y1/ ENG250Y1/ GGR240H1/ GGR254H1/ POL203Y1/ POL386Y1/ (POL347H1, POL386H1). If you do not have these prerequisites but would like to take the course, please contact the instructor and/or csus@utoronto.ca to discuss exceptions to the prerequisites.",
     "corequisite": "",
     "exclusion": "USA300H1, USA300Y1",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsFor full course descriptions, please visit our website: https://munkschool.utoronto.ca/american-studies/courses.",
     "deliveryInstructions": null,
     "breadthCategories": "Creative and Cultural Representations (1)",
     "distributionCategories": "Humanities, Social Science",
@@ -938,12 +942,13 @@
     "courseTitle": "Approaches to American Studies",
     "code": "AMS312H1",
     "courseDescription": "An in-depth, interdisciplinary examination of a specific question concerning U.S. history, politics, and/or culture. Focus varies depending on instructor. Major emphases include reading critically and the initial steps of conducting original research.",
-    "prerequisite": "AMS300H1/USA300H1, or 1.0 credit chosen from the four American Studies Program disciplinary/thematic clusters (Politics and Economics, Society, Culture, and History) as published in the American Studies section of the Calendar.\nIf you do not have these prerequisites but would like to take the course, please contact the instructor and/or csus@utoronto.ca to discuss exceptions to the prerequisites.",
+    "prerequisite": "AMS300H1/USA300H1, or 1.0 credit chosen from the four American Studies Program disciplinary/thematic clusters (Politics and Economics, Society, Culture, and History) as published in the American Studies section of the Calendar. If you do not have these prerequisites but would like to take the course, please contact the instructor and/or csus@utoronto.ca to discuss exceptions to the prerequisites.",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "Timetable InstructionsThis course examines the U.S. empire as a way of life through Black political thought from the mid-20th century to the present. It specifically focuses on the works of political prisoners, presidential advisors, educators, activists, and journalists, grappling with Black scholarship’s often diverging, overlapping, and contradictory perspectives concerning the U.S. empire. Through collective discussions, writing, and journaling, we engage with visions and strategies of emancipation as an intentional mediation on multiple forms of literature related to understanding racialization, gender, sexuality, ability, and asymmetrical relations of power, which are complex and evolving.",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities, Social Science",
@@ -1124,12 +1129,13 @@
     "courseTitle": "Topics in American Studies",
     "code": "AMS402H1",
     "courseDescription": "In-depth examination of specific themes relating to American Studies.",
-    "prerequisite": "2.0 credits chosen from courses with the AMS/USA designator or from the four American Studies Program disciplinary/thematic clusters (Politics and Economics, Society, Culture, and History) as published in the American Studies section of the Calendar.\nIf you do not have these prerequisites but would like to take the course, please contact the instructor and/or csus@utoronto.ca to discuss exceptions to the prerequisites.",
+    "prerequisite": "2.0 credits chosen from courses with the AMS/USA designator or from the four American Studies Program disciplinary/thematic clusters (Politics and Economics, Society, Culture, and History) as published in the American Studies section of the Calendar. If you do not have these prerequisites but would like to take the course, please contact the instructor and/or csus@utoronto.ca to discuss exceptions to the prerequisites.",
     "corequisite": "",
     "exclusion": "",
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "Timetable InstructionsThis upper-year seminar explores how artificial intelligence, mobile technologies, and algorithmic platforms are reshaping culture, governance, and geopolitics across the United States and Asia. Through case studies involving platforms such as Google and WeChat, and emerging large language models such as ChatGPT and Deepseek, we examine how digital systems mediate identity, power, and cultural exchange across the Pacific. Topics include cross-border AI rivalry, mobile infrastructures, platform governance, digital identity politics, and the sociopolitical consequences of interface and algorithm design. Students will engage core themes such as the geopolitics of AI, data governance, the future of democracy, and how digital innovation generates new forms of inequality and bias. Drawing from American Studies, Science and Technology Studies (STS), and digital anthropology, students will develop analytical tools to evaluate how digital infrastructures shape political participation, social life, selfhood, and global imaginaries in an interconnected world.",
     "deliveryInstructions": null,
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Humanities, Social Science",
@@ -1316,6 +1322,7 @@
     "recommendedPreparation": "",
     "section": "F",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Humanities, Social Science",
@@ -1415,6 +1422,7 @@
     "recommendedPreparation": "",
     "section": "S",
     "session": "20261",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Humanities, Social Science",
@@ -1514,6 +1522,7 @@
     "recommendedPreparation": "",
     "section": "Y",
     "session": "20259",
+    "webTimetableInstructions": "",
     "deliveryInstructions": null,
     "breadthCategories": "None",
     "distributionCategories": "Humanities, Social Science",
