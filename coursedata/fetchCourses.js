@@ -38,7 +38,6 @@ async function fetchCourses() {
         headers: { 'Content-Type': 'application/json' }
       });
   console.log(JSON.stringify(response.data, null, 4));
-  fs.writeFile("C:\\Users\\carol\\Downloads\\csc207-team-project-1\\coursedata\\nofetchedcourses.json", JSON.stringify(response.data, null, 4), (err))
   }
 
   catch(err){
