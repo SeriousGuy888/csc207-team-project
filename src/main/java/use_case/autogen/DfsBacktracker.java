@@ -4,7 +4,8 @@ import use_case.constraints.Constraint;
 import entity.Section;
 import java.util.*;
 
-/**A DFS (Depth First Search) timetable generator that uses recursion + backtracking to find a suitable path of generation  **/
+/**A DFS (Depth First Search) timetable generator that uses recursion + backtracking
+ * to find a suitable path of generation  **/
 public class DfsBacktracker {
 
     private final List<Variable> variables;
@@ -24,8 +25,9 @@ public class DfsBacktracker {
      * @return the search result containing the generated timetable (hopefully)
      * If it's a fail it means no possible combinations found (atleast using DFS given current constraints)
      */
-    public SearchResult search(){
-        Assignment initial = new Assignment();
+    public PotentialTimetable search(){
+        Set<Section> initial = new HashSet<>();
+        //Assignment initial = new Assignment();
         return dfs(0, initial);
     }
 
@@ -36,31 +38,31 @@ public class DfsBacktracker {
      * @return A SearchResult, if true contains a sucesfully generated timetable,
      * else false, and it backtracks and tries a different path
      */
-    private SearchResult dfs(int index, Assignment assignment){
+    private PotentialTimetable dfs(int index, Set<Section> assignment){
         // This is the base case, that all variables have succesfully been assigned,
         // and we have a fully generated timetable!
         if(index == variables.size()){
-            return new SearchResult(true, assignment.getChosen());
+            return new PotentialTimetable(true, assignment);
         }
 
         //Choses the variable we will try finding a suitable lecture section for
         Variable var = variables.get(index);
         for(Section candidate : var.getDomain()){ //Iterates through all possible candidates in variable's domain
             //tries a possible assignment by adding a candidate to it
-            Assignment next = new Assignment();
+            Set<Section> next = new HashSet<>();
             next.add(candidate);
 
             //checks if this new temporary assignment is valid
             if (isConsistent(next)){
                 //if valid it checks if the rest of this path works (recursive step)
-                SearchResult result = dfs(index+1, next);
+                PotentialTimetable result = dfs(index+1, next);
                 //Valid path found then it succesfully returns this result so far
                 if (result.success){
                     return result;
                 }
             }
         }
-        return new SearchResult(false, Set.of()); //if no valid path found then returns false here so new-
+        return new PotentialTimetable(false, Set.of()); //if no valid path found then returns false here so new-
         //-path can be tried in the earlier recursive call
 
     }
@@ -72,11 +74,10 @@ public class DfsBacktracker {
      * @param assignment The timetable assinment that is being checked for consistency
      * @return true if all constraints met, else false
      */
-    private boolean isConsistent(Assignment assignment){
-        Set<Section> chosen = assignment.getChosen();
+    private boolean isConsistent(Set<Section> assignment){
         for(Constraint c : constraints){
             //Iterates through all constraints, if a single one is not met function returns false
-            if(!c.isSatisfiedBy(chosen)){
+            if(!c.isSatisfiedBy(assignment)){
                 return false;
             }
         }
