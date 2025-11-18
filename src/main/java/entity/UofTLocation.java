@@ -1,5 +1,8 @@
 package entity;
 
+/**
+ * Represents a specific location at UofT, defined by a building and room.
+ */
 public class UofTLocation {
     private final String buildingCode;
     private final String roomNumber;
@@ -9,13 +12,16 @@ public class UofTLocation {
         this.roomNumber = roomNumber;
     }
 
+    public String getBuildingCode() {
+        return buildingCode;
+    }
+
+    public String getRoomNumber() {
+        return roomNumber;
+    }
+
     @Override
     public String toString() {
         return buildingCode + " " + roomNumber;
-    }
-
-    public String toStreetAddress() {
-        // todo: return an actually correct street addresses once the conversion table exists
-        return "100 St George Street";
     }
 }
