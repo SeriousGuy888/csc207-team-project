@@ -32,7 +32,9 @@ public class Professor {
                 " | department: " + this.department + " | link: " + this.link;
     }
 
-    // return an empty professor
+   /**
+    * @return an empty professor
+    */
     public static Professor noProfessorFound() {
         return new Professor("", "", 0.0, 0, 0.0, "", "");
     }
