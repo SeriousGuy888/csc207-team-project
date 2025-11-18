@@ -35,7 +35,7 @@ public class Professor {
    /**
     * @return an empty professor
     */
-    public static Professor noProfessorFound() {
+    public static Professor emptyProfessor() {
         return new Professor("", "", 0.0, 0, 0.0, "", "");
     }
 
