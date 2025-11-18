@@ -75,7 +75,7 @@ public class RateMyProfDataAccessObject implements RateMyProfDataAccessInterface
             }
 
             if (combinedEdges.length() == 0) {
-                return Professor.noProfessorFound();
+                return Professor.emptyProfessor();
             }
 
             for (int i = 0; i < combinedEdges.length(); i++) {
