@@ -169,7 +169,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.427",
+                    "created": "2025-11-18@15:07:43.955",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -386,7 +386,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.427",
+                    "created": "2025-11-18@15:07:43.955",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -595,7 +595,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.427",
+                    "created": "2025-11-18@15:07:43.955",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -820,7 +820,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.428",
+                    "created": "2025-11-18@15:07:43.956",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -1043,7 +1043,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.428",
+                    "created": "2025-11-18@15:07:43.956",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -1260,7 +1260,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.428",
+                    "created": "2025-11-18@15:07:43.956",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -1472,7 +1472,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.428",
+                    "created": "2025-11-18@15:07:43.956",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -1689,7 +1689,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.428",
+                    "created": "2025-11-18@15:07:43.956",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -1752,127 +1752,6 @@
                         "20261"
                     ],
                     "sections": [
-                        {
-                            "name": "TUT0101",
-                            "type": "Tutorial",
-                            "teachMethod": "TUT",
-                            "sectionNumber": "0101",
-                            "meetingTimes": [
-                                {
-                                    "start": {
-                                        "day": 1,
-                                        "millisofday": 43200000
-                                    },
-                                    "end": {
-                                        "day": 1,
-                                        "millisofday": 46800000
-                                    },
-                                    "building": {
-                                        "buildingCode": "OI",
-                                        "buildingRoomNumber": "",
-                                        "buildingRoomSuffix": "",
-                                        "buildingUrl": "https://map.utoronto.ca/?id=1809#!m/494563",
-                                        "buildingName": null
-                                    },
-                                    "sessionCode": "20259",
-                                    "repetition": "WEEKLY",
-                                    "repetitionTime": "ONCE_A_WEEK"
-                                },
-                                {
-                                    "start": {
-                                        "day": 1,
-                                        "millisofday": 43200000
-                                    },
-                                    "end": {
-                                        "day": 1,
-                                        "millisofday": 46800000
-                                    },
-                                    "building": {
-                                        "buildingCode": "WW",
-                                        "buildingRoomNumber": "",
-                                        "buildingRoomSuffix": "",
-                                        "buildingUrl": "https://map.utoronto.ca/?id=1809#!m/494547",
-                                        "buildingName": null
-                                    },
-                                    "sessionCode": "20261",
-                                    "repetition": "WEEKLY",
-                                    "repetitionTime": "ONCE_A_WEEK"
-                                }
-                            ],
-                            "firstMeeting": null,
-                            "instructors": [],
-                            "currentEnrolment": 15,
-                            "maxEnrolment": 30,
-                            "subTitle": "",
-                            "cancelInd": "N",
-                            "waitlistInd": "N",
-                            "deliveryModes": [
-                                {
-                                    "session": "20259",
-                                    "mode": "INPER"
-                                },
-                                {
-                                    "session": "20261",
-                                    "mode": "INPER"
-                                }
-                            ],
-                            "currentWaitlist": 0,
-                            "enrolmentInd": "",
-                            "tbaInd": "N",
-                            "openLimitInd": "N",
-                            "notes": [
-                                {
-                                    "name": "Section Note",
-                                    "type": "SECTION",
-                                    "content": "<p>August 20, 2025:  Day, time and room changed</p>"
-                                }
-                            ],
-                            "enrolmentControls": [
-                                {
-                                    "yearOfStudy": "*",
-                                    "post": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "subject": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "subjectPost": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "typeOfProgram": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "designation": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "primaryOrg": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "associatedOrg": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "secondOrg": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "adminOrg": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "collaborativeOrgGroupCode": "*",
-                                    "quantity": 30,
-                                    "sequence": 1
-                                }
-                            ],
-                            "linkedMeetingSections": null
-                        },
                         {
                             "name": "LEC0101",
                             "type": "Lecture",
@@ -2038,6 +1917,127 @@
                                 }
                             ],
                             "linkedMeetingSections": null
+                        },
+                        {
+                            "name": "TUT0101",
+                            "type": "Tutorial",
+                            "teachMethod": "TUT",
+                            "sectionNumber": "0101",
+                            "meetingTimes": [
+                                {
+                                    "start": {
+                                        "day": 1,
+                                        "millisofday": 43200000
+                                    },
+                                    "end": {
+                                        "day": 1,
+                                        "millisofday": 46800000
+                                    },
+                                    "building": {
+                                        "buildingCode": "OI",
+                                        "buildingRoomNumber": "",
+                                        "buildingRoomSuffix": "",
+                                        "buildingUrl": "https://map.utoronto.ca/?id=1809#!m/494563",
+                                        "buildingName": null
+                                    },
+                                    "sessionCode": "20259",
+                                    "repetition": "WEEKLY",
+                                    "repetitionTime": "ONCE_A_WEEK"
+                                },
+                                {
+                                    "start": {
+                                        "day": 1,
+                                        "millisofday": 43200000
+                                    },
+                                    "end": {
+                                        "day": 1,
+                                        "millisofday": 46800000
+                                    },
+                                    "building": {
+                                        "buildingCode": "WW",
+                                        "buildingRoomNumber": "",
+                                        "buildingRoomSuffix": "",
+                                        "buildingUrl": "https://map.utoronto.ca/?id=1809#!m/494547",
+                                        "buildingName": null
+                                    },
+                                    "sessionCode": "20261",
+                                    "repetition": "WEEKLY",
+                                    "repetitionTime": "ONCE_A_WEEK"
+                                }
+                            ],
+                            "firstMeeting": null,
+                            "instructors": [],
+                            "currentEnrolment": 15,
+                            "maxEnrolment": 30,
+                            "subTitle": "",
+                            "cancelInd": "N",
+                            "waitlistInd": "N",
+                            "deliveryModes": [
+                                {
+                                    "session": "20259",
+                                    "mode": "INPER"
+                                },
+                                {
+                                    "session": "20261",
+                                    "mode": "INPER"
+                                }
+                            ],
+                            "currentWaitlist": 0,
+                            "enrolmentInd": "",
+                            "tbaInd": "N",
+                            "openLimitInd": "N",
+                            "notes": [
+                                {
+                                    "name": "Section Note",
+                                    "type": "SECTION",
+                                    "content": "<p>August 20, 2025:  Day, time and room changed</p>"
+                                }
+                            ],
+                            "enrolmentControls": [
+                                {
+                                    "yearOfStudy": "*",
+                                    "post": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "subject": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "subjectPost": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "typeOfProgram": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "designation": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "primaryOrg": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "associatedOrg": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "secondOrg": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "adminOrg": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "collaborativeOrgGroupCode": "*",
+                                    "quantity": 30,
+                                    "sequence": 1
+                                }
+                            ],
+                            "linkedMeetingSections": null
                         }
                     ],
                     "duration": null,
@@ -2067,7 +2067,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.428",
+                    "created": "2025-11-18@15:07:43.956",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -2284,7 +2284,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.428",
+                    "created": "2025-11-18@15:07:43.957",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -2615,7 +2615,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.429",
+                    "created": "2025-11-18@15:07:43.957",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -2946,7 +2946,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.429",
+                    "created": "2025-11-18@15:07:43.957",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -3277,7 +3277,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.429",
+                    "created": "2025-11-18@15:07:43.957",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -3517,7 +3517,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.429",
+                    "created": "2025-11-18@15:07:43.957",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -3750,7 +3750,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.429",
+                    "created": "2025-11-18@15:07:43.957",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -3983,7 +3983,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.429",
+                    "created": "2025-11-18@15:07:43.957",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -4216,7 +4216,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.429",
+                    "created": "2025-11-18@15:07:43.958",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -4454,7 +4454,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.429",
+                    "created": "2025-11-18@15:07:43.958",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -4679,7 +4679,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.430",
+                    "created": "2025-11-18@15:07:43.958",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -4762,6 +4762,103 @@
                         "20259"
                     ],
                     "sections": [
+                        {
+                            "name": "TUT0102",
+                            "type": "Tutorial",
+                            "teachMethod": "TUT",
+                            "sectionNumber": "0102",
+                            "meetingTimes": [
+                                {
+                                    "start": {
+                                        "day": 5,
+                                        "millisofday": 36000000
+                                    },
+                                    "end": {
+                                        "day": 5,
+                                        "millisofday": 39600000
+                                    },
+                                    "building": {
+                                        "buildingCode": "MP",
+                                        "buildingRoomNumber": "",
+                                        "buildingRoomSuffix": "",
+                                        "buildingUrl": "https://map.utoronto.ca/?id=1809#!m/494490",
+                                        "buildingName": null
+                                    },
+                                    "sessionCode": "20259",
+                                    "repetition": "WEEKLY",
+                                    "repetitionTime": "ONCE_A_WEEK"
+                                }
+                            ],
+                            "firstMeeting": null,
+                            "instructors": [],
+                            "currentEnrolment": 16,
+                            "maxEnrolment": 80,
+                            "subTitle": "",
+                            "cancelInd": "N",
+                            "waitlistInd": "N",
+                            "deliveryModes": [
+                                {
+                                    "session": "20259",
+                                    "mode": "INPER"
+                                }
+                            ],
+                            "currentWaitlist": 0,
+                            "enrolmentInd": "",
+                            "tbaInd": "N",
+                            "openLimitInd": "N",
+                            "notes": [
+                                {
+                                    "name": "Section Note",
+                                    "type": "SECTION",
+                                    "content": ""
+                                }
+                            ],
+                            "enrolmentControls": [
+                                {
+                                    "yearOfStudy": "*",
+                                    "post": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "subject": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "subjectPost": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "typeOfProgram": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "designation": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "primaryOrg": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "associatedOrg": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "secondOrg": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "adminOrg": {
+                                        "code": "*",
+                                        "name": "All"
+                                    },
+                                    "collaborativeOrgGroupCode": "*",
+                                    "quantity": 80,
+                                    "sequence": 1
+                                }
+                            ],
+                            "linkedMeetingSections": null
+                        },
                         {
                             "name": "TUT0101",
                             "type": "Tutorial",
@@ -5086,103 +5183,6 @@
                                 }
                             ],
                             "linkedMeetingSections": null
-                        },
-                        {
-                            "name": "TUT0102",
-                            "type": "Tutorial",
-                            "teachMethod": "TUT",
-                            "sectionNumber": "0102",
-                            "meetingTimes": [
-                                {
-                                    "start": {
-                                        "day": 5,
-                                        "millisofday": 36000000
-                                    },
-                                    "end": {
-                                        "day": 5,
-                                        "millisofday": 39600000
-                                    },
-                                    "building": {
-                                        "buildingCode": "MP",
-                                        "buildingRoomNumber": "",
-                                        "buildingRoomSuffix": "",
-                                        "buildingUrl": "https://map.utoronto.ca/?id=1809#!m/494490",
-                                        "buildingName": null
-                                    },
-                                    "sessionCode": "20259",
-                                    "repetition": "WEEKLY",
-                                    "repetitionTime": "ONCE_A_WEEK"
-                                }
-                            ],
-                            "firstMeeting": null,
-                            "instructors": [],
-                            "currentEnrolment": 16,
-                            "maxEnrolment": 80,
-                            "subTitle": "",
-                            "cancelInd": "N",
-                            "waitlistInd": "N",
-                            "deliveryModes": [
-                                {
-                                    "session": "20259",
-                                    "mode": "INPER"
-                                }
-                            ],
-                            "currentWaitlist": 0,
-                            "enrolmentInd": "",
-                            "tbaInd": "N",
-                            "openLimitInd": "N",
-                            "notes": [
-                                {
-                                    "name": "Section Note",
-                                    "type": "SECTION",
-                                    "content": ""
-                                }
-                            ],
-                            "enrolmentControls": [
-                                {
-                                    "yearOfStudy": "*",
-                                    "post": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "subject": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "subjectPost": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "typeOfProgram": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "designation": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "primaryOrg": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "associatedOrg": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "secondOrg": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "adminOrg": {
-                                        "code": "*",
-                                        "name": "All"
-                                    },
-                                    "collaborativeOrgGroupCode": "*",
-                                    "quantity": 80,
-                                    "sequence": 1
-                                }
-                            ],
-                            "linkedMeetingSections": null
                         }
                     ],
                     "duration": null,
@@ -5212,7 +5212,7 @@
                             }
                         ]
                     },
-                    "created": "2025-11-15@08:14:24.430",
+                    "created": "2025-11-18@15:07:43.958",
                     "modified": null,
                     "lastSaved": 0,
                     "primaryTeachMethod": "LEC",
@@ -5285,7 +5285,7 @@
                     "primaryWaitlistable": false
                 }
             ],
-            "total": 8167,
+            "total": 8168,
             "page": 1,
             "pageSize": 20,
             "direction": null

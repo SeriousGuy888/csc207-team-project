@@ -1,11 +1,10 @@
 const axios = require('axios');
-// to write coursedata to a file
 const fs = require("fs");
 
-// the sessions we want to pull data for, yyyym
-const current_sessions = ["20259", "20261", "20259-20261"];
 
-// updated pageSize to 9000, taken from ttb 
+const current_sessions = ["20259", "20261", "20259-20261"];
+const url = 'https://api.easi.utoronto.ca/ttb/getPageableCourses'
+
 const payload = {
   courseCodeAndTitleProps: {
     courseCode: "",
@@ -15,7 +14,7 @@ const payload = {
   departmentProps: [],
   campuses: [],
   sessions: current_sessions,
-  requirementPrhops: [],
+  requirementProps: [],
   instructor: "",
   courseLevels: [],
   deliveryModes: [],
@@ -26,20 +25,22 @@ const payload = {
   availableSpace: false,
   waitListable: false,
   page: 1,
-  pageSize: 9000,
+  pageSize: 20,
   direction: "asc"
 };
 
 async function fetchCourses() {
   try{
-    const response = await axios.post('https://api.easi.utoronto.ca/ttb/getPageableCourses', 
+    const response = await axios.post(
+      'https://api.easi.utoronto.ca/ttb/getPageableCourses', 
       payload, 
-      {headers: { 'Content-Type': 'application/json' }
+      {
+        headers: { 'Content-Type': 'application/json' }
       });
-    // console.log(JSON.stringify(response.data, null, 4));
-    return response.data;
+  console.log(JSON.stringify(response.data, null, 4));
+  fs.writeFile("C:\\Users\\carol\\Downloads\\csc207-team-project-1\\coursedata\\nofetchedcourses.json", JSON.stringify(response.data, null, 4), (err))
   }
-  // adding debug incase we want to reuse in future 
+
   catch(err){
     if (err.response) {
       console.error('Request failed with status', err.response.status);
@@ -47,23 +48,44 @@ async function fetchCourses() {
   }
 }
 
+async function fetchAllCourses() {
+  const stream = fs.createWriteStream('allfetchedcourses.json');
+  let hasmorecourses = true; 
 
-async function main() {
-  // Get course data 
-  const responsedata = await fetchCourses();
-  const finalresponseData = JSON.stringify(responsedata, null, 4); 
+  try {
+    stream.write('[');
+    let isFirst = true;
 
-  // Specify the file path to will save courses in 
-  const datafilePath = "fetchedcourses.json";
+    while (hasmorecourses) {
+      console.log(`FETCHING ${payload.page}...`);
 
-  // Write the JSON string to the file
-  fs.writeFile(datafilePath, finalresponseData,(err) => {
-    if (err) {
-      console.error('Error writing to file:', err);
-      return;
+      const response = await axios.post(url,
+        payload, 
+        { headers: { 'Content-Type': 'application/json' }}
+      );
+      const data = response.data;
+      console.log(JSON.stringify(data, null, 2));
+
+      // save it to fetchedcourses.json by page 
+      if (!isFirst) {stream.write(',\n')};
+
+      console.log(`Saving page ${payload.page}...`);
+      stream.write(JSON.stringify(data, null, 2) + '\n');
+
+      isFirst = false;
+      hasmorecourses = data.payload.pageableCourse.courses.length != 0;
+
+      if (!hasmorecourses) {console.log(`No more courses to fetch.`)}
+      payload.page++;
     }
-    console.log('Coursedata saved to', datafilePath);
-  });
+
+    stream.write(']');
+    stream.end();
+    console.log('All courses fetched and saved to fetchedcourses.json');  
+  } catch (err) { 
+    stream.end();
+    console.error('Error fetching courses:', err.message);
+  }
 }
 
-main();
+fetchAllCourses();
