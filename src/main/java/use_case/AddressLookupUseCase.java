@@ -4,9 +4,7 @@ import entity.UofTLocation;
 import java.util.Optional;
 
 /**
- * This is the Use Case Interactor.
- * Its single responsibility is to find the full street address
- * for a UofTLocation entity by coordinating with the data access layer.
+ * The interactor for looking up the street addresses of UofTLocations.
  */
 public class AddressLookupUseCase {
 
