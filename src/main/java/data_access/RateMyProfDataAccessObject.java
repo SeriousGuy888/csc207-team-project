@@ -15,7 +15,7 @@ import java.io.IOException;
 /**
  * Class to retrieve RateMyProf data.
  */
-public class RateMyProfDataAccessObject implements RateMyProfGateway {
+public class RateMyProfDataAccessObject implements RateMyProfDataAccessInterface {
 
     private final OkHttpClient client = new OkHttpClient();
     private final String apiUrl = "https://www.ratemyprofessors.com/graphql";
