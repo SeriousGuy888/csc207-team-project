@@ -4,12 +4,15 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class CourseOffering {
+    private final String uniqueIdentifier;
     private final CourseCode courseCode;
     private final String title;
     private final String description;
     private final Set<Section> availableSections = new HashSet<>();
 
-    public CourseOffering(CourseCode courseCode, String title, String description) {
+    public CourseOffering(String uniqueIdentifier, CourseCode courseCode,
+                          String title, String description) {
+        this.uniqueIdentifier = uniqueIdentifier;
         this.courseCode = courseCode;
         this.title = title;
         this.description = description;
@@ -48,5 +51,9 @@ public class CourseOffering {
 
     public String getDescription() {
         return description;
+    }
+
+    public String getUniqueIdentifier() {
+        return uniqueIdentifier;
     }
 }
