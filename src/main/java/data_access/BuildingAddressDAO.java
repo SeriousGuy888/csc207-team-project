@@ -15,7 +15,7 @@ import java.util.Optional;
 /**
  * Implements the data access interface using a local JSON file.
  * This class is responsible for the "detail" of reading the file
- * and parsing the JSON. It uses the org.json library for robust parsing.
+ * and parsing the JSON. It uses the org.json library for parsing.
  */
 public class BuildingAddressDAO implements AddressDataAccessInterface {
 
