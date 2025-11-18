@@ -29,8 +29,13 @@ public class RateMyProfDataAccessObject implements RateMyProfDataAccessInterface
     @Override
     public Professor getProfessorInfo(String profFirstName, String profLastName) {
         try {
-            //Array of Strings for University of Toronto's school IDs on RateMyProf. (Obtained through inspecting school search on RMP)
-            //Order of IDs: University of Toronto, University of Toronto - St. George, University of Toronto - Mississauga, University of Toronto - Scarborough
+            // Array of Strings for University of Toronto's school IDs on RateMyProf.
+            // (Obtained through inspecting school search on RMP)
+            // Order of IDs:
+            // 1. University of Toronto,
+            // 2. University of Toronto - St. George,
+            // 3. University of Toronto - Mississauga,
+            // 4. University of Toronto - Scarborough
             final String[] schoolIds = {"U2Nob29sLTEyMTg0", "U2Nob29sLTE0ODQ=", "U2Nob29sLTQ5Mjg=", "U2Nob29sLTQ5MTk="};
 
             // GraphQL query with variables
@@ -38,9 +43,11 @@ public class RateMyProfDataAccessObject implements RateMyProfDataAccessInterface
             for (String schoolId : schoolIds) {
                 String jsonBody = "{"
                         + "\"query\": \"query TeacherSearchResultsPageQuery($query: TeacherSearchQuery!) {"
-                        + "search: newSearch { teachers(query: $query, first: 8) { edges { node { firstName lastName avgRating numRatings avgDifficulty department legacyId } } } } }\","
+                        + "search: newSearch { teachers(query: $query, first: 8) { edges { node { firstName lastName "
+                        + "avgRating numRatings avgDifficulty department legacyId } } } } }\","
                         + "\"variables\": {"
-                        + "\"query\": { \"text\": \"" + profFirstName + " " + profLastName + "\", \"schoolID\": \"" + schoolId + "\", \"fallback\": true, \"departmentID\": null }"
+                        + "\"query\": { \"text\": \"" + profFirstName + " " + profLastName + "\", \"schoolID\": \""
+                        + schoolId + "\", \"fallback\": true, \"departmentID\": null }"
                         + "}"
                         + "}";
 
@@ -74,7 +81,7 @@ public class RateMyProfDataAccessObject implements RateMyProfDataAccessInterface
                 }
             }
 
-            if (combinedEdges.length() == 0) {
+            if (combinedEdges.isEmpty()) {
                 return Professor.emptyProfessor();
             }
 
