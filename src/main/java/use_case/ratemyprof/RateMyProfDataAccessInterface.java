@@ -6,5 +6,5 @@ import entity.Professor;
  * Interface for RateMyProf data access.
  */
 public interface RateMyProfDataAccessInterface {
-    public Professor getProfessorInfo(String profName, String profLastName);
+    public Professor getProfessorInfo(String profFirstName, String profLastName);
 }

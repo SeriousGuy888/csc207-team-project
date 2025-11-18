@@ -15,7 +15,9 @@ public class Professor {
     private String department;
     private String link;
 
-    public Professor(String firstName, String lastName, double avgRating, int numRatings, double avgDifficultyRating, String department, String link) {
+    public Professor(String firstName, String lastName, double avgRating, int numRatings, double avgDifficultyRating,
+                     String department, String link) {
+
         this.firstName = firstName;
         this.lastName = lastName;
         this.avgRating = avgRating;
