@@ -14,11 +14,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <!--
-      I've added the <dependencies> section here.
-      This tells Maven to download the org.json library so your
-      BuildingAddressDAO can use it.
-    -->
     <dependencies>
         <dependency>
             <groupId>org.json</groupId>
