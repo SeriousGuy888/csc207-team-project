@@ -67,7 +67,6 @@ public class BuildingAddressDAO implements AddressDataAccessInterface {
 
     /**
      * Reads the entire content of a file from the application's resources directory.
-     * (This helper method was good, no change needed).
      */
     private String readJsonFileContent(String fileName) throws IOException {
         try (InputStream inputStream = getClass().getResourceAsStream(fileName)) {
