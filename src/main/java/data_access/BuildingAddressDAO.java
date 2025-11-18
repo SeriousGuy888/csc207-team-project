@@ -79,7 +79,6 @@ public class BuildingAddressDAO implements AddressDataAccessInterface {
     }
 
     /**
-     * Returns an Optional instead of a raw String or null.
      */
     @Override
     public Optional<String> getAddressByCode(String code) {
