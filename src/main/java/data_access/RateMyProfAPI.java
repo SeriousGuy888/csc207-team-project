@@ -1,7 +1,7 @@
 package data_access;
 
 import entity.Professor;
-import use_case.RateMyProfGateway;
+import use_case.ratemyprof.RateMyProfGateway;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
