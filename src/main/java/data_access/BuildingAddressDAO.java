@@ -79,7 +79,6 @@ public class BuildingAddressDAO implements AddressDataAccessInterface {
     }
 
     /**
-     * Fulfills the interface contract from BuildingAddressDataAccessInterface.
      * Returns an Optional instead of a raw String or null.
      */
     @Override
