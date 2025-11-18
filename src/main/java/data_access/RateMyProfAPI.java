@@ -1,5 +1,6 @@
 package data_access;
 
+import entity.Professor;
 import use_case.RateMyProfGateway;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -10,7 +11,6 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.util.*;
 
 /**
  * Class to retrieve RateMyProf data.
@@ -23,11 +23,11 @@ public class RateMyProfAPI implements RateMyProfGateway {
     /**
      *
      * @param profFirstName the first name of the professor whose information is being searched for.
-     * @param profLastName the first name of the professor whose information is being searched for.
-     * @return
+     * @param profLastName  the first name of the professor whose information is being searched for.
+     * @return Professor object. If no professor is found, returns an empty professor object.
      */
     @Override
-    public String getProfessorInfo(String profFirstName, String profLastName) {
+    public Professor getProfessorInfo(String profFirstName, String profLastName) {
         try {
             //Array of Strings for University of Toronto's school IDs on RateMyProf. (Obtained through inspecting school search on RMP)
             //Order of IDs: University of Toronto, University of Toronto - St. George, University of Toronto - Mississauga, University of Toronto - Scarborough
@@ -38,7 +38,7 @@ public class RateMyProfAPI implements RateMyProfGateway {
             for (String schoolId : schoolIds) {
                 String jsonBody = "{"
                         + "\"query\": \"query TeacherSearchResultsPageQuery($query: TeacherSearchQuery!) {"
-                        + "search: newSearch { teachers(query: $query, first: 8) { edges { node { firstName lastName avgRating numRatings department legacyId } } } } }\","
+                        + "search: newSearch { teachers(query: $query, first: 8) { edges { node { firstName lastName avgRating numRatings avgDifficulty department legacyId } } } } }\","
                         + "\"variables\": {"
                         + "\"query\": { \"text\": \"" + profFirstName + " " + profLastName + "\", \"schoolID\": \"" + schoolId + "\", \"fallback\": true, \"departmentID\": null }"
                         + "}"
@@ -75,7 +75,7 @@ public class RateMyProfAPI implements RateMyProfGateway {
             }
 
             if (combinedEdges.length() == 0) {
-                return "No results found for " + profFirstName + " " + profLastName;
+                return Professor.noProfessorFound();
             }
 
             for (int i = 0; i < combinedEdges.length(); i++) {
@@ -90,6 +90,7 @@ public class RateMyProfAPI implements RateMyProfGateway {
                     String first = teacherNode.getString("firstName");
                     String last = teacherNode.getString("lastName");
                     double avgRating = teacherNode.optDouble("avgRating", -1);
+                    double avgDifficulty = teacherNode.optDouble("avgDifficulty", -1);
                     int numRatings = teacherNode.optInt("numRatings", 0);
                     String department = teacherNode.has("department") ?
                             teacherNode.optString("department", "Unknown"): null;
@@ -97,13 +98,12 @@ public class RateMyProfAPI implements RateMyProfGateway {
                     int legacyId = teacherNode.getInt("legacyId");
                     String link = "https://www.ratemyprofessors.com/professor/" + legacyId;
 
-                    // Return formatted string
-                    return first + " " + last + " | Rating: " + avgRating + " | Ratings: " + numRatings
-                            + " | Dept: " + department + " | Link: " + link;
+                    // Return Professor object
+                    return new Professor(first, last, avgRating, numRatings, avgDifficulty, department, link);
                 }
             }
 
-            return "No results found for " + profFirstName + " " + profLastName;
+            return null;
 
         } catch (IOException e) {
             throw new RuntimeException(e);

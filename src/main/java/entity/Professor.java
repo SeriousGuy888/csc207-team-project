@@ -7,17 +7,34 @@ package entity;
  * RateMyProf Rating, and AvgDifficulty rating.
  */
 public class Professor {
-    private final String firstName;
-    private final String lastName;
-    private final float avgRating;
-    private final int numRatings;
-    private final float avgDifficultyRating;
+    private String firstName;
+    private String lastName;
+    private double avgRating;
+    private int numRatings;
+    private double avgDifficultyRating;
+    private String department;
+    private String link;
 
-    public Professor(String firstName, String lastName, float avgRating, int numRatings, float avgDifficultyRating) {
+    public Professor(String firstName, String lastName, double avgRating, int numRatings, double avgDifficultyRating, String department, String link) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.avgRating = avgRating;
         this.numRatings = numRatings;
         this.avgDifficultyRating = avgDifficultyRating;
+        this.department = department;
+        this.link = link;
     }
+
+    // return a formatted string with the professor info
+    public String stringProf() {
+        return "first: " + this.firstName + " | last: " + this.lastName + " | avgRating: " + this.avgRating +
+                " | numRatings: " + this.numRatings + " | avgDifficulty: " + this.avgDifficultyRating +
+                " | department: " + this.department + " | link: " + this.link;
+    }
+
+    // return an empty professor
+    public static Professor noProfessorFound() {
+        return new Professor("", "", 0.0, 0, 0.0, "", "");
+    }
+
 }
