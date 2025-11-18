@@ -13,8 +13,11 @@ public class Professor {
     private final int numRatings;
     private final float avgDifficultyRating;
 
-    public Professor(String firstName, String lastName, int numRatings) {
+    public Professor(String firstName, String lastName, float avgRating, int numRatings, float avgDifficultyRating) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.avgRating = avgRating;
+        this.numRatings = numRatings;
+        this.avgDifficultyRating = avgDifficultyRating;
     }
 }
