@@ -45,7 +45,7 @@
         "actualEnrolment": "85",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -128,7 +128,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "TUT-0201": {
         "schedule": {
@@ -160,7 +161,7 @@
         "actualEnrolment": "23",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -189,7 +190,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "TUT-0102": {
         "schedule": {
@@ -221,7 +223,7 @@
         "actualEnrolment": "22",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -250,68 +252,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "FE",
-            "assignedRoom2": "FE"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Aj",
-            "lastName": "Bedward"
-          }
-        },
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "26",
-        "actualEnrolment": "24",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "TUT-0202": {
         "schedule": {
@@ -343,7 +285,7 @@
         "actualEnrolment": "14",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -372,7 +314,70 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
+      },
+      "TUT-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "FE",
+            "assignedRoom2": "FE"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Aj",
+            "lastName": "Bedward"
+          }
+        },
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "26",
+        "actualEnrolment": "24",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -422,7 +427,7 @@
         "actualEnrolment": "25",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -559,7 +564,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -609,7 +615,7 @@
         "actualEnrolment": "2",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>September 12, 2025: Room changed.</p>",
+        "meetingStatusNotes": "September 12, 2025: Room changed.",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -746,7 +752,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -796,7 +803,7 @@
         "actualEnrolment": "12",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -933,7 +940,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -983,7 +991,7 @@
         "actualEnrolment": "13",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1120,7 +1128,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1170,7 +1179,7 @@
         "actualEnrolment": "8",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1307,7 +1316,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1351,7 +1361,7 @@
         "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "E",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1407,7 +1417,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1451,7 +1462,7 @@
         "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "E",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1507,7 +1518,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1551,7 +1563,7 @@
         "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "E",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1607,7 +1619,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   }

@@ -45,7 +45,7 @@
         "actualEnrolment": "77",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -101,7 +101,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -151,7 +152,7 @@
         "actualEnrolment": "114",
         "actualWaitlist": "0",
         "enrollmentIndicator": "P",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -666,7 +667,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -716,7 +718,7 @@
         "actualEnrolment": "28",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -772,7 +774,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -827,10 +830,10 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "60",
-        "actualEnrolment": "37",
+        "actualEnrolment": "36",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -886,7 +889,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -936,7 +940,7 @@
         "actualEnrolment": "77",
         "actualWaitlist": "0",
         "enrollmentIndicator": "P",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1262,7 +1266,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1312,7 +1317,7 @@
         "actualEnrolment": "11",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1368,7 +1373,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1418,7 +1424,7 @@
         "actualEnrolment": "14",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": "<ul>\n<li>Students are required to register for a tutorial (TUT)</li>\n</ul>",
+        "meetingStatusNotes": "Students are required to register for a tutorial (TUT)",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1474,7 +1480,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "TUT-0101": {
         "schedule": {
@@ -1500,7 +1507,7 @@
         "actualEnrolment": "13",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1529,7 +1536,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1579,7 +1587,7 @@
         "actualEnrolment": "16",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1635,7 +1643,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "TUT-0101": {
         "schedule": {
@@ -1661,7 +1670,7 @@
         "actualEnrolment": "14",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1690,7 +1699,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1740,7 +1750,7 @@
         "actualEnrolment": "18",
         "actualWaitlist": "0",
         "enrollmentIndicator": "P",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2174,7 +2184,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   }

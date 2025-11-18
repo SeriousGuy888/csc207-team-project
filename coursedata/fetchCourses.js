@@ -48,13 +48,9 @@ const payload = {
 
 async function fetchAllCourses() {
   let allPages = [];
-  // const stream = fs.createWriteStream('allfetchedcourses.json');
   let hasmorecourses = true; 
 
   try {
-    // stream.write('[');
-    let isFirst = true;
-
     while (hasmorecourses) {
       console.log(`FETCHING ${payload.page}...`);
 
@@ -153,8 +149,9 @@ function getmeetings(course) {
         actualEnrolment: String(section.currentEnrolment),
         actualWaitlist: String(section.currentWaitlist),
         enrollmentIndicator: section.enrolmentInd,
-        meetingStatusNotes: section.notes?.find(n => n.type === 'SECTION')?.content || null,
-        enrollmentControls: convertEnrollmentControls(section.enrolmentControls)
+        meetingStatusNotes: cleanHTML(section.notes?.find(n => n.type === 'SECTION')?.content || null),
+        enrollmentControls: convertEnrollmentControls(section.enrolmentControls),
+        linkedMeetingSections: section.linkedMeetingSections ?? []
       };
     });
   }

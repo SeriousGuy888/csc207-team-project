@@ -45,7 +45,7 @@
         "actualEnrolment": "15",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -74,7 +74,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "LEC-0101": {
         "schedule": {
@@ -106,7 +107,7 @@
         "actualEnrolment": "14",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -135,7 +136,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -185,7 +187,7 @@
         "actualEnrolment": "25",
         "actualWaitlist": "12",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -214,7 +216,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "LEC-0102": {
         "schedule": {
@@ -246,7 +249,7 @@
         "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -275,7 +278,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -325,7 +329,7 @@
         "actualEnrolment": "146",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -435,7 +439,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -482,10 +487,10 @@
         "deliveryMode": "ASYNC",
         "online": "Online",
         "enrollmentCapacity": "120",
-        "actualEnrolment": "119",
-        "actualWaitlist": "29",
+        "actualEnrolment": "120",
+        "actualWaitlist": "28",
         "enrollmentIndicator": "P",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -676,7 +681,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -726,7 +732,7 @@
         "actualEnrolment": "120",
         "actualWaitlist": "0",
         "enrollmentIndicator": "P",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -944,7 +950,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "LEC-5101": {
         "schedule": {
@@ -976,7 +983,7 @@
         "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "P",
-        "meetingStatusNotes": "<p>August 22, 2025</p>",
+        "meetingStatusNotes": "August 22, 2025",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1167,7 +1174,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1214,10 +1222,10 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "120",
-        "actualEnrolment": "92",
+        "actualEnrolment": "91",
         "actualWaitlist": "0",
         "enrollmentIndicator": "P",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1408,7 +1416,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1458,7 +1467,7 @@
         "actualEnrolment": "113",
         "actualWaitlist": "0",
         "enrollmentIndicator": "P",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1730,7 +1739,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1780,7 +1790,7 @@
         "actualEnrolment": "120",
         "actualWaitlist": "18",
         "enrollmentIndicator": "P",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2052,7 +2062,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "LEC-0101": {
         "schedule": {
@@ -2078,7 +2089,7 @@
         "actualEnrolment": "120",
         "actualWaitlist": "24",
         "enrollmentIndicator": "P",
-        "meetingStatusNotes": "<p>September 12, 2025: Section added</p>",
+        "meetingStatusNotes": "September 12, 2025: Section added",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2350,7 +2361,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -2400,7 +2412,7 @@
         "actualEnrolment": "79",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2483,7 +2495,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -2533,7 +2546,7 @@
         "actualEnrolment": "78",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2697,7 +2710,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -2747,7 +2761,7 @@
         "actualEnrolment": "91",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2911,7 +2925,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -2961,7 +2976,7 @@
         "actualEnrolment": "36",
         "actualWaitlist": "1",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": "<p>September 3, 2025: Room change</p>",
+        "meetingStatusNotes": "September 3, 2025: Room change",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3044,7 +3059,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3094,7 +3110,7 @@
         "actualEnrolment": "108",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3204,7 +3220,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3254,7 +3271,7 @@
         "actualEnrolment": "120",
         "actualWaitlist": "15",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3364,7 +3381,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3414,7 +3432,7 @@
         "actualEnrolment": "120",
         "actualWaitlist": "13",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3497,7 +3515,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3544,10 +3563,10 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "91",
-        "actualEnrolment": "86",
+        "actualEnrolment": "87",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3630,7 +3649,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3680,7 +3700,7 @@
         "actualEnrolment": "94",
         "actualWaitlist": "3",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": "<p>September 10, 2025: Room changed</p>",
+        "meetingStatusNotes": "September 10, 2025: Room changed",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3790,7 +3810,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3840,7 +3861,7 @@
         "actualEnrolment": "68",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4004,7 +4025,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -4051,10 +4073,10 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "97",
-        "actualEnrolment": "96",
-        "actualWaitlist": "2",
+        "actualEnrolment": "97",
+        "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": "<p>September 10, 2025: Room changed</p>",
+        "meetingStatusNotes": "September 10, 2025: Room changed",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4218,7 +4240,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -4262,7 +4285,7 @@
         "actualEnrolment": "2",
         "actualWaitlist": "0",
         "enrollmentIndicator": "E",
-        "meetingStatusNotes": "<p>June 27, 2025: Course added</p>",
+        "meetingStatusNotes": "June 27, 2025: Course added",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4291,7 +4314,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -4311,148 +4335,6 @@
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
     "meetings": {
-      "LEC-0101": {
-        "schedule": {
-          "MO-0": {
-            "meetingDay": "MO",
-            "meetingStartTime": "15:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "RW",
-            "assignedRoom2": "RW"
-          }
-        },
-        "instructors": {
-          "0": {
-            "instructorId": "0",
-            "firstName": "Michael",
-            "lastName": "Fitzgibbon"
-          }
-        },
-        "meetingId": "LEC0101",
-        "teachingMethod": "LEC",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "75",
-        "actualEnrolment": "74",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "AS   CHRM",
-            "postName": "Cert Human Resource Management",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "2",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "3",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          },
-          {
-            "postId": "4",
-            "postCode": "",
-            "postName": "",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0201": {
         "schedule": {
           "TU-0": {
@@ -4483,7 +4365,7 @@
         "actualEnrolment": "83",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4620,35 +4502,18 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
-      }
-    }
-  },
-  "IRE431H1-S-20261": {
-    "courseId": "67f998c7de40c67f1da339af",
-    "courseTitle": "Canadian Labour Law & the Unionized Workplace",
-    "code": "IRE431H1",
-    "courseDescription": "The course will focus on the laws impacting unionized workplaces. It will cover every phase of the Ontario Labour Relations Act, 1995 (the “LRA”) from union organizing, certification, negotiation and bargaining, collective agreement arbitration, retention of bargaining rights and decertification and termination of bargaining rights.",
-    "prerequisite": "IRE430H1",
-    "corequisite": "",
-    "exclusion": "",
-    "recommendedPreparation": "",
-    "section": "S",
-    "session": "20261",
-    "webTimetableInstructions": "Delivery InstructionsAll online IRE/IRW courses will have in-person testing (term and/or final exam)",
-    "deliveryInstructions": null,
-    "breadthCategories": "Society and its Institutions (3)",
-    "distributionCategories": "Social Science",
-    "meetings": {
-      "LEC-0201": {
+        ],
+        "linkedMeetingSections": []
+      },
+      "LEC-0101": {
         "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
+          "MO-0": {
+            "meetingDay": "MO",
             "meetingStartTime": "15:00",
             "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "",
-            "assignedRoom2": ""
+            "assignedRoom1": "RW",
+            "assignedRoom2": "RW"
           }
         },
         "instructors": {
@@ -4658,19 +4523,19 @@
             "lastName": "Fitzgibbon"
           }
         },
-        "meetingId": "LEC0201",
+        "meetingId": "LEC0101",
         "teachingMethod": "LEC",
-        "sectionNumber": "0201",
+        "sectionNumber": "0101",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
-        "deliveryMode": "SYNC",
-        "online": "Online",
-        "enrollmentCapacity": "85",
-        "actualEnrolment": "85",
-        "actualWaitlist": "5",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "75",
+        "actualEnrolment": "74",
+        "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4752,9 +4617,55 @@
             "adminOrgId": "1",
             "adminOrgCode": "*",
             "adminOrgName": "All"
+          },
+          {
+            "postId": "4",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
           }
-        ]
-      },
+        ],
+        "linkedMeetingSections": []
+      }
+    }
+  },
+  "IRE431H1-S-20261": {
+    "courseId": "67f998c7de40c67f1da339af",
+    "courseTitle": "Canadian Labour Law & the Unionized Workplace",
+    "code": "IRE431H1",
+    "courseDescription": "The course will focus on the laws impacting unionized workplaces. It will cover every phase of the Ontario Labour Relations Act, 1995 (the “LRA”) from union organizing, certification, negotiation and bargaining, collective agreement arbitration, retention of bargaining rights and decertification and termination of bargaining rights.",
+    "prerequisite": "IRE430H1",
+    "corequisite": "",
+    "exclusion": "",
+    "recommendedPreparation": "",
+    "section": "S",
+    "session": "20261",
+    "webTimetableInstructions": "Delivery InstructionsAll online IRE/IRW courses will have in-person testing (term and/or final exam)",
+    "deliveryInstructions": null,
+    "breadthCategories": "Society and its Institutions (3)",
+    "distributionCategories": "Social Science",
+    "meetings": {
       "LEC-0101": {
         "schedule": {
           "MO-0": {
@@ -4785,7 +4696,7 @@
         "actualEnrolment": "75",
         "actualWaitlist": "3",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4868,62 +4779,45 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
-      }
-    }
-  },
-  "IRE446H1-S-20261": {
-    "courseId": "67f998c7de40c67f1da339b0",
-    "courseTitle": "Working as an Internal Organizational Consultant",
-    "code": "IRE446H1",
-    "courseDescription": "This course examines the various elements of the consulting process and the interpersonal skills required to build trust, influence others, contract with clients, and establish and maintain strong working relationships. This seminar may include a compulsory learning format component using a service-learning placement with a community-based agency or organization.",
-    "prerequisite": "0.5 credit in IRE at the 300+ level",
-    "corequisite": "",
-    "exclusion": "IRW446Y1",
-    "recommendedPreparation": "",
-    "section": "S",
-    "session": "20261",
-    "webTimetableInstructions": "",
-    "deliveryInstructions": null,
-    "breadthCategories": "Society and its Institutions (3)",
-    "distributionCategories": "Social Science",
-    "meetings": {
-      "LEC-0101": {
+        ],
+        "linkedMeetingSections": []
+      },
+      "LEC-0201": {
         "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "15:00",
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "15:00",
+            "meetingEndTime": "17:00",
             "meetingScheduleId": "0",
-            "assignedRoom1": "SU",
-            "assignedRoom2": "SU"
+            "assignedRoom1": "",
+            "assignedRoom2": ""
           }
         },
         "instructors": {
           "0": {
             "instructorId": "0",
-            "firstName": "Rafael",
-            "lastName": "Gomez"
+            "firstName": "Michael",
+            "lastName": "Fitzgibbon"
           }
         },
-        "meetingId": "LEC0101",
+        "meetingId": "LEC0201",
         "teachingMethod": "LEC",
-        "sectionNumber": "0101",
+        "sectionNumber": "0201",
         "subtitle": "",
         "cancel": "",
         "waitlist": "Y",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "25",
-        "actualEnrolment": "25",
-        "actualWaitlist": "16",
+        "deliveryMode": "SYNC",
+        "online": "Online",
+        "enrollmentCapacity": "85",
+        "actualEnrolment": "85",
+        "actualWaitlist": "5",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
-            "postCode": "",
-            "postName": "",
+            "postCode": "AS   CHRM",
+            "postName": "Cert Human Resource Management",
             "subjectId": "1",
             "subjectCode": "*",
             "subjectName": "All",
@@ -4973,9 +4867,55 @@
             "adminOrgId": "1",
             "adminOrgCode": "*",
             "adminOrgName": "All"
+          },
+          {
+            "postId": "3",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
           }
-        ]
-      },
+        ],
+        "linkedMeetingSections": []
+      }
+    }
+  },
+  "IRE446H1-S-20261": {
+    "courseId": "67f998c7de40c67f1da339b0",
+    "courseTitle": "Working as an Internal Organizational Consultant",
+    "code": "IRE446H1",
+    "courseDescription": "This course examines the various elements of the consulting process and the interpersonal skills required to build trust, influence others, contract with clients, and establish and maintain strong working relationships. This seminar may include a compulsory learning format component using a service-learning placement with a community-based agency or organization.",
+    "prerequisite": "0.5 credit in IRE at the 300+ level",
+    "corequisite": "",
+    "exclusion": "IRW446Y1",
+    "recommendedPreparation": "",
+    "section": "S",
+    "session": "20261",
+    "webTimetableInstructions": "",
+    "deliveryInstructions": null,
+    "breadthCategories": "Society and its Institutions (3)",
+    "distributionCategories": "Social Science",
+    "meetings": {
       "LEC-5101": {
         "schedule": {
           "TH-0": {
@@ -5006,7 +4946,7 @@
         "actualEnrolment": "25",
         "actualWaitlist": "10",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -5062,7 +5002,97 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
+      },
+      "LEC-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "15:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SU",
+            "assignedRoom2": "SU"
+          }
+        },
+        "instructors": {
+          "0": {
+            "instructorId": "0",
+            "firstName": "Rafael",
+            "lastName": "Gomez"
+          }
+        },
+        "meetingId": "LEC0101",
+        "teachingMethod": "LEC",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "Y",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "25",
+        "actualEnrolment": "25",
+        "actualWaitlist": "16",
+        "enrollmentIndicator": "R1",
+        "meetingStatusNotes": "",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          },
+          {
+            "postId": "2",
+            "postCode": "",
+            "postName": "",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -5112,7 +5142,7 @@
         "actualEnrolment": "30",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -5222,7 +5252,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -5270,9 +5301,9 @@
         "online": "In Person",
         "enrollmentCapacity": "30",
         "actualEnrolment": "30",
-        "actualWaitlist": "15",
+        "actualWaitlist": "16",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": "<p>November 12, 2025: Room change</p>",
+        "meetingStatusNotes": "November 12, 2025: Room change",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -5409,7 +5440,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   }

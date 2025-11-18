@@ -45,7 +45,7 @@
         "actualEnrolment": "446",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -128,7 +128,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -178,7 +179,7 @@
         "actualEnrolment": "265",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": "<p>September 8, 2025: Room changed.</p>",
+        "meetingStatusNotes": "September 8, 2025: Room changed.",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -234,7 +235,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -284,7 +286,7 @@
         "actualEnrolment": "266",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -340,7 +342,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -360,61 +363,6 @@
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
     "meetings": {
-      "TUT-0301": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "16:00",
-            "meetingEndTime": "17:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "RW",
-            "assignedRoom2": "RW"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0301",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0301",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "100",
-        "actualEnrolment": "87",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>June 10, 2025: Time changed.</p>",
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
-      },
       "LEC-0101": {
         "schedule": {
           "TU-0": {
@@ -445,7 +393,7 @@
         "actualEnrolment": "267",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": "<p>September 2, 2025: Room changed.</p>",
+        "meetingStatusNotes": "September 2, 2025: Room changed.",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -501,62 +449,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "TU-0": {
-            "meetingDay": "TU",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "FE",
-            "assignedRoom2": "FE"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "100",
-        "actualEnrolment": "88",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "TUT-0201": {
         "schedule": {
@@ -582,7 +476,7 @@
         "actualEnrolment": "92",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>June 10, 2025: Time changed.</p>",
+        "meetingStatusNotes": "June 10, 2025: Time changed.",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -611,7 +505,120 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
+      },
+      "TUT-0101": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "FE",
+            "assignedRoom2": "FE"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "100",
+        "actualEnrolment": "88",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ],
+        "linkedMeetingSections": []
+      },
+      "TUT-0301": {
+        "schedule": {
+          "TU-0": {
+            "meetingDay": "TU",
+            "meetingStartTime": "16:00",
+            "meetingEndTime": "17:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "RW",
+            "assignedRoom2": "RW"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0301",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0301",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "100",
+        "actualEnrolment": "87",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "June 10, 2025: Time changed.",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -661,7 +668,7 @@
         "actualEnrolment": "278",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -717,7 +724,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -767,7 +775,7 @@
         "actualEnrolment": "47",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -823,7 +831,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -867,7 +876,7 @@
         "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": "<p>June 26, 2025: Course cancelled.</p>",
+        "meetingStatusNotes": "June 26, 2025: Course cancelled.",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -923,7 +932,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -973,7 +983,7 @@
         "actualEnrolment": "47",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1029,7 +1039,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1079,7 +1090,7 @@
         "actualEnrolment": "86",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1135,7 +1146,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1185,7 +1197,7 @@
         "actualEnrolment": "60",
         "actualWaitlist": "15",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1214,7 +1226,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1258,7 +1271,7 @@
         "actualEnrolment": "71",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>September 9, 2025: Room changed.</p>",
+        "meetingStatusNotes": "September 9, 2025: Room changed.",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1287,7 +1300,64 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
+      },
+      "TUT-0102": {
+        "schedule": {
+          "-": {
+            "meetingDay": null,
+            "meetingStartTime": null,
+            "meetingEndTime": null,
+            "meetingScheduleId": null,
+            "assignedRoom1": null,
+            "assignedRoom2": null
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0102",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0102",
+        "subtitle": "",
+        "cancel": "Cancelled",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "40",
+        "actualEnrolment": "0",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ],
+        "linkedMeetingSections": []
       },
       "LEC-0101": {
         "schedule": {
@@ -1319,7 +1389,7 @@
         "actualEnrolment": "73",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1375,62 +1445,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
-      },
-      "TUT-0102": {
-        "schedule": {
-          "-": {
-            "meetingDay": null,
-            "meetingStartTime": null,
-            "meetingEndTime": null,
-            "meetingScheduleId": null,
-            "assignedRoom1": null,
-            "assignedRoom2": null
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0102",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0102",
-        "subtitle": "",
-        "cancel": "Cancelled",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "40",
-        "actualEnrolment": "0",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1480,7 +1496,7 @@
         "actualEnrolment": "80",
         "actualWaitlist": "1",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": "<p>September 2, 2025: Delivery method changed.</p>",
+        "meetingStatusNotes": "September 2, 2025: Delivery method changed.",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1509,7 +1525,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "TUT-0101": {
         "schedule": {
@@ -1532,10 +1549,10 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "40",
-        "actualEnrolment": "40",
+        "actualEnrolment": "39",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>September 2, 2025: Time and room changed.</p>",
+        "meetingStatusNotes": "September 2, 2025: Time and room changed.",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1564,7 +1581,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "TUT-0102": {
         "schedule": {
@@ -1587,10 +1605,10 @@
         "deliveryMode": "INPER",
         "online": "In Person",
         "enrollmentCapacity": "40",
-        "actualEnrolment": "35",
+        "actualEnrolment": "36",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": "<p>September 2, 2025: Time and room changed.</p>",
+        "meetingStatusNotes": "September 2, 2025: Time and room changed.",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1619,7 +1637,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1669,7 +1688,7 @@
         "actualEnrolment": "38",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1725,7 +1744,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1775,7 +1795,7 @@
         "actualEnrolment": "55",
         "actualWaitlist": "4",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": "<p>August 22, 2025: Room changed.</br>June 17, 2025: Course added.</p>",
+        "meetingStatusNotes": "August 22, 2025: Room changed.June 17, 2025: Course added.",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1831,7 +1851,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1881,7 +1902,7 @@
         "actualEnrolment": "74",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -1937,7 +1958,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -1987,7 +2009,7 @@
         "actualEnrolment": "100",
         "actualWaitlist": "18",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": "<p>June 10, 2025: Delivery method changed.</p>",
+        "meetingStatusNotes": "June 10, 2025: Delivery method changed.",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2043,7 +2065,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -2093,7 +2116,7 @@
         "actualEnrolment": "50",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2149,7 +2172,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -2199,7 +2223,7 @@
         "actualEnrolment": "90",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2255,7 +2279,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -2305,7 +2330,7 @@
         "actualEnrolment": "66",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2361,7 +2386,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -2411,7 +2437,7 @@
         "actualEnrolment": "60",
         "actualWaitlist": "2",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2467,7 +2493,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -2517,7 +2544,7 @@
         "actualEnrolment": "18",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2573,7 +2600,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -2623,7 +2651,7 @@
         "actualEnrolment": "60",
         "actualWaitlist": "7",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": "<p>July 28, 2025: Subtitle changed.</p>",
+        "meetingStatusNotes": "July 28, 2025: Subtitle changed.",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2679,7 +2707,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "TUT-0101": {
         "schedule": {
@@ -2705,7 +2734,7 @@
         "actualEnrolment": "54",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2734,7 +2763,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -2778,7 +2808,7 @@
         "actualEnrolment": "29",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2807,7 +2837,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "TUT-0102": {
         "schedule": {
@@ -2833,7 +2864,7 @@
         "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2862,7 +2893,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "LEC-0101": {
         "schedule": {
@@ -2894,7 +2926,7 @@
         "actualEnrolment": "29",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -2950,7 +2982,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -2970,6 +3003,62 @@
     "breadthCategories": "Society and its Institutions (3)",
     "distributionCategories": "Social Science",
     "meetings": {
+      "TUT-0101": {
+        "schedule": {
+          "TH-0": {
+            "meetingDay": "TH",
+            "meetingStartTime": "13:00",
+            "meetingEndTime": "14:00",
+            "meetingScheduleId": "0",
+            "assignedRoom1": "SS",
+            "assignedRoom2": "SS"
+          }
+        },
+        "instructors": {},
+        "meetingId": "TUT0101",
+        "teachingMethod": "TUT",
+        "sectionNumber": "0101",
+        "subtitle": "",
+        "cancel": "",
+        "waitlist": "N",
+        "deliveryMode": "INPER",
+        "online": "In Person",
+        "enrollmentCapacity": "60",
+        "actualEnrolment": "33",
+        "actualWaitlist": "0",
+        "enrollmentIndicator": "",
+        "meetingStatusNotes": "",
+        "enrollmentControls": [
+          {
+            "postId": "1",
+            "postCode": "*",
+            "postName": "All",
+            "subjectId": "1",
+            "subjectCode": "*",
+            "subjectName": "All",
+            "designationId": "1",
+            "designationCode": "*",
+            "designationName": "All",
+            "yearOfStudy": "*",
+            "typeOfProgramId": "1",
+            "typeOfProgramCode": "*",
+            "typeOfProgramName": "All",
+            "primaryOrgId": "1",
+            "primaryOrgCode": "*",
+            "primaryOrgName": "All",
+            "secondaryOrgId": "1",
+            "secondaryOrgCode": "*",
+            "secondaryOrgName": "All",
+            "assocOrgId": "1",
+            "assocOrgCode": "*",
+            "assocOrgName": "All",
+            "adminOrgId": "1",
+            "adminOrgCode": "*",
+            "adminOrgName": "All"
+          }
+        ],
+        "linkedMeetingSections": []
+      },
       "LEC-0101": {
         "schedule": {
           "TH-0": {
@@ -3000,7 +3089,7 @@
         "actualEnrolment": "34",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": "<p>July 28, 2025: Subtitle changed.</p>",
+        "meetingStatusNotes": "July 28, 2025: Subtitle changed.",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3056,62 +3145,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
-      },
-      "TUT-0101": {
-        "schedule": {
-          "TH-0": {
-            "meetingDay": "TH",
-            "meetingStartTime": "13:00",
-            "meetingEndTime": "14:00",
-            "meetingScheduleId": "0",
-            "assignedRoom1": "SS",
-            "assignedRoom2": "SS"
-          }
-        },
-        "instructors": {},
-        "meetingId": "TUT0101",
-        "teachingMethod": "TUT",
-        "sectionNumber": "0101",
-        "subtitle": "",
-        "cancel": "",
-        "waitlist": "N",
-        "deliveryMode": "INPER",
-        "online": "In Person",
-        "enrollmentCapacity": "60",
-        "actualEnrolment": "33",
-        "actualWaitlist": "0",
-        "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
-        "enrollmentControls": [
-          {
-            "postId": "1",
-            "postCode": "*",
-            "postName": "All",
-            "subjectId": "1",
-            "subjectCode": "*",
-            "subjectName": "All",
-            "designationId": "1",
-            "designationCode": "*",
-            "designationName": "All",
-            "yearOfStudy": "*",
-            "typeOfProgramId": "1",
-            "typeOfProgramCode": "*",
-            "typeOfProgramName": "All",
-            "primaryOrgId": "1",
-            "primaryOrgCode": "*",
-            "primaryOrgName": "All",
-            "secondaryOrgId": "1",
-            "secondaryOrgCode": "*",
-            "secondaryOrgName": "All",
-            "assocOrgId": "1",
-            "assocOrgCode": "*",
-            "assocOrgName": "All",
-            "adminOrgId": "1",
-            "adminOrgCode": "*",
-            "adminOrgName": "All"
-          }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3161,7 +3196,7 @@
         "actualEnrolment": "28",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3190,7 +3225,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3234,7 +3270,7 @@
         "actualEnrolment": "1",
         "actualWaitlist": "0",
         "enrollmentIndicator": "E",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3263,7 +3299,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3307,7 +3344,7 @@
         "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "E",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3336,7 +3373,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3380,7 +3418,7 @@
         "actualEnrolment": "2",
         "actualWaitlist": "0",
         "enrollmentIndicator": "E",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3409,7 +3447,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3453,7 +3492,7 @@
         "actualEnrolment": "4",
         "actualWaitlist": "0",
         "enrollmentIndicator": "E",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3482,7 +3521,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3526,7 +3566,7 @@
         "actualEnrolment": "0",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3555,7 +3595,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3605,7 +3646,7 @@
         "actualEnrolment": "30",
         "actualWaitlist": "28",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": "<p>May 27, 2025: Term changed from F to S.</p>",
+        "meetingStatusNotes": "May 27, 2025: Term changed from F to S.",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3661,7 +3702,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3711,7 +3753,7 @@
         "actualEnrolment": "55",
         "actualWaitlist": "6",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3767,7 +3809,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3817,7 +3860,7 @@
         "actualEnrolment": "113",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3873,7 +3916,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -3923,7 +3967,7 @@
         "actualEnrolment": "24",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -3979,7 +4023,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -4029,7 +4074,7 @@
         "actualEnrolment": "30",
         "actualWaitlist": "21",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4085,7 +4130,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -4135,7 +4181,7 @@
         "actualEnrolment": "30",
         "actualWaitlist": "6",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4191,7 +4237,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -4241,7 +4288,7 @@
         "actualEnrolment": "17",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4270,7 +4317,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -4320,7 +4368,7 @@
         "actualEnrolment": "30",
         "actualWaitlist": "3",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4376,7 +4424,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -4426,7 +4475,7 @@
         "actualEnrolment": "12",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4482,7 +4531,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -4537,7 +4587,7 @@
         "actualEnrolment": "25",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4701,7 +4751,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -4751,7 +4802,7 @@
         "actualEnrolment": "25",
         "actualWaitlist": "0",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4807,7 +4858,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -4857,7 +4909,7 @@
         "actualEnrolment": "30",
         "actualWaitlist": "6",
         "enrollmentIndicator": "R1",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -4886,7 +4938,8 @@
             "adminOrgCode": "CRIM",
             "adminOrgName": "Centre for Criminology and Sociolegal Studies"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   }

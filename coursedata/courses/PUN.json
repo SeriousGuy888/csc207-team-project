@@ -69,7 +69,7 @@
         "actualEnrolment": "5",
         "actualWaitlist": "0",
         "enrollmentIndicator": "A",
-        "meetingStatusNotes": "<ul>\n<li>Students enrolling in a PUN language course for the first time MUST complete the <a href='https://www.utm.utoronto.ca/language-studies/language-course-assessment-questionnaires' target='_blank'>Language Course Assessment Questionnaire</a> by the deadline posted on the DLS website.</li>\n</ul>",
+        "meetingStatusNotes": "Students enrolling in a PUN language course for the first time MUST complete the Language Course Assessment Questionnaire by the deadline posted on the DLS website.",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -125,7 +125,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       },
       "PRA-0101": {
         "schedule": {
@@ -159,7 +160,7 @@
         "actualEnrolment": "5",
         "actualWaitlist": "0",
         "enrollmentIndicator": "",
-        "meetingStatusNotes": null,
+        "meetingStatusNotes": "",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -188,7 +189,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   }

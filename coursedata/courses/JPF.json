@@ -45,7 +45,7 @@
         "actualEnrolment": "20",
         "actualWaitlist": "0",
         "enrollmentIndicator": "P",
-        "meetingStatusNotes": "<p>July 9, 2025:  Room changed </br>July 7, 2025:  Time and room changed</p>",
+        "meetingStatusNotes": "July 9, 2025: Room changed July 7, 2025: Time and room changed",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -182,7 +182,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   },
@@ -232,7 +233,7 @@
         "actualEnrolment": "25",
         "actualWaitlist": "10",
         "enrollmentIndicator": "P",
-        "meetingStatusNotes": "<p>July 9, 2025:  Time and room changed</p>",
+        "meetingStatusNotes": "July 9, 2025: Time and room changed",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -369,7 +370,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   }

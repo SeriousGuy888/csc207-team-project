@@ -45,7 +45,7 @@
         "actualEnrolment": "37",
         "actualWaitlist": "0",
         "enrollmentIndicator": "P",
-        "meetingStatusNotes": "<p>September 29, 2025: Room changed</p>",
+        "meetingStatusNotes": "September 29, 2025: Room changed",
         "enrollmentControls": [
           {
             "postId": "1",
@@ -236,7 +236,8 @@
             "adminOrgCode": "*",
             "adminOrgName": "All"
           }
-        ]
+        ],
+        "linkedMeetingSections": []
       }
     }
   }
