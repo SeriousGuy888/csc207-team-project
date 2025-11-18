@@ -86,31 +86,25 @@ function restructureCourses(allPages) {
       // Create the full key for this specific instance
       const fullKey = `${course.code}-${course.sectionCode}-${course.sessions[0]}`;
       
+      const convertedCourse = convertToOldFormat(course);
+      
       // Initialize the subject group if it doesn't exist
       if (!coursesBySubject[subjectCode]) {
         coursesBySubject[subjectCode] = {};
       }
       
-      // Add this course instance under its full key
-      coursesBySubject[subjectCode][fullKey] = course;
+      // Add converted course instance under its full key
+      coursesBySubject[subjectCode][fullKey] = convertedCourse;
     });
-
-    // Save one file per subject code
-    if (!fs.existsSync('courses')) {
-      fs.mkdirSync('courses');
-    }
 
     for (const [subjectCode, instances] of Object.entries(coursesBySubject)) {
       const filename = `courses/${subjectCode}.json`;
       fs.writeFileSync(filename, JSON.stringify(instances, null, 2));
       console.log(`Saved ${subjectCode}.json with ${Object.keys(instances).length} courses`);
     }
-
     console.log(`✓ Created ${Object.keys(coursesBySubject).length} subject files`);
-
   } catch (err) {
     console.error('Error:', err.message);
   }
 }
-
-fetchAllCourses();
+   
