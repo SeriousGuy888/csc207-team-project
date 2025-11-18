@@ -86,7 +86,7 @@ function restructureCourses(allPages) {
       // Create the full key for this specific instance
       const fullKey = `${course.code}-${course.sectionCode}-${course.sessions[0]}`;
       
-      const convertedCourse = convertToOldFormat(course);
+      const convertedCourse = convertFormat(course);
       
       // Initialize the subject group if it doesn't exist
       if (!coursesBySubject[subjectCode]) {
@@ -102,9 +102,154 @@ function restructureCourses(allPages) {
       fs.writeFileSync(filename, JSON.stringify(instances, null, 2));
       console.log(`Saved ${subjectCode}.json with ${Object.keys(instances).length} courses`);
     }
-    console.log(`✓ Created ${Object.keys(coursesBySubject).length} subject files`);
+    console.log(`Created ${Object.keys(coursesBySubject).length} subject files`);
   } catch (err) {
     console.error('Error:', err.message);
   }
 }
    
+function convertFormat(course) {
+  const NewCourseFormat = {
+    courseId: course.id,
+    // org: course.department?.code || "",
+    // orgName: course.department?.name || "",
+    courseTitle: course.name,
+    code: course.code,
+    courseDescription: course.cmCourseInfo.description,
+    prerequisite: course.cmCourseInfo.prerequisitesText,
+    corequisite: course.cmCourseInfo.corequisitesText,
+    exclusion: course.cmCourseInfo.exclusionsText,
+    recommendedPreparation: course.cmCourseInfo.recommendedPreparation,
+    section: course.sectionCode,
+    session: course.sessions[0] || "",
+    // webTimetableInstructions: course.notes?.find(n => n.type === 'COURSE')?.content || "",
+    deliveryInstructions: null,
+    breadthCategories: course.cmCourseInfo?.breadthRequirements?.join(", ") || "",
+    distributionCategories: course.cmCourseInfo?.distributionRequirements?.join(", ") || "",
+    meetings: getmeetings(course)
+  };
+  return NewCourseFormat;
+}
+
+function getmeetings(course) {
+  // Convert sections to meetings
+  if (course.sections) {
+    meetings = {}
+    course.sections.forEach(section => {
+      const meetingKey = `${section.teachMethod}-${section.sectionNumber}`;
+      
+      meetings[meetingKey] = {
+        schedule: convertSchedule(section.meetingTimes),
+        instructors: convertInstructors(section.instructors),
+        meetingId: section.name,
+        teachingMethod: section.teachMethod,
+        sectionNumber: section.sectionNumber,
+        subtitle: section.subTitle || "",
+        cancel: section.cancelInd === 'Y' ? 'Cancelled' : "",
+        waitlist: section.waitlistInd,
+        deliveryMode: section.deliveryModes?.[0]?.mode || "CLASS",
+        online: section.deliveryModes?.[0]?.mode === 'INPER' ? 'In Person' : 'Online',
+        enrollmentCapacity: String(section.maxEnrolment),
+        actualEnrolment: String(section.currentEnrolment),
+        actualWaitlist: String(section.currentWaitlist),
+        enrollmentIndicator: section.enrolmentInd,
+        meetingStatusNotes: section.notes?.find(n => n.type === 'SECTION')?.content || null,
+        enrollmentControls: convertEnrollmentControls(section.enrolmentControls)
+      };
+    });
+  }
+  return meetings;
+}
+
+function convertSchedule(meetingTimes) {
+  if (!meetingTimes || meetingTimes.length === 0) {
+    return { 
+      "-": {
+        meetingDay: null,
+        meetingStartTime: null,
+        meetingEndTime: null,
+        meetingScheduleId: null,
+        assignedRoom1: null,
+        assignedRoom2: null
+      }
+    };
+  }
+
+  const schedule = {};
+  const days = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
+  
+  meetingTimes.forEach((mt, idx) => {
+    const day = days[mt.start.day];
+    const startTime = millisToTime(mt.start.millisofday);
+    const endTime = millisToTime(mt.end.millisofday);
+    const room = mt.building?.buildingCode || "";
+    
+    const key = `${day}-${idx}`;
+    
+    schedule[key] = {
+      meetingDay: day,
+      meetingStartTime: startTime,
+      meetingEndTime: endTime,
+      meetingScheduleId: String(idx),
+      assignedRoom1: room,
+      assignedRoom2: room
+    };
+  });
+  
+  return schedule;
+}
+
+function millisToTime(millis) {
+  const hours = Math.floor(millis / 3600000);
+  const minutes = Math.floor((millis % 3600000) / 60000);
+  return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+}
+
+function convertInstructors(instructors) {
+  if (!instructors || instructors.length === 0) return {};
+  
+  const result = {};
+  instructors.forEach((inst, idx) => {
+    result[String(idx)] = {
+      instructorId: String(idx),
+      firstName: inst.firstName,
+      lastName: inst.lastName
+    };
+  });
+  return result;
+}
+
+function convertEnrollmentControls(controls) {
+  if (!controls) return [];
+  
+  return controls.map(ctrl => ({
+    postId: String(ctrl.sequence || ""),
+    postCode: ctrl.post?.code || "",
+    postName: ctrl.post?.name || "",
+    subjectId: "1",
+    subjectCode: ctrl.subject?.code || "*",
+    subjectName: ctrl.subject?.name || "",
+    designationId: "1",
+    designationCode: ctrl.designation?.code || "*",
+    designationName: ctrl.designation?.name || "",
+    yearOfStudy: ctrl.yearOfStudy || "*",
+    typeOfProgramId: "1",
+    typeOfProgramCode: ctrl.typeOfProgram?.code || "*",
+    typeOfProgramName: ctrl.typeOfProgram?.name || "All Types",
+    primaryOrgId: "1",
+    primaryOrgCode: ctrl.primaryOrg?.code || "*",
+    primaryOrgName: ctrl.primaryOrg?.name || "",
+    secondaryOrgId: "1",
+    secondaryOrgCode: ctrl.secondOrg?.code || "*",
+    secondaryOrgName: ctrl.secondOrg?.name || "",
+    assocOrgId: "1",
+    assocOrgCode: ctrl.associatedOrg?.code || "*",
+    assocOrgName: ctrl.associatedOrg?.name || "",
+    adminOrgId: "1",
+    adminOrgCode: ctrl.adminOrg?.code || "*",
+    adminOrgName: ctrl.adminOrg?.name || ""
+  }));
+}
+
+
+fetchAllCourses();
