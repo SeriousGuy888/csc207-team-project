@@ -9,16 +9,19 @@ import java.util.*;
  * to find a suitable path of generation  **/
 public class AutogenInteractor implements AutogenInputBoundary {
 
-    private final List<CourseVariable> variables;
-    private final List<Constraint> constraints;
+    //private final AutogenDataAccessInterface courseDataAccess;
+    //private final AutogenOutputBoundary presenter;
+
+
+    //private final List<CourseVariable> variables;
+    //private final List<Constraint> constraints;
     /**
      * @param variables The List of variables (each containing a course, and it's domain) that need to be
      *                  generated in the timetable
      * @param constraints The list of constraints that need to be met for this timetable generation
      */
-    public AutogenInteractor(List<CourseVariable> variables, List<Constraint> constraints) {
-        this.variables = variables;
-        this.constraints = constraints;
+
+    public AutogenInteractor(){
     }
 
     /**
