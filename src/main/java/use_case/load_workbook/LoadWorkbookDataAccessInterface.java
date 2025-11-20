@@ -10,5 +10,5 @@ public interface LoadWorkbookDataAccessInterface {
      * @param source The file path where a serialised workbook ostensibly exists.
      * @return The serialised workbook if successfully read.
      */
-    String load(Path source) throws IOException;
+    Workbook load(Path source) throws IOException;
 }

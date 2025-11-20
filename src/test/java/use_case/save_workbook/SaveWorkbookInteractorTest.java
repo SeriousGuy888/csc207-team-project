@@ -1,7 +1,6 @@
 package use_case.save_workbook;
 
 import data_access.workbook_persistence.FileWorkbookDataAccessObject;
-import data_access.workbook_persistence.strategies.GsonWorkbookSerialiser;
 import entity.*;
 import interface_adapter.save_workbook.SaveWorkbookPresenter;
 import org.junit.jupiter.api.Test;
@@ -15,9 +14,8 @@ public class SaveWorkbookInteractorTest {
     void doTheThing() {
 //        InMemoryWorkbookDataAccessObject dao = new InMemoryWorkbookDataAccessObject();
         FileWorkbookDataAccessObject dao = new FileWorkbookDataAccessObject();
-        GsonWorkbookSerialiser serialiser = new GsonWorkbookSerialiser();
         SaveWorkbookPresenter presenter = new SaveWorkbookPresenter();
-        SaveWorkbookInteractor interactor = new SaveWorkbookInteractor(dao, presenter, serialiser);
+        SaveWorkbookInteractor interactor = new SaveWorkbookInteractor(dao, presenter);
 
 
         Timetable timetable = new Timetable();
