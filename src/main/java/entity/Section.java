@@ -8,8 +8,8 @@ import java.util.stream.Collectors;
 public class Section {
     private final CourseOffering courseOffering;
     private final String sectionName;
-    private final TeachingMethod teachingMethod;
-    private final Set<Meeting> meetings = new HashSet<>();
+    private final transient TeachingMethod teachingMethod;
+    private final transient Set<Meeting> meetings = new HashSet<>();
 
     /**
      * @param courseOffering the CourseOffering that this section belongs to
