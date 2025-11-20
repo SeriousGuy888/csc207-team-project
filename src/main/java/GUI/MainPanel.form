@@ -1,27 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.MainPanel">
-  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridBagLayout">
     <constraints>
-      <xy x="20" y="20" width="1286" height="779"/>
+      <xy x="20" y="20" width="1410" height="1000"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
-      <nested-form id="a9907" form-file="GUI/SearchPanel.form" binding="searchPanel1" default-binding="true">
+      <splitpane id="33160" binding="SplitPane">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="12" height="25"/>
+            <preferred-size width="200" height="200"/>
           </grid>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
-      </nested-form>
-      <nested-form id="8750f" form-file="GUI/TimetablePanel.form" binding="timetablePanel1" default-binding="true">
-        <constraints>
-          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="36" height="25"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="ea06e" binding="rightPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties>
+              <minimumSize width="1000" height="1000"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <nested-form id="2a2f3" form-file="GUI/TimetablePanel.form" binding="timetablePanel1" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </nested-form>
+            </children>
           </grid>
-        </constraints>
-      </nested-form>
+          <grid id="679c7" binding="leftPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties>
+              <minimumSize width="400" height="1000"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <nested-form id="86b15" form-file="GUI/SearchPanel.form" binding="searchPanel1" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </nested-form>
+            </children>
+          </grid>
+        </children>
+      </splitpane>
     </children>
   </grid>
 </form>
