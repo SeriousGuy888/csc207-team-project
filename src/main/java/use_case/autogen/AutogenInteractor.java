@@ -77,7 +77,7 @@ public class AutogenInteractor implements AutogenInputBoundary {
         CourseVariable var = variables.get(index);
         for(Section candidate : var.getDomain()){ //Iterates through all possible candidates in variable's domain
             //tries a possible assignment by adding a candidate to it
-            Set<Section> next = new HashSet<>();
+            Set<Section> next = new HashSet<>(assignment);
             next.add(candidate);
 
             //checks if this new temporary assignment is valid
