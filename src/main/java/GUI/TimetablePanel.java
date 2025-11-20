@@ -19,8 +19,8 @@ public class TimetablePanel extends JPanel {
         this.TimetablePanel.setVisible(true);
 
         // fall/winter toggle buttons
-        fallButton.setEnabled(true);
-        winterButton.setEnabled(false);
+        fallButton.setEnabled(false);
+        winterButton.setEnabled(true);
         fallButton.addActionListener(new ActionListener() {
             /**
              * @param e click event
@@ -41,5 +41,9 @@ public class TimetablePanel extends JPanel {
                 winterButton.setEnabled(false);
             }
         });
+    }
+
+    public JPanel getRootPanel() {
+        return TimetablePanel;
     }
 }

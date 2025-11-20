@@ -12,5 +12,4 @@ public class SearchPanel extends JPanel{
     public SearchPanel() {
         setSize(400, 1000);
     }
-
 }

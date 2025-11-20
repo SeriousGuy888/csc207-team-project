@@ -59,14 +59,12 @@ public class MainPanel extends JFrame {
     }
 
     private void addNewTab() {
-        JPanel panel = new TimetablePanel();
+        TimetablePanel panel = new TimetablePanel();
 
         int insertIndex = tabbedPane.getTabCount() - 1; // before "+"
-        String title = "Timetable " + (tabCounter);
-        tabCounter++;
-        System.out.println(tabCounter);
+        String title = "Timetable " + (tabCounter++);
 
-        tabbedPane.insertTab(title, null, panel, null, insertIndex);
+        tabbedPane.insertTab(title, null, panel.getRootPanel(), null, insertIndex);
         tabbedPane.setTabComponentAt(insertIndex, createTabHeader(title));
     }
 
