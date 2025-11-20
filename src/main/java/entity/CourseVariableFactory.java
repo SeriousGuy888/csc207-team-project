@@ -9,7 +9,7 @@ public class CourseVariableFactory {
      * @param offerings   the courses the user wants in their timetable
      * @param lockedSections sections the user has explicitly locked/pinned
      */
-    public static List<CourseVariable> buildVariables(List<CourseOffering> offerings,
+    public List<CourseVariable> buildVariables(List<CourseOffering> offerings,
                                                       Set<Section> lockedSections) {
         List<CourseVariable> variables = new ArrayList<>();
 

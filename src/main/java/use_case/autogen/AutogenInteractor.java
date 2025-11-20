@@ -1,11 +1,12 @@
 package use_case.autogen;
 
-import entity.CourseVariable;
+import entity.*;
+import entity.constraints.BlockedTimeConstraint;
 import entity.constraints.Constraint;
-import entity.Section;
+
 import java.util.*;
-import use_case.autogen.PotentialTimetable;
-import entity.Timetable;
+
+import entity.constraints.TimeConflictConstraint;
 
 /**A DFS (Depth First Search) timetable generator that uses recursion + backtracking
  * to find a suitable path of generation  **/
@@ -23,8 +24,16 @@ public class AutogenInteractor implements AutogenInputBoundary {
     @Override
     public void execute(AutogenInputData inputData) {
         try{
-            List<CourseVariable> variables = dataAccess.getVariablesFor(inputData);
-            List<Constraint> constraints = dataAccess.getConstraintsFor(inputData);
+            //Get required data from dataAcess and inputData
+            List<CourseOffering> offerings = dataAccess.getSelectedCourseOfferings(inputData);
+            Set<Section> lockedSections = inputData.getLockedSections();
+            WeeklyOccupancy blockedTimes = inputData.getBlockedTimes();
+            CourseVariableFactory courseVariableFactory = new CourseVariableFactory();
+
+            //Get variable and constraints using factory/help functions
+            List<CourseVariable> variables = courseVariableFactory.buildVariables(offerings, lockedSections);
+            List<Constraint> constraints = buildConstraints(blockedTimes);
+
 
             PotentialTimetable result = generateTimetable(variables, constraints);
 
@@ -112,5 +121,15 @@ public class AutogenInteractor implements AutogenInputBoundary {
         }
         //Returns true by default if all constraints met
         return true;
+    }
+
+    private List<Constraint> buildConstraints(WeeklyOccupancy blockedTimes){
+        List<Constraint> constraints = new ArrayList<>();
+        constraints.add(new TimeConflictConstraint());
+        if (blockedTimes != null) {
+            constraints.add(new BlockedTimeConstraint(blockedTimes));
+        }
+        return constraints;
+
     }
 }
