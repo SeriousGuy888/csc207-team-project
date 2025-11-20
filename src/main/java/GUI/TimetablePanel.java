@@ -1,23 +1,22 @@
 package GUI;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class TimetablePanel extends JPanel {
     private JPanel TimetablePanel;
-    private JTabbedPane tabbedPane1;
     private JTable table1;
     private JButton fallButton;
     private JButton winterButton;
     private JButton clearAllButton;
     private JButton exportButton;
     private JButton autogenerateButton;
+    private JPanel buttonPanel;
 
     public TimetablePanel() {
-        setSize(1200, 800);
         setVisible(true);
+        this.TimetablePanel.setVisible(true);
 
         // fall/winter toggle buttons
         fallButton.setEnabled(true);
