@@ -13,7 +13,7 @@ public class MainPanel extends JFrame {
     private JTabbedPane tabbedPane;
     private boolean isAddingTab = false;    //variable to prevent stack overflow
 
-    private static final int MAX_TABS = 10;
+    private static final int MAX_TABS = 8;
     private int tabCounter = 1;      // for naming new tabs
 
     public MainPanel() {
@@ -45,7 +45,7 @@ public class MainPanel extends JFrame {
 
                 if (last >= MAX_TABS) {
                     JOptionPane.showMessageDialog(tabbedPane,
-                            "Maximum number of tabs reached.");
+                            "You can only have at most " + MAX_TABS + " timetables.");
                     tabbedPane.setSelectedIndex(last - 1);
                     return;
                 }
@@ -124,7 +124,7 @@ public class MainPanel extends JFrame {
 
                     String current = titleLabel.getText().trim();
                     String newTitle = JOptionPane.showInputDialog(
-                            tabbedPane, "Enter new tab name:", current
+                            tabbedPane, "Enter new timetable name:", current
                     );
                     if (newTitle != null && !newTitle.trim().isEmpty()) {
                         titleLabel.setText(newTitle.trim() + " ");
