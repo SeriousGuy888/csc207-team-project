@@ -33,18 +33,19 @@ public class GsonWorkbookSerialiser extends WorkbookSerialiser {
         public JsonElement serialize(CourseOffering courseOffering,
                                      Type type,
                                      JsonSerializationContext context) {
-            // todo: make this into a unique identifier rather than just the course code
-            //  (the same course can be taught twice in one session)
             return new JsonPrimitive(courseOffering.getUniqueIdentifier());
         }
 
         @Override
         public CourseOffering deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext context)
                 throws JsonParseException {
-            // todo: make this retrieve the course based on the unique identifier from some data access object
-            //  that is storing a list of available course offerings.
-            CourseCode courseCode = new CourseCode(jsonElement.getAsJsonPrimitive().getAsString());
-            return new CourseOffering("MAT237Y1-F-20259", courseCode, "test", "ing");
+            String courseIdentifierString = jsonElement.getAsJsonPrimitive().getAsString();
+
+            // todo: load the course from a real data access object
+            //  that actually a list of all the courses
+
+            return new CourseOffering(courseIdentifierString,
+                    new CourseCode(courseIdentifierString.substring(0, 8)), "test", "ing");
         }
     }
 }
