@@ -66,6 +66,7 @@ public class MainPanel extends JFrame {
 
         tabbedPane.insertTab(title, null, panel.getRootPanel(), null, insertIndex);
         tabbedPane.setTabComponentAt(insertIndex, createTabHeader(title));
+        System.out.println("Added a new tab");
     }
 
     private void addPlusTab() {
@@ -100,9 +101,10 @@ public class MainPanel extends JFrame {
             }
 
             tabbedPane.remove(i);
+            System.out.println("removed a tab");
         });
 
-        // rename on double click
+        // rename tab on double click and select tab on single click
         addRenameOnDoubleClick(titleLabel, tabPanel);
 
         tabPanel.add(titleLabel);
@@ -130,6 +132,9 @@ public class MainPanel extends JFrame {
                         titleLabel.setText(newTitle.trim() + " ");
                         tabbedPane.setTitleAt(index, newTitle.trim());
                     }
+                }
+                else if (e.getClickCount() == 1 && SwingUtilities.isLeftMouseButton(e)) {
+                    tabbedPane.setSelectedIndex(tabbedPane.indexOfTabComponent(tabHeader));
                 }
             }
         });
