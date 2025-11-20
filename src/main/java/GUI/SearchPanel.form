@@ -27,8 +27,9 @@
       </scrollpane>
       <component id="43f5e" class="javax.swing.JButton" binding="filterButton" default-binding="true">
         <constraints>
-          <grid row="1" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="60" height="34"/>
+          <grid row="1" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="80" height="34"/>
+            <maximum-size width="80" height="34"/>
           </grid>
         </constraints>
         <properties>
@@ -40,8 +41,9 @@
       </component>
       <component id="c8bcc" class="javax.swing.JButton" binding="searchButton" default-binding="true">
         <constraints>
-          <grid row="1" column="3" row-span="2" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="60" height="34"/>
+          <grid row="1" column="3" row-span="2" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="80" height="34"/>
+            <maximum-size width="80" height="34"/>
           </grid>
         </constraints>
         <properties>
@@ -54,7 +56,8 @@
       <component id="9fab6" class="javax.swing.JTextField" binding="searchField">
         <constraints>
           <grid row="1" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="177" height="34"/>
+            <minimum-size width="177" height="34"/>
+            <preferred-size width="185" height="34"/>
           </grid>
         </constraints>
         <properties>

@@ -17,14 +17,4 @@ public class TimetablePanel extends JPanel {
         setSize(1200, 800);
         setVisible(true);
     }
-
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("Timetable Panel");
-        TimetablePanel ttpanel = new TimetablePanel();
-        frame.setContentPane(ttpanel.TimetablePanel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setSize(1200, 800);
-        frame.setVisible(true);
-    }
 }
