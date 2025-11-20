@@ -19,4 +19,7 @@ public class PotentialTimetable {
         this.timetable = timetable;
    }
 
+   public boolean getSuccess() {return success;}
+    public Set<Section> getTimetable() {return timetable;}
+
 }

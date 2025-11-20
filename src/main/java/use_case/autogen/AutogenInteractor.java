@@ -4,24 +4,47 @@ import entity.CourseVariable;
 import entity.constraints.Constraint;
 import entity.Section;
 import java.util.*;
+import use_case.autogen.PotentialTimetable;
+import entity.Timetable;
 
 /**A DFS (Depth First Search) timetable generator that uses recursion + backtracking
  * to find a suitable path of generation  **/
 public class AutogenInteractor implements AutogenInputBoundary {
 
-    //private final AutogenDataAccessInterface courseDataAccess;
-    //private final AutogenOutputBoundary presenter;
+    private final AutogenDataAccessInterface dataAccess;
+    private final AutogenOutputBoundary presenter;
+
+    public AutogenInteractor(AutogenDataAccessInterface dataAccess,
+                             AutogenOutputBoundary presenter) {
+        this.dataAccess = dataAccess;
+        this.presenter = presenter;
+    }
+
+    @Override
+    public void execute(AutogenInputData inputData) {
+        try{
+            List<CourseVariable> variables = dataAccess.getVariablesFor(inputData);
+            List<Constraint> constraints = dataAccess.getConstraintsFor(inputData);
+
+            PotentialTimetable result = generateTimetable(variables, constraints);
+
+            if (result.getSuccess()){
+                AutogenOutputData outputData = new AutogenOutputData(result.getTimetable());
+                presenter.prepareSuccessView(outputData);
+            }
+            else{
+                presenter.prepareFailView("No valid timetable could be generated " +
+                        "with the given courses and constraints.");
+            }
 
 
-    //private final List<CourseVariable> variables;
-    //private final List<Constraint> constraints;
-    /**
-     * @param variables The List of variables (each containing a course, and it's domain) that need to be
-     *                  generated in the timetable
-     * @param constraints The list of constraints that need to be met for this timetable generation
-     */
 
-    public AutogenInteractor(){
+
+        } catch (Exception e) {
+            presenter.prepareFailView("An error occurred while generating the timetable: "
+                    + e.getMessage());
+        }
+
     }
 
     /**
@@ -29,20 +52,22 @@ public class AutogenInteractor implements AutogenInputBoundary {
      * @return the search result containing the generated timetable (hopefully)
      * If it's a fail it means no possible combinations found (atleast using DFS given current constraints)
      */
-    public PotentialTimetable search(){
+    public PotentialTimetable generateTimetable(List<CourseVariable> variables, List<Constraint> constraints) {
         Set<Section> initial = new HashSet<>();
-        //Assignment initial = new Assignment();
-        return dfs(0, initial);
+        return timetableSearch(0, variables, constraints, initial);
     }
 
     /**
      *
      * @param index The current index number in the variables set that's having its section assigned
-     * @param assignment The assignment (generated timetable) so far
-     * @return A SearchResult, if true contains a sucesfully generated timetable,
+     * @param assignment The assignment of sections (generated timetable) so far
+     * @param variables All course variables for the DFS (one per course)
+     * @param constraints The constraints that need to be satisfied
+     * @return A PotentialTimetable, if true contains a sucesfully generated timetable,
      * else false, and it backtracks and tries a different path
      */
-    private PotentialTimetable dfs(int index, Set<Section> assignment){
+    private PotentialTimetable timetableSearch(int index, List<CourseVariable> variables, List<Constraint>
+            constraints, Set<Section> assignment) {
         // This is the base case, that all variables have succesfully been assigned,
         // and we have a fully generated timetable!
         if(index == variables.size()){
@@ -56,9 +81,9 @@ public class AutogenInteractor implements AutogenInputBoundary {
             next.add(candidate);
 
             //checks if this new temporary assignment is valid
-            if (isConsistent(next)){
+            if (isConsistent(next, constraints)){
                 //if valid it checks if the rest of this path works (recursive step)
-                PotentialTimetable result = dfs(index+1, next);
+                PotentialTimetable result = timetableSearch(index+1, variables, constraints, next);
                 //Valid path found then it succesfully returns this result so far
                 if (result.success){
                     return result;
@@ -75,9 +100,10 @@ public class AutogenInteractor implements AutogenInputBoundary {
     /**
      *
      * @param assignment The timetable assinment that is being checked for consistency
+     * @param constraints The constraints that need to be satisfied
      * @return true if all constraints met, else false
      */
-    private boolean isConsistent(Set<Section> assignment){
+    private boolean isConsistent(Set<Section> assignment,  List<Constraint> constraints) {
         for(Constraint c : constraints){
             //Iterates through all constraints, if a single one is not met function returns false
             if(!c.isSatisfiedBy(assignment)){
