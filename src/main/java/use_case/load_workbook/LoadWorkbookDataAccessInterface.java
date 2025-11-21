@@ -1,5 +1,6 @@
 package use_case.load_workbook;
 
+import entity.Section;
 import entity.Workbook;
 
 import java.io.IOException;

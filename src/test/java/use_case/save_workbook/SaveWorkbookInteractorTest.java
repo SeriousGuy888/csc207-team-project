@@ -1,9 +1,11 @@
 package use_case.save_workbook;
 
+import data_access.AvailableCoursesDataAccessObject;
 import data_access.workbook_persistence.FileWorkbookDataAccessObject;
 import entity.*;
 import interface_adapter.save_workbook.SaveWorkbookPresenter;
 import org.junit.jupiter.api.Test;
+import use_case.TestConstants;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -12,47 +14,20 @@ import java.util.List;
 public class SaveWorkbookInteractorTest {
     @Test
     void doTheThing() {
-//        InMemoryWorkbookDataAccessObject dao = new InMemoryWorkbookDataAccessObject();
-        FileWorkbookDataAccessObject dao = new FileWorkbookDataAccessObject();
+        FileWorkbookDataAccessObject dao = new FileWorkbookDataAccessObject(
+                new AvailableCoursesDataAccessObject(List.of()));
         SaveWorkbookPresenter presenter = new SaveWorkbookPresenter();
         SaveWorkbookInteractor interactor = new SaveWorkbookInteractor(dao, presenter);
 
 
         Timetable timetable = new Timetable();
-        Section section = new Section(
-                new CourseOffering(
-                        "MAT237Y1-F-20259",
-                        new CourseCode("MAT137Y1"),
-                        "Pain and Agony",
-                        "two semesters of it"
-                ),
-                "LEC0101",
-                Section.TeachingMethod.LECTURE
-        );
-        section.addMeeting(new Meeting(
-                new UofTLocation("MY", "150"),
-                new WeeklyOccupancy(WeeklyOccupancy.DayOfTheWeek.THURSDAY,
-                        1000 * 60 * 60 * 13,
-                        1000 * 60 * 60 * 15)
-        ));
+        TestConstants.COURSE_OFFERING_MAT137.getAvailableSections().forEach(timetable::addSection);
 
-        timetable.addSection(section);
         Workbook workbook = new Workbook(List.of(timetable));
         Path destination = Paths.get("sandbox", "workbook.json");
         SaveWorkbookInputData inputData = new SaveWorkbookInputData(workbook, destination);
 
 
         interactor.execute(inputData);
-
-//        Workbook deserialisedWorkbook;
-//        try {
-//            deserialisedWorkbook = serialiser.deserialise(dao.load(destination));
-//        } catch (IOException e) {
-//            System.out.println(":( " + e);
-//            return;
-//        }
-//
-//        System.out.println(workbook);
-//        System.out.println(deserialisedWorkbook);
     }
 }

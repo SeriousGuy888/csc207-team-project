@@ -1,7 +1,7 @@
 package data_access.workbook_persistence;
 
 import com.google.gson.*;
-import entity.CourseCode;
+import data_access.AvailableCoursesDataAccessObject;
 import entity.CourseOffering;
 import entity.Workbook;
 import use_case.load_workbook.LoadWorkbookDataAccessInterface;
@@ -16,6 +16,13 @@ public class FileWorkbookDataAccessObject implements SaveWorkbookDataAccessInter
     private final Gson gson = new GsonBuilder()
             .registerTypeAdapter(CourseOffering.class, new CourseOfferingJsonSerializerAndDeserializer())
             .create();
+
+    // todo: relpace this iwth a data acces sinterface??
+    private final AvailableCoursesDataAccessObject availableCoursesDao;
+
+    public FileWorkbookDataAccessObject(AvailableCoursesDataAccessObject availableCoursesDao) {
+        this.availableCoursesDao = availableCoursesDao;
+    }
 
     @Override
     public void save(Workbook workbook, Path destination) throws IOException {
@@ -47,7 +54,7 @@ public class FileWorkbookDataAccessObject implements SaveWorkbookDataAccessInter
     }
 
 
-    static class CourseOfferingJsonSerializerAndDeserializer
+    class CourseOfferingJsonSerializerAndDeserializer
             implements JsonSerializer<CourseOffering>, JsonDeserializer<CourseOffering> {
         @Override
         public JsonElement serialize(CourseOffering courseOffering,
@@ -61,11 +68,13 @@ public class FileWorkbookDataAccessObject implements SaveWorkbookDataAccessInter
                 throws JsonParseException {
             String courseIdentifierString = jsonElement.getAsJsonPrimitive().getAsString();
 
-            // todo: load the course from a real data access object
-            //  that actually a list of all the courses
+            CourseOffering course = availableCoursesDao.getCourseOffering(courseIdentifierString);
 
-            return new CourseOffering(courseIdentifierString,
-                    new CourseCode(courseIdentifierString.substring(0, 8)), "test", "ing");
+            if (course == null) {
+                return CourseOffering.createUnknownCourseOffering(courseIdentifierString);
+            }
+
+            return course;
         }
     }
 }
