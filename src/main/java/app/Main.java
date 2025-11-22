@@ -1,6 +1,6 @@
 package app;
 
-import GUI.MainPanel;
+import view.GUI.MainPanel;
 
 import javax.swing.*;
 import java.awt.*;
