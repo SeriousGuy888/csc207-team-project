@@ -12,20 +12,26 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 public class SaveWorkbookInteractorTest {
+    private static final String ERROR_MESSAGE_ON_FAILED_SAVE = "Failed to save file.";
+    private static final Path SAVE_LOCATION = Path.of("test");
+    private static final SaveWorkbookDataAccessInterface FUNCTIONAL_DAO = new SaveWorkbookDataAccessInterface() {
+        @Override
+        public void save(Workbook workbook, Path destination) throws IOException {
+        }
+    };
+    private static final SaveWorkbookDataAccessInterface NONFUNCTIONAL_DAO = new SaveWorkbookDataAccessInterface() {
+        @Override
+        public void save(Workbook workbook, Path destination) throws IOException {
+            throw new IOException(ERROR_MESSAGE_ON_FAILED_SAVE);
+        }
+    };
+
     @Test
     void getOutputDataOnSuccessfulSave() {
-        Path path = Path.of("test");
-
-        SaveWorkbookDataAccessInterface dao = new SaveWorkbookDataAccessInterface() {
-            @Override
-            public void save(Workbook workbook, Path destination) throws IOException {
-            }
-        };
-
         SaveWorkbookOutputBoundary presenter = new SaveWorkbookOutputBoundary() {
             @Override
             public void prepareSuccessView(SaveWorkbookOutputData outputData) {
-                assertEquals(path, outputData.getDestination());
+                assertEquals(SAVE_LOCATION, outputData.getDestination());
             }
 
             @Override
@@ -34,21 +40,13 @@ public class SaveWorkbookInteractorTest {
             }
         };
 
-        SaveWorkbookInputData inputData = new SaveWorkbookInputData(TestConstants.WORKBOOK_MAT137, path);
-        SaveWorkbookInteractor interactor = new SaveWorkbookInteractor(dao, presenter);
+        SaveWorkbookInputData inputData = new SaveWorkbookInputData(TestConstants.WORKBOOK_MAT137, SAVE_LOCATION);
+        SaveWorkbookInteractor interactor = new SaveWorkbookInteractor(FUNCTIONAL_DAO, presenter);
         interactor.execute(inputData);
     }
 
     @Test
     void sendErrorMessageOnIOException() {
-        String message = "Failed to save file.";
-
-        SaveWorkbookDataAccessInterface nonFunctionalDao = new SaveWorkbookDataAccessInterface() {
-            @Override
-            public void save(Workbook workbook, Path destination) throws IOException {
-                throw new IOException(message);
-            }
-        };
         SaveWorkbookOutputBoundary presenter = new SaveWorkbookOutputBoundary() {
             @Override
             public void prepareSuccessView(SaveWorkbookOutputData outputData) {
@@ -57,12 +55,12 @@ public class SaveWorkbookInteractorTest {
 
             @Override
             public void prepareFailView(String errorMessage) {
-                assertEquals(message, errorMessage);
+                assertEquals(ERROR_MESSAGE_ON_FAILED_SAVE, errorMessage);
             }
         };
 
-        SaveWorkbookInteractor interactor = new SaveWorkbookInteractor(nonFunctionalDao, presenter);
-        SaveWorkbookInputData inputData = new SaveWorkbookInputData(TestConstants.WORKBOOK_MAT137, Paths.get("test"));
+        SaveWorkbookInteractor interactor = new SaveWorkbookInteractor(NONFUNCTIONAL_DAO, presenter);
+        SaveWorkbookInputData inputData = new SaveWorkbookInputData(TestConstants.WORKBOOK_MAT137, SAVE_LOCATION);
         interactor.execute(inputData);
     }
 }
