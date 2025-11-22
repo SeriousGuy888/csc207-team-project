@@ -12,8 +12,7 @@ import java.util.List;
 public class SaveWorkbookInteractorTest {
     @Test
     void doTheThing() {
-//        InMemoryWorkbookDataAccessObject dao = new InMemoryWorkbookDataAccessObject();
-        FileWorkbookDataAccessObject dao = new FileWorkbookDataAccessObject();
+        FileWorkbookDataAccessObject dao = new FileWorkbookDataAccessObject(List.of("courses/sample_data.json"));
         SaveWorkbookPresenter presenter = new SaveWorkbookPresenter();
         SaveWorkbookInteractor interactor = new SaveWorkbookInteractor(dao, presenter);
 
@@ -43,16 +42,5 @@ public class SaveWorkbookInteractorTest {
 
 
         interactor.execute(inputData);
-
-//        Workbook deserialisedWorkbook;
-//        try {
-//            deserialisedWorkbook = serialiser.deserialise(dao.load(destination));
-//        } catch (IOException e) {
-//            System.out.println(":( " + e);
-//            return;
-//        }
-//
-//        System.out.println(workbook);
-//        System.out.println(deserialisedWorkbook);
     }
 }

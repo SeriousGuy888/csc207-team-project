@@ -8,8 +8,9 @@ import java.util.stream.Collectors;
 public class Section {
     private final CourseOffering courseOffering;
     private final String sectionName;
-    private final transient TeachingMethod teachingMethod;
-    private final transient Set<Meeting> meetings = new HashSet<>();
+    private final TeachingMethod teachingMethod;
+    private final Set<Meeting> meetings = new HashSet<>();
+    private boolean isUnknown = false;
 
     /**
      * @param courseOffering the CourseOffering that this section belongs to
@@ -20,6 +21,13 @@ public class Section {
         this.courseOffering = courseOffering;
         this.sectionName = sectionName;
         this.teachingMethod = teachingMethod;
+    }
+
+    public static Section createUnknownSection(CourseOffering courseOffering, String sectionName) {
+        // todo: maybe do something about setting the correct teaching method
+        Section result = new Section(courseOffering, sectionName, TeachingMethod.LECTURE);
+        result.isUnknown = true;
+        return result;
     }
 
     /**

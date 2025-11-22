@@ -6,11 +6,12 @@ import org.junit.jupiter.api.Test;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 
 public class LoadWorkbookInteractorTest {
     @Test
     void doTheThing() {
-        FileWorkbookDataAccessObject dao = new FileWorkbookDataAccessObject();
+        FileWorkbookDataAccessObject dao = new FileWorkbookDataAccessObject(List.of("courses/sample_data.json"));
         LoadWorkbookPresenter presenter = new LoadWorkbookPresenter();
         LoadWorkbookInteractor interactor = new LoadWorkbookInteractor(dao, presenter);
 

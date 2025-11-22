@@ -9,6 +9,7 @@ public class CourseOffering {
     private final String title;
     private final String description;
     private final Set<Section> availableSections = new HashSet<>();
+    private boolean isUnknown = false;
 
     public CourseOffering(String uniqueIdentifier, CourseCode courseCode,
                           String title, String description) {
@@ -16,6 +17,17 @@ public class CourseOffering {
         this.courseCode = courseCode;
         this.title = title;
         this.description = description;
+    }
+
+
+    public static CourseOffering createUnknownCourseOffering(String uniqueIdentifier) {
+        CourseOffering offering = new CourseOffering(
+                uniqueIdentifier,
+                new CourseCode(uniqueIdentifier.substring(0, 8)),
+                uniqueIdentifier,
+                "Unknown Course");
+        offering.isUnknown = true;
+        return offering;
     }
 
     /**
@@ -51,6 +63,10 @@ public class CourseOffering {
 
     public String getDescription() {
         return description;
+    }
+
+    public boolean isUnknown() {
+        return isUnknown;
     }
 
     public String getUniqueIdentifier() {
