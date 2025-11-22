@@ -1,6 +1,7 @@
 package entity;
 
 import java.util.Arrays;
+import java.util.Objects;
 import java.util.Optional;
 
 /**
@@ -103,6 +104,11 @@ public class CourseCode {
                 otherCourseCode.weight == this.weight &&
                 otherCourseCode.campus == this.campus
         );
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(designator, number, weight, campus);
     }
 
     public enum CourseCodeWeight {
