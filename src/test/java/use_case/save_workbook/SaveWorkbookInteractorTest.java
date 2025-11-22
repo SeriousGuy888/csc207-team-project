@@ -1,49 +1,68 @@
 package use_case.save_workbook;
 
-import data_access.course_data.CourseDataRepository;
-import data_access.course_data.JsonCourseDataRepository;
-import data_access.workbook_persistence.FileWorkbookDataAccessObject;
 import entity.*;
-import interface_adapter.save_workbook.SaveWorkbookPresenter;
 import org.junit.jupiter.api.Test;
+import use_case.TestConstants;
 
+import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
 public class SaveWorkbookInteractorTest {
     @Test
-    void doTheThing() {
-        CourseDataRepository repo = new JsonCourseDataRepository(List.of("courses/sample_data.json"));
-        FileWorkbookDataAccessObject dao = new FileWorkbookDataAccessObject(repo);
-        SaveWorkbookPresenter presenter = new SaveWorkbookPresenter();
+    void getOutputDataOnSuccessfulSave() {
+        Path path = Path.of("test");
+
+        SaveWorkbookDataAccessInterface dao = new SaveWorkbookDataAccessInterface() {
+            @Override
+            public void save(Workbook workbook, Path destination) throws IOException {
+            }
+        };
+
+        SaveWorkbookOutputBoundary presenter = new SaveWorkbookOutputBoundary() {
+            @Override
+            public void prepareSuccessView(SaveWorkbookOutputData outputData) {
+                assertEquals(path, outputData.getDestination());
+            }
+
+            @Override
+            public void prepareFailView(String errorMessage) {
+                fail();
+            }
+        };
+
+        SaveWorkbookInputData inputData = new SaveWorkbookInputData(TestConstants.WORKBOOK_MAT137, path);
         SaveWorkbookInteractor interactor = new SaveWorkbookInteractor(dao, presenter);
+        interactor.execute(inputData);
+    }
 
+    @Test
+    void sendErrorMessageOnIOException() {
+        String message = "Failed to save file.";
 
-        Timetable timetable = new Timetable();
-        Section section = new Section(
-                new CourseOffering(
-                        "MAT237Y1-F-20259",
-                        new CourseCode("MAT137Y1"),
-                        "Pain and Agony",
-                        "two semesters of it"
-                ),
-                "LEC0101",
-                Section.TeachingMethod.LECTURE
-        );
-        section.addMeeting(new Meeting(
-                new UofTLocation("MY", "150"),
-                new WeeklyOccupancy(WeeklyOccupancy.DayOfTheWeek.THURSDAY,
-                        1000 * 60 * 60 * 13,
-                        1000 * 60 * 60 * 15)
-        ));
+        SaveWorkbookDataAccessInterface nonFunctionalDao = new SaveWorkbookDataAccessInterface() {
+            @Override
+            public void save(Workbook workbook, Path destination) throws IOException {
+                throw new IOException(message);
+            }
+        };
+        SaveWorkbookOutputBoundary presenter = new SaveWorkbookOutputBoundary() {
+            @Override
+            public void prepareSuccessView(SaveWorkbookOutputData outputData) {
+                fail();
+            }
 
-        timetable.addSection(section);
-        Workbook workbook = new Workbook(List.of(timetable));
-        Path destination = Paths.get("sandbox", "workbook.json");
-        SaveWorkbookInputData inputData = new SaveWorkbookInputData(workbook, destination);
+            @Override
+            public void prepareFailView(String errorMessage) {
+                assertEquals(message, errorMessage);
+            }
+        };
 
-
+        SaveWorkbookInteractor interactor = new SaveWorkbookInteractor(nonFunctionalDao, presenter);
+        SaveWorkbookInputData inputData = new SaveWorkbookInputData(TestConstants.WORKBOOK_MAT137, Paths.get("test"));
         interactor.execute(inputData);
     }
 }
