@@ -11,7 +11,7 @@ public class MainPanel extends JFrame {
     private JPanel rightPanel;
     private JPanel leftPanel;
     private JTabbedPane tabbedPane;
-    private boolean isAddingTab = false;    //variable to prevent stack overflow
+    private boolean isModifyingTab = false;    //variable to prevent stack overflow
 
     private static final int MAX_TABS = 8;
     private int tabCounter = 1;      // for naming new tabs
@@ -35,7 +35,7 @@ public class MainPanel extends JFrame {
 
     private void setupListeners() {
         tabbedPane.addChangeListener(e -> {
-            if (isAddingTab) return;
+            if (isModifyingTab) return;
 
             int last = tabbedPane.getTabCount() - 1;
             int selected = tabbedPane.getSelectedIndex();
@@ -50,10 +50,10 @@ public class MainPanel extends JFrame {
                     return;
                 }
 
-                isAddingTab = true;
+                isModifyingTab = true;
                 addNewTab();
                 tabbedPane.setSelectedIndex(last); // new tab is inserted at last index
-                isAddingTab = false;
+                isModifyingTab = false;
             }
         });
     }
@@ -66,7 +66,7 @@ public class MainPanel extends JFrame {
 
         tabbedPane.insertTab(title, null, panel.getRootPanel(), null, insertIndex);
         tabbedPane.setTabComponentAt(insertIndex, createTabHeader(title));
-        System.out.println("Added a new tab");
+        System.out.println("Added a new tab  ");
     }
 
     private void addPlusTab() {
@@ -92,16 +92,17 @@ public class MainPanel extends JFrame {
         closeButton.addActionListener(e -> {
             int i = tabbedPane.indexOfTabComponent(tabPanel);
 
-            // prevent closing "+"
-            if (i == tabbedPane.getTabCount() - 1) return;
-
             // Don't allow closing the last real tab
             if (tabbedPane.getTabCount()  <= 2) {
+                JOptionPane.showMessageDialog(tabbedPane,
+                        "You have to have at least 1 timetable.");
                 return;
             }
 
+            isModifyingTab = true;
             tabbedPane.remove(i);
-            System.out.println("removed a tab");
+            isModifyingTab = false;
+            tabbedPane.setSelectedIndex(i == tabbedPane.getTabCount() - 1 ? i - 1 : i);
         });
 
         // rename tab on double click and select tab on single click
