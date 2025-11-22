@@ -1,5 +1,7 @@
 package use_case.save_workbook;
 
+import data_access.course_data.CourseDataRepository;
+import data_access.course_data.JsonCourseDataRepository;
 import data_access.workbook_persistence.FileWorkbookDataAccessObject;
 import entity.*;
 import interface_adapter.save_workbook.SaveWorkbookPresenter;
@@ -12,7 +14,8 @@ import java.util.List;
 public class SaveWorkbookInteractorTest {
     @Test
     void doTheThing() {
-        FileWorkbookDataAccessObject dao = new FileWorkbookDataAccessObject(List.of("courses/sample_data.json"));
+        CourseDataRepository repo = new JsonCourseDataRepository(List.of("courses/sample_data.json"));
+        FileWorkbookDataAccessObject dao = new FileWorkbookDataAccessObject(repo);
         SaveWorkbookPresenter presenter = new SaveWorkbookPresenter();
         SaveWorkbookInteractor interactor = new SaveWorkbookInteractor(dao, presenter);
 

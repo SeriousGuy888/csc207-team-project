@@ -1,5 +1,7 @@
 package use_case.load_workbook;
 
+import data_access.course_data.CourseDataRepository;
+import data_access.course_data.JsonCourseDataRepository;
 import data_access.workbook_persistence.FileWorkbookDataAccessObject;
 import interface_adapter.load_workbook.LoadWorkbookPresenter;
 import org.junit.jupiter.api.Test;
@@ -11,7 +13,8 @@ import java.util.List;
 public class LoadWorkbookInteractorTest {
     @Test
     void doTheThing() {
-        FileWorkbookDataAccessObject dao = new FileWorkbookDataAccessObject(List.of("courses/sample_data.json"));
+        CourseDataRepository repo = new JsonCourseDataRepository(List.of("courses/sample_data.json"));
+        FileWorkbookDataAccessObject dao = new FileWorkbookDataAccessObject(repo);
         LoadWorkbookPresenter presenter = new LoadWorkbookPresenter();
         LoadWorkbookInteractor interactor = new LoadWorkbookInteractor(dao, presenter);
 

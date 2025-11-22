@@ -1,6 +1,7 @@
 package data_access.workbook_persistence;
 
 import com.google.gson.*;
+import data_access.course_data.CourseDataRepository;
 import entity.CourseCode;
 import entity.CourseOffering;
 import entity.Section;
@@ -25,54 +26,10 @@ public class FileWorkbookDataAccessObject implements SaveWorkbookDataAccessInter
     private final Gson gson = new GsonBuilder()
             .registerTypeAdapter(Section.class, new SectionCustomGsonSerializer())
             .create();
-    private final Map<String, CourseOffering> availableCourseOfferings;
+    private final CourseDataRepository courseDataRepository;
 
-    public FileWorkbookDataAccessObject(List<String> dataResourceNames) {
-        availableCourseOfferings = new HashMap<>();
-        dataResourceNames.forEach(resourceName -> {
-            URL resource = this.getClass().getClassLoader().getResource(resourceName);
-            if (resource == null) {
-                System.err.println(
-                        "Specified course data resource file named `" + resourceName + "` not found. Skipping.");
-                return;
-            }
-            loadInCoursesFromJsonFile(resource);
-        });
-    }
-
-    private void loadInCoursesFromJsonFile(URL resource) {
-        String contents;
-        try {
-            contents = Files.readString(Paths.get(resource.toURI()));
-        } catch (IOException | URISyntaxException e) {
-            return;
-        }
-
-        JSONObject object = new JSONObject(contents);
-        object.keys().forEachRemaining(courseOfferingIdentifier -> {
-            JSONObject currOfferingObj = object.getJSONObject(courseOfferingIdentifier);
-
-            String courseCodeString = currOfferingObj.getString("code");
-            String title = currOfferingObj.getString("courseTitle");
-            String description = currOfferingObj.getString("courseDescription");
-
-            CourseOffering courseOffering = new CourseOffering(
-                    courseOfferingIdentifier,
-                    new CourseCode(courseCodeString),
-                    title,
-                    description);
-
-            JSONObject sectionsObj = currOfferingObj.getJSONObject("meetings");
-            sectionsObj.keys().forEachRemaining(sectionName -> {
-                // todo: actually choose the right teaching method
-                //  and also add meeting times
-                Section section = new Section(courseOffering, sectionName, Section.TeachingMethod.LECTURE);
-
-                courseOffering.addAvailableSection(section);
-            });
-
-            availableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
-        });
+    public FileWorkbookDataAccessObject(CourseDataRepository courseDataRepository) {
+        this.courseDataRepository = courseDataRepository;
     }
 
     @Override
@@ -145,21 +102,20 @@ public class FileWorkbookDataAccessObject implements SaveWorkbookDataAccessInter
             }
 
             // we need a course offering object. pick the one that exists if possible
-            CourseOffering courseOfferingOfThisSection;
-            if (!availableCourseOfferings.containsKey(courseOfferingIdentifier)) {
-                courseOfferingOfThisSection = CourseOffering.createUnknownCourseOffering(courseOfferingIdentifier);
-            } else {
-                courseOfferingOfThisSection = availableCourseOfferings.get(courseOfferingIdentifier);
+            CourseOffering courseOffering = courseDataRepository.getCourseOffering(courseOfferingIdentifier);
+            if (courseOffering == null) {
+                courseOffering = CourseOffering.createUnknownCourseOffering(courseOfferingIdentifier);
             }
 
             // return the matching section from this course offering if possible
-            Optional<Section> matchingSection = courseOfferingOfThisSection
+            Optional<Section> matchingSection = courseOffering
                     .getAvailableSections()
                     .stream()
                     .filter(section -> section.getSectionName().equals(sectionName))
                     .findFirst();
+            final CourseOffering finalCourseOffering = courseOffering;
             return matchingSection
-                    .orElseGet(() -> Section.createUnknownSection(courseOfferingOfThisSection, sectionName));
+                    .orElseGet(() -> Section.createUnknownSection(finalCourseOffering, sectionName));
         }
     }
 }
