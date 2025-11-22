@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class MainPanel extends JFrame {
+public class MainPanel extends JPanel {
     private JPanel rootPanel;
     private JPanel searchPanel1;
     private JSplitPane SplitPane;
@@ -17,15 +17,16 @@ public class MainPanel extends JFrame {
     private int tabCounter = 1;      // for naming new tabs
 
     public MainPanel() {
-        setTitle("Timetable Builder");
-        setContentPane(rootPanel);
-
         // Create tabs after UI builder initializes components
         SwingUtilities.invokeLater(() -> {
             setupInitialTabs();
             setupListeners();
             tabbedPane.setSelectedIndex(0);   // focus first tab
         });
+    }
+
+    public JPanel getRootPanel() {
+        return rootPanel;
     }
 
     private void setupInitialTabs() {
@@ -66,7 +67,6 @@ public class MainPanel extends JFrame {
 
         tabbedPane.insertTab(title, null, panel.getRootPanel(), null, insertIndex);
         tabbedPane.setTabComponentAt(insertIndex, createTabHeader(title));
-        System.out.println("Added a new tab  ");
     }
 
     private void addPlusTab() {
@@ -139,13 +139,5 @@ public class MainPanel extends JFrame {
                 }
             }
         });
-    }
-
-    public static void main(String[] args) {
-        JFrame frame = new MainPanel();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(1600,1000);
-        frame.pack();
-        frame.setVisible(true);
     }
 }
