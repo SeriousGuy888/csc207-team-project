@@ -1,26 +1,65 @@
 package use_case.load_workbook;
 
-import data_access.course_data.CourseDataRepository;
-import data_access.course_data.JsonCourseDataRepository;
-import data_access.workbook_persistence.FileWorkbookDataAccessObject;
-import interface_adapter.load_workbook.LoadWorkbookPresenter;
+import entity.Workbook;
 import org.junit.jupiter.api.Test;
+import use_case.TestConstants;
 
+import java.io.IOException;
 import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
 public class LoadWorkbookInteractorTest {
+    private static final Path SAVED_LOCATION = Path.of("correct");
+    private static final Path INCORRECT_LOCATION = Path.of("incorrect");
+    private static final Workbook DESIRED_WORKBOOK = TestConstants.WORKBOOK_MAT137;
+    private static final String ERROR_MESSAGE_WHEN_NONEXISTENT = "Not found.";
+    private static final LoadWorkbookDataAccessInterface FAKE_DAO = new LoadWorkbookDataAccessInterface() {
+        @Override
+        public Workbook load(Path source) throws IOException {
+            if (source == SAVED_LOCATION) {
+                return DESIRED_WORKBOOK;
+            }
+            throw new IOException(ERROR_MESSAGE_WHEN_NONEXISTENT);
+        }
+    };
+
     @Test
-    void doTheThing() {
-        CourseDataRepository repo = new JsonCourseDataRepository(List.of("courses/sample_data.json"));
-        FileWorkbookDataAccessObject dao = new FileWorkbookDataAccessObject(repo);
-        LoadWorkbookPresenter presenter = new LoadWorkbookPresenter();
-        LoadWorkbookInteractor interactor = new LoadWorkbookInteractor(dao, presenter);
+    void successfulLoad() {
+        LoadWorkbookOutputBoundary presenter = new LoadWorkbookOutputBoundary() {
+            @Override
+            public void prepareSuccessView(LoadWorkbookOutputData outputData) {
+                assertEquals(DESIRED_WORKBOOK, outputData.getLoadedWorkbook());
+            }
 
-        Path source = Paths.get("sandbox", "workbook.json");
-        LoadWorkbookInputData inputData = new LoadWorkbookInputData(source);
+            @Override
+            public void prepareFailView(String errorMessage) {
+                fail();
+            }
+        };
 
+        LoadWorkbookInputData inputData = new LoadWorkbookInputData(SAVED_LOCATION);
+        LoadWorkbookInteractor interactor = new LoadWorkbookInteractor(FAKE_DAO, presenter);
+        interactor.execute(inputData);
+    }
+
+    @Test
+    void unsuccessfulLoadDisplaysErrorMessage() {
+        LoadWorkbookOutputBoundary presenter = new LoadWorkbookOutputBoundary() {
+            @Override
+            public void prepareSuccessView(LoadWorkbookOutputData outputData) {
+                fail();
+            }
+
+            @Override
+            public void prepareFailView(String errorMessage) {
+                assertEquals(ERROR_MESSAGE_WHEN_NONEXISTENT, errorMessage);
+            }
+        };
+
+        LoadWorkbookInputData inputData = new LoadWorkbookInputData(INCORRECT_LOCATION);
+        LoadWorkbookInteractor interactor = new LoadWorkbookInteractor(FAKE_DAO, presenter);
         interactor.execute(inputData);
     }
 }
