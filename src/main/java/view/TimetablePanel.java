@@ -1,4 +1,4 @@
-package view.GUI;
+package view;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -14,16 +14,19 @@ public class TimetablePanel extends JPanel {
     private JButton autogenerateButton;
     private JPanel buttonPanel;
 
+    /**
+     * Creates a new TimetablePanel and initializes the term-selection controls.
+     */
     public TimetablePanel() {
-        setVisible(true);
-        this.TimetablePanel.setVisible(true);
 
         // fall/winter toggle buttons
         fallButton.setEnabled(false);
         winterButton.setEnabled(true);
+
         fallButton.addActionListener(new ActionListener() {
             /**
-             * @param e click event
+             * Handles clicks on the Fall button.
+             * @param e the click event that triggered the action
              */
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -31,9 +34,11 @@ public class TimetablePanel extends JPanel {
                 winterButton.setEnabled(true);
             }
         });
+
         winterButton.addActionListener(new ActionListener() {
             /**
-             * @param e click event
+             * Handles clicks on the Winter button.
+             * @param e the click event that triggered the action
              */
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -43,6 +48,11 @@ public class TimetablePanel extends JPanel {
         });
     }
 
+    /**
+     * Returns the root Swing panel for this view.
+     * This method is typically used to embed the UI designed in this class into another container.
+     * @return the root TimetablePanel containing all UI components
+     */
     public JPanel getRootPanel() {
         return TimetablePanel;
     }

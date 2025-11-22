@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.GUI.MainPanel">
-  <grid id="27dc6" binding="rootPanel" layout-manager="GridBagLayout">
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.MainPanel">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridBagLayout">
     <constraints>
       <xy x="20" y="20" width="1410" height="1000"/>
     </constraints>
@@ -47,7 +47,7 @@
             </properties>
             <border type="none"/>
             <children>
-              <nested-form id="86b15" form-file="GUI/SearchPanel.form" binding="searchPanel1" default-binding="true">
+              <nested-form id="86b15" form-file="view/SearchPanel.form" binding="searchPanel1" default-binding="true">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>

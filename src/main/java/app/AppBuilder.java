@@ -1,7 +1,7 @@
 package app;
 
 
-import view.GUI.MainPanel;
+import view.MainPanel;
 import javax.swing.*;
 import java.awt.*;
 

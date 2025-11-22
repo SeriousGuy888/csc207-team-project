@@ -1,39 +1,67 @@
-package view.GUI;
+package view;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
 public class MainPanel extends JPanel {
-    private JPanel rootPanel;
+    private JPanel MainPanel;
     private JPanel searchPanel1;
     private JSplitPane SplitPane;
     private JPanel rightPanel;
     private JPanel leftPanel;
     private JTabbedPane tabbedPane;
-    private boolean isModifyingTab = false;    //variable to prevent stack overflow
 
+    /**
+     * The maximum amount of tabs tabbedPane can have.
+     */
     private static final int MAX_TABS = 8;
+
+    /**
+     * Records whether the program is adding/deleting a tab.
+     * This helper variable prevents unwanted behaviors when adding/deleting tabs.
+     */
+    private boolean isModifyingTab = false;
+
+    /**
+     * Counter for the default naming of added tabs.
+     */
     private int tabCounter = 1;      // for naming new tabs
 
+    /**
+     * Creates a new MainPanel. Then create tabs and listeners after UI builder initializes components.
+     */
     public MainPanel() {
-        // Create tabs after UI builder initializes components
         SwingUtilities.invokeLater(() -> {
             setupInitialTabs();
             setupListeners();
-            tabbedPane.setSelectedIndex(0);   // focus first tab
+            tabbedPane.setSelectedIndex(0);   // focus the first tab
         });
     }
 
+    /**
+     * Returns the root Swing panel for this view.
+     * This method is typically used to embed the UI designed in this class into another container.
+     * @return the root MainPanel containing all UI components
+     */
     public JPanel getRootPanel() {
-        return rootPanel;
+        return MainPanel;
     }
 
+    /**
+     * Creates a "+" tab and the first default tab.
+     */
     private void setupInitialTabs() {
-        addPlusTab();   // always last
-        addNewTab();    // create first real tab
+        addPlusTab();
+        addNewTab();
     }
 
+    /**
+     * Configures the tabbed pane's change listener to support dynamic tab creation
+     * through the final "+" tab. When the user selects the "+" tab, a new timetable
+     * tab is automatically inserted immediately before it.
+     * The method also enforces a maximum {@link #MAX_TABS} number of tabs.
+     */
     private void setupListeners() {
         tabbedPane.addChangeListener(e -> {
             if (isModifyingTab) return;
@@ -59,21 +87,39 @@ public class MainPanel extends JPanel {
         });
     }
 
+    /**
+     * Creates and inserts a new timetable tab into the tabbed pane.
+     * A new {@link TimetablePanel} instance is created for each tab. The tab is inserted
+     * immediately before the final "+" tab, which is reserved for creating additional tabs.
+     */
     private void addNewTab() {
         TimetablePanel panel = new TimetablePanel();
 
-        int insertIndex = tabbedPane.getTabCount() - 1; // before "+"
+        int insertIndex = tabbedPane.getTabCount() - 1;
         String title = "Timetable " + (tabCounter++);
 
         tabbedPane.insertTab(title, null, panel.getRootPanel(), null, insertIndex);
         tabbedPane.setTabComponentAt(insertIndex, createTabHeader(title));
     }
 
+    /**
+     * Creates a dummy "+" tab that handles adding tabs.
+     */
     private void addPlusTab() {
         JPanel dummy = new JPanel();
         tabbedPane.addTab("+", dummy);
     }
 
+    /**
+     * Creates a custom tab header component containing a title label and a close button.
+     * The tab header is displayed in the tabbed pane for each timetable tab.
+     * It shows the tab’s title and provides a close button for removing the tab.
+     * The close button prevents removal of the last remaining timetable and
+     * updates the selected tab appropriately after a close action.
+     *
+     * @param title the text to display in the tab header
+     * @return a Swing component representing the tab header
+     */
     private Component createTabHeader(String title) {
         JPanel tabPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT, 0, 0));
         tabPanel.setOpaque(false);
@@ -95,7 +141,7 @@ public class MainPanel extends JPanel {
             // Don't allow closing the last real tab
             if (tabbedPane.getTabCount()  <= 2) {
                 JOptionPane.showMessageDialog(tabbedPane,
-                        "You have to have at least 1 timetable.");
+                        "You must have at least 1 timetable.");
                 return;
             }
 
@@ -114,6 +160,16 @@ public class MainPanel extends JPanel {
         return tabPanel;
     }
 
+    /**
+     * Adds mouse interaction behavior to a tab header, enabling tab renaming
+     * on double-click and tab selection on single-click.
+     * When the user double-clicks the title label, an input dialog appears
+     * allowing the tab to be renamed.
+     * A single left-click selects the corresponding tab in the tabbed pane.
+     *
+     * @param titleLabel the label component that displays the tab title
+     * @param tabHeader  the tab header component used to identify the tab
+     */
     private void addRenameOnDoubleClick(JLabel titleLabel, JPanel tabHeader) {
         titleLabel.addMouseListener(new MouseAdapter() {
             @Override
