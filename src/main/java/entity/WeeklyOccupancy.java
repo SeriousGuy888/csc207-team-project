@@ -141,6 +141,10 @@ public class WeeklyOccupancy {
      * <li>"Contiguous" means every occupied timeslot is connected to every other occupied timeslot.</li>
      * <li>"Not contiguous" means there exists a timeslot disconnected to some other occupied timeslot.</li>
      * </ul>
+     * @implNote if we have two timespans [23:00 Sunday, 00:00 Monday) and [00:00 Monday, 01:00 Monday),
+     * this function will incorrectly return false, even though these timespans are actually contiguous
+     * <strong>However,</strong> I have decided that I don't care.
+     * There's no way classes can occur at these times anyway.
      */
     public boolean isContiguous() {
         return timespans.size() == 1 || timespans.isEmpty();
