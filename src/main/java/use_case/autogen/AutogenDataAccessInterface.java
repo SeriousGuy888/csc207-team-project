@@ -1,4 +1,5 @@
 package use_case.autogen;
+
 import entity.CourseOffering;
 import  java.util.List;
 

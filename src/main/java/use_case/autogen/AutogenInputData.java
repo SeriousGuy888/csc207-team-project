@@ -1,14 +1,13 @@
 package use_case.autogen;
 
-
-import entity.WeeklyOccupancy;
-import entity.Section;
-import entity.CourseCode;
-
 import java.util.Set;
 
+import entity.CourseCode;
+import entity.Section;
+import entity.WeeklyOccupancy;
+
 public class AutogenInputData {
-    private final Set<CourseCode>  selectedCourses;
+    private final Set<CourseCode> selectedCourses;
     private final Set<Section> lockedSections;
     private final WeeklyOccupancy blockedTimes;
 
@@ -20,8 +19,15 @@ public class AutogenInputData {
         this.blockedTimes = blockedTimes;
     }
 
-    public Set<CourseCode> getSelectedCourses() {return selectedCourses;}
-    public Set<Section> getLockedSections() {return lockedSections;}
-    public WeeklyOccupancy getBlockedTimes() {return blockedTimes;}
+    public Set<CourseCode> getSelectedCourses() {
+        return selectedCourses;
+    }
 
+    public Set<Section> getLockedSections() {
+        return lockedSections;
+    }
+
+    public WeeklyOccupancy getBlockedTimes() {
+        return blockedTimes;
+    }
 }
