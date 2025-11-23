@@ -14,4 +14,20 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>jetbrains.releases</id>
+            <url>https://www.jetbrains.com/intellij-repository/releases</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- for Swing UI Designer UIs to work when compiling with Maven (as opposed to the IntelliJ build system) -->
+        <dependency>
+            <groupId>com.jetbrains.intellij.java</groupId>
+            <artifactId>java-gui-forms-rt</artifactId>
+            <version>252.28238.7</version>
+        </dependency>
+    </dependencies>
+
 </project>
