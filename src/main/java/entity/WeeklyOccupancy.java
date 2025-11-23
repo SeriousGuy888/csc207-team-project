@@ -3,6 +3,7 @@ package entity;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Represents a weekly schedule with blocks of time
@@ -24,6 +25,9 @@ public class WeeklyOccupancy {
      * <li>Timespans do not overlap.</li>
      * <li>Timespans are ordered from earliest to latest.</li>
      * </ol>
+     * <p>
+     * With these invariants, I'm pretty sure there's exactly one unique
+     * representation as this list for every possible set of milliseconds occupied.
      */
     private final List<MillisecondSpan> timespans;
 
@@ -151,6 +155,22 @@ public class WeeklyOccupancy {
     }
 
 
+    @Override
+    public boolean equals(Object other) {
+        if (!(other instanceof WeeklyOccupancy)) {
+            return false;
+        }
+
+        WeeklyOccupancy otherOccupancy = (WeeklyOccupancy) other;
+        return this.timespans.equals(otherOccupancy.timespans);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(timespans);
+    }
+
+
     public enum DayOfTheWeek {
         MONDAY(0),
         TUESDAY(MILLISECONDS_PER_DAY),
@@ -227,6 +247,21 @@ public class WeeklyOccupancy {
          */
         public static MillisecondSpan merge(MillisecondSpan a, MillisecondSpan b) {
             return new MillisecondSpan(Math.min(a.start, b.start), Math.max(a.end, b.end));
+        }
+
+        @Override
+        public boolean equals(Object other) {
+            if (!(other instanceof MillisecondSpan)) {
+                return false;
+            }
+
+            MillisecondSpan otherSpan = (MillisecondSpan) other;
+            return otherSpan.start == this.start && otherSpan.end == this.end;
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(start, end);
         }
     }
 }
