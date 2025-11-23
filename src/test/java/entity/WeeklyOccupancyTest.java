@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class WeeklyOccupancyTest {
     private static final int MILLISECONDS_PER_HOUR = 1000 * 60 * 60;
+    private static final int MILLISECONDS_PER_DAY = MILLISECONDS_PER_HOUR * 24;
 
     WeeklyOccupancy NINE_OCLOCK_TO_TEN_OCLOCK_MONDAY = new WeeklyOccupancy(
             WeeklyOccupancy.DayOfTheWeek.MONDAY,
@@ -19,6 +20,30 @@ public class WeeklyOccupancyTest {
             WeeklyOccupancy.DayOfTheWeek.MONDAY,
             11 * MILLISECONDS_PER_HOUR,
             12 * MILLISECONDS_PER_HOUR);
+
+    @Test
+    void constructorRejectsOutOfBoundsStartAndEnd() {
+        assertThrowsExactly(
+                IllegalArgumentException.class,
+                () -> new WeeklyOccupancy(WeeklyOccupancy.DayOfTheWeek.MONDAY, -1, 0)
+        );
+        assertThrowsExactly(
+                IllegalArgumentException.class,
+                () -> new WeeklyOccupancy(WeeklyOccupancy.DayOfTheWeek.MONDAY, 0, MILLISECONDS_PER_DAY + 1)
+        );
+    }
+
+    @Test
+    void constructorRejectsEmptyAndNegativeIntervals() {
+        assertThrowsExactly(
+                IllegalArgumentException.class,
+                () -> new WeeklyOccupancy(WeeklyOccupancy.DayOfTheWeek.MONDAY, 1000, 1000)
+        );
+        assertThrowsExactly(
+                IllegalArgumentException.class,
+                () -> new WeeklyOccupancy(WeeklyOccupancy.DayOfTheWeek.MONDAY, 1000, 500)
+        );
+    }
 
     @Test
     void consecutiveHoursHasContiguousUnion() {
