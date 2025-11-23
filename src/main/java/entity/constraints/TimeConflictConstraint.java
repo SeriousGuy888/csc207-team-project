@@ -1,10 +1,16 @@
-package use_case.constraints;
+package entity.constraints;
 
 
 import entity.Section;
 import java.util.Set;
 
+
 public class TimeConflictConstraint implements Constraint {
+    /**
+     *
+     * @param chosen the set of currently chosen sections
+     * @return true if no time intersections between all chosen sesctions else false
+     */
     @Override
     public boolean isSatisfiedBy(Set<Section> chosen) {
         Section[] list = chosen.toArray(new Section[0]);
