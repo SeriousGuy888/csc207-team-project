@@ -27,7 +27,7 @@ public class RateMyProfDataAccessObject implements RateMyProfDataAccessInterface
      * @return Professor object. If no professor is found, returns an empty professor object.
      */
     @Override
-    public Professor getProfessorInfo(String profFirstName, String profLastName) {
+    public Professor getProfessorInfo(String profFirstName, String profLastName) throws RuntimeException {
         try {
             // Array of Strings for University of Toronto's school IDs on RateMyProf.
             // (Obtained through inspecting school search on RMP)
