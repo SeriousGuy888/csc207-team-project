@@ -3,13 +3,11 @@ package use_case.ratemyprof;
 /**
  * Input Boundary for RateMyProf Use Case
  */
-public class RateMyProfInputBoundary {
+public interface RateMyProfInputBoundary {
 
     /**
      * Executes the RateMyProf use case.
      * @param profInputData the input data for the Rate My Prof Use Case.
      */
-    void execute(RateMyProfInputData profInputData) {
-
-    }
+    void execute(RateMyProfInputData profInputData);
 }
