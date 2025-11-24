@@ -3,9 +3,10 @@
 Please keep this up-to-date with information about your project throughout the term.
 
 The readme should include information such as:
+
 - a summary of what your application is all about
 - a list of the user stories, along with who is responsible for each one
-- information about the API(s) that your project uses 
+- information about the API(s) that your project uses
 - screenshots or animations demonstrating current functionality
 
 By keeping this README up-to-date,
@@ -44,4 +45,3 @@ For the sake of consistency across the project, we will use these terms to refer
   - In the code, it is modelled by the `Timetable` entity class.
   - In our planning stages, this was sometimes referred to as a "prototype" or a "canvas".
 - A **search result** is represented in the UI by one accordion dropdown entitled with the course code and session. This accordion further contains a list of section types (e.g. lectures, tutorials). Each section type contains a list of sections of that type, which the user can add to their timetable.
-
