@@ -1,5 +1,6 @@
 package app;
 
+import data_access.course_data.JsonCourseDataRepository;
 import view.MainPanel;
 
 import javax.swing.*;
@@ -10,9 +11,11 @@ public class Main {
         AppBuilder appBuilder = new AppBuilder();
         MainPanel mainPanel = new MainPanel();
 
-        appBuilder.addMainPanel(mainPanel);
+        JFrame application = appBuilder
+                .addMainPanel(mainPanel)
+                .addCourseDataRepository(new JsonCourseDataRepository(CourseDataFilesToLoad.RESOURCE_NAMES))
+                .build();
 
-        JFrame application = appBuilder.build();
         application.pack();
         application.setLocationRelativeTo(null);
         application.setExtendedState(Frame.MAXIMIZED_BOTH);

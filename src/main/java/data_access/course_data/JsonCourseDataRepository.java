@@ -13,11 +13,15 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class JsonCourseDataRepository implements CourseDataRepository {
     private final Map<String, CourseOffering> availableCourseOfferings;
 
     public JsonCourseDataRepository(List<String> dataResourceNames) {
+        long start = System.currentTimeMillis();
+        AtomicInteger numFilesLoaded = new AtomicInteger();
+
         availableCourseOfferings = new HashMap<>();
         dataResourceNames.forEach(resourceName -> {
             URL resource = this.getClass().getClassLoader().getResource(resourceName);
@@ -27,6 +31,11 @@ public class JsonCourseDataRepository implements CourseDataRepository {
                 return;
             }
             loadInCoursesFromJsonFile(resource);
+
+            numFilesLoaded.getAndIncrement();
+            long curr = System.currentTimeMillis();
+            long elapsed = curr - start;
+            System.out.println("Loaded " + numFilesLoaded + " files at " + elapsed + "ms");
         });
     }
 
@@ -46,11 +55,19 @@ public class JsonCourseDataRepository implements CourseDataRepository {
             String title = currOfferingObj.getString("courseTitle");
             String description = currOfferingObj.getString("courseDescription");
 
-            CourseOffering courseOffering = new CourseOffering(
-                    courseOfferingIdentifier,
-                    new CourseCode(courseCodeString),
-                    title,
-                    description);
+            CourseOffering courseOffering;
+
+            try {
+                courseOffering = new CourseOffering(
+                        courseOfferingIdentifier,
+                        new CourseCode(courseCodeString),
+                        title,
+                        description);
+            } catch (IllegalArgumentException e) {
+                System.err.println("Could not load course with identifier " +
+                        courseOfferingIdentifier + " because " + e.getMessage());
+                return;
+            }
 
             JSONObject sectionsObj = currOfferingObj.getJSONObject("meetings");
             sectionsObj.keys().forEachRemaining(sectionName -> {
