@@ -24,7 +24,7 @@ public class AutogenInteractor implements AutogenInputBoundary {
     @Override
     public void execute(AutogenInputData inputData) {
         try{
-            //Get required data from dataAcess and inputData
+            //Get required data from dataAccess and inputData
             List<CourseOffering> offerings = dataAccess.getSelectedCourseOfferings(inputData);
             Set<Section> lockedSections = inputData.getLockedSections();
             WeeklyOccupancy blockedTimes = inputData.getBlockedTimes();
