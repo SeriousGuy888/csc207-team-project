@@ -12,7 +12,7 @@ public class AutogenPresenter implements AutogenOutputBoundary{
     public void prepareSuccessView(AutogenOutputData outputData) {
         viewModel.setTimetable(outputData.getGeneratedTimetable());   // or getSchedules()
 
-        // 2. Set a nice message for the UI to show
+        // Set a nice message for the UI to show
         viewModel.setMessage("Successfully generated a timetable.");
         viewModel.setError(null);
     }
