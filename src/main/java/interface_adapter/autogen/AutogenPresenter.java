@@ -19,7 +19,6 @@ public class AutogenPresenter implements AutogenOutputBoundary{
 
     @Override
     public void prepareFailView(String errorMessage) {
-        System.out.println(errorMessage);
         viewModel.setTimetable(null);
         viewModel.setMessage(null);
         viewModel.setError(errorMessage);
