@@ -8,7 +8,7 @@ import entity.CourseCode;
 import java.util.Set;
 
 public class AutogenInputData {
-    private final Set<CourseCode>  selectedCourses;
+    private final Set<CourseCode> selectedCourses;
     private final Set<Section> lockedSections;
     private final WeeklyOccupancy blockedTimes;
 
