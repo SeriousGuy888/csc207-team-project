@@ -9,7 +9,7 @@ public class TimeConflictConstraint implements Constraint {
     /**
      *
      * @param chosen the set of currently chosen sections
-     * @return true if no time intersections between all chosen sesctions else false
+     * @return true if no time intersections between all chosen sections, else false
      */
     @Override
     public boolean isSatisfiedBy(Set<Section> chosen) {
