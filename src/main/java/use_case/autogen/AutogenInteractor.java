@@ -28,12 +28,10 @@ public class AutogenInteractor implements AutogenInputBoundary {
             List<CourseOffering> offerings = dataAccess.getSelectedCourseOfferings(inputData);
             Set<Section> lockedSections = inputData.getLockedSections();
             WeeklyOccupancy blockedTimes = inputData.getBlockedTimes();
-            CourseVariableFactory courseVariableFactory = new CourseVariableFactory();
 
-            //Get variable and constraints using factory/help functions
-            List<CourseVariable> variables = courseVariableFactory.buildVariables(offerings, lockedSections);
+            //Get variable and constraints using helper functions
+            List<CourseVariable> variables = applyLock(offerings, lockedSections);
             List<Constraint> constraints = buildConstraints(blockedTimes);
-
 
             PotentialTimetable result = generateTimetable(variables, constraints);
 
@@ -131,5 +129,32 @@ public class AutogenInteractor implements AutogenInputBoundary {
         }
         return constraints;
 
+    }
+
+    private List<CourseVariable> applyLock(List<CourseOffering> offerings, Set<Section> lockedSections ) {
+        List<CourseVariable> variables = new ArrayList<>();
+
+        for (CourseOffering offering : offerings) {
+            Set<Section> allSections = offering.getAvailableSections();
+
+            // find if any of the locked sections belongs to this offering
+            Section lockedForThisCourse = null;
+            for (Section s : lockedSections) {
+                if (s.getCourseOffering().equals(offering)) {
+                    lockedForThisCourse = s;
+                    break;
+                }
+            }
+            Set<Section> domain;
+            if (lockedForThisCourse != null) {
+                // locked: only this section is allowed
+                domain = Set.of(lockedForThisCourse);
+            } else {
+                // no lock: all sections are allowed
+                domain = allSections;
+            }
+            variables.add(new CourseVariable(offering, domain));
+        }
+        return variables;
     }
 }
