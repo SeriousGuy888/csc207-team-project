@@ -16,6 +16,7 @@ public class RateMyProfOutputData {
     public String getprofFirstName() {
         return this.profFirstName;
     }
+
     public String getprofLastName() {
         return this.profLastName;
     }
