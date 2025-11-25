@@ -1,0 +1,10 @@
+package use_case.ratemyprof;
+
+import entity.Professor;
+
+/**
+ * Interface for RateMyProf data access.
+ */
+public interface RateMyProfDataAccessInterface {
+    public Professor getProfessorInfo(String profFirstName, String profLastName);
+}
