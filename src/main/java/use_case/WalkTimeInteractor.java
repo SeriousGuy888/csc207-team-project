@@ -20,7 +20,7 @@ public class WalkTimeInteractor implements WalkTimeInputBoundary {
 
         try {
             // 1. Ask DAO for the time (Main Flow)
-            int seconds = dataAccessObject.getWalkTime(origin, dest);
+            int seconds = dataAccessObject.getWalkTimeInSeconds(origin, dest);
 
             if (seconds == -1) {
                 // 2. Handle "Unknown Building" (Alternate Flow)

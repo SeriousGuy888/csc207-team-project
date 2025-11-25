@@ -13,8 +13,4 @@ public class WalkTimeOutputData {
     public int getWalkTimeInMinutes() {
         return walkTimeInMinutes;
     }
-
-    public boolean isUseCaseFailed() {
-        return useCaseFailed;
-    }
 }
