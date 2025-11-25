@@ -61,12 +61,8 @@ public class UofTWalkTimeDAO implements WalkTimeDataAccessInterface {
     }
 
     @Override
-    public int getWalkTime(String originCode, String destinationCode) throws IOException {
-        return getWalkTimeInSeconds(originCode, destinationCode);
-    }
-
-    @Override
-    public int getWalkTimeInSeconds(String originCode, String destinationCode) throws IOException {
+    public int getWalkTimeInSeconds(String originCode, String destinationCode) throws IOException,
+            UnknownBuildingException {
         // Validate building codes exist
         validateBuildingCode(originCode);
         validateBuildingCode(destinationCode);
@@ -82,13 +78,19 @@ public class UofTWalkTimeDAO implements WalkTimeDataAccessInterface {
         return parseDurationFromResponse(routeResponse);
     }
 
+    public static class UnknownBuildingException extends Exception {
+        public UnknownBuildingException(String buildingCode) {
+            super("Unknown building code: " + buildingCode);
+        }
+    }
+
     /**
      * Validates that a building code exists in our database.
-     * @throws IllegalArgumentException if building code is unknown
+     * @throws UnknownBuildingException if building code is unknown
      */
-    private void validateBuildingCode(String buildingCode) {
+    private void validateBuildingCode(String buildingCode) throws UnknownBuildingException {
         if (!buildingCoordinates.containsKey(buildingCode)) {
-            throw new IllegalArgumentException("Unknown building code!");
+            throw new UnknownBuildingException(buildingCode);
         }
     }
 
