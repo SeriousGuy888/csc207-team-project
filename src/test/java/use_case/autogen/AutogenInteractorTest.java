@@ -196,7 +196,7 @@ public class AutogenInteractorTest {
 
 
     // ------------------------------------------------------------------------
-    // Fake DAOs (now return CourseOffering instead of CourseVariable)
+    // Fake DAOs
     // ------------------------------------------------------------------------
 
     private static class FakeAutogenDataAccessTwoCourses implements AutogenDataAccessInterface {
