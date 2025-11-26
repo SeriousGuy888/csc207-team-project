@@ -265,6 +265,6 @@ public class CourseDataFilesToLoad {
                     "WRR.json",
                     "WST.json"
             )
-            .map(name -> "courses/real_data/" + name)
+            .map(name -> "courses/" + name)
             .collect(Collectors.toList());
 }
