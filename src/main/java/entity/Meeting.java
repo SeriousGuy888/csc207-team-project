@@ -23,7 +23,9 @@ public class Meeting {
         return location;
     }
 
-    public Semester getSemester() {return semester;}
+    public Semester getSemester() {
+        return semester;
+    }
 
     public WeeklyOccupancy getTime() {
         return time;
