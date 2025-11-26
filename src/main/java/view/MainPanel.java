@@ -150,17 +150,29 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
         closeButton.addActionListener(e -> {
             int i = tabbedPane.indexOfTabComponent(tabPanel);
 
-            // Don't allow closing the last real tab
+            // 1. Check minimum tab count first (so we don't ask to delete if they can't)
             if (tabbedPane.getTabCount() <= 2) {
                 JOptionPane.showMessageDialog(tabbedPane,
                         "You must have at least 1 timetable.");
                 return;
             }
 
-            isModifyingTab = true;
-            tabbedPane.remove(i);
-            isModifyingTab = false;
-            tabbedPane.setSelectedIndex(i == tabbedPane.getTabCount() - 1 ? i - 1 : i);
+            // 2. Show the Confirmation Dialog
+            int choice = JOptionPane.showConfirmDialog(
+                    tabbedPane,
+                    "Are you sure you want to delete this timetable?",
+                    "Confirm Deletion",
+                    JOptionPane.YES_NO_OPTION,
+                    JOptionPane.WARNING_MESSAGE
+            );
+
+            // 3. Only proceed if the user clicked "Yes"
+            if (choice == JOptionPane.YES_OPTION) {
+                isModifyingTab = true;
+                tabbedPane.remove(i);
+                isModifyingTab = false;
+                tabbedPane.setSelectedIndex(i == tabbedPane.getTabCount() - 1 ? i - 1 : i);
+            }
         });
 
         // rename tab on double click and select tab on single click
