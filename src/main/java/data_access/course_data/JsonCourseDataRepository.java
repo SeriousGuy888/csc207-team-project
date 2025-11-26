@@ -69,4 +69,9 @@ public class JsonCourseDataRepository implements CourseDataRepository {
     public CourseOffering getCourseOffering(String courseOfferingIdentifier) {
         return availableCourseOfferings.get(courseOfferingIdentifier);
     }
+
+    @Override
+    public Set<String> getAllCourseOfferingIdentifiers() {
+        return availableCourseOfferings.keySet();
+    }
 }
