@@ -1,9 +1,9 @@
 package entity;
 
 /**
- * An enumeration of possible academic semesters (F = first semester, S = second semester).
+ * An enumeration of possible academic semesters.
  */
 public enum Semester {
-    F,
-    S
+    FIRST,
+    SECOND
 }
