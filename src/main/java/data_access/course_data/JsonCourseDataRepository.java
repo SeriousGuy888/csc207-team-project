@@ -34,8 +34,11 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
 
             Map<String, CourseOffering> currentavailableCourseOfferings = loadInCoursesFromJsonFile(resource);
 
-            CourseInfobyCode.put(coursecode, currentavailableCourseOfferings);
-            availableCourseOfferings.putAll(currentavailableCourseOfferings);
+            if (currentavailableCourseOfferings != null) {
+                      CourseInfobyCode.put(coursecode, currentavailableCourseOfferings);
+                      availableCourseOfferings.putAll(currentavailableCourseOfferings);
+                }
+
         });
     }
 
