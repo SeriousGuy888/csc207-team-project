@@ -2,6 +2,7 @@ package view;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
+import interface_adapter.GlobalViewModel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,6 +15,8 @@ public class MainPanel extends JPanel {
     private JPanel rightPanel;
     private JPanel leftPanel;
     private JTabbedPane tabbedPane;
+
+    private final GlobalViewModel globalViewModel;
 
     /**
      * The maximum amount of tabs tabbedPane can have.
@@ -34,7 +37,9 @@ public class MainPanel extends JPanel {
     /**
      * Creates a new MainPanel. Then create tabs and listeners after UI builder initializes components.
      */
-    public MainPanel() {
+    public MainPanel(GlobalViewModel globalViewModel) {
+        this.globalViewModel = globalViewModel;
+
         SwingUtilities.invokeLater(() -> {
             setupInitialTabs();
             setupListeners();
