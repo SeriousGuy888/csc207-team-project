@@ -10,16 +10,20 @@ package entity;
  */
 public class Meeting {
     private final UofTLocation location;
+    private final Semester semester;
     private final WeeklyOccupancy time; // must be contiguous timespan
 
-    public Meeting(UofTLocation location, WeeklyOccupancy time) {
+    public Meeting(UofTLocation location, Semester semester, WeeklyOccupancy time) {
         this.location = location;
+        this.semester = semester;
         this.time = time;
     }
 
     public UofTLocation getLocation() {
         return location;
     }
+
+    public Semester getSemester() {return semester;}
 
     public WeeklyOccupancy getTime() {
         return time;
