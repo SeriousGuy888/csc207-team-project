@@ -14,11 +14,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class JsonCourseDataRepository implements CourseDataRepository {
+public class JsonCourseDataRepository implements CourseDataRepository, CourseDataRepository_CourseCode {
+    private final Map<String, Map<String, CourseOffering>> CourseInfobyCode;
     private final Map<String, CourseOffering> availableCourseOfferings;
 
     public JsonCourseDataRepository(List<String> dataResourceNames) {
+        CourseInfobyCode = new HashMap<>();
         availableCourseOfferings = new HashMap<>();
+
         dataResourceNames.forEach(resourceName -> {
             URL resource = this.getClass().getClassLoader().getResource(resourceName);
             if (resource == null) {
@@ -26,17 +29,25 @@ public class JsonCourseDataRepository implements CourseDataRepository {
                         "Specified course data resource file named `" + resourceName + "` not found. Skipping.");
                 return;
             }
-            loadInCoursesFromJsonFile(resource);
+
+            String coursecode = resourceName.replace("courses/", "").replace(".json", "").toUpperCase();
+
+            Map<String, CourseOffering> currentavailableCourseOfferings = loadInCoursesFromJsonFile(resource);
+
+            CourseInfobyCode.put(coursecode, currentavailableCourseOfferings);
+            availableCourseOfferings.putAll(currentavailableCourseOfferings);
         });
     }
 
-    private void loadInCoursesFromJsonFile(URL resource) {
+    private Map<String, CourseOffering> loadInCoursesFromJsonFile(URL resource) {
         String contents;
         try {
             contents = Files.readString(Paths.get(resource.toURI()));
         } catch (IOException | URISyntaxException e) {
-            return;
+            return null;
         }
+
+        Map<String, CourseOffering> currentavailableCourseOfferings = new HashMap<>();
 
         JSONObject object = new JSONObject(contents);
         object.keys().forEachRemaining(courseOfferingIdentifier -> {
@@ -61,8 +72,9 @@ public class JsonCourseDataRepository implements CourseDataRepository {
                 courseOffering.addAvailableSection(section);
             });
 
-            availableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
+            currentavailableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
         });
+        return currentavailableCourseOfferings;
     }
 
     @Override
@@ -70,8 +82,13 @@ public class JsonCourseDataRepository implements CourseDataRepository {
         return availableCourseOfferings.get(courseOfferingIdentifier);
     }
 
+    // @Override
+    // public Set<String> getAllCourseOfferingbycode(String courseCode) {
+    //     return availableCourseOfferings.get(courseCode);
+    // }
+
     @Override
-    public Set<String> getAllCourseOfferingIdentifiers() {
-        return availableCourseOfferings.keySet();
+    public Map<String, CourseOffering> getMatchingCourseInfo(String courseCode) {
+        return CourseInfobyCode.get(courseCode);
     }
 }
