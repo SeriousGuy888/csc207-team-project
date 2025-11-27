@@ -5,12 +5,12 @@ import entity.Professor;
  */
 public class RateMyProfInteractor implements RateMyProfInputBoundary {
     private final RateMyProfDataAccessInterface rateMyProfDataAccessObject;
-    private final RateMyProfOutputBoundary rateMyProfPresenter;
+    private final RateMyProfOutputBoundary rateMyProfOutputBoundary;
 
     public RateMyProfInteractor(RateMyProfDataAccessInterface rateMyProfDataAccessObject,
-                                RateMyProfOutputBoundary rateMyProfPresenter) {
+                                RateMyProfOutputBoundary rateMyProfOutputBoundary) {
         this.rateMyProfDataAccessObject = rateMyProfDataAccessObject;
-        this.rateMyProfPresenter = rateMyProfPresenter;
+        this.rateMyProfOutputBoundary = rateMyProfOutputBoundary;
     }
 
     @Override
@@ -20,11 +20,11 @@ public class RateMyProfInteractor implements RateMyProfInputBoundary {
                     profInputData.getFirstName(),
                     profInputData.getLastName());
             RateMyProfOutputData outputData = new RateMyProfOutputData(prof);
-            rateMyProfPresenter.prepareSuccessView(outputData);
+            rateMyProfOutputBoundary.prepareSuccessView(outputData);
         }
         catch (RuntimeException e) {
             String errorMessage = "Failed to retrieve professor info: " + e.getMessage();
-            rateMyProfPresenter.prepareFailView(errorMessage);
+            rateMyProfOutputBoundary.prepareFailView(errorMessage);
         }
     }
 }
