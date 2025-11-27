@@ -1,0 +1,21 @@
+package use_case.ratemyprof;
+
+/**
+ * The input data for the RateMyProf Use Case.
+ */
+public class RateMyProfInputData {
+    private String profFirstName;
+    private String profLastName;
+
+    public RateMyProfInputData(String profFirstName, String profLastName) {
+        this.profFirstName = profFirstName;
+        this.profLastName = profLastName;
+    }
+
+    String getFirstName() {
+        return profFirstName;
+    }
+    String getLastName() {
+        return profLastName;
+    }
+}
