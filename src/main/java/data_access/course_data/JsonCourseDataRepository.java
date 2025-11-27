@@ -91,7 +91,7 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
     // }
 
     @Override
-    public Map<String, CourseOffering> getMatchingCourseInfo(String courseCode) {
-        return CourseInfobyCode.get(courseCode);
+    public Map<String, CourseOffering> getMatchingCourseInfo(String deptCode) {
+        return CourseInfobyCode.get(deptCode);
     }
 }

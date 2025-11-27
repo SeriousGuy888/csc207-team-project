@@ -1,54 +1,61 @@
 package use_case.search_courses;
 
-import data_access.course_data.CourseDataRepository;
+import data_access.course_data.CourseDataRepositoryGrouped;
 
 public class SearchCoursesDataAccessObject implements SearchCoursesDataAccessInterface {
-    private final CourseDataRepository courseDataRepository;
+    private final CourseDataRepositoryGrouped courseDataRepositoryGrouped;
+     // use regex to identify if query is course code or dept code or neither
+    private final Pattern COURSECODE = Pattern.compile("[A-Z]{3}\\d{3}");
+    private final Pattern DEPTCODE = Pattern.compile("[A-Z]{3}");
 
     // pass in shared constructor parameter
-    public SearchCoursesDataAccessObject(CourseDataRepository courseDataRepository) {  
-        this.courseDataRepository = courseDataRepository; 
+    public SearchCoursesDataAccessObject(CourseDataRepositoryGrouped courseDataRepositoryGrouped) {  
+        this.courseDataRepositoryGrouped = courseDataRepositoryGrouped; 
     }
 
     @Override
-    public List<CourseOffering> searchCourses(String query) {
-        Set<String> queryCourseIds = prepareQuery(query);
+    public Set<CourseOffering> searchCourses(String query) {
+        String normalizedQuery = query.trim().toUpperCase();
+
+        if (COURSECODE.matcher(normalizedQuery).matches()) {
+            return searchByCourseCode(normalizedQuery);
+        }
+        else if (DEPTCODE.matcher(normalizedQuery).matches()) {
+            return searchByDept(normalizedQuery);
+        } 
+        else {
+            throw new IllegalArgumentException("Please search by first three letters of the course (e.g., CSC) or specific course code (e.g., CSC207) only");
+        }
     }
 
-    private Set<String> prepareQuery(String query) {
-        String normalized = query.trim().toUpperCase();
+    private Set<CourseOffering> searchByCourseCode(String normalizedQuery) {
+        String deptCode = normalizedQuery.substring(0, 3);
+        Map<String, CourseOffering> matches = courseDataRepositoryGrouped.getMatchingCourseInfo(deptCode);
 
-        Set<String> allCourseIds = courseDataRepository.getAllCourseOfferingIdentifiers();
-
-        List<String> matching = new ArrayList<>();
-        for (String id : identifiers) {
-            if (id.toUpperCase().contains(normalized)) {
-                matching.add(id);
+        if (matches != null) {
+            Set<CourseOffering> matchedCourses = new HashSet<>();
+            for (Map.Entry<String, CourseOffering> entry : matches.entrySet()) {
+                if (entry.getKey().startsWith(normalizedQuery)) {
+                    matchedCourses.add(entry.getValue());
+                }
             }
-        }
-        
-    }
- 
-    
-    // 3. Sort by match quality
-    matching.sort((a, b) -> {
-        boolean aStarts = a.toUpperCase().startsWith(normalized);
-        boolean bStarts = b.toUpperCase().startsWith(normalized);
-        
-        if (aStarts && !bStarts) return -1;
-        if (bStarts && !aStarts) return 1;
-        return a.compareTo(b);
-    });
-    
-    // 4. Get top 10 CourseOfferings
-    List<CourseOffering> results = new ArrayList<>();
-    for (int i = 0; i < Math.min(10, matching.size()); i++) {
-        CourseOffering course = courseRepository.getCourseOffering(matching.get(i));
-        if (course != null) {
-            results.add(course);
+            return matchedCourses;
+        } 
+        else {
+            throw new IllegalArgumentException("This course code does not exist or is not offering any courses this term");
         }
     }
-    
-    return results;
+
+    private Set<CourseOffering> searchByDept(String normalizedQuery) {
+        Map<String, CourseOffering> matches = courseDataRepositoryGrouped.getMatchingCourseInfo(normalizedQuery);
+
+        if (matches != null) {
+            return new HashSet<>(matches.values());
+        } 
+        else {
+            throw new IllegalArgumentException("This course code does not exist or is not offering any courses this term");
+        }
+    }
 }
-}
+  
+
