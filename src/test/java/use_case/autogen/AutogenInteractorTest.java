@@ -33,8 +33,8 @@ public class AutogenInteractorTest {
         );
 
         AutogenInputData inputData = new AutogenInputData(
-                Set.of(),          // locked sections
-                Set.of(),          // (whatever your second Set is)
+                Set.of(),
+                Set.of(),
                 nonConflictingBlockedTime
         );
 
@@ -83,7 +83,6 @@ public class AutogenInteractorTest {
 
         interactor.execute(inputData);
 
-        System.out.println("\n*** ALWAYS PRINTING RESULT ***");
         if (presenter.lastOutput != null) {
             printTimetable(presenter.lastOutput.getGeneratedTimetable());
         } else {
@@ -136,8 +135,7 @@ public class AutogenInteractorTest {
         Set<Section> timetable = presenter.lastOutput.getGeneratedTimetable();
         assertEquals(2, timetable.size(), "Should pick 1 section per course");
 
-        // ✅ Check that no two sections overlap in time,
-        //    using Meeting.getTime().doesIntersect(...) directly.
+
         Section[] sections = timetable.toArray(new Section[0]);
         for (int i = 0; i < sections.length; i++) {
             for (int j = i + 1; j < sections.length; j++) {
@@ -202,7 +200,7 @@ public class AutogenInteractorTest {
     private static class FakeAutogenDataAccessTwoCourses implements AutogenDataAccessInterface {
 
         @Override
-        public List<CourseOffering> getSelectedCourseOfferings(AutogenInputData inputData) {
+        public List<CourseOffering> getSelectedCourseOfferings(Set<CourseCode> selectedCourses) {
             // Course 1: MAT237
             CourseOffering mat237 = new CourseOffering(
                     new CourseCode("MAT237Y1"),
@@ -245,7 +243,7 @@ public class AutogenInteractorTest {
     private static class FakeImpossibleAutogenDataAccess implements AutogenDataAccessInterface {
 
         @Override
-        public List<CourseOffering> getSelectedCourseOfferings(AutogenInputData inputData) {
+        public List<CourseOffering> getSelectedCourseOfferings(Set<CourseCode> selectedCourses) {
             // Single course with a single section that is fully blocked by the input's blockedTimes
             CourseOffering mat237 = new CourseOffering(
                     new CourseCode("MAT237Y1"),
@@ -276,7 +274,7 @@ public class AutogenInteractorTest {
     private static class FakeAutogenDataAccessWithConflicts implements AutogenDataAccessInterface {
 
         @Override
-        public List<CourseOffering> getSelectedCourseOfferings(AutogenInputData inputData) {
+        public List<CourseOffering> getSelectedCourseOfferings(Set<CourseCode> selectedCourses) {
             // ----- Course 1: MAT237 with two sections -----
             CourseOffering mat237 = new CourseOffering(
                     new CourseCode("MAT237Y1"),

@@ -8,8 +8,10 @@ import java.util.*;
 
 import entity.constraints.TimeConflictConstraint;
 
-/**A DFS (Depth First Search) timetable generator that uses recursion + backtracking
- * to find a suitable path of generation  **/
+/**
+ * A DFS (Depth First Search) timetable generator that uses recursion + backtracking
+ * to find a suitable path of generation  
+ **/
 public class AutogenInteractor implements AutogenInputBoundary {
 
     private final AutogenDataAccessInterface dataAccess;
@@ -25,7 +27,7 @@ public class AutogenInteractor implements AutogenInputBoundary {
     public void execute(AutogenInputData inputData) {
         try{
             //Get required data from dataAccess and inputData
-            List<CourseOffering> offerings = dataAccess.getSelectedCourseOfferings(inputData);
+            List<CourseOffering> offerings = dataAccess.getSelectedCourseOfferings(inputData.getSelectedCourses());
             Set<Section> lockedSections = inputData.getLockedSections();
             WeeklyOccupancy blockedTimes = inputData.getBlockedTimes();
 
@@ -103,10 +105,9 @@ public class AutogenInteractor implements AutogenInputBoundary {
     }
 
 
-    /** Checks if constraints are met, using the classes in the constraints package **/
     /**
-     *
-     * @param assignment The timetable assinment that is being checked for consistency
+     * Checks if constraints are met, using the classes in the constraints package
+     * @param assignment The timetable assignment that is being checked for consistency
      * @param constraints The constraints that need to be satisfied
      * @return true if all constraints met, else false
      */
