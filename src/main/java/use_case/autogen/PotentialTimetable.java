@@ -20,8 +20,12 @@ public class PotentialTimetable {
         this.sections = sections;
    }
 
-   public boolean getSuccess() {return success;}
-    public Set<Section> getSections() {return sections;}
+   public boolean getSuccess() {
+       return success;
+   }
+    public Set<Section> getSections() {
+       return sections;
+   }
     public Timetable getTimetable(){
        return new Timetable(sections);
     }

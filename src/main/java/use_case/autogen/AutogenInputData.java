@@ -20,8 +20,14 @@ public class AutogenInputData {
         this.blockedTimes = blockedTimes;
     }
 
-    public Set<CourseCode> getSelectedCourses() {return selectedCourses;}
-    public Set<Section> getLockedSections() {return lockedSections;}
-    public WeeklyOccupancy getBlockedTimes() {return blockedTimes;}
+    public Set<CourseCode> getSelectedCourses() {
+        return selectedCourses;
+    }
+    public Set<Section> getLockedSections() {
+        return lockedSections;
+    }
+    public WeeklyOccupancy getBlockedTimes() {
+        return blockedTimes;
+    }
 
 }

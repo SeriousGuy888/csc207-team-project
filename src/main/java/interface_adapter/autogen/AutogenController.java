@@ -11,7 +11,9 @@ import java.util.Set;
 public class AutogenController {
     private final AutogenInputBoundary interactor;
 
-    public AutogenController(AutogenInputBoundary interactor){this.interactor=interactor;}
+    public AutogenController(AutogenInputBoundary interactor){
+        this.interactor=interactor;
+    }
 
     public void generate(Set<CourseCode> selectedCourses,
                          Set<Section> lockedSections,
