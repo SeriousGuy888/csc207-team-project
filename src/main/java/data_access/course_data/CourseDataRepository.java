@@ -12,5 +12,4 @@ public interface CourseDataRepository {
      * @return The corresponding course offering, if it exists. Otherwise, null.
      */
     CourseOffering getCourseOffering(String courseOfferingIdentifier);
-    Set<String> getAllCourseOfferingIdentifiers();
 }
