@@ -4,7 +4,6 @@ public class WalkTimeState {
     private String walkTimeDisplay = ""; // e.g. "Walk: 6 mins"
     private String error = null;
 
-    // Default Constructor
     public WalkTimeState() {}
 
     public String getWalkTimeDisplay() {

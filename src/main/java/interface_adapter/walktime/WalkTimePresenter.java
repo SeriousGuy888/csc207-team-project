@@ -1,38 +1,47 @@
 package interface_adapter.walktime;
 
-import use_case.WalkTimeOutputBoundary;
-import use_case.WalkTimeOutputData;
+import use_case.osrm_walktime.WalkTimeOutputBoundary;
+import use_case.osrm_walktime.WalkTimeOutputData;
 
 public class WalkTimePresenter implements WalkTimeOutputBoundary {
 
-    private final WalkTimeViewModel walkTimeViewModel;
+    private final WalkTimeViewModel viewModel;
 
-    public WalkTimePresenter(WalkTimeViewModel walkTimeViewModel) {
-        this.walkTimeViewModel = walkTimeViewModel;
+    public WalkTimePresenter(WalkTimeViewModel viewModel) {
+        this.viewModel = viewModel;
     }
 
     @Override
-    public void prepareSuccessView(WalkTimeOutputData output) {
-        WalkTimeState state = walkTimeViewModel.getState();
+    public void prepareSuccessView(WalkTimeOutputData outputData) {
+        WalkTimeState state = viewModel.getState();
 
-        // Format the integer into a nice string
-        String message = "Walk: " + output.getWalkTimeInMinutes() + " mins";
+        // --- FORMATTING LOGIC HERE ---
+        int seconds = outputData.getDurationInSeconds();
+        int minutes = (int) Math.ceil(seconds / 60.0);
 
-        state.setWalkTimeDisplay(message);
-        state.setError(null); // Clear any previous errors
+        // Make it look nice
+        String niceMessage;
+        if (minutes < 1) {
+            niceMessage = "Less than 1 minute";
+        } else {
+            niceMessage = minutes + " minutes";
+        }
 
-        walkTimeViewModel.setState(state);
-        walkTimeViewModel.firePropertyChanged();
+        state.setWalkTimeDisplay(niceMessage);
+        state.setError(null);
+
+        // Update the View
+        viewModel.setState(state);
+        viewModel.firePropertyChanged();
     }
 
     @Override
     public void prepareFailView(String error) {
-        WalkTimeState state = walkTimeViewModel.getState();
-
+        WalkTimeState state = viewModel.getState();
         state.setError(error);
-        state.setWalkTimeDisplay("Walk: Unknown"); // Fallback display
+        state.setWalkTimeDisplay(null);
 
-        walkTimeViewModel.setState(state);
-        walkTimeViewModel.firePropertyChanged();
+        viewModel.setState(state);
+        viewModel.firePropertyChanged();
     }
 }
