@@ -6,8 +6,12 @@ package use_case.ratemyprof;
 public class RateMyProfInteractor implements RateMyProfInputBoundary {
     private final RateMyProfDataAccessInterface rateMyProfDataAccessObject;
 
-    @Override
-    public void excecute (RateMyProfInputData rateMyProfInputData){
+    public RateMyProfInteractor(RateMyProfDataAccessInterface rateMyProfDataAccessObject) {
+        this.rateMyProfDataAccessObject = rateMyProfDataAccessObject;
+    }
 
+    @Override
+    public void execute(RateMyProfInputData profInputData) {
+        rateMyProfDataAccessObject.getProfessorInfo(profInputData.getFirstName(), profInputData.getLastName());
     }
 }
