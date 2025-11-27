@@ -37,6 +37,14 @@
         </dependency>
 
         <!-- JUnit 4 -->
+        <!-- for Swing UI Designer UIs to work when compiling with Maven (as opposed to the IntelliJ build system) -->
+        <dependency>
+            <groupId>com.jetbrains.intellij.java</groupId>
+            <artifactId>java-gui-forms-rt</artifactId>
+            <version>252.28238.7</version>
+        </dependency>
+
+        <!-- unit testing -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -58,6 +66,7 @@
             <artifactId>java-gui-forms-rt</artifactId>
             <version>252.28238.7</version>
         </dependency>
+
     </dependencies>
 
 </project>
