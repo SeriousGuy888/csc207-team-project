@@ -1,11 +1,6 @@
 package use_case.autogen;
 
-import entity.CourseCode;
-import entity.CourseOffering;
-import entity.Meeting;
-import entity.Section;
-import entity.UofTLocation;
-import entity.WeeklyOccupancy;
+import entity.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -56,7 +51,7 @@ public class AutogenInteractorTest {
                 "Should produce output data for two simple courses");
 
         assertEquals(2,
-                presenter.lastOutput.getGeneratedTimetable().size(),
+                presenter.lastOutput.getGeneratedTimetable().getSections().size(),
                 "Expected 2 sections in the generated timetable");
     }
 
@@ -132,7 +127,7 @@ public class AutogenInteractorTest {
         // Assertions
         assertNull(presenter.lastError, "Should not have an error for resolvable conflicts");
         assertNotNull(presenter.lastOutput, "Should generate a timetable");
-        Set<Section> timetable = presenter.lastOutput.getGeneratedTimetable();
+        Set<Section> timetable = presenter.lastOutput.getGeneratedTimetable().getSections();
         assertEquals(2, timetable.size(), "Should pick 1 section per course");
 
 
@@ -156,9 +151,9 @@ public class AutogenInteractorTest {
     // ------------------------------------------------------------------------
     // Helper: print timetable
     // ------------------------------------------------------------------------
-    private void printTimetable(Set<Section> timetable) {
+    private void printTimetable(Timetable timetable) {
         System.out.println("=========== GENERATED TIMETABLE ===========");
-        for (Section s : timetable) {
+        for (Section s : timetable.getSections()) {
             System.out.println(
                     s.getCourseOffering().getCourseCode() + " " +
                             s.getSectionName() + " (" + s.getTeachingMethod() + ")"
