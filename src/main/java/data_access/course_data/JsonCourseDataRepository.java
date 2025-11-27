@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class JsonCourseDataRepository implements CourseDataRepository, CourseDataRepository_CourseCode {
+public class JsonCourseDataRepository implements CourseDataRepository, CourseDataRepositoryGrouped {
     private final Map<String, Map<String, CourseOffering>> CourseInfobyCode;
     private final Map<String, CourseOffering> availableCourseOfferings;
 
