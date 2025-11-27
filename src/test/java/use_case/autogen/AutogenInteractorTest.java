@@ -11,6 +11,53 @@ import static org.junit.jupiter.api.Assertions.*;
 public class AutogenInteractorTest {
 
     // ------------------------------------------------------------------------
+    // Time helpers / shared WeeklyOccupancy instances
+    // ------------------------------------------------------------------------
+
+    private static final int MILLIS_PER_HOUR = 1000 * 60 * 60;
+
+    private static final WeeklyOccupancy SUNDAY_00_01 = new WeeklyOccupancy(
+            WeeklyOccupancy.DayOfTheWeek.SUNDAY,
+            0,
+            1 * MILLIS_PER_HOUR
+    );
+
+    // Monday 10:00–12:00 (used both as a meeting time and as a fully blocked time)
+    private static final WeeklyOccupancy MONDAY_10_12 = new WeeklyOccupancy(
+            WeeklyOccupancy.DayOfTheWeek.MONDAY,
+            10 * MILLIS_PER_HOUR,
+            12 * MILLIS_PER_HOUR
+    );
+
+    // Monday 10:00–11:00
+    private static final WeeklyOccupancy MONDAY_10_11 = new WeeklyOccupancy(
+            WeeklyOccupancy.DayOfTheWeek.MONDAY,
+            10 * MILLIS_PER_HOUR,
+            11 * MILLIS_PER_HOUR
+    );
+
+    // Monday 12:00–14:00
+    private static final WeeklyOccupancy MONDAY_12_14 = new WeeklyOccupancy(
+            WeeklyOccupancy.DayOfTheWeek.MONDAY,
+            12 * MILLIS_PER_HOUR,
+            14 * MILLIS_PER_HOUR
+    );
+
+    // Monday 14:00–16:00
+    private static final WeeklyOccupancy MONDAY_14_16 = new WeeklyOccupancy(
+            WeeklyOccupancy.DayOfTheWeek.MONDAY,
+            14 * MILLIS_PER_HOUR,
+            16 * MILLIS_PER_HOUR
+    );
+
+    // Thursday 13:00–15:00
+    private static final WeeklyOccupancy THURSDAY_13_15 = new WeeklyOccupancy(
+            WeeklyOccupancy.DayOfTheWeek.THURSDAY,
+            13 * MILLIS_PER_HOUR,
+            15 * MILLIS_PER_HOUR
+    );
+
+    // ------------------------------------------------------------------------
     // Tests
     // ------------------------------------------------------------------------
 
@@ -21,11 +68,7 @@ public class AutogenInteractorTest {
         AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
 
         // Block a time that doesn't intersect with any section (e.g., Sunday 00:00–01:00)
-        WeeklyOccupancy nonConflictingBlockedTime = new WeeklyOccupancy(
-                WeeklyOccupancy.DayOfTheWeek.SUNDAY,
-                0,
-                1000 * 60 * 60
-        );
+        WeeklyOccupancy nonConflictingBlockedTime = SUNDAY_00_01;
 
         AutogenInputData inputData = new AutogenInputData(
                 Set.of(),
@@ -64,11 +107,7 @@ public class AutogenInteractorTest {
 
         // The only section in the fake DAO will be Monday 10:00–12:00.
         // Here we block exactly that time so BlockedTimeConstraint makes it impossible.
-        WeeklyOccupancy fullyBlockedTime = new WeeklyOccupancy(
-                WeeklyOccupancy.DayOfTheWeek.MONDAY,
-                1000 * 60 * 60 * 10,   // 10:00
-                1000 * 60 * 60 * 12    // 12:00
-        );
+        WeeklyOccupancy fullyBlockedTime = MONDAY_10_12;
 
         AutogenInputData inputData = new AutogenInputData(
                 Set.of(),
@@ -101,11 +140,7 @@ public class AutogenInteractorTest {
 
         // Again, block a time that doesn't intersect any of the test sections,
         // so only the TimeConflictConstraint matters here.
-        WeeklyOccupancy nonConflictingBlockedTime = new WeeklyOccupancy(
-                WeeklyOccupancy.DayOfTheWeek.SUNDAY,
-                0,
-                1000 * 60 * 60
-        );
+        WeeklyOccupancy nonConflictingBlockedTime = SUNDAY_00_01;
 
         AutogenInputData inputData = new AutogenInputData(
                 Set.of(),
@@ -115,7 +150,6 @@ public class AutogenInteractorTest {
 
         interactor.execute(inputData);
 
-        // Always print what we got
         System.out.println("\n*** RESULT FOR CONFLICT-AVOIDANCE TEST ***");
         if (presenter.lastOutput != null) {
             printTimetable(presenter.lastOutput.getGeneratedTimetable());
@@ -205,11 +239,7 @@ public class AutogenInteractorTest {
             Section mat237Lec0101 = new Section(mat237, "LEC0101", Section.TeachingMethod.LECTURE);
             mat237Lec0101.addMeeting(new Meeting(
                     new UofTLocation("MY", "150"),
-                    new WeeklyOccupancy(
-                            WeeklyOccupancy.DayOfTheWeek.THURSDAY,
-                            1000 * 60 * 60 * 13,   // 13:00
-                            1000 * 60 * 60 * 15    // 15:00
-                    )
+                    THURSDAY_13_15
             ));
             mat237.addAvailableSection(mat237Lec0101);
 
@@ -222,11 +252,7 @@ public class AutogenInteractorTest {
             Section csc207Lec0101 = new Section(csc207, "LEC0101", Section.TeachingMethod.LECTURE);
             csc207Lec0101.addMeeting(new Meeting(
                     new UofTLocation("BA", "2175"),
-                    new WeeklyOccupancy(
-                            WeeklyOccupancy.DayOfTheWeek.MONDAY,
-                            1000 * 60 * 60 * 10,   // 10:00
-                            1000 * 60 * 60 * 11    // 11:00
-                    )
+                    MONDAY_10_11
             ));
             csc207.addAvailableSection(csc207Lec0101);
 
@@ -248,11 +274,7 @@ public class AutogenInteractorTest {
             Section lec0101 = new Section(mat237, "LEC0101", Section.TeachingMethod.LECTURE);
             lec0101.addMeeting(new Meeting(
                     new UofTLocation("MY", "150"),
-                    new WeeklyOccupancy(
-                            WeeklyOccupancy.DayOfTheWeek.MONDAY,
-                            1000 * 60 * 60 * 10,   // 10:00
-                            1000 * 60 * 60 * 12    // 12:00
-                    )
+                    MONDAY_10_12
             ));
             mat237.addAvailableSection(lec0101);
 
@@ -263,8 +285,6 @@ public class AutogenInteractorTest {
 
     /**
      * Fake DAO with multiple courses whose some sections conflict in time.
-     * The real TimeConflictConstraint in the interactor should force the DFS
-     * to choose a non-conflicting combination.
      */
     private static class FakeAutogenDataAccessWithConflicts implements AutogenDataAccessInterface {
 
@@ -285,11 +305,7 @@ public class AutogenInteractorTest {
             );
             mat237A1.addMeeting(new Meeting(
                     new UofTLocation("MY", "150"),
-                    new WeeklyOccupancy(
-                            WeeklyOccupancy.DayOfTheWeek.MONDAY,
-                            1000 * 60 * 60 * 10,   // 10:00
-                            1000 * 60 * 60 * 12    // 12:00
-                    )
+                    MONDAY_10_12
             ));
 
             // Section A2: Monday 14:00–16:00
@@ -300,11 +316,7 @@ public class AutogenInteractorTest {
             );
             mat237A2.addMeeting(new Meeting(
                     new UofTLocation("MY", "150"),
-                    new WeeklyOccupancy(
-                            WeeklyOccupancy.DayOfTheWeek.MONDAY,
-                            1000 * 60 * 60 * 14,   // 14:00
-                            1000 * 60 * 60 * 16    // 16:00
-                    )
+                    MONDAY_14_16
             ));
 
             mat237.addAvailableSection(mat237A1);
@@ -325,11 +337,7 @@ public class AutogenInteractorTest {
             );
             csc207B1.addMeeting(new Meeting(
                     new UofTLocation("BA", "2175"),
-                    new WeeklyOccupancy(
-                            WeeklyOccupancy.DayOfTheWeek.MONDAY,
-                            1000 * 60 * 60 * 10,   // 10:00
-                            1000 * 60 * 60 * 12    // 12:00
-                    )
+                    MONDAY_10_12
             ));
 
             // Section B2: Monday 12:00–14:00 (non-conflicting with A1 and A2)
@@ -340,11 +348,7 @@ public class AutogenInteractorTest {
             );
             csc207B2.addMeeting(new Meeting(
                     new UofTLocation("BA", "2175"),
-                    new WeeklyOccupancy(
-                            WeeklyOccupancy.DayOfTheWeek.MONDAY,
-                            1000 * 60 * 60 * 12,   // 12:00
-                            1000 * 60 * 60 * 14    // 14:00
-                    )
+                    MONDAY_12_14
             ));
 
             csc207.addAvailableSection(csc207B1);
