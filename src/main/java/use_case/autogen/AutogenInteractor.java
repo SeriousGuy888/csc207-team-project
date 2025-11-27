@@ -3,6 +3,7 @@ package use_case.autogen;
 import entity.*;
 import entity.constraints.BlockedTimeConstraint;
 import entity.constraints.Constraint;
+import entity.PotentialTimetable;
 
 import java.util.*;
 
@@ -94,7 +95,7 @@ public class AutogenInteractor implements AutogenInputBoundary {
                 //if valid it checks if the rest of this path works (recursive step)
                 PotentialTimetable result = timetableSearch(index+1, variables, constraints, next);
                 //Valid path found then it succesfully returns this result so far
-                if (result.success){
+                if (result.getSuccess()){
                     return result;
                 }
             }
