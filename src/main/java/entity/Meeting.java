@@ -12,6 +12,7 @@ public class Meeting {
     private final UofTLocation location;
     private final Semester semester;
     private final WeeklyOccupancy time; // must be contiguous timespan
+    private int numConflicts = 0;
 
     public Meeting(UofTLocation location, Semester semester, WeeklyOccupancy time) {
         this.location = location;
@@ -29,5 +30,27 @@ public class Meeting {
 
     public WeeklyOccupancy getTime() {
         return time;
+    }
+
+    public int getNumConflicts() {
+        return numConflicts;
+    }
+
+    public void incrementNumConflicts() {
+        this.numConflicts++;
+    }
+
+    public void resetNumConflicts() {
+        this.numConflicts = 0;
+    }
+
+    public boolean checkOccupancy(int day, int timeSlot) {
+        int bitIndex = day * 48 + timeSlot;
+        return time.getHalfHourSlots().get(bitIndex);
+    }
+
+    public enum Semester {
+        FIRST,
+        SECOND
     }
 }

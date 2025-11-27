@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * Represents timetable created by a user, consisting of the course sections they selected.
@@ -20,7 +21,11 @@ public class Timetable {
      * @return `true` if the section added was not already in this timetable.
      */
     public boolean addSection(Section section) {
-        return sections.add(section);
+        boolean result = sections.add(section);
+        if (result) {
+            markConflicts();
+        }
+        return result;
     }
 
     /**
@@ -28,7 +33,11 @@ public class Timetable {
      * @return `true` if the timetable did actually contain the section removed
      */
     public boolean removeSection(Section section) {
-        return sections.remove(section);
+        boolean result = sections.remove(section);
+        if (result) {
+            markConflicts();
+        }
+        return result;
     }
 
     /**
@@ -65,5 +74,23 @@ public class Timetable {
 
 
         return conflicts;
+    }
+
+    public void markConflicts() {
+        List<Meeting> allMeetings = sections.stream()
+                .flatMap(section -> section.getMeetings().stream())
+                .collect(Collectors.toList());
+        for (int i = 0; i < allMeetings.size(); i++) {
+            Meeting a = allMeetings.get(i);
+
+            for (int j = i + 1; j < allMeetings.size(); j++) {
+                Meeting b = allMeetings.get(j);
+
+                if (a.getSemester() == b.getSemester() && a.getTime().doesIntersect(b.getTime())) {
+                    a.incrementNumConflicts();
+                    b.incrementNumConflicts();
+                }
+            }
+        }
     }
 }

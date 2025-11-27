@@ -137,7 +137,8 @@ public class WeeklyOccupancy {
     /**
      * @return the bitset used to represent the halfhours in a week
      */
-    private BitSet getHalfHourSlots() {
+    //modified this to public
+    public BitSet getHalfHourSlots() {
         // The bitset used to store the halfhours is an implementation detail that
         // shouldn't be seen by other classes, but is needed by some of the static
         // methods in this class.
