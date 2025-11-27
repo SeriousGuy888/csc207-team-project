@@ -97,6 +97,15 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
                 isModifyingTab = false;
             }
         });
+
+        tabbedPane.addChangeListener(e -> {
+            int selectedIndex = tabbedPane.getSelectedIndex();
+            // Prevent infinite loops: only update if it's actually different
+            if (selectedIndex != globalViewModel.getState().getSelectedTabIndex()) {
+                // TODO: might need a Controller here to update the state
+                // tabController.switchTab(selectedIndex);
+            }
+        });
     }
 
     /**
