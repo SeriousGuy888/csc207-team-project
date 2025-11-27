@@ -4,8 +4,8 @@ package use_case.ratemyprof;
  * The input data for the RateMyProf Use Case.
  */
 public class RateMyProfInputData {
-    private String profFirstName;
-    private String profLastName;
+    private final String profFirstName;
+    private final String profLastName;
 
     public RateMyProfInputData(String profFirstName, String profLastName) {
         this.profFirstName = profFirstName;
