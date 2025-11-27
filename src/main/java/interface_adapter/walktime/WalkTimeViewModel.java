@@ -5,7 +5,7 @@ import java.beans.PropertyChangeSupport;
 
 public class WalkTimeViewModel {
 
-    public static final String PROPERTY_STATE = "walk_time_state";
+    private static final String PROPERTY_STATE = "walk_time_state";
     private WalkTimeState state = new WalkTimeState();
 
     public WalkTimeViewModel() {
