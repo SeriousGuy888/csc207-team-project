@@ -11,6 +11,7 @@ public class RateMyProfOutputData {
     private final double avgRating;
     private final int numRatings;
     private final double avgDifficultyRating;
+    private final String department;
     private final String link;
 
     public RateMyProfOutputData(Professor prof) {
@@ -20,6 +21,7 @@ public class RateMyProfOutputData {
         this.numRatings = prof.getNumRatings();
         this.avgDifficultyRating = prof.getAvgDifficultyRating();
         this.link = prof.getLink();
+        this.department = prof.getDepartment();
     }
 
 
@@ -46,5 +48,7 @@ public class RateMyProfOutputData {
     public String getLink(){
         return this.link;
     }
+
+    public String getDepartment(){return this.department;}
 }
 

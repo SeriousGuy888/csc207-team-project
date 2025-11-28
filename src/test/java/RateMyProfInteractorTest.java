@@ -68,6 +68,8 @@ class RateMyProfInteractorTest {
         double expectedAvgRating = 4.4;
         int expectedNumRatings = 106;
         double expectedDifficulty = 2.7;
+        String expectedLink = "https://www.ratemyprofessors.com/professor/30803";
+        String expectedDepartment = "Computer Science department";
         // Mock Professor object that the DAO will return
         Professor mockProf = new Professor("Paul", "Gries", 4.4, 106,
                 2.7, "Computer Science department", "https://www.ratemyprofessors.com/professor/30803");
@@ -93,14 +95,20 @@ class RateMyProfInteractorTest {
         assertNotNull(actualOutputData, "Output Data should not be null on success.");
 
         // Verify the specific rating values match the original mock Professor object
-        assertEquals(expectedAvgRating, actualOutputData.getavgRating(), 0.001,
+        assertEquals(expectedAvgRating, actualOutputData.getAvgRating(), 0.001,
                 "The Interactor passed the wrong average rating to the Presenter.");
 
-        assertEquals(expectedNumRatings, actualOutputData.getnumRatings(),
+        assertEquals(expectedNumRatings, actualOutputData.getNumRatings(),
                 "The Interactor passed the wrong number of ratings to the Presenter.");
 
-        assertEquals(expectedDifficulty, actualOutputData.getavgDifficultyRating(), 0.001,
+        assertEquals(expectedDifficulty, actualOutputData.getAvgDifficultyRating(), 0.001,
                 "The Interactor passed the wrong difficulty rating to the Presenter.");
+
+        assertEquals(expectedLink, actualOutputData.getLink(),
+                "The Interactor passed the wrong Link to the Presenter.");
+
+        assertEquals(expectedDepartment, actualOutputData.getDepartment(),
+                "The Interactor passed the wrong department to the Presenter.");
         // Verify that the interactor called the DAO method
         assertTrue(mockDAO.getProfessorInfoCalled, "The interactor should have called getProfessorInfo.");
 
