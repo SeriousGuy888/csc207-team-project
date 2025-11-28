@@ -10,8 +10,20 @@ import java.util.List;
 public class Workbook {
     private final List<Timetable> timetables;
 
+
     public Workbook(List<Timetable> timetables) {
         this.timetables = new ArrayList<>(timetables);
+    }
+
+
+    /**
+     * creates a copy of the given workbook
+     */
+    public Workbook(Workbook original) {
+        this.timetables = new ArrayList<>();
+        original.getTimetables().forEach(originalTimetable -> {
+            this.timetables.add(new Timetable(originalTimetable));
+        });
     }
 
     /**

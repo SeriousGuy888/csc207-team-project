@@ -23,6 +23,18 @@ public class Section {
     }
 
     /**
+     * create a copy of this section
+     */
+    public Section(Section original) {
+        this.courseOffering = new CourseOffering(original.courseOffering);
+        this.sectionName = original.sectionName; // strings are immutable
+        this.teachingMethod = original.teachingMethod; // enums are immutable
+        original.meetings.forEach(meeting -> {
+            this.meetings.add(new Meeting(meeting));
+        });
+    }
+
+    /**
      * @return Union of all time slots that are occupied by the sessions in this section,
      * in other words, the times at which this section has class.
      */

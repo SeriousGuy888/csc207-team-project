@@ -16,6 +16,18 @@ public class CourseOffering {
     }
 
     /**
+     * create a copy of this course offering
+     */
+    public CourseOffering(CourseOffering original) {
+        this.courseCode = new CourseCode(original.courseCode);
+        this.title = original.title;
+        this.description = original.description;
+        original.availableSections.forEach(section -> {
+            this.availableSections.add()
+        });
+    }
+
+    /**
      * @param section the section to add
      * @return `true` if the section wasn't already one of the section of this course offering
      */

@@ -16,6 +16,15 @@ public class Timetable {
     }
 
     /**
+     * create a copy of this timetable
+     */
+    public Timetable(Timetable original) {
+        original.sections.forEach(section -> {
+            this.sections.add(new Section(section));
+        });
+    }
+
+    /**
      * @param section The section to add to this timetable
      * @return `true` if the section added was not already in this timetable.
      */
