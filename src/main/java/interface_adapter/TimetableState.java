@@ -1,44 +1,52 @@
 package interface_adapter;
 
-import entity.Meeting;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TimetableState {
-    // 2D arrays representing the grid [TimeSlots][Days]
-    // 24 half-hours (9am-9pm) x 5 days (Mon-Fri)
-    private String[][][] firstSemesterTimetable;
-    private String[][][] secondSemesterTimetable;
-    private String error;
+
+    // The grid: 24 rows (9am-9pm, 30m slots) x 5 columns (Mon-Fri)
+    // Each cell contains a list of blocks (to handle conflicts)
+    private final List<MeetingBlock>[][] firstSemesterGrid;
+    private final List<MeetingBlock>[][] secondSemesterGrid;
 
     public TimetableState() {
-        // Initialize empty timetables for both semesters
-        firstSemesterTimetable = new String[24][5][];
-        secondSemesterTimetable = new String[24][5][];
-        for (int i = 0; i < 24; i++) {
-            for (int j = 0; j < 5; j++) {
-                firstSemesterTimetable[i][j] = null;
-                secondSemesterTimetable[i][j] = null;
+        // Initialize empty grids
+        firstSemesterGrid = new List[24][5];
+        secondSemesterGrid = new List[24][5];
+        for (int row = 0; row < 24; row++) {
+            for (int col = 0; col < 5; col++) {
+                firstSemesterGrid[row][col] = new ArrayList<>();
+                secondSemesterGrid[row][col] = new ArrayList<>();
             }
         }
     }
 
-    public String[][][] getFirstSemesterTimetable() {
-        return firstSemesterTimetable;
+    public List<MeetingBlock>[][] getFirstSemesterGrid() {
+        return firstSemesterGrid;
     }
 
-    public String[][][] getSecondSemesterTimetable() {
-        return secondSemesterTimetable;
+    public List<MeetingBlock>[][] getSecondSemesterGrid() {
+        return secondSemesterGrid;
     }
 
-    public void setSecondSemesterTimetable(String[][][] secondSemesterTimetable) {
-        this.secondSemesterTimetable = secondSemesterTimetable;
+    // Inner Class: DTO for UI display
+    public static class MeetingBlock {
+        private final String courseCode;   // "CSC207"
+        private final String sectionInfo;  // "LEC0101"
+        private final boolean isConflict;
+
+        public MeetingBlock(String courseCode, String sectionInfo, boolean isConflict) {
+            this.courseCode = courseCode;
+            this.sectionInfo = sectionInfo;
+            this.isConflict = isConflict;
+        }
+
+        public String getDisplayText() {
+            // HTML formatting for multiline text in JLabel
+            return "<html><center>" + courseCode + "<br>" + sectionInfo + "</center></html>";
+        }
+
+        public boolean isConflict() { return isConflict; }
     }
-
-    public void setFirstSemesterTimetable(String[][][] firstSemesterTimetable) {
-        this.firstSemesterTimetable = firstSemesterTimetable;
-    }
-
-
-
 }
