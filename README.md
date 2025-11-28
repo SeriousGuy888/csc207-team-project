@@ -12,6 +12,8 @@ By keeping this README up-to-date,
 your team will find it easier to prepare for the final presentation
 at the end of the term.
 
+coursedata:
+- fetchcourses.js
 ## Group Members
 
 - Victoria Cai
@@ -45,6 +47,3 @@ For the sake of consistency across the project, we will use these terms to refer
   - In our planning stages, this was sometimes referred to as a "prototype" or a "canvas".
 - A **search result** is represented in the UI by one accordion dropdown entitled with the course code and session. This accordion further contains a list of section types (e.g. lectures, tutorials). Each section type contains a list of sections of that type, which the user can add to their timetable.
 
-
-coursedata:
-- fetchcourses.js
