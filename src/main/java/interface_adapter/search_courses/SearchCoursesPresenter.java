@@ -1,15 +1,21 @@
 package interface_adapter.search_courses;
 
+import entity.CourseOffering;
+
 import use_case.search_courses.SearchCoursesOutputBoundary;
 import use_case.search_courses.SearchCoursesOutputData;
 
 public class SearchCoursesPresenter implements SearchCoursesOutputBoundary {
+
+    private String getRawCourseString(CourseOffering courseoffering) {
+         return courseoffering.toString();
+    }
+
     @Override
     public void prepareSuccessView(SearchCoursesOutputData outputData) {
-        Set<String> courseStrings = new HashSet<>();
-        
-        for (CourseOffering course : outputData.getMatchedCourses()) {
-            System.out.println(course);
+        for (CourseOffering courseoffering : outputData.getMatchedCourses()){
+            String CourseOfferingString = getRawCourseString(courseoffering);
+            System.out.println(CourseOfferingString);
         }
     }
 
