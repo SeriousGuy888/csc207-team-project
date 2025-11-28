@@ -10,14 +10,15 @@ import java.beans.PropertyChangeSupport;
  * @param <T> type of object that represents the state of this view model
  */
 public class ViewModel<T> {
-    private static final String STATE_PROPERTY_NAME = "state";
+    private final String viewName;
     private final PropertyChangeSupport support = new PropertyChangeSupport(this);
     private T state;
 
-    public ViewModel(T state) {
-        this.state = state;
+    public ViewModel(String viewName) {
+        this.viewName = viewName;
     }
 
+    public String getViewName() { return this.viewName; }
     public T getState() {
         return state;
     }
@@ -26,7 +27,6 @@ public class ViewModel<T> {
      * set the state of the view model
      * <h2>Important Note</h2>
      * Calling this method does NOT push updates to listeners.
-     * You must call {@link #fireStateChangeEvent()} to actually update listeners.
      *
      * @param state the new state
      */
@@ -41,9 +41,11 @@ public class ViewModel<T> {
      * If you have changed the contents of state
      * (i.e. you've either just called {@link #setState(T)} or modified the {@link T} state object),
      * then you should call this method so that listeners are actually notifiers.
+     *
+     * @param propertyName the name of the property that changed
      */
-    public void fireStateChangeEvent() {
-        support.firePropertyChange(STATE_PROPERTY_NAME, null, this.state);
+    public void fireStateChangeEvent(String propertyName) {
+        support.firePropertyChange(propertyName, null, this.state);
     }
 
     /**
@@ -53,6 +55,6 @@ public class ViewModel<T> {
      * @param listener the object to subscribe to updates
      */
     public void addStateChangeListener(PropertyChangeListener listener) {
-        support.addPropertyChangeListener(STATE_PROPERTY_NAME, listener);
+        support.addPropertyChangeListener(listener);
     }
 }
