@@ -23,23 +23,23 @@ public class RateMyProfOutputData {
     }
 
 
-    public String getprofFirstName() {
+    public String getProfFirstName() {
         return this.profFirstName;
     }
 
-    public String getprofLastName() {
+    public String getProfLastName() {
         return this.profLastName;
     }
 
-    public double getavgRating() {
+    public double getAvgRating() {
         return this.avgRating;
     }
 
-    public int getnumRatings() {
+    public int getNumRatings() {
         return this.numRatings;
     }
 
-    public double getavgDifficultyRating() {
+    public double getAvgDifficultyRating() {
         return this.avgDifficultyRating;
     }
 
