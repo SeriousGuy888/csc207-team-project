@@ -1,5 +1,7 @@
 package use_case.search_courses;
 
+import java.util.Set;
+
 public class SearchCoursesOutputData {
     private final Set<CourseOffering> matchedCourses;
 
