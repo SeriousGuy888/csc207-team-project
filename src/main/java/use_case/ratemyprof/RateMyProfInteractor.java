@@ -27,4 +27,21 @@ public class RateMyProfInteractor implements RateMyProfInputBoundary {
             rateMyProfPresenter.prepareFailView(errorMessage);
         }
     }
+
+    @Override
+    public RateMyProfOutputData executeSynchronous(RateMyProfInputData profInputData) {
+        try {
+            Professor prof = rateMyProfDataAccessObject.getProfessorInfo(
+                    profInputData.getFirstName(),
+                    profInputData.getLastName());
+
+            // Success: Return the output data directly
+            return new RateMyProfOutputData(prof);
+
+        } catch (RuntimeException e) {
+            // Failure: Return an OutputData DTO based on the empty/default Professor
+            // This is the clean way to handle failure for inter-use-case communication
+            return new RateMyProfOutputData(Professor.emptyProfessor());
+        }
+    }
 }

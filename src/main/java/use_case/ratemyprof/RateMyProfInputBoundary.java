@@ -10,4 +10,6 @@ public interface RateMyProfInputBoundary {
      * @param profInputData the input data for the Rate My Prof Use Case.
      */
     public void execute(RateMyProfInputData profInputData);
+
+    RateMyProfOutputData executeSynchronous(RateMyProfInputData profInputData);
 }
