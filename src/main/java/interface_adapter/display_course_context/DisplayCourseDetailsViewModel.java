@@ -8,10 +8,10 @@ import java.util.List;
 public class DisplayCourseDetailsViewModel {
 
     // String constant for the PropertyChangeEvent
-    public static final String STATE_PROPERTY = "state";
+    public static final String DISPLAY_COURSE_CONTEXT = "displayCourseContext";
 
     // The current, observable state of the panel
-    private DisplayState state = new DisplayState(
+    private DisplayCourseDetailsState state = new DisplayCourseDetailsState(
             "Loading Course...",
             "",
             Collections.emptyList(),
@@ -22,15 +22,15 @@ public class DisplayCourseDetailsViewModel {
     private final PropertyChangeSupport support = new PropertyChangeSupport(this);
 
     /**
-     * Updates the entire state of the ViewModel and notifies listeners (the View).
+     * Updates the entire state of the ViewModel and notifies listeners.
      */
-    public void setState(DisplayState newState) {
-        // Notify listeners *before* changing the state
-        support.firePropertyChange(STATE_PROPERTY, this.state, newState);
+    public void setState(DisplayCourseDetailsState newState) {
+        // Notify listeners before changing the state
+        support.firePropertyChange(DISPLAY_COURSE_CONTEXT, this.state, newState);
         this.state = newState;
     }
 
-    public DisplayState getState() {
+    public DisplayCourseDetailsState getState() {
         return state;
     }
 
