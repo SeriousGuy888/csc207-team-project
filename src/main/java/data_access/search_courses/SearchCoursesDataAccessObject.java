@@ -1,5 +1,12 @@
 package use_case.search_courses;
 
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Map;
+import java.util.regex.Pattern;
+
+import entity.CourseOffering;
+
 import data_access.course_data.CourseDataRepositoryGrouped;
 import java.io.IOException;
 
@@ -46,7 +53,9 @@ public class SearchCoursesDataAccessObject implements SearchCoursesDataAccessInt
         Map<String, CourseOffering> matches = courseDataRepositoryGrouped.getMatchingCourseInfo(normalizedQuery);
 
         if (matches != null) {
-            return new HashSet<>(matches.values());
+            // return only first 10 courses in that department 
+            // todo: implement pagination later
+            return new HashSet<>(matches.values()).subList(0, 11);
         } 
         throw new IOException("This course code does not exist or is not offering any courses this term");
     }
