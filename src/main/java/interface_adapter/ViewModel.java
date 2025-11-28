@@ -44,31 +44,17 @@ public class ViewModel<T> {
      *
      * @param propertyName the name of the property that changed
      */
-    public void firePropertyChange(String propertyName) {
+    public void fireStateChangeEvent(String propertyName) {
         support.firePropertyChange(propertyName, null, this.state);
     }
 
     /**
-     * Adds a PropertyChangeListener to the listener list.
-     * The listener is registered for all properties.
+     * Subscribe the provided {@code listener} to receiving updates every time
+     * the state of this view model changes.
      *
-     * @param listener The PropertyChangeListener to be added.
+     * @param listener the object to subscribe to updates
      */
-    public void addPropertyChangeListener(PropertyChangeListener listener) {
+    public void addStateChangeListener(PropertyChangeListener listener) {
         support.addPropertyChangeListener(listener);
-    }
-
-    /**
-     * Adds a PropertyChangeListener to the listener list for a specific property.
-     * The listener will be invoked only when a call on firePropertyChange names that specific property.
-     * <p>
-     * This allows Views to subscribe only to the events they care about, avoiding unnecessary updates
-     * for unrelated state changes.
-     *
-     * @param propertyName The name of the property to listen on.
-     * @param listener     The PropertyChangeListener to be added.
-     */
-    public void addPropertyChangeListener(String propertyName, PropertyChangeListener listener) {
-        support.addPropertyChangeListener(propertyName, listener);
     }
 }
