@@ -16,6 +16,7 @@ public class AppBuilder {
 
 
     public AppBuilder() {
+        CardLayout cardLayout = new CardLayout();
         cardPanel.setLayout(cardLayout);
     }
 
