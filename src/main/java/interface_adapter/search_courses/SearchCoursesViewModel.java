@@ -1,10 +1,11 @@
 package interface_adapter.search_courses;
 
-public class SearchCoursesViewModel extends ViewModel<SearchCoursesViewState> {
-    public static final String SEARCH_RESULTS_UPDATED = "search_results_updated";
+import interface_adapter.ViewModel;
+
+public class SearchCoursesViewModel extends ViewModel<SearchCoursesState> {
+    public static final String SEARCH_RESULTS_UPDATED = "searchResultsUpdated";
 
     public SearchCoursesViewModel() {
-        super("search_courses_view");
-        setState(new SearchCoursesViewState());
+        super(new SearchCoursesState());
     }
 }
