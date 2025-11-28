@@ -10,6 +10,13 @@ import java.util.regex.Pattern;
 
 import entity.CourseOffering;
 
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Map;
+import java.util.regex.Pattern;
+
+import entity.CourseOffering;
+
 import data_access.course_data.CourseDataRepositoryGrouped;
 
 public class SearchCoursesDataAccessObject implements use_case.search_courses.SearchCoursesDataAccessInterface {
@@ -55,12 +62,10 @@ public class SearchCoursesDataAccessObject implements use_case.search_courses.Se
         Map<String, CourseOffering> matches = courseDataRepositoryGrouped.getMatchingCourseInfo(normalizedQuery);
 
         if (matches != null) {
-            // return only first 10 courses in that department
+            // return only first 10 courses in that department 
             // todo: implement pagination later
-            List<CourseOffering> list = new ArrayList<>(matches.values());
-            int limit = Math.min(list.size(), 10);
-            return new HashSet<>(list.subList(0, limit));
-        }
+            return new HashSet<>(matches.values()).subList(0, 11);
+        } 
         throw new IOException("This course code does not exist or is not offering any courses this term");
     }
 }
