@@ -4,10 +4,17 @@ import entity.*;
 import interface_adapter.TimetableState.MeetingBlock;
 import use_case.TimetableUpdate.TimetableUpdateOutputBoundary;
 import use_case.TimetableUpdate.TimetableUpdateOutputData;
+import use_case.tab_actions.add_tab.AddTabInputBoundary;
+import use_case.tab_actions.delete_tab.DeleteTabInputBoundary;
+import use_case.tab_actions.switch_tab.SwitchTabInputBoundary;
 
 import java.util.List;
 
-public class GlobalViewPresenter implements TimetableUpdateOutputBoundary {
+public class GlobalViewPresenter implements
+        TimetableUpdateOutputBoundary,
+        AddTabInputBoundary,
+        DeleteTabInputBoundary,
+        SwitchTabInputBoundary {
 
     private final GlobalViewModel globalViewModel;
 
@@ -17,6 +24,41 @@ public class GlobalViewPresenter implements TimetableUpdateOutputBoundary {
 
     public GlobalViewPresenter(GlobalViewModel globalViewModel) {
         this.globalViewModel = globalViewModel;
+    }
+
+    // --- HANDLE ADD / REMOVE (Structure Change) ---
+    @Override
+    public void prepareSuccessView(Workbook workbook) {
+        GlobalViewState state = globalViewModel.getState();
+
+        // 1. Rebuild the entire list of TimetableStates
+        // (Since a tab was added/removed, indices have shifted)
+        List<TimetableState> newStates = new ArrayList<>();
+
+        for (Timetable t : workbook.getTimetables()) {
+            // Reuse your existing conversion helper
+            newStates.add(convertTimetableToState(t));
+        }
+
+        state.setTimetableStateList(newStates);
+
+        // Adjust selection if out of bounds (e.g. deleted last tab)
+        if (state.getSelectedTabIndex() >= newStates.size()) {
+            state.setSelectedTabIndex(Math.max(0, newStates.size() - 1));
+        }
+
+        globalViewModel.setState(state);
+        globalViewModel.firePropertyChanged("timetable_change");
+    }
+
+    // --- HANDLE SWITCH (Selection Change) ---
+    @Override
+    public void prepareSuccessView(int newIndex) {
+        GlobalViewState state = globalViewModel.getState();
+        state.setSelectedTabIndex(newIndex);
+
+        globalViewModel.setState(state);
+        globalViewModel.firePropertyChanged("timetable_change");
     }
 
     /**
