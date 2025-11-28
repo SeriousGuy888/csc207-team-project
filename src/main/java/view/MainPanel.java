@@ -41,7 +41,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
      */
     public MainPanel(GlobalViewModel globalViewModel) {
         this.globalViewModel = globalViewModel;
-        this.globalViewModel.addStateChangeListener(this);
+        this.globalViewModel.addPropertyChangeListener(this);
 
         SwingUtilities.invokeLater(() -> {
             setupInitialTabs();
