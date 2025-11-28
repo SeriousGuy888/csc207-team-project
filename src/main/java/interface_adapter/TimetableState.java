@@ -7,26 +7,20 @@ public class TimetableState {
 
     // The grid: 24 rows (9am-9pm, 30m slots) x 5 columns (Mon-Fri)
     // Each cell contains a list of blocks (to handle conflicts)
-    private final List<MeetingBlock>[][] firstSemesterGrid;
-    private final List<MeetingBlock>[][] secondSemesterGrid;
+    private final MeetingBlock[][][] firstSemesterGrid;
+    private final MeetingBlock[][][] secondSemesterGrid;
 
     public TimetableState() {
         // Initialize empty grids
-        firstSemesterGrid = new List[24][5];
-        secondSemesterGrid = new List[24][5];
-        for (int row = 0; row < 24; row++) {
-            for (int col = 0; col < 5; col++) {
-                firstSemesterGrid[row][col] = new ArrayList<>();
-                secondSemesterGrid[row][col] = new ArrayList<>();
-            }
-        }
+        firstSemesterGrid = new MeetingBlock[24][5][2];
+        secondSemesterGrid = new MeetingBlock[24][5][2];
     }
 
-    public List<MeetingBlock>[][] getFirstSemesterGrid() {
+    public MeetingBlock[][][] getFirstSemesterGrid() {
         return firstSemesterGrid;
     }
 
-    public List<MeetingBlock>[][] getSecondSemesterGrid() {
+    public MeetingBlock[][][] getSecondSemesterGrid() {
         return secondSemesterGrid;
     }
 
@@ -34,11 +28,13 @@ public class TimetableState {
     public static class MeetingBlock {
         private final String courseCode;   // "CSC207"
         private final String sectionInfo;  // "LEC0101"
+        private final int startRow;  // only print info on first block
         private final boolean isConflict;
 
-        public MeetingBlock(String courseCode, String sectionInfo, boolean isConflict) {
+        public MeetingBlock(String courseCode, String sectionInfo, int startRow, boolean isConflict) {
             this.courseCode = courseCode;
             this.sectionInfo = sectionInfo;
+            this.startRow = startRow;
             this.isConflict = isConflict;
         }
 
@@ -46,6 +42,8 @@ public class TimetableState {
             // HTML formatting for multiline text in JLabel
             return "<html><center>" + courseCode + "<br>" + sectionInfo + "</center></html>";
         }
+
+        public int getStartRow() { return startRow; }
 
         public boolean isConflict() { return isConflict; }
     }

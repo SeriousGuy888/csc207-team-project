@@ -32,6 +32,14 @@ public class Meeting {
         return time;
     }
 
+    public int getDayOfTheWeek() {
+        return time.getDayOfTheWeek();
+    }
+
+    public int getStartTimeIndexInDay() {
+        return time.getStartIndexInDay();
+    }
+
     public int getNumConflicts() {
         return numConflicts;
     }

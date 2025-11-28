@@ -1,6 +1,5 @@
 package entity;
 
-import java.time.DayOfWeek;
 import java.util.BitSet;
 
 /**
@@ -22,6 +21,7 @@ public class WeeklyOccupancy {
     private static final int NUMBER_OF_TIMESLOTS = DAYS_PER_WEEK * HALF_HOURS_PER_DAY;
 
     private BitSet halfHourSlots = new BitSet(NUMBER_OF_TIMESLOTS);
+    private final int startIndex;
 
 
     /**
@@ -63,7 +63,8 @@ public class WeeklyOccupancy {
         int startTimeBitOffset = startTimeMilliseconds / MILLISECONDS_PER_TIMESLOT;
         int endTimeBitOffset = endTimeMilliseconds / MILLISECONDS_PER_TIMESLOT;
 
-        halfHourSlots.set(dayBitOffset + startTimeBitOffset, dayBitOffset + endTimeBitOffset);
+        startIndex = dayBitOffset + startTimeBitOffset;
+        halfHourSlots.set(startIndex, dayBitOffset + endTimeBitOffset);
     }
 
     private WeeklyOccupancy(BitSet halfHourSlots) {
@@ -76,6 +77,15 @@ public class WeeklyOccupancy {
         }
 
         this.halfHourSlots = halfHourSlots;
+        this.startIndex = halfHourSlots.nextSetBit(0);
+    }
+
+    public int getDayOfTheWeek() {
+        return startIndex / HALF_HOURS_PER_DAY;
+    }
+
+    public int getStartIndexInDay() {
+        return startIndex % HALF_HOURS_PER_DAY;
     }
 
     /**

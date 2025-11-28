@@ -36,7 +36,6 @@ public class GlobalViewPresenter implements TimetableUpdateOutputBoundary {
         // 1. Safety Check: Ensure the index is valid
         if (tabIndex < 0 || tabIndex >= currentStates.size()) {
             // Fallback: If index is weird, reload the whole thing (safety net)
-            // prepareSuccessView(workbook);
             return;
         }
 
@@ -44,7 +43,6 @@ public class GlobalViewPresenter implements TimetableUpdateOutputBoundary {
         TimetableState newTabState = convertEntityToState(changedTimetable);
 
         // 3. Swap it into the existing list
-        // We modify the existing list to avoid reconstructing the whole GlobalState
         currentStates.set(tabIndex, newTabState);
 
         // 4. Update Global State
@@ -54,13 +52,13 @@ public class GlobalViewPresenter implements TimetableUpdateOutputBoundary {
         // 5. Fire Event
         // We can pass the index as the "property name" or part of the object if we want strictly optimized listening,
         // but usually firing the standard state change is fine if the View handles it smartly.
-        globalViewModel.fireStateChangeEvent();
+        globalViewModel.fireStateChangeEvent(GlobalViewModel.TIMETABLE_CHANGED);
     }
 
     private TimetableState convertEntityToState(Timetable timetable) {
         TimetableState state = new TimetableState();
-        List<MeetingBlock>[][] firstSemesterGrid = state.getFirstSemesterGrid();
-        List<MeetingBlock>[][] secondSemesterGrid = state.getSecondSemesterGrid();
+        MeetingBlock[][][] firstSemesterGrid = state.getFirstSemesterGrid();
+        MeetingBlock[][][] secondSemesterGrid = state.getSecondSemesterGrid();
 
 
         // 1. Calculate Conflicts inside the Entity
@@ -73,8 +71,9 @@ public class GlobalViewPresenter implements TimetableUpdateOutputBoundary {
             String sectionInfo = section.getSectionName();
 
             for (Meeting meeting : section.getMeetings()) {
+                int startRow = meeting.getStartTimeIndexInDay() - START_HOUR_INDEX;
                 boolean isConflict = meeting.getNumConflicts() > 0;
-                TimetableState.MeetingBlock block = new MeetingBlock(courseCode.toString(), sectionInfo, isConflict);
+                MeetingBlock block = new MeetingBlock(courseCode.toString(), sectionInfo, startRow, isConflict);
 
                 // 3. Map Meeting time to Grid Coordinates
                 if (meeting.getSemester() == Meeting.Semester.FIRST) {
@@ -89,16 +88,17 @@ public class GlobalViewPresenter implements TimetableUpdateOutputBoundary {
         return state;
     }
 
-    private void placeBlockInGrid(List<MeetingBlock>[][] grid, Meeting meeting, MeetingBlock block) {
-        // Loop through the UI grid slots (0-23)
-        for (int row = 0; row < 24; row++) {
-            // Convert UI row back to Entity bit index
-            int bitIndex = row + START_HOUR_INDEX;
+    private void placeBlockInGrid(MeetingBlock[][][] grid, Meeting meeting, MeetingBlock block) {
+        int col = meeting.getStartTimeIndexInDay();
+        for (int row = block.getStartRow(); row < 24; row++) {
+            int bitIndex = START_HOUR_INDEX + row;
 
-            for (int col = 0; col < 5; col++) { // Mon(0) - Fri(4)
-
-                if (meeting.checkOccupancy(col, bitIndex)) {
-                    grid[row][col].add(block);
+            if (meeting.checkOccupancy(col, bitIndex)) {
+                if (grid[row][col][0] == null) {
+                    grid[row][col][0] = block;
+                }
+                else {
+                    grid[row][col][1] = block;
                 }
             }
         }

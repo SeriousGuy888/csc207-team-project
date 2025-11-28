@@ -1,5 +1,6 @@
 package entity;
 
+import java.sql.Time;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -18,14 +19,21 @@ public class Timetable {
 
     /**
      * @param section The section to add to this timetable
-     * @return `true` if the section added was not already in this timetable.
+     * @return `true` if the section added was not already in this timetable and does not contain >2-course conflicts.
      */
     public boolean addSection(Section section) {
         boolean result = sections.add(section);
-        if (result) {
-            markConflicts();
+        boolean valid = markConflicts();
+        if (result && valid) {
+            return true;
         }
-        return result;
+        else if (result) {
+            this.removeSection(section);
+            return false;
+        }
+        else {
+            return false;
+        }
     }
 
     /**
@@ -76,10 +84,15 @@ public class Timetable {
         return conflicts;
     }
 
-    public void markConflicts() {
+    public boolean markConflicts() {
         List<Meeting> allMeetings = sections.stream()
                 .flatMap(section -> section.getMeetings().stream())
                 .collect(Collectors.toList());
+
+        for (Meeting meeting : allMeetings) {
+            meeting.resetNumConflicts();
+        }
+
         for (int i = 0; i < allMeetings.size(); i++) {
             Meeting a = allMeetings.get(i);
 
@@ -92,5 +105,12 @@ public class Timetable {
                 }
             }
         }
+
+        for (Meeting meeting : allMeetings) {
+            if (meeting.getNumConflicts() > 1) {
+                return false;
+            }
+        }
+        return true;
     }
 }
