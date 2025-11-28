@@ -6,7 +6,11 @@ import use_case.search_courses.SearchCoursesOutputData;
 public class SearchCoursesPresenter implements SearchCoursesOutputBoundary {
     @Override
     public void prepareSuccessView(SearchCoursesOutputData outputData) {
-        System.out.println(outputData.getMatchedCourses());
+        Set<String> courseStrings = new HashSet<>();
+        
+        for (CourseOffering course : outputData.getMatchedCourses()) {
+            System.out.println(course);
+        }
     }
 
     @Override
