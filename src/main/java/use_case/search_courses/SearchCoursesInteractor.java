@@ -1,10 +1,15 @@
 package use_case.search_courses;
 
-public class searchCoursesInteractor implements SearchCoursesInputBoundary {
+import java.io.IOException;
+import java.util.Set;
+
+import entity.CourseOffering;
+
+public class SearchCoursesInteractor implements SearchCoursesInputBoundary {
     private final SearchCoursesDataAccessInterface dataAccessObject;
     private final SearchCoursesOutputBoundary presenter;
 
-    public searchCoursesInteractor(SearchCoursesDataAccessInterface dataAccessObject,
+    public SearchCoursesInteractor(SearchCoursesDataAccessInterface dataAccessObject,
                                     SearchCoursesOutputBoundary presenter) {
         this.dataAccessObject = dataAccessObject;
         this.presenter = presenter;
@@ -16,7 +21,7 @@ public class searchCoursesInteractor implements SearchCoursesInputBoundary {
 
         Set<CourseOffering> matchedCourses;
         try {
-            matchedCourses =  dataAccessObject.searchCourses(query);
+            matchedCourses = dataAccessObject.searchCourses(query);
         } catch (IOException e) {
             presenter.prepareFailView(e.getMessage());
             return;
