@@ -17,6 +17,7 @@ import java.util.Map;
 public class JsonCourseDataRepository implements CourseDataRepository, CourseDataRepositoryGrouped {
     private final Map<String, Map<String, CourseOffering>> CourseInfobyCode;
     private final Map<String, CourseOffering> availableCourseOfferings;
+    private final Map<String, String> sectionIdToProfessorName = new HashMap<>();
 
     public JsonCourseDataRepository(List<String> dataResourceNames) {
         CourseInfobyCode = new HashMap<>();
@@ -66,6 +67,31 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                     title,
                     description);
 
+            //  START OF SECTION/MEETING PROCESSING
+            JSONObject sectionsObj = currOfferingObj.getJSONObject("meetings");
+
+            // Loop over each meeting/section(? is it a meeting or a section) (e.g., "LEC-0101", "TUT-0102")
+            sectionsObj.keys().forEachRemaining(meetingSectionId -> {
+
+                JSONObject sectionDetails = sectionsObj.getJSONObject(meetingSectionId);
+
+                // EXTRACT PROFESSOR NAME
+                String professorName = "TBD Professor";
+
+                if (sectionDetails.has("instructors") && !sectionDetails.isNull("instructors")) {
+                    JSONObject instructorsObj = sectionDetails.getJSONObject("instructors");
+                    // Check if the primary instructor (key "0") exists
+                    if (instructorsObj.has("0") && !instructorsObj.isNull("0")) {
+                        JSONObject primaryInstructor = instructorsObj.getJSONObject("0");
+                        String firstName = primaryInstructor.getString("firstName");
+                        String lastName = primaryInstructor.getString("lastName");
+                        professorName = firstName + " " + lastName;
+                    }
+                }
+
+                // STORE MAPPING INTERNALLY for future lookup
+                sectionIdToProfessorName.put(meetingSectionId, professorName);
+
             JSONObject sectionsObj = currOfferingObj.getJSONObject("meetings");
             sectionsObj.keys().forEachRemaining(sectionName -> {
                 // todo: actually choose the right teaching method
@@ -77,6 +103,8 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
 
             currentavailableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
         });
+        return currentavailableCourseOfferings;
+    });
         return currentavailableCourseOfferings;
     }
 
@@ -93,5 +121,14 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
     @Override
     public Map<String, CourseOffering> getMatchingCourseInfo(String deptCode) {
         return CourseInfobyCode.get(deptCode);
+    }
+
+    public String getProfessorNameBySectionId(String sectionId) {
+        // Uses the map populated in loadInCoursesFromJsonFile
+        return sectionIdToProfessorName.getOrDefault(sectionId, "TBD Professor");
+    }
+
+
+
     }
 }

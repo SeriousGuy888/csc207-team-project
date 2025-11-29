@@ -1,13 +1,13 @@
-package use_case.display_course;
+package data_access.display_course_context;
 
 import data_access.course_data.CourseDataRepository;
 import entity.CourseOffering;
 import entity.Section;
-import entity.Meeting;
 import use_case.display_course_context.DisplayCourseDetails;
 import use_case.display_course_context.DisplayCourseDetailsDataAccessInterface;
 import use_case.display_course_context.DisplayProfessorDetails;
 import use_case.display_course_context.DisplaySectionDetails;
+import data_access.course_data.JsonCourseDataRepository;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -17,28 +17,30 @@ import java.util.stream.Stream;
 public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetailsDataAccessInterface {
 
     // Dependency on the low-level repository that fetches raw course data
-    private final CourseDataRepository courseRepository;
+    // We change the type to the concrete class now that we rely on its specific method.
+    private final JsonCourseDataRepository courseRepository; // <-- CHANGED TYPE
 
     public DisplayCourseDetailsDataAccessObject(CourseDataRepository courseRepository) {
-        this.courseRepository = courseRepository;
+        // We cast the injected repository to the specific type we need
+        this.courseRepository = (JsonCourseDataRepository) courseRepository; // <-- CAST HERE
     }
 
     @Override
     public DisplayCourseDetails getCourseDetails(String courseId) {
-        // 1. Fetch the raw entity
+        // Fetch the raw entity
         CourseOffering courseOffering = courseRepository.getCourseOffering(courseId);
 
         if (courseOffering == null) {
             return null; // Course not found
         }
 
-        // 2. Transform the entity data into display DTOs
+        // Transform the entity data into display DTOs
         List<DisplaySectionDetails> displaySections = courseOffering.getAvailableSections().stream()
                 // FlatMap converts the Set of Sections into a flat list of DisplaySectionDetails (one per Meeting)
                 .flatMap(this::mapSectionToDisplayDetails)
                 .collect(Collectors.toList());
 
-        // 3. Create the final DTO
+        // Create the final DTO
         return new DisplayCourseDetails(
                 courseOffering.getTitle(),
                 courseOffering.getDescription(),
@@ -52,13 +54,12 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
      */
     private Stream<DisplaySectionDetails> mapSectionToDisplayDetails(Section section) {
 
-        // --- IMPORTANT ASSUMPTION ---
-        // We assume the Section entity has a method to get the Professor's name string.
-        // If not, you must implement a simple 'getProfessorName()' method in Section.
-        String professorName = "TBD Professor"; // Replace with section.getProfessorName() or similar
+        String sectionId = section.getSectionName();
+        // Call the lookup method using the section's unique name
+        String professorName = getProfessorNameBySectionId(sectionId);
 
-        // Create a temporary, placeholder professor DTO that ONLY contains the name
-        // (The Interactor will fill in the rating/link later)
+        // Create the placeholder professor DTO that ONLY contains the name
+        // The Interactor will fill in the rating/link later
         DisplayProfessorDetails placeholderProf = new DisplayProfessorDetails(
                 professorName,
                 0.0, // Default/Unknown rating
@@ -71,7 +72,9 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
                     // Convert complex entity objects to simple display strings
                     String meetingTimes = meeting.getTime().toString();
                     String location = meeting.getLocation().toString();
-                    String sectionId = section.getSectionName();
+
+                    // Note: sectionId is already defined above, but we reuse it here
+                    // String sectionId = section.getSectionName();
 
                     return new DisplaySectionDetails(
                             section.getSectionName(),
@@ -81,5 +84,11 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
                             placeholderProf // Use the placeholder here
                     );
                 });
+    }
+
+    @Override
+    public String getProfessorNameBySectionId(String sectionId) {
+        // FIX: We now call the new method implemented in JsonCourseDataRepository
+        return courseRepository.getProfessorNameBySectionId(sectionId);
     }
 }
