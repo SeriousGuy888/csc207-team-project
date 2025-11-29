@@ -1,6 +1,5 @@
 package entity;
 
-import java.time.DayOfWeek;
 import java.util.BitSet;
 
 /**
@@ -22,7 +21,6 @@ public class WeeklyOccupancy {
     private static final int NUMBER_OF_TIMESLOTS = DAYS_PER_WEEK * HALF_HOURS_PER_DAY;
 
     private BitSet halfHourSlots = new BitSet(NUMBER_OF_TIMESLOTS);
-
 
     /**
      * Instantiate a WeeklyOccupancy with one time block that does not take place across multiple days.
@@ -59,9 +57,9 @@ public class WeeklyOccupancy {
                     MILLISECONDS_PER_TIMESLOT));
         }
 
-        int dayBitOffset = dayOfTheWeek.bitOffset;
-        int startTimeBitOffset = startTimeMilliseconds / MILLISECONDS_PER_TIMESLOT;
-        int endTimeBitOffset = endTimeMilliseconds / MILLISECONDS_PER_TIMESLOT;
+        final int dayBitOffset = dayOfTheWeek.bitOffset;
+        final int startTimeBitOffset = startTimeMilliseconds / MILLISECONDS_PER_TIMESLOT;
+        final int endTimeBitOffset = endTimeMilliseconds / MILLISECONDS_PER_TIMESLOT;
 
         halfHourSlots.set(dayBitOffset + startTimeBitOffset, dayBitOffset + endTimeBitOffset);
     }
@@ -78,13 +76,21 @@ public class WeeklyOccupancy {
         this.halfHourSlots = halfHourSlots;
     }
 
+    public int getDayOfTheWeek() {
+        return halfHourSlots.nextSetBit(0) / HALF_HOURS_PER_DAY;
+    }
+
+    public int getStartIndexInDay() {
+        return halfHourSlots.nextSetBit(0) % HALF_HOURS_PER_DAY;
+    }
+
     /**
      * @param hours A collection of ClassHours objects to union.
      * @return A new ClassHours object where every halfhour is occupied if ANY of the given
      * ClassHours had that halfhour marked as occupied.
      */
     public static WeeklyOccupancy union(Iterable<WeeklyOccupancy> hours) {
-        BitSet newHalfHours = new BitSet(NUMBER_OF_TIMESLOTS);
+        final BitSet newHalfHours = new BitSet(NUMBER_OF_TIMESLOTS);
         hours.forEach(weeklyOccupancy -> newHalfHours.or(weeklyOccupancy.getHalfHourSlots()));
         return new WeeklyOccupancy(newHalfHours);
     }
@@ -95,7 +101,7 @@ public class WeeklyOccupancy {
      * either of the two given ClassHours were occupied.
      */
     public WeeklyOccupancy union(WeeklyOccupancy other) {
-        BitSet newHalfHours = (BitSet) halfHourSlots.clone();
+        final BitSet newHalfHours = (BitSet) halfHourSlots.clone();
         newHalfHours.or(other.getHalfHourSlots());
         return new WeeklyOccupancy(newHalfHours);
     }
@@ -114,30 +120,29 @@ public class WeeklyOccupancy {
     public boolean isContiguous() {
         // This method can be used for verifying the validity of a ClassSession's time.
 
-        int indexOfFirstTrueBlock = halfHourSlots.nextSetBit(0);
+        final int indexOfFirstTrueBlock = halfHourSlots.nextSetBit(0);
         if (indexOfFirstTrueBlock == -1) {
             // No hours are marked as occupied.
             return true;
         }
 
-        int indexOfNextFalseBit = halfHourSlots.nextClearBit(indexOfFirstTrueBlock);
+        final int indexOfNextFalseBit = halfHourSlots.nextClearBit(indexOfFirstTrueBlock);
         if (indexOfNextFalseBit == -1) {
             // The rest of the hours are all marked as occupied.
             return true;
         }
 
-        int indexOfSecondTrueBlock = halfHourSlots.nextSetBit(indexOfNextFalseBit);
+        final int indexOfSecondTrueBlock = halfHourSlots.nextSetBit(indexOfNextFalseBit);
 
         // If there is no second block of TRUEs, then that means there is only
         // one block of trues, which makes us contiguous.
         return indexOfSecondTrueBlock == -1;
     }
 
-
     /**
      * @return the bitset used to represent the halfhours in a week
      */
-    private BitSet getHalfHourSlots() {
+    public BitSet getHalfHourSlots() {
         // The bitset used to store the halfhours is an implementation detail that
         // shouldn't be seen by other classes, but is needed by some of the static
         // methods in this class.
