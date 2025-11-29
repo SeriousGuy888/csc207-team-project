@@ -13,7 +13,7 @@ public class Main {
 
         JFrame application = appBuilder
                 .addMainPanel(mainPanel)
-                .addCourseDataRepository(new JsonCourseDataRepository(CourseDataFilesToLoad.RESOURCE_NAMES))
+                .addCourseDataRepository(new JsonCourseDataRepository(CourseDataFilesToLoad.RESOURCE_NAMES_FOR_TESTING))
                 .build();
 
         application.pack();
