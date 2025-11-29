@@ -9,10 +9,8 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
         AppBuilder appBuilder = new AppBuilder();
-        MainPanel mainPanel = new MainPanel();
-
         JFrame application = appBuilder
-                .addMainPanel(mainPanel)
+                .addMainPanel()
                 .addCourseDataRepository(new JsonCourseDataRepository(CourseDataFilesToLoad.RESOURCE_NAMES))
                 .build();
 
