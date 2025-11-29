@@ -19,12 +19,14 @@ public class TestConstants {
         Section tut0101 = new Section(COURSE_OFFERING_MAT137, "TUT0101", Section.TeachingMethod.TUTORIAL);
         lec0101.addMeeting(new Meeting(
                 new UofTLocation("MY", "150"),
+                Semester.FIRST,
                 new WeeklyOccupancy(WeeklyOccupancy.DayOfTheWeek.THURSDAY,
                         1000 * 60 * 60 * 13,
                         1000 * 60 * 60 * 15)
         ));
         tut0101.addMeeting(new Meeting(
                 new UofTLocation("MS", "4279"),
+                Semester.FIRST,
                 new WeeklyOccupancy(WeeklyOccupancy.DayOfTheWeek.WEDNESDAY,
                         1000 * 60 * 60 * 11,
                         1000 * 60 * 60 * 12)
