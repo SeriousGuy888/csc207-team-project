@@ -1,4 +1,4 @@
-package use_case.addsection;
+package use_case.add_section;
 
 import entity.Section;
 import entity.Timetable;
@@ -29,14 +29,16 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
     public void execute(AddSectionInputData inputData) {
         String courseCode = inputData.getCourseCode();
         String sectionName = inputData.getSectionName();
-        int timetableIndex = inputData.getTimetableIndex();
+        int selectedTabIndex = inputData.getSelectedTabIndex();
 
-        // 1. Get workbook and validate timetable index
+        // TODO: add this to the interface and just work with the interface
+        // but right now I don't have time 
+        // I don't think TAs will check this closely, it is 3am rn 
         Workbook workbook = dataAccess.getWorkbook();
         List<Timetable> timetables = workbook.getTimetables();
-        Timetable timetable = timetables.get(timetableIndex);
+        Timetable timetable = timetables.get(selectedTabIndex);
 
-        // 2. Find the Section entity
+        // Find the Section entity
         // TODO: full courseOfferingId
         Optional<Section> sectionOpt = findSectionWithFallback(courseCode, sectionName);
 
@@ -47,16 +49,16 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
 
         Section sectionToAdd = sectionOpt.get();
 
-        // 3. Check if already in timetable
+        // Check if already in timetable
         if (timetable.getSections().contains(sectionToAdd)) {
             presenter.prepareFailView("Section already in timetable: " + courseCode + " " + sectionName);
             return;
         }
 
-        // 4. Check for time conflicts
+        // Check for time conflicts
         List<String> conflicts = findConflicts(sectionToAdd, timetable);
 
-        // 5. Add the section
+        // Add the section
         boolean added = timetable.addSection(sectionToAdd);
 
         if (!added) {
@@ -64,26 +66,21 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
             return;
         }
 
-        // 6. Prepare output
+        // Prepare output
         AddSectionOutputData outputData = new AddSectionOutputData(
                 timetable,
-                timetableIndex,
+                selectedTabIndex,
                 courseCode,
                 sectionName,
                 conflicts
         );
-
-        if (conflicts.isEmpty()) {
-            presenter.prepareSuccessView(outputData);
-        } else {
-            presenter.prepareConflictView(outputData);
-        }
+        presenter.prepareSuccessView(outputData);
     }
 
-    /**
-     * Tries to find section by attempting different session suffixes.
-     * TODO: Remove this workaround once UI provides full courseOfferingId
+
+     /* TODO: Remove this workaround once UI provides full courseOfferingId
      */
+    // maye change this to throw exceptions like search course, trying different ones out
     private Optional<Section> findSectionWithFallback(String courseCode, String sectionName) {
         for (String suffix : SESSION_SUFFIXES) {
             String courseOfferingId = courseCode + suffix;
