@@ -70,10 +70,10 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
             //  START OF SECTION/MEETING PROCESSING
             JSONObject sectionsObj = currOfferingObj.getJSONObject("meetings");
 
-            // Loop over each meeting/section(? is it a meeting or a section) (e.g., "LEC-0101", "TUT-0102")
-            sectionsObj.keys().forEachRemaining(meetingSectionId -> {
+            // Loop over each section (e.g., "LEC-0101", "TUT-0102")
+            sectionsObj.keys().forEachRemaining(sectionId -> {
 
-                JSONObject sectionDetails = sectionsObj.getJSONObject(meetingSectionId);
+                JSONObject sectionDetails = sectionsObj.getJSONObject(sectionId);
 
                 // EXTRACT PROFESSOR NAME
                 String professorName = "TBD Professor";
@@ -90,21 +90,18 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                 }
 
                 // STORE MAPPING INTERNALLY for future lookup
-                sectionIdToProfessorName.put(meetingSectionId, professorName);
+                sectionIdToProfessorName.put(sectionId, professorName);
 
-            JSONObject sectionsObj = currOfferingObj.getJSONObject("meetings");
-            sectionsObj.keys().forEachRemaining(sectionName -> {
                 // todo: actually choose the right teaching method
                 //  and also add meeting times
-                Section section = new Section(courseOffering, sectionName, Section.TeachingMethod.LECTURE);
+                Section section = new Section(courseOffering, sectionId, Section.TeachingMethod.LECTURE);
 
                 courseOffering.addAvailableSection(section);
+
+            });
+            currentavailableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
             });
 
-            currentavailableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
-        });
-        return currentavailableCourseOfferings;
-    });
         return currentavailableCourseOfferings;
     }
 
