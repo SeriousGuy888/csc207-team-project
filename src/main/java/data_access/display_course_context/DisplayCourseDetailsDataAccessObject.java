@@ -18,11 +18,11 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
 
     // Dependency on the low-level repository that fetches raw course data
     // We change the type to the concrete class now that we rely on its specific method.
-    private final JsonCourseDataRepository courseRepository; // <-- CHANGED TYPE
+    private final JsonCourseDataRepository courseRepository;
 
-    public DisplayCourseDetailsDataAccessObject(CourseDataRepository courseRepository) {
+    public DisplayCourseDetailsDataAccessObject(JsonCourseDataRepository courseRepository) {
         // We cast the injected repository to the specific type we need
-        this.courseRepository = (JsonCourseDataRepository) courseRepository; // <-- CAST HERE
+        this.courseRepository = (JsonCourseDataRepository) courseRepository;
     }
 
     @Override
