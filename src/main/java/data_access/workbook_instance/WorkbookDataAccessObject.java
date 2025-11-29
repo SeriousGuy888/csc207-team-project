@@ -1,4 +1,4 @@
-package data_access;
+package data_access.workbook_instance;
 
 import entity.Timetable;
 import entity.Workbook;
@@ -6,13 +6,13 @@ import use_case.WorkbookDataAccessInterface;
 
 import java.util.ArrayList;
 
-public class WorkbookDataAccessObject implements WorkbookDataAccessInterface{
+public class WorkbookDataAccessObject implements CurrentWorkbook, WorkbookDataAccessInterface{
     private Workbook currentWorkbook;
 
     public WorkbookDataAccessObject() {
         // Initialize with a default empty workbook containing 1 timetable
         this.currentWorkbook = new Workbook(new ArrayList<>());
-         this.currentWorkbook.addTimetable(new Timetable());
+        this.currentWorkbook.addTimetable(new Timetable());
     }
 
     @Override

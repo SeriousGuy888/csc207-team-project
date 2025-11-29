@@ -12,5 +12,5 @@ public interface AddSectionDataAccessInterface {
 
     // Finds the corresponding Section instance to add.
     // TODO: see if we can change parameter + DAO to courseOfferingAsString
-    Section findSection(String courseOfferingId, String sectionName);
+    Section getSectionToAdd(String courseOfferingId, String sectionName);
 }
