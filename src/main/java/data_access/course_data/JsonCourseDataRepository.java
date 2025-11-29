@@ -61,7 +61,6 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
             String description = currOfferingObj.getString("courseDescription");
 
             CourseOffering courseOffering = new CourseOffering(
-                    courseOfferingIdentifier,
                     new CourseCode(courseCodeString),
                     title,
                     description);
