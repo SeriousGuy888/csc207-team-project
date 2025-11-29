@@ -2,13 +2,18 @@ package view;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
+import interface_adapter.GlobalViewController;
 import interface_adapter.GlobalViewModel;
+import interface_adapter.GlobalViewState;
+import interface_adapter.TimetableState;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.sql.Time;
+import java.util.ArrayList;
 
 public class MainPanel extends JPanel implements PropertyChangeListener {
     private JPanel MainPanel;
@@ -19,6 +24,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
     private JTabbedPane tabbedPane;
 
     private final GlobalViewModel globalViewModel;
+    private final GlobalViewController globalViewController
 
     /**
      * The maximum amount of tabs tabbedPane can have.
@@ -39,14 +45,15 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
     /**
      * Creates a new MainPanel. Then create tabs and listeners after UI builder initializes components.
      */
-    public MainPanel(GlobalViewModel globalViewModel) {
+    public MainPanel(GlobalViewModel globalViewModel, GlobalViewController globalViewController) {
         this.globalViewModel = globalViewModel;
-        this.globalViewModel.addPropertyChangeListener(this);
+        this.globalViewModel.addPropertyChangeListener(GlobalViewModel.TIMETABLE_CHANGED, this);
+        this.globalViewController = globalViewController;
 
+        $$$setupUI$$$();
         SwingUtilities.invokeLater(() -> {
-            setupInitialTabs();
+            setupInitialUI();
             setupListeners();
-            tabbedPane.setSelectedIndex(0);   // focus the first tab
         });
     }
 
@@ -63,9 +70,8 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
     /**
      * Creates a "+" tab and the first default tab.
      */
-    private void setupInitialTabs() {
+    private void setupInitialUI() {
         addPlusTab();
-        addNewTab();
     }
 
     /**
@@ -76,51 +82,55 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
      */
     private void setupListeners() {
         tabbedPane.addChangeListener(e -> {
-            if (isModifyingTab) return;
-
-            int last = tabbedPane.getTabCount() - 1;
-            int selected = tabbedPane.getSelectedIndex();
-
-            // "+" tab selected
-            if (selected == last) {
-
-                if (last >= MAX_TABS) {
-                    JOptionPane.showMessageDialog(tabbedPane,
-                            "You can only have at most " + MAX_TABS + " timetables.");
-                    tabbedPane.setSelectedIndex(last - 1);
-                    return;
-                }
-
-                isModifyingTab = true;
-                addNewTab();
-                tabbedPane.setSelectedIndex(last); // new tab is inserted at last index
-                isModifyingTab = false;
-            }
-        });
-
-        tabbedPane.addChangeListener(e -> {
             int selectedIndex = tabbedPane.getSelectedIndex();
-            // Prevent infinite loops: only update if it's actually different
-            if (selectedIndex != globalViewModel.getState().getSelectedTabIndex()) {
-                // TODO: might need a Controller here to update the state
-                // tabController.switchTab(selectedIndex);
+            int maxIndex = tabbedPane.getTabCount() - 1; // The last index is the "+" button
+
+            // Case 1: User clicked the "+" tab
+            if (selectedIndex == maxIndex) {
+                // Reset selection to previous temporarily to avoid visual glitch
+                // while waiting for backend response
+                if (maxIndex > 0) tabbedPane.setSelectedIndex(selectedIndex - 1);
+
+                // CALL CONTROLLER
+                globalViewController.addTab();
+            }
+
+            // Case 2: User switched to a normal tab
+            else if (selectedIndex >= 0) {
+                // Check against state to prevent infinite loops (View updates State -> State updates View -> View fires listener)
+                if (globalViewModel.getState().getSelectedTabIndex() != selectedIndex) {
+                    globalViewController.switchTab(selectedIndex);
+                }
             }
         });
     }
 
     /**
-     * Creates and inserts a new timetable tab into the tabbed pane.
-     * A new {@link TimetablePanel} instance is created for each tab. The tab is inserted
-     * immediately before the final "+" tab, which is reserved for creating additional tabs.
+     * The View rebuilds or updates itself based solely on the State.
      */
-    private void addNewTab() {
-        TimetablePanel panel = new TimetablePanel();
+    @Override
+    public void propertyChange(PropertyChangeEvent evt) {
+        GlobalViewState state = (GlobalViewState) evt.getNewValue();
+        ArrayList<TimetableState> stateList = (ArrayList<TimetableState>) state.getTimetableStateList();
 
-        int insertIndex = tabbedPane.getTabCount() - 1;
-        String title = "Timetable " + (tabCounter++);
+        // 1. SYNC TABS (Structure)
+        // We compare the number of content tabs (total tabs - 1 for the plus tab)
+        int currentContentTabs = tabbedPane.getTabCount() - 1;
 
-        tabbedPane.insertTab(title, null, panel.getRootPanel(), null, insertIndex);
-        tabbedPane.setTabComponentAt(insertIndex, createTabHeader(title));
+        // If the counts don't match, the structure changed (Add/Delete occurred)
+        if (stateList.size() != currentContentTabs) {
+            rebuildTabs(stateList); // Heavy refresh
+        } else {
+            refreshTabContent(stateList); // Light refresh (just updates grids)
+        }
+
+        // 2. SYNC SELECTION
+        // Update selection only if strictly necessary
+        int desiredIndex = state.getSelectedTabIndex();
+        if (desiredIndex < tabbedPane.getTabCount() - 1
+                && tabbedPane.getSelectedIndex() != desiredIndex) {
+            tabbedPane.setSelectedIndex(desiredIndex);
+        }
     }
 
     /**
@@ -129,6 +139,32 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
     private void addPlusTab() {
         JPanel dummy = new JPanel();
         tabbedPane.addTab("+", dummy);
+    }
+
+    /**
+     * Heavy Refresh: Used when a tab is Added or Deleted.
+     * Clears tabs and recreates them from the state list.
+     */
+    private void rebuildTabs(ArrayList<TimetableState> stateList) {
+        // Remove all tabs EXCEPT the last one (the "+")
+        while (tabbedPane.getTabCount() > 1) {
+            tabbedPane.remove(0);
+        }
+
+        // Re-add tabs from State
+        for (int i = 0; i < stateList.size(); i++) {
+            TimetableState ts = stateList.get(i);
+            String title = ts.getTimetableName();
+
+            TimetablePanel panel = new TimetablePanel();
+            panel.updateViewModel(ts); // Push initial data
+
+            // Note: We assume TimetablePanel extends JPanel and adds its content to itself.
+            // If TimetablePanel relies on .getRootPanel(), use: panel.getRootPanel()
+            // However, we need to cast it back to TimetablePanel later, so extending JPanel is best.
+            tabbedPane.insertTab(title, null, panel, null, i);
+            tabbedPane.setTabComponentAt(i, createTabHeader(title));
+        }
     }
 
     /**

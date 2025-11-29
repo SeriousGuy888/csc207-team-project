@@ -10,6 +10,8 @@ public class TimetableState {
     private final MeetingBlock[][][] firstSemesterGrid;
     private final MeetingBlock[][][] secondSemesterGrid;
 
+    private String timetableName;
+
     public TimetableState() {
         // Initialize empty grids
         firstSemesterGrid = new MeetingBlock[24][5][2];
@@ -24,11 +26,19 @@ public class TimetableState {
         return secondSemesterGrid;
     }
 
+    public String getTimetableName() {
+        return timetableName;
+    }
+
+    public void setTimetableName(String timetableName) {
+        this.timetableName = timetableName;
+    }
+
     // Inner Class: DTO for UI display
     public static class MeetingBlock {
-        private final String courseCode;   // "CSC207"
-        private final String sectionInfo;  // "LEC0101"
-        private final int startRow;  // only print info on first block
+        private final String courseCode;
+        private final String sectionInfo;
+        private final int startRow;
         private final boolean isConflict;
 
         public MeetingBlock(String courseCode, String sectionInfo, int startRow, boolean isConflict) {

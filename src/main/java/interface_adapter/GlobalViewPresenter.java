@@ -13,13 +13,15 @@ import use_case.TimetableUpdate.TimetableUpdateOutputBoundary;
 import use_case.TimetableUpdate.TimetableUpdateOutputData;
 import use_case.tab_actions.add_tab.AddTabOutputBoundary;
 import use_case.tab_actions.delete_tab.DeleteTabOutputBoundary;
+import use_case.tab_actions.rename_tab.RenameTabOutputBoundary;
 import use_case.tab_actions.switch_tab.SwitchTabOutputBoundary;
 
 public class GlobalViewPresenter implements
         TimetableUpdateOutputBoundary,
         AddTabOutputBoundary,
         DeleteTabOutputBoundary,
-        SwitchTabOutputBoundary {
+        SwitchTabOutputBoundary,
+        RenameTabOutputBoundary {
 
     // Constants for mapping Entity time to UI Grid
     private static final int START_HOUR_INDEX = 18;
@@ -31,20 +33,20 @@ public class GlobalViewPresenter implements
         this.globalViewModel = globalViewModel;
     }
 
-    // --- HANDLE ADD / REMOVE (Structure Change) ---
-    public void prepareAddTabSuccessView(Workbook workbook) {
+    // --- HANDLE ADD / DELETE / RENAME ---
+    @Override
+    public void prepareSuccessView(Workbook workbook) {
         final GlobalViewState state = globalViewModel.getState();
-        final List<TimetableState> newStates = new ArrayList<>(state.getTimetableStateList());
-        newStates.add(convertEntityToState(workbook.getTimetables().get(workbook.getTimetables().size() - 1)));
-        state.setTimetableStateList(newStates);
-        globalViewModel.setState(state);
-        globalViewModel.firePropertyChange(GlobalViewModel.TIMETABLE_CHANGED);
-    }
 
-    public void prepareDeleteTabSuccessView(Workbook workbook, int tabIndex) {
-        final GlobalViewState state = globalViewModel.getState();
-        final List<TimetableState> newStates = new ArrayList<>(state.getTimetableStateList());
-        newStates.remove(tabIndex);
+        // 1. Rebuild the entire list of TimetableStates
+        // (Since a tab was added/removed, indices have shifted)
+        final List<TimetableState> newStates = new ArrayList<>();
+
+        for (Timetable t : workbook.getTimetables()) {
+            // Reuse conversion helper
+            newStates.add(convertEntityToState(t));
+        }
+
         state.setTimetableStateList(newStates);
 
         // Adjust selection if out of bounds (e.g. deleted last tab)
@@ -103,6 +105,8 @@ public class GlobalViewPresenter implements
 
     private TimetableState convertEntityToState(Timetable timetable) {
         final TimetableState state = new TimetableState();
+        state.setTimetableName(timetable.getTimetableName());
+
         final MeetingBlock[][][] firstSemesterGrid = state.getFirstSemesterGrid();
         final MeetingBlock[][][] secondSemesterGrid = state.getSecondSemesterGrid();
 

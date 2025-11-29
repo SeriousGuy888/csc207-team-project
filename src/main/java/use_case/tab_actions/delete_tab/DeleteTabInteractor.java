@@ -23,9 +23,10 @@ public class DeleteTabInteractor implements DeleteTabInputBoundary {
 
             // 1. Business Logic: Remove
             workbook.removeTimetable(toRemove);
+            dataAccess.saveWorkbook(workbook);
 
             // 2. Output
-            presenter.prepareDeleteTabSuccessView(workbook, tabIndex);
+            presenter.prepareSuccessView(workbook);
         }
     }
 }

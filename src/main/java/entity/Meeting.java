@@ -11,8 +11,8 @@ package entity;
 public class Meeting {
     private final UofTLocation location;
     private final Semester semester;
-    private final WeeklyOccupancy time; // must be contiguous timespan
-    private int numConflicts = 0;
+    private final WeeklyOccupancy time;
+    private int numConflicts;
 
     public Meeting(UofTLocation location, Semester semester, WeeklyOccupancy time) {
         this.location = location;
@@ -53,7 +53,7 @@ public class Meeting {
     }
 
     public boolean checkOccupancy(int day, int timeSlot) {
-        int bitIndex = day * 48 + timeSlot;
+        final int bitIndex = day * 48 + timeSlot;
         return time.getHalfHourSlots().get(bitIndex);
     }
 
