@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
  */
 public class Timetable {
     private final Set<Section> sections;
-    private String timetableName;
+    private String timetableName = "Default Timetable";
 
     public Timetable() {
         this.sections = new HashSet<>();

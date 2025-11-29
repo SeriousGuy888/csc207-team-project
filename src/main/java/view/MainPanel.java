@@ -12,7 +12,6 @@ import java.awt.*;
 import java.awt.event.*;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import java.sql.Time;
 import java.util.ArrayList;
 
 public class MainPanel extends JPanel implements PropertyChangeListener {
@@ -26,10 +25,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
     private final GlobalViewModel globalViewModel;
     private final GlobalViewController globalViewController;
 
-    /**
-     * The maximum amount of tabs tabbedPane can have.
-     */
-    private static final int MAX_TABS = 8;
+    private boolean isRebuilding = false;
 
     /**
      * Counter for the default naming of added tabs.
@@ -76,6 +72,10 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
      */
     private void setupListeners() {
         tabbedPane.addChangeListener(e -> {
+            if (isRebuilding) {
+                return;
+            }
+
             int selectedIndex = tabbedPane.getSelectedIndex();
             int maxIndex = tabbedPane.getTabCount() - 1; // The last index is the "+" button
 
@@ -109,23 +109,24 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
         GlobalViewState state = (GlobalViewState) evt.getNewValue();
         ArrayList<TimetableState> stateList = (ArrayList<TimetableState>) state.getTimetableStateList();
 
-        // 1. SYNC TABS (Structure)
-        // We compare the number of content tabs (total tabs - 1 for the plus tab)
         int currentContentTabs = tabbedPane.getTabCount() - 1;
 
-        // If the counts don't match, the structure changed (Add/Delete occurred)
         if (stateList.size() != currentContentTabs) {
-            rebuildTabs(stateList); // Heavy refresh
-        } else {
-            refreshTabContent(stateList); // Light refresh (just updates grids)
+            rebuildTabs(stateList);
+        }
+        else {
+            refreshTabContent(stateList);
         }
 
-        // 2. SYNC SELECTION
-        // Update selection only if strictly necessary
+        // Now sync selection
         int desiredIndex = state.getSelectedTabIndex();
         if (desiredIndex < tabbedPane.getTabCount() - 1
                 && tabbedPane.getSelectedIndex() != desiredIndex) {
+
+            // Block listener so we don't trigger "switchTab" controller
+            isRebuilding = true;
             tabbedPane.setSelectedIndex(desiredIndex);
+            isRebuilding = false;
         }
     }
 
@@ -142,6 +143,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
      * Clears tabs and recreates them from the state list.
      */
     private void rebuildTabs(ArrayList<TimetableState> stateList) {
+        isRebuilding = true;
         // Remove all tabs EXCEPT the last one (the "+")
         while (tabbedPane.getTabCount() > 1) {
             tabbedPane.remove(0);
@@ -161,6 +163,8 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
             tabbedPane.insertTab(title, null, panel.getRootPanel(), null, i);
             tabbedPane.setTabComponentAt(i, createTabHeader(title, i));
         }
+
+        isRebuilding = false;
     }
 
     /**
