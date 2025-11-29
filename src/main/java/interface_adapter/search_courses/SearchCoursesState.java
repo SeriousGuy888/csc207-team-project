@@ -7,11 +7,19 @@ public class SearchCoursesState {
     private final Set<String> matchedCourses;
     private final String errorMessage;
 
+    // No-arg constructor for initial empty state
+    public SearchCoursesState() {
+        this.matchedCourses = new HashSet<>();
+        this.errorMessage = null;
+    }
+
+    // Success constructor
     public SearchCoursesState(Set<String> matchedCourses) {
         this.matchedCourses = matchedCourses;
         this.errorMessage = null;
     }
 
+    // Failure constructor
     public SearchCoursesState(String errorMessage) {
         this.matchedCourses = new HashSet<>();
         this.errorMessage = errorMessage;

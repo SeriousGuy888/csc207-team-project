@@ -6,6 +6,6 @@ public class SearchCoursesViewModel extends ViewModel<SearchCoursesState> {
     public static final String SEARCH_RESULTS_UPDATED = "searchResultsUpdated";
 
     public SearchCoursesViewModel() {
-        super(new SearchCoursesState());
+        super("search_courses");
     }
 }
