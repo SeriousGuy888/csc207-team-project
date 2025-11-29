@@ -1,4 +1,4 @@
-package data_access.search_courses;
+package data_access;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,8 +11,9 @@ import java.util.regex.Pattern;
 import entity.CourseOffering;
 
 import data_access.course_data.CourseDataRepositoryGrouped;
+import use_case.search_courses.SearchCoursesDataAccessInterface;
 
-public class SearchCoursesDataAccessObject implements use_case.search_courses.SearchCoursesDataAccessInterface {
+public class SearchCoursesDataAccessObject implements SearchCoursesDataAccessInterface {
     private final CourseDataRepositoryGrouped courseDataRepositoryGrouped;
      // use regex to identify if query is course code or dept code or neither
     private final Pattern COURSECODE = Pattern.compile("[A-Z]{3}\\d{3}");
