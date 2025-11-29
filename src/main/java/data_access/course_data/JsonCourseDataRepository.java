@@ -35,7 +35,7 @@ public class JsonCourseDataRepository implements CourseDataRepository {
             numFilesLoaded.getAndIncrement();
             long curr = System.currentTimeMillis();
             long elapsed = curr - start;
-            System.out.println("Loaded " + numFilesLoaded + " files at " + elapsed + "ms");
+            System.out.println("[" + this + "] loaded " + numFilesLoaded + " files at " + elapsed + "ms");
         });
     }
 
