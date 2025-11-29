@@ -20,11 +20,11 @@ public class RateMyProfDataAccessObject implements RateMyProfDataAccessInterface
 
     @Override
     public Professor getProfessorInfo(String profFirstName, String profLastName) throws RuntimeException {
-        if (!cache.containsKey(profFirstName + ' ' +  profLastName)) {
+        if (!cache.containsKey(profFirstName + ' ' + profLastName)) {
             callsMade++;
             try {
                 cache.put(profFirstName + ' ' + profLastName, innerFetcher.getProfessorInfo(profFirstName, profLastName));
-            } catch (RuntimeException e) {
+            } catch (Exception e) {
                 throw e;
             }
         }

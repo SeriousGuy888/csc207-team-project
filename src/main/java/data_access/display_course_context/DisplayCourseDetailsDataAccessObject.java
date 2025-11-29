@@ -51,39 +51,35 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
     /**
      * Maps one Section entity into a stream of DisplaySectionDetails,
      * generating one DTO for every single Meeting time slot in that section.
+     * @param section is the Section entity we are looking for details about.
      */
     private Stream<DisplaySectionDetails> mapSectionToDisplayDetails(Section section) {
 
-        String sectionId = section.getSectionName();
+        final String sectionId = section.getSectionName();
         // Call the lookup method using the section's unique name
-        String professorName = getProfessorNameBySectionId(sectionId);
+        final String professorName = getProfessorNameBySectionId(sectionId);
 
         // Create the placeholder professor DTO that ONLY contains the name
         // The Interactor will fill in the rating/link later
-        DisplayProfessorDetails placeholderProf = new DisplayProfessorDetails(
+        final DisplayProfessorDetails placeholderProf = new DisplayProfessorDetails(
                 professorName,
-                0.0, // Default/Unknown rating
-                0.0, // Default/Unknown difficulty
-                null // Default/Unknown link
+                0.0,
+                0.0,
+                null
         );
 
+        // Convert entity objects to simple display strings
         return section.getMeetings().stream()
                 .map(meeting -> {
-                    // Convert complex entity objects to simple display strings
-                    String meetingTimes = meeting.getTime().toString();
-                    String location = meeting.getLocation().toString();
-
-                    // Note: sectionId is already defined above, but we reuse it here
-                    // String sectionId = section.getSectionName();
-
+                    final String meetingTimes = meeting.getTime().toString();
+                    final String location = meeting.getLocation().toString();
                     return new DisplaySectionDetails(
                             section.getSectionName(),
                             sectionId,
                             meetingTimes,
                             location,
-                            placeholderProf // Use the placeholder here
-                    );
-                });
+                            placeholderProf
+                    ); });
     }
 
     @Override
