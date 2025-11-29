@@ -29,13 +29,15 @@ public class SearchCoursesPresenter implements SearchCoursesOutputBoundary {
 
         viewModel.setState(new SearchCoursesState(courseofferingstrings));
 
-        viewModel.fireStateChangeEvent();
+        viewModel.firePropertyChange(SearchCoursesViewModel.SEARCH_RESULTS_UPDATED);
+
     }
 
     @Override
     public void prepareFailView(String errorMessage) {
         viewModel.setState(new SearchCoursesState(errorMessage));
-        
-        viewModel.fireStateChangeEvent();
+
+        viewModel.firePropertyChange(SearchCoursesViewModel.SEARCH_RESULTS_UPDATED);
+
     }
 }
