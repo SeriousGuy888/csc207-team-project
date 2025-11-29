@@ -17,10 +17,10 @@ import java.util.stream.Stream;
 public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetailsDataAccessInterface {
 
     // Dependency on the low-level repository that fetches raw course data
-    // We change the type to the concrete class now that we rely on its specific method.
+    // changed the type to the concrete class now that we rely on its specific method.
     private final JsonCourseDataRepository courseRepository;
 
-    public DisplayCourseDetailsDataAccessObject(JsonCourseDataRepository courseRepository) {
+    public DisplayCourseDetailsDataAccessObject(CourseDataRepository courseRepository) {
         // We cast the injected repository to the specific type we need
         this.courseRepository = (JsonCourseDataRepository) courseRepository;
     }
@@ -28,14 +28,15 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
     @Override
     public DisplayCourseDetails getCourseDetails(String courseId) {
         // Fetch the raw entity
-        CourseOffering courseOffering = courseRepository.getCourseOffering(courseId);
+        final CourseOffering courseOffering = courseRepository.getCourseOffering(courseId);
 
+        // Course not found
         if (courseOffering == null) {
-            return null; // Course not found
+            return null;
         }
 
         // Transform the entity data into display DTOs
-        List<DisplaySectionDetails> displaySections = courseOffering.getAvailableSections().stream()
+        final List<DisplaySectionDetails> displaySections = courseOffering.getAvailableSections().stream()
                 // FlatMap converts the Set of Sections into a flat list of DisplaySectionDetails (one per Meeting)
                 .flatMap(this::mapSectionToDisplayDetails)
                 .collect(Collectors.toList());
@@ -84,7 +85,6 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
 
     @Override
     public String getProfessorNameBySectionId(String sectionId) {
-        // FIX: We now call the new method implemented in JsonCourseDataRepository
         return courseRepository.getProfessorNameBySectionId(sectionId);
     }
 }

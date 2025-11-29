@@ -23,15 +23,20 @@ public class RateMyProfInteractor implements RateMyProfInputBoundary {
             rateMyProfPresenter.prepareSuccessView(outputData);
         }
         catch (RuntimeException e) {
-            String errorMessage = "Failed to retrieve professor info: " + e.getMessage();
+            final String errorMessage = "Failed to retrieve professor info: " + e.getMessage();
             rateMyProfPresenter.prepareFailView(errorMessage);
         }
     }
 
+    /**
+     * Execute Synchronous is for the Display Course Details interactor to get output data directly
+     * @param profInputData the first/last name of prof as input data
+     * @return output data of the Professor
+     */
     @Override
     public RateMyProfOutputData executeSynchronous(RateMyProfInputData profInputData) {
         try {
-            Professor prof = rateMyProfDataAccessObject.getProfessorInfo(
+            final Professor prof = rateMyProfDataAccessObject.getProfessorInfo(
                     profInputData.getFirstName(),
                     profInputData.getLastName());
 
