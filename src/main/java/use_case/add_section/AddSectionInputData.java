@@ -1,4 +1,4 @@
-package use_case.addsection;
+package use_case.add_section;
 
 public class AddSectionInputData {
     private final String courseOfferingAsString;    // ex. "CSC207H1" (from UI - Search Panel)
