@@ -1,45 +1,50 @@
 package interface_adapter;
 
-import entity.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import entity.CourseCode;
+import entity.Meeting;
+import entity.Section;
+import entity.Timetable;
+import entity.Workbook;
 import interface_adapter.TimetableState.MeetingBlock;
 import use_case.TimetableUpdate.TimetableUpdateOutputBoundary;
 import use_case.TimetableUpdate.TimetableUpdateOutputData;
-import use_case.tab_actions.add_tab.AddTabInputBoundary;
-import use_case.tab_actions.delete_tab.DeleteTabInputBoundary;
-import use_case.tab_actions.switch_tab.SwitchTabInputBoundary;
-
-import java.util.List;
+import use_case.tab_actions.add_tab.AddTabOutputBoundary;
+import use_case.tab_actions.delete_tab.DeleteTabOutputBoundary;
+import use_case.tab_actions.switch_tab.SwitchTabOutputBoundary;
 
 public class GlobalViewPresenter implements
         TimetableUpdateOutputBoundary,
-        AddTabInputBoundary,
-        DeleteTabInputBoundary,
-        SwitchTabInputBoundary {
-
-    private final GlobalViewModel globalViewModel;
+        AddTabOutputBoundary,
+        DeleteTabOutputBoundary,
+        SwitchTabOutputBoundary {
 
     // Constants for mapping Entity time to UI Grid
-    private static final int START_HOUR_INDEX = 18; // 9:00 AM is index 18 in WeeklyOccupancy
-    private static final int END_HOUR_INDEX = 42;   // 9:00 PM is index 42
+    private static final int START_HOUR_INDEX = 18;
+    private static final int HALF_HOUR_SLOTS_PER_DAY = 24;
+
+    private final GlobalViewModel globalViewModel;
 
     public GlobalViewPresenter(GlobalViewModel globalViewModel) {
         this.globalViewModel = globalViewModel;
     }
 
     // --- HANDLE ADD / REMOVE (Structure Change) ---
-    @Override
-    public void prepareSuccessView(Workbook workbook) {
-        GlobalViewState state = globalViewModel.getState();
+    public void prepareAddTabSuccessView(Workbook workbook) {
+        final GlobalViewState state = globalViewModel.getState();
+        final List<TimetableState> newStates = new ArrayList<>(state.getTimetableStateList());
+        newStates.add(convertEntityToState(workbook.getTimetables().get(workbook.getTimetables().size() - 1)));
+        state.setTimetableStateList(newStates);
+        globalViewModel.setState(state);
+        globalViewModel.firePropertyChange(GlobalViewModel.TIMETABLE_CHANGED);
+    }
 
-        // 1. Rebuild the entire list of TimetableStates
-        // (Since a tab was added/removed, indices have shifted)
-        List<TimetableState> newStates = new ArrayList<>();
-
-        for (Timetable t : workbook.getTimetables()) {
-            // Reuse your existing conversion helper
-            newStates.add(convertTimetableToState(t));
-        }
-
+    public void prepareDeleteTabSuccessView(Workbook workbook, int tabIndex) {
+        final GlobalViewState state = globalViewModel.getState();
+        final List<TimetableState> newStates = new ArrayList<>(state.getTimetableStateList());
+        newStates.remove(tabIndex);
         state.setTimetableStateList(newStates);
 
         // Adjust selection if out of bounds (e.g. deleted last tab)
@@ -48,17 +53,16 @@ public class GlobalViewPresenter implements
         }
 
         globalViewModel.setState(state);
-        globalViewModel.firePropertyChanged("timetable_change");
+        globalViewModel.firePropertyChange(GlobalViewModel.TIMETABLE_CHANGED);
     }
 
     // --- HANDLE SWITCH (Selection Change) ---
-    @Override
     public void prepareSuccessView(int newIndex) {
-        GlobalViewState state = globalViewModel.getState();
+        final GlobalViewState state = globalViewModel.getState();
         state.setSelectedTabIndex(newIndex);
 
         globalViewModel.setState(state);
-        globalViewModel.firePropertyChanged("timetable_change");
+        globalViewModel.firePropertyChange(GlobalViewModel.TIMETABLE_CHANGED);
     }
 
     /**
@@ -66,14 +70,14 @@ public class GlobalViewPresenter implements
      */
     @Override
     public void prepareSuccessView(TimetableUpdateOutputData timetableOutputData) {
-        Timetable changedTimetable = timetableOutputData.getTimetable();
-        int tabIndex = timetableOutputData.getTabIndex();
+        final Timetable changedTimetable = timetableOutputData.getTimetable();
+        final int tabIndex = timetableOutputData.getTabIndex();
         updateSingleTimetable(changedTimetable, tabIndex);
     }
 
     public void updateSingleTimetable(Timetable changedTimetable, int tabIndex) {
-        GlobalViewState globalState = globalViewModel.getState();
-        List<TimetableState> currentStates = globalState.getTimetableStateList();
+        final GlobalViewState globalState = globalViewModel.getState();
+        final List<TimetableState> currentStates = globalState.getTimetableStateList();
 
         // 1. Safety Check: Ensure the index is valid
         if (tabIndex < 0 || tabIndex >= currentStates.size()) {
@@ -82,7 +86,7 @@ public class GlobalViewPresenter implements
         }
 
         // 2. Convert ONLY the changed entity to a new State
-        TimetableState newTabState = convertEntityToState(changedTimetable);
+        final TimetableState newTabState = convertEntityToState(changedTimetable);
 
         // 3. Swap it into the existing list
         currentStates.set(tabIndex, newTabState);
@@ -94,14 +98,13 @@ public class GlobalViewPresenter implements
         // 5. Fire Event
         // We can pass the index as the "property name" or part of the object if we want strictly optimized listening,
         // but usually firing the standard state change is fine if the View handles it smartly.
-        globalViewModel.fireStateChangeEvent(GlobalViewModel.TIMETABLE_CHANGED);
+        globalViewModel.firePropertyChange(GlobalViewModel.TIMETABLE_CHANGED);
     }
 
     private TimetableState convertEntityToState(Timetable timetable) {
-        TimetableState state = new TimetableState();
-        MeetingBlock[][][] firstSemesterGrid = state.getFirstSemesterGrid();
-        MeetingBlock[][][] secondSemesterGrid = state.getSecondSemesterGrid();
-
+        final TimetableState state = new TimetableState();
+        final MeetingBlock[][][] firstSemesterGrid = state.getFirstSemesterGrid();
+        final MeetingBlock[][][] secondSemesterGrid = state.getSecondSemesterGrid();
 
         // 1. Calculate Conflicts inside the Entity
         // (Ensures the Presenter just reads flags, doesn't do business math)
@@ -109,13 +112,13 @@ public class GlobalViewPresenter implements
 
         // 2. Iterate through every section and meeting
         for (Section section : timetable.getSections()) {
-            CourseCode courseCode = section.getCourseOffering().getCourseCode(); // Adjust based on your Entity
-            String sectionInfo = section.getSectionName();
+            final CourseCode courseCode = section.getCourseOffering().getCourseCode();
+            final String sectionInfo = section.getSectionName();
 
             for (Meeting meeting : section.getMeetings()) {
-                int startRow = meeting.getStartTimeIndexInDay() - START_HOUR_INDEX;
-                boolean isConflict = meeting.getNumConflicts() > 0;
-                MeetingBlock block = new MeetingBlock(courseCode.toString(), sectionInfo, startRow, isConflict);
+                final int startRow = meeting.getStartTimeIndexInDay() - START_HOUR_INDEX;
+                final boolean isConflict = meeting.getNumConflicts() > 0;
+                final MeetingBlock block = new MeetingBlock(courseCode.toString(), sectionInfo, startRow, isConflict);
 
                 // 3. Map Meeting time to Grid Coordinates
                 if (meeting.getSemester() == Meeting.Semester.FIRST) {
@@ -131,9 +134,9 @@ public class GlobalViewPresenter implements
     }
 
     private void placeBlockInGrid(MeetingBlock[][][] grid, Meeting meeting, MeetingBlock block) {
-        int col = meeting.getStartTimeIndexInDay();
-        for (int row = block.getStartRow(); row < 24; row++) {
-            int bitIndex = START_HOUR_INDEX + row;
+        final int col = meeting.getStartTimeIndexInDay();
+        for (int row = block.getStartRow(); row < HALF_HOUR_SLOTS_PER_DAY; row++) {
+            final int bitIndex = START_HOUR_INDEX + row;
 
             if (meeting.checkOccupancy(col, bitIndex)) {
                 if (grid[row][col][0] == null) {
@@ -147,7 +150,7 @@ public class GlobalViewPresenter implements
     }
 
     /**
-     * @param error
+     * @param error The error message to display
      */
     @Override
     public void prepareFailView(String error) {

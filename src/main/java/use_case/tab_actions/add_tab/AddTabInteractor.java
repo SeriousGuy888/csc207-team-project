@@ -23,6 +23,6 @@ public class AddTabInteractor implements AddTabInputBoundary {
         workbook.addTimetable(newTimetable);
 
         // 2. Output
-        presenter.prepareSuccessView(workbook);
+        presenter.prepareAddTabSuccessView(workbook);
     }
 }

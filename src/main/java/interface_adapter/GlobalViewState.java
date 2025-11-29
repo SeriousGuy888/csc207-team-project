@@ -4,7 +4,7 @@ import java.util.*;
 
 public class GlobalViewState {
     private List<TimetableState> timetableStateList = new ArrayList<>();
-    private int selectedTabIndex = 0;
+    private int selectedTabIndex;
 
     public List<TimetableState> getTimetableStateList() {
         return timetableStateList;

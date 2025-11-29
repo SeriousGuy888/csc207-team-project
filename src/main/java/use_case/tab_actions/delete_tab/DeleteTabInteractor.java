@@ -15,17 +15,17 @@ public class DeleteTabInteractor implements DeleteTabInputBoundary {
 
     @Override
     public void execute(int tabIndex) {
-        Workbook workbook = dataAccess.getWorkbook();
+        final Workbook workbook = dataAccess.getWorkbook();
 
         // Safety Check
         if (tabIndex >= 0 && tabIndex < workbook.getTimetables().size()) {
-            Timetable toRemove = workbook.getTimetables().get(tabIndex);
+            final Timetable toRemove = workbook.getTimetables().get(tabIndex);
 
             // 1. Business Logic: Remove
             workbook.removeTimetable(toRemove);
 
             // 2. Output
-            presenter.prepareSuccessView(workbook);
+            presenter.prepareDeleteTabSuccessView(workbook, tabIndex);
         }
     }
 }
