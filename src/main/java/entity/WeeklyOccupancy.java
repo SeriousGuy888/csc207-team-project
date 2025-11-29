@@ -143,21 +143,21 @@ public class WeeklyOccupancy {
     /**
      * Check if the nth half hour has <em>any</em> millisecond marked occupied.
      *
-     * @param nthHalfHour A zero indexed number from 0 to 47 representing which thirty minute timespan to check.
-     *                    For example,
-     *                    <ul>
-     *                      <li>00:00 to 00:30 is {@code 0},</li>
-     *                      <li>00:30 to 01:00 is {@code 1},</li>
-     *                      <li>12:00 to 12:30 is {@code 24}, and</li>
-     *                      <li>23:30 to 00:00 is {@code 47}.</li>
-     *                    </ul>
+     * @param halfHourIndex A <strong>zero-indexed</strong> number from 0 to 47 representing which
+     *                      thirty minute timespan to check.
+     *                      For example,
+     *                      <ul>
+     *                        <li>00:00 to 00:30 is {@code 0},</li>
+     *                        <li>00:30 to 01:00 is {@code 1},</li>
+     *                        <li>12:00 to 12:30 is {@code 24}, and</li>
+     *                        <li>23:30 to 00:00 is {@code 47}.</li>
+     *                      </ul>
      * @return true if the specified half hour has at least one millisecond marked occupied, false otherwise.
      */
-    public boolean checkOccupancyOfHalfHourSlot(DayOfTheWeek dayOfTheWeek, int nthHalfHour) {
-        MillisecondSpan halfHour = new MillisecondSpan(
-                dayOfTheWeek.millisecondOffset + (MILLISECONDS_PER_HOUR / 2) * nthHalfHour,
-                dayOfTheWeek.millisecondOffset + (MILLISECONDS_PER_HOUR / 2) * (nthHalfHour + 1)
-        );
+    public boolean checkOccupancyOfHalfHourSlot(DayOfTheWeek dayOfTheWeek, int halfHourIndex) {
+        int start = dayOfTheWeek.millisecondOffset + (MILLISECONDS_PER_HOUR / 2) * halfHourIndex;
+        int end = dayOfTheWeek.millisecondOffset + (MILLISECONDS_PER_HOUR / 2) * (halfHourIndex + 1);
+        MillisecondSpan halfHour = new MillisecondSpan(start, end);
 
         return timespans.stream().anyMatch(timespan -> timespan.overlaps(halfHour));
     }
