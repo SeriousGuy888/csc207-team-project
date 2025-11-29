@@ -21,19 +21,35 @@ public class GlobalViewController {
         this.renameTabInteractor = renameTab;
     }
 
+    /**
+     * Adds a blank tab to the UI.
+     */
     public void addTab() {
         // No input data needed for adding a blank tab
         addTabInteractor.execute();
     }
 
+    /**
+     * Deletes a tab from the UI.
+     * @param tabIndex the index of the tab to delete
+     */
     public void deleteTab(int tabIndex) {
         deleteTabInteractor.execute(tabIndex);
     }
 
+    /**
+     * Switches to a different tab in the UI.
+     * @param newIndex the index of the tab to switch to
+     */
     public void switchTab(int newIndex) {
         switchTabInteractor.execute(newIndex);
     }
 
+    /**
+     * Rename a tab in the UI.
+     * @param tabIndex the index of the tab to rename
+     * @param newName the new name of the tab
+     */
     public void renameTab(int tabIndex, String newName) {
         renameTabInteractor.execute(tabIndex, newName);
     }

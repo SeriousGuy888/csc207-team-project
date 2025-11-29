@@ -1,18 +1,28 @@
 package view;
 
-import com.intellij.uiDesigner.core.GridConstraints;
-import com.intellij.uiDesigner.core.GridLayoutManager;
-import com.intellij.uiDesigner.core.Spacer;
-import entity.Meeting;
-import interface_adapter.TimetableState;
-import interface_adapter.TimetableState.MeetingBlock;
-
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.*;
+
+import com.intellij.uiDesigner.core.GridConstraints;
+import com.intellij.uiDesigner.core.GridLayoutManager;
+import com.intellij.uiDesigner.core.Spacer;
+import interface_adapter.TimetableState;
+import interface_adapter.TimetableState.MeetingBlock;
+
 public class TimetablePanel extends JPanel {
+    public static final int NUM_ROWS = 24;
+    public static final int NUM_COLS = 5;
+    private static final String[] DAYS = {"Mon", "Tue", "Wed", "Thu", "Fri"};
+    private static final String[] TIMES = {
+            "9:00", "9:30", "10:00", "10:30", "11:00", "11:30",
+            "12:00", "12:30", "1:00", "1:30", "2:00", "2:30",
+            "3:00", "3:30", "4:00", "4:30", "5:00", "5:30",
+            "6:00", "6:30", "7:00", "7:30", "8:00", "8:30"
+    };
+
     private JPanel TimetablePanel;
     private JButton fallButton;
     private JButton winterButton;
@@ -24,17 +34,10 @@ public class TimetablePanel extends JPanel {
     private JPanel containerPanel;
     private JPanel firstSemesterGridContainer;
     private JPanel secondSemesterGridContainer;
-    private JPanel[][] firstSemesterPanel = new JPanel[24][5];
-    private JPanel[][] secondSemesterPanel = new JPanel[24][5];
+    private JPanel[][] firstSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
+    private JPanel[][] secondSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
 
     private TimetableState currentState;
-
-    private static final String[] DAYS = {"Mon", "Tue", "Wed", "Thu", "Fri"};
-    private static final String[] TIMES = {
-        "9:00", "9:30", "10:00", "10:30", "11:00", "11:30",
-        "12:00", "12:30", "1:00", "1:30", "2:00", "2:30",
-        "3:00", "3:30", "4:00", "4:30", "5:00", "5:30",
-        "6:00", "6:30", "7:00", "7:30", "8:00", "8:30"};
 
     /**
      * Creates a new TimetablePanel and initializes the term-selection controls.
@@ -86,14 +89,14 @@ public class TimetablePanel extends JPanel {
     private void initializeGrid() {
         // 1. Initialize the Container Panels with GridLayout
         // 24 rows, 5 columns
-        firstSemesterGridContainer = new JPanel(new GridLayout(24, 5));
-        secondSemesterGridContainer = new JPanel(new GridLayout(24, 5));
+        firstSemesterGridContainer = new JPanel(new GridLayout(NUM_COLS, NUM_ROWS));
+        secondSemesterGridContainer = new JPanel(new GridLayout(NUM_COLS, NUM_ROWS));
 
         // 2. Populate the Grids
-        for (int row = 0; row < 24; row++) {
-            for (int col = 0; col < 5; col++) {
+        for (int row = 0; row < NUM_ROWS; row++) {
+            for (int col = 0; col < NUM_COLS; col++) {
                 // --- FIRST SEMESTER SLOT ---
-                JPanel slot1 = new JPanel(new BorderLayout());
+                final JPanel slot1 = new JPanel(new BorderLayout());
                 slot1.setPreferredSize(new Dimension(80, 50));
                 slot1.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
                 slot1.setBackground(Color.WHITE);
@@ -104,8 +107,8 @@ public class TimetablePanel extends JPanel {
 
                 // --- SECOND SEMESTER SLOT ---
                 // We MUST create a new object. Cannot reuse slot1.
-                JPanel slot2 = new JPanel(new BorderLayout());
-                slot2.setPreferredSize(new Dimension(100, 50));
+                final JPanel slot2 = new JPanel(new BorderLayout());
+                slot2.setPreferredSize(new Dimension(80, 50));
                 slot2.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
                 slot2.setBackground(Color.WHITE);
 
@@ -121,7 +124,10 @@ public class TimetablePanel extends JPanel {
         scrollPane.getVerticalScrollBar().setUnitIncrement(16);
     }
 
-    // This is the ONLY entry point for data. Adheres to Clean Architecture.
+    /**
+     * Paints the timetable UI based on the current state.
+     * @param state The current TimetableState to render.
+     */
     public void updateView(TimetableState state) {
         if (state == null) {
             return;
@@ -134,8 +140,8 @@ public class TimetablePanel extends JPanel {
         alignTimetableData(secondSemesterGridData);
 
         // Iterate over every cell in the UI Grid
-        for (int row = 0; row < 24; row++) {
-            for (int col = 0; col < 5; col++) {
+        for (int row = 0; row < NUM_ROWS; row++) {
+            for (int col = 0; col < NUM_COLS; col++) {
                 updateSlot(firstSemesterPanel[row][col], firstSemesterGridData[row][col], row);
                 updateSlot(secondSemesterPanel[row][col], secondSemesterGridData[row][col], row);
             }
@@ -143,19 +149,19 @@ public class TimetablePanel extends JPanel {
     }
 
     /**
-     * Helper to rearrange meeting blocks for visual continuity.
-     * Ensures that if a course starts on the Right side (Index 1), it stays there.
+     * Rearrange meeting blocks to ensure visual continuity
+     * @param grid The MeetingBlock[][][] to align.
      */
+    // TODO: Migrate this method to presenter
     private void alignTimetableData(MeetingBlock[][][] grid) {
-        // Iterate Column by Column (Mon -> Fri)
-        for (int col = 0; col < 5; col++) {
+        for (int col = 0; col < NUM_COLS; col++) {
 
             // Keep track of what course was in which visual column in the previous row
             String prevLeft = null;
             String prevRight = null;
 
-            for (int row = 0; row < 24; row++) {
-                MeetingBlock[] blocks = grid[row][col];
+            for (int row = 0; row < NUM_ROWS; row++) {
+                final MeetingBlock[] blocks = grid[row][col];
 
                 // Step A: Baseline Sort (Alphabetical)
                 // This ensures [B, A] always becomes [A, B] initially
@@ -164,7 +170,7 @@ public class TimetablePanel extends JPanel {
                 // Step B: Continuity Check
                 // If we have only 1 block, but it matches the "Previous Right", shift it to right.
                 if (blocks[0] != null && blocks[1] == null) {
-                    String current = blocks[0].getDisplayText();
+                    final String current = blocks[0].getDisplayText();
 
                     // If this course was on the right previously, and NOT on the left...
                     if (current.equals(prevRight) && !current.equals(prevLeft)) {
@@ -185,7 +191,7 @@ public class TimetablePanel extends JPanel {
         if (blocks[0] != null && blocks[1] != null) {
             // Swap if B comes before A alphabetically
             if (blocks[0].getDisplayText().compareTo(blocks[1].getDisplayText()) > 0) {
-                MeetingBlock temp = blocks[0];
+                final MeetingBlock temp = blocks[0];
                 blocks[0] = blocks[1];
                 blocks[1] = temp;
             }

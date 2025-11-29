@@ -27,7 +27,7 @@ public class ViewModel<T> {
     }
 
     /**
-     * set the state of the view model
+     * Set the state of the view model
      * <h2>Important Note</h2>
      * Calling this method does NOT push updates to listeners.
      *

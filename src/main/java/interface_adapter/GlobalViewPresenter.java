@@ -41,7 +41,7 @@ public class GlobalViewPresenter implements
         // 1. Rebuild the entire list of TimetableStates
         // (Since a tab was added/removed, indices have shifted)
         final List<TimetableState> newStates = new ArrayList<>();
-        List<TimetableState> oldList = state.getTimetableStateList();
+        final List<TimetableState> oldList = state.getTimetableStateList();
 
         for (Timetable t : workbook.getTimetables()) {
             // Reuse conversion helper
@@ -62,17 +62,20 @@ public class GlobalViewPresenter implements
         globalViewModel.firePropertyChange(GlobalViewModel.TIMETABLE_CHANGED);
     }
 
-    // --- HANDLE SWITCH (Selection Change) ---
+    /**
+     * Switches to a different tab in the UI.
+     * @param newIndex the index of the tab to switch to
+     */
     public void prepareSuccessView(int newIndex) {
         final GlobalViewState state = globalViewModel.getState();
         state.setSelectedTabIndex(newIndex);
-        System.out.println("Selected Tab Index: " + newIndex);
         globalViewModel.setState(state);
         globalViewModel.firePropertyChange(GlobalViewModel.TIMETABLE_CHANGED);
     }
 
     /**
-     * @param timetableOutputData
+     * Refresh timetabl on given index.
+     * @param timetableOutputData The output data from the use case.
      */
     @Override
     public void prepareSuccessView(TimetableUpdateOutputData timetableOutputData) {
@@ -81,6 +84,11 @@ public class GlobalViewPresenter implements
         updateSingleTimetable(changedTimetable, tabIndex);
     }
 
+    /**
+     * Updates a single timetable in the UI.
+     * @param changedTimetable The timetable that was changed.
+     * @param tabIndex The index of the timetable in the UI.
+     */
     public void updateSingleTimetable(Timetable changedTimetable, int tabIndex) {
         final GlobalViewState globalState = globalViewModel.getState();
         final List<TimetableState> currentStates = globalState.getTimetableStateList();
@@ -158,10 +166,12 @@ public class GlobalViewPresenter implements
     }
 
     /**
+     * Executes when update failed.
      * @param error The error message to display
      */
     @Override
     public void prepareFailView(String error) {
+        // TODO: Handle error
         System.out.println(error);
     }
 }

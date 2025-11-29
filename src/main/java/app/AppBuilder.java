@@ -1,5 +1,8 @@
 package app;
 
+import java.awt.*;
+
+import javax.swing.*;
 
 import data_access.WorkbookDataAccessObject;
 import interface_adapter.GlobalViewController;
@@ -11,27 +14,24 @@ import use_case.tab_actions.rename_tab.RenameTabInteractor;
 import use_case.tab_actions.switch_tab.SwitchTabInteractor;
 import view.MainPanel;
 
-import javax.swing.*;
-import java.awt.*;
-
 public class AppBuilder {
     private final JPanel cardPanel = new JPanel();
     private final CardLayout cardLayout = new CardLayout();
-
-    private MainPanel mainPanel;
-    private GlobalViewModel globalViewModel;
-    private WorkbookDataAccessObject dataAccess;
 
     public AppBuilder() {
         cardPanel.setLayout(cardLayout);
     }
 
+    /**
+     * Initializes workbook DAO, interface adapters, view models and view.
+     * @return this builder
+     */
     public AppBuilder addMainPanel() {
         // 1. Create DAO
-        dataAccess = new WorkbookDataAccessObject();
+        final WorkbookDataAccessObject dataAccess = new WorkbookDataAccessObject();
 
         // 2. Create Panel and ViewModel
-        globalViewModel = new GlobalViewModel();
+        final GlobalViewModel globalViewModel = new GlobalViewModel();
         final GlobalViewPresenter presenter = new GlobalViewPresenter(globalViewModel);
 
         // 3. Add Interactors
@@ -47,13 +47,17 @@ public class AppBuilder {
                 renameTabInteractor
         );
 
-        mainPanel = new MainPanel(globalViewModel, globalViewController);
+        final MainPanel mainPanel = new MainPanel(globalViewModel, globalViewController);
         cardPanel.add(mainPanel.getRootPanel(), "main");
         presenter.prepareSuccessView(dataAccess.getWorkbook());
         cardLayout.show(cardPanel, "main");
         return this;
     }
 
+    /**
+     * Builds the application.
+     * @return the application frame.
+     */
     public JFrame build() {
         final JFrame application = new JFrame("Jason's Extravagant Timetable Builder");
         application.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

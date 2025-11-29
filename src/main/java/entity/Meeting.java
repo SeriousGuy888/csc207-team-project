@@ -44,10 +44,16 @@ public class Meeting {
         return numConflicts;
     }
 
+    /**
+     * Increments the number of conflict this meeting.
+     */
     public void incrementNumConflicts() {
         this.numConflicts++;
     }
 
+    /**
+     * Resets the number of conflicts to 0.
+     */
     public void resetNumConflicts() {
         this.numConflicts = 0;
     }

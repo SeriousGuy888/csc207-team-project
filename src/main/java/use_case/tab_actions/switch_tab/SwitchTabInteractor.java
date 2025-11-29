@@ -1,6 +1,6 @@
 package use_case.tab_actions.switch_tab;
 
-public class SwitchTabInteractor implements SwitchTabInputBoundary{
+public class SwitchTabInteractor implements SwitchTabInputBoundary {
     private final SwitchTabOutputBoundary presenter;
 
     public SwitchTabInteractor(SwitchTabOutputBoundary presenter) {

@@ -12,7 +12,7 @@ public interface WorkbookDataAccessInterface {
     /**
      * Saves the workbook.
      * Call this after making modifications (add/remove tabs, add courses) to ensure persistence.
-     * * @param workbook the workbook to save.
+     * @param workbook the workbook to save.
      */
     void saveWorkbook(Workbook workbook);
 }
