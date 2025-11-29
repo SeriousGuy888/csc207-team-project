@@ -31,10 +31,10 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
         String sectionName = inputData.getSectionName();
         int selectedTabIndex = inputData.getSelectedTabIndex();
 
+        Workbook workbook = dataAccess.getWorkbook();
         // TODO: add this to the interface and just work with the interface
         // but right now I don't have time 
         // I don't think TAs will check this closely, it is 3am rn 
-        Workbook workbook = dataAccess.getWorkbook();
         List<Timetable> timetables = workbook.getTimetables();
         Timetable timetable = timetables.get(selectedTabIndex);
 
@@ -43,7 +43,7 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
         Optional<Section> sectionOpt = findSectionWithFallback(courseOfferingAsString, sectionName);
 
         if (sectionOpt.isEmpty()) {
-            presenter.prepareFailView("Section not found: " + courseCode + " " + sectionName);
+            presenter.prepareFailView("Section not found: " + courseOfferingAsString + " " + sectionName);
             return;
         }
 
@@ -51,7 +51,7 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
 
         // Check if already in timetable
         if (timetable.getSections().contains(sectionToAdd)) {
-            presenter.prepareFailView("Section already in timetable: " + courseCode + " " + sectionName);
+            presenter.prepareFailView("Section already in timetable: " + courseOfferingAsString + " " + sectionName);
             return;
         }
 
@@ -62,17 +62,17 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
         boolean added = timetable.addSection(sectionToAdd);
 
         if (!added) {
-            presenter.prepareFailView("Failed to add section: " + courseCode + " " + sectionName);
+            presenter.prepareFailView("Failed to add section: " + courseOfferingAsString + " " + sectionName);
             return;
         }
 
         // Prepare output
         AddSectionOutputData outputData = new AddSectionOutputData(
-                timetable,
-                selectedTabIndex,
-                courseCode,
-                sectionName,
-                conflicts
+            timetable,
+            selectedTabIndex,
+            courseOfferingAsString,
+            sectionName,
+            conflicts
         );
         presenter.prepareSuccessView(outputData);
     }
