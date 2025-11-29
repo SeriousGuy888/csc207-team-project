@@ -65,8 +65,12 @@ public class Section {
     /**
      * @return a <strong>copy</strong> of the set of meetings associated with this section.
      */
-    public Set<Meeting> getMeetings() {
+    public Set<Meeting> getMeetingsCopy() {
         return new HashSet<>(meetings);
+    }
+
+    public Set<Meeting> getMeetings() {
+        return meetings;
     }
 
     public enum TeachingMethod {

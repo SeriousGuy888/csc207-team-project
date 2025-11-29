@@ -1,24 +1,51 @@
 package view;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.*;
+
+import com.intellij.uiDesigner.core.GridConstraints;
+import com.intellij.uiDesigner.core.GridLayoutManager;
+import com.intellij.uiDesigner.core.Spacer;
+import interface_adapter.TimetableState;
+import interface_adapter.TimetableState.MeetingBlock;
+
 public class TimetablePanel extends JPanel {
+    public static final int NUM_ROWS = 24;
+    public static final int NUM_COLS = 5;
+    private static final String[] DAYS = {"Mon", "Tue", "Wed", "Thu", "Fri"};
+    private static final String[] TIMES = {
+            "9:00", "9:30", "10:00", "10:30", "11:00", "11:30",
+            "12:00", "12:30", "1:00", "1:30", "2:00", "2:30",
+            "3:00", "3:30", "4:00", "4:30", "5:00", "5:30",
+            "6:00", "6:30", "7:00", "7:30", "8:00", "8:30"
+    };
+
     private JPanel TimetablePanel;
-    private JTable table1;
     private JButton fallButton;
     private JButton winterButton;
     private JButton clearAllButton;
     private JButton exportButton;
     private JButton autogenerateButton;
     private JPanel buttonPanel;
+    private JScrollPane scrollPane;
+    private JPanel containerPanel;
+    private JPanel firstSemesterGridContainer;
+    private JPanel secondSemesterGridContainer;
+    private JPanel[][] firstSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
+    private JPanel[][] secondSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
+
+    private TimetableState currentState;
 
     /**
      * Creates a new TimetablePanel and initializes the term-selection controls.
      */
     public TimetablePanel() {
+        $$$setupUI$$$();
+
+        initializeGrid();
 
         // fall/winter toggle buttons
         fallButton.setEnabled(false);
@@ -33,6 +60,7 @@ public class TimetablePanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 fallButton.setEnabled(false);
                 winterButton.setEnabled(true);
+                scrollPane.setViewportView(firstSemesterGridContainer);
             }
         });
 
@@ -45,8 +73,222 @@ public class TimetablePanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 fallButton.setEnabled(true);
                 winterButton.setEnabled(false);
+                scrollPane.setViewportView(secondSemesterGridContainer);
             }
         });
+
+        this.setLayout(new BorderLayout());
+        this.add(TimetablePanel, BorderLayout.CENTER);
+    }
+
+    public void updateViewModel(TimetableState state) {
+        this.currentState = state;
+        updateView(state);
+    }
+
+    private void initializeGrid() {
+        // 1. Initialize the Container Panels with GridLayout
+        // 24 rows, 5 columns
+        firstSemesterGridContainer = new JPanel(new GridLayout(NUM_COLS, NUM_ROWS));
+        secondSemesterGridContainer = new JPanel(new GridLayout(NUM_COLS, NUM_ROWS));
+
+        // 2. Populate the Grids
+        for (int row = 0; row < NUM_ROWS; row++) {
+            for (int col = 0; col < NUM_COLS; col++) {
+                // --- FIRST SEMESTER SLOT ---
+                final JPanel slot1 = new JPanel(new BorderLayout());
+                slot1.setPreferredSize(new Dimension(80, 50));
+                slot1.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
+                slot1.setBackground(Color.WHITE);
+
+                // Add to array (for logic access) AND container (for display)
+                firstSemesterPanel[row][col] = slot1;
+                firstSemesterGridContainer.add(slot1);
+
+                // --- SECOND SEMESTER SLOT ---
+                // We MUST create a new object. Cannot reuse slot1.
+                final JPanel slot2 = new JPanel(new BorderLayout());
+                slot2.setPreferredSize(new Dimension(80, 50));
+                slot2.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
+                slot2.setBackground(Color.WHITE);
+
+                secondSemesterPanel[row][col] = slot2;
+                secondSemesterGridContainer.add(slot2);
+            }
+        }
+
+        // 3. Set Default View to First Semester
+        scrollPane.setViewportView(firstSemesterGridContainer);
+
+        // 4. Set Scroll Speed (Optional, makes scrolling smoother)
+        scrollPane.getVerticalScrollBar().setUnitIncrement(16);
+    }
+
+    /**
+     * Paints the timetable UI based on the current state.
+     * @param state The current TimetableState to render.
+     */
+    public void updateView(TimetableState state) {
+        if (state == null) {
+            return;
+        }
+
+        final MeetingBlock[][][] firstSemesterGridData = state.getFirstSemesterGrid();
+        final MeetingBlock[][][] secondSemesterGridData = state.getSecondSemesterGrid();
+
+        alignTimetableData(firstSemesterGridData);
+        alignTimetableData(secondSemesterGridData);
+
+        // Iterate over every cell in the UI Grid
+        for (int row = 0; row < NUM_ROWS; row++) {
+            for (int col = 0; col < NUM_COLS; col++) {
+                updateSlot(firstSemesterPanel[row][col], firstSemesterGridData[row][col], row);
+                updateSlot(secondSemesterPanel[row][col], secondSemesterGridData[row][col], row);
+            }
+        }
+    }
+
+    /**
+     * Rearrange meeting blocks to ensure visual continuity
+     * @param grid The MeetingBlock[][][] to align.
+     */
+    // TODO: Migrate this method to presenter
+    private void alignTimetableData(MeetingBlock[][][] grid) {
+        for (int col = 0; col < NUM_COLS; col++) {
+
+            // Keep track of what course was in which visual column in the previous row
+            String prevLeft = null;
+            String prevRight = null;
+
+            for (int row = 0; row < NUM_ROWS; row++) {
+                final MeetingBlock[] blocks = grid[row][col];
+
+                // Step A: Baseline Sort (Alphabetical)
+                // This ensures [B, A] always becomes [A, B] initially
+                sortBlocks(blocks);
+
+                // Step B: Continuity Check
+                // If we have only 1 block, but it matches the "Previous Right", shift it to right.
+                if (blocks[0] != null && blocks[1] == null) {
+                    final String current = blocks[0].getDisplayText();
+
+                    // If this course was on the right previously, and NOT on the left...
+                    if (current.equals(prevRight) && !current.equals(prevLeft)) {
+                        // Shift to Right
+                        blocks[1] = blocks[0];
+                        blocks[0] = null;
+                    }
+                }
+
+                // Step C: Update History for next row
+                prevLeft = (blocks[0] != null) ? blocks[0].getDisplayText() : null;
+                prevRight = (blocks[1] != null) ? blocks[1].getDisplayText() : null;
+            }
+        }
+    }
+
+    private void sortBlocks(MeetingBlock[] blocks) {
+        if (blocks[0] != null && blocks[1] != null) {
+            // Swap if B comes before A alphabetically
+            if (blocks[0].getDisplayText().compareTo(blocks[1].getDisplayText()) > 0) {
+                final MeetingBlock temp = blocks[0];
+                blocks[0] = blocks[1];
+                blocks[1] = temp;
+            }
+        }
+    }
+
+    /**
+     * Updates a single UI slot based on the pre-aligned data.
+     */
+    private void updateSlot(JPanel slotPanel, MeetingBlock[] blocks, int currentRow) {
+        slotPanel.removeAll();
+
+        // CASE 1: Completely Empty
+        if (blocks[0] == null && blocks[1] == null) {
+            slotPanel.setLayout(new BorderLayout());
+            slotPanel.setBackground(Color.WHITE);
+            slotPanel.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
+            slotPanel.revalidate();
+            slotPanel.repaint();
+            return;
+        }
+
+        // Check for Conflict Flag (Logical or Physical)
+        boolean isConflict = (blocks[0] != null && blocks[0].isConflict()) ||
+                (blocks[1] != null && blocks[1].isConflict());
+
+        // CASE 2: No Conflict -> Full Width
+        // Only if we have exactly 1 block at index 0 and it's not flagged as conflict
+        if (!isConflict && blocks[0] != null && blocks[1] == null) {
+            slotPanel.setLayout(new GridLayout(1, 1));
+            slotPanel.setBorder(BorderFactory.createLineBorder(Color.WHITE, 0));
+            slotPanel.add(createBlockPanel(blocks[0], currentRow));
+        }
+
+        // CASE 3: Conflict / Forced Alignment -> Split View (1x2)
+        else {
+            slotPanel.setLayout(new GridLayout(1, 2));
+            slotPanel.setBorder(BorderFactory.createLineBorder(Color.WHITE, 0));
+
+            // Left Half (Index 0)
+            if (blocks[0] != null) {
+                slotPanel.add(createBlockPanel(blocks[0], currentRow));
+            } else {
+                slotPanel.add(createEmptyHalf());
+            }
+
+            // Right Half (Index 1)
+            if (blocks[1] != null) {
+                slotPanel.add(createBlockPanel(blocks[1], currentRow));
+            } else {
+                slotPanel.add(createEmptyHalf());
+            }
+        }
+
+        slotPanel.revalidate();
+        slotPanel.repaint();
+    }
+
+    /**
+     * Creates the visual panel for a single meeting block.
+     * @param block The MeetingBlock to render
+     * @param currentRow The current row index (0-23) used to check text visibility.
+     */
+    private JPanel createBlockPanel(MeetingBlock block, int currentRow) {
+        final JPanel panel = new JPanel(new BorderLayout());
+
+        // Color Logic
+        if (block.isConflict()) {
+            panel.setBackground(new Color(255, 102, 102));
+        } else {
+            panel.setBackground(new Color(173, 216, 230));
+        }
+
+        // Border to distinguish blocks
+        panel.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+
+        // Text Logic: Only show text if this is the Start Row
+        if (currentRow == block.getStartRow()) {
+            // Use HTML to allow multi-line text
+            final JLabel label = new JLabel("<html>" + block.getDisplayText() + "</html>");
+            label.setHorizontalAlignment(SwingConstants.CENTER);
+            label.setVerticalAlignment(SwingConstants.TOP);
+            label.setFont(new Font("SansSerif", Font.PLAIN, 10));
+            panel.add(label, BorderLayout.CENTER);
+        }
+
+        return panel;
+    }
+
+    /**
+     * Creates a white/transparent spacer for when a slot is split but only one side has a course.
+     */
+    private JPanel createEmptyHalf() {
+        final JPanel panel = new JPanel();
+        panel.setBackground(Color.WHITE);
+        panel.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY, 1));
+        return panel;
     }
 
     /**
@@ -75,42 +317,42 @@ public class TimetablePanel extends JPanel {
      */
     private void $$$setupUI$$$() {
         TimetablePanel = new JPanel();
-        TimetablePanel.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(3, 8, new Insets(0, 0, 0, 0), -1, -1));
+        TimetablePanel.setLayout(new GridLayoutManager(3, 8, new Insets(0, 0, 0, 0), -1, -1));
         TimetablePanel.setMinimumSize(new Dimension(36, 25));
         TimetablePanel.setPreferredSize(new Dimension(36, 25));
         buttonPanel = new JPanel();
-        buttonPanel.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(1, 3, new Insets(0, 0, 0, 0), -1, -1));
-        TimetablePanel.add(buttonPanel, new com.intellij.uiDesigner.core.GridConstraints(1, 3, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
+        buttonPanel.setLayout(new GridLayoutManager(1, 3, new Insets(0, 0, 0, 0), -1, -1));
+        TimetablePanel.add(buttonPanel, new GridConstraints(1, 3, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
         fallButton = new JButton();
         fallButton.setText("Fall");
-        buttonPanel.add(fallButton, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(80, 34), null, 0, false));
+        buttonPanel.add(fallButton, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(80, 34), null, 0, false));
         winterButton = new JButton();
         winterButton.setText("Winter");
-        buttonPanel.add(winterButton, new com.intellij.uiDesigner.core.GridConstraints(0, 1, 1, 2, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(80, 34), null, 0, false));
+        buttonPanel.add(winterButton, new GridConstraints(0, 1, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(80, 34), null, 0, false));
         clearAllButton = new JButton();
         clearAllButton.setText("Clear All");
-        TimetablePanel.add(clearAllButton, new com.intellij.uiDesigner.core.GridConstraints(1, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(80, 34), null, 0, false));
-        final com.intellij.uiDesigner.core.Spacer spacer1 = new com.intellij.uiDesigner.core.Spacer();
-        TimetablePanel.add(spacer1, new com.intellij.uiDesigner.core.GridConstraints(1, 2, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, 1, null, null, null, 0, false));
+        TimetablePanel.add(clearAllButton, new GridConstraints(1, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(80, 34), null, 0, false));
+        final Spacer spacer1 = new Spacer();
+        TimetablePanel.add(spacer1, new GridConstraints(1, 2, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, 1, null, null, null, 0, false));
         exportButton = new JButton();
         exportButton.setText("Export");
-        TimetablePanel.add(exportButton, new com.intellij.uiDesigner.core.GridConstraints(1, 6, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(80, 34), null, 0, false));
+        TimetablePanel.add(exportButton, new GridConstraints(1, 6, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(80, 34), null, 0, false));
         autogenerateButton = new JButton();
         autogenerateButton.setText("Autogenerate");
-        TimetablePanel.add(autogenerateButton, new com.intellij.uiDesigner.core.GridConstraints(1, 5, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(110, 34), null, 0, false));
-        final com.intellij.uiDesigner.core.Spacer spacer2 = new com.intellij.uiDesigner.core.Spacer();
-        TimetablePanel.add(spacer2, new com.intellij.uiDesigner.core.GridConstraints(1, 4, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, 1, null, null, null, 0, false));
-        table1 = new JTable();
-        TimetablePanel.add(table1, new com.intellij.uiDesigner.core.GridConstraints(2, 1, 1, 6, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, new Dimension(150, 50), new Dimension(150, 50), new Dimension(150, 50), 0, false));
+        TimetablePanel.add(autogenerateButton, new GridConstraints(1, 5, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(110, 34), null, 0, false));
+        final Spacer spacer2 = new Spacer();
+        TimetablePanel.add(spacer2, new GridConstraints(1, 4, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, 1, null, null, null, 0, false));
         final JLabel label1 = new JLabel();
         label1.setText("");
-        TimetablePanel.add(label1, new com.intellij.uiDesigner.core.GridConstraints(0, 3, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        TimetablePanel.add(label1, new GridConstraints(0, 3, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JLabel label2 = new JLabel();
         label2.setText("");
-        TimetablePanel.add(label2, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        TimetablePanel.add(label2, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JLabel label3 = new JLabel();
         label3.setText("");
-        TimetablePanel.add(label3, new com.intellij.uiDesigner.core.GridConstraints(1, 7, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        TimetablePanel.add(label3, new GridConstraints(1, 7, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        scrollPane = new JScrollPane();
+        TimetablePanel.add(scrollPane, new GridConstraints(2, 1, 1, 6, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
     }
 
     /**
