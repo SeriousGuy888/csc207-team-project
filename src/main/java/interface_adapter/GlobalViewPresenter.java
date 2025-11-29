@@ -41,6 +41,7 @@ public class GlobalViewPresenter implements
         // 1. Rebuild the entire list of TimetableStates
         // (Since a tab was added/removed, indices have shifted)
         final List<TimetableState> newStates = new ArrayList<>();
+        List<TimetableState> oldList = state.getTimetableStateList();
 
         for (Timetable t : workbook.getTimetables()) {
             // Reuse conversion helper
@@ -50,7 +51,10 @@ public class GlobalViewPresenter implements
         state.setTimetableStateList(newStates);
 
         // Adjust selection if out of bounds (e.g. deleted last tab)
-        if (state.getSelectedTabIndex() >= newStates.size()) {
+        if (newStates.size() > oldList.size()) {
+            state.setSelectedTabIndex(newStates.size() - 1);
+        }
+        else if (state.getSelectedTabIndex() >= newStates.size()) {
             state.setSelectedTabIndex(Math.max(0, newStates.size() - 1));
         }
 
@@ -62,7 +66,7 @@ public class GlobalViewPresenter implements
     public void prepareSuccessView(int newIndex) {
         final GlobalViewState state = globalViewModel.getState();
         state.setSelectedTabIndex(newIndex);
-
+        System.out.println("Selected Tab Index: " + newIndex);
         globalViewModel.setState(state);
         globalViewModel.firePropertyChange(GlobalViewModel.TIMETABLE_CHANGED);
     }

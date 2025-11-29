@@ -68,7 +68,6 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
      * Configures the tabbed pane's change listener to support dynamic tab creation
      * through the final "+" tab. When the user selects the "+" tab, a new timetable
      * tab is automatically inserted immediately before it.
-     * The method also enforces a maximum {@link #MAX_TABS} number of tabs.
      */
     private void setupListeners() {
         tabbedPane.addChangeListener(e -> {
@@ -145,6 +144,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
     private void rebuildTabs(ArrayList<TimetableState> stateList) {
         isRebuilding = true;
         // Remove all tabs EXCEPT the last one (the "+")
+        System.out.println("rebuild tabs");
         while (tabbedPane.getTabCount() > 1) {
             tabbedPane.remove(0);
         }
@@ -172,6 +172,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
      * Updates content without destroying the tab components.
      */
     private void refreshTabContent(ArrayList<TimetableState> stateList) {
+        System.out.println("refreshed tabs");
         for (int i = 0; i < stateList.size(); i++) {
             TimetableState state = stateList.get(i);
             String newName = state.getTimetableName();
