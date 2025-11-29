@@ -57,6 +57,10 @@ public class AutogenInteractorTest {
             15 * MILLIS_PER_HOUR
     );
 
+    private static final Semester FIRST_SEMESTER = Semester.FIRST;
+    private static final Semester SECOND_SEMESTER = Semester.SECOND;
+
+
     // ------------------------------------------------------------------------
     // Tests
     // ------------------------------------------------------------------------
@@ -182,6 +186,43 @@ public class AutogenInteractorTest {
         }
     }
 
+    @Test
+    void autogenWorksForDifferentSemesters() {
+        AutogenDataAccessInterface dao = new FakeAutogenDataAccessDifferentSemesters();
+        TestAutogenPresenter presenter = new TestAutogenPresenter();
+        AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
+
+        // Block a time that doesn't intersect with any section (e.g., Sunday 00:00–01:00)
+        WeeklyOccupancy nonConflictingBlockedTime = SUNDAY_00_01;
+
+        AutogenInputData inputData = new AutogenInputData(
+                Set.of(),
+                Set.of(),
+                nonConflictingBlockedTime
+        );
+
+        interactor.execute(inputData);
+
+        System.out.println("\n*** COURSES IN DIFFERENT SEMESTERS ***");
+        if (presenter.lastOutput != null) {
+            printTimetable(presenter.lastOutput.getGeneratedTimetable());
+        } else {
+            System.out.println("(No timetable generated)");
+        }
+        System.out.println("*** END PRINT ***\n");
+
+        // Assertions happen *after* printing, so printing always runs
+        assertNull(presenter.lastError,
+                "Should not have an error for two courses in diff semesters");
+
+        assertNotNull(presenter.lastOutput,
+                "Should produce output data for two simple courses");
+
+        assertEquals(2,
+                presenter.lastOutput.getGeneratedTimetable().getSections().size(),
+                "Expected 2 sections in the generated timetable");
+    }
+
     // ------------------------------------------------------------------------
     // Helper: print timetable
     // ------------------------------------------------------------------------
@@ -238,7 +279,7 @@ public class AutogenInteractorTest {
             );
             Section mat237Lec0101 = new Section(mat237, "LEC0101", Section.TeachingMethod.LECTURE);
             mat237Lec0101.addMeeting(new Meeting(
-                    new UofTLocation("MY", "150"),
+                    new UofTLocation("MY", "150"), FIRST_SEMESTER,
                     THURSDAY_13_15
             ));
             mat237.addAvailableSection(mat237Lec0101);
@@ -251,7 +292,7 @@ public class AutogenInteractorTest {
             );
             Section csc207Lec0101 = new Section(csc207, "LEC0101", Section.TeachingMethod.LECTURE);
             csc207Lec0101.addMeeting(new Meeting(
-                    new UofTLocation("BA", "2175"),
+                    new UofTLocation("BA", "2175"), FIRST_SEMESTER,
                     MONDAY_10_11
             ));
             csc207.addAvailableSection(csc207Lec0101);
@@ -273,7 +314,7 @@ public class AutogenInteractorTest {
             );
             Section lec0101 = new Section(mat237, "LEC0101", Section.TeachingMethod.LECTURE);
             lec0101.addMeeting(new Meeting(
-                    new UofTLocation("MY", "150"),
+                    new UofTLocation("MY", "150"), FIRST_SEMESTER,
                     MONDAY_10_12
             ));
             mat237.addAvailableSection(lec0101);
@@ -304,7 +345,7 @@ public class AutogenInteractorTest {
                     Section.TeachingMethod.LECTURE
             );
             mat237A1.addMeeting(new Meeting(
-                    new UofTLocation("MY", "150"),
+                    new UofTLocation("MY", "150"), FIRST_SEMESTER,
                     MONDAY_10_12
             ));
 
@@ -315,7 +356,7 @@ public class AutogenInteractorTest {
                     Section.TeachingMethod.LECTURE
             );
             mat237A2.addMeeting(new Meeting(
-                    new UofTLocation("MY", "150"),
+                    new UofTLocation("MY", "150"), FIRST_SEMESTER,
                     MONDAY_14_16
             ));
 
@@ -336,7 +377,7 @@ public class AutogenInteractorTest {
                     Section.TeachingMethod.LECTURE
             );
             csc207B1.addMeeting(new Meeting(
-                    new UofTLocation("BA", "2175"),
+                    new UofTLocation("BA", "2175"), FIRST_SEMESTER,
                     MONDAY_10_12
             ));
 
@@ -347,11 +388,61 @@ public class AutogenInteractorTest {
                     Section.TeachingMethod.LECTURE
             );
             csc207B2.addMeeting(new Meeting(
-                    new UofTLocation("BA", "2175"),
+                    new UofTLocation("BA", "2175"), FIRST_SEMESTER,
                     MONDAY_12_14
             ));
 
             csc207.addAvailableSection(csc207B1);
+            csc207.addAvailableSection(csc207B2);
+
+            // Return both offerings; the interactor will build CourseVariables from them.
+            return List.of(mat237, csc207);
+        }
+    }
+
+    private static class FakeAutogenDataAccessDifferentSemesters implements AutogenDataAccessInterface {
+
+        @Override
+        public List<CourseOffering> getSelectedCourseOfferings(Set<CourseCode> selectedCourses) {
+            // ----- Course 1: MAT237 with two sections -----
+            CourseOffering mat237 = new CourseOffering(
+                    new CourseCode("MAT237Y1"),
+                    "Pain and Agony",
+                    "two semesters of it"
+            );
+
+            // Section A1: Monday 10:00–12:00
+            Section mat237A1 = new Section(
+                    mat237,
+                    "LEC0101",
+                    Section.TeachingMethod.LECTURE
+            );
+            mat237A1.addMeeting(new Meeting(
+                    new UofTLocation("MY", "150"), FIRST_SEMESTER,
+                    MONDAY_10_12
+            ));
+
+
+            mat237.addAvailableSection(mat237A1);
+
+            // ----- Course 2: CSC207 with two sections -----
+            CourseOffering csc207 = new CourseOffering(
+                    new CourseCode("CSC207H1"),
+                    "Software Design",
+                    "pain but with Java"
+            );
+
+            // Section B2: Same time but different semester
+            Section csc207B2 = new Section(
+                    csc207,
+                    "LEC0201",
+                    Section.TeachingMethod.LECTURE
+            );
+            csc207B2.addMeeting(new Meeting(
+                    new UofTLocation("BA", "2175"), SECOND_SEMESTER,
+                    MONDAY_10_12
+            ));
+
             csc207.addAvailableSection(csc207B2);
 
             // Return both offerings; the interactor will build CourseVariables from them.
