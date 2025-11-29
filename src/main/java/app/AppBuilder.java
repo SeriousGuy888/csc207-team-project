@@ -2,10 +2,12 @@ package app;
 
 
 import data_access.WorkbookDataAccessObject;
+import interface_adapter.GlobalViewController;
 import interface_adapter.GlobalViewModel;
 import interface_adapter.GlobalViewPresenter;
 import use_case.tab_actions.add_tab.AddTabInteractor;
 import use_case.tab_actions.delete_tab.DeleteTabInteractor;
+import use_case.tab_actions.rename_tab.RenameTabInteractor;
 import use_case.tab_actions.switch_tab.SwitchTabInteractor;
 import view.MainPanel;
 
@@ -36,9 +38,18 @@ public class AppBuilder {
         final AddTabInteractor addTabInteractor = new AddTabInteractor(dataAccess, presenter);
         final DeleteTabInteractor removeTabInteractor = new DeleteTabInteractor(dataAccess, presenter);
         final SwitchTabInteractor switchTabInteractor = new SwitchTabInteractor(presenter);
+        final RenameTabInteractor renameTabInteractor = new RenameTabInteractor(dataAccess, presenter);
 
-        mainPanel = new MainPanel(globalViewModel);
+        final GlobalViewController globalViewController = new GlobalViewController(
+                addTabInteractor,
+                removeTabInteractor,
+                switchTabInteractor,
+                renameTabInteractor
+        );
+
+        mainPanel = new MainPanel(globalViewModel, globalViewController);
         cardPanel.add(mainPanel.getRootPanel(), "main");
+        presenter.prepareSuccessView(dataAccess.getWorkbook());
         cardLayout.show(cardPanel, "main");
         return this;
     }

@@ -3,6 +3,7 @@ package view;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
+import entity.Meeting;
 import interface_adapter.TimetableState;
 import interface_adapter.TimetableState.MeetingBlock;
 
@@ -10,7 +11,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 public class TimetablePanel extends JPanel {
     private JPanel TimetablePanel;
@@ -21,15 +21,20 @@ public class TimetablePanel extends JPanel {
     private JButton autogenerateButton;
     private JPanel buttonPanel;
     private JScrollPane scrollPane;
+    private JPanel containerPanel;
+    private JPanel firstSemesterGridContainer;
+    private JPanel secondSemesterGridContainer;
     private JPanel[][] firstSemesterPanel = new JPanel[24][5];
     private JPanel[][] secondSemesterPanel = new JPanel[24][5];
 
+    private TimetableState currentState;
+
     private static final String[] DAYS = {"Mon", "Tue", "Wed", "Thu", "Fri"};
     private static final String[] TIMES = {
-            "9:00", "9:30", "10:00", "10:30", "11:00", "11:30",
-            "12:00", "12:30", "1:00", "1:30", "2:00", "2:30",
-            "3:00", "3:30", "4:00", "4:30", "5:00", "5:30",
-            "6:00", "6:30", "7:00", "7:30", "8:00", "8:30"};
+        "9:00", "9:30", "10:00", "10:30", "11:00", "11:30",
+        "12:00", "12:30", "1:00", "1:30", "2:00", "2:30",
+        "3:00", "3:30", "4:00", "4:30", "5:00", "5:30",
+        "6:00", "6:30", "7:00", "7:30", "8:00", "8:30"};
 
     private boolean isFirst = true;
 
@@ -37,6 +42,9 @@ public class TimetablePanel extends JPanel {
      * Creates a new TimetablePanel and initializes the term-selection controls.
      */
     public TimetablePanel() {
+        $$$setupUI$$$();
+
+        initializeGrid();
 
         // fall/winter toggle buttons
         fallButton.setEnabled(false);
@@ -51,6 +59,7 @@ public class TimetablePanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 fallButton.setEnabled(false);
                 winterButton.setEnabled(true);
+                scrollPane.setViewportView(firstSemesterGridContainer);
             }
         });
 
@@ -63,65 +72,173 @@ public class TimetablePanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 fallButton.setEnabled(true);
                 winterButton.setEnabled(false);
+                scrollPane.setViewportView(secondSemesterGridContainer);
             }
         });
+
+        this.setLayout(new BorderLayout());
+        this.add(TimetablePanel, BorderLayout.CENTER);
+    }
+
+    public void updateViewModel(TimetableState state) {
+        this.currentState = state;
+        updateView(state);
+    }
+
+    private void initializeGrid() {
+        // 1. Initialize the Container Panels with GridLayout
+        // 24 rows, 5 columns
+        firstSemesterGridContainer = new JPanel(new GridLayout(24, 5));
+        secondSemesterGridContainer = new JPanel(new GridLayout(24, 5));
+
+        // 2. Populate the Grids
+        for (int row = 0; row < 24; row++) {
+            for (int col = 0; col < 5; col++) {
+                // --- FIRST SEMESTER SLOT ---
+                JPanel slot1 = new JPanel(new BorderLayout());
+                slot1.setPreferredSize(new Dimension(80, 50));
+                slot1.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
+                slot1.setBackground(Color.WHITE);
+
+                // Add to array (for logic access) AND container (for display)
+                firstSemesterPanel[row][col] = slot1;
+                firstSemesterGridContainer.add(slot1);
+
+                // --- SECOND SEMESTER SLOT ---
+                // We MUST create a new object. Cannot reuse slot1.
+                JPanel slot2 = new JPanel(new BorderLayout());
+                slot2.setPreferredSize(new Dimension(100, 50));
+                slot2.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
+                slot2.setBackground(Color.WHITE);
+
+                secondSemesterPanel[row][col] = slot2;
+                secondSemesterGridContainer.add(slot2);
+            }
+        }
+
+        // 3. Set Default View to First Semester
+        scrollPane.setViewportView(firstSemesterGridContainer);
+
+        // 4. Set Scroll Speed (Optional, makes scrolling smoother)
+        scrollPane.getVerticalScrollBar().setUnitIncrement(16);
     }
 
     // This is the ONLY entry point for data. Adheres to Clean Architecture.
     public void updateView(TimetableState state) {
-        if (state == null) return;
+        if (state == null) {
+            return;
+        }
 
-        ArrayList<MeetingBlock>[][] firstSemesterGridData = (ArrayList<MeetingBlock>[][]) state.getFirstSemesterGrid();
-        ArrayList<MeetingBlock>[][] secondSemesterGridData = (ArrayList<MeetingBlock>[][]) state.getSecondSemesterGrid();
+        final MeetingBlock[][][] firstSemesterGridData = state.getFirstSemesterGrid();
+        final MeetingBlock[][][] secondSemesterGridData = state.getSecondSemesterGrid();
+
+        alignTimetableData(firstSemesterGridData);
+        alignTimetableData(secondSemesterGridData);
 
         // Iterate over every cell in the UI Grid
         for (int row = 0; row < 24; row++) {
             for (int col = 0; col < 5; col++) {
-                updateSlot(firstSemesterPanel[row][col], firstSemesterGridData[row][col]);
-                updateSlot(secondSemesterPanel[row][col], secondSemesterGridData[row][col]);
+                updateSlot(firstSemesterPanel[row][col], firstSemesterGridData[row][col], row);
+                updateSlot(secondSemesterPanel[row][col], secondSemesterGridData[row][col], row);
             }
         }
     }
 
-    private void updateSlot(JPanel slotPanel, ArrayList<MeetingBlock> blocks) {
-        slotPanel.removeAll(); // Clear old drawings
+    /**
+     * Helper to rearrange meeting blocks for visual continuity.
+     * Ensures that if a course starts on the Right side (Index 1), it stays there.
+     */
+    private void alignTimetableData(MeetingBlock[][][] grid) {
+        // Iterate Column by Column (Mon -> Fri)
+        for (int col = 0; col < 5; col++) {
 
-        // CASE 1: Empty Slot
-        if (blocks.isEmpty()) {
-            slotPanel.setBackground(Color.WHITE);
-            slotPanel.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
-            slotPanel.setLayout(new BorderLayout());
-        }
-        // CASE 2: Single or Multiple Courses (Standard or Conflict)
-        else {
-            // LOGIC: If size > 1, use GridLayout to split. If size == 1, use BorderLayout.
-            // Actually, GridLayout(1, size) handles size=1 perfectly too!
-            slotPanel.setLayout(new GridLayout(1, blocks.size()));
+            // Keep track of what course was in which visual column in the previous row
+            String prevLeft = null;
+            String prevRight = null;
 
-            // If ANY block is a conflict, outline the whole cell in Red
-            boolean hasConflict = blocks.stream().anyMatch(MeetingBlock::isConflict);
-            Color borderColor = hasConflict ? Color.RED : Color.LIGHT_GRAY;
-            int borderWidth = hasConflict ? 2 : 1;
-            slotPanel.setBorder(BorderFactory.createLineBorder(borderColor, borderWidth));
+            for (int row = 0; row < 24; row++) {
+                MeetingBlock[] blocks = grid[row][col];
 
-            for (MeetingBlock block : blocks) {
-                JPanel blockPanel = new JPanel(new BorderLayout());
+                // Step A: Baseline Sort (Alphabetical)
+                // This ensures [B, A] always becomes [A, B] initially
+                sortBlocks(blocks);
 
-                // Color logic
-                if (block.isConflict()) {
-                    blockPanel.setBackground(new Color(255, 200, 200)); // Light Red
-                } else {
-                    blockPanel.setBackground(new Color(173, 216, 230)); // Light Blue
+                // Step B: Continuity Check
+                // If we have only 1 block, but it matches the "Previous Right", shift it to right.
+                if (blocks[0] != null && blocks[1] == null) {
+                    String current = blocks[0].getDisplayText();
+
+                    // If this course was on the right previously, and NOT on the left...
+                    if (current.equals(prevRight) && !current.equals(prevLeft)) {
+                        // Shift to Right
+                        blocks[1] = blocks[0];
+                        blocks[0] = null;
+                    }
                 }
 
-                // Add border to separate split blocks
-                blockPanel.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+                // Step C: Update History for next row
+                prevLeft = (blocks[0] != null) ? blocks[0].getDisplayText() : null;
+                prevRight = (blocks[1] != null) ? blocks[1].getDisplayText() : null;
+            }
+        }
+    }
 
-                JLabel label = new JLabel(block.getDisplayText(), SwingConstants.CENTER);
-                label.setFont(new Font("SansSerif", Font.PLAIN, 10));
-                blockPanel.add(label, BorderLayout.CENTER);
+    private void sortBlocks(MeetingBlock[] blocks) {
+        if (blocks[0] != null && blocks[1] != null) {
+            // Swap if B comes before A alphabetically
+            if (blocks[0].getDisplayText().compareTo(blocks[1].getDisplayText()) > 0) {
+                MeetingBlock temp = blocks[0];
+                blocks[0] = blocks[1];
+                blocks[1] = temp;
+            }
+        }
+    }
 
-                slotPanel.add(blockPanel);
+    /**
+     * Updates a single UI slot based on the pre-aligned data.
+     */
+    private void updateSlot(JPanel slotPanel, MeetingBlock[] blocks, int currentRow) {
+        slotPanel.removeAll();
+
+        // CASE 1: Completely Empty
+        if (blocks[0] == null && blocks[1] == null) {
+            slotPanel.setLayout(new BorderLayout());
+            slotPanel.setBackground(Color.WHITE);
+            slotPanel.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
+            slotPanel.revalidate();
+            slotPanel.repaint();
+            return;
+        }
+
+        // Check for Conflict Flag (Logical or Physical)
+        boolean isConflict = (blocks[0] != null && blocks[0].isConflict()) ||
+                (blocks[1] != null && blocks[1].isConflict());
+
+        // CASE 2: No Conflict -> Full Width
+        // Only if we have exactly 1 block at index 0 and it's not flagged as conflict
+        if (!isConflict && blocks[0] != null && blocks[1] == null) {
+            slotPanel.setLayout(new GridLayout(1, 1));
+            slotPanel.setBorder(BorderFactory.createLineBorder(Color.WHITE, 0));
+            slotPanel.add(createBlockPanel(blocks[0], currentRow));
+        }
+
+        // CASE 3: Conflict / Forced Alignment -> Split View (1x2)
+        else {
+            slotPanel.setLayout(new GridLayout(1, 2));
+            slotPanel.setBorder(BorderFactory.createLineBorder(Color.WHITE, 0));
+
+            // Left Half (Index 0)
+            if (blocks[0] != null) {
+                slotPanel.add(createBlockPanel(blocks[0], currentRow));
+            } else {
+                slotPanel.add(createEmptyHalf());
+            }
+
+            // Right Half (Index 1)
+            if (blocks[1] != null) {
+                slotPanel.add(createBlockPanel(blocks[1], currentRow));
+            } else {
+                slotPanel.add(createEmptyHalf());
             }
         }
 
@@ -129,21 +246,45 @@ public class TimetablePanel extends JPanel {
         slotPanel.repaint();
     }
 
-    private void initializeGrid() {
-        // (Keep your existing initialization logic, just refined for array access)
-        JPanel gridPanel = new JPanel(new GridLayout(24, 5));
+    /**
+     * Creates the visual panel for a single meeting block.
+     * @param block The MeetingBlock to render
+     * @param currentRow The current row index (0-23) used to check text visibility.
+     */
+    private JPanel createBlockPanel(MeetingBlock block, int currentRow) {
+        final JPanel panel = new JPanel(new BorderLayout());
 
-        // ... (Add your Headers here like in your snippet) ...
-
-        for (int row = 0; row < 24; row++) {
-            for (int col = 0; col < 5; col++) {
-                JPanel slot = new JPanel();
-                slot.setPreferredSize(new Dimension(100, 25)); // Set default size
-                firstSemesterPanel[row][col] = slot;
-                secondSemesterPanel[row][col] = slot;
-                gridPanel.add(slot);
-            }
+        // Color Logic
+        if (block.isConflict()) {
+            panel.setBackground(new Color(255, 102, 102));
+        } else {
+            panel.setBackground(new Color(173, 216, 230));
         }
+
+        // Border to distinguish blocks
+        panel.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+
+        // Text Logic: Only show text if this is the Start Row
+        if (currentRow == block.getStartRow()) {
+            // Use HTML to allow multi-line text
+            final JLabel label = new JLabel("<html>" + block.getDisplayText() + "</html>");
+            label.setHorizontalAlignment(SwingConstants.CENTER);
+            label.setVerticalAlignment(SwingConstants.TOP);
+            label.setFont(new Font("SansSerif", Font.PLAIN, 10));
+            panel.add(label, BorderLayout.CENTER);
+        }
+
+        return panel;
+    }
+
+    /**
+     * Creates a white/transparent spacer for when a slot is split but only one side has a course.
+     */
+    private JPanel createEmptyHalf() {
+        final JPanel panel = new JPanel();
+        panel.setBackground(Color.WHITE);
+        panel.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY, 1));
+        return panel;
     }
 
     /**

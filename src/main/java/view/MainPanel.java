@@ -24,18 +24,12 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
     private JTabbedPane tabbedPane;
 
     private final GlobalViewModel globalViewModel;
-    private final GlobalViewController globalViewController
+    private final GlobalViewController globalViewController;
 
     /**
      * The maximum amount of tabs tabbedPane can have.
      */
     private static final int MAX_TABS = 8;
-
-    /**
-     * Records whether the program is adding/deleting a tab.
-     * This helper variable prevents unwanted behaviors when adding/deleting tabs.
-     */
-    private boolean isModifyingTab = false;
 
     /**
      * Counter for the default naming of added tabs.
@@ -92,6 +86,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
                 if (maxIndex > 0) tabbedPane.setSelectedIndex(selectedIndex - 1);
 
                 // CALL CONTROLLER
+                System.out.println("add tab called controller");
                 globalViewController.addTab();
             }
 
@@ -99,6 +94,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
             else if (selectedIndex >= 0) {
                 // Check against state to prevent infinite loops (View updates State -> State updates View -> View fires listener)
                 if (globalViewModel.getState().getSelectedTabIndex() != selectedIndex) {
+                    System.out.println("switched to tab " + selectedIndex);
                     globalViewController.switchTab(selectedIndex);
                 }
             }
@@ -157,13 +153,52 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
             String title = ts.getTimetableName();
 
             TimetablePanel panel = new TimetablePanel();
-            panel.updateViewModel(ts); // Push initial data
+            panel.updateView(ts);
 
             // Note: We assume TimetablePanel extends JPanel and adds its content to itself.
             // If TimetablePanel relies on .getRootPanel(), use: panel.getRootPanel()
             // However, we need to cast it back to TimetablePanel later, so extending JPanel is best.
-            tabbedPane.insertTab(title, null, panel, null, i);
-            tabbedPane.setTabComponentAt(i, createTabHeader(title));
+            tabbedPane.insertTab(title, null, panel.getRootPanel(), null, i);
+            tabbedPane.setTabComponentAt(i, createTabHeader(title, i));
+        }
+    }
+
+    /**
+     * Light Refresh: Used when a course is added, or a tab is renamed.
+     * Updates content without destroying the tab components.
+     */
+    private void refreshTabContent(ArrayList<TimetableState> stateList) {
+        for (int i = 0; i < stateList.size(); i++) {
+            TimetableState state = stateList.get(i);
+            String newName = state.getTimetableName();
+
+            // 1. Update Grid Content
+            Component comp = tabbedPane.getComponentAt(i);
+            if (comp instanceof TimetablePanel) {
+                ((TimetablePanel) comp).updateView(state);
+            }
+
+            // 2. Update Title (if changed via Rename)
+            // We check the custom tab component's label
+            updateTabHeaderTitle(i, newName);
+        }
+    }
+
+    private void updateTabHeaderTitle(int index, String newName) {
+        Component tabComp = tabbedPane.getTabComponentAt(index);
+        if (tabComp instanceof JPanel) {
+            JPanel header = (JPanel) tabComp;
+            for (Component c : header.getComponents()) {
+                if (c instanceof JLabel) {
+                    JLabel titleLabel = (JLabel) c;
+                    // Only update if text is actually different
+                    if (!titleLabel.getText().trim().equals(newName)) {
+                        titleLabel.setText(newName);
+                        tabbedPane.setTitleAt(index, newName); // Update internal title too
+                    }
+                    break;
+                }
+            }
         }
     }
 
@@ -177,7 +212,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
      * @param title the text to display in the tab header
      * @return a Swing component representing the tab header
      */
-    private Component createTabHeader(String title) {
+    private Component createTabHeader(String title, int index) {
         JPanel tabPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT, 0, 0));
         tabPanel.setOpaque(false);
 
@@ -193,17 +228,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
 
         // close button logic
         closeButton.addActionListener(e -> {
-            int i = tabbedPane.indexOfTabComponent(tabPanel);
-
-            // 1. Check minimum tab count first (so we don't ask to delete if they can't)
-            if (tabbedPane.getTabCount() <= 2) {
-                JOptionPane.showMessageDialog(tabbedPane,
-                        "You must have at least 1 timetable.");
-                return;
-            }
-
-            // 2. Show the Confirmation Dialog
-            int choice = JOptionPane.showConfirmDialog(
+            int response = JOptionPane.showConfirmDialog(
                     tabbedPane,
                     "Are you sure you want to delete this timetable?",
                     "Confirm Deletion",
@@ -211,12 +236,8 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
                     JOptionPane.WARNING_MESSAGE
             );
 
-            // 3. Only proceed if the user clicked "Yes"
-            if (choice == JOptionPane.YES_OPTION) {
-                isModifyingTab = true;
-                tabbedPane.remove(i);
-                isModifyingTab = false;
-                tabbedPane.setSelectedIndex(i == tabbedPane.getTabCount() - 1 ? i - 1 : i);
+            if (response == JOptionPane.YES_OPTION) {
+                globalViewController.deleteTab(index);
             }
         });
 
@@ -255,21 +276,15 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
                             tabbedPane, "Enter new timetable name:", current
                     );
                     if (newTitle != null && !newTitle.trim().isEmpty()) {
-                        titleLabel.setText(newTitle.trim() + " ");
-                        tabbedPane.setTitleAt(index, newTitle.trim());
+                        globalViewController.renameTab(index, newTitle.trim());
                     }
                 } else if (e.getClickCount() == 1 && SwingUtilities.isLeftMouseButton(e)) {
-                    tabbedPane.setSelectedIndex(tabbedPane.indexOfTabComponent(tabHeader));
+                    int index = tabbedPane.indexOfTabComponent(tabHeader);
+                    globalViewController.switchTab(index);
                 }
             }
         });
     }
-
-    @Override
-    public void propertyChange(PropertyChangeEvent evt) {
-        System.out.println("received state change in mainpanel from " + evt.getSource() + ". (not implemented yet)");
-    }
-
 
     {
 // GUI initializer generated by IntelliJ IDEA GUI Designer

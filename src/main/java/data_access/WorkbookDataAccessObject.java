@@ -12,7 +12,7 @@ public class WorkbookDataAccessObject implements WorkbookDataAccessInterface{
     public WorkbookDataAccessObject() {
         // Initialize with a default empty workbook containing 1 timetable
         this.currentWorkbook = new Workbook(new ArrayList<>());
-         this.currentWorkbook.addTimetable(new Timetable());
+        this.currentWorkbook.addTimetable(new Timetable());
     }
 
     @Override
