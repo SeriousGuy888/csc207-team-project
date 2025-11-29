@@ -56,9 +56,9 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
      */
     private Stream<DisplaySectionDetails> mapSectionToDisplayDetails(Section section) {
 
-        final String sectionId = section.getSectionName();
+        final String sectionName = section.getSectionName();
         // Call the lookup method using the section's unique name
-        final String professorName = getProfessorNameBySectionId(sectionId);
+        final String professorName = getProfessorNameBySectionId(sectionName);
 
         // Create the placeholder professor DTO that ONLY contains the name
         // The Interactor will fill in the rating/link later
@@ -76,7 +76,6 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
                     final String location = meeting.getLocation().toString();
                     return new DisplaySectionDetails(
                             section.getSectionName(),
-                            sectionId,
                             meetingTimes,
                             location,
                             placeholderProf
