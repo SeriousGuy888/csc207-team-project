@@ -13,9 +13,20 @@ public class RateMyProfOutputData {
         this.profLastName = profLastName;
     }
 
+    /**
+     * Returns the professor's first name.
+     *
+     * @return the first name of this professor
+     */
     public String getprofFirstName() {
         return this.profFirstName;
     }
+
+    /**
+     * Returns the professor's last name.
+     *
+     * @return the last name of this professor
+     */
     public String getprofLastName() {
         return this.profLastName;
     }

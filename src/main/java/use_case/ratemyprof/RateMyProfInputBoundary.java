@@ -1,7 +1,7 @@
 package use_case.ratemyprof;
 
 /**
- * Input Boundary for RateMyProf Use Case
+ * Input Boundary for RateMyProf Use Case.
  */
 public interface RateMyProfInputBoundary {
 
