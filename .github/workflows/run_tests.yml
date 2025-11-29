@@ -1,0 +1,30 @@
+name: Run Tests
+
+on:
+  push:
+    branches: [ main ]
+    paths: [ "**.java", "pom.xml", ".github/workflows/run_tests.yml" ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+# https://docs.github.com/en/actions/tutorials/build-and-test-code/java-with-maven
+jobs:
+  run_tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v6 # https://github.com/actions/checkout
+
+    - name: Set up JDK
+      uses: actions/setup-java@v5 # https://github.com/actions/setup-java
+      with:
+        java-version: "21"
+        distribution: adopt
+        cache: maven
+        
+    - name: Run Tests with Maven
+      run: mvn -B test
+      # https://www.baeldung.com/maven-verify-vs-test
+      # https://stackoverflow.com/questions/55509727/what-does-b-and-f-flag-do-in-maven-command
