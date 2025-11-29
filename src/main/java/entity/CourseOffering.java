@@ -9,7 +9,7 @@ public class CourseOffering {
     private final String description;
     private final Set<Section> availableSections = new HashSet<>();
 
-    public CourseOffering(CourseCode courseCode, String title, String description) {
+    public CourseOffering(String courseOfferingIdentifier, CourseCode courseCode, String title, String description) {
         this.courseCode = courseCode;
         this.title = title;
         this.description = description;
