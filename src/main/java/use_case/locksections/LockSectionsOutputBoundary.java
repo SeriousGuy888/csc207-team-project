@@ -7,9 +7,14 @@ package use_case.locksections;
 public interface LockSectionsOutputBoundary {
 
     /**
-     * Presents the result of updating the locked sections.
-     *
-     * @param outputData the resulting locked sections.
+     * Called when locking sections succeeds.
      */
-    void present(LockSectionsOutputData outputData);
+    void prepareSuccessView(LockSectionsOutputData outputData);
+
+    /**
+     * Called when locking sections fails (e.g., invalid input).bgbg
+     *
+     * @param errorMessage a human-readable description of the error
+     */
+    void prepareFailView(String errorMessage);
 }

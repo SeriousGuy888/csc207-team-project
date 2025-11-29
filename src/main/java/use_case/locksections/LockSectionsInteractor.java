@@ -13,6 +13,7 @@ import java.util.Set;
 public class LockSectionsInteractor implements LockSectionsInputBoundary {
 
     private final LockSectionsOutputBoundary presenter;
+
     private final Set<Section> lockedSections = new HashSet<>();
 
     public LockSectionsInteractor(LockSectionsOutputBoundary presenter) {
@@ -21,19 +22,26 @@ public class LockSectionsInteractor implements LockSectionsInputBoundary {
 
     @Override
     public void execute(LockSectionsInputData inputData) {
-        // Replace the existing locked set with the new one from input.
+        if (inputData == null) {
+            presenter.prepareFailView("Input data for locking sections cannot be null.");
+            return;
+        }
+
+        Set<Section> sectionsToLock = inputData.getSectionsToLock();
+        if (sectionsToLock == null) {
+            presenter.prepareFailView("Sections to lock cannot be null.");
+            return;
+        }
+
         lockedSections.clear();
-        lockedSections.addAll(inputData.getSectionsToLock());
+        lockedSections.addAll(sectionsToLock);
 
         LockSectionsOutputData outputData =
-                new LockSectionsOutputData(lockedSections);
-        presenter.present(outputData);
+                new LockSectionsOutputData(new HashSet<>(lockedSections));
+
+        presenter.prepareSuccessView(outputData);
     }
 
-    /**
-     * Exposes the current locked sections.
-     * Useful later when other use cases (e.g. autogen) need this info.
-     */
     public Set<Section> getLockedSections() {
         return new HashSet<>(lockedSections);
     }
