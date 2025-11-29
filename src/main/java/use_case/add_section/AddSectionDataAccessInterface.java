@@ -1,4 +1,4 @@
-package use_case.addsection;
+package use_case.add_section;
 
 import entity.Section;
 import entity.Workbook;
@@ -12,5 +12,6 @@ public interface AddSectionDataAccessInterface {
 
     // Finds the corresponding Section instance to add.
     // TODO: see if we can change parameter + DAO to courseOfferingAsString
-    Section getSectionToAdd(String courseOfferingId, String sectionName);
+    // Returns an Optional to indicate when the section isn't found.
+    Optional<Section> findSection(String courseOfferingId, String sectionName);
 }

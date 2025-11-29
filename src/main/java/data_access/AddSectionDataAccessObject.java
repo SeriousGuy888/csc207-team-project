@@ -5,7 +5,8 @@ import data_access.course_data.CourseDataRepository;
 import entity.Section;
 import entity.Workbook;
 import entity.CourseOffering;
-import use_case.addsection.AddSectionDataAccessInterface;
+import use_case.add_section.AddSectionDataAccessInterface;
+import java.util.Optional;
 
 public class AddSectionDataAccessObject implements AddSectionDataAccessInterface {
     private final CurrentWorkbook currentWorkbook;
@@ -23,14 +24,17 @@ public class AddSectionDataAccessObject implements AddSectionDataAccessInterface
     }
 
     @Override
-    public Section getSectionToAdd(String courseOfferingIdentifier, String sectionName) {
+    public Optional<Section> findSection(String courseOfferingIdentifier, String sectionName) {
         CourseOffering courseOfferingToAdd = courseDataRepository.getCourseOffering(courseOfferingIdentifier);
+        if (courseOfferingToAdd == null) {
+            return Optional.empty();
+        }
 
         for (Section section : courseOfferingToAdd.getAvailableSections()) {
-            if (section.getName().equals(sectionName)) {
-                return section;
+            if (section.getSectionName().equals(sectionName)) {
+                return Optional.of(section);
             }
         }
-        return null;  // Section not found
+        return Optional.empty();  // Section not found
     }
 }

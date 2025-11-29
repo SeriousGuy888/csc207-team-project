@@ -1,8 +1,8 @@
 package interface_adapter.add_section;
 
 import interface_adapter.GlobalViewPresenter;
-import use_case.addsection.AddSectionOutputBoundary;
-import use_case.addsection.AddSectionOutputData;
+import use_case.add_section.AddSectionOutputBoundary;
+import use_case.add_section.AddSectionOutputData;
 
 /**
  * Presenter for the Add Section use case.

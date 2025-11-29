@@ -27,7 +27,7 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
 
     @Override
     public void execute(AddSectionInputData inputData) {
-        String courseCode = inputData.getCourseCode();
+        String courseOfferingAsString = inputData.getCourseOfferingAsString();
         String sectionName = inputData.getSectionName();
         int selectedTabIndex = inputData.getSelectedTabIndex();
 
@@ -40,7 +40,7 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
 
         // Find the Section entity
         // TODO: full courseOfferingId
-        Optional<Section> sectionOpt = findSectionWithFallback(courseCode, sectionName);
+        Optional<Section> sectionOpt = findSectionWithFallback(courseOfferingAsString, sectionName);
 
         if (sectionOpt.isEmpty()) {
             presenter.prepareFailView("Section not found: " + courseCode + " " + sectionName);
@@ -81,9 +81,9 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
      /* TODO: Remove this workaround once UI provides full courseOfferingId
      */
     // maye change this to throw exceptions like search course, trying different ones out
-    private Optional<Section> findSectionWithFallback(String courseCode, String sectionName) {
-        for (String suffix : SESSION_SUFFIXES) {
-            String courseOfferingId = courseCode + suffix;
+    private Optional<Section> findSectionWithFallback(String courseOfferingAsString, String sectionName) {
+        for (String suffix : IDENTIFIER_SUFFIXES) {
+            String courseOfferingId = courseOfferingAsString + suffix;
             Optional<Section> section = dataAccess.findSection(courseOfferingId, sectionName);
             if (section.isPresent()) {
                 return section;
