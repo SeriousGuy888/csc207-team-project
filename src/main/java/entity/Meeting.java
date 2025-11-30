@@ -9,6 +9,8 @@ package entity;
  * session might be in a different location/time from the others.
  */
 public class Meeting {
+    private static final int MILLISECONDS_PER_HALF_HOUR = 1000 * 60 * 30;
+
     private final UofTLocation location;
     private final Semester semester;
     private final WeeklyOccupancy time;
@@ -36,8 +38,11 @@ public class Meeting {
         return time.getDayOfTheWeek();
     }
 
+    /**
+     * @return the start time of this meeting in half hours.
+     */
     public int getStartTimeIndexInDay() {
-        return time.getStartIndexInDay();
+        return time.getStartTimeInDay() / MILLISECONDS_PER_HALF_HOUR;
     }
 
     public int getNumConflicts() {
@@ -58,9 +63,15 @@ public class Meeting {
         this.numConflicts = 0;
     }
 
+    /**
+     * Checks if the given time slot is occupied by this meeting.
+     * @param day index of the day of the week, starting from 0 for Monday.
+     * @param timeSlot index of the time slot, starting from 0 for 0:00 AM.
+     * @return true if the given time slot is occupied by this meeting, false otherwise.
+     */
     public boolean checkOccupancy(int day, int timeSlot) {
-        final int bitIndex = day * 48 + timeSlot;
-        return time.getHalfHourSlots().get(bitIndex);
+        final WeeklyOccupancy.DayOfTheWeek convertedDay = WeeklyOccupancy.DayOfTheWeek.values()[day];
+        return time.checkOccupancyOfHalfHourSlot(convertedDay, timeSlot);
     }
 
     public enum Semester {

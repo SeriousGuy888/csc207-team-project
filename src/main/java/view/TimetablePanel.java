@@ -31,7 +31,6 @@ public class TimetablePanel extends JPanel {
     private JButton autogenerateButton;
     private JPanel buttonPanel;
     private JScrollPane scrollPane;
-    private JPanel containerPanel;
     private JPanel firstSemesterGridContainer;
     private JPanel secondSemesterGridContainer;
     private JPanel[][] firstSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
@@ -89,8 +88,8 @@ public class TimetablePanel extends JPanel {
     private void initializeGrid() {
         // 1. Initialize the Container Panels with GridLayout
         // 24 rows, 5 columns
-        firstSemesterGridContainer = new JPanel(new GridLayout(NUM_COLS, NUM_ROWS));
-        secondSemesterGridContainer = new JPanel(new GridLayout(NUM_COLS, NUM_ROWS));
+        firstSemesterGridContainer = new JPanel(new GridLayout(NUM_ROWS, NUM_COLS));
+        secondSemesterGridContainer = new JPanel(new GridLayout(NUM_ROWS, NUM_COLS));
 
         // 2. Populate the Grids
         for (int row = 0; row < NUM_ROWS; row++) {

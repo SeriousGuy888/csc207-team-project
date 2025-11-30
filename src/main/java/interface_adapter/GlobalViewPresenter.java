@@ -152,9 +152,9 @@ public class GlobalViewPresenter implements
     private void placeBlockInGrid(MeetingBlock[][][] grid, Meeting meeting, MeetingBlock block) {
         final int col = meeting.getStartTimeIndexInDay();
         for (int row = block.getStartRow(); row < HALF_HOUR_SLOTS_PER_DAY; row++) {
-            final int bitIndex = START_HOUR_INDEX + row;
+            final int timeSlotIndex = START_HOUR_INDEX + row;
 
-            if (meeting.checkOccupancy(col, bitIndex)) {
+            if (meeting.checkOccupancy(col, timeSlotIndex)) {
                 if (grid[row][col][0] == null) {
                     grid[row][col][0] = block;
                 }
