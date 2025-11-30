@@ -66,6 +66,7 @@ public class GlobalViewPresenter implements
      * Switches to a different tab in the UI.
      * @param newIndex the index of the tab to switch to
      */
+    @Override
     public void prepareSuccessView(int newIndex) {
         final GlobalViewState state = globalViewModel.getState();
         state.setSelectedTabIndex(newIndex);
