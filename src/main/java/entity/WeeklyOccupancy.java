@@ -10,7 +10,8 @@ import java.util.Objects;
  * marked as either occupied or unoccupied.
  */
 public class WeeklyOccupancy {
-    private static final int MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
+    private static final int MILLISECONDS_PER_HOUR = 1000 * 60 * 60;
+    private static final int MILLISECONDS_PER_DAY = MILLISECONDS_PER_HOUR * 24;
 
     // This class uses milliseconds because I noticed the official TTB's data specifies
     // start and end times in milliseconds, and this constructor would be convenient if we
@@ -137,6 +138,28 @@ public class WeeklyOccupancy {
         }
 
         return false;
+    }
+
+    /**
+     * Check if the nth half hour has <em>any</em> millisecond marked occupied.
+     *
+     * @param halfHourIndex A <strong>zero-indexed</strong> number from 0 to 47 representing which
+     *                      thirty minute timespan to check.
+     *                      For example,
+     *                      <ul>
+     *                        <li>00:00 to 00:30 is {@code 0},</li>
+     *                        <li>00:30 to 01:00 is {@code 1},</li>
+     *                        <li>12:00 to 12:30 is {@code 24}, and</li>
+     *                        <li>23:30 to 00:00 is {@code 47}.</li>
+     *                      </ul>
+     * @return true if the specified half hour has at least one millisecond marked occupied, false otherwise.
+     */
+    public boolean checkOccupancyOfHalfHourSlot(DayOfTheWeek dayOfTheWeek, int halfHourIndex) {
+        int start = dayOfTheWeek.millisecondOffset + (MILLISECONDS_PER_HOUR / 2) * halfHourIndex;
+        int end = dayOfTheWeek.millisecondOffset + (MILLISECONDS_PER_HOUR / 2) * (halfHourIndex + 1);
+        MillisecondSpan halfHour = new MillisecondSpan(start, end);
+
+        return timespans.stream().anyMatch(timespan -> timespan.overlaps(halfHour));
     }
 
     /**
