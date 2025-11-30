@@ -17,6 +17,7 @@ import java.util.Map;
 public class JsonCourseDataRepository implements CourseDataRepository, CourseDataRepositoryGrouped {
     private final Map<String, Map<String, CourseOffering>> CourseInfobyCode;
     private final Map<String, CourseOffering> availableCourseOfferings;
+    private final Map<String, String> sectionIdToProfessorName = new HashMap<>();
 
     public JsonCourseDataRepository(List<String> dataResourceNames) {
         CourseInfobyCode = new HashMap<>();
@@ -65,17 +66,41 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                     title,
                     description);
 
+            //  START OF SECTION/MEETING PROCESSING
             JSONObject sectionsObj = currOfferingObj.getJSONObject("meetings");
-            sectionsObj.keys().forEachRemaining(sectionName -> {
+
+            // Loop over each section (e.g., "LEC-0101", "TUT-0102")
+            sectionsObj.keys().forEachRemaining(sectionId -> {
+
+                final JSONObject sectionDetails = sectionsObj.getJSONObject(sectionId);
+
+                // EXTRACT PROFESSOR NAME
+                String professorName = "TBD Professor";
+
+                if (sectionDetails.has("instructors") && !sectionDetails.isNull("instructors")) {
+                    final JSONObject instructorsObj = sectionDetails.getJSONObject("instructors");
+                    // Check if the primary instructor (key "0") exists
+                    if (instructorsObj.has("0") && !instructorsObj.isNull("0")) {
+                        final JSONObject primaryInstructor = instructorsObj.getJSONObject("0");
+                        final String firstName = primaryInstructor.getString("firstName");
+                        final String lastName = primaryInstructor.getString("lastName");
+                        professorName = firstName + " " + lastName;
+                    }
+                }
+
+                // STORE MAPPING INTERNALLY for future lookup
+                sectionIdToProfessorName.put(sectionId, professorName);
+
                 // todo: actually choose the right teaching method
                 //  and also add meeting times
-                Section section = new Section(courseOffering, sectionName, Section.TeachingMethod.LECTURE);
+                Section section = new Section(courseOffering, sectionId, Section.TeachingMethod.LECTURE);
 
                 courseOffering.addAvailableSection(section);
+
+            });
+            currentavailableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
             });
 
-            currentavailableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
-        });
         return currentavailableCourseOfferings;
     }
 
@@ -93,4 +118,14 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
     public Map<String, CourseOffering> getMatchingCourseInfo(String deptCode) {
         return CourseInfobyCode.get(deptCode);
     }
-}
+
+    /**
+     * Get the sectionId's professor's name.
+     * @param sectionId the sectionId being looked at
+     * @return String of the section's professor's name, or TBD Professor if none.
+     */
+    public String getProfessorNameBySectionId(String sectionId) {
+        // Uses the map populated in loadInCoursesFromJsonFile
+        return sectionIdToProfessorName.getOrDefault(sectionId, "TBD Professor");
+    }
+    }
