@@ -38,7 +38,23 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         resultsList = new JList<>(resultsListModel);
         resultsList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 
-        // Find the scroll pane and set the results list as its view
+        // Custom renderer with a button for dropdown
+        resultsList.setCellRenderer((list, value, index, isSelected, cellHasFocus) -> {
+            JPanel panel = new JPanel(new BorderLayout());
+            JLabel label = new JLabel(value.toString());
+            JButton button = new JButton("▼"); // dropdown button
+            button.setMargin(new Insets(0, 0, 0, 0));
+            button.addActionListener(e -> showCoursePopup(value.toString(), button));
+            panel.add(label, BorderLayout.CENTER);
+            panel.add(button, BorderLayout.EAST);
+
+            if (isSelected) panel.setBackground(list.getSelectionBackground());
+            else panel.setBackground(list.getBackground());
+
+            return panel;
+        });
+
+        // Attach to scroll pane
         for (Component comp : SearchPanel.getComponents()) {
             if (comp instanceof JScrollPane) {
                 resultsScrollPane = (JScrollPane) comp;
@@ -100,9 +116,6 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         }
     }
 
-    /**
-     * Update the UI with search results from the ViewModel
-     */
     private void updateSearchResults() {
         if (searchCoursesViewModel == null) return;
 
@@ -123,6 +136,15 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                 }
             }
         }
+    }
+
+    // Show a popup with course details when dropdown button is clicked
+    private void showCoursePopup(String course, Component invoker) {
+        JPopupMenu popup = new JPopupMenu();
+        // Example items – later replace with real CourseOffering sections
+        popup.add(new JMenuItem(course + " - Section 001 - Prof. Smith"));
+        popup.add(new JMenuItem(course + " - Section 002 - Prof. Lee"));
+        popup.show(invoker, 0, invoker.getHeight());
     }
 
     /**
