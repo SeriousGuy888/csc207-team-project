@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06e5149e-db28-4222-bdad-3096ebf50f69" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/use_case/display_course_context/DisplayMeetingTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data_access/course_data/JsonCourseDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data_access/course_data/JsonCourseDataRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data_access/display_course_context/DisplayCourseDetailsDataAccessObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data_access/display_course_context/DisplayCourseDetailsDataAccessObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/WeeklyOccupancy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/WeeklyOccupancy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interface_adapter/display_course_context/SectionDisplayData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/use_case/display_course_context/DisplayCourseDetailsInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/display_course_context/DisplayCourseDetailsInteractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/use_case/display_course_context/DisplaySectionDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/display_course_context/DisplaySectionDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/SearchPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/SearchPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/use_case/display_course_context/DisplayCourseDetailsDataAccessInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/display_course_context/DisplayCourseDetailsDataAccessInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

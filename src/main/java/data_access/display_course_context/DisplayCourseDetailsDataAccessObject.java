@@ -29,7 +29,6 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
         String deptCode = courseId.substring(0, 3).toUpperCase();
 
         // 2. Fetch all known course offerings for that department (from the grouped repository)
-        // We assume getMatchingCourseInfo(deptCode) returns Map<String (Full ID), CourseOffering>
         Map<String, CourseOffering> deptOfferings =
                 courseRepository.getMatchingCourseInfo(deptCode);
 
@@ -56,13 +55,13 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
         // 4. Combine ALL sections from ALL matching course offerings
         final List<DisplaySectionDetails> allDisplaySections = matchingOfferings.stream()
                 .flatMap(offering -> offering.getAvailableSections().stream())
-                .distinct() // Avoid duplicate sections if they appear in multiple offerings (rare, but safe)
+                .distinct() // Avoid duplicate sections if they appear in multiple offerings
                 .flatMap(this::mapSectionToDisplayDetails)
                 .collect(Collectors.toList());
 
         // 5. Create the final DTO with combined data
         return new DisplayCourseDetails(
-                courseId, // Use the simple ID as the context ID
+                courseId,
                 primaryOffering.getTitle(),
                 primaryOffering.getDescription(),
                 allDisplaySections
@@ -110,7 +109,10 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
                 .orElse("TBA");
 
         // Professor info
-        final String professorName = getProfessorNameBySectionId(sectionName);
+        final String courseId = section.getCourseOffering().getCourseCode().toString(); // or courseOffering.getId() depending on your naming
+        final String professorName = courseRepository.getProfessorNameByCourseAndSection(courseId, sectionName);
+        String profName = getProfessorNameByCourseAndSection(courseId, sectionName);
+        System.out.println("Found professor name: '" + profName + "' for section: '" + sectionName + "'");
         final DisplayProfessorDetails placeholderProf = new DisplayProfessorDetails(
                 professorName != null ? professorName : "TBD",
                 0.0,
@@ -135,8 +137,8 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
     }
 
     @Override
-    public String getProfessorNameBySectionId(String sectionId) {
+    public String getProfessorNameByCourseAndSection(String courseId, String sectionId) {
         // This remains the same, delegating the lookup to the repository
-        return courseRepository.getProfessorNameBySectionId(sectionId);
+        return courseRepository.getProfessorNameByCourseAndSection(courseId, sectionId);
     }
 }

@@ -45,9 +45,9 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
             Map<String, CourseOffering> currentavailableCourseOfferings = loadInCoursesFromJsonFile(resource);
 
             if (currentavailableCourseOfferings != null) {
-                      CourseInfobyCode.put(coursecode, currentavailableCourseOfferings);
-                      availableCourseOfferings.putAll(currentavailableCourseOfferings);
-                }
+                CourseInfobyCode.put(coursecode, currentavailableCourseOfferings);
+                availableCourseOfferings.putAll(currentavailableCourseOfferings);
+            }
 
         });
     }
@@ -107,21 +107,24 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                 }
 
                 // STORE MAPPING INTERNALLY for future lookup
-                sectionIdToProfessorName.put(sectionId, professorName);
+                String compositeKey = courseCodeString + ":" + sectionId;
+                System.out.println(compositeKey);
+                sectionIdToProfessorName.put(compositeKey, professorName);
+                // System.out.println("Mapping professor for section ID: " + sectionId + " -> " + professorName);
 
-            sectionsObj.keys().forEachRemaining(sectionName -> {
-                // todo: actually choose the right teaching method
-                //  and also add meeting times
-                Section section = new Section(courseOffering, sectionName, Section.TeachingMethod.LECTURE);
+                sectionsObj.keys().forEachRemaining(sectionName -> {
+                    // todo: actually choose the right teaching method
+                    //  and also add meeting times
+                    Section section = new Section(courseOffering, sectionName, Section.TeachingMethod.LECTURE);
 
-                courseOffering.addAvailableSection(section);
+                    courseOffering.addAvailableSection(section);
 
+                });
+
+                availableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
             });
-
-            availableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
-        });
             currentavailableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
-            });
+        });
 
         return currentavailableCourseOfferings;
     }
@@ -142,12 +145,14 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
     }
 
     /**
-     * Get the sectionId's professor's name.
-     * @param sectionId the sectionId being looked at
-     * @return String of the section's professor's name, or TBD Professor if none.
+     * Get the professor's name for a course and section.
+     *
+     * @param courseId  The full course offer identifier (e.g., "CSC108F").
+     * @param sectionId The section ID (e.g., "LEC-0101").
+     * @return The professor's name, or "TBD Professor" if not found.
      */
-    public String getProfessorNameBySectionId(String sectionId) {
-        // Uses the map populated in loadInCoursesFromJsonFile
-        return sectionIdToProfessorName.getOrDefault(sectionId, "TBD Professor");
+    public String getProfessorNameByCourseAndSection(String courseId, String sectionId) {
+        String compositeKey = courseId + ":" + sectionId;
+        return sectionIdToProfessorName.getOrDefault(compositeKey, "TBD Professor");
     }
-    }
+}
