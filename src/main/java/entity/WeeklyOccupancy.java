@@ -71,6 +71,27 @@ public class WeeklyOccupancy {
     }
 
     /**
+     * @return the zero-based index of the first day of the week that this {@link WeeklyOccupancy} occupies, or -1 if it does not occur on any day.
+     */
+    public int getDayOfTheWeek() {
+        if (timespans.isEmpty()) {
+            return -1;
+        }
+        return timespans.get(0).start / MILLISECONDS_PER_DAY;
+    }
+
+    /**
+     * @return the start time of this {@link WeeklyOccupancy} in its specific day in milliseconds,
+     * or -1 if it does not occur on any day.
+     */
+    public int getStartTimeInDay() {
+        if (timespans.isEmpty()) {
+            return -1;
+        }
+        return timespans.get(0).start % MILLISECONDS_PER_DAY;
+    }
+
+    /**
      * @param occupancies A collection of {@link WeeklyOccupancy} objects to union.
      * @return A new {@link WeeklyOccupancy} object where every halfhour is occupied if ANY of the given
      * {@link WeeklyOccupancy} had that halfhour marked as occupied.
