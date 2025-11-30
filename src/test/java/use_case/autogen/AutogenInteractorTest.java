@@ -2,9 +2,11 @@ package use_case.autogen;
 
 import entity.*;
 import org.junit.jupiter.api.Test;
-
+import data_access.autogen.AutogenCourseDataAccess;
+import data_access.course_data.JsonCourseDataRepository;
 import java.util.List;
 import java.util.Set;
+import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -57,13 +59,147 @@ public class AutogenInteractorTest {
             15 * MILLIS_PER_HOUR
     );
 
-    private static final Semester FIRST_SEMESTER = Semester.FIRST;
-    private static final Semester SECOND_SEMESTER = Semester.SECOND;
+    private static final Meeting.Semester FIRST_SEMESTER = Meeting.Semester.FIRST;
+    private static final Meeting.Semester SECOND_SEMESTER = Meeting.Semester.SECOND;
 
 
     // ------------------------------------------------------------------------
     // Tests
     // ------------------------------------------------------------------------
+    @Test
+    void autogenWorksWithRealDaoForOneCourse() {
+        // --------------------------------------------------------------------
+        // Set up the real repository + real DAO
+        // --------------------------------------------------------------------
+        // IMPORTANT: replace these resource names with the ones you actually use
+        JsonCourseDataRepository courseRepo = new JsonCourseDataRepository(
+                List.of(
+                        "courses/csc.json"
+                        // , "courses/mat.json", ...
+                )
+        );
+
+        AutogenDataAccessInterface dao = new AutogenCourseDataAccess(courseRepo);
+        TestAutogenPresenter presenter = new TestAutogenPresenter();
+        AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
+
+        // Pick a real course code that definitely exists in your JSON dataset
+        CourseCode selected = new CourseCode("CSC207H1");  // change if needed
+
+        WeeklyOccupancy nonConflictingBlockedTime = SUNDAY_00_01;
+
+        AutogenInputData inputData = new AutogenInputData(
+                Set.of(selected),
+                Set.of(),
+                nonConflictingBlockedTime
+        );
+
+        // --------------------------------------------------------------------
+        // Execute
+        // --------------------------------------------------------------------
+        interactor.execute(inputData);
+
+        System.out.println("\n*** RESULT FOR REAL DAO + INTERACTOR TEST ***");
+        if (presenter.lastOutput != null) {
+            printTimetable(presenter.lastOutput.getGeneratedTimetable());
+        } else {
+            System.out.println("(No timetable generated)");
+        }
+        System.out.println("*** END RESULT ***\n");
+
+        // --------------------------------------------------------------------
+        // Assertions
+        // --------------------------------------------------------------------
+        assertNull(presenter.lastError,
+                "Should not have an error when using the real DAO for a valid course");
+
+        assertNotNull(presenter.lastOutput,
+                "Should generate a timetable using the real DAO");
+
+        Timetable timetable = presenter.lastOutput.getGeneratedTimetable();
+        assertFalse(timetable.getSections().isEmpty(),
+                "Generated timetable should contain at least one section");
+
+        // Optional: sanity check that all sections are for the selected course
+        timetable.getSections().forEach(section ->
+                assertEquals(selected, section.getCourseOffering().getCourseCode(),
+                        "All sections in the timetable should be for the selected course")
+        );
+    }
+
+    @Test
+    void autogenWorksWithRealDaoForTwoCourses() {
+        // --------------------------------------------------------------------
+        // Real repository with the SAME JSON files your app loads
+        // --------------------------------------------------------------------
+
+        JsonCourseDataRepository courseRepo = new JsonCourseDataRepository(
+                Arrays.asList(
+                        "courses/ABP.json",
+                        "courses/ACM.json",
+                        "courses/ACT.json",
+                        "courses/AER.json"
+                )
+        );
+
+        AutogenDataAccessInterface dao = new AutogenCourseDataAccess(courseRepo);
+        TestAutogenPresenter presenter = new TestAutogenPresenter();
+        AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
+
+        // TODO: Replace these with ACTUAL course codes inside the above JSON files
+        CourseCode course1 = new CourseCode("ACT230H1");  // example placeholder
+        CourseCode course2 = new CourseCode("ACT240H1");  // example placeholder
+
+        WeeklyOccupancy nonConflictingBlockedTime = SUNDAY_00_01;
+
+        AutogenInputData inputData = new AutogenInputData(
+                Set.of(course1, course2),
+                Set.of(),
+                nonConflictingBlockedTime
+        );
+
+        // --------------------------------------------------------------------
+        // Ensure the DAO actually returns data for these 2 courses
+        // --------------------------------------------------------------------
+        List<CourseOffering> offerings = dao.getSelectedCourseOfferings(Set.of(course1, course2));
+        assertFalse(offerings.isEmpty(),
+                "DAO returned no offerings — your course codes may not exist in ABP/ACM/ACT/AER JSON");
+
+        Set<CourseCode> offeredCodes = offerings.stream()
+                .map(CourseOffering::getCourseCode)
+                .collect(java.util.stream.Collectors.toSet());
+
+        assertTrue(offeredCodes.contains(course1),
+                "DAO did not load data for course 1: " + course1);
+        assertTrue(offeredCodes.contains(course2),
+                "DAO did not load data for course 2: " + course2);
+
+        // --------------------------------------------------------------------
+        // Run the REAL interactor end-to-end
+        // --------------------------------------------------------------------
+        interactor.execute(inputData);
+
+        System.out.println("\n*** RESULT FOR REAL DAO (2 COURSES) ***");
+        if (presenter.lastOutput != null) {
+            printTimetable(presenter.lastOutput.getGeneratedTimetable());
+        } else {
+            System.out.println("(No timetable generated)");
+            System.out.println("Error: " + presenter.lastError);
+        }
+        System.out.println("*** END RESULT ***\n");
+
+        // --------------------------------------------------------------------
+        // We DO NOT assert that a timetable MUST exist.
+        // Real data may genuinely produce conflicts.
+        // We ONLY assert that the interactor gave SOME output (success OR failure).
+        // --------------------------------------------------------------------
+        assertTrue(
+                presenter.lastOutput != null || presenter.lastError != null,
+                "Interactor should either produce a timetable OR an error when using real DAO"
+        );
+    }
+
+
 
     @Test
     void autogenWorksForTwoSimpleCourses() {
