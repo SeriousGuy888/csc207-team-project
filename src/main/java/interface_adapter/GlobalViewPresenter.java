@@ -9,8 +9,8 @@ import entity.Section;
 import entity.Timetable;
 import entity.Workbook;
 import interface_adapter.TimetableState.MeetingBlock;
-import use_case.TimetableUpdate.TimetableUpdateOutputBoundary;
-import use_case.TimetableUpdate.TimetableUpdateOutputData;
+import use_case.timetable_update.TimetableUpdateOutputBoundary;
+import use_case.timetable_update.TimetableUpdateOutputData;
 import use_case.tab_actions.add_tab.AddTabOutputBoundary;
 import use_case.tab_actions.delete_tab.DeleteTabOutputBoundary;
 import use_case.tab_actions.rename_tab.RenameTabOutputBoundary;
@@ -75,7 +75,7 @@ public class GlobalViewPresenter implements
     }
 
     /**
-     * Refresh timetabl on given index.
+     * Refresh timetable on given index.
      * @param timetableOutputData The output data from the use case.
      */
     @Override
@@ -116,6 +116,11 @@ public class GlobalViewPresenter implements
         globalViewModel.firePropertyChange(GlobalViewModel.TIMETABLE_CHANGED);
     }
 
+    /**
+     * Converts a Timetable entity to a TimetableState object.
+     * @param timetable The timetable to convert.
+     * @return The converted TimetableState.
+     */
     private TimetableState convertEntityToState(Timetable timetable) {
         final TimetableState state = new TimetableState();
         state.setTimetableName(timetable.getTimetableName());
@@ -150,18 +155,28 @@ public class GlobalViewPresenter implements
         return state;
     }
 
+    /**
+     * Helper method to place a MeetingBlock in the correct slot in the grid. This function prevents jagged blocks
+     * by predetermining the index to insert the block.
+     * @param grid The grid to place the meeting block in.
+     * @param meeting The meeting that the block belongs to.
+     * @param block The block to place.
+     */
     private void placeBlockInGrid(MeetingBlock[][][] grid, Meeting meeting, MeetingBlock block) {
         final int col = meeting.getStartTimeIndexInDay();
+        final int startRow = block.getStartRow();
+        int blockIndex = 0;
+
+        // determine the index to insert the meeting blocks
+        if (grid[startRow][col][0] != null) {
+            blockIndex = 1;
+        }
+
         for (int row = block.getStartRow(); row < HALF_HOUR_SLOTS_PER_DAY; row++) {
             final int timeSlotIndex = START_HOUR_INDEX + row;
 
             if (meeting.checkOccupancy(col, timeSlotIndex)) {
-                if (grid[row][col][0] == null) {
-                    grid[row][col][0] = block;
-                }
-                else {
-                    grid[row][col][1] = block;
-                }
+                grid[row][col][blockIndex] = block;
             }
         }
     }

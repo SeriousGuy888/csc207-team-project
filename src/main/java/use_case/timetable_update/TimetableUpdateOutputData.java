@@ -1,4 +1,4 @@
-package use_case.TimetableUpdate;
+package use_case.timetable_update;
 
 import entity.Timetable;
 
