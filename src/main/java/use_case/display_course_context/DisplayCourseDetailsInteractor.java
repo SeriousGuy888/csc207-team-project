@@ -88,6 +88,8 @@ public class DisplayCourseDetailsInteractor implements DisplayCourseDetailsInput
         // Return the "enriched" (has prof info now) DTO
         return new DisplaySectionDetails(
                 section.getSectionName(),
+                section.getMeetingTimes(),
+                section.getLocation(),
                 finalProfDetails
         );
     }

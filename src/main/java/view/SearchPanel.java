@@ -8,6 +8,7 @@ import interface_adapter.display_course_context.DisplayCourseDetailsViewModel;
 import interface_adapter.search_courses.SearchCoursesViewModel;
 import interface_adapter.search_courses.SearchCoursesState;
 import interface_adapter.search_courses.SearchCoursesController;
+import use_case.display_course_context.DisplayMeetingTime;
 import use_case.display_course_context.DisplayProfessorDetails;
 import use_case.display_course_context.DisplaySectionDetails;
 
@@ -326,17 +327,58 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
             for (DisplaySectionDetails section : sections) {
                 DisplayProfessorDetails prof = section.getProfessorDetails();
 
-                String sectionText = String.format(
-                        "<html><b>%s</b> | Prof: %s (RMP: <font color='green'>%.1f</font> / Diff: %.1f)</html>",
+                // Build the time-location string
+                StringBuilder timeLocSb = new StringBuilder();
+                List<DisplayMeetingTime> mts = section.getMeetingTimes();
+                for (int i = 0; i < mts.size(); i++) {
+                    DisplayMeetingTime mt = mts.get(i);
+                    if (i > 0) timeLocSb.append(", ");
+                    timeLocSb.append(mt.getDayOfWeek())
+                            .append(" ")
+                            .append(mt.getStartTime())
+                            .append("-")
+                            .append(mt.getEndTime());
+                }
+                if (!mts.isEmpty()) {
+                    timeLocSb.append(" in ").append(section.getLocation());
+                }
+                String timeLocation = timeLocSb.length() > 0 ? timeLocSb.toString() : "TBA";
+
+                // Format the display label
+                String sectionHtml = String.format(
+                        "<html><b>%s</b><br/>%s<br/>Prof: %s (RMP: <font color='green'>%.1f</font> / Diff: %.1f)</html>",
                         section.getSectionName(),
+                        timeLocation,
                         prof.getName(),
                         prof.getAvgRating(),
                         prof.getAvgDifficultyRating()
                 );
 
-                JLabel secLabel = new JLabel(sectionText);
-                secLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
-                sectionsPanel.add(secLabel);
+                JPanel row = new JPanel();
+                row.setLayout(new BoxLayout(row, BoxLayout.X_AXIS));
+                row.setAlignmentX(Component.LEFT_ALIGNMENT);
+
+                JLabel infoLabel = new JLabel(sectionHtml);
+                infoLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
+
+                JButton toggleButton = new JButton("Add to timetable");
+                final boolean[] added = {false}; // UI state for toggle
+
+                toggleButton.addActionListener(e -> {
+                    if (added[0]) {
+                        // Call remove section use case
+                    } else {
+                        // Call add section use case
+                    }
+                    added[0] = !added[0];
+                });
+
+                row.add(infoLabel);
+                row.add(Box.createHorizontalStrut(10));
+                row.add(toggleButton);
+
+                sectionsPanel.add(row);
+                sectionsPanel.add(Box.createVerticalStrut(5));
             }
         }
 

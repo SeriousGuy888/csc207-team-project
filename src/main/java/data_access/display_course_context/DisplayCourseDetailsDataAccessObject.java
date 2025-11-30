@@ -3,14 +3,13 @@ package data_access.display_course_context;
 import data_access.course_data.CourseDataRepository;
 import entity.CourseOffering;
 import entity.Section;
-import use_case.display_course_context.DisplayCourseDetails;
-import use_case.display_course_context.DisplayCourseDetailsDataAccessInterface;
-import use_case.display_course_context.DisplayProfessorDetails;
-import use_case.display_course_context.DisplaySectionDetails;
+import entity.WeeklyOccupancy;
+import use_case.display_course_context.*;
 import data_access.course_data.JsonCourseDataRepository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -31,7 +30,7 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
 
         // 2. Fetch all known course offerings for that department (from the grouped repository)
         // We assume getMatchingCourseInfo(deptCode) returns Map<String (Full ID), CourseOffering>
-        java.util.Map<String, CourseOffering> deptOfferings =
+        Map<String, CourseOffering> deptOfferings =
                 courseRepository.getMatchingCourseInfo(deptCode);
 
         if (deptOfferings == null || deptOfferings.isEmpty()) {
@@ -41,7 +40,7 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
         // 3. Filter offerings to find all versions of the requested course (e.g., ABP102Y1F, ABP102Y1S)
         List<CourseOffering> matchingOfferings = deptOfferings.entrySet().stream()
                 .filter(entry -> entry.getKey().startsWith(courseId))
-                .map(java.util.Map.Entry::getValue)
+                .map(Map.Entry::getValue)
                 .collect(Collectors.toList());
 
         // If no matching offerings are found, return null
@@ -78,19 +77,61 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
 
         final String sectionName = section.getSectionName();
 
-        // Check for null professor name to prevent crashing
-        final String professorName = getProfessorNameBySectionId(sectionName);
+        final List<DisplayMeetingTime> meetingTimes = section.getMeetingsCopy()
+                .stream()
+                .map(meeting -> {
+                    WeeklyOccupancy occ = meeting.getTime();
 
-        // Create the placeholder professor DTO
+                    int dayIndex = occ.getDayOfTheWeek();    // 0..6
+                    int startMs  = occ.getStartTimeInDay();  // millis within day
+                    int endMs    = occ.getEndTimeInDay();    // millis within day
+
+                    if (dayIndex < 0 || startMs < 0 || endMs < 0) {
+                        return null; // skip weird/empty data
+                    }
+
+                    String dayOfWeek = WeeklyOccupancy.DayOfTheWeek
+                            .values()[dayIndex]
+                            .name()
+                            .substring(0, 3);   // "MON", "TUE", ...
+
+                    String start = formatTimeOfDay(startMs);
+                    String end   = formatTimeOfDay(endMs);
+
+                    return new DisplayMeetingTime(dayOfWeek, start, end);
+                })
+                .filter(mt -> mt != null)
+                .collect(Collectors.toList());
+
+        // Location: pick from first meeting (or set "TBA" if none)
+        String location = section.getMeetingsCopy().stream()
+                .findFirst()
+                .map(meeting -> meeting.getLocation().toString())  // adjust to your actual getter
+                .orElse("TBA");
+
+        // Professor info
+        final String professorName = getProfessorNameBySectionId(sectionName);
         final DisplayProfessorDetails placeholderProf = new DisplayProfessorDetails(
-                professorName != null ? professorName : "TBD", 0.0, 0.0, null
+                professorName != null ? professorName : "TBD",
+                0.0,
+                0.0,
+                null
         );
 
-        // Return a stream containing a single DTO for this section.
         return Stream.of(new DisplaySectionDetails(
                 sectionName,
+                meetingTimes,
+                location,
                 placeholderProf
         ));
+    }
+
+    private static String formatTimeOfDay(int millisInDay) {
+        if (millisInDay < 0) return "?";
+        int totalMinutes = millisInDay / (1000 * 60);
+        int hour = totalMinutes / 60;
+        int minute = totalMinutes % 60;
+        return String.format("%02d:%02d", hour, minute);
     }
 
     @Override
