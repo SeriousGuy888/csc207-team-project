@@ -208,6 +208,10 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
         });
     }
 
+    public SearchPanel getSearchPanel() {
+        return searchPanel;
+    }
+
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
         System.out.println("received state change in mainpanel from " + evt.getSource() + ". (not implemented yet)");
