@@ -2,16 +2,24 @@ package view;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
+import interface_adapter.save_workbook.SaveWorkbookController;
+import interface_adapter.save_workbook.SaveWorkbookState;
+import interface_adapter.save_workbook.SaveWorkbookViewModel;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.filechooser.FileSystemView;
 import java.awt.*;
 import java.awt.event.*;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class SaveDialog extends JDialog {
+public class SaveDialog extends JDialog implements PropertyChangeListener {
+    private static SaveDialog singletonInstance;
+
+    private static final String DIALOG_TITLE = "Save...";
     private static final String FILE_CHOOSER_TITLE = "Choose save location...";
     private static final FileNameExtensionFilter FILE_EXTENSION_FILTER = new FileNameExtensionFilter(
             "Jason's Extravagant Timetable Builder Workbooks (.json)",
@@ -19,37 +27,48 @@ public class SaveDialog extends JDialog {
     );
 
     private JPanel contentPane;
-    private JButton buttonSave;
-    private JButton buttonCancel;
+    private JButton saveButton;
+    private JButton cancelButton;
     private JPanel buttonRow;
-    private JTextField fieldPath;
-    private JButton buttonBrowse;
+    private JTextField pathField;
+    private JButton browseButton;
+    private JTextPane statusTextPane;
 
     private final JFileChooser fileChooser;
+    private final SaveWorkbookViewModel saveWorkbookViewModel;
+    private final SaveWorkbookController saveWorkbookController;
 
-    public SaveDialog() {
+
+    private SaveDialog(SaveWorkbookViewModel saveWorkbookViewModel,
+                       SaveWorkbookController saveWorkbookController) {
+        this.saveWorkbookViewModel = saveWorkbookViewModel;
+        this.saveWorkbookController = saveWorkbookController;
+        saveWorkbookViewModel.addPropertyChangeListener(SaveWorkbookViewModel.STATE_PROPERTY_NAME, this);
+
+        setTitle(DIALOG_TITLE);
+
         fileChooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
         fileChooser.setDialogTitle(FILE_CHOOSER_TITLE);
         fileChooser.setFileFilter(FILE_EXTENSION_FILTER);
+        setPath("");
 
-        setTitle("Save");
         setContentPane(contentPane);
         setModal(true);
-        getRootPane().setDefaultButton(buttonSave);
+        getRootPane().setDefaultButton(saveButton);
 
-        buttonSave.addActionListener(new ActionListener() {
+        saveButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onSave();
             }
         });
 
-        buttonCancel.addActionListener(new ActionListener() {
+        cancelButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onCancel();
             }
         });
 
-        buttonBrowse.addActionListener(new ActionListener() {
+        browseButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 onBrowse();
@@ -70,6 +89,31 @@ public class SaveDialog extends JDialog {
                 onCancel();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        pathField.addComponentListener(new ComponentAdapter() {
+        });
+
+        pathField.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                SwingUtilities.invokeLater(() -> onPathUpdate());
+            }
+        });
+    }
+
+    public static void createSingletonInstance(SaveWorkbookViewModel saveWorkbookViewModel,
+                                               SaveWorkbookController saveWorkbookController) {
+        if (singletonInstance != null) {
+            throw new IllegalStateException("An instance of SaveDialog already exists.");
+        }
+
+        singletonInstance = new SaveDialog(saveWorkbookViewModel, saveWorkbookController);
+    }
+
+    public static SaveDialog getSingletonInstance() {
+        if (singletonInstance == null) {
+            throw new IllegalStateException("SaveDialog has not been instantiated yet.");
+        }
+        return singletonInstance;
     }
 
     /**
@@ -83,9 +127,30 @@ public class SaveDialog extends JDialog {
         this.setVisible(true);
     }
 
+    @Override
+    public void propertyChange(PropertyChangeEvent evt) {
+        final SaveWorkbookState state = saveWorkbookViewModel.getState();
+        setStatusText(state.getMessage(), state.isSuccess());
+        if (state.isSuccess()) {
+            dispose();
+        }
+    }
+
+    private void setStatusText(String text, boolean success) {
+        final Color textColour = success ? Color.GREEN : Color.RED;
+        statusTextPane.setForeground(textColour);
+        statusTextPane.setText(text);
+    }
+
+    private void setPath(String path) {
+        pathField.setText(path);
+        onPathUpdate();
+    }
+
+
     private void onSave() {
-        // add your code here
-        dispose();
+        final Path path = Paths.get(pathField.getText());
+        saveWorkbookController.execute(path);
     }
 
     private void onCancel() {
@@ -94,14 +159,17 @@ public class SaveDialog extends JDialog {
     }
 
     private void onBrowse() {
-        int responseFromChooser = fileChooser.showSaveDialog(this);
+        final int responseFromChooser = fileChooser.showSaveDialog(this);
 
         // only do something if the user actually presses save
         // otherwise do nothing
-        if(responseFromChooser == JFileChooser.APPROVE_OPTION) {
-            String path = fileChooser.getSelectedFile().getAbsolutePath();
-            fieldPath.setText(path);
+        if (responseFromChooser == JFileChooser.APPROVE_OPTION) {
+            setPath(fileChooser.getSelectedFile().getAbsolutePath());
         }
+    }
+
+    private void onPathUpdate() {
+        saveButton.setEnabled(!pathField.getText().isBlank());
     }
 
     {
@@ -122,32 +190,38 @@ public class SaveDialog extends JDialog {
         contentPane = new JPanel();
         contentPane.setLayout(new GridLayoutManager(2, 1, new Insets(10, 10, 10, 10), -1, -1));
         final JPanel panel1 = new JPanel();
-        panel1.setLayout(new GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
+        panel1.setLayout(new GridLayoutManager(2, 2, new Insets(0, 0, 0, 0), -1, -1));
         contentPane.add(panel1, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
         final JPanel panel2 = new JPanel();
         panel2.setLayout(new GridLayoutManager(2, 2, new Insets(0, 0, 0, 0), -1, -1));
-        panel1.add(panel2, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_NORTH, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, 1, null, null, null, 0, false));
-        fieldPath = new JTextField();
-        panel2.add(fieldPath, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(200, -1), null, 0, false));
-        buttonBrowse = new JButton();
-        buttonBrowse.setText("Browse");
-        panel2.add(buttonBrowse, new GridConstraints(1, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        panel1.add(panel2, new GridConstraints(0, 0, 1, 2, GridConstraints.ANCHOR_NORTH, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, 1, null, null, null, 0, false));
+        pathField = new JTextField();
+        pathField.setText("");
+        panel2.add(pathField, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_CAN_GROW, new Dimension(100, -1), new Dimension(350, -1), null, 0, false));
+        browseButton = new JButton();
+        browseButton.setText("Browse");
+        panel2.add(browseButton, new GridConstraints(1, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JLabel label1 = new JLabel();
         label1.setText("Choose save location...");
         panel2.add(label1, new GridConstraints(0, 0, 1, 2, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        statusTextPane = new JTextPane();
+        statusTextPane.setEditable(false);
+        statusTextPane.setEnabled(true);
+        statusTextPane.setText("");
+        panel1.add(statusTextPane, new GridConstraints(1, 0, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
         buttonRow = new JPanel();
         buttonRow.setLayout(new GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
         contentPane.add(buttonRow, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, 1, null, null, null, 0, false));
         final JPanel panel3 = new JPanel();
         panel3.setLayout(new GridLayoutManager(1, 2, new Insets(0, 0, 0, 0), -1, -1));
         buttonRow.add(panel3, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
-        buttonSave = new JButton();
-        buttonSave.setEnabled(true);
-        buttonSave.setText("Save");
-        panel3.add(buttonSave, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        buttonCancel = new JButton();
-        buttonCancel.setText("Cancel");
-        panel3.add(buttonCancel, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        saveButton = new JButton();
+        saveButton.setEnabled(true);
+        saveButton.setText("Save");
+        panel3.add(saveButton, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        cancelButton = new JButton();
+        cancelButton.setText("Cancel");
+        panel3.add(cancelButton, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
     }
 
     /**

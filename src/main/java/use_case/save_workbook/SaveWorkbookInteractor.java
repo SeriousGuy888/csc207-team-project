@@ -21,8 +21,9 @@ public class SaveWorkbookInteractor implements SaveWorkbookInputBoundary {
 
         try {
             dataAccessObject.save(workbook, destination);
-        } catch (IOException e) {
-            presenter.prepareFailView(e.getMessage());
+        } catch (IOException | RuntimeException ex) {
+            presenter.prepareFailView("An problem occurred while saving workbook."
+                    + " Check the path and try again: " + ex);
             return;
         }
 

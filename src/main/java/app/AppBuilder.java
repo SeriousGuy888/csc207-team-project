@@ -5,9 +5,14 @@ import java.awt.*;
 import javax.swing.*;
 
 import data_access.WorkbookDataAccessObject;
+import data_access.workbook_persistence.FileWorkbookDataAccessObject;
 import interface_adapter.GlobalViewController;
 import interface_adapter.GlobalViewModel;
 import interface_adapter.GlobalViewPresenter;
+import interface_adapter.save_workbook.SaveWorkbookController;
+import interface_adapter.save_workbook.SaveWorkbookPresenter;
+import interface_adapter.save_workbook.SaveWorkbookViewModel;
+import use_case.save_workbook.SaveWorkbookInteractor;
 import use_case.tab_actions.add_tab.AddTabInteractor;
 import use_case.tab_actions.delete_tab.DeleteTabInteractor;
 import use_case.tab_actions.rename_tab.RenameTabInteractor;
@@ -25,12 +30,19 @@ public class AppBuilder {
 
     private CourseDataRepository courseDataRepository;
 
+    private FileWorkbookDataAccessObject workbookPersistenceDataAccessObject;
+    private SaveWorkbookViewModel saveWorkbookViewModel;
+    private SaveWorkbookPresenter saveWorkbookPresenter;
+    private SaveWorkbookInteractor saveWorkbookInteractor;
+    private SaveWorkbookController saveWorkbookController;
+
     public AppBuilder() {
         cardPanel.setLayout(cardLayout);
     }
 
     /**
      * Initializes workbook DAO, interface adapters, view models and view.
+     *
      * @return this builder
      */
     public AppBuilder addMainPanel() {
@@ -66,15 +78,37 @@ public class AppBuilder {
         return this;
     }
 
+    public AppBuilder addWorkbookPersistenceDataAccessObject() {
+        if (courseDataRepository == null) {
+            throw new IllegalStateException(
+                    "Workbook Persistence Data Access Object cannot be created "
+                            + " before Course Data Repository has been created."
+            );
+        }
+        workbookPersistenceDataAccessObject = new FileWorkbookDataAccessObject(courseDataRepository);
+        return this;
+    }
+
     public AppBuilder addSaveWorkbookUseCase() {
-        SaveDialog saveDialog = new SaveDialog();
+        if (workbookPersistenceDataAccessObject == null) {
+            throw new IllegalStateException(
+                    "Save Workbook use case cannot be initialised"
+                            + " before Workbook Persistence Data Access Object has been created."
+            );
+        }
+
+        saveWorkbookViewModel = new SaveWorkbookViewModel();
+        saveWorkbookPresenter = new SaveWorkbookPresenter(saveWorkbookViewModel);
+        saveWorkbookInteractor = new SaveWorkbookInteractor(workbookPersistenceDataAccessObject, saveWorkbookPresenter);
+        saveWorkbookController = new SaveWorkbookController(saveWorkbookInteractor);
+        SaveDialog.createSingletonInstance(saveWorkbookViewModel, saveWorkbookController);
 
         return this;
     }
 
-
     /**
      * Builds the application.
+     *
      * @return the application frame.
      */
     public JFrame build() {

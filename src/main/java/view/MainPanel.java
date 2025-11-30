@@ -14,6 +14,8 @@ import interface_adapter.GlobalViewController;
 import interface_adapter.GlobalViewModel;
 import interface_adapter.GlobalViewState;
 import interface_adapter.TimetableState;
+import interface_adapter.save_workbook.SaveWorkbookController;
+import interface_adapter.save_workbook.SaveWorkbookViewModel;
 
 public class MainPanel extends JPanel implements PropertyChangeListener {
     private JPanel MainPanel;

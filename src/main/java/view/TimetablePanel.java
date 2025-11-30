@@ -32,7 +32,6 @@ public class TimetablePanel extends JPanel {
     private JButton saveButton;
     private JButton loadButton;
 
-    private final SaveDialog saveDialog = new SaveDialog();
     private JScrollPane scrollPane;
     private JPanel firstSemesterGridContainer;
     private JPanel secondSemesterGridContainer;
@@ -80,7 +79,7 @@ public class TimetablePanel extends JPanel {
         saveButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                saveDialog.display(TimetablePanel);
+                SaveDialog.getSingletonInstance().display(TimetablePanel);
             }
         });
 

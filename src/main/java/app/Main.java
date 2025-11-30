@@ -16,6 +16,7 @@ public class Main {
         final JFrame application = appBuilder
                 .addMainPanel()
                 .addCourseDataRepository(new JsonCourseDataRepository(CourseDataFilesToLoad.RESOURCE_NAMES_FOR_TESTING))
+                .addWorkbookPersistenceDataAccessObject()
                 .addSaveWorkbookUseCase()
                 .build();
 
