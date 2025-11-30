@@ -71,7 +71,7 @@ public class WeeklyOccupancy {
     }
 
     /**
-     * @return the day of the week that this {@link WeeklyOccupancy} occupies, or -1 if it does not occur on any day.
+     * @return the zero-based index of the first day of the week that this {@link WeeklyOccupancy} occupies, or -1 if it does not occur on any day.
      */
     public int getDayOfTheWeek() {
         if (timespans.isEmpty()) {
