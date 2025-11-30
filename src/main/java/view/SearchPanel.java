@@ -58,6 +58,8 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         resultsContentPanel.setLayout(new BoxLayout(resultsContentPanel, BoxLayout.Y_AXIS));
         resultsContentPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
 
+        // Important: allow full width in scroll pane
+        resultsContentPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
     }
 
     private void setupListeners() {
@@ -158,6 +160,7 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         headerPanel.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.LIGHT_GRAY));
 
         JLabel label = new JLabel(courseId);
+        label.setBorder(BorderFactory.createEmptyBorder(0, 10, 0, 0));
         JButton button = new JButton("▼");
         button.setMargin(new Insets(0, 0, 0, 0));
 
@@ -280,28 +283,46 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
      * Helper method to construct the detailed view of the course.
      */
     private JPanel buildDetailsPanel(DisplayCourseDetailsState state) {
+        // Outer panel still uses BorderLayout so you keep the padding border
         JPanel panel = new JPanel(new BorderLayout());
         panel.setBorder(BorderFactory.createEmptyBorder(10, 15, 10, 15));
+        panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
 
-        // --- Course Title and Description ---
-        JPanel header = new JPanel(new GridLayout(2, 1));
-        header.add(new JLabel("<html><h2>" + state.getCourseTitle() + "</h2></html>"));
+        // Vertical content container (everything stacked)
+        JPanel content = new JPanel();
+        content.setLayout(new BoxLayout(content, BoxLayout.Y_AXIS));
+        content.setAlignmentX(Component.LEFT_ALIGNMENT);
+        content.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
 
+        // --- Title --- I was trying to figure out how to make the width smaller using html but it didnt work - vic
+        String titleHtml =
+                "<html><div style='width:300px'><h2>" +
+                        state.getCourseTitle() +
+                        "</h2></div></html>";
+        JLabel titleLabel = new JLabel(titleHtml);
+        titleLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
+        content.add(titleLabel);
+
+        // --- Description ---
         JTextArea descriptionArea = new JTextArea(state.getCourseDescription());
         descriptionArea.setWrapStyleWord(true);
         descriptionArea.setLineWrap(true);
         descriptionArea.setEditable(false);
         descriptionArea.setOpaque(false);
         descriptionArea.setBorder(null);
+        descriptionArea.setAlignmentX(Component.LEFT_ALIGNMENT);
+        descriptionArea.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
+        content.add(descriptionArea);
+        content.add(Box.createVerticalStrut(10));
 
-        panel.add(header, BorderLayout.NORTH);
-
-        // --- Sections List ---
+        // --- Sections list (left, just under description) ---
         JPanel sectionsPanel = new JPanel();
         sectionsPanel.setLayout(new BoxLayout(sectionsPanel, BoxLayout.Y_AXIS));
+        sectionsPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+        sectionsPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
 
         List<DisplaySectionDetails> sections = state.getSectionDetails();
-        if (sections != null) { // Defensive check
+        if (sections != null) {
             for (DisplaySectionDetails section : sections) {
                 DisplayProfessorDetails prof = section.getProfessorDetails();
 
@@ -313,20 +334,19 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                         prof.getAvgDifficultyRating()
                 );
 
-                sectionsPanel.add(new JLabel(sectionText));
+                JLabel secLabel = new JLabel(sectionText);
+                secLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
+                sectionsPanel.add(secLabel);
             }
         }
 
-        // Combine description and sections into a scrollable center panel
-        JPanel centerContent = new JPanel();
-        centerContent.setLayout(new BoxLayout(centerContent, BoxLayout.Y_AXIS));
-        centerContent.add(descriptionArea);
-        centerContent.add(Box.createVerticalStrut(10)); // Spacer
-        centerContent.add(sectionsPanel);
+        content.add(sectionsPanel);
 
-        panel.add(centerContent, BorderLayout.CENTER);
+        // Put the stacked content at the NORTH so it naturally hugs the top-left
+        panel.add(content, BorderLayout.NORTH);
         return panel;
     }
+
 
     /**
      * Returns the root Swing panel for this view.
