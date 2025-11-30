@@ -32,7 +32,7 @@ public class DisplayCourseDetailsInteractor implements DisplayCourseDetailsInput
         final DisplayCourseDetails baseDetails = courseDetailsDao.getCourseDetails(courseId);
 
         if (baseDetails == null) {
-            presenter.prepareFailView("Course details for " + courseId + " could not be found in the repository.");
+            presenter.prepareFailView("Course details for " + courseId + " could not be found.");
             return;
         }
 
