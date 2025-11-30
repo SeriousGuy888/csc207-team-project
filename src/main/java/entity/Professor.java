@@ -44,4 +44,54 @@ public class Professor {
         return new Professor("", "", 0.0, 0, 0.0, "", "");
     }
 
+    // Getters for professor entity.
+    /**
+     * @return the professor's first name
+     */
+    public String getFirstName() {
+        return this.firstName;
+    }
+
+    /**
+     *
+     * @return the professor's last name
+     */
+    public String getLastName() {
+        return this.lastName;
+    }
+
+    /**
+     * @return the professor's average rating
+     */
+    public double getAvgRating() {
+        return this.avgRating;
+    }
+
+    /**
+     * @return the number of ratings the professor has
+     */
+    public int getNumRatings() {
+        return this.numRatings;
+    }
+
+    /**
+     * @return the professor's average difficulty rating
+     */
+    public double getAvgDifficultyRating() {
+        return this.avgDifficultyRating;
+    }
+
+    /**
+     * @return the professor's department
+     */
+    public String getDepartment() {
+        return this.department;
+    }
+
+    /**
+     * @return the link to the professor's RateMyProf page
+     */
+    public String getLink() {
+        return this.link;
+    }
 }
