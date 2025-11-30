@@ -14,6 +14,7 @@ public class Timetable {
     public Timetable() {
         this.sections = new HashSet<>();
     }
+    public Timetable(Set<Section> sections) {this.sections = sections;}
 
     /**
      * @param section The section to add to this timetable
