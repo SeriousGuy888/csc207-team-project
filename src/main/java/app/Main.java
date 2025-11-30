@@ -1,17 +1,16 @@
 package app;
 
-import java.awt.*;
+import view.MainPanel;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Main {
-    /**
-     * Main method for running the application.
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        final AppBuilder appBuilder = new AppBuilder();
-        final JFrame application = appBuilder
+        AppBuilder appBuilder = new AppBuilder();
+        JFrame application = appBuilder
+                .initializeCourseRepository()
+                .addSearchCoursesUseCase()
                 .addMainPanel()
                 .build();
 
