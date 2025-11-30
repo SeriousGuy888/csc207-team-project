@@ -62,7 +62,6 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
             String description = currOfferingObj.getString("courseDescription");
 
             CourseOffering courseOffering = new CourseOffering(
-                    courseOfferingIdentifier,
                     new CourseCode(courseCodeString),
                     title,
                     description);
@@ -73,18 +72,18 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
             // Loop over each section (e.g., "LEC-0101", "TUT-0102")
             sectionsObj.keys().forEachRemaining(sectionId -> {
 
-                JSONObject sectionDetails = sectionsObj.getJSONObject(sectionId);
+                final JSONObject sectionDetails = sectionsObj.getJSONObject(sectionId);
 
                 // EXTRACT PROFESSOR NAME
                 String professorName = "TBD Professor";
 
                 if (sectionDetails.has("instructors") && !sectionDetails.isNull("instructors")) {
-                    JSONObject instructorsObj = sectionDetails.getJSONObject("instructors");
+                    final JSONObject instructorsObj = sectionDetails.getJSONObject("instructors");
                     // Check if the primary instructor (key "0") exists
                     if (instructorsObj.has("0") && !instructorsObj.isNull("0")) {
-                        JSONObject primaryInstructor = instructorsObj.getJSONObject("0");
-                        String firstName = primaryInstructor.getString("firstName");
-                        String lastName = primaryInstructor.getString("lastName");
+                        final JSONObject primaryInstructor = instructorsObj.getJSONObject("0");
+                        final String firstName = primaryInstructor.getString("firstName");
+                        final String lastName = primaryInstructor.getString("lastName");
                         professorName = firstName + " " + lastName;
                     }
                 }
@@ -120,12 +119,13 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
         return CourseInfobyCode.get(deptCode);
     }
 
+    /**
+     * Get the sectionId's professor's name.
+     * @param sectionId the sectionId being looked at
+     * @return String of the section's professor's name, or TBD Professor if none.
+     */
     public String getProfessorNameBySectionId(String sectionId) {
         // Uses the map populated in loadInCoursesFromJsonFile
         return sectionIdToProfessorName.getOrDefault(sectionId, "TBD Professor");
     }
-
-
-
     }
-}

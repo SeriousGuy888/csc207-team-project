@@ -2,6 +2,8 @@ package data_access.course_data;
 
 import entity.CourseOffering;
 
+import java.util.Map;
+
 /**
  * Implementors of this interface handle loading in and storing a library of course offerings that are available,
  * and users of this class may access course offerings from that library.
