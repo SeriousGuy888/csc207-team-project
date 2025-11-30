@@ -36,8 +36,6 @@ public class TimetablePanel extends JPanel {
     private JPanel[][] firstSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
     private JPanel[][] secondSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
 
-    private TimetableState currentState;
-
     /**
      * Creates a new TimetablePanel and initializes the term-selection controls.
      */
@@ -78,11 +76,6 @@ public class TimetablePanel extends JPanel {
 
         this.setLayout(new BorderLayout());
         this.add(TimetablePanel, BorderLayout.CENTER);
-    }
-
-    public void updateViewModel(TimetableState state) {
-        this.currentState = state;
-        updateView(state);
     }
 
     private void initializeGrid() {
@@ -135,9 +128,6 @@ public class TimetablePanel extends JPanel {
         final MeetingBlock[][][] firstSemesterGridData = state.getFirstSemesterGrid();
         final MeetingBlock[][][] secondSemesterGridData = state.getSecondSemesterGrid();
 
-        alignTimetableData(firstSemesterGridData);
-        alignTimetableData(secondSemesterGridData);
-
         // Iterate over every cell in the UI Grid
         for (int row = 0; row < NUM_ROWS; row++) {
             for (int col = 0; col < NUM_COLS; col++) {
@@ -148,57 +138,10 @@ public class TimetablePanel extends JPanel {
     }
 
     /**
-     * Rearrange meeting blocks to ensure visual continuity
-     * @param grid The MeetingBlock[][][] to align.
-     */
-    // TODO: Migrate this method to presenter
-    private void alignTimetableData(MeetingBlock[][][] grid) {
-        for (int col = 0; col < NUM_COLS; col++) {
-
-            // Keep track of what course was in which visual column in the previous row
-            String prevLeft = null;
-            String prevRight = null;
-
-            for (int row = 0; row < NUM_ROWS; row++) {
-                final MeetingBlock[] blocks = grid[row][col];
-
-                // Step A: Baseline Sort (Alphabetical)
-                // This ensures [B, A] always becomes [A, B] initially
-                sortBlocks(blocks);
-
-                // Step B: Continuity Check
-                // If we have only 1 block, but it matches the "Previous Right", shift it to right.
-                if (blocks[0] != null && blocks[1] == null) {
-                    final String current = blocks[0].getDisplayText();
-
-                    // If this course was on the right previously, and NOT on the left...
-                    if (current.equals(prevRight) && !current.equals(prevLeft)) {
-                        // Shift to Right
-                        blocks[1] = blocks[0];
-                        blocks[0] = null;
-                    }
-                }
-
-                // Step C: Update History for next row
-                prevLeft = (blocks[0] != null) ? blocks[0].getDisplayText() : null;
-                prevRight = (blocks[1] != null) ? blocks[1].getDisplayText() : null;
-            }
-        }
-    }
-
-    private void sortBlocks(MeetingBlock[] blocks) {
-        if (blocks[0] != null && blocks[1] != null) {
-            // Swap if B comes before A alphabetically
-            if (blocks[0].getDisplayText().compareTo(blocks[1].getDisplayText()) > 0) {
-                final MeetingBlock temp = blocks[0];
-                blocks[0] = blocks[1];
-                blocks[1] = temp;
-            }
-        }
-    }
-
-    /**
      * Updates a single UI slot based on the pre-aligned data.
+     * @param slotPanel The JPanel to update
+     * @param blocks The MeetingBlocks to render in this slot
+     * @param currentRow The current row index (0-23) used to check text visibility.
      */
     private void updateSlot(JPanel slotPanel, MeetingBlock[] blocks, int currentRow) {
         slotPanel.removeAll();
@@ -233,14 +176,16 @@ public class TimetablePanel extends JPanel {
             // Left Half (Index 0)
             if (blocks[0] != null) {
                 slotPanel.add(createBlockPanel(blocks[0], currentRow));
-            } else {
+            }
+            else {
                 slotPanel.add(createEmptyHalf());
             }
 
             // Right Half (Index 1)
             if (blocks[1] != null) {
                 slotPanel.add(createBlockPanel(blocks[1], currentRow));
-            } else {
+            }
+            else {
                 slotPanel.add(createEmptyHalf());
             }
         }
@@ -260,7 +205,8 @@ public class TimetablePanel extends JPanel {
         // Color Logic
         if (block.isConflict()) {
             panel.setBackground(new Color(255, 102, 102));
-        } else {
+        }
+        else {
             panel.setBackground(new Color(173, 216, 230));
         }
 
