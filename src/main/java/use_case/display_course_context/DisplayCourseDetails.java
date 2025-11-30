@@ -14,7 +14,15 @@ public class DisplayCourseDetails {
     }
 
     // Getters
-    public String getCourseTitle() { return courseTitle; }
-    public String getCourseDescription() { return courseDescription; }
-    public List<DisplaySectionDetails> getSections() { return sections; }
+    public String getCourseTitle() {
+        return courseTitle;
+    }
+
+    public String getCourseDescription() {
+        return courseDescription;
+    }
+
+    public List<DisplaySectionDetails> getSections() {
+        return sections;
+    }
 }

@@ -56,30 +56,25 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
      */
     private Stream<DisplaySectionDetails> mapSectionToDisplayDetails(Section section) {
 
+        // 1. Get the section name (e.g., "LEC-0101")
         final String sectionName = section.getSectionName();
-        // Call the lookup method using the section's unique name
+
+        // 2. Get Professor Name using the section name
         final String professorName = getProfessorNameBySectionId(sectionName);
 
-        // Create the placeholder professor DTO that ONLY contains the name
-        // The Interactor will fill in the rating/link later
+        // 3. Create the placeholder professor DTO (unchanged)
         final DisplayProfessorDetails placeholderProf = new DisplayProfessorDetails(
-                professorName,
-                0.0,
-                0.0,
-                null
+                professorName, 0.0, 0.0, null
         );
 
-        // Convert entity objects to simple display strings
-        return section.getMeetings().stream()
-                .map(meeting -> {
-                    final String meetingTimes = meeting.getTime().toString();
-                    final String location = meeting.getLocation().toString();
-                    return new DisplaySectionDetails(
-                            section.getSectionName(),
-                            meetingTimes,
-                            location,
-                            placeholderProf
-                    ); });
+        // 5. IMPORTANT CHANGE: RETURN A STREAM OF JUST ONE DTO PER SECTION.
+        // We are no longer iterating over 'meeting' times.
+
+        // Return a stream containing a single DTO for this section.
+        return Stream.of(new DisplaySectionDetails(
+                sectionName,
+                placeholderProf
+        ));
     }
 
     @Override

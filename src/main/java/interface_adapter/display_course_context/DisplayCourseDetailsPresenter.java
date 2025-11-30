@@ -67,8 +67,6 @@ public class DisplayCourseDetailsPresenter implements DisplayCourseDetailsOutput
         return String.format(
                 "%s | Time: %s | Location: %s | Prof: %s",
                 section.getSectionName(),
-                section.getMeetingTimes(),
-                section.getLocation(),
                 profString
         );
     }

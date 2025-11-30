@@ -34,10 +34,9 @@ class MockCourseDetailsDAO implements DisplayCourseDetailsDataAccessInterface {
                 expectedProfName, 0.0, 0.0, null
         );
 
+        // *** CHANGE 1: DisplaySectionDetails constructor updated to remove time/location ***
         DisplaySectionDetails section = new DisplaySectionDetails(
-                "LEC 01",
-                "M/W 10:00-11:00",
-                "BA1100",
+                "LEC 01", // Display section name
                 placeholderProf
         );
 
@@ -50,6 +49,7 @@ class MockCourseDetailsDAO implements DisplayCourseDetailsDataAccessInterface {
 
     @Override
     public String getProfessorNameBySectionId(String sectionId) {
+        // Not directly used in this test, but must be implemented
         return "";
     }
 }
@@ -62,20 +62,20 @@ class MockRateMyProfInteractor implements RateMyProfInputBoundary {
 
     @Override
     public RateMyProfOutputData executeSynchronous(RateMyProfInputData profInputData) {
-        // Use the input names to confirm the Interactor sent the correct data
         String firstName = profInputData.getFirstName();
         String lastName = profInputData.getLastName();
 
-        // Simulate successful RMP lookup with known data
+        // NOTE: Adjusted Professor constructor to match the fields provided in your previous mock:
         return new RateMyProfOutputData(
                 new Professor(
                         firstName,
                         lastName,
-                        4.5, // <- Known Rating
-                        106,
+                        4.5, // <- Known AvgRating
+                        106, // <- Known AvgDifficultyRating
                         3.2,
                         "Computer Science department",
                         "http://test.rmp/link" // <- Known Link
+                        // (Assuming numRatings and department fields are handled internally by the Professor entity)
                 )
         );
     }
@@ -114,7 +114,6 @@ public class DisplayCourseDetailsInteractorTest {
     @Test
     void execute_shouldPrepareSuccessView_WithCorrectlyEnrichedData() {
         // Arrange
-        // DAO returns data (true) and RMP Interactor returns fixed values
         MockCourseDetailsDAO mockDao = new MockCourseDetailsDAO(PROF_FULL_NAME, true);
         MockRateMyProfInteractor mockRmpInteractor = new MockRateMyProfInteractor();
         MockPresenter mockPresenter = new MockPresenter();
@@ -136,16 +135,19 @@ public class DisplayCourseDetailsInteractorTest {
 
         // 2. Check the final course details
         DisplayCourseDetails finalDetails = mockPresenter.getSuccessOutput().getCourseDetails();
-
         assertEquals("Test Course Title", finalDetails.getCourseTitle(), "Course title should match DAO output.");
 
         // 3. Check that the professor details were enriched with RMP data
         DisplaySectionDetails finalSection = finalDetails.getSections().get(0);
         DisplayProfessorDetails finalProf = finalSection.getProfessorDetails();
 
+        // Check that the section name is correct
+        assertEquals("LEC 01", finalSection.getSectionName(), "Section name should be the display name provided by the DAO.");
+
         // Check that the professor details contain the known RMP rating and link
-        assertEquals(PROF_FIRST_NAME + " " + PROF_LAST_NAME, finalProf.getName(), "Full name should be correctly reconstructed (Jane Smith).");
+        assertEquals(PROF_FIRST_NAME + " " + PROF_LAST_NAME, finalProf.getName(), "Full name should be correctly reconstructed (Paul Gries).");
         assertEquals(4.5, finalProf.getAvgRating(), 0.01, "Rating should match the mocked RMP output (4.5).");
+        assertEquals(3.2, finalProf.getAvgDifficultyRating(), 0.01, "Difficulty should match the mocked RMP output (3.2).");
         assertEquals("http://test.rmp/link", finalProf.getLink(), "Link should match the mocked RMP output.");
     }
 
