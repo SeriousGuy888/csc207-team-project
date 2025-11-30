@@ -18,7 +18,7 @@ public class SearchCoursesPresenter implements SearchCoursesOutputBoundary {
     private Set<String> getCourseOfferingStrings(SearchCoursesOutputData outputData) {
         Set<String> courseofferingstrings = new HashSet<>();
         for (CourseOffering courseoffering : outputData.getMatchedCourses()){
-            courseofferingstrings.add(courseoffering.toString());
+            courseofferingstrings.add(courseoffering.getCourseCode().toString());
         }
         return courseofferingstrings;
     }
