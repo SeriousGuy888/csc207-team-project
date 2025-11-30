@@ -1,15 +1,28 @@
 package interface_adapter;
 
-import entity.Workbook;
+import java.util.*;
 
 public class GlobalViewState {
-    private Workbook loadedWorkbook;
+    private List<TimetableState> timetableStateList = new ArrayList<>();
+    private int selectedTabIndex;
 
-    public Workbook getLoadedWorkbook() {
-        return loadedWorkbook;
+    public GlobalViewState() {
+        timetableStateList.add(new TimetableState());
     }
 
-    public void setLoadedWorkbook(Workbook loadedWorkbook) {
-        this.loadedWorkbook = loadedWorkbook;
+    public List<TimetableState> getTimetableStateList() {
+        return timetableStateList;
+    }
+
+    public int getSelectedTabIndex() {
+        return selectedTabIndex;
+    }
+
+    public void setTimetableStateList(List<TimetableState> timetableStateList) {
+        this.timetableStateList = timetableStateList;
+    }
+
+    public void setSelectedTabIndex(int selectedTabIndex) {
+        this.selectedTabIndex = selectedTabIndex;
     }
 }
