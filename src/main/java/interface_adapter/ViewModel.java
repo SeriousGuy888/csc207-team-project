@@ -18,13 +18,16 @@ public class ViewModel<T> {
         this.viewName = viewName;
     }
 
-    public String getViewName() { return this.viewName; }
+    public String getViewName() {
+        return this.viewName;
+    }
+
     public T getState() {
         return state;
     }
 
     /**
-     * set the state of the view model
+     * Set the state of the view model
      * <h2>Important Note</h2>
      * Calling this method does NOT push updates to listeners.
      *
@@ -37,7 +40,6 @@ public class ViewModel<T> {
     /**
      * Pushes a property change event to all listeners of this view model
      * listening for state changes.
-     * <p>
      * If you have changed the contents of state
      * (i.e. you've either just called {@link #setState(T)} or modified the {@link T} state object),
      * then you should call this method so that listeners are actually notifiers.
@@ -61,7 +63,6 @@ public class ViewModel<T> {
     /**
      * Adds a PropertyChangeListener to the listener list for a specific property.
      * The listener will be invoked only when a call on firePropertyChange names that specific property.
-     * <p>
      * This allows Views to subscribe only to the events they care about, avoiding unnecessary updates
      * for unrelated state changes.
      *
