@@ -13,6 +13,7 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class JsonCourseDataRepository implements CourseDataRepository, CourseDataRepositoryGrouped {
     private final Map<String, Map<String, CourseOffering>> CourseInfobyCode;
@@ -20,6 +21,9 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
     private final Map<String, String> sectionIdToProfessorName = new HashMap<>();
 
     public JsonCourseDataRepository(List<String> dataResourceNames) {
+        long start = System.currentTimeMillis();
+        AtomicInteger numFilesLoaded = new AtomicInteger();
+
         CourseInfobyCode = new HashMap<>();
         availableCourseOfferings = new HashMap<>();
 
@@ -30,7 +34,12 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                         "Specified course data resource file named `" + resourceName + "` not found. Skipping.");
                 return;
             }
+            loadInCoursesFromJsonFile(resource);
 
+            numFilesLoaded.getAndIncrement();
+            long curr = System.currentTimeMillis();
+            long elapsed = curr - start;
+            System.out.println("[" + this + "] loaded " + numFilesLoaded + " files at " + elapsed + "ms");
             String coursecode = resourceName.replace("courses/", "").replace(".json", "").toUpperCase();
 
             Map<String, CourseOffering> currentavailableCourseOfferings = loadInCoursesFromJsonFile(resource);
@@ -61,10 +70,19 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
             String title = currOfferingObj.getString("courseTitle");
             String description = currOfferingObj.getString("courseDescription");
 
-            CourseOffering courseOffering = new CourseOffering(
-                    new CourseCode(courseCodeString),
-                    title,
-                    description);
+            CourseOffering courseOffering;
+
+            try {
+                courseOffering = new CourseOffering(
+                        courseOfferingIdentifier,
+                        new CourseCode(courseCodeString),
+                        title,
+                        description);
+            } catch (IllegalArgumentException e) {
+                System.err.println("Could not load course with identifier " +
+                        courseOfferingIdentifier + " because " + e.getMessage());
+                return;
+            }
 
             //  START OF SECTION/MEETING PROCESSING
             JSONObject sectionsObj = currOfferingObj.getJSONObject("meetings");
@@ -91,13 +109,17 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                 // STORE MAPPING INTERNALLY for future lookup
                 sectionIdToProfessorName.put(sectionId, professorName);
 
+            sectionsObj.keys().forEachRemaining(sectionName -> {
                 // todo: actually choose the right teaching method
                 //  and also add meeting times
-                Section section = new Section(courseOffering, sectionId, Section.TeachingMethod.LECTURE);
+                Section section = new Section(courseOffering, sectionName, Section.TeachingMethod.LECTURE);
 
                 courseOffering.addAvailableSection(section);
 
             });
+
+            availableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
+        });
             currentavailableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
             });
 

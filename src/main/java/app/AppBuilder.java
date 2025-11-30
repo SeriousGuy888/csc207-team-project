@@ -1,7 +1,8 @@
 package app;
 
-
+import static app.CourseDataFilesToLoad.RESOURCE_NAMES;
 import data_access.SearchCoursesDataAccessObject;
+import data_access.course_data.CourseDataRepositoryGrouped;
 import interface_adapter.GlobalViewModel;
 import view.MainPanel;
 
@@ -33,6 +34,12 @@ import use_case.ratemyprof.RateMyProfOutputBoundary;
 import use_case.ratemyprof.RateMyProfPresenter; // You need to define this simple class
 import data_access.RateMyProfAPI;
 
+import interface_adapter.GlobalViewPresenter;
+import use_case.tab_actions.add_tab.AddTabInteractor;
+import use_case.tab_actions.delete_tab.DeleteTabInteractor;
+import use_case.tab_actions.rename_tab.RenameTabInteractor;
+import use_case.tab_actions.switch_tab.SwitchTabInteractor;
+import data_access.course_data.CourseDataRepository;
 import view.MainPanel;
 import view.SearchPanel;
 
@@ -41,7 +48,7 @@ public class AppBuilder {
     private final CardLayout cardLayout = new CardLayout();
 
     // Shared data access
-    private JsonCourseDataRepository courseDataRepository;
+    private CourseDataRepository courseDataRepository;
 
     // Search courses components
     private SearchCoursesViewModel searchCoursesViewModel;
@@ -65,12 +72,7 @@ public class AppBuilder {
 
     public AppBuilder initializeCourseRepository() {
         this.courseDataRepository= new JsonCourseDataRepository(
-                Arrays.asList(
-                        "courses/ABP.json",
-                        "courses/ACM.json",
-                        "courses/ACT.json",
-                        "courses/AER.json"
-                )
+                RESOURCE_NAMES
         );
         return this;
     }
@@ -88,7 +90,7 @@ public class AppBuilder {
                 new SearchCoursesPresenter(searchCoursesViewModel);
 
         // 3. DAO
-        this.searchCoursesDataAccessObject = new SearchCoursesDataAccessObject(this.courseDataRepository);
+        this.searchCoursesDataAccessObject = new SearchCoursesDataAccessObject((CourseDataRepositoryGrouped) this.courseDataRepository);
 
         // 4. Create Interactor (implements InputBoundary, contains business logic)
         SearchCoursesInputBoundary searchCoursesInteractor =
@@ -147,6 +149,11 @@ public class AppBuilder {
 
         cardPanel.add(mainPanel.getRootPanel(), "main");
         cardLayout.show(cardPanel, "main");
+        return this;
+    }
+
+    public AppBuilder addCourseDataRepository(CourseDataRepository repository) {
+        this.courseDataRepository = repository;
         return this;
     }
 

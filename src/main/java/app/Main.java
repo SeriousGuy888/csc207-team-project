@@ -1,11 +1,17 @@
 package app;
 
 import view.MainPanel;
+import data_access.course_data.JsonCourseDataRepository;
+import view.MainPanel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class Main {
+    /**
+     * Main method for running the application.
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         AppBuilder appBuilder = new AppBuilder();
         JFrame application = appBuilder
@@ -13,6 +19,7 @@ public class Main {
                 .addSearchCoursesUseCase()
                 .addDisplayCourseContextUseCase()
                 .addMainPanel()
+                .addCourseDataRepository(new JsonCourseDataRepository(CourseDataFilesToLoad.RESOURCE_NAMES_FOR_TESTING))
                 .build();
 
         application.pack();
