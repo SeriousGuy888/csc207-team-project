@@ -12,6 +12,11 @@ import com.intellij.uiDesigner.core.Spacer;
 import interface_adapter.TimetableState;
 import interface_adapter.TimetableState.MeetingBlock;
 
+import entity.Section;
+import java.util.List;
+import java.util.Set;
+
+
 public class TimetablePanel extends JPanel {
     public static final int NUM_ROWS = 24;
     public static final int NUM_COLS = 5;
@@ -36,6 +41,8 @@ public class TimetablePanel extends JPanel {
     private JPanel secondSemesterGridContainer;
     private JPanel[][] firstSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
     private JPanel[][] secondSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
+    private JTable lockedSectionsTable;
+    private LockSectionsTableModel lockSectionsTableModel;
 
     private TimetableState currentState;
 
@@ -46,6 +53,35 @@ public class TimetablePanel extends JPanel {
         $$$setupUI$$$();
 
         initializeGrid();
+
+        lockSectionsTableModel = new LockSectionsTableModel();
+        lockedSectionsTable = new JTable(lockSectionsTableModel);
+        JScrollPane lockedScrollPane = new JScrollPane(lockedSectionsTable);
+
+        lockedScrollPane.setPreferredSize(new Dimension(180, 120));
+        lockedSectionsTable.setRowHeight(14);
+        lockedSectionsTable.setFont(new Font("SansSerif", Font.PLAIN, 10));
+        lockedSectionsTable.getTableHeader().setFont(new Font("SansSerif", Font.PLAIN, 10));
+
+        JPanel wrapper = new JPanel(new BorderLayout());
+        wrapper.add(lockedScrollPane, BorderLayout.CENTER);
+        wrapper.setPreferredSize(new Dimension(180, 120));
+        wrapper.setMinimumSize(new Dimension(180, 120));
+        wrapper.setMaximumSize(new Dimension(180, 120));
+
+        TimetablePanel.add(
+                wrapper,
+                new GridConstraints(
+                        2, 7,
+                        1, 1,
+                        GridConstraints.ANCHOR_NORTH,
+                        GridConstraints.FILL_NONE,
+                        GridConstraints.SIZEPOLICY_FIXED,
+                        GridConstraints.SIZEPOLICY_FIXED,
+                        null, null, null, 0, false
+                )
+        );
+
 
         // fall/winter toggle buttons
         fallButton.setEnabled(false);
@@ -362,4 +398,26 @@ public class TimetablePanel extends JPanel {
         return TimetablePanel;
     }
 
+    /**
+     * Updates the lock table on the right side.
+     *
+     * @param sectionsInTimetable the sections currently in this timetable tab
+     * @param lockedLabelsFromState labels for the sections that should appear checked
+     */
+    public void updateLockedSectionsView(List<Section> sectionsInTimetable,
+                                         Set<String> lockedLabelsFromState) {
+        if (lockSectionsTableModel != null) {
+            lockSectionsTableModel.updateSections(sectionsInTimetable, lockedLabelsFromState);
+        }
+    }
+
+    /**
+     * @return the set of Sections currently marked as locked by the user.
+     */
+    public Set<Section> getLockedSectionsFromUI() {
+        if (lockSectionsTableModel == null) {
+            return Set.of();
+        }
+        return lockSectionsTableModel.getLockedSections();
+    }
 }

@@ -14,6 +14,7 @@ public class LockSectionsInteractor implements LockSectionsInputBoundary {
 
     private final LockSectionsOutputBoundary presenter;
 
+    // Application-level state for what is currently locked
     private final Set<Section> lockedSections = new HashSet<>();
 
     public LockSectionsInteractor(LockSectionsOutputBoundary presenter) {
@@ -22,19 +23,8 @@ public class LockSectionsInteractor implements LockSectionsInputBoundary {
 
     @Override
     public void execute(LockSectionsInputData inputData) {
-        if (inputData == null) {
-            presenter.prepareFailView("Input data for locking sections cannot be null.");
-            return;
-        }
-
-        Set<Section> sectionsToLock = inputData.getSectionsToLock();
-        if (sectionsToLock == null) {
-            presenter.prepareFailView("Sections to lock cannot be null.");
-            return;
-        }
-
         lockedSections.clear();
-        lockedSections.addAll(sectionsToLock);
+        lockedSections.addAll(inputData.getSectionsToLock());
 
         LockSectionsOutputData outputData =
                 new LockSectionsOutputData(new HashSet<>(lockedSections));
@@ -42,6 +32,9 @@ public class LockSectionsInteractor implements LockSectionsInputBoundary {
         presenter.prepareSuccessView(outputData);
     }
 
+    /**
+     * Exposes the current locked sections for other use cases (e.g. Autogen) later.
+     */
     public Set<Section> getLockedSections() {
         return new HashSet<>(lockedSections);
     }

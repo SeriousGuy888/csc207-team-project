@@ -6,9 +6,9 @@ package use_case.locksections;
 public interface LockSectionsInputBoundary {
 
     /**
-     * Updates the set of locked sections.
+     * Executes the Lock Sections use case.
      *
-     * @param inputData the sections that should be locked after this call.
+     * @param inputData the sections that should be locked after this call
      */
     void execute(LockSectionsInputData inputData);
 }

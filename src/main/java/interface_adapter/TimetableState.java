@@ -1,5 +1,8 @@
 package interface_adapter;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class TimetableState {
 
     private static final int NUM_ROWS = 24;
@@ -12,6 +15,8 @@ public class TimetableState {
     private final MeetingBlock[][][] secondSemesterGrid;
 
     private String timetableName;
+    private Set<String> lockedSectionLabels = new HashSet<>();
+
 
     public TimetableState() {
         // Initialize empty grids
@@ -33,6 +38,24 @@ public class TimetableState {
 
     public void setTimetableName(String timetableName) {
         this.timetableName = timetableName;
+    }
+
+    /**
+     * @return a copy of the labels for locked sections (e.g. "CSC207 LEC0101").
+     */
+    public Set<String> getLockedSectionLabels() {
+        return new HashSet<>(lockedSectionLabels);
+    }
+
+    /**
+     * Replace the current locked section labels with the given set.
+     *
+     * @param lockedSectionLabels labels for locked sections, e.g. "CSC207 LEC0101"
+     */
+    public void setLockedSectionLabels(Set<String> lockedSectionLabels) {
+        this.lockedSectionLabels = (lockedSectionLabels == null)
+                ? new HashSet<>()
+                : new HashSet<>(lockedSectionLabels);
     }
 
     // Inner Class: DTO for UI display

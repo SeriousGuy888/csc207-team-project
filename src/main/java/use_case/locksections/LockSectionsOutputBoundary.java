@@ -8,13 +8,8 @@ public interface LockSectionsOutputBoundary {
 
     /**
      * Called when locking sections succeeds.
+     *
+     * @param outputData the resulting locked sections
      */
     void prepareSuccessView(LockSectionsOutputData outputData);
-
-    /**
-     * Called when locking sections fails (e.g., invalid input).bgbg
-     *
-     * @param errorMessage a human-readable description of the error
-     */
-    void prepareFailView(String errorMessage);
 }

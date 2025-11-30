@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  * Output data for the Lock Sections use case.
- * Represents the resulting set of locked sections after the update.
+ * Represents the resulting set of locked sections.
  */
 public class LockSectionsOutputData {
 
