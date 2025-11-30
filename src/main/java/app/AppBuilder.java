@@ -12,11 +12,17 @@ import use_case.tab_actions.add_tab.AddTabInteractor;
 import use_case.tab_actions.delete_tab.DeleteTabInteractor;
 import use_case.tab_actions.rename_tab.RenameTabInteractor;
 import use_case.tab_actions.switch_tab.SwitchTabInteractor;
+import data_access.course_data.CourseDataRepository;
 import view.MainPanel;
 
 public class AppBuilder {
     private final JPanel cardPanel = new JPanel();
     private final CardLayout cardLayout = new CardLayout();
+
+    private MainPanel mainPanel;
+    private GlobalViewModel globalViewModel;
+
+    private CourseDataRepository courseDataRepository;
 
     public AppBuilder() {
         cardPanel.setLayout(cardLayout);
@@ -51,6 +57,11 @@ public class AppBuilder {
         cardPanel.add(mainPanel.getRootPanel(), "main");
         presenter.prepareSuccessView(dataAccess.getWorkbook());
         cardLayout.show(cardPanel, "main");
+        return this;
+    }
+
+    public AppBuilder addCourseDataRepository(CourseDataRepository repository) {
+        this.courseDataRepository = repository;
         return this;
     }
 

@@ -1,8 +1,10 @@
 package app;
 
-import java.awt.*;
+import data_access.course_data.JsonCourseDataRepository;
+import view.MainPanel;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Main {
     /**
@@ -13,6 +15,7 @@ public class Main {
         final AppBuilder appBuilder = new AppBuilder();
         final JFrame application = appBuilder
                 .addMainPanel()
+                .addCourseDataRepository(new JsonCourseDataRepository(CourseDataFilesToLoad.RESOURCE_NAMES_FOR_TESTING))
                 .build();
 
         application.pack();
