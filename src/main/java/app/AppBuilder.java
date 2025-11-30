@@ -17,6 +17,22 @@ import use_case.search_courses.SearchCoursesDataAccessInterface;
 import use_case.search_courses.SearchCoursesInteractor;
 import use_case.search_courses.SearchCoursesInputBoundary;
 import use_case.search_courses.SearchCoursesOutputBoundary;
+import data_access.display_course_context.DisplayCourseDetailsDataAccessObject;
+import interface_adapter.display_course_context.DisplayCourseDetailsController;
+import interface_adapter.display_course_context.DisplayCourseDetailsPresenter;
+import interface_adapter.display_course_context.DisplayCourseDetailsViewModel;
+import use_case.display_course_context.DisplayCourseDetailsDataAccessInterface;
+import use_case.display_course_context.DisplayCourseDetailsInputBoundary;
+import use_case.display_course_context.DisplayCourseDetailsInteractor;
+import use_case.display_course_context.DisplayCourseDetailsOutputBoundary;
+import data_access.RateMyProfDataAccessObject;
+import use_case.ratemyprof.RateMyProfDataAccessInterface;
+import use_case.ratemyprof.RateMyProfInputBoundary;
+import use_case.ratemyprof.RateMyProfInteractor;
+import use_case.ratemyprof.RateMyProfOutputBoundary;
+import use_case.ratemyprof.RateMyProfPresenter; // You need to define this simple class
+import data_access.RateMyProfAPI;
+
 import view.MainPanel;
 import view.SearchPanel;
 
@@ -32,11 +48,17 @@ public class AppBuilder {
     private SearchCoursesController searchCoursesController;
     private SearchCoursesDataAccessInterface searchCoursesDataAccessObject;
 
+    // Course Context Components
+    private DisplayCourseDetailsViewModel displayCoursesViewModel;
+    private DisplayCourseDetailsController displayCoursesController;
+
+    // RMP components
+    private RateMyProfInputBoundary rateMyProfInteractor;
+
     private MainPanel mainPanel;
     private GlobalViewModel globalViewModel;
 
     public AppBuilder() {
-        CardLayout cardLayout = new CardLayout();
         cardPanel.setLayout(cardLayout);
 
     }
@@ -78,6 +100,39 @@ public class AppBuilder {
         return this;
     }
 
+    public AppBuilder addDisplayCourseContextUseCase() {
+
+        // 1. RATE MY PROF USE CASE SETUP (Dependency for Display Interactor)
+        // NOTE: Replace MockRateMyProfAPI() with your real API if available
+        RateMyProfAPI rmpFetcher = new RateMyProfAPI();
+        RateMyProfDataAccessInterface rmpDAO = new RateMyProfDataAccessObject(rmpFetcher);
+
+        // The Display Interactor uses the synchronous RMP method, so the RMP presenter
+        // is often a minimal placeholder.
+        RateMyProfOutputBoundary rmpPresenter = new RateMyProfPresenter();
+        this.rateMyProfInteractor = new RateMyProfInteractor(rmpDAO, rmpPresenter);
+
+        // 2. DISPLAY COURSE CONTEXT USE CASE SETUP
+        this.displayCoursesViewModel = new DisplayCourseDetailsViewModel(); // Assume you've created this ViewModel
+
+        // Create Presenter (implements OutputBoundary, updates Display ViewModel)
+        DisplayCourseDetailsOutputBoundary displayPresenter =
+                new DisplayCourseDetailsPresenter(displayCoursesViewModel); // Assume you've created this Presenter
+
+        // Create DAO (uses the repository, which has professor name lookup)
+        DisplayCourseDetailsDataAccessInterface displayDAO =
+                new DisplayCourseDetailsDataAccessObject(this.courseDataRepository);
+
+        // Create Interactor (injects DAO, Presenter, and the RMP Interactor)
+        DisplayCourseDetailsInputBoundary displayInteractor =
+                new DisplayCourseDetailsInteractor(displayDAO, displayPresenter, this.rateMyProfInteractor);
+
+        // Create Controller
+        this.displayCoursesController = new DisplayCourseDetailsController(displayInteractor);
+
+        return this;
+    }
+
     public AppBuilder addMainPanel() {
         globalViewModel = new GlobalViewModel();
         mainPanel = new MainPanel(globalViewModel);
@@ -86,6 +141,9 @@ public class AppBuilder {
         SearchPanel searchPanel = mainPanel.getSearchPanel();
         searchPanel.setSearchCoursesController(searchCoursesController);
         searchPanel.setSearchCoursesViewModel(searchCoursesViewModel);
+
+        searchPanel.setDisplayCoursesController(displayCoursesController);
+        searchPanel.setDisplayCoursesViewModel(displayCoursesViewModel);
 
         cardPanel.add(mainPanel.getRootPanel(), "main");
         cardLayout.show(cardPanel, "main");

@@ -32,7 +32,7 @@ public class DisplayCourseDetailsInteractor implements DisplayCourseDetailsInput
         final DisplayCourseDetails baseDetails = courseDetailsDao.getCourseDetails(courseId);
 
         if (baseDetails == null) {
-            presenter.prepareFailView("Course details for " + courseId + " could not be found.");
+            presenter.prepareFailView(courseId,"Course details for " + courseId + " could not be found.");
             return;
         }
 
@@ -43,6 +43,7 @@ public class DisplayCourseDetailsInteractor implements DisplayCourseDetailsInput
 
         // PREPARE OUTPUT: Create the final complete DTO.
         final DisplayCourseDetails finalDetails = new DisplayCourseDetails(
+                baseDetails.getCourseId(),
                 baseDetails.getCourseTitle(),
                 baseDetails.getCourseDescription(),
                 enrichedSections

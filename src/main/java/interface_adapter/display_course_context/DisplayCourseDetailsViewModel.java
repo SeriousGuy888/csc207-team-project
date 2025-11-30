@@ -12,6 +12,7 @@ public class DisplayCourseDetailsViewModel {
 
     // The current, observable state of the panel
     private DisplayCourseDetailsState state = new DisplayCourseDetailsState(
+            "",
             "Loading Course...",
             "",
             Collections.emptyList(),
@@ -34,7 +35,7 @@ public class DisplayCourseDetailsViewModel {
         return state;
     }
 
-    public void addPropertyChangeListener(PropertyChangeListener listener) {
-        support.addPropertyChangeListener(listener);
+    public void addPropertyChangeListener(String propertyName, PropertyChangeListener listener) {
+        support.addPropertyChangeListener(propertyName, listener);
     }
 }

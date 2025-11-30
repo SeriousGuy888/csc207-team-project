@@ -11,6 +11,7 @@ public class Main {
         JFrame application = appBuilder
                 .initializeCourseRepository()
                 .addSearchCoursesUseCase()
+                .addDisplayCourseContextUseCase()
                 .addMainPanel()
                 .build();
 

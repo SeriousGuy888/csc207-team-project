@@ -9,6 +9,7 @@ import use_case.display_course_context.DisplayProfessorDetails;
 import use_case.display_course_context.DisplaySectionDetails;
 import data_access.course_data.JsonCourseDataRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -16,8 +17,6 @@ import java.util.stream.Stream;
 // This DAO transforms the CourseOffering entity into the DisplayCourseDetails DTO
 public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetailsDataAccessInterface {
 
-    // Dependency on the low-level repository that fetches raw course data
-    // changed the type to the concrete class now that we rely on its specific method.
     private final JsonCourseDataRepository courseRepository;
 
     public DisplayCourseDetailsDataAccessObject(CourseDataRepository courseRepository) {
@@ -27,48 +26,65 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
 
     @Override
     public DisplayCourseDetails getCourseDetails(String courseId) {
-        // Fetch the raw entity
-        final CourseOffering courseOffering = courseRepository.getCourseOffering(courseId);
+        // 1. Get the department code (first 3 letters) from the simplified courseId
+        String deptCode = courseId.substring(0, 3).toUpperCase();
 
-        // Course not found
-        if (courseOffering == null) {
+        // 2. Fetch all known course offerings for that department (from the grouped repository)
+        // We assume getMatchingCourseInfo(deptCode) returns Map<String (Full ID), CourseOffering>
+        java.util.Map<String, CourseOffering> deptOfferings =
+                courseRepository.getMatchingCourseInfo(deptCode);
+
+        if (deptOfferings == null || deptOfferings.isEmpty()) {
+            return null; // Department not found or no offerings
+        }
+
+        // 3. Filter offerings to find all versions of the requested course (e.g., ABP102Y1F, ABP102Y1S)
+        List<CourseOffering> matchingOfferings = deptOfferings.entrySet().stream()
+                .filter(entry -> entry.getKey().startsWith(courseId))
+                .map(java.util.Map.Entry::getValue)
+                .collect(Collectors.toList());
+
+        // If no matching offerings are found, return null
+        if (matchingOfferings.isEmpty()) {
             return null;
         }
 
-        // Transform the entity data into display DTOs
-        final List<DisplaySectionDetails> displaySections = courseOffering.getAvailableSections().stream()
-                // FlatMap converts the Set of Sections into a flat list of DisplaySectionDetails (one per Meeting)
+        // --- Aggregation ---
+
+        // Use the first match to get the title and description (which should be the same across all terms)
+        final CourseOffering primaryOffering = matchingOfferings.get(0);
+
+        // 4. Combine ALL sections from ALL matching course offerings
+        final List<DisplaySectionDetails> allDisplaySections = matchingOfferings.stream()
+                .flatMap(offering -> offering.getAvailableSections().stream())
+                .distinct() // Avoid duplicate sections if they appear in multiple offerings (rare, but safe)
                 .flatMap(this::mapSectionToDisplayDetails)
                 .collect(Collectors.toList());
 
-        // Create the final DTO
+        // 5. Create the final DTO with combined data
         return new DisplayCourseDetails(
-                courseOffering.getTitle(),
-                courseOffering.getDescription(),
-                displaySections
+                courseId, // Use the simple ID as the context ID
+                primaryOffering.getTitle(),
+                primaryOffering.getDescription(),
+                allDisplaySections
         );
     }
 
     /**
-     * Maps one Section entity into a stream of DisplaySectionDetails,
-     * generating one DTO for every single Meeting time slot in that section.
+     * Maps one Section entity into a stream of DisplaySectionDetails.
      * @param section is the Section entity we are looking for details about.
      */
     private Stream<DisplaySectionDetails> mapSectionToDisplayDetails(Section section) {
 
-        // 1. Get the section name (e.g., "LEC-0101")
         final String sectionName = section.getSectionName();
 
-        // 2. Get Professor Name using the section name
+        // Check for null professor name to prevent crashing
         final String professorName = getProfessorNameBySectionId(sectionName);
 
-        // 3. Create the placeholder professor DTO (unchanged)
+        // Create the placeholder professor DTO
         final DisplayProfessorDetails placeholderProf = new DisplayProfessorDetails(
-                professorName, 0.0, 0.0, null
+                professorName != null ? professorName : "TBD", 0.0, 0.0, null
         );
-
-        // 5. IMPORTANT CHANGE: RETURN A STREAM OF JUST ONE DTO PER SECTION.
-        // We are no longer iterating over 'meeting' times.
 
         // Return a stream containing a single DTO for this section.
         return Stream.of(new DisplaySectionDetails(
@@ -79,6 +95,7 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
 
     @Override
     public String getProfessorNameBySectionId(String sectionId) {
+        // This remains the same, delegating the lookup to the repository
         return courseRepository.getProfessorNameBySectionId(sectionId);
     }
 }
