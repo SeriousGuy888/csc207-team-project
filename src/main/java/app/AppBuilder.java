@@ -4,6 +4,7 @@ package app;
 import interface_adapter.GlobalViewModel;
 import data_access.course_data.CourseDataRepository;
 import view.MainPanel;
+import view.SaveDialog;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,6 +20,12 @@ public class AppBuilder {
 
     public AppBuilder() {
         cardPanel.setLayout(cardLayout);
+    }
+
+    public AppBuilder addSaveWorkbookUseCase() {
+        SaveDialog saveDialog = new SaveDialog();
+
+        return this;
     }
 
     public AppBuilder addMainPanel() {

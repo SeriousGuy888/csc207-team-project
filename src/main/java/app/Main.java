@@ -12,6 +12,7 @@ public class Main {
         JFrame application = appBuilder
                 .addMainPanel()
                 .addCourseDataRepository(new JsonCourseDataRepository(CourseDataFilesToLoad.RESOURCE_NAMES_FOR_TESTING))
+                .addSaveWorkbookUseCase()
                 .build();
 
         application.pack();
