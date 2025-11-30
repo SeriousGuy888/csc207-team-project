@@ -10,8 +10,8 @@ import java.util.Map;
  */
 public interface CourseDataRepositoryGrouped {
     /**
-     * @param courseCode The key under which the set of corresponding courses is supposedly stored.
+     * @param deptCode The key under which the set of corresponding courses is supposedly stored.
      * @return The corresponding set of course offerings, if it exists. Otherwise, null.
      */
-    Map<String, CourseOffering> getMatchingCourseInfo(String courseCode);
+    Map<String, CourseOffering> getMatchingCourseInfo(String deptCode);
 }
