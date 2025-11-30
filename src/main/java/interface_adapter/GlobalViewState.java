@@ -6,6 +6,10 @@ public class GlobalViewState {
     private List<TimetableState> timetableStateList = new ArrayList<>();
     private int selectedTabIndex;
 
+    public GlobalViewState() {
+        timetableStateList.add(new TimetableState());
+    }
+
     public List<TimetableState> getTimetableStateList() {
         return timetableStateList;
     }

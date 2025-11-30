@@ -1,9 +1,10 @@
 package interface_adapter;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class TimetableState {
+
+    private static final int NUM_ROWS = 24;
+    private static final int NUM_COLS = 5;
+    private static final int MAX_MEETING_BLOCKS = 2;
 
     // The grid: 24 rows (9am-9pm, 30m slots) x 5 columns (Mon-Fri)
     // Each cell contains a list of blocks (to handle conflicts)
@@ -14,8 +15,8 @@ public class TimetableState {
 
     public TimetableState() {
         // Initialize empty grids
-        firstSemesterGrid = new MeetingBlock[24][5][2];
-        secondSemesterGrid = new MeetingBlock[24][5][2];
+        firstSemesterGrid = new MeetingBlock[NUM_ROWS][NUM_COLS][MAX_MEETING_BLOCKS];
+        secondSemesterGrid = new MeetingBlock[NUM_ROWS][NUM_COLS][MAX_MEETING_BLOCKS];
     }
 
     public MeetingBlock[][][] getFirstSemesterGrid() {
@@ -53,8 +54,12 @@ public class TimetableState {
             return "<html><center>" + courseCode + "<br>" + sectionInfo + "</center></html>";
         }
 
-        public int getStartRow() { return startRow; }
+        public int getStartRow() {
+            return startRow;
+        }
 
-        public boolean isConflict() { return isConflict; }
+        public boolean isConflict() {
+            return isConflict;
+        }
     }
 }

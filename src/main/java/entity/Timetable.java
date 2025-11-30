@@ -1,7 +1,5 @@
 package entity;
 
-import java.sql.Time;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -12,7 +10,7 @@ import java.util.stream.Collectors;
  */
 public class Timetable {
     private final Set<Section> sections;
-    private String timetableName;
+    private String timetableName = "Default Timetable";
 
     public Timetable() {
         this.sections = new HashSet<>();
@@ -64,6 +62,10 @@ public class Timetable {
         return new HashSet<>(sections);
     }
 
+    /**
+     * Update the number of conflicts for each meeting in the timetable.
+     * @return `true` if timetable does not contain any >2-course conflicts.
+     */
     public boolean markConflicts() {
         final List<Meeting> allMeetings = sections.stream()
                 .flatMap(section -> section.getMeetings().stream())

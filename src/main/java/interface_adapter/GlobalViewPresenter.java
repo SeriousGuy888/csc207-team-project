@@ -41,6 +41,7 @@ public class GlobalViewPresenter implements
         // 1. Rebuild the entire list of TimetableStates
         // (Since a tab was added/removed, indices have shifted)
         final List<TimetableState> newStates = new ArrayList<>();
+        final List<TimetableState> oldList = state.getTimetableStateList();
 
         for (Timetable t : workbook.getTimetables()) {
             // Reuse conversion helper
@@ -50,7 +51,10 @@ public class GlobalViewPresenter implements
         state.setTimetableStateList(newStates);
 
         // Adjust selection if out of bounds (e.g. deleted last tab)
-        if (state.getSelectedTabIndex() >= newStates.size()) {
+        if (newStates.size() > oldList.size()) {
+            state.setSelectedTabIndex(newStates.size() - 1);
+        }
+        else if (state.getSelectedTabIndex() >= newStates.size()) {
             state.setSelectedTabIndex(Math.max(0, newStates.size() - 1));
         }
 
@@ -58,17 +62,21 @@ public class GlobalViewPresenter implements
         globalViewModel.firePropertyChange(GlobalViewModel.TIMETABLE_CHANGED);
     }
 
-    // --- HANDLE SWITCH (Selection Change) ---
+    /**
+     * Switches to a different tab in the UI.
+     * @param newIndex the index of the tab to switch to
+     */
+    @Override
     public void prepareSuccessView(int newIndex) {
         final GlobalViewState state = globalViewModel.getState();
         state.setSelectedTabIndex(newIndex);
-
         globalViewModel.setState(state);
         globalViewModel.firePropertyChange(GlobalViewModel.TIMETABLE_CHANGED);
     }
 
     /**
-     * @param timetableOutputData
+     * Refresh timetabl on given index.
+     * @param timetableOutputData The output data from the use case.
      */
     @Override
     public void prepareSuccessView(TimetableUpdateOutputData timetableOutputData) {
@@ -77,6 +85,11 @@ public class GlobalViewPresenter implements
         updateSingleTimetable(changedTimetable, tabIndex);
     }
 
+    /**
+     * Updates a single timetable in the UI.
+     * @param changedTimetable The timetable that was changed.
+     * @param tabIndex The index of the timetable in the UI.
+     */
     public void updateSingleTimetable(Timetable changedTimetable, int tabIndex) {
         final GlobalViewState globalState = globalViewModel.getState();
         final List<TimetableState> currentStates = globalState.getTimetableStateList();
@@ -140,9 +153,9 @@ public class GlobalViewPresenter implements
     private void placeBlockInGrid(MeetingBlock[][][] grid, Meeting meeting, MeetingBlock block) {
         final int col = meeting.getStartTimeIndexInDay();
         for (int row = block.getStartRow(); row < HALF_HOUR_SLOTS_PER_DAY; row++) {
-            final int bitIndex = START_HOUR_INDEX + row;
+            final int timeSlotIndex = START_HOUR_INDEX + row;
 
-            if (meeting.checkOccupancy(col, bitIndex)) {
+            if (meeting.checkOccupancy(col, timeSlotIndex)) {
                 if (grid[row][col][0] == null) {
                     grid[row][col][0] = block;
                 }
@@ -154,10 +167,12 @@ public class GlobalViewPresenter implements
     }
 
     /**
+     * Executes when update failed.
      * @param error The error message to display
      */
     @Override
     public void prepareFailView(String error) {
+        // TODO: Handle error
         System.out.println(error);
     }
 }

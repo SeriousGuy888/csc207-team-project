@@ -69,7 +69,9 @@ public class Section {
         return new HashSet<>(meetings);
     }
 
-    public Set<Meeting> getMeetings() {return meetings;}
+    public Set<Meeting> getMeetings() {
+        return meetings;
+    }
 
     public enum TeachingMethod {
         LECTURE,
