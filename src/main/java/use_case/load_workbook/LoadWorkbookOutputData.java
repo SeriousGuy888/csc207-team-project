@@ -3,13 +3,13 @@ package use_case.load_workbook;
 import entity.Workbook;
 
 public class LoadWorkbookOutputData {
-    private final Workbook loadedWorkbook;
+    private final String message;
 
-    public LoadWorkbookOutputData(Workbook loadedWorkbook) {
-        this.loadedWorkbook = loadedWorkbook;
+    public LoadWorkbookOutputData(String message) {
+        this.message = message;
     }
 
-    public Workbook getLoadedWorkbook() {
-        return loadedWorkbook;
+    public String getMessage() {
+        return message;
     }
 }

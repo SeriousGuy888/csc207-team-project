@@ -1,28 +1,33 @@
 package use_case.save_workbook;
 
 import entity.Workbook;
+import use_case.WorkbookDataAccessInterface;
 
 import java.io.IOException;
 import java.nio.file.Path;
 
 public class SaveWorkbookInteractor implements SaveWorkbookInputBoundary {
-    private final SaveWorkbookDataAccessInterface dataAccessObject;
+    private final WorkbookDataAccessInterface workbookDataAccessObject;
+    private final SaveWorkbookDataAccessInterface fileSavingDataAccessObject;
     private final SaveWorkbookOutputBoundary presenter;
 
-    public SaveWorkbookInteractor(SaveWorkbookDataAccessInterface dataAccessObject,
+    public SaveWorkbookInteractor(WorkbookDataAccessInterface workbookDataAccessObject,
+                                  SaveWorkbookDataAccessInterface fileSavingDataAccessObject,
                                   SaveWorkbookOutputBoundary presenter) {
-        this.dataAccessObject = dataAccessObject;
+        this.workbookDataAccessObject = workbookDataAccessObject;
+        this.fileSavingDataAccessObject = fileSavingDataAccessObject;
         this.presenter = presenter;
     }
 
     public void execute(SaveWorkbookInputData inputData) {
-        Workbook workbook = inputData.getWorkbook();
-        Path destination = inputData.getDestination();
+        final Workbook workbook = workbookDataAccessObject.getWorkbook();
+        final Path destination = inputData.getDestination();
 
         try {
-            dataAccessObject.save(workbook, destination);
-        } catch (IOException e) {
-            presenter.prepareFailView(e.getMessage());
+            fileSavingDataAccessObject.save(workbook, destination);
+        } catch (IOException | RuntimeException ex) {
+            presenter.prepareFailView("An problem occurred while saving workbook."
+                    + " Check the path and try again: " + ex);
             return;
         }
 
