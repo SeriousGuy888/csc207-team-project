@@ -55,7 +55,14 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
         // 4. Combine ALL sections from ALL matching course offerings
         final List<DisplaySectionDetails> allDisplaySections = matchingOfferings.stream()
                 .flatMap(offering -> offering.getAvailableSections().stream())
-                .distinct() // Avoid duplicate sections if they appear in multiple offerings
+                // Map Section to a key and object pair
+                .collect(Collectors.toMap(
+                        section -> section.getCourseOffering().getCourseCode().toString() + ":" + section.getSectionName(),
+                        section -> section,
+                        (existing, replacement) -> existing // keep first encountered section
+                ))
+                .values()
+                .stream()
                 .flatMap(this::mapSectionToDisplayDetails)
                 .collect(Collectors.toList());
 
@@ -108,11 +115,25 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
                 .map(meeting -> meeting.getLocation().toString())  // adjust to your actual getter
                 .orElse("TBA");
 
+        System.out.println("Section: " + sectionName + ", number of meetings: " + section.getMeetingsCopy().size());
+        section.getMeetingsCopy().forEach(meeting -> {
+            System.out.println("  Meeting location: " + meeting.getLocation());
+            WeeklyOccupancy occ = meeting.getTime();
+            System.out.println("    Day index: " + occ.getDayOfTheWeek());
+            System.out.println("    Start ms: " + occ.getStartTimeInDay());
+            System.out.println("    End ms: " + occ.getEndTimeInDay());
+        });
+
+        System.out.println("Mapped meeting times for section " + sectionName + ":");
+        meetingTimes.forEach(mt -> System.out.println("  " + mt.getDayOfWeek() + " " + mt.getStartTime() + "-" + mt.getEndTime()));
+
+        System.out.println("Section " + sectionName + ", location: " + location);
+
         // Professor info
         final String courseId = section.getCourseOffering().getCourseCode().toString(); // or courseOffering.getId() depending on your naming
         final String professorName = courseRepository.getProfessorNameByCourseAndSection(courseId, sectionName);
         String profName = getProfessorNameByCourseAndSection(courseId, sectionName);
-        System.out.println("Found professor name: '" + profName + "' for section: '" + sectionName + "'");
+        //System.out.println("Found professor name: '" + profName + "' for section: '" + sectionName + "'");
         final DisplayProfessorDetails placeholderProf = new DisplayProfessorDetails(
                 professorName != null ? professorName : "TBD",
                 0.0,

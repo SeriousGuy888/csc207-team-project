@@ -320,4 +320,5 @@ public class WeeklyOccupancy {
             return Objects.hash(start, end);
         }
     }
+
 }

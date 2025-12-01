@@ -327,7 +327,7 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
             for (DisplaySectionDetails section : sections) {
                 DisplayProfessorDetails prof = section.getProfessorDetails();
 
-                // Build the time-location string
+                // Build "FRI 12:00-13:00 in MY, WED 11:00-12:00 in MP"
                 StringBuilder timeLocSb = new StringBuilder();
                 List<DisplayMeetingTime> mts = section.getMeetingTimes();
                 for (int i = 0; i < mts.size(); i++) {
@@ -337,14 +337,12 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                             .append(" ")
                             .append(mt.getStartTime())
                             .append("-")
-                            .append(mt.getEndTime());
+                            .append(mt.getEndTime())
+                            .append(" in ")
+                            .append(section.getLocation()); // or per-meeting location if needed
                 }
-                if (!mts.isEmpty()) {
-                    timeLocSb.append(" in ").append(section.getLocation());
-                }
-                String timeLocation = timeLocSb.length() > 0 ? timeLocSb.toString() : "TBA";
+                String timeLocation = mts.isEmpty() ? "TBA" : timeLocSb.toString();
 
-                // Format the display label
                 String sectionHtml = String.format(
                         "<html><b>%s</b><br/>%s<br/>Prof: %s (RMP: <font color='green'>%.1f</font> / Diff: %.1f)</html>",
                         section.getSectionName(),
@@ -362,13 +360,14 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                 infoLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
 
                 JButton toggleButton = new JButton("Add to timetable");
-                final boolean[] added = {false}; // UI state for toggle
-
+                final boolean[] added = {false};
                 toggleButton.addActionListener(e -> {
                     if (added[0]) {
-                        // Call remove section use case
+                        // call remove section case
+                        toggleButton.setText("Add to timetable");
                     } else {
-                        // Call add section use case
+                        // call add section case
+                        toggleButton.setText("Remove from timetable");
                     }
                     added[0] = !added[0];
                 });
