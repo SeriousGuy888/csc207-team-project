@@ -4,14 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06e5149e-db28-4222-bdad-3096ebf50f69" name="Changes" comment="">
+    <list default="true" id="06e5149e-db28-4222-bdad-3096ebf50f69" name="Changes" comment="added locked section options to Timetable entity">
+      <change afterPath="$PROJECT_DIR$/src/main/java/use_case/locksections/LockSectionInputBoundary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/use_case/locksections/LockSectionInputData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/use_case/locksections/LockSectionInteractor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Timetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Timetable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -57,6 +67,8 @@
     "git-widget-placeholder": "usecase-locksections-revised",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/carol/Downloads/csc207-team-project-1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
@@ -172,8 +184,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762883933797</updated>
-      <workItem from="1764573460377" duration="203000" />
+      <workItem from="1764573460377" duration="545000" />
     </task>
+    <task id="LOCAL-00001" summary="added locked section options to Timetable entity">
+      <option name="closed" value="true" />
+      <created>1764573739852</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764573739852</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +202,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Connected AutogenInteractor To UI (finally)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connected AutogenInteractor To UI (finally)" />
+    <MESSAGE value="added locked section options to Timetable entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="added locked section options to Timetable entity" />
   </component>
 </project>
