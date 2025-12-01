@@ -4,7 +4,6 @@ package app;
 import data_access.SearchCoursesDataAccessObject;
 import data_access.WorkbookDataAccessObject;
 import data_access.course_data.CourseDataRepository;
-import data_access.course_data.CourseDataRepositoryGrouped;
 import data_access.course_data.JsonCourseDataRepository;
 import data_access.workbook_persistence.FileWorkbookDataAccessObject;
 import interface_adapter.GlobalViewController;
@@ -44,7 +43,6 @@ import use_case.ratemyprof.RateMyProfOutputBoundary;
 import use_case.ratemyprof.RateMyProfPresenter;
 import data_access.RateMyProfAPI;
 
-import interface_adapter.GlobalViewPresenter;
 import use_case.tab_actions.add_tab.AddTabInteractor;
 import use_case.tab_actions.delete_tab.DeleteTabInteractor;
 import use_case.tab_actions.rename_tab.RenameTabInteractor;
