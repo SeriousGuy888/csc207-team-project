@@ -39,10 +39,6 @@ public class AutogenController {
 
 
     public void autogenerate() {
-        // TODO later:
-        //  - get selectedCourses from workbook or SearchPanel selections
-        //  - get lockedSections from the lock table
-        //  - get blockedTimes from a "blocked time" UI
         autogenerate(Set.of(), Set.of(), null);
     }
 

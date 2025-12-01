@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06e5149e-db28-4222-bdad-3096ebf50f69" name="Changes" comment="Changed AppBuilder DAO initialisation">
+    <list default="true" id="06e5149e-db28-4222-bdad-3096ebf50f69" name="Changes" comment="Finished Implementing AutogenController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/AppBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/AppBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data_access/autogen/AutogenCourseDataAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data_access/autogen/AutogenCourseDataAccess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/interface_adapter/autogen/AutogenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interface_adapter/autogen/AutogenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/TimetablePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/TimetablePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764576231293</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finished Implementing AutogenController">
+      <option name="closed" value="true" />
+      <created>1764614571743</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764614571743</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +237,7 @@
     <MESSAGE value="Added LockSection Usecase files" />
     <MESSAGE value="Added LockSection Usecase files part 2" />
     <MESSAGE value="Created LockSection Controllers/Presenters and connected to UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created LockSection Controllers/Presenters and connected to UI" />
+    <MESSAGE value="Finished Implementing AutogenController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Implementing AutogenController" />
   </component>
 </project>
