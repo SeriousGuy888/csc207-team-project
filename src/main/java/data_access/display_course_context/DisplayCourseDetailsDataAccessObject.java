@@ -121,7 +121,7 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
         final String courseId = section.getCourseOffering().getCourseCode().toString(); // or courseOffering.getId() depending on your naming
         final String professorName = courseRepository.getProfessorNameByCourseAndSection(courseId, sectionName);
         String profName = getProfessorNameByCourseAndSection(courseId, sectionName);
-        //System.out.println("Found professor name: '" + profName + "' for section: '" + sectionName + "'");
+        // System.out.println("Found professor name: '" + profName + "' for section: '" + sectionName + "'");
         final DisplayProfessorDetails placeholderProf = new DisplayProfessorDetails(
                 professorName != null ? professorName : "TBD",
                 0.0,
