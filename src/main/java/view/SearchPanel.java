@@ -288,13 +288,13 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         content.setLayout(new BoxLayout(content, BoxLayout.Y_AXIS));
         content.setAlignmentX(Component.LEFT_ALIGNMENT);
 
-        // --- Title --- I was trying to figure out how to make the width smaller using html but it didnt work - vic
+        // Title - I was trying to figure out how to make the width smaller using html but it didnt work - vic
         String courseTitle = state.getCourseTitle();
         JLabel titleLabel = new JLabel(courseTitle);
         titleLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
         content.add(titleLabel);
 
-        // --- Description ---
+        // Description
         JTextArea descriptionArea = new JTextArea(state.getCourseDescription());
         descriptionArea.setWrapStyleWord(true);
         descriptionArea.setLineWrap(true);
@@ -306,7 +306,7 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         content.add(descriptionArea);
         content.add(Box.createVerticalStrut(10));
 
-        // --- Sections list (left, just under description) ---
+        // Sections list (left, just under description)
         JPanel sectionsPanel = new JPanel();
         sectionsPanel.setLayout(new BoxLayout(sectionsPanel, BoxLayout.Y_AXIS));
         sectionsPanel.setAlignmentX(Component.LEFT_ALIGNMENT);

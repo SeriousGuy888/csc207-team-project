@@ -7,7 +7,6 @@ import javax.swing.*;
 
 public class DisplayCourseDetailsPresenter implements DisplayCourseDetailsOutputBoundary {
 
-    // The ViewModel is now primarily for error/state display, or can be removed.
     private final DisplayCourseDetailsViewModel displayCoursesViewModel;
 
     public DisplayCourseDetailsPresenter(DisplayCourseDetailsViewModel displayCoursesViewModel) {
@@ -16,7 +15,7 @@ public class DisplayCourseDetailsPresenter implements DisplayCourseDetailsOutput
 
     @Override
     public void prepareSuccessView(DisplayCourseDetailsOutputData outputData) {
-        // Format data into a State object (optional, if you want the state history)
+        // Format data into a State object
         DisplayCourseDetailsState newState = new DisplayCourseDetailsState(
                 outputData.getCourseDetails().getCourseId(),
                 outputData.getCourseDetails().getCourseTitle(),

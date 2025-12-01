@@ -13,13 +13,14 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-// This DAO transforms the CourseOffering entity into the DisplayCourseDetails DTO
+/**
+ * This DAO transforms the CourseOffering entity into the DisplayCourseDetails DTO.
+ */
 public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetailsDataAccessInterface {
 
     private final JsonCourseDataRepository courseRepository;
 
     public DisplayCourseDetailsDataAccessObject(CourseDataRepository courseRepository) {
-        // We cast the injected repository to the specific type we need
         this.courseRepository = (JsonCourseDataRepository) courseRepository;
     }
 
@@ -36,7 +37,7 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
             return null; // Department not found or no offerings
         }
 
-        // 3. Filter offerings to find all versions of the requested course (e.g., ABP102Y1F, ABP102Y1S)
+        // 3. Filter offerings to find all versions of the requested course
         List<CourseOffering> matchingOfferings = deptOfferings.entrySet().stream()
                 .filter(entry -> entry.getKey().startsWith(courseId))
                 .map(Map.Entry::getValue)

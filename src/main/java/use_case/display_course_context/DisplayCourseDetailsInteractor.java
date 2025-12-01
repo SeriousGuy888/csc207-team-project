@@ -9,7 +9,6 @@ import java.util.stream.Collectors;
 
 public class DisplayCourseDetailsInteractor implements DisplayCourseDetailsInputBoundary {
 
-    // Dependencies injected at compile time:
     private final DisplayCourseDetailsDataAccessInterface courseDetailsDao;
     private final DisplayCourseDetailsOutputBoundary presenter;
     private final RateMyProfInputBoundary rateMyProfInteractor;

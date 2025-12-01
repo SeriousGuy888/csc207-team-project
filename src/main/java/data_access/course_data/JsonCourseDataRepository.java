@@ -82,7 +82,7 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                 return;
             }
 
-            //  START OF SECTION/MEETING PROCESSING
+            //  START OF SECTION/MEETING PROCESSING!!!!!!!!!!!!!! yip
             JSONObject sectionsObj = currOfferingObj.getJSONObject("meetings");
 
             // Loop over each section (e.g., "LEC-0101", "TUT-0102")
@@ -107,7 +107,6 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                 // STORE MAPPING INTERNALLY for future lookup
                 String compositeKey = courseCodeString + ":" + sectionId;
                 sectionIdToProfessorName.put(compositeKey, professorName);
-                // System.out.println("Mapping professor for section ID: " + sectionId + " -> " + professorName);
                 Section section = new Section(courseOffering, sectionId, Section.TeachingMethod.LECTURE);
 
                 JSONObject scheduleObj = sectionDetails.getJSONObject("schedule");
@@ -122,7 +121,7 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                     String endTimeStr = scheduleEntry.optString("meetingEndTime", null);
                     String building = scheduleEntry.optString("assignedRoom1", "");
 
-                    // vic - i dont know where the rooms are in the data but add it here if u find its key
+                    // i dont know where the rooms are in the data but add it here if u find its key
                     // String room = scheduleEntry.optString("assignedRoom2", "");
 
                     if (meetingDay == null || startTimeStr == null || endTimeStr == null) {
