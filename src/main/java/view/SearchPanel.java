@@ -58,9 +58,6 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         resultsContentPanel = new JPanel();
         resultsContentPanel.setLayout(new BoxLayout(resultsContentPanel, BoxLayout.Y_AXIS));
         resultsContentPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
-
-        // Important: allow full width in scroll pane
-        resultsContentPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
     }
 
     private void setupListeners() {
@@ -293,14 +290,10 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         JPanel content = new JPanel();
         content.setLayout(new BoxLayout(content, BoxLayout.Y_AXIS));
         content.setAlignmentX(Component.LEFT_ALIGNMENT);
-        content.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
 
         // --- Title --- I was trying to figure out how to make the width smaller using html but it didnt work - vic
-        String titleHtml =
-                "<html><div style='width:300px'><h2>" +
-                        state.getCourseTitle() +
-                        "</h2></div></html>";
-        JLabel titleLabel = new JLabel(titleHtml);
+        String courseTitle = state.getCourseTitle();
+        JLabel titleLabel = new JLabel(courseTitle);
         titleLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
         content.add(titleLabel);
 
@@ -320,26 +313,25 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         JPanel sectionsPanel = new JPanel();
         sectionsPanel.setLayout(new BoxLayout(sectionsPanel, BoxLayout.Y_AXIS));
         sectionsPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
-        sectionsPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
 
         List<DisplaySectionDetails> sections = state.getSectionDetails();
         if (sections != null) {
-            for (DisplaySectionDetails section : sections) {
+            for (int i = 0; i < sections.size(); i++) {
+                DisplaySectionDetails section = sections.get(i);
                 DisplayProfessorDetails prof = section.getProfessorDetails();
 
-                // Build "FRI 12:00-13:00 in MY, WED 11:00-12:00 in MP"
                 StringBuilder timeLocSb = new StringBuilder();
                 List<DisplayMeetingTime> mts = section.getMeetingTimes();
-                for (int i = 0; i < mts.size(); i++) {
-                    DisplayMeetingTime mt = mts.get(i);
-                    if (i > 0) timeLocSb.append(", ");
+                for (int j = 0; j < mts.size(); j++) {
+                    DisplayMeetingTime mt = mts.get(j);
+                    if (j > 0) timeLocSb.append(", ");
                     timeLocSb.append(mt.getDayOfWeek())
                             .append(" ")
                             .append(mt.getStartTime())
                             .append("-")
                             .append(mt.getEndTime())
                             .append(" in ")
-                            .append(section.getLocation()); // or per-meeting location if needed
+                            .append(section.getLocation());
                 }
                 String timeLocation = mts.isEmpty() ? "TBA" : timeLocSb.toString();
 
@@ -352,11 +344,13 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                         prof.getAvgDifficultyRating()
                 );
 
+                // Row: label + button, horizontally aligned
                 JPanel row = new JPanel();
                 row.setLayout(new BoxLayout(row, BoxLayout.X_AXIS));
                 row.setAlignmentX(Component.LEFT_ALIGNMENT);
 
                 JLabel infoLabel = new JLabel(sectionHtml);
+                // Let label expand vertically and horizontally with the row
                 infoLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
 
                 JButton toggleButton = new JButton("Add to timetable");
@@ -372,11 +366,22 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                     added[0] = !added[0];
                 });
 
+                // Make the row use full width so glue can push the button right
                 row.add(infoLabel);
+                row.add(Box.createHorizontalGlue());       // takes all remaining space
                 row.add(Box.createHorizontalStrut(10));
                 row.add(toggleButton);
 
+                // Ensure row stretches to parent width
+                row.setAlignmentX(Component.LEFT_ALIGNMENT);
+
                 sectionsPanel.add(row);
+
+                // Divider line under each row
+                JSeparator separator = new JSeparator(SwingConstants.HORIZONTAL);
+                separator.setMaximumSize(new Dimension(Integer.MAX_VALUE, 1));
+                separator.setAlignmentX(Component.LEFT_ALIGNMENT);
+                sectionsPanel.add(separator);
                 sectionsPanel.add(Box.createVerticalStrut(5));
             }
         }
@@ -385,6 +390,13 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
 
         // Put the stacked content at the NORTH so it naturally hugs the top-left
         panel.add(content, BorderLayout.NORTH);
+        // Make the details panel width follow the scrollpane viewport
+        resultsScrollPane.getViewport().addChangeListener(e -> {
+            int width = resultsScrollPane.getViewport().getWidth();
+            panel.setPreferredSize(new Dimension(width, panel.getPreferredSize().height));
+            panel.revalidate();
+        });
+
         return panel;
     }
 
