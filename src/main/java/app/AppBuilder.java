@@ -16,6 +16,7 @@ import interface_adapter.save_workbook.SaveWorkbookViewModel;
 import interface_adapter.search_courses.SearchCoursesController;
 import interface_adapter.search_courses.SearchCoursesPresenter;
 import interface_adapter.search_courses.SearchCoursesViewModel;
+import use_case.WorkbookDataAccessInterface;
 import use_case.save_workbook.SaveWorkbookInteractor;
 import use_case.search_courses.SearchCoursesDataAccessInterface;
 import use_case.search_courses.SearchCoursesInputBoundary;
@@ -39,6 +40,9 @@ public class AppBuilder {
     private MainPanel mainPanel;
     private GlobalViewModel globalViewModel;
 
+    // shared object to store the workbook that the user is currently working on
+    private WorkbookDataAccessInterface workbookDataAccessObject;
+
     // Shared data access
     // todo: figure out why we can't use a shared interface here
     //  like why does it have to be a JsonCourseDataRepository and not one of the interfaces
@@ -60,10 +64,16 @@ public class AppBuilder {
 
     }
 
+    public AppBuilder initializeWorkbookDataAccessObject() {
+        workbookDataAccessObject = new WorkbookDataAccessObject();
+        return this;
+    }
+
     public AppBuilder initializeCourseRepository() {
         this.courseDataRepository = new JsonCourseDataRepository(CourseDataFilesToLoad.RESOURCE_NAMES_FOR_TESTING);
         return this;
     }
+
 
     /**
      * Wire the search courses use case.
