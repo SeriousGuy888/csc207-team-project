@@ -134,7 +134,10 @@ public class AppBuilder {
 
         return this;
     }
-
+    /**
+     * Initializes workbook DAO, interface adapters, view models and view.
+     * @return this builder
+     */
     public AppBuilder addMainPanel() {
         globalViewModel = new GlobalViewModel();
         mainPanel = new MainPanel(globalViewModel);
