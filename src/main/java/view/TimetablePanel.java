@@ -6,6 +6,7 @@ import com.intellij.uiDesigner.core.Spacer;
 import interface_adapter.TimetableState;
 import interface_adapter.TimetableState.MeetingBlock;
 import interface_adapter.autogen.AutogenController;
+import interface_adapter.locksections.LockSectionController;
 import javax.swing.table.DefaultTableModel;
 
 
@@ -43,6 +44,8 @@ public class TimetablePanel extends JPanel {
     private JPanel rightSidePanel;
     private JTable lockedSectionsTable;
     private TimetableState currentState;
+    private LockSectionController lockSectionController;
+    private int tabIndex = -1;
 
 
     private AutogenController autogenController;
@@ -114,6 +117,12 @@ public class TimetablePanel extends JPanel {
             }
         });
     }
+
+    public void setLockSectionController(LockSectionController controller, int tabIndex) {
+        this.lockSectionController = controller;
+        this.tabIndex = tabIndex;
+    }
+
     private void initializeGrid() {
         // 1. Initialize the Container Panels with GridLayout
         // 24 rows, 5 columns
@@ -311,42 +320,44 @@ public class TimetablePanel extends JPanel {
         javax.swing.table.DefaultTableModel model =
                 (javax.swing.table.DefaultTableModel) lockedSectionsTable.getModel();
 
-        // 🔹 When user ticks/unticks a checkbox, update currentState
         model.addTableModelListener(e -> {
-            if (e.getColumn() == 2 && currentState != null) {
+            if (e.getColumn() == 2 && currentState != null && lockSectionController != null) {
                 int row = e.getFirstRow();
-                Object value = model.getValueAt(row, 2);
-                boolean locked = Boolean.TRUE.equals(value);
-
-                if (row >= 0 && row < currentState.getSelectedSections().size()) {
-                    TimetableState.SelectedSectionRow rowObj =
-                            currentState.getSelectedSections().get(row);
-                    rowObj.setLocked(locked);
+                if (row < 0 || row >= currentState.getSelectedSections().size()) {
+                    return;
                 }
+
+                boolean locked = Boolean.TRUE.equals(model.getValueAt(row, 2));
+                TimetableState.SelectedSectionRow rowObj =
+                        currentState.getSelectedSections().get(row);
+
+                // delegate to use case
+                lockSectionController.toggleLock(
+                        tabIndex,
+                        rowObj.getCourseCode(),
+                        rowObj.getSectionName(),
+                        locked
+                );
             }
         });
 
 
-        // 🔹 Make the table visually thinner / more compact
+
         lockedSectionsTable.setRowHeight(18);
         lockedSectionsTable.setFont(new Font("SansSerif", Font.PLAIN, 11));
         lockedSectionsTable.getTableHeader().setFont(new Font("SansSerif", Font.PLAIN, 11));
 
-        // Optional: stop it from stretching too wide
         lockedSectionsTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 
-        // Column widths – keep it narrow
         lockedSectionsTable.getColumnModel().getColumn(0).setPreferredWidth(70);  // Course
         lockedSectionsTable.getColumnModel().getColumn(1).setPreferredWidth(55);  // Section
         lockedSectionsTable.getColumnModel().getColumn(2).setPreferredWidth(50);  // Locked
 
         JScrollPane tableScroll = new JScrollPane(lockedSectionsTable);
-        // 🔹 Control how wide that whole block is
         tableScroll.setPreferredSize(new Dimension(180, 200));
 
         rightSidePanel.add(tableScroll, BorderLayout.CENTER);
 
-        // Add this panel into your IntelliJ-designed grid on the right
         TimetablePanel.add(
                 rightSidePanel,
                 new com.intellij.uiDesigner.core.GridConstraints(
