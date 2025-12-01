@@ -39,7 +39,7 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
             System.out.println("[" + this + "] loaded " + numFilesLoaded + " files at " + elapsed + "ms");
             String coursecode = resourceName.replace("courses/", "").replace(".json", "").toUpperCase();
 
-            Map<String, CourseOffering> currentavailableCourseOfferings = loadInCoursesFromJsonFile(resource);
+            final Map<String, CourseOffering> currentavailableCourseOfferings = loadInCoursesFromJsonFile(resource);
 
             if (currentavailableCourseOfferings != null) {
                 CourseInfobyCode.put(coursecode, currentavailableCourseOfferings);
@@ -57,17 +57,17 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
             return null;
         }
 
-        Map<String, CourseOffering> currentavailableCourseOfferings = new HashMap<>();
+        final Map<String, CourseOffering> currentavailableCourseOfferings = new HashMap<>();
 
-        JSONObject object = new JSONObject(contents);
+        final JSONObject object = new JSONObject(contents);
         object.keys().forEachRemaining(courseOfferingIdentifier -> {
-            JSONObject currOfferingObj = object.getJSONObject(courseOfferingIdentifier);
+            final JSONObject currOfferingObj = object.getJSONObject(courseOfferingIdentifier);
 
-            String courseCodeString = currOfferingObj.getString("code");
-            String title = currOfferingObj.getString("courseTitle");
-            String description = currOfferingObj.getString("courseDescription");
+            final String courseCodeString = currOfferingObj.getString("code");
+            final String title = currOfferingObj.getString("courseTitle");
+            final String description = currOfferingObj.getString("courseDescription");
 
-            CourseOffering courseOffering;
+            final CourseOffering courseOffering;
 
             try {
                 courseOffering = new CourseOffering(
@@ -75,7 +75,8 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                         new CourseCode(courseCodeString),
                         title,
                         description);
-            } catch (IllegalArgumentException e) {
+            }
+            catch (IllegalArgumentException e) {
                 System.err.println("Could not load course with identifier " +
                         courseOfferingIdentifier + " because " + e.getMessage());
                 return;
@@ -91,9 +92,10 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
 
                 // EXTRACT PROFESSOR NAME
                 String professorName = "TBD Professor";
+                final String instructorsKey = "instructors";
 
-                if (sectionDetails.has("instructors") && !sectionDetails.isNull("instructors")) {
-                    final JSONObject instructorsObj = sectionDetails.getJSONObject("instructors");
+                if (sectionDetails.has(instructorsKey) && !sectionDetails.isNull(instructorsKey)) {
+                    final JSONObject instructorsObj = sectionDetails.getJSONObject(instructorsKey);
                     // Check if the primary instructor (key "0") exists
                     if (instructorsObj.has("0") && !instructorsObj.isNull("0")) {
                         final JSONObject primaryInstructor = instructorsObj.getJSONObject("0");
@@ -191,6 +193,11 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
     //     return availableCourseOfferings.get(courseCode);
     // }
 
+    /**
+     *
+     * @param deptCode The deptCode under which the set of corresponding courses is stored.
+     * @return
+     */
     @Override
     public Map<String, CourseOffering> getMatchingCourseInfo(String deptCode) {
         return CourseInfobyCode.get(deptCode);
@@ -204,7 +211,7 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
      * @return The professor's name, or "TBD Professor" if not found.
      */
     public String getProfessorNameByCourseAndSection(String courseId, String sectionId) {
-        String compositeKey = courseId + ":" + sectionId;
+        final String compositeKey = courseId + ":" + sectionId;
         return sectionIdToProfessorName.getOrDefault(compositeKey, "TBD Professor");
     }
 }

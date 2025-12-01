@@ -24,21 +24,26 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
         this.courseRepository = (JsonCourseDataRepository) courseRepository;
     }
 
+    /**
+     * @param courseId is the SIMPLIFIED course id from the UI. (e.g. CSC207H1-F).
+     * @return Course details for the given course id as DisplayCourseDetails Object.
+     */
     @Override
     public DisplayCourseDetails getCourseDetails(String courseId) {
-        // 1. Get the department code (first 3 letters) from the simplified courseId
+        // Get the department code (first 3 letters) from the simplified courseId (e.g. CSC207H1-F -> CSC)
         String deptCode = courseId.substring(0, 3).toUpperCase();
 
-        // 2. Fetch all known course offerings for that department (from the grouped repository)
-        Map<String, CourseOffering> deptOfferings =
+        // Fetch all known course offerings for that department
+        final Map<String, CourseOffering> deptOfferings =
                 courseRepository.getMatchingCourseInfo(deptCode);
 
         if (deptOfferings == null || deptOfferings.isEmpty()) {
-            return null; // Department not found or no offerings
+            // Department not found or no offerings
+            return null;
         }
 
-        // 3. Filter offerings to find all versions of the requested course
-        List<CourseOffering> matchingOfferings = deptOfferings.entrySet().stream()
+        // Filter offerings to find all offerings of the requested course based on UI
+        final List<CourseOffering> matchingOfferings = deptOfferings.entrySet().stream()
                 .filter(entry -> entry.getKey().startsWith(courseId))
                 .map(Map.Entry::getValue)
                 .collect(Collectors.toList());
@@ -50,24 +55,25 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
 
         // --- Aggregation ---
 
-        // Use the first match to get the title and description (which should be the same across all terms)
+        // Use the first match to get the title and description (which should be the same across all terms & offerings)
         final CourseOffering primaryOffering = matchingOfferings.get(0);
 
-        // 4. Combine ALL sections from ALL matching course offerings
+        // Combine ALL sections from ALL matching course offerings
         final List<DisplaySectionDetails> allDisplaySections = matchingOfferings.stream()
                 .flatMap(offering -> offering.getAvailableSections().stream())
                 // Map Section to a key and object pair
                 .collect(Collectors.toMap(
                         section -> section.getCourseOffering().getCourseCode().toString() + ":" + section.getSectionName(),
                         section -> section,
-                        (existing, replacement) -> existing // keep first encountered section
+                        // only keep first matching (no dupes)
+                        (existing, replacement) -> existing
                 ))
                 .values()
                 .stream()
                 .flatMap(this::mapSectionToDisplayDetails)
                 .collect(Collectors.toList());
 
-        // 5. Create the final DTO with combined data
+        // Create the final DTO with combined data
         return new DisplayCourseDetails(
                 courseId,
                 primaryOffering.getTitle(),
@@ -144,7 +150,6 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
         int minute = totalMinutes % 60;
         return String.format("%02d:%02d", hour, minute);
     }
-
     @Override
     public String getProfessorNameByCourseAndSection(String courseId, String sectionId) {
         // This remains the same, delegating the lookup to the repository

@@ -57,6 +57,7 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
      */
     private void setupResultsContentPanel() {
         resultsContentPanel = new JPanel(){
+            // override method to get changable width
             @Override
             public Dimension getPreferredSize() {
                 Dimension pref = super.getPreferredSize();
@@ -125,7 +126,7 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         if (SearchCoursesViewModel.SEARCH_RESULTS_UPDATED.equals(evt.getPropertyName())) {
             updateSearchResults();
         } else if (DisplayCourseDetailsViewModel.DISPLAY_COURSE_CONTEXT.equals(evt.getPropertyName())) {
-            updateCourseDetailsPanel(); // Calls the inline insertion logic
+            updateCourseDetailsPanel();
         }
     }
 
