@@ -1,5 +1,8 @@
 package interface_adapter.autogen;
 
+import entity.CourseCode;
+import entity.Section;
+import entity.WeeklyOccupancy;
 import use_case.WorkbookDataAccessInterface;
 import use_case.autogen.AutogenInputBoundary;
 import use_case.autogen.AutogenInputData;
@@ -17,19 +20,28 @@ public class AutogenController {
         this.workbookDao = workbookDao;
     }
 
-    public void autogenerate() {
-        // Pull info from workbook/current tab to form AutogenInputData.
-        // For now, you could even hardcode or do Set.of() placeholders,
-        // and refine later based on how you store selections.
+    /**
+     * Full version: caller passes in the actual user choices.
+     */
+    public void autogenerate(Set<CourseCode> selectedCourses,
+                             Set<Section> lockedSections,
+                             WeeklyOccupancy blockedTimes) {
 
-        // Example placeholder:
         AutogenInputData input = new AutogenInputData(
-                Set.of(),
-                Set.of(),
-                null
+                selectedCourses,
+                lockedSections,
+                blockedTimes
         );
 
         interactor.execute(input);
     }
-}
 
+
+    public void autogenerate() {
+        // TODO later:
+        //  - get selectedCourses from workbook or SearchPanel selections
+        //  - get lockedSections from the lock table
+        //  - get blockedTimes from a "blocked time" UI
+        autogenerate(Set.of(), Set.of(), null);
+    }
+}
