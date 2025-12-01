@@ -106,7 +106,7 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                 }
 
                 // STORE MAPPING INTERNALLY for future lookup
-                String compositeKey = courseCodeString + ":" + sectionId;
+                String compositeKey = courseOfferingIdentifier + ":" + sectionId;
                 sectionIdToProfessorName.put(compositeKey, professorName);
                 Section section = new Section(courseOffering, sectionId, Section.TeachingMethod.LECTURE);
 
@@ -206,7 +206,7 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
     /**
      * Get the professor's name for a course and section.
      *
-     * @param courseId  The full course offer identifier (e.g., "CSC108F").
+     * @param courseId The full course offer identifier (e.g., "CSC207H1-F").
      * @param sectionId The section ID (e.g., "LEC-0101").
      * @return The professor's name, or "TBD Professor" if not found.
      */
