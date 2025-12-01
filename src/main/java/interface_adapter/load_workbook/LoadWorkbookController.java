@@ -1,14 +1,14 @@
 package interface_adapter.load_workbook;
 
+import use_case.load_workbook.LoadWorkbookInputBoundary;
 import use_case.load_workbook.LoadWorkbookInputData;
-import use_case.load_workbook.LoadWorkbookInteractor;
 
 import java.nio.file.Path;
 
 public class LoadWorkbookController {
-    private final LoadWorkbookInteractor interactor;
+    private final LoadWorkbookInputBoundary interactor;
 
-    public LoadWorkbookController(LoadWorkbookInteractor interactor) {
+    public LoadWorkbookController(LoadWorkbookInputBoundary interactor) {
         this.interactor = interactor;
     }
 

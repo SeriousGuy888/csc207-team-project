@@ -1,7 +1,5 @@
 package use_case.load_workbook;
 
-import data_access.WorkbookDataAccessObject;
-import data_access.course_data.CourseDataRepository;
 import entity.Workbook;
 import use_case.WorkbookDataAccessInterface;
 
