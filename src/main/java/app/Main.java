@@ -19,7 +19,6 @@ public class Main {
                 .addSearchCoursesUseCase()
                 .addDisplayCourseContextUseCase()
                 .addMainPanel()
-                .addCourseDataRepository(new JsonCourseDataRepository(CourseDataFilesToLoad.RESOURCE_NAMES_FOR_TESTING))
                 .build();
 
         application.pack();
