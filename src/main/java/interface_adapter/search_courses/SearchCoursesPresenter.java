@@ -29,7 +29,7 @@ public class SearchCoursesPresenter implements SearchCoursesOutputBoundary {
         if (courseID.endsWith("20259")) {
             return courseoffering.getCourseCode().toString() + "-F";
         }
-        return courseoffering.getCourseCode().toString() + "-W";
+        return courseoffering.getCourseCode().toString() + "-S";
     }
 
     @Override
