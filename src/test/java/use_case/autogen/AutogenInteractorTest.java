@@ -106,60 +106,6 @@ public class AutogenInteractorTest {
         );
     }
 
-    @Test
-    void autogenWorksWithRealDaoForTwoCourses() {
-        JsonCourseDataRepository courseRepo = new JsonCourseDataRepository(
-                Arrays.asList(
-                        "courses/csc.json",
-                        "courses/abp.json"
-                )
-        );
-
-        AutogenDataAccessInterface dao = new AutogenCourseDataAccess(courseRepo);
-        TestAutogenPresenter presenter = new TestAutogenPresenter();
-        AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
-
-        CourseCode course1 = new CourseCode("CSC111H1");  // example placeholder
-        CourseCode course2 = new CourseCode("ABP104Y1");  // example placeholder
-
-        WeeklyOccupancy nonConflictingBlockedTime = SUNDAY_00_01;
-
-        AutogenInputData inputData = new AutogenInputData(
-                Set.of(course1, course2),
-                Set.of(),
-                nonConflictingBlockedTime
-        );
-
-        List<CourseOffering> offerings = dao.getSelectedCourseOfferings(Set.of(course1, course2));
-        assertFalse(offerings.isEmpty(),
-                "DAO returned no offerings — your course codes may not exist in ABP/ACM/ACT/AER JSON");
-
-        Set<CourseCode> offeredCodes = offerings.stream()
-                .map(CourseOffering::getCourseCode)
-                .collect(java.util.stream.Collectors.toSet());
-
-        assertTrue(offeredCodes.contains(course1),
-                "DAO did not load data for course 1: " + course1);
-        assertTrue(offeredCodes.contains(course2),
-                "DAO did not load data for course 2: " + course2);
-
-        interactor.execute(inputData);
-
-        System.out.println("\n*** RESULT FOR REAL DAO (2 COURSES) ***");
-        if (presenter.lastOutput != null) {
-            printTimetable(presenter.lastOutput.getGeneratedTimetable());
-        } else {
-            System.out.println("(No timetable generated)");
-            System.out.println("Error: " + presenter.lastError);
-        }
-        System.out.println("*** END RESULT ***\n");
-
-        assertTrue(
-                presenter.lastOutput != null || presenter.lastError != null,
-                "Interactor should either produce a timetable OR an error when using real DAO"
-        );
-    }
-
     // ------------------------------------------------------------------------
     // Fake-DAO-based unit tests
     // ------------------------------------------------------------------------

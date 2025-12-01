@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="06e5149e-db28-4222-bdad-3096ebf50f69" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/AppBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/AppBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interface_adapter/autogen/AutogenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interface_adapter/autogen/AutogenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interface_adapter/autogen/AutogenPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interface_adapter/autogen/AutogenPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/TimetablePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/TimetablePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/use_case/autogen/AutogenInteractorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/use_case/autogen/AutogenInteractorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +31,8 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.SaveDialog.executor": "Run",
+    "JUnit.AutogenInteractorTest.executor": "Run",
+    "JUnit.SaveWorkbookInteractorTest.executor": "Run",
     "JUnit.java in TeamProject.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -54,7 +51,7 @@
       <recent name="C:\GitHub\csc207-team-project\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="csc207-team-project-1" />
       <option name="ENV_FILES" value="" />
@@ -158,5 +155,9 @@
       <updated>1762883933797</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Connected AutogenInteractor To UI (finally)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connected AutogenInteractor To UI (finally)" />
   </component>
 </project>
