@@ -1,11 +1,14 @@
 package data_access.display_course_context;
 
-import data_access.course_data.CourseDataRepository;
 import entity.CourseOffering;
 import entity.Section;
 import entity.WeeklyOccupancy;
 import use_case.display_course_context.*;
 import data_access.course_data.JsonCourseDataRepository;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayCourseDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayMeetingDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayProfessorDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplaySectionDetails;
 
 import java.util.List;
 import java.util.Map;

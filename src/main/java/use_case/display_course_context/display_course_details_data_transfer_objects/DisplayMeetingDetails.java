@@ -1,4 +1,4 @@
-package use_case.display_course_context;
+package use_case.display_course_context.display_course_details_data_transfer_objects;
 
 /**
  * Data transfer object for displaying simple data type meeting details for use case display course context.

@@ -8,9 +8,9 @@ import interface_adapter.display_course_context.DisplayCourseDetailsViewModel;
 import interface_adapter.search_courses.SearchCoursesViewModel;
 import interface_adapter.search_courses.SearchCoursesState;
 import interface_adapter.search_courses.SearchCoursesController;
-import use_case.display_course_context.DisplayMeetingDetails;
-import use_case.display_course_context.DisplayProfessorDetails;
-import use_case.display_course_context.DisplaySectionDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayMeetingDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayProfessorDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplaySectionDetails;
 
 import javax.swing.*;
 import java.awt.*;

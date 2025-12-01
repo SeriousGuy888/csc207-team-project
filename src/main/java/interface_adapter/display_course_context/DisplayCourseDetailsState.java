@@ -1,6 +1,6 @@
 package interface_adapter.display_course_context;
 
-import use_case.display_course_context.DisplaySectionDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplaySectionDetails;
 
 import java.util.List;
 
