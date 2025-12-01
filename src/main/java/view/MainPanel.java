@@ -173,7 +173,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
             // Note: We assume TimetablePanel extends JPanel and adds its content to itself.
             // If TimetablePanel relies on .getRootPanel(), use: panel.getRootPanel()
             // However, we need to cast it back to TimetablePanel later, so extending JPanel is best.
-            tabbedPane.insertTab(title, null, panel.getRootPanel(), null, i);
+            tabbedPane.insertTab(title, null, panel, null, i);
             tabbedPane.setTabComponentAt(i, createTabHeader(title, i));
         }
 

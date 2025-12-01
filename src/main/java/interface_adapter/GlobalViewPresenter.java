@@ -156,15 +156,15 @@ public class GlobalViewPresenter implements
         }
 
         //3. Add Lock Section Table
-        final java.util.List<SelectedSectionRow> rows = timetable.getSections().stream()
-                .map(section -> new SelectedSectionRow(
-                        section.getCourseOffering().getCourseCode().toString(),
-                        section.getSectionName(),
-                        section.getTeachingMethod().toString(),
-                        timetable.isLocked(section)
-                ))
-                .collect(Collectors.toList());
-
+        java.util.List<TimetableState.SelectedSectionRow> rows = new java.util.ArrayList<>();
+        for (Section section : timetable.getSections()) {
+            rows.add(new TimetableState.SelectedSectionRow(
+                    section.getCourseOffering().getCourseCode().toString(),
+                    section.getSectionName(),
+                    section.getTeachingMethod().toString(),
+                    false
+            ));
+        }
         state.setSelectedSections(rows);
         return state;
     }

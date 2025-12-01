@@ -80,7 +80,7 @@ public class TimetableState {
         private final String courseCode;
         private final String sectionName;
         private final String teachingMethod;
-        private final boolean locked;
+        private boolean locked;  // <-- remove final
 
         public SelectedSectionRow(String courseCode,
                                   String sectionName,
@@ -91,9 +91,15 @@ public class TimetableState {
             this.teachingMethod = teachingMethod;
             this.locked = locked;
         }
+
         public String getCourseCode() { return courseCode; }
         public String getSectionName() { return sectionName; }
         public String getTeachingMethod() { return teachingMethod; }
         public boolean isLocked() { return locked; }
+
+        public void setLocked(boolean locked) {
+            this.locked = locked;
+        }
     }
+
 }
