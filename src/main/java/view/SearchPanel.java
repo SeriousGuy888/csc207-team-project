@@ -1,20 +1,150 @@
 package view;
 
+import interface_adapter.search_courses.SearchCoursesViewModel;
+import interface_adapter.search_courses.SearchCoursesState;
+import interface_adapter.search_courses.SearchCoursesController;
+
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.util.Set;
 
-public class SearchPanel extends JPanel {
-
-    private JButton filterButton;
+public class SearchPanel extends JPanel implements PropertyChangeListener {
+    private JButton filterButton; //not going to be used
     private JButton searchButton;
     private JTextField searchField;
     private JPanel SearchPanel;
+    private JScrollPane resultsScrollPane;
+    private JList<String> resultsList;
+    private DefaultListModel<String> resultsListModel;
+
+    private SearchCoursesController searchCoursesController;
+    private SearchCoursesViewModel searchCoursesViewModel;
 
     /**
      * Creates a new SearchPanel.
      */
     public SearchPanel() {
-        // not implemented yet
+        $$$setupUI$$$();
+        setupResultsList();
+        setupListeners();
+    }
+
+    private void setupResultsList() {
+        resultsListModel = new DefaultListModel<>();
+        resultsList = new JList<>(resultsListModel);
+        resultsList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+
+        // Custom renderer with a button for dropdown
+        resultsList.setCellRenderer((list, value, index, isSelected, cellHasFocus) -> {
+            JPanel panel = new JPanel(new BorderLayout());
+            JLabel label = new JLabel(value.toString());
+            JButton button = new JButton("▼"); // dropdown button
+            button.setMargin(new Insets(0, 0, 0, 0));
+            button.addActionListener(e -> showCoursePopup(value.toString(), button));
+            panel.add(label, BorderLayout.CENTER);
+            panel.add(button, BorderLayout.EAST);
+
+            if (isSelected) panel.setBackground(list.getSelectionBackground());
+            else panel.setBackground(list.getBackground());
+
+            return panel;
+        });
+
+        // Attach to scroll pane
+        for (Component comp : SearchPanel.getComponents()) {
+            if (comp instanceof JScrollPane) {
+                resultsScrollPane = (JScrollPane) comp;
+                resultsScrollPane.setViewportView(resultsList);
+                break;
+            }
+        }
+    }
+
+    private void setupListeners() {
+        searchButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                executeSearch();
+            }
+        });
+
+        // Also allow pressing Enter in the search field
+        searchField.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                executeSearch();
+            }
+        });
+    }
+
+    private void executeSearch() {
+        if (searchCoursesController != null) {
+            String query = searchField.getText().trim();
+            if (!query.isEmpty()) {
+                searchCoursesController.execute(query);
+            }
+        }
+    }
+
+    public void setSearchCoursesController(SearchCoursesController controller) {
+        this.searchCoursesController = controller;
+    }
+
+    /**
+     * Set the search courses view model and subscribe to its changes
+     *
+     * @param viewModel the view model to observe
+     */
+    public void setSearchCoursesViewModel(SearchCoursesViewModel viewModel) {
+        this.searchCoursesViewModel = viewModel;
+        // Subscribe to property changes
+        this.searchCoursesViewModel.addPropertyChangeListener(
+                SearchCoursesViewModel.SEARCH_RESULTS_UPDATED, this);
+    }
+
+    /**
+     * Handle property change events from the ViewModel
+     */
+    @Override
+    public void propertyChange(PropertyChangeEvent evt) {
+        if (SearchCoursesViewModel.SEARCH_RESULTS_UPDATED.equals(evt.getPropertyName())) {
+            updateSearchResults();
+        }
+    }
+
+    private void updateSearchResults() {
+        if (searchCoursesViewModel == null) return;
+
+        SearchCoursesState state = searchCoursesViewModel.getState();
+        if (state == null) return;
+
+        resultsListModel.clear();
+
+        if (state.isError()) {
+            resultsListModel.addElement("Error: " + state.getErrorMessage());
+        } else {
+            Set<String> courses = state.getMatchedCourses();
+            if (courses.isEmpty()) {
+                resultsListModel.addElement("No courses found.");
+            } else {
+                for (String course : courses) {
+                    resultsListModel.addElement(course);
+                }
+            }
+        }
+    }
+
+    // Show a popup with course details when dropdown button is clicked
+    private void showCoursePopup(String course, Component invoker) {
+        JPopupMenu popup = new JPopupMenu();
+        // Example items – later replace with real CourseOffering sections
+        popup.add(new JMenuItem(course + " - Section 001 - Prof. Smith"));
+        popup.add(new JMenuItem(course + " - Section 002 - Prof. Lee"));
+        popup.show(invoker, 0, invoker.getHeight());
     }
 
     /**
@@ -25,13 +155,6 @@ public class SearchPanel extends JPanel {
      */
     public JPanel getRootPanel() {
         return SearchPanel;
-    }
-
-    {
-// GUI initializer generated by IntelliJ IDEA GUI Designer
-// >>> IMPORTANT!! <<<
-// DO NOT EDIT OR ADD ANY CODE HERE!
-        $$$setupUI$$$();
     }
 
     /**

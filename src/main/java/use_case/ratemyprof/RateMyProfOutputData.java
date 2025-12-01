@@ -1,6 +1,8 @@
 package use_case.ratemyprof;
 import entity.Professor;
 
+import entity.Professor;
+
 /**
  * Output Data for the RateMyProf Use Case.
  */
@@ -24,7 +26,6 @@ public class RateMyProfOutputData {
         this.department = prof.getDepartment();
     }
 
-
     public String getProfFirstName() {
         return this.profFirstName;
     }
@@ -45,10 +46,12 @@ public class RateMyProfOutputData {
         return this.avgDifficultyRating;
     }
 
-    public String getLink(){
+    public String getLink() {
         return this.link;
     }
 
-    public String getDepartment(){return this.department;}
+    public String getDepartment() {
+        return this.department;
+    }
 }
 

@@ -50,22 +50,22 @@ public class RateMyProfAPI {
                         + "}";
 
                 // Build the request
-                Request request = new Request.Builder()
+                final Request request = new Request.Builder()
                         .url(apiUrl)
                         .addHeader("Content-Type", "application/json")
                         .post(RequestBody.create(jsonBody, MediaType.get("application/json")))
                         .build();
 
                 // Execute the request
-                Response response = client.newCall(request).execute();
+                final Response response = client.newCall(request).execute();
 
                 if (!response.isSuccessful()) {
                     throw new RuntimeException("RMP API error: " + response);
                 }
 
-                String json = response.body().string();
-                JSONObject obj = new JSONObject(json);
-                System.out.println(obj.toString());
+                final String json = response.body().string();
+                final JSONObject obj = new JSONObject(json);
+                //System.out.println(obj.toString());
 
                 // Extract edges for this schoolId and add them to combinedEdges
                 JSONArray edges = obj

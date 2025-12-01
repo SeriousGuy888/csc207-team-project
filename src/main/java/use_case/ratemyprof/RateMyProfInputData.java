@@ -12,10 +12,10 @@ public class RateMyProfInputData {
         this.profLastName = profLastName;
     }
 
-    String getFirstName() {
+    public String getFirstName() {
         return profFirstName;
     }
-    String getLastName() {
+    public String getLastName() {
         return profLastName;
     }
 }
