@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>use_case.search_courses</OriginalElement>
+  <nodes>
+    <node x="428.0" y="943.0">use_case.search_courses.SearchCoursesOutputBoundary</node>
+    <node x="693.0" y="601.0">interface_adapter.search_courses.SearchCoursesController</node>
+    <node x="763.0" y="908.0">interface_adapter.search_courses.SearchCoursesViewModel</node>
+    <node x="817.0" y="753.0">view.SearchPanel</node>
+    <node x="-71.0" y="805.0">data_access.SearchCoursesDataAccessObject</node>
+    <node x="-33.0" y="535.0">data_access.course_data.JsonCourseDataRepository</node>
+    <node x="754.0" y="521.0">use_case.search_courses.SearchCoursesInputData</node>
+    <node x="175.0" y="466.0">entity.CourseOffering</node>
+    <node x="133.0" y="874.0">use_case.search_courses.SearchCoursesDataAccessInterface</node>
+    <node x="258.0" y="611.0">use_case.search_courses.SearchCoursesOutputData</node>
+    <node x="651.0" y="1099.0">interface_adapter.search_courses.SearchCoursesState</node>
+    <node x="355.0" y="766.0">use_case.search_courses.SearchCoursesInteractor</node>
+    <node x="620.0" y="1029.0">interface_adapter.search_courses.SearchCoursesPresenter</node>
+    <node x="-164.0" y="655.0">data_access.course_data.CourseDataRepositoryGrouped</node>
+    <node x="493.0" y="680.0">use_case.search_courses.SearchCoursesInputBoundary</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="interface_adapter.search_courses.SearchCoursesController" target="use_case.search_courses.SearchCoursesInputBoundary" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="use_case.search_courses.SearchCoursesOutputData" target="entity.CourseOffering" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="use_case.search_courses.SearchCoursesInteractor" target="use_case.search_courses.SearchCoursesOutputData" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="interface_adapter.search_courses.SearchCoursesPresenter" target="interface_adapter.search_courses.SearchCoursesViewModel" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="data_access.course_data.JsonCourseDataRepository" target="entity.CourseOffering" relationship="CREATE">
+      <point x="12.792933898835372" y="0.0" />
+      <point x="12.792933898835315" y="0.0" />
+    </edge>
+    <edge source="interface_adapter.search_courses.SearchCoursesController" target="use_case.search_courses.SearchCoursesInputData" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="interface_adapter.search_courses.SearchCoursesPresenter" target="use_case.search_courses.SearchCoursesOutputBoundary" relationship="REALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="view.SearchPanel" target="interface_adapter.search_courses.SearchCoursesController" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="data_access.SearchCoursesDataAccessObject" target="use_case.search_courses.SearchCoursesDataAccessInterface" relationship="REALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="interface_adapter.search_courses.SearchCoursesPresenter" target="interface_adapter.search_courses.SearchCoursesState" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="data_access.course_data.JsonCourseDataRepository" target="entity.CourseOffering" relationship="TO_MANY">
+      <point x="-12.792933898835372" y="0.0" />
+      <point x="-12.792933898835258" y="2.842170943040401E-14" />
+    </edge>
+    <edge source="data_access.SearchCoursesDataAccessObject" target="data_access.course_data.CourseDataRepositoryGrouped" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="use_case.search_courses.SearchCoursesInteractor" target="use_case.search_courses.SearchCoursesOutputBoundary" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="data_access.course_data.JsonCourseDataRepository" target="data_access.course_data.CourseDataRepositoryGrouped" relationship="REALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="use_case.search_courses.SearchCoursesInteractor" target="use_case.search_courses.SearchCoursesInputBoundary" relationship="REALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="use_case.search_courses.SearchCoursesInteractor" target="use_case.search_courses.SearchCoursesDataAccessInterface" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="view.SearchPanel" target="interface_adapter.search_courses.SearchCoursesViewModel" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8482068390325271" showDependencies="true" x="378.3205506391347" y="775.8879056047198" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
