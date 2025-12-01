@@ -26,7 +26,10 @@ public class SearchCoursesPresenter implements SearchCoursesOutputBoundary {
     private String getDisplayString(CourseOffering courseoffering) {
         String courseID = courseoffering.getUniqueIdentifier();
         // hardcoded for now
-        if (courseID.endsWith("20259")) {
+        if (courseID.endsWith("Y-20259")) {
+            return courseoffering.getCourseCode().toString() + "-Y";
+        }
+        else if (courseID.endsWith("20259")) {
             return courseoffering.getCourseCode().toString() + "-F";
         }
         return courseoffering.getCourseCode().toString() + "-S";
