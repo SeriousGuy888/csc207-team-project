@@ -86,6 +86,13 @@ public class TimetablePanel extends JPanel {
             }
         });
 
+        loadButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                LoadDialog.getSingletonInstance().display(TimetablePanel);
+            }
+        });
+
         this.setLayout(new BorderLayout());
         this.add(TimetablePanel, BorderLayout.CENTER);
     }
