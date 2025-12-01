@@ -1,7 +1,6 @@
 package data_access.course_data;
 
 import entity.*;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.IOException;

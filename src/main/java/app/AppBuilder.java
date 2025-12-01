@@ -1,24 +1,14 @@
 package app;
 
-import static app.CourseDataFilesToLoad.RESOURCE_NAMES;
 import data_access.SearchCoursesDataAccessObject;
 import data_access.WorkbookDataAccessObject;
 import data_access.course_data.CourseDataRepositoryGrouped;
 import interface_adapter.GlobalViewModel;
 import view.MainPanel;
 
-import javax.swing.*;
-import java.awt.*;
-import java.util.Arrays;
-
-import data_access.SearchCoursesDataAccessObject;
-import data_access.WorkbookDataAccessObject;
 import data_access.course_data.CourseDataRepository;
-import data_access.course_data.CourseDataRepositoryGrouped;
 import data_access.course_data.JsonCourseDataRepository;
 import interface_adapter.GlobalViewController;
-import interface_adapter.GlobalViewModel;
-import data_access.course_data.JsonCourseDataRepository;
 import interface_adapter.search_courses.SearchCoursesController;
 import interface_adapter.search_courses.SearchCoursesPresenter;
 import interface_adapter.search_courses.SearchCoursesViewModel;
@@ -30,11 +20,13 @@ import data_access.display_course_context.DisplayCourseDetailsDataAccessObject;
 import interface_adapter.display_course_context.DisplayCourseDetailsController;
 import interface_adapter.display_course_context.DisplayCourseDetailsPresenter;
 import interface_adapter.display_course_context.DisplayCourseDetailsViewModel;
+
 import use_case.display_course_context.DisplayCourseDetailsDataAccessInterface;
 import use_case.display_course_context.DisplayCourseDetailsInputBoundary;
 import use_case.display_course_context.DisplayCourseDetailsInteractor;
 import use_case.display_course_context.DisplayCourseDetailsOutputBoundary;
 import data_access.RateMyProfDataAccessObject;
+
 import use_case.ratemyprof.RateMyProfDataAccessInterface;
 import use_case.ratemyprof.RateMyProfInputBoundary;
 import use_case.ratemyprof.RateMyProfInteractor;
@@ -47,9 +39,10 @@ import use_case.tab_actions.add_tab.AddTabInteractor;
 import use_case.tab_actions.delete_tab.DeleteTabInteractor;
 import use_case.tab_actions.rename_tab.RenameTabInteractor;
 import use_case.tab_actions.switch_tab.SwitchTabInteractor;
-import data_access.course_data.CourseDataRepository;
-import view.MainPanel;
 import view.SearchPanel;
+
+import javax.swing.*;
+import java.awt.*;
 
 public class AppBuilder {
     private final JPanel cardPanel = new JPanel();
@@ -142,6 +135,7 @@ public class AppBuilder {
     }
     /**
      * Initializes workbook DAO, interface adapters, view models and view.
+     *
      * @return this builder
      */
     public AppBuilder addMainPanel() {
@@ -182,8 +176,6 @@ public class AppBuilder {
 
         return this;
     }
-
-
 
     /**
      * Builds the application.

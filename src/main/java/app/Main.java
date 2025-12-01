@@ -1,6 +1,5 @@
 package app;
 
-import view.MainPanel;
 import data_access.course_data.JsonCourseDataRepository;
 import view.MainPanel;
 
@@ -10,6 +9,7 @@ import java.awt.*;
 public class Main {
     /**
      * Main method for running the application.
+     *
      * @param args the command line arguments
      */
     public static void main(String[] args) {

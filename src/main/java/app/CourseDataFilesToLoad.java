@@ -10,7 +10,14 @@ public class CourseDataFilesToLoad {
     // and after building.
     // this is therefore my solution.
 
-    public static List<String> RESOURCE_NAMES_FOR_TESTING = toResourceNameList("CSC.json", "MAT.json");
+    public static List<String> RESOURCE_NAMES_FOR_TESTING = toResourceNameList(
+            "ABP.json",
+            "ACM.json",
+            "ACT.json",
+            "AER.json",
+            "CSC.json",
+            "MAT.json"
+    );
 
     public static List<String> RESOURCE_NAMES = toResourceNameList(
             "ABP.json",
