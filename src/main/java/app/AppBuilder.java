@@ -124,7 +124,18 @@ public class AppBuilder {
      * @return this builder
      */
     public AppBuilder addMainPanel() {
-        final WorkbookDataAccessInterface dataAccess = workbookDataAccessObject;
+        WorkbookDataAccessInterface dataAccess;
+
+        if (workbookDataAccessObject != null) {
+            // Use the shared, already-initialized DAO
+            dataAccess = workbookDataAccessObject;
+        } else {
+            // Fallback: if someone forgot initializeWorkbookDataAccessObject()
+            dataAccess = new WorkbookDataAccessObject();
+            workbookDataAccessObject = dataAccess;
+        }
+
+
         final GlobalViewModel globalViewModel = new GlobalViewModel();
         globalViewPresenter = new GlobalViewPresenter(globalViewModel);
 
