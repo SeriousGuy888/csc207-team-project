@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/GitHub/csc207-team-project/src/main/java/use_case/load_workbook</OriginalElement>
+  <nodes>
+    <node x="842.2000000000003" y="1394.1169117647055">data_access.course_data.JsonCourseDataRepository</node>
+    <node x="28.670588235294133" y="1017.982352941176">use_case.load_workbook.LoadWorkbookOutputBoundary</node>
+    <node x="-212.81176470588233" y="1281.0">interface_adapter.load_workbook.LoadWorkbookViewModel</node>
+    <node x="532.4882352941177" y="1042.8205882352943">use_case.WorkbookDataAccessInterface</node>
+    <node x="-259.1647058823529" y="1035.0558823529414">interface_adapter.load_workbook.LoadWorkbookState</node>
+    <node x="590.0235294117649" y="1281.0">data_access.workbook_persistence.FileWorkbookDataAccessObject</node>
+    <node x="313.0" y="1155.0">use_case.load_workbook.LoadWorkbookInteractor</node>
+    <node x="721.4823529411765" y="993.1676470588234">data_access.workbook_instance.WorkbookDataAccessObject</node>
+    <node x="484.4411764705883" y="1224.4415441176473">use_case.load_workbook.LoadWorkbookDataAccessInterface</node>
+    <node x="1002.0941176470592" y="1213.7363970588233">entity.CourseOffering</node>
+    <node x="1002.0941176470592" y="1092.4735294117652">entity.Workbook</node>
+    <node x="-175.16470588235293" y="1121.0558823529414">interface_adapter.load_workbook.LoadWorkbookPresenter</node>
+    <node x="-89.11764705882354" y="1399.0">view.LoadDialog</node>
+    <node x="194.0" y="1332.0">use_case.load_workbook.LoadWorkbookInputBoundary</node>
+    <node x="91.0" y="1468.0">interface_adapter.load_workbook.LoadWorkbookController</node>
+    <node x="731.164705882353" y="1337.5584558823527">data_access.course_data.CourseDataRepository</node>
+    <node x="333.0" y="1374.164705882353">use_case.load_workbook.LoadWorkbookInputData</node>
+    <node x="218.76470588235293" y="977.3794117647058">use_case.load_workbook.LoadWorkbookOutputData</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="interface_adapter.load_workbook.LoadWorkbookController" target="use_case.load_workbook.LoadWorkbookInputData" relationship="CREATE">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="data_access.workbook_persistence.FileWorkbookDataAccessObject" target="data_access.course_data.CourseDataRepository" relationship="TO_ONE">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="data_access.course_data.JsonCourseDataRepository" target="entity.CourseOffering" relationship="CREATE">
+      <point x="5.022136462939244" y="-0.0" />
+      <point x="5.022136462939244" y="-0.0" />
+    </edge>
+    <edge source="interface_adapter.load_workbook.LoadWorkbookPresenter" target="use_case.load_workbook.LoadWorkbookOutputBoundary" relationship="REALIZATION">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="view.LoadDialog" target="interface_adapter.load_workbook.LoadWorkbookViewModel" relationship="TO_ONE">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="use_case.load_workbook.LoadWorkbookInteractor" target="use_case.load_workbook.LoadWorkbookInputBoundary" relationship="REALIZATION">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="use_case.load_workbook.LoadWorkbookInteractor" target="use_case.WorkbookDataAccessInterface" relationship="TO_ONE">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="data_access.course_data.JsonCourseDataRepository" target="entity.CourseOffering" relationship="TO_MANY">
+      <point x="-5.022136462939244" y="-0.0" />
+      <point x="-5.022136462939244" y="-0.0" />
+    </edge>
+    <edge source="view.LoadDialog" target="interface_adapter.load_workbook.LoadWorkbookController" relationship="TO_ONE">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="interface_adapter.load_workbook.LoadWorkbookPresenter" target="interface_adapter.load_workbook.LoadWorkbookViewModel" relationship="TO_ONE">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="use_case.load_workbook.LoadWorkbookInteractor" target="use_case.load_workbook.LoadWorkbookDataAccessInterface" relationship="TO_ONE">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="use_case.load_workbook.LoadWorkbookInteractor" target="use_case.load_workbook.LoadWorkbookOutputData" relationship="CREATE">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="interface_adapter.load_workbook.LoadWorkbookPresenter" target="interface_adapter.load_workbook.LoadWorkbookState" relationship="CREATE">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="data_access.workbook_instance.WorkbookDataAccessObject" target="entity.Workbook" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="data_access.workbook_instance.WorkbookDataAccessObject" target="use_case.WorkbookDataAccessInterface" relationship="REALIZATION">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="data_access.course_data.JsonCourseDataRepository" target="data_access.course_data.CourseDataRepository" relationship="REALIZATION">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="data_access.workbook_persistence.FileWorkbookDataAccessObject" target="use_case.load_workbook.LoadWorkbookDataAccessInterface" relationship="REALIZATION">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="use_case.load_workbook.LoadWorkbookInteractor" target="use_case.load_workbook.LoadWorkbookOutputBoundary" relationship="TO_ONE">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="interface_adapter.load_workbook.LoadWorkbookController" target="use_case.load_workbook.LoadWorkbookInputBoundary" relationship="TO_ONE">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="data_access.workbook_instance.WorkbookDataAccessObject" target="entity.Workbook" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.44590163934426247" showDependencies="true" x="665.3183823529408" y="1229.0838235294116" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
