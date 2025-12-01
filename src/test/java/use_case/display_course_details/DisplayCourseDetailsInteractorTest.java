@@ -1,4 +1,4 @@
-package DisplayCourseDetailsTests;
+package use_case.display_course_details;
 
 import entity.Professor;
 import org.junit.jupiter.api.Test;
