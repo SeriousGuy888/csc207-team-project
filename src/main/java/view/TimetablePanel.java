@@ -5,6 +5,7 @@ import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
 import interface_adapter.TimetableState;
 import interface_adapter.TimetableState.MeetingBlock;
+import interface_adapter.autogen.AutogenController;
 
 import javax.swing.*;
 import java.awt.*;
@@ -37,6 +38,8 @@ public class TimetablePanel extends JPanel {
     private JPanel secondSemesterGridContainer;
     private JPanel[][] firstSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
     private JPanel[][] secondSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
+
+    private AutogenController autogenController;
 
     /**
      * Creates a new TimetablePanel and initializes the term-selection controls.
@@ -87,6 +90,14 @@ public class TimetablePanel extends JPanel {
         this.add(TimetablePanel, BorderLayout.CENTER);
     }
 
+    public void setAutogenController(AutogenController controller) {
+        this.autogenController = controller;
+        autogenerateButton.addActionListener(e -> {
+            if (autogenController != null) {
+                autogenController.autogenerate();
+            }
+        });
+    }
     private void initializeGrid() {
         // 1. Initialize the Container Panels with GridLayout
         // 24 rows, 5 columns

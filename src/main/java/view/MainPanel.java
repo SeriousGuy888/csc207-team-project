@@ -6,6 +6,7 @@ import interface_adapter.GlobalViewController;
 import interface_adapter.GlobalViewModel;
 import interface_adapter.GlobalViewState;
 import interface_adapter.TimetableState;
+import interface_adapter.autogen.AutogenController;
 
 import javax.swing.*;
 import java.awt.*;
@@ -25,6 +26,8 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
 
     private final GlobalViewModel globalViewModel;
     private final GlobalViewController globalViewController;
+
+    private AutogenController autogenController;
 
     /**
      * Flag to prevent infinite loops when the View updates itself.
@@ -158,6 +161,10 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
 
             final TimetablePanel panel = new TimetablePanel();
             panel.updateView(ts);
+
+            if (autogenController != null) {
+                panel.setAutogenController(autogenController);
+            }
 
             // Note: We assume TimetablePanel extends JPanel and adds its content to itself.
             // If TimetablePanel relies on .getRootPanel(), use: panel.getRootPanel()
@@ -298,6 +305,19 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
             }
         });
     }
+
+    public void setAutogenController(AutogenController autogenController) {
+        this.autogenController = autogenController;
+
+        for (int i = 0; i < tabbedPane.getTabCount() - 1; i++) { // skip the "+" tab
+            Component comp = tabbedPane.getComponentAt(i);
+            if (comp instanceof TimetablePanel) {
+                ((TimetablePanel) comp).setAutogenController(autogenController);
+            }
+        }
+    }
+
+
 
     public SearchPanel getSearchPanel() {
         return searchPanel;
