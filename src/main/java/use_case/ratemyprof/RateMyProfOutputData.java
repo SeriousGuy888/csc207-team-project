@@ -1,4 +1,5 @@
 package use_case.ratemyprof;
+import entity.Professor;
 
 import entity.Professor;
 
