@@ -41,6 +41,9 @@ import view.LoadDialog;
 import view.MainPanel;
 import view.SaveDialog;
 import view.SearchPanel;
+import interface_adapter.locksections.LockSectionController;
+import use_case.locksections.LockSectionInputBoundary;
+import use_case.locksections.LockSectionInteractor;
 
 
 import javax.swing.*;
@@ -163,6 +166,17 @@ public class AppBuilder {
         );
 
         mainPanel.setAutogenController(autogenController);
+
+        LockSectionInputBoundary lockSectionInteractor =
+                new LockSectionInteractor(
+                        workbookDataAccessObject,
+                        globalViewPresenter
+                );
+
+        LockSectionController lockSectionController =
+                new LockSectionController(lockSectionInteractor);
+
+        mainPanel.setLockSectionController(lockSectionController);
 
         return this;
     }

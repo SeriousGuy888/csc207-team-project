@@ -12,6 +12,7 @@ import use_case.timetable_update.TimetableUpdateOutputData;
 
 import java.util.Optional;
 
+
 public class LockSectionInteractor implements LockSectionInputBoundary {
 
     private final WorkbookDataAccessInterface workbookDao;
@@ -29,13 +30,11 @@ public class LockSectionInteractor implements LockSectionInputBoundary {
         int tabIndex = inputData.getTabIndex();
 
         if (tabIndex < 0 || tabIndex >= workbook.getTimetables().size()) {
-            // could call presenter.prepareFailView, but for now just ignore
-            return;
+            return; // invalid tab, nothing to do
         }
 
         Timetable timetable = workbook.getTimetables().get(tabIndex);
 
-        // Find the corresponding Section in this timetable
         CourseCode code = new CourseCode(inputData.getCourseCode());
 
         Optional<Section> maybeSection = timetable.getSections().stream()
@@ -44,8 +43,7 @@ public class LockSectionInteractor implements LockSectionInputBoundary {
                 .findFirst();
 
         if (maybeSection.isEmpty()) {
-            // Section not found in this timetable; bail out
-            return;
+            return; // no matching section in this timetable
         }
 
         Section section = maybeSection.get();
@@ -56,12 +54,9 @@ public class LockSectionInteractor implements LockSectionInputBoundary {
             timetable.unlockSection(section);
         }
 
-        // Persist changes
         workbookDao.saveWorkbook(workbook);
 
-        // Notify the view that this timetable has updated (lock status affects UI)
-        TimetableUpdateOutputData out =
-                new TimetableUpdateOutputData(timetable, tabIndex);
+        TimetableUpdateOutputData out = new TimetableUpdateOutputData(timetable, tabIndex);
         presenter.prepareSuccessView(out);
     }
 }

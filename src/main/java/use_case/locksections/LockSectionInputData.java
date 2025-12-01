@@ -8,26 +8,18 @@ public class LockSectionInputData {
     private final String sectionName;
     private final boolean locked;
 
-    public LockSectionInputData(int tabIndex, String courseCode, String sectionName, boolean locked) {
+    public LockSectionInputData(int tabIndex,
+                                String courseCode,
+                                String sectionName,
+                                boolean locked) {
         this.tabIndex = tabIndex;
         this.courseCode = courseCode;
         this.sectionName = sectionName;
         this.locked = locked;
     }
 
-    public int getTabIndex() {
-        return tabIndex;
-    }
-
-    public String getCourseCode() {
-        return courseCode;
-    }
-
-    public String getSectionName() {
-        return sectionName;
-    }
-
-    public boolean isLocked() {
-        return locked;
-    }
+    public int getTabIndex() { return tabIndex; }
+    public String getCourseCode() { return courseCode; }
+    public String getSectionName() { return sectionName; }
+    public boolean isLocked() { return locked; }
 }

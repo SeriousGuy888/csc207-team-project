@@ -38,6 +38,8 @@ public class TimetablePanel extends JPanel {
     private JPanel secondSemesterGridContainer;
     private JPanel[][] firstSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
     private JPanel[][] secondSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
+    private JPanel rightSidePanel;
+    private JTable lockedSectionsTable;
 
     private AutogenController autogenController;
 
@@ -92,6 +94,8 @@ public class TimetablePanel extends JPanel {
                 LoadDialog.getSingletonInstance().display(TimetablePanel);
             }
         });
+        setupRightSidePanel();
+
 
         this.setLayout(new BorderLayout());
         this.add(TimetablePanel, BorderLayout.CENTER);
@@ -252,6 +256,56 @@ public class TimetablePanel extends JPanel {
 
         return panel;
     }
+    private void setupRightSidePanel() {
+        // Panel that will live to the RIGHT of the timetable grid
+        rightSidePanel = new JPanel();
+        rightSidePanel.setLayout(new BorderLayout());
+        rightSidePanel.setBorder(BorderFactory.createTitledBorder("Locked Sections"));
+
+        // For now: simple 3-column table: [Course, Section, Locked?]
+        String[] columnNames = {"Course", "Section", "Locked"};
+        Object[][] data = {};  // initially empty, we'll fill later
+
+        lockedSectionsTable = new JTable(
+                new javax.swing.table.DefaultTableModel(data, columnNames) {
+                    @Override
+                    public Class<?> getColumnClass(int columnIndex) {
+                        if (columnIndex == 2) {
+                            return Boolean.class; // checkbox column
+                        }
+                        return String.class;
+                    }
+
+                    @Override
+                    public boolean isCellEditable(int row, int column) {
+                        // only the "Locked" checkbox is editable
+                        return column == 2;
+                    }
+                }
+        );
+
+        JScrollPane tableScroll = new JScrollPane(lockedSectionsTable);
+        rightSidePanel.add(tableScroll, BorderLayout.CENTER);
+
+        // 🔹 Add this panel into the IntelliJ-designed grid on the right side of the timetable
+        // TimetablePanel uses GridLayoutManager(3, 10). Your scrollPane is at (2,1) span (1,6).
+        // We'll put this at row=2, col=7 spanning 1 row x 3 columns.
+        TimetablePanel.add(
+                rightSidePanel,
+                new com.intellij.uiDesigner.core.GridConstraints(
+                        2, 7,       // row, col
+                        1, 3,       // rowSpan, colSpan
+                        com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER,
+                        com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH,
+                        com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK
+                                | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW,
+                        com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK
+                                | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW,
+                        null, null, null, 0, false
+                )
+        );
+    }
+
 
     /**
      * Creates a white/transparent spacer for when a slot is split but only one side has a course.

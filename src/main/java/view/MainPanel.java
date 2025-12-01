@@ -7,6 +7,8 @@ import interface_adapter.GlobalViewModel;
 import interface_adapter.GlobalViewState;
 import interface_adapter.TimetableState;
 import interface_adapter.autogen.AutogenController;
+import interface_adapter.locksections.LockSectionController;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,6 +17,7 @@ import java.awt.event.MouseEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
+
 
 public class MainPanel extends JPanel implements PropertyChangeListener {
     private JPanel MainPanel;
@@ -28,6 +31,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
     private final GlobalViewController globalViewController;
 
     private AutogenController autogenController;
+    private LockSectionController lockSectionController;
 
     /**
      * Flag to prevent infinite loops when the View updates itself.
@@ -315,6 +319,10 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
                 ((TimetablePanel) comp).setAutogenController(autogenController);
             }
         }
+    }
+
+    public void setLockSectionController(LockSectionController controller) {
+        this.lockSectionController = controller;
     }
 
 
