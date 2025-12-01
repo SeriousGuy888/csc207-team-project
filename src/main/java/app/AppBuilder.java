@@ -1,7 +1,9 @@
 package app;
 
 
+import data_access.OsrmApiFetcher;
 import data_access.SearchCoursesDataAccessObject;
+import data_access.UofTWalkTimeDataAccessObject;
 import data_access.WorkbookDataAccessObject;
 import data_access.course_data.CourseDataRepository;
 import data_access.course_data.CourseDataRepositoryGrouped;
@@ -12,6 +14,7 @@ import interface_adapter.GlobalViewPresenter;
 import interface_adapter.search_courses.SearchCoursesController;
 import interface_adapter.search_courses.SearchCoursesPresenter;
 import interface_adapter.search_courses.SearchCoursesViewModel;
+import use_case.osrm_walktime.WalkTimeService;
 import use_case.search_courses.SearchCoursesDataAccessInterface;
 import use_case.search_courses.SearchCoursesInputBoundary;
 import use_case.search_courses.SearchCoursesInteractor;
@@ -25,6 +28,7 @@ import view.SearchPanel;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
 import java.util.Arrays;
 
 public class AppBuilder {
@@ -32,7 +36,6 @@ public class AppBuilder {
     private final CardLayout cardLayout = new CardLayout();
 
     private MainPanel mainPanel;
-    private GlobalViewModel globalViewModel;
 
     // Shared data access
     private CourseDataRepositoryGrouped courseDataRepository;
@@ -85,9 +88,28 @@ public class AppBuilder {
         // 1. Create DAO
         final WorkbookDataAccessObject dataAccess = new WorkbookDataAccessObject();
 
+        // Create Walking Time Service with Graceful Failure
+        WalkTimeService walkTimeService;
+        try {
+            OsrmApiFetcher apiFetcher = new OsrmApiFetcher();
+            walkTimeService = new UofTWalkTimeDataAccessObject(apiFetcher);
+        }
+        catch (IOException e) {
+            System.err.println("Warning: Could not load building codes. Walking times will be disabled.");
+
+            // Fallback: Create a dummy service that always returns -1 (Error)
+            // This allows the app to start even if the file is missing.
+            walkTimeService = new WalkTimeService() {
+                @Override
+                public int calculateWalkingTime(String startCode, String endCode) {
+                    return -1;
+                }
+            };
+        }
+
         // 2. Create Panel and ViewModel
         final GlobalViewModel globalViewModel = new GlobalViewModel();
-        final GlobalViewPresenter presenter = new GlobalViewPresenter(globalViewModel);
+        final GlobalViewPresenter presenter = new GlobalViewPresenter(globalViewModel, walkTimeService);
 
         // 3. Add Interactors
         final AddTabInteractor addTabInteractor = new AddTabInteractor(dataAccess, presenter);
