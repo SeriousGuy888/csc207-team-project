@@ -22,18 +22,24 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
         this.presenter = presenter;
     }
 
+    // also hardcoded we present tmrw sorry guys
+    private String getCourseIdentifier(String courseDisplayString) {
+        if (courseDisplayString.endsWith('-F')) {
+            return courseDisplayString.substring(0, 9) + "20259";
+        }
+        return courseDisplayString.substring(0, 9) + "20261";
+    }
+
     @Override
     public void execute(AddSectionInputData inputData) {
-        String courseOfferingAsString = inputData.getCourseOfferingAsString();
+        String courseOfferingIdentifier = getCourseIdentifier(inputData.getCourseDisplayString());
         String sectionName = inputData.getSectionName();
         int selectedTabIndex = inputData.getSelectedTabIndex();
 
         List<Timetable> timetables  = dataAccess.getTimetablesFromWorkbook();
         Timetable timetable = timetables.get(selectedTabIndex);
 
-        // Find the Section entity
-        // TODO: full courseOfferingId
-        Optional<Section> sectionOpt = findSectionWithFallback(courseOfferingAsString, sectionName);
+        Optional<Section> sectionOpt = dataAccess.findSection(courseOfferingIdentifier, sectionName);
 
         if (sectionOpt.isEmpty()) {
             presenter.prepareFailView("Section not found: " + courseOfferingAsString + " " + sectionName);
@@ -68,21 +74,6 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
             conflicts
         );
         presenter.prepareSuccessView(outputData);
-    }
-
-
-     /* TODO: Remove this workaround once UI provides full courseOfferingId
-     */
-    // maye change this to throw exceptions like search course, trying different ones out
-    private Optional<Section> findSectionWithFallback(String courseOfferingAsString, String sectionName) {
-        for (String suffix : IDENTIFIER_SUFFIXES) {
-            String courseOfferingId = courseOfferingAsString + suffix;
-            Optional<Section> section = dataAccess.findSection(courseOfferingId, sectionName);
-            if (section.isPresent()) {
-                return section;
-            }
-        }
-        return Optional.empty();
     }
 
     private List<String> findConflicts(Section sectionToAdd, Timetable timetable) {
