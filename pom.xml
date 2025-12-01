@@ -33,10 +33,18 @@
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
-            <version>20231013</version>
+            <version>20250517</version>
         </dependency>
 
-        <!-- JUnit 4 -->
+        <!-- gson for easier json shenannigans -->
+        <dependency>
+            <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+            <!-- https://javadoc.io/doc/com.google.code.gson/gson/2.13.2 -->
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.13.2</version>
+        </dependency>
+
         <!-- for Swing UI Designer UIs to work when compiling with Maven (as opposed to the IntelliJ build system) -->
         <dependency>
             <groupId>com.jetbrains.intellij.java</groupId>
@@ -46,9 +54,9 @@
 
         <!-- unit testing -->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.8.1</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
 
@@ -59,7 +67,5 @@
             <version>5.10.0</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
-
 </project>

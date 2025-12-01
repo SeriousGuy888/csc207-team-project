@@ -13,6 +13,7 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class JsonCourseDataRepository implements CourseDataRepository, CourseDataRepositoryGrouped {
     private final Map<String, Map<String, CourseOffering>> CourseInfobyCode;
@@ -20,6 +21,9 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
     private final Map<String, String> sectionIdToProfessorName = new HashMap<>();
 
     public JsonCourseDataRepository(List<String> dataResourceNames) {
+        long start = System.currentTimeMillis();
+        AtomicInteger numFilesLoaded = new AtomicInteger();
+
         CourseInfobyCode = new HashMap<>();
         availableCourseOfferings = new HashMap<>();
 
@@ -30,16 +34,21 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                         "Specified course data resource file named `" + resourceName + "` not found. Skipping.");
                 return;
             }
+            loadInCoursesFromJsonFile(resource);
 
             String coursecode = resourceName.replace("courses/", "").replace(".json", "").toUpperCase();
 
             Map<String, CourseOffering> currentavailableCourseOfferings = loadInCoursesFromJsonFile(resource);
 
             if (currentavailableCourseOfferings != null) {
-                      CourseInfobyCode.put(coursecode, currentavailableCourseOfferings);
-                      availableCourseOfferings.putAll(currentavailableCourseOfferings);
-                }
+                CourseInfobyCode.put(coursecode, currentavailableCourseOfferings);
+                availableCourseOfferings.putAll(currentavailableCourseOfferings);
+            }
 
+            numFilesLoaded.getAndIncrement();
+            long curr = System.currentTimeMillis();
+            long elapsed = curr - start;
+            System.out.println("[" + this + "] loaded " + numFilesLoaded + " files at " + elapsed + "ms");
         });
     }
 
@@ -61,10 +70,19 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
             String title = currOfferingObj.getString("courseTitle");
             String description = currOfferingObj.getString("courseDescription");
 
-            CourseOffering courseOffering = new CourseOffering(
-                    new CourseCode(courseCodeString),
-                    title,
-                    description);
+            CourseOffering courseOffering;
+
+            try {
+                courseOffering = new CourseOffering(
+                        courseOfferingIdentifier,
+                        new CourseCode(courseCodeString),
+                        title,
+                        description);
+            } catch (IllegalArgumentException e) {
+                System.err.println("Could not load course with identifier " +
+                        courseOfferingIdentifier + " because " + e.getMessage());
+                return;
+            }
 
             //  START OF SECTION/MEETING PROCESSING
             JSONObject sectionsObj = currOfferingObj.getJSONObject("meetings");
@@ -91,15 +109,20 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                 // STORE MAPPING INTERNALLY for future lookup
                 sectionIdToProfessorName.put(sectionId, professorName);
 
-                // todo: actually choose the right teaching method
-                //  and also add meeting times
-                Section section = new Section(courseOffering, sectionId, Section.TeachingMethod.LECTURE);
+                sectionsObj.keys().forEachRemaining(sectionName -> {
+                    // todo: actually choose the right teaching method
+                    //  and also add meeting times
+                    Section section = new Section(courseOffering, sectionId, Section.TeachingMethod.LECTURE);
 
-                courseOffering.addAvailableSection(section);
+                    courseOffering.addAvailableSection(section);
 
+                });
+                currentavailableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
             });
-            currentavailableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
-            });
+
+
+            availableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
+        });
 
         return currentavailableCourseOfferings;
     }
@@ -121,6 +144,7 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
 
     /**
      * Get the sectionId's professor's name.
+     *
      * @param sectionId the sectionId being looked at
      * @return String of the section's professor's name, or TBD Professor if none.
      */
@@ -128,4 +152,4 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
         // Uses the map populated in loadInCoursesFromJsonFile
         return sectionIdToProfessorName.getOrDefault(sectionId, "TBD Professor");
     }
-    }
+}
