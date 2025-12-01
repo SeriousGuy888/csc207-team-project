@@ -2,6 +2,7 @@ package app;
 
 import static app.CourseDataFilesToLoad.RESOURCE_NAMES;
 import data_access.SearchCoursesDataAccessObject;
+import data_access.WorkbookDataAccessObject;
 import data_access.course_data.CourseDataRepositoryGrouped;
 import interface_adapter.GlobalViewModel;
 import view.MainPanel;
@@ -10,6 +11,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.Arrays;
 
+import data_access.SearchCoursesDataAccessObject;
+import data_access.WorkbookDataAccessObject;
+import data_access.course_data.CourseDataRepository;
+import data_access.course_data.CourseDataRepositoryGrouped;
+import data_access.course_data.JsonCourseDataRepository;
+import interface_adapter.GlobalViewController;
+import interface_adapter.GlobalViewModel;
 import data_access.course_data.JsonCourseDataRepository;
 import interface_adapter.search_courses.SearchCoursesController;
 import interface_adapter.search_courses.SearchCoursesPresenter;
@@ -31,7 +39,7 @@ import use_case.ratemyprof.RateMyProfDataAccessInterface;
 import use_case.ratemyprof.RateMyProfInputBoundary;
 import use_case.ratemyprof.RateMyProfInteractor;
 import use_case.ratemyprof.RateMyProfOutputBoundary;
-import use_case.ratemyprof.RateMyProfPresenter; // You need to define this simple class
+import use_case.ratemyprof.RateMyProfPresenter;
 import data_access.RateMyProfAPI;
 
 import interface_adapter.GlobalViewPresenter;
@@ -104,7 +112,6 @@ public class AppBuilder {
     public AppBuilder addDisplayCourseContextUseCase() {
 
         // 1. RATE MY PROF USE CASE SETUP (Dependency for Display Interactor)
-        // NOTE: Replace MockRateMyProfAPI() with your real API if available
         RateMyProfAPI rmpFetcher = new RateMyProfAPI();
         RateMyProfDataAccessInterface rmpDAO = new RateMyProfDataAccessObject(rmpFetcher);
 
@@ -138,27 +145,51 @@ public class AppBuilder {
      * @return this builder
      */
     public AppBuilder addMainPanel() {
-        globalViewModel = new GlobalViewModel();
-        mainPanel = new MainPanel(globalViewModel);
 
-        // Wire the SearchPanel with controller and viewModel
-        SearchPanel searchPanel = mainPanel.getSearchPanel();
-        searchPanel.setSearchCoursesController(searchCoursesController);
-        searchPanel.setSearchCoursesViewModel(searchCoursesViewModel);
 
-        searchPanel.setDisplayCoursesController(displayCoursesController);
-        searchPanel.setDisplayCoursesViewModel(displayCoursesViewModel);
+        // 1. Create DAO
+        final WorkbookDataAccessObject dataAccess = new WorkbookDataAccessObject();
+
+        // 2. Create Panel and ViewModel
+        final GlobalViewModel globalViewModel = new GlobalViewModel();
+        final GlobalViewPresenter presenter = new GlobalViewPresenter(globalViewModel);
+
+        // 3. Add Interactors
+        final AddTabInteractor addTabInteractor = new AddTabInteractor(dataAccess, presenter);
+        final DeleteTabInteractor removeTabInteractor = new DeleteTabInteractor(dataAccess, presenter);
+        final SwitchTabInteractor switchTabInteractor = new SwitchTabInteractor(presenter);
+        final RenameTabInteractor renameTabInteractor = new RenameTabInteractor(dataAccess, presenter);
+
+        final GlobalViewController globalViewController = new GlobalViewController(
+                addTabInteractor,
+                removeTabInteractor,
+                switchTabInteractor,
+                renameTabInteractor
+        );
+
+        mainPanel = new MainPanel(globalViewModel, globalViewController);
 
         cardPanel.add(mainPanel.getRootPanel(), "main");
         cardLayout.show(cardPanel, "main");
+        presenter.prepareSuccessView(dataAccess.getWorkbook());
+
+        // Wire the SearchPanel with controller and viewModel
+        final SearchPanel searchPanel = mainPanel.getSearchPanel();
+        searchPanel.setSearchCoursesController(searchCoursesController);
+        searchPanel.setSearchCoursesViewModel(searchCoursesViewModel);
+        searchPanel.setDisplayCoursesController(displayCoursesController);
+        searchPanel.setDisplayCoursesViewModel(displayCoursesViewModel);
+
         return this;
     }
 
-    public AppBuilder addCourseDataRepository(CourseDataRepositoryGrouped repository) {
-        this.courseDataRepository = repository;
-        return this;
-    }
 
+
+    /**
+     * Builds the application.
+     *
+     * @return the application frame.
+     */
     public JFrame build() {
         final JFrame application = new JFrame("Jason's Extravagant Timetable Builder");
         application.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
