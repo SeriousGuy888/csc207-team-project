@@ -1,14 +1,15 @@
 package app;
 
 
-import data_access.SearchCoursesDataAccessObject;
-import data_access.WorkbookDataAccessObject;
+import data_access.*;
 import data_access.course_data.CourseDataRepository;
 import data_access.course_data.JsonCourseDataRepository;
 import data_access.workbook_persistence.FileWorkbookDataAccessObject;
 import interface_adapter.GlobalViewController;
 import interface_adapter.GlobalViewModel;
 import interface_adapter.GlobalViewPresenter;
+import interface_adapter.add_section.AddSectionController;
+import interface_adapter.add_section.AddSectionPresenter;
 import interface_adapter.load_workbook.LoadWorkbookController;
 import interface_adapter.load_workbook.LoadWorkbookPresenter;
 import interface_adapter.load_workbook.LoadWorkbookViewModel;
@@ -19,6 +20,7 @@ import interface_adapter.search_courses.SearchCoursesController;
 import interface_adapter.search_courses.SearchCoursesPresenter;
 import interface_adapter.search_courses.SearchCoursesViewModel;
 import use_case.WorkbookDataAccessInterface;
+import use_case.add_section.AddSectionInteractor;
 import use_case.load_workbook.LoadWorkbookInteractor;
 import use_case.save_workbook.SaveWorkbookInteractor;
 import use_case.search_courses.SearchCoursesDataAccessInterface;
@@ -34,14 +36,12 @@ import use_case.display_course_context.DisplayCourseDetailsDataAccessInterface;
 import use_case.display_course_context.DisplayCourseDetailsInputBoundary;
 import use_case.display_course_context.DisplayCourseDetailsInteractor;
 import use_case.display_course_context.DisplayCourseDetailsOutputBoundary;
-import data_access.RateMyProfDataAccessObject;
 
 import use_case.ratemyprof.RateMyProfDataAccessInterface;
 import use_case.ratemyprof.RateMyProfInputBoundary;
 import use_case.ratemyprof.RateMyProfInteractor;
 import use_case.ratemyprof.RateMyProfOutputBoundary;
 import use_case.ratemyprof.RateMyProfPresenter;
-import data_access.RateMyProfAPI;
 
 import use_case.tab_actions.add_tab.AddTabInteractor;
 import use_case.tab_actions.delete_tab.DeleteTabInteractor;
@@ -82,6 +82,12 @@ public class AppBuilder {
     // RMP components
     private RateMyProfInputBoundary rateMyProfInteractor;
 
+    // Add section components
+    private AddSectionPresenter addSectionPresenter;
+    private AddSectionInteractor addSectionInteractor;
+    private AddSectionController addSectionController;
+
+    // Save and Load Components
     private FileWorkbookDataAccessObject workbookPersistenceDataAccessObject;
     private SaveWorkbookViewModel saveWorkbookViewModel;
     private SaveWorkbookPresenter saveWorkbookPresenter;
@@ -123,11 +129,11 @@ public class AppBuilder {
         // 3. DAO
         this.searchCoursesDataAccessObject = new SearchCoursesDataAccessObject(this.courseDataRepository);
 
-        // 4. Create Interactor (implements InputBoundary, contains business logic)
+        // 4. Create Interactor
         SearchCoursesInputBoundary searchCoursesInteractor =
                 new SearchCoursesInteractor(searchCoursesDataAccessObject, searchCoursesPresenter);
 
-        // 5. Create Controller (receives input from View, calls Interactor)
+        // 5. Create Controller
         this.searchCoursesController = new SearchCoursesController(searchCoursesInteractor);
 
         return this;
@@ -161,6 +167,13 @@ public class AppBuilder {
 
         // Create Controller
         this.displayCoursesController = new DisplayCourseDetailsController(displayInteractor);
+
+        return this;
+    }
+
+    public AppBuilder addAddCourseUseCase() {
+        // Create DAO (uses the repository, which has professor name lookup)
+        this.addSectionDataAccessObject = new AddSectionDataAccessObject(this.workbookDataAccessObject, this.courseDataRepository);
 
         return this;
     }

@@ -1,26 +1,30 @@
 package data_access;
 
-import data_access.workbook_instance.CurrentWorkbook;
 import data_access.course_data.CourseDataRepository;
 import entity.Section;
+import entity.Timetable;
 import entity.Workbook;
 import entity.CourseOffering;
+import use_case.WorkbookDataAccessInterface;
 import use_case.add_section.AddSectionDataAccessInterface;
+
+import java.util.List;
 import java.util.Optional;
 
 public class AddSectionDataAccessObject implements AddSectionDataAccessInterface {
-    private final CurrentWorkbook currentWorkbook;
+    private final WorkbookDataAccessInterface workbookDataAccess;
     private final CourseDataRepository courseDataRepository;
 
     public AddSectionDataAccessObject(CourseDataRepository courseDataRepository,
-                                      CurrentWorkbook currentWorkbook) {
-        this.currentWorkbook = currentWorkbook;
+                                      WorkbookDataAccessInterface workbookDataAccess) {
+        this.workbookDataAccess = workbookDataAccess;
         this.courseDataRepository = courseDataRepository;
     }
 
+    // for debugging only
     @Override
-    public Workbook getWorkbook() {
-        return currentWorkbook.getWorkbook();  // Always gets current reference
+    public List<Timetable> getTimetablesFromWorkbook() {
+        return workbookDataAccess.getWorkbook().getTimetables();  // Always gets current reference
     }
 
     @Override

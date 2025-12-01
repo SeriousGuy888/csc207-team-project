@@ -3,6 +3,7 @@ package use_case.add_section;
 import entity.Section;
 import entity.Timetable;
 import entity.Workbook;
+import use_case.timetable_update.TimetableUpdateOutputBoundary;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,16 +12,12 @@ import java.util.Set;
 
 
 public class AddSectionInteractor implements AddSectionInputBoundary {
-
     private final AddSectionDataAccessInterface dataAccess;
-    private final AddSectionOutputBoundary presenter;
-
-    // TODO: Get actual session codes from app state or user selection
-    // For now, try both Fall 2025 and Winter 2026
-    private static final String[] IDENTIFIER_SUFFIXES = {"-20259", "-20261"};
+    // No separate presenter, it will be an update to the timetable in the main panel
+    private final TimetableUpdateOutputBoundary presenter;
 
     public AddSectionInteractor(AddSectionDataAccessInterface dataAccess,
-                                 AddSectionOutputBoundary presenter) {
+                                 TimetableUpdateOutputBoundary presenter) {
         this.dataAccess = dataAccess;
         this.presenter = presenter;
     }
@@ -31,11 +28,7 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
         String sectionName = inputData.getSectionName();
         int selectedTabIndex = inputData.getSelectedTabIndex();
 
-        Workbook workbook = dataAccess.getWorkbook();
-        // TODO: add this to the interface and just work with the interface
-        // but right now I don't have time 
-        // I don't think TAs will check this closely, it is 3am rn 
-        List<Timetable> timetables = workbook.getTimetables();
+        List<Timetable> timetables  = dataAccess.getTimetablesFromWorkbook();
         Timetable timetable = timetables.get(selectedTabIndex);
 
         // Find the Section entity
