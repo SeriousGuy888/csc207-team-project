@@ -1,13 +1,14 @@
 package interface_adapter.display_course_context;
 
+import interface_adapter.ViewModel;
+
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.util.Collections;
 import java.util.List;
 
-public class DisplayCourseDetailsViewModel {
+public class DisplayCourseDetailsViewModel extends ViewModel<DisplayCourseDetailsState> {
 
-    // String constant for the PropertyChangeEvent
     public static final String DISPLAY_COURSE_CONTEXT = "displayCourseContext";
 
     // The current, observable state of the panel
@@ -21,6 +22,10 @@ public class DisplayCourseDetailsViewModel {
 
     // Mechanism to notify the View of changes
     private final PropertyChangeSupport support = new PropertyChangeSupport(this);
+
+    public DisplayCourseDetailsViewModel() {
+        super("display_course_context");
+    }
 
     /**
      * Updates the entire state of the ViewModel and notifies listeners.

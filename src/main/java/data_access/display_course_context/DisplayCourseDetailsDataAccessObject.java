@@ -19,8 +19,8 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
 
     private final JsonCourseDataRepository courseRepository;
 
-    public DisplayCourseDetailsDataAccessObject(CourseDataRepository courseRepository) {
-        this.courseRepository = (JsonCourseDataRepository) courseRepository;
+    public DisplayCourseDetailsDataAccessObject(JsonCourseDataRepository courseRepository) {
+        this.courseRepository = courseRepository;
     }
 
     /**
