@@ -39,7 +39,7 @@ class MockCourseDetailsDAO implements DisplayCourseDetailsDataAccessInterface {
         );
 
         // Minimal dummy meeting/time/location for the test
-        DisplayMeetingDetails mockTime = new DisplayMeetingDetails("MON", "10:00", "11:00");
+        DisplayMeetingDetails mockTime = new DisplayMeetingDetails("MON", "10:00", "11:00", "BA");
 
         DisplaySectionDetails section = new DisplaySectionDetails(
                 "LEC 01",                     // display section name
