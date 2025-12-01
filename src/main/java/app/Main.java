@@ -13,12 +13,16 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        AppBuilder appBuilder = new AppBuilder();
-        JFrame application = appBuilder
+        final AppBuilder appBuilder = new AppBuilder();
+        final JFrame application = appBuilder
+                .initializeWorkbookDataAccessObject()
                 .initializeCourseRepository()
                 .addSearchCoursesUseCase()
                 .addDisplayCourseContextUseCase()
                 .addMainPanel()
+                .addWorkbookPersistenceDataAccessObject()
+                .addSaveWorkbookUseCase()
+                .addLoadWorkbookUseCase()
                 .build();
 
         application.pack();

@@ -232,7 +232,6 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
             for (Component c : targetWrapper.getComponents()) {
                 System.out.println("  -> " + c.getClass().getName());
             }
-            System.out.println("Details size: " + newDetailsPanel.getPreferredSize());
             currentDetailsPanel = newDetailsPanel;
 
             // Full revalidation chain

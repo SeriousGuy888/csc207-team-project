@@ -1,19 +1,19 @@
 package view;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.util.ArrayList;
-
-import javax.swing.*;
-
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import interface_adapter.GlobalViewController;
 import interface_adapter.GlobalViewModel;
 import interface_adapter.GlobalViewState;
 import interface_adapter.TimetableState;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.util.ArrayList;
 
 public class MainPanel extends JPanel implements PropertyChangeListener {
     private JPanel MainPanel;
@@ -33,7 +33,8 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
 
     /**
      * Creates a new MainPanel. Then create tabs and listeners after UI builder initializes components.
-     * @param globalViewModel the GlobalViewModel to observe
+     *
+     * @param globalViewModel      the GlobalViewModel to observe
      * @param globalViewController the GlobalViewController to call when user interacts with the UI
      */
     public MainPanel(GlobalViewModel globalViewModel, GlobalViewController globalViewController) {
@@ -113,8 +114,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
 
         if (stateList.size() != currentContentTabs) {
             rebuildTabs(stateList);
-        }
-        else {
+        } else {
             refreshTabContent(stateList);
         }
 
@@ -141,6 +141,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
     /**
      * Heavy Refresh: Used when a tab is Added or Deleted.
      * Clears tabs and recreates them from the state list.
+     *
      * @param stateList The list of TimetableStates to rebuild from.
      */
     private void rebuildTabs(ArrayList<TimetableState> stateList) {
@@ -171,6 +172,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
     /**
      * Light Refresh: Used when a course is added, or a tab is renamed.
      * Updates content without destroying the tab components.
+     *
      * @param stateList The list of TimetableStates to refresh from.
      */
     private void refreshTabContent(ArrayList<TimetableState> stateList) {
@@ -289,8 +291,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
                     if (newTitle != null && !newTitle.trim().isEmpty()) {
                         globalViewController.renameTab(index, newTitle.trim());
                     }
-                }
-                else if (e.getClickCount() == 1 && SwingUtilities.isLeftMouseButton(e)) {
+                } else if (e.getClickCount() == 1 && SwingUtilities.isLeftMouseButton(e)) {
                     final int index = tabbedPane.indexOfTabComponent(tabHeader);
                     globalViewController.switchTab(index);
                 }
@@ -339,7 +340,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
         leftPanel.setMinimumSize(new Dimension(400, 1000));
         SplitPane.setLeftComponent(leftPanel);
         searchPanel = new SearchPanel();
-        leftPanel.add(searchPanel.$$$getRootComponent$$$(), new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 2, false));
+        leftPanel.add(searchPanel.$$$getRootComponent$$$(), new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
     }
 
     /**

@@ -1,20 +1,30 @@
 package app;
 
+
 import data_access.SearchCoursesDataAccessObject;
 import data_access.WorkbookDataAccessObject;
-import data_access.course_data.CourseDataRepositoryGrouped;
-import interface_adapter.GlobalViewModel;
-import view.MainPanel;
-
 import data_access.course_data.CourseDataRepository;
+import data_access.course_data.CourseDataRepositoryGrouped;
 import data_access.course_data.JsonCourseDataRepository;
+import data_access.workbook_persistence.FileWorkbookDataAccessObject;
 import interface_adapter.GlobalViewController;
+import interface_adapter.GlobalViewModel;
+import interface_adapter.GlobalViewPresenter;
+import interface_adapter.load_workbook.LoadWorkbookController;
+import interface_adapter.load_workbook.LoadWorkbookPresenter;
+import interface_adapter.load_workbook.LoadWorkbookViewModel;
+import interface_adapter.save_workbook.SaveWorkbookController;
+import interface_adapter.save_workbook.SaveWorkbookPresenter;
+import interface_adapter.save_workbook.SaveWorkbookViewModel;
 import interface_adapter.search_courses.SearchCoursesController;
 import interface_adapter.search_courses.SearchCoursesPresenter;
 import interface_adapter.search_courses.SearchCoursesViewModel;
+import use_case.WorkbookDataAccessInterface;
+import use_case.load_workbook.LoadWorkbookInteractor;
+import use_case.save_workbook.SaveWorkbookInteractor;
 import use_case.search_courses.SearchCoursesDataAccessInterface;
-import use_case.search_courses.SearchCoursesInteractor;
 import use_case.search_courses.SearchCoursesInputBoundary;
+import use_case.search_courses.SearchCoursesInteractor;
 import use_case.search_courses.SearchCoursesOutputBoundary;
 import data_access.display_course_context.DisplayCourseDetailsDataAccessObject;
 import interface_adapter.display_course_context.DisplayCourseDetailsController;
@@ -39,6 +49,9 @@ import use_case.tab_actions.add_tab.AddTabInteractor;
 import use_case.tab_actions.delete_tab.DeleteTabInteractor;
 import use_case.tab_actions.rename_tab.RenameTabInteractor;
 import use_case.tab_actions.switch_tab.SwitchTabInteractor;
+import view.LoadDialog;
+import view.MainPanel;
+import view.SaveDialog;
 import view.SearchPanel;
 
 import javax.swing.*;
@@ -48,8 +61,16 @@ public class AppBuilder {
     private final JPanel cardPanel = new JPanel();
     private final CardLayout cardLayout = new CardLayout();
 
+    private MainPanel mainPanel;
+    private GlobalViewModel globalViewModel;
+
+    // shared object to store the workbook that the user is currently working on
+    private WorkbookDataAccessInterface workbookDataAccessObject;
+
     // Shared data access
-    private CourseDataRepositoryGrouped courseDataRepository;
+    // todo: figure out why we can't use a shared interface here
+    //  like why does it have to be a JsonCourseDataRepository and not one of the interfaces
+    private JsonCourseDataRepository courseDataRepository;
 
     // Search courses components
     private SearchCoursesViewModel searchCoursesViewModel;
@@ -63,12 +84,24 @@ public class AppBuilder {
     // RMP components
     private RateMyProfInputBoundary rateMyProfInteractor;
 
-    private MainPanel mainPanel;
-    private GlobalViewModel globalViewModel;
+    private FileWorkbookDataAccessObject workbookPersistenceDataAccessObject;
+    private SaveWorkbookViewModel saveWorkbookViewModel;
+    private SaveWorkbookPresenter saveWorkbookPresenter;
+    private SaveWorkbookInteractor saveWorkbookInteractor;
+    private SaveWorkbookController saveWorkbookController;
+    private LoadWorkbookViewModel loadWorkbookViewModel;
+    private LoadWorkbookPresenter loadWorkbookPresenter;
+    private LoadWorkbookInteractor loadWorkbookInteractor;
+    private LoadWorkbookController loadWorkbookController;
 
     public AppBuilder() {
         cardPanel.setLayout(cardLayout);
 
+    }
+
+    public AppBuilder initializeWorkbookDataAccessObject() {
+        workbookDataAccessObject = new WorkbookDataAccessObject();
+        return this;
     }
 
     public AppBuilder initializeCourseRepository() {
@@ -139,8 +172,6 @@ public class AppBuilder {
      * @return this builder
      */
     public AppBuilder addMainPanel() {
-
-
         // 1. Create DAO
         final WorkbookDataAccessObject dataAccess = new WorkbookDataAccessObject();
 
@@ -162,10 +193,9 @@ public class AppBuilder {
         );
 
         mainPanel = new MainPanel(globalViewModel, globalViewController);
-
         cardPanel.add(mainPanel.getRootPanel(), "main");
-        cardLayout.show(cardPanel, "main");
         presenter.prepareSuccessView(dataAccess.getWorkbook());
+        cardLayout.show(cardPanel, "main");
 
         // Wire the SearchPanel with controller and viewModel
         final SearchPanel searchPanel = mainPanel.getSearchPanel();
@@ -173,6 +203,69 @@ public class AppBuilder {
         searchPanel.setSearchCoursesViewModel(searchCoursesViewModel);
         searchPanel.setDisplayCoursesController(displayCoursesController);
         searchPanel.setDisplayCoursesViewModel(displayCoursesViewModel);
+
+        return this;
+    }
+
+    public AppBuilder addWorkbookPersistenceDataAccessObject() {
+        if (courseDataRepository == null) {
+            throw new IllegalStateException(
+                    "Workbook Persistence Data Access Object cannot be created "
+                            + " before Course Data Repository has been created."
+            );
+        }
+        workbookPersistenceDataAccessObject = new FileWorkbookDataAccessObject(courseDataRepository);
+        return this;
+    }
+
+    public AppBuilder addSaveWorkbookUseCase() {
+        if (workbookDataAccessObject == null) {
+            throw new IllegalStateException(
+                    "Save Workbook use case cannot be initialised"
+                            + " before Workbook Data Access Object has been created."
+            );
+        }
+        if (workbookPersistenceDataAccessObject == null) {
+            throw new IllegalStateException(
+                    "Save Workbook use case cannot be initialised"
+                            + " before Workbook Persistence Data Access Object has been created."
+            );
+        }
+
+        saveWorkbookViewModel = new SaveWorkbookViewModel();
+        saveWorkbookPresenter = new SaveWorkbookPresenter(saveWorkbookViewModel);
+        saveWorkbookInteractor = new SaveWorkbookInteractor(
+                workbookDataAccessObject,
+                workbookPersistenceDataAccessObject,
+                saveWorkbookPresenter);
+        saveWorkbookController = new SaveWorkbookController(saveWorkbookInteractor);
+        SaveDialog.createSingletonInstance(saveWorkbookViewModel, saveWorkbookController);
+
+        return this;
+    }
+
+    public AppBuilder addLoadWorkbookUseCase() {
+        if (workbookDataAccessObject == null) {
+            throw new IllegalStateException(
+                    "Load Workbook use case cannot be initialised"
+                            + " before Workbook Data Access Object has been created."
+            );
+        }
+        if (workbookPersistenceDataAccessObject == null) {
+            throw new IllegalStateException(
+                    "Load Workbook use case cannot be initialised"
+                            + " before Workbook Persistence Data Access Object has been created."
+            );
+        }
+
+        loadWorkbookViewModel = new LoadWorkbookViewModel();
+        loadWorkbookPresenter = new LoadWorkbookPresenter(loadWorkbookViewModel);
+        loadWorkbookInteractor = new LoadWorkbookInteractor(
+                workbookDataAccessObject,
+                workbookPersistenceDataAccessObject,
+                loadWorkbookPresenter);
+        loadWorkbookController = new LoadWorkbookController(loadWorkbookInteractor);
+        LoadDialog.createSingletonInstance(loadWorkbookViewModel, loadWorkbookController);
 
         return this;
     }

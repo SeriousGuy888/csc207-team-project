@@ -1,8 +1,11 @@
 package use_case.load_workbook;
 
+import data_access.WorkbookDataAccessObject;
+import data_access.workbook_instance.TestWorkbookDataAccessObject;
 import entity.Workbook;
 import org.junit.jupiter.api.Test;
 import use_case.TestConstants;
+import use_case.WorkbookDataAccessInterface;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -13,8 +16,11 @@ import static org.junit.jupiter.api.Assertions.fail;
 public class LoadWorkbookInteractorTest {
     private static final Path SAVED_LOCATION = Path.of("correct");
     private static final Path INCORRECT_LOCATION = Path.of("incorrect");
-    private static final Workbook DESIRED_WORKBOOK = TestConstants.WORKBOOK_MAT137;
     private static final String ERROR_MESSAGE_WHEN_NONEXISTENT = "Not found.";
+    private static final Workbook DESIRED_WORKBOOK = TestConstants.WORKBOOK_MAT137;
+
+    private static final TestWorkbookDataAccessObject DAO_FOR_CURRENTLY_ACTIVE_WORKBOOK =
+            new TestWorkbookDataAccessObject();
     private static final LoadWorkbookDataAccessInterface FAKE_DAO = new LoadWorkbookDataAccessInterface() {
         @Override
         public Workbook load(Path source) throws IOException {
@@ -27,10 +33,12 @@ public class LoadWorkbookInteractorTest {
 
     @Test
     void successfulLoad() {
+        DAO_FOR_CURRENTLY_ACTIVE_WORKBOOK.reset();
+
         LoadWorkbookOutputBoundary presenter = new LoadWorkbookOutputBoundary() {
             @Override
             public void prepareSuccessView(LoadWorkbookOutputData outputData) {
-                assertEquals(DESIRED_WORKBOOK, outputData.getLoadedWorkbook());
+                assertEquals(DESIRED_WORKBOOK, DAO_FOR_CURRENTLY_ACTIVE_WORKBOOK.getWorkbook());
             }
 
             @Override
@@ -40,12 +48,17 @@ public class LoadWorkbookInteractorTest {
         };
 
         LoadWorkbookInputData inputData = new LoadWorkbookInputData(SAVED_LOCATION);
-        LoadWorkbookInteractor interactor = new LoadWorkbookInteractor(FAKE_DAO, presenter);
+        LoadWorkbookInteractor interactor = new LoadWorkbookInteractor(
+                DAO_FOR_CURRENTLY_ACTIVE_WORKBOOK,
+                FAKE_DAO,
+                presenter);
         interactor.execute(inputData);
     }
 
     @Test
     void unsuccessfulLoadDisplaysErrorMessage() {
+        DAO_FOR_CURRENTLY_ACTIVE_WORKBOOK.reset();
+
         LoadWorkbookOutputBoundary presenter = new LoadWorkbookOutputBoundary() {
             @Override
             public void prepareSuccessView(LoadWorkbookOutputData outputData) {
@@ -59,7 +72,10 @@ public class LoadWorkbookInteractorTest {
         };
 
         LoadWorkbookInputData inputData = new LoadWorkbookInputData(INCORRECT_LOCATION);
-        LoadWorkbookInteractor interactor = new LoadWorkbookInteractor(FAKE_DAO, presenter);
+        LoadWorkbookInteractor interactor = new LoadWorkbookInteractor(
+                DAO_FOR_CURRENTLY_ACTIVE_WORKBOOK,
+                FAKE_DAO,
+                presenter);
         interactor.execute(inputData);
     }
 }
