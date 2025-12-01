@@ -27,19 +27,19 @@ public class DisplayCourseDetailsViewModel extends ViewModel<DisplayCourseDetail
         super("display_course_context");
     }
 
-    /**
-     * Updates the entire state of the ViewModel and notifies listeners.
-     */
+    @Override
     public void setState(DisplayCourseDetailsState newState) {
         final DisplayCourseDetailsState oldState = this.state;
         this.state = newState;
         support.firePropertyChange(DISPLAY_COURSE_CONTEXT, oldState, newState);
     }
 
+    @Override
     public DisplayCourseDetailsState getState() {
         return state;
     }
 
+    @Override
     public void addPropertyChangeListener(String propertyName, PropertyChangeListener listener) {
         support.addPropertyChangeListener(propertyName, listener);
     }
