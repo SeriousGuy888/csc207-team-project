@@ -198,8 +198,8 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
             Component oldWrapper = currentDetailsPanel.getParent();
             if (oldWrapper instanceof JPanel) {
                 ((JPanel) oldWrapper).remove(currentDetailsPanel);
-                ((JPanel) oldWrapper).revalidate();
-                ((JPanel) oldWrapper).repaint();
+                oldWrapper.revalidate();
+                oldWrapper.repaint();
             }
             currentDetailsPanel = null;
         }
@@ -227,8 +227,6 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
             }
 
             JPanel newDetailsPanel = buildDetailsPanel(state);
-            // Remove maximum size here too for dynamic growth
-            // newDetailsPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, newDetailsPanel.getPreferredSize().height));
 
             targetWrapper.add(newDetailsPanel);
             System.out.println("Wrapper components: " + targetWrapper.getComponentCount());
@@ -284,7 +282,6 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         // Outer panel still uses BorderLayout so you keep the padding border
         JPanel panel = new JPanel(new BorderLayout());
         panel.setBorder(BorderFactory.createEmptyBorder(10, 15, 10, 15));
-        panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
 
         // Vertical content container (everything stacked)
         JPanel content = new JPanel();
@@ -336,7 +333,8 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                 String timeLocation = mts.isEmpty() ? "TBA" : timeLocSb.toString();
 
                 String sectionHtml = String.format(
-                        "<html><b>%s</b><br/>%s<br/>Prof: %s (RMP: <font color='green'>%.1f</font> / Diff: %.1f)</html>",
+                        "<html><b>%s</b><br/>%s<br/>Prof: %s (Rate My Prof Rating: <font color='green'>%.1f</font> " +
+                                "/ Difficulty Rating: %.1f)</html>",
                         section.getSectionName(),
                         timeLocation,
                         prof.getName(),
@@ -363,6 +361,7 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                         // call add section case
                         toggleButton.setText("Remove from timetable");
                     }
+                    // change from added to not added or vice versa
                     added[0] = !added[0];
                 });
 
@@ -399,7 +398,6 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
 
         return panel;
     }
-
 
     /**
      * Returns the root Swing panel for this view.
