@@ -110,7 +110,7 @@ public class TimetablePanel extends JPanel {
         this.autogenController = controller;
         autogenerateButton.addActionListener(e -> {
             if (autogenController != null) {
-                autogenController.autogenerate();
+                autogenController.autogenerate(this);
             }
         });
     }
@@ -175,6 +175,10 @@ public class TimetablePanel extends JPanel {
             }
         }
         updateLockedSectionsTable(state.getSelectedSections());
+    }
+
+    public TimetableState getCurrentState() {
+        return currentState;
     }
 
     /**

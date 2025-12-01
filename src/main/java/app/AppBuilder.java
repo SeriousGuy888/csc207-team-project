@@ -133,7 +133,6 @@ public class AppBuilder {
             // Use the shared, already-initialized DAO
             dataAccess = workbookDataAccessObject;
         } else {
-            // Fallback: if someone forgot initializeWorkbookDataAccessObject()
             dataAccess = new WorkbookDataAccessObject();
             workbookDataAccessObject = dataAccess;
         }
