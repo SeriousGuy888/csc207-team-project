@@ -23,12 +23,13 @@ public class SearchCoursesPresenter implements SearchCoursesOutputBoundary {
         return courseofferingstrings;
     }
     
-    private String prepareDisplayString(CourseOffering courseoffering) {
-        String courseID = courseoffering.getUniqueIdentifier;
-        if (courseID.endsWith('20251')) {
-            return courseoffering.courseCode.toString() + '(F)';
+    private String getDisplayString(CourseOffering courseoffering) {
+        String courseID = courseoffering.getUniqueIdentifier();
+        // hardcoded for now
+        if (courseID.endsWith("20259")) {
+            return courseoffering.getCourseCode().toString() + "(F)";
         }
-        return courseoffering.courseCode.toString() + '(W)';
+        return courseoffering.getCourseCode().toString() + "(W)";
     }
 
     @Override
