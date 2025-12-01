@@ -229,7 +229,6 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
             JPanel newDetailsPanel = buildDetailsPanel(state);
 
             targetWrapper.add(newDetailsPanel);
-            System.out.println("Wrapper components: " + targetWrapper.getComponentCount());
             for (Component c : targetWrapper.getComponents()) {
                 System.out.println("  -> " + c.getClass().getName());
             }

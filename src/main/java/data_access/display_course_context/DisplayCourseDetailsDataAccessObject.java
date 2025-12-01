@@ -116,14 +116,6 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
                 .map(meeting -> meeting.getLocation().toString())  // adjust to your actual getter
                 .orElse("TBA");
 
-        System.out.println("Section: " + sectionName + ", number of meetings: " + section.getMeetingsCopy().size());
-        section.getMeetingsCopy().forEach(meeting -> {
-            System.out.println("  Meeting location: " + meeting.getLocation());
-            WeeklyOccupancy occ = meeting.getTime();
-            System.out.println("    Day index: " + occ.getDayOfTheWeek());
-            System.out.println("    Start ms: " + occ.getStartTimeInDay());
-            System.out.println("    End ms: " + occ.getEndTimeInDay());
-        });
 
         // Professor info
         final String courseId = section.getCourseOffering().getCourseCode().toString(); // or courseOffering.getId() depending on your naming
