@@ -7,7 +7,6 @@ import entity.WeeklyOccupancy;
 import use_case.display_course_context.*;
 import data_access.course_data.JsonCourseDataRepository;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -90,7 +89,7 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
 
         final String sectionName = section.getSectionName();
 
-        final List<DisplayMeetingTime> meetingTimes = section.getMeetingsCopy()
+        final List<DisplayMeetingDetails> meetingTimes = section.getMeetingsCopy()
                 .stream()
                 .map(meeting -> {
                     WeeklyOccupancy occ = meeting.getTime();
@@ -108,19 +107,16 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
                             .name()
                             .substring(0, 3);   // "MON", "TUE", ...
 
-                    String start = formatTimeOfDay(startMs);
-                    String end   = formatTimeOfDay(endMs);
+                    final String start = formatTimeOfDay(startMs);
+                    final String end = formatTimeOfDay(endMs);
+                    final String loc = meeting.getLocation() != null
+                            ? meeting.getLocation().toString()
+                            : "TBA";
 
-                    return new DisplayMeetingTime(dayOfWeek, start, end);
+                    return new DisplayMeetingDetails(dayOfWeek, start, end, loc);
                 })
                 .filter(mt -> mt != null)
                 .collect(Collectors.toList());
-
-        // Location: pick from first meeting (or set "TBA" if none)
-        String location = section.getMeetingsCopy().stream()
-                .findFirst()
-                .map(meeting -> meeting.getLocation().toString())  // adjust to your actual getter
-                .orElse("TBA");
 
 
         // Professor info
@@ -138,7 +134,6 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
         return Stream.of(new DisplaySectionDetails(
                 sectionName,
                 meetingTimes,
-                location,
                 placeholderProf
         ));
     }

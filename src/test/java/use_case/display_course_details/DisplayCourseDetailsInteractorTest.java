@@ -39,12 +39,11 @@ class MockCourseDetailsDAO implements DisplayCourseDetailsDataAccessInterface {
         );
 
         // Minimal dummy meeting/time/location for the test
-        DisplayMeetingTime mockTime = new DisplayMeetingTime("MON", "10:00", "11:00");
+        DisplayMeetingDetails mockTime = new DisplayMeetingDetails("MON", "10:00", "11:00");
 
         DisplaySectionDetails section = new DisplaySectionDetails(
                 "LEC 01",                     // display section name
-                List.of(mockTime),            // one arbitrary meeting time
-                "MY 150",                     // arbitrary location
+                List.of(mockTime),             // arbitrary location
                 placeholderProf               // professor before enrichment
         );
 

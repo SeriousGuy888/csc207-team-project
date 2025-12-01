@@ -8,7 +8,7 @@ import interface_adapter.display_course_context.DisplayCourseDetailsViewModel;
 import interface_adapter.search_courses.SearchCoursesViewModel;
 import interface_adapter.search_courses.SearchCoursesState;
 import interface_adapter.search_courses.SearchCoursesController;
-import use_case.display_course_context.DisplayMeetingTime;
+import use_case.display_course_context.DisplayMeetingDetails;
 import use_case.display_course_context.DisplayProfessorDetails;
 import use_case.display_course_context.DisplaySectionDetails;
 
@@ -332,9 +332,9 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                 DisplayProfessorDetails prof = section.getProfessorDetails();
 
                 StringBuilder timeLocSb = new StringBuilder();
-                List<DisplayMeetingTime> mts = section.getMeetingTimes();
+                List<DisplayMeetingDetails> mts = section.getMeetingTimes();
                 for (int j = 0; j < mts.size(); j++) {
-                    DisplayMeetingTime mt = mts.get(j);
+                    DisplayMeetingDetails mt = mts.get(j);
                     if (j > 0) timeLocSb.append(", ");
                     timeLocSb.append(mt.getDayOfWeek())
                             .append(" ")
@@ -342,7 +342,7 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                             .append("-")
                             .append(mt.getEndTime())
                             .append(" in ")
-                            .append(section.getLocation());
+                            .append(mt.getLocation());
                 }
                 String timeLocation = mts.isEmpty() ? "TBA" : timeLocSb.toString();
                 String sectionHtml = String.format(

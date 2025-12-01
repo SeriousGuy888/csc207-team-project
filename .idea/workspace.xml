@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b2cce559-ce01-4a65-af95-dc36a4ca382d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data_access/course_data/JsonCourseDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data_access/course_data/JsonCourseDataRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data_access/display_course_context/DisplayCourseDetailsDataAccessObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data_access/display_course_context/DisplayCourseDetailsDataAccessObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/use_case/display_course_context/DisplayCourseDetailsInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/display_course_context/DisplayCourseDetailsInteractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/use_case/display_course_context/DisplayMeetingTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/display_course_context/DisplayMeetingDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/use_case/display_course_context/DisplaySectionDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/display_course_context/DisplaySectionDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/SearchPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/SearchPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/use_case/display_course_details/DisplayCourseDetailsInteractorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/use_case/display_course_details/DisplayCourseDetailsInteractorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,14 +24,14 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.DisplayCourseDetailsInteractorTest.executor": "Run",
-    "git-widget-placeholder": "use-case-display-course-context",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DisplayCourseDetailsInteractorTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;use-case-display-course-context&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Main" />

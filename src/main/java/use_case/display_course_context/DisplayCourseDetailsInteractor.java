@@ -88,7 +88,6 @@ public class DisplayCourseDetailsInteractor implements DisplayCourseDetailsInput
         return new DisplaySectionDetails(
                 section.getSectionName(),
                 section.getMeetingTimes(),
-                section.getLocation(),
                 finalProfDetails
         );
     }
