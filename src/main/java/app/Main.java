@@ -18,6 +18,7 @@ public class Main {
                 .addMainPanel()
                 .addWorkbookPersistenceDataAccessObject()
                 .addSaveWorkbookUseCase()
+                .addLoadWorkbookUseCase()
                 .build();
 
         application.pack();

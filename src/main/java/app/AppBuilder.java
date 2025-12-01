@@ -10,6 +10,9 @@ import data_access.workbook_persistence.FileWorkbookDataAccessObject;
 import interface_adapter.GlobalViewController;
 import interface_adapter.GlobalViewModel;
 import interface_adapter.GlobalViewPresenter;
+import interface_adapter.load_workbook.LoadWorkbookController;
+import interface_adapter.load_workbook.LoadWorkbookPresenter;
+import interface_adapter.load_workbook.LoadWorkbookViewModel;
 import interface_adapter.save_workbook.SaveWorkbookController;
 import interface_adapter.save_workbook.SaveWorkbookPresenter;
 import interface_adapter.save_workbook.SaveWorkbookViewModel;
@@ -17,6 +20,7 @@ import interface_adapter.search_courses.SearchCoursesController;
 import interface_adapter.search_courses.SearchCoursesPresenter;
 import interface_adapter.search_courses.SearchCoursesViewModel;
 import use_case.WorkbookDataAccessInterface;
+import use_case.load_workbook.LoadWorkbookInteractor;
 import use_case.save_workbook.SaveWorkbookInteractor;
 import use_case.search_courses.SearchCoursesDataAccessInterface;
 import use_case.search_courses.SearchCoursesInputBoundary;
@@ -26,6 +30,7 @@ import use_case.tab_actions.add_tab.AddTabInteractor;
 import use_case.tab_actions.delete_tab.DeleteTabInteractor;
 import use_case.tab_actions.rename_tab.RenameTabInteractor;
 import use_case.tab_actions.switch_tab.SwitchTabInteractor;
+import view.LoadDialog;
 import view.MainPanel;
 import view.SaveDialog;
 import view.SearchPanel;
@@ -58,6 +63,10 @@ public class AppBuilder {
     private SaveWorkbookPresenter saveWorkbookPresenter;
     private SaveWorkbookInteractor saveWorkbookInteractor;
     private SaveWorkbookController saveWorkbookController;
+    private LoadWorkbookViewModel loadWorkbookViewModel;
+    private LoadWorkbookPresenter loadWorkbookPresenter;
+    private LoadWorkbookInteractor loadWorkbookInteractor;
+    private LoadWorkbookController loadWorkbookController;
 
     public AppBuilder() {
         cardPanel.setLayout(cardLayout);
@@ -171,6 +180,32 @@ public class AppBuilder {
                 saveWorkbookPresenter);
         saveWorkbookController = new SaveWorkbookController(saveWorkbookInteractor);
         SaveDialog.createSingletonInstance(saveWorkbookViewModel, saveWorkbookController);
+
+        return this;
+    }
+
+    public AppBuilder addLoadWorkbookUseCase() {
+        if (workbookDataAccessObject == null) {
+            throw new IllegalStateException(
+                    "Load Workbook use case cannot be initialised"
+                            + " before Workbook Data Access Object has been created."
+            );
+        }
+        if (workbookPersistenceDataAccessObject == null) {
+            throw new IllegalStateException(
+                    "Load Workbook use case cannot be initialised"
+                            + " before Workbook Persistence Data Access Object has been created."
+            );
+        }
+
+        loadWorkbookViewModel = new LoadWorkbookViewModel();
+        loadWorkbookPresenter = new LoadWorkbookPresenter(loadWorkbookViewModel);
+        loadWorkbookInteractor = new LoadWorkbookInteractor(
+                workbookDataAccessObject,
+                workbookPersistenceDataAccessObject,
+                loadWorkbookPresenter);
+        loadWorkbookController = new LoadWorkbookController(loadWorkbookInteractor);
+        LoadDialog.createSingletonInstance(loadWorkbookViewModel, loadWorkbookController);
 
         return this;
     }

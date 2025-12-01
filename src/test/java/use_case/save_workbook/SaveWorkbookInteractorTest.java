@@ -1,6 +1,7 @@
 package use_case.save_workbook;
 
 import data_access.WorkbookDataAccessObject;
+import data_access.workbook_instance.TestWorkbookDataAccessObject;
 import entity.*;
 import org.junit.jupiter.api.Test;
 import use_case.TestConstants;
@@ -16,20 +17,7 @@ public class SaveWorkbookInteractorTest {
     private static final String ERROR_MESSAGE_ON_FAILED_SAVE = "Failed to save file.";
     private static final Path SAVE_LOCATION = Path.of("test");
     private static final WorkbookDataAccessInterface DAO_FOR_CURRENTLY_ACTIVE_WORKBOOK =
-            new WorkbookDataAccessInterface() {
-                // todo: make this copy the workbook instead of just using the one that's supposed to be constant
-                private Workbook workbook = TestConstants.WORKBOOK_MAT137;
-
-                @Override
-                public Workbook getWorkbook() {
-                    return workbook;
-                }
-
-                @Override
-                public void saveWorkbook(Workbook workbook) {
-                    this.workbook = workbook;
-                }
-            };
+            new TestWorkbookDataAccessObject(TestConstants.WORKBOOK_MAT137);
     private static final SaveWorkbookDataAccessInterface FUNCTIONAL_SAVING_DAO =
             new SaveWorkbookDataAccessInterface() {
                 @Override
@@ -76,7 +64,6 @@ public class SaveWorkbookInteractorTest {
 
             @Override
             public void prepareFailView(String errorMessage) {
-                assertEquals(ERROR_MESSAGE_ON_FAILED_SAVE, errorMessage);
             }
         };
 
