@@ -6,6 +6,8 @@ import com.intellij.uiDesigner.core.Spacer;
 import interface_adapter.TimetableState;
 import interface_adapter.TimetableState.MeetingBlock;
 import interface_adapter.autogen.AutogenController;
+import javax.swing.table.DefaultTableModel;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -38,6 +40,10 @@ public class TimetablePanel extends JPanel {
     private JPanel secondSemesterGridContainer;
     private JPanel[][] firstSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
     private JPanel[][] secondSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
+    private JPanel rightSidePanel;
+    private JTable lockedSectionsTable;
+    private TimetableState currentState;
+
 
     private AutogenController autogenController;
 
@@ -92,6 +98,9 @@ public class TimetablePanel extends JPanel {
                 LoadDialog.getSingletonInstance().display(TimetablePanel);
             }
         });
+
+        setupRightSidePanel();
+
 
         this.setLayout(new BorderLayout());
         this.add(TimetablePanel, BorderLayout.CENTER);
@@ -153,6 +162,8 @@ public class TimetablePanel extends JPanel {
             return;
         }
 
+        this.currentState = state;
+
         final MeetingBlock[][][] firstSemesterGridData = state.getFirstSemesterGrid();
         final MeetingBlock[][][] secondSemesterGridData = state.getSecondSemesterGrid();
 
@@ -163,6 +174,7 @@ public class TimetablePanel extends JPanel {
                 updateSlot(secondSemesterPanel[row][col], secondSemesterGridData[row][col], row);
             }
         }
+        updateLockedSectionsTable(state.getSelectedSections());
     }
 
     /**
@@ -252,6 +264,107 @@ public class TimetablePanel extends JPanel {
 
         return panel;
     }
+    private void updateLockedSectionsTable(java.util.List<TimetableState.SelectedSectionRow> rows) {
+        javax.swing.table.DefaultTableModel model =
+                (javax.swing.table.DefaultTableModel) lockedSectionsTable.getModel();
+
+        // Clear old rows
+        model.setRowCount(0);
+
+        // Add new rows
+        for (TimetableState.SelectedSectionRow row : rows) {
+            model.addRow(new Object[]{
+                    row.getCourseCode(),
+                    row.getSectionName(),
+                    row.isLocked()
+            });
+        }
+    }
+
+    private void setupRightSidePanel() {
+        // Panel that will live to the RIGHT of the timetable grid
+        rightSidePanel = new JPanel();
+        rightSidePanel.setLayout(new BorderLayout());
+        rightSidePanel.setBorder(BorderFactory.createTitledBorder("Locked Sections"));
+
+        // Simple 3-column table: [Course, Section, Locked?]
+        String[] columnNames = {"Course", "Section", "Locked"};
+        Object[][] data = {};  // initially empty, we'll fill later
+
+        lockedSectionsTable = new JTable(
+                new javax.swing.table.DefaultTableModel(data, columnNames) {
+                    @Override
+                    public Class<?> getColumnClass(int columnIndex) {
+                        if (columnIndex == 2) {
+                            return Boolean.class; // checkbox column
+                        }
+                        return String.class;
+                    }
+
+                    @Override
+                    public boolean isCellEditable(int row, int column) {
+                        // only the "Locked" checkbox is editable
+                        return column == 2;
+                    }
+                }
+        );
+        javax.swing.table.DefaultTableModel model =
+                (javax.swing.table.DefaultTableModel) lockedSectionsTable.getModel();
+
+        // 🔹 When user ticks/unticks a checkbox, update currentState
+        model.addTableModelListener(e -> {
+            if (e.getColumn() == 2 && currentState != null) {
+                int row = e.getFirstRow();
+                Object value = model.getValueAt(row, 2);
+                boolean locked = Boolean.TRUE.equals(value);
+
+                if (row >= 0 && row < currentState.getSelectedSections().size()) {
+                    TimetableState.SelectedSectionRow rowObj =
+                            currentState.getSelectedSections().get(row);
+                    rowObj.setLocked(locked);
+                }
+            }
+        });
+
+
+        // 🔹 Make the table visually thinner / more compact
+        lockedSectionsTable.setRowHeight(18);
+        lockedSectionsTable.setFont(new Font("SansSerif", Font.PLAIN, 11));
+        lockedSectionsTable.getTableHeader().setFont(new Font("SansSerif", Font.PLAIN, 11));
+
+        // Optional: stop it from stretching too wide
+        lockedSectionsTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+
+        // Column widths – keep it narrow
+        lockedSectionsTable.getColumnModel().getColumn(0).setPreferredWidth(70);  // Course
+        lockedSectionsTable.getColumnModel().getColumn(1).setPreferredWidth(55);  // Section
+        lockedSectionsTable.getColumnModel().getColumn(2).setPreferredWidth(50);  // Locked
+
+        JScrollPane tableScroll = new JScrollPane(lockedSectionsTable);
+        // 🔹 Control how wide that whole block is
+        tableScroll.setPreferredSize(new Dimension(180, 200));
+
+        rightSidePanel.add(tableScroll, BorderLayout.CENTER);
+
+        // Add this panel into your IntelliJ-designed grid on the right
+        TimetablePanel.add(
+                rightSidePanel,
+                new com.intellij.uiDesigner.core.GridConstraints(
+                        2, 7,       // row, col
+                        1, 3,       // rowSpan, colSpan
+                        com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER,
+                        com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH,
+                        com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK
+                                | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW,
+                        com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK
+                                | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW,
+                        null, null, null, 0, false
+                )
+        );
+    }
+
+
+
 
     /**
      * Creates a white/transparent spacer for when a slot is split but only one side has a course.
