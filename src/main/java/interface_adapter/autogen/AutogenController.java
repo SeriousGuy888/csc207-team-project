@@ -24,9 +24,9 @@ public class AutogenController {
 
         // Example placeholder:
         AutogenInputData input = new AutogenInputData(
-                Set.of(), // selectedCourses
-                Set.of(), // lockedSections
-                null      // blockedTimes
+                Set.of(),
+                Set.of(),
+                null
         );
 
         interactor.execute(input);
