@@ -94,6 +94,7 @@ public class TimetablePanel extends JPanel {
                 LoadDialog.getSingletonInstance().display(TimetablePanel);
             }
         });
+
         setupRightSidePanel();
 
 
@@ -262,7 +263,7 @@ public class TimetablePanel extends JPanel {
         rightSidePanel.setLayout(new BorderLayout());
         rightSidePanel.setBorder(BorderFactory.createTitledBorder("Locked Sections"));
 
-        // For now: simple 3-column table: [Course, Section, Locked?]
+        // Simple 3-column table: [Course, Section, Locked?]
         String[] columnNames = {"Course", "Section", "Locked"};
         Object[][] data = {};  // initially empty, we'll fill later
 
@@ -284,12 +285,26 @@ public class TimetablePanel extends JPanel {
                 }
         );
 
+        // 🔹 Make the table visually thinner / more compact
+        lockedSectionsTable.setRowHeight(18);
+        lockedSectionsTable.setFont(new Font("SansSerif", Font.PLAIN, 11));
+        lockedSectionsTable.getTableHeader().setFont(new Font("SansSerif", Font.PLAIN, 11));
+
+        // Optional: stop it from stretching too wide
+        lockedSectionsTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+
+        // Column widths – keep it narrow
+        lockedSectionsTable.getColumnModel().getColumn(0).setPreferredWidth(70);  // Course
+        lockedSectionsTable.getColumnModel().getColumn(1).setPreferredWidth(55);  // Section
+        lockedSectionsTable.getColumnModel().getColumn(2).setPreferredWidth(50);  // Locked
+
         JScrollPane tableScroll = new JScrollPane(lockedSectionsTable);
+        // 🔹 Control how wide that whole block is
+        tableScroll.setPreferredSize(new Dimension(180, 200));
+
         rightSidePanel.add(tableScroll, BorderLayout.CENTER);
 
-        // 🔹 Add this panel into the IntelliJ-designed grid on the right side of the timetable
-        // TimetablePanel uses GridLayoutManager(3, 10). Your scrollPane is at (2,1) span (1,6).
-        // We'll put this at row=2, col=7 spanning 1 row x 3 columns.
+        // Add this panel into your IntelliJ-designed grid on the right
         TimetablePanel.add(
                 rightSidePanel,
                 new com.intellij.uiDesigner.core.GridConstraints(
@@ -305,6 +320,8 @@ public class TimetablePanel extends JPanel {
                 )
         );
     }
+
+
 
 
     /**

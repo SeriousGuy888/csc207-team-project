@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06e5149e-db28-4222-bdad-3096ebf50f69" name="Changes" comment="Added LockSection Usecase files part 2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/interface_adapter/locksections/LockSectionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/SelectedSectionsPanel.java" afterDir="false" />
+    <list default="true" id="06e5149e-db28-4222-bdad-3096ebf50f69" name="Changes" comment="Created LockSection Controllers/Presenters and connected to UI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/AppBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/AppBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interface_adapter/GlobalViewPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interface_adapter/GlobalViewPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interface_adapter/TimetableState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interface_adapter/TimetableState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/use_case/locksections/LockSectionInputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/locksections/LockSectionInputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/use_case/locksections/LockSectionInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/locksections/LockSectionInteractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/TimetablePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/TimetablePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +182,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762883933797</updated>
-      <workItem from="1764573460377" duration="2671000" />
+      <workItem from="1764573460377" duration="4341000" />
     </task>
     <task id="LOCAL-00001" summary="added locked section options to Timetable entity">
       <option name="closed" value="true" />
@@ -216,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764574088095</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created LockSection Controllers/Presenters and connected to UI">
+      <option name="closed" value="true" />
+      <created>1764576231293</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764576231293</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +227,7 @@
     <MESSAGE value="added locked section options to Timetable entity" />
     <MESSAGE value="Added LockSection Usecase files" />
     <MESSAGE value="Added LockSection Usecase files part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added LockSection Usecase files part 2" />
+    <MESSAGE value="Created LockSection Controllers/Presenters and connected to UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created LockSection Controllers/Presenters and connected to UI" />
   </component>
 </project>
