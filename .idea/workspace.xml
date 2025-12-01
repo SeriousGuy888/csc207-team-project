@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cce559-ce01-4a65-af95-dc36a4ca382d" name="Changes" comment="" />
+    <list default="true" id="b2cce559-ce01-4a65-af95-dc36a4ca382d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/interface_adapter/search_courses/SearchCoursesPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interface_adapter/search_courses/SearchCoursesPresenter.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +26,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.DisplayCourseDetailsInteractorTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="TeamProject" />
@@ -55,8 +57,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DisplayCourseDetailsInteractorTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.DisplayCourseDetailsInteractorTest" />
       </list>
     </recent_temporary>
   </component>

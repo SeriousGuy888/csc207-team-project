@@ -29,9 +29,9 @@ public class SearchCoursesPresenter implements SearchCoursesOutputBoundary {
             if (courseID.charAt(6) == 'Y') {  // Check single character at index 6
                 return courseoffering.getCourseCode().toString() + "-Y";
             }
-            return courseoffering.getCourseCode().toString() + "-S";
+            return courseoffering.getCourseCode().toString() + "-F";
         }
-        return courseoffering.getCourseCode().toString() + "-F";
+        return courseoffering.getCourseCode().toString() + "-S";
     }
 
     @Override
