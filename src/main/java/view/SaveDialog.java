@@ -1,5 +1,6 @@
 package view;
 
+import app.GlobalConstants;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import interface_adapter.save_workbook.SaveWorkbookController;
@@ -7,12 +8,12 @@ import interface_adapter.save_workbook.SaveWorkbookState;
 import interface_adapter.save_workbook.SaveWorkbookViewModel;
 
 import javax.swing.*;
-import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.filechooser.FileSystemView;
 import java.awt.*;
 import java.awt.event.*;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -21,10 +22,7 @@ public class SaveDialog extends JDialog implements PropertyChangeListener {
 
     private static final String DIALOG_TITLE = "Save...";
     private static final String FILE_CHOOSER_TITLE = "Choose save location...";
-    private static final FileNameExtensionFilter FILE_EXTENSION_FILTER = new FileNameExtensionFilter(
-            "Jason's Extravagant Timetable Builder Workbooks (.json)",
-            "json"
-    );
+    private static final String REQUIRED_PATH_ENDING = "." + GlobalConstants.WORKBOOK_FILE_EXTENSION;
 
     private JPanel contentPane;
     private JButton saveButton;
@@ -49,7 +47,7 @@ public class SaveDialog extends JDialog implements PropertyChangeListener {
 
         fileChooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
         fileChooser.setDialogTitle(FILE_CHOOSER_TITLE);
-        fileChooser.setFileFilter(FILE_EXTENSION_FILTER);
+        fileChooser.setFileFilter(GlobalConstants.WORKBOOK_FILE_EXTENSION_FILTER);
         setPath("");
 
         setContentPane(contentPane);
@@ -122,9 +120,28 @@ public class SaveDialog extends JDialog implements PropertyChangeListener {
      * @param relativeComponent the component that the popup window should be centered relative to. can be null.
      */
     public void display(Component relativeComponent) {
-        this.pack();
-        this.setLocationRelativeTo(relativeComponent);
-        this.setVisible(true);
+        setGreyedOut(false);
+
+        pack();
+        setLocationRelativeTo(relativeComponent);
+        setVisible(true);
+    }
+
+    private void close() {
+        setVisible(false);
+        dispose();
+    }
+
+    private void setGreyedOut(boolean flag) {
+        if (flag) {
+            buttonRow.setVisible(false);
+            browseButton.setEnabled(false);
+            pathField.setEnabled(false);
+        } else {
+            buttonRow.setVisible(true);
+            browseButton.setEnabled(true);
+            pathField.setEnabled(true);
+        }
     }
 
     @Override
@@ -132,18 +149,34 @@ public class SaveDialog extends JDialog implements PropertyChangeListener {
         final SaveWorkbookState state = saveWorkbookViewModel.getState();
         setStatusText(state.getMessage(), state.isSuccess());
         if (state.isSuccess()) {
-            dispose();
+            setGreyedOut(true);
+            closeAfterDelay();
         }
     }
 
+    private void closeAfterDelay() {
+        final Timer timer = new Timer(1500, e -> close());
+        timer.setRepeats(false);
+        timer.start();
+    }
+
     private void setStatusText(String text, boolean success) {
-        final Color textColour = success ? Color.GREEN : Color.RED;
+        final Color textColour = success ? Color.BLACK : Color.RED;
         statusTextPane.setForeground(textColour);
         statusTextPane.setText(text);
     }
 
     private void setPath(String path) {
-        pathField.setText(path);
+        final String processedPath;
+        if (!path.isBlank() && !path.endsWith(REQUIRED_PATH_ENDING)) {
+            // require that the user saves the file with the correct file extension
+            // (otherwise they'll have trouble finding it again later, since the file browser won't display it)
+            processedPath = path + REQUIRED_PATH_ENDING;
+        } else {
+            processedPath = path;
+        }
+
+        pathField.setText(processedPath);
         onPathUpdate();
     }
 
@@ -169,7 +202,27 @@ public class SaveDialog extends JDialog implements PropertyChangeListener {
     }
 
     private void onPathUpdate() {
-        saveButton.setEnabled(!pathField.getText().isBlank());
+        final String pathText = pathField.getText();
+        saveButton.setEnabled(!pathText.isBlank());
+
+        final File file = new File(pathText);
+
+        if (!pathText.isBlank()) {
+            final StringBuilder newStatusText = new StringBuilder();
+            if (file.exists()) {
+                if (file.isFile()) {
+                    newStatusText.append("Warning: A file already exists at this path.");
+                } else if (file.isDirectory()) {
+                    newStatusText.append("Warning: A folder already exists at this path.");
+                }
+            }
+            if (!pathText.endsWith(REQUIRED_PATH_ENDING)) {
+                newStatusText.append(
+                        "\nWarning: File should ideally be named using file extension " + REQUIRED_PATH_ENDING);
+            }
+
+            setStatusText(newStatusText.toString(), true);
+        }
     }
 
     {
