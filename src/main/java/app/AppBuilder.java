@@ -150,6 +150,12 @@ public class AppBuilder {
     }
 
     public AppBuilder addSaveWorkbookUseCase() {
+        if (workbookDataAccessObject == null) {
+            throw new IllegalStateException(
+                    "Save Workbook use case cannot be initialised"
+                            + " before Workbook Data Access Object has been created."
+            );
+        }
         if (workbookPersistenceDataAccessObject == null) {
             throw new IllegalStateException(
                     "Save Workbook use case cannot be initialised"
@@ -159,7 +165,10 @@ public class AppBuilder {
 
         saveWorkbookViewModel = new SaveWorkbookViewModel();
         saveWorkbookPresenter = new SaveWorkbookPresenter(saveWorkbookViewModel);
-        saveWorkbookInteractor = new SaveWorkbookInteractor(workbookPersistenceDataAccessObject, saveWorkbookPresenter);
+        saveWorkbookInteractor = new SaveWorkbookInteractor(
+                workbookDataAccessObject,
+                workbookPersistenceDataAccessObject,
+                saveWorkbookPresenter);
         saveWorkbookController = new SaveWorkbookController(saveWorkbookInteractor);
         SaveDialog.createSingletonInstance(saveWorkbookViewModel, saveWorkbookController);
 

@@ -17,8 +17,7 @@ public class SaveWorkbookController {
      * @param path the path to save the currently open workbook to
      */
     public void execute(Path path) {
-        // todo: fix enttieis being expected on frontend
-        final SaveWorkbookInputData inputData = new SaveWorkbookInputData(null, path);
+        final SaveWorkbookInputData inputData = new SaveWorkbookInputData(path);
         interactor.execute(inputData);
     }
 }
