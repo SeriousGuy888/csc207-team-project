@@ -18,9 +18,18 @@ public class SearchCoursesPresenter implements SearchCoursesOutputBoundary {
     private Set<String> getCourseOfferingStrings(SearchCoursesOutputData outputData) {
         Set<String> courseofferingstrings = new HashSet<>();
         for (CourseOffering courseoffering : outputData.getMatchedCourses()){
-            courseofferingstrings.add(courseoffering.getCourseCode().toString());
+            courseofferingstrings.add(getDisplayString(courseoffering));
         }
         return courseofferingstrings;
+    }
+    
+    private String getDisplayString(CourseOffering courseoffering) {
+        String courseID = courseoffering.getUniqueIdentifier();
+        // hardcoded for now
+        if (courseID.endsWith("20259")) {
+            return courseoffering.getCourseCode().toString() + "-F";
+        }
+        return courseoffering.getCourseCode().toString() + "-S";
     }
 
     @Override
