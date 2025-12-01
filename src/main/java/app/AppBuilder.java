@@ -48,7 +48,7 @@ public class AppBuilder {
     private final CardLayout cardLayout = new CardLayout();
 
     // Shared data access
-    private CourseDataRepository courseDataRepository;
+    private CourseDataRepositoryGrouped courseDataRepository;
 
     // Search courses components
     private SearchCoursesViewModel searchCoursesViewModel;
@@ -71,9 +71,8 @@ public class AppBuilder {
     }
 
     public AppBuilder initializeCourseRepository() {
-        this.courseDataRepository= new JsonCourseDataRepository(
-                RESOURCE_NAMES
-        );
+        this.courseDataRepository = new JsonCourseDataRepository(CourseDataFilesToLoad.RESOURCE_NAMES_FOR_TESTING);
+
         return this;
     }
 
@@ -90,7 +89,7 @@ public class AppBuilder {
                 new SearchCoursesPresenter(searchCoursesViewModel);
 
         // 3. DAO
-        this.searchCoursesDataAccessObject = new SearchCoursesDataAccessObject((CourseDataRepositoryGrouped) this.courseDataRepository);
+        this.searchCoursesDataAccessObject = new SearchCoursesDataAccessObject(this.courseDataRepository);
 
         // 4. Create Interactor (implements InputBoundary, contains business logic)
         SearchCoursesInputBoundary searchCoursesInteractor =
@@ -123,7 +122,7 @@ public class AppBuilder {
 
         // Create DAO (uses the repository, which has professor name lookup)
         DisplayCourseDetailsDataAccessInterface displayDAO =
-                new DisplayCourseDetailsDataAccessObject(this.courseDataRepository);
+                new DisplayCourseDetailsDataAccessObject((CourseDataRepository) this.courseDataRepository);
 
         // Create Interactor (injects DAO, Presenter, and the RMP Interactor)
         DisplayCourseDetailsInputBoundary displayInteractor =
@@ -152,7 +151,7 @@ public class AppBuilder {
         return this;
     }
 
-    public AppBuilder addCourseDataRepository(CourseDataRepository repository) {
+    public AppBuilder addCourseDataRepository(CourseDataRepositoryGrouped repository) {
         this.courseDataRepository = repository;
         return this;
     }
