@@ -92,6 +92,18 @@ public class WeeklyOccupancy {
     }
 
     /**
+     * @return the end time in milliseconds since the start of the day of the first occupied timespan of this {@link WeeklyOccupancy},
+     * or -1 if it does not occur on any day.
+     */
+    public int getEndTimeInDay() {
+        if (timespans.isEmpty()) {
+            return -1;
+        }
+        return timespans.get(0).end % MILLISECONDS_PER_DAY;
+    }
+
+
+    /**
      * @param occupancies A collection of {@link WeeklyOccupancy} objects to union.
      * @return A new {@link WeeklyOccupancy} object where every halfhour is occupied if ANY of the given
      * {@link WeeklyOccupancy} had that halfhour marked as occupied.
@@ -234,9 +246,9 @@ public class WeeklyOccupancy {
     /**
      * A span of time over a week, denoted using an inclusive start millisecond and exclusive end millisecond.
      */
-    static final class MillisecondSpan {
+    public static final class MillisecondSpan {
+        // i marked it public to use in display course context dao to get meeting times - vic
         // class marked package-private (instead of private) so that i can access it from a test class
-
         // don't worry
         // Integer.MAX_VALUE is 2,147,483,647
         // and there are a measly 604,800,000 milliseconds in 1 week
@@ -308,4 +320,5 @@ public class WeeklyOccupancy {
             return Objects.hash(start, end);
         }
     }
+
 }

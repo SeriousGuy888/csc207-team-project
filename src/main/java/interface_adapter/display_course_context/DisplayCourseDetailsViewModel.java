@@ -12,6 +12,7 @@ public class DisplayCourseDetailsViewModel {
 
     // The current, observable state of the panel
     private DisplayCourseDetailsState state = new DisplayCourseDetailsState(
+            "",
             "Loading Course...",
             "",
             Collections.emptyList(),
@@ -25,16 +26,16 @@ public class DisplayCourseDetailsViewModel {
      * Updates the entire state of the ViewModel and notifies listeners.
      */
     public void setState(DisplayCourseDetailsState newState) {
-        // Notify listeners before changing the state
-        support.firePropertyChange(DISPLAY_COURSE_CONTEXT, this.state, newState);
+        final DisplayCourseDetailsState oldState = this.state;
         this.state = newState;
+        support.firePropertyChange(DISPLAY_COURSE_CONTEXT, oldState, newState);
     }
 
     public DisplayCourseDetailsState getState() {
         return state;
     }
 
-    public void addPropertyChangeListener(PropertyChangeListener listener) {
-        support.addPropertyChangeListener(listener);
+    public void addPropertyChangeListener(String propertyName, PropertyChangeListener listener) {
+        support.addPropertyChangeListener(propertyName, listener);
     }
 }

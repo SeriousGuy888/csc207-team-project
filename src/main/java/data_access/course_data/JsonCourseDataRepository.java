@@ -1,8 +1,6 @@
 package data_access.course_data;
 
-import entity.CourseCode;
-import entity.CourseOffering;
-import entity.Section;
+import entity.*;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -34,8 +32,11 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                         "Specified course data resource file named `" + resourceName + "` not found. Skipping.");
                 return;
             }
-            loadInCoursesFromJsonFile(resource);
 
+            numFilesLoaded.getAndIncrement();
+            long curr = System.currentTimeMillis();
+            long elapsed = curr - start;
+            System.out.println("[" + this + "] loaded " + numFilesLoaded + " files at " + elapsed + "ms");
             String coursecode = resourceName.replace("courses/", "").replace(".json", "").toUpperCase();
 
             Map<String, CourseOffering> currentavailableCourseOfferings = loadInCoursesFromJsonFile(resource);
@@ -45,10 +46,6 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                 availableCourseOfferings.putAll(currentavailableCourseOfferings);
             }
 
-            numFilesLoaded.getAndIncrement();
-            long curr = System.currentTimeMillis();
-            long elapsed = curr - start;
-            System.out.println("[" + this + "] loaded " + numFilesLoaded + " files at " + elapsed + "ms");
         });
     }
 
@@ -84,7 +81,7 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                 return;
             }
 
-            //  START OF SECTION/MEETING PROCESSING
+            //  START OF SECTION/MEETING PROCESSING!!!!!!!!!!!!!! yip
             JSONObject sectionsObj = currOfferingObj.getJSONObject("meetings");
 
             // Loop over each section (e.g., "LEC-0101", "TUT-0102")
@@ -107,24 +104,81 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                 }
 
                 // STORE MAPPING INTERNALLY for future lookup
-                sectionIdToProfessorName.put(sectionId, professorName);
+                String compositeKey = courseCodeString + ":" + sectionId;
+                sectionIdToProfessorName.put(compositeKey, professorName);
+                Section section = new Section(courseOffering, sectionId, Section.TeachingMethod.LECTURE);
 
-                sectionsObj.keys().forEachRemaining(sectionName -> {
-                    // todo: actually choose the right teaching method
-                    //  and also add meeting times
-                    Section section = new Section(courseOffering, sectionId, Section.TeachingMethod.LECTURE);
+                JSONObject scheduleObj = sectionDetails.getJSONObject("schedule");
 
-                    courseOffering.addAvailableSection(section);
+                for (String scheduleEntryKey : scheduleObj.keySet()) {
 
-                });
-                currentavailableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
+                    JSONObject scheduleEntry = scheduleObj.getJSONObject(scheduleEntryKey);
+
+                    // Extract meeting day string, e.g. "MO", "WE"
+                    String meetingDay = scheduleEntry.optString("meetingDay", null);
+                    String startTimeStr = scheduleEntry.optString("meetingStartTime", null);
+                    String endTimeStr = scheduleEntry.optString("meetingEndTime", null);
+                    String building = scheduleEntry.optString("assignedRoom1", "");
+
+                    // i dont know where the rooms are in the data but add it here if u find its key
+                    // String room = scheduleEntry.optString("assignedRoom2", "");
+
+                    if (meetingDay == null || startTimeStr == null || endTimeStr == null) {
+                        continue; // Skip incomplete meeting info
+                    }
+
+                    // Map the short day string to the DayOfTheWeek enum explicitly
+                    WeeklyOccupancy.DayOfTheWeek dayEnum = mapDayCode(meetingDay);
+                    if (dayEnum == null) {
+                        continue;  // Skip if no valid day mapping found
+                    }
+
+                    // Convert "HH:mm" to milliseconds
+                    int startMs = convertTimeStringToMilliseconds(startTimeStr);
+                    int endMs = convertTimeStringToMilliseconds(endTimeStr);
+
+                    // Create WeeklyOccupancy for this timespan
+                    WeeklyOccupancy occupancy = new WeeklyOccupancy(dayEnum, startMs, endMs);
+
+                    // Create Location
+                    UofTLocation location = new UofTLocation(building, "");
+
+                    // Create the Meeting (semester can be determined or hardcoded)
+                    Meeting meeting = new Meeting(location, Meeting.Semester.FIRST, occupancy);
+
+                    section.addMeeting(meeting);
+                }
+
+                // add the section and courseOffering
+                courseOffering.addAvailableSection(section);
+                availableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
+
             });
-
-
-            availableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
+            currentavailableCourseOfferings.put(courseOfferingIdentifier, courseOffering);
         });
 
         return currentavailableCourseOfferings;
+    }
+
+    private WeeklyOccupancy.DayOfTheWeek mapDayCode(String code) {
+        switch (code) {
+            case "MO": return WeeklyOccupancy.DayOfTheWeek.MONDAY;
+            case "TU": return WeeklyOccupancy.DayOfTheWeek.TUESDAY;
+            case "WE": return WeeklyOccupancy.DayOfTheWeek.WEDNESDAY;
+            case "TH": return WeeklyOccupancy.DayOfTheWeek.THURSDAY;
+            case "FR": return WeeklyOccupancy.DayOfTheWeek.FRIDAY;
+            case "SA": return WeeklyOccupancy.DayOfTheWeek.SATURDAY;
+            case "SU": return WeeklyOccupancy.DayOfTheWeek.SUNDAY;
+            default:   return null;
+        }
+    }
+
+    private int convertTimeStringToMilliseconds(String time) {
+        // time expected in format "HH:mm"
+        String[] parts = time.split(":");
+        int hours = Integer.parseInt(parts[0]);
+        int minutes = Integer.parseInt(parts[1]);
+        return (hours * 60 + minutes) * 60 * 1000;
     }
 
     @Override
@@ -143,13 +197,14 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
     }
 
     /**
-     * Get the sectionId's professor's name.
+     * Get the professor's name for a course and section.
      *
-     * @param sectionId the sectionId being looked at
-     * @return String of the section's professor's name, or TBD Professor if none.
+     * @param courseId  The full course offer identifier (e.g., "CSC108F").
+     * @param sectionId The section ID (e.g., "LEC-0101").
+     * @return The professor's name, or "TBD Professor" if not found.
      */
-    public String getProfessorNameBySectionId(String sectionId) {
-        // Uses the map populated in loadInCoursesFromJsonFile
-        return sectionIdToProfessorName.getOrDefault(sectionId, "TBD Professor");
+    public String getProfessorNameByCourseAndSection(String courseId, String sectionId) {
+        String compositeKey = courseId + ":" + sectionId;
+        return sectionIdToProfessorName.getOrDefault(compositeKey, "TBD Professor");
     }
 }

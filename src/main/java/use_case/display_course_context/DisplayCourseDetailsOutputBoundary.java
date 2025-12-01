@@ -14,5 +14,5 @@ public interface DisplayCourseDetailsOutputBoundary {
      * Called when the use case fails (e.g., course ID is not found).
      * @param error A descriptive error message to show the user.
      */
-    void prepareFailView(String error);
+    void prepareFailView(String failedCourseId, String error);
 }

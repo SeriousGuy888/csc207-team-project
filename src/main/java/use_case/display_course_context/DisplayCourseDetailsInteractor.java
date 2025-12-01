@@ -9,7 +9,6 @@ import java.util.stream.Collectors;
 
 public class DisplayCourseDetailsInteractor implements DisplayCourseDetailsInputBoundary {
 
-    // Dependencies injected at compile time:
     private final DisplayCourseDetailsDataAccessInterface courseDetailsDao;
     private final DisplayCourseDetailsOutputBoundary presenter;
     private final RateMyProfInputBoundary rateMyProfInteractor;
@@ -32,7 +31,7 @@ public class DisplayCourseDetailsInteractor implements DisplayCourseDetailsInput
         final DisplayCourseDetails baseDetails = courseDetailsDao.getCourseDetails(courseId);
 
         if (baseDetails == null) {
-            presenter.prepareFailView("Course details for " + courseId + " could not be found.");
+            presenter.prepareFailView(courseId,"Course details for " + courseId + " could not be found.");
             return;
         }
 
@@ -43,6 +42,7 @@ public class DisplayCourseDetailsInteractor implements DisplayCourseDetailsInput
 
         // PREPARE OUTPUT: Create the final complete DTO.
         final DisplayCourseDetails finalDetails = new DisplayCourseDetails(
+                baseDetails.getCourseId(),
                 baseDetails.getCourseTitle(),
                 baseDetails.getCourseDescription(),
                 enrichedSections
@@ -87,6 +87,8 @@ public class DisplayCourseDetailsInteractor implements DisplayCourseDetailsInput
         // Return the "enriched" (has prof info now) DTO
         return new DisplaySectionDetails(
                 section.getSectionName(),
+                section.getMeetingTimes(),
+                section.getLocation(),
                 finalProfDetails
         );
     }
