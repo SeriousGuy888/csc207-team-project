@@ -39,7 +39,7 @@ public class DisplayCourseDetailsState {
      * @return true if errorMessage is not null and not empty, false otherwise.
      */
     public boolean isError() {
-        return errorMessage != null && !errorMessage.trim().isEmpty();
+        return errorMessage != null && !errorMessage.isBlank();
     }
 
 }
