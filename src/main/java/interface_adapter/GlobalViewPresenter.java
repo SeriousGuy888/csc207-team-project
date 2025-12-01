@@ -214,8 +214,10 @@ public class GlobalViewPresenter implements
                                 secondMeeting.getBuildingCode()
                         );
 
-                        final double minutes = seconds / 60.0;
-                        secondMeeting.setWalktimeMessage(minutes);
+                        if (seconds != -1) {
+                            final double minutes = seconds / 60.0;
+                            secondMeeting.setWalktimeMessage(minutes);
+                        }
                     }
                     previousSlot = currentSlot;
                 }
