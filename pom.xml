@@ -67,14 +67,6 @@
             <version>5.10.0</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- IntelliJ GUI Forms Runtime -->
-        <dependency>
-            <groupId>com.jetbrains.intellij.java</groupId>
-            <artifactId>java-gui-forms-rt</artifactId>
-            <version>252.28238.7</version>
-        </dependency>
-
     </dependencies>
 
 </project>
