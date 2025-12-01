@@ -92,7 +92,7 @@ public class WeeklyOccupancy {
     }
 
     /**
-     * @return the end time of this {@link WeeklyOccupancy} in its specific day in milliseconds,
+     * @return the end time in milliseconds since the start of the day of the first occupied timespan of this {@link WeeklyOccupancy},
      * or -1 if it does not occur on any day.
      */
     public int getEndTimeInDay() {
