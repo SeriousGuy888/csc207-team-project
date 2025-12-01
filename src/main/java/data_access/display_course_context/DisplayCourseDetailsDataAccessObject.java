@@ -125,11 +125,6 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
             System.out.println("    End ms: " + occ.getEndTimeInDay());
         });
 
-        System.out.println("Mapped meeting times for section " + sectionName + ":");
-        meetingTimes.forEach(mt -> System.out.println("  " + mt.getDayOfWeek() + " " + mt.getStartTime() + "-" + mt.getEndTime()));
-
-        System.out.println("Section " + sectionName + ", location: " + location);
-
         // Professor info
         final String courseId = section.getCourseOffering().getCourseCode().toString(); // or courseOffering.getId() depending on your naming
         final String professorName = courseRepository.getProfessorNameByCourseAndSection(courseId, sectionName);
