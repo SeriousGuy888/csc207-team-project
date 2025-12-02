@@ -8,6 +8,7 @@ import data_access.autogen.AutogenCourseDataAccess;
 import data_access.course_data.CourseDataRepository;
 import data_access.course_data.JsonCourseDataRepository;
 import data_access.workbook_persistence.FileWorkbookDataAccessObject;
+import interface_adapter.ClearTimetableController;
 import interface_adapter.GlobalViewController;
 import interface_adapter.GlobalViewModel;
 import interface_adapter.GlobalViewPresenter;
@@ -29,6 +30,7 @@ import use_case.autogen.AutogenDataAccessInterface;
 import use_case.autogen.AutogenInputBoundary;
 import use_case.autogen.AutogenInteractor;
 import use_case.autogen.AutogenOutputBoundary;
+import use_case.clear_timetable.ClearTimetableInteractor;
 import use_case.load_workbook.LoadWorkbookInteractor;
 import use_case.save_workbook.SaveWorkbookInteractor;
 import use_case.search_courses.SearchCoursesDataAccessInterface;
@@ -213,9 +215,16 @@ public class AppBuilder {
 
         // 3. Add Interactors
         final AddTabInteractor addTabInteractor = new AddTabInteractor(workbookDataAccessObject, globalViewPresenter);
-        final DeleteTabInteractor removeTabInteractor = new DeleteTabInteractor(workbookDataAccessObject, globalViewPresenter);
+        final DeleteTabInteractor removeTabInteractor = new DeleteTabInteractor(workbookDataAccessObject,
+                globalViewPresenter);
         final SwitchTabInteractor switchTabInteractor = new SwitchTabInteractor(globalViewPresenter);
-        final RenameTabInteractor renameTabInteractor = new RenameTabInteractor(workbookDataAccessObject, globalViewPresenter);
+        final RenameTabInteractor renameTabInteractor = new RenameTabInteractor(workbookDataAccessObject,
+                globalViewPresenter);
+        final ClearTimetableInteractor clearTimetableInteractor = new ClearTimetableInteractor(workbookDataAccessObject,
+                globalViewPresenter);
+
+        final ClearTimetableController clearTimetableController = new ClearTimetableController(
+                clearTimetableInteractor);
 
         final GlobalViewController globalViewController = new GlobalViewController(
                 addTabInteractor,
@@ -224,7 +233,7 @@ public class AppBuilder {
                 renameTabInteractor
         );
 
-        mainPanel = new MainPanel(globalViewModel, globalViewController);
+        mainPanel = new MainPanel(globalViewModel, globalViewController, clearTimetableController);
         cardPanel.add(mainPanel.getRootPanel(), "main");
         globalViewPresenter.prepareSuccessView(workbookDataAccessObject.getWorkbook());
         cardLayout.show(cardPanel, "main");
