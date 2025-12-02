@@ -151,21 +151,19 @@ public class AppBuilder {
         RateMyProfAPI rmpFetcher = new RateMyProfAPI();
         RateMyProfDataAccessInterface rmpDAO = new RateMyProfDataAccessObject(rmpFetcher);
 
-        // The Display Interactor uses the synchronous RMP method, so the RMP presenter
-        // is often a minimal placeholder.
         RateMyProfOutputBoundary rmpPresenter = new RateMyProfPresenter();
         this.rateMyProfInteractor = new RateMyProfInteractor(rmpDAO, rmpPresenter);
 
         // 2. DISPLAY COURSE CONTEXT USE CASE SETUP
-        this.displayCoursesViewModel = new DisplayCourseDetailsViewModel(); // Assume you've created this ViewModel
+        this.displayCoursesViewModel = new DisplayCourseDetailsViewModel();
 
         // Create Presenter (implements OutputBoundary, updates Display ViewModel)
         DisplayCourseDetailsOutputBoundary displayPresenter =
-                new DisplayCourseDetailsPresenter(displayCoursesViewModel); // Assume you've created this Presenter
+                new DisplayCourseDetailsPresenter(displayCoursesViewModel);
 
         // Create DAO (uses the repository, which has professor name lookup)
         DisplayCourseDetailsDataAccessInterface displayDAO =
-                new DisplayCourseDetailsDataAccessObject((CourseDataRepository) this.courseDataRepository);
+                new DisplayCourseDetailsDataAccessObject(this.courseDataRepository);
 
         // Create Interactor (injects DAO, Presenter, and the RMP Interactor)
         DisplayCourseDetailsInputBoundary displayInteractor =

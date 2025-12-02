@@ -8,9 +8,9 @@ import interface_adapter.display_course_context.DisplayCourseDetailsViewModel;
 import interface_adapter.search_courses.SearchCoursesViewModel;
 import interface_adapter.search_courses.SearchCoursesState;
 import interface_adapter.search_courses.SearchCoursesController;
-import use_case.display_course_context.DisplayMeetingTime;
-import use_case.display_course_context.DisplayProfessorDetails;
-import use_case.display_course_context.DisplaySectionDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayMeetingDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayProfessorDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplaySectionDetails;
 import interface_adapter.add_section.AddSectionController;
 
 import javax.swing.*;
@@ -51,6 +51,7 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         $$$setupUI$$$();
         setupResultsContentPanel();
         resultsScrollPane.setViewportView(resultsContentPanel);
+        resultsScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         setupListeners();
     }
 
@@ -58,7 +59,22 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
      * Replaces the JList with a dynamically controlled JPanel inside the JScrollPane.
      */
     private void setupResultsContentPanel() {
-        resultsContentPanel = new JPanel();
+        resultsContentPanel = new JPanel(){
+            // override method to get changable width
+            @Override
+            public Dimension getPreferredSize() {
+                Dimension pref = super.getPreferredSize();
+                if (resultsScrollPane != null && resultsScrollPane.getViewport() != null) {
+                    int vw = resultsScrollPane.getViewport().getWidth();
+                    if (vw > 0) {
+                        // Use the viewport width, keep height from super
+                        return new Dimension(vw, pref.height);
+                    }
+                }
+                return pref;
+            }
+        };
+
         resultsContentPanel.setLayout(new BoxLayout(resultsContentPanel, BoxLayout.Y_AXIS));
         resultsContentPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
     }
@@ -98,10 +114,6 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
 
     public void setAddSectionController(AddSectionController controller) {
         this.addSectionController = controller;
-
-        // for debug
-        System.out.println("=== setAddSectionController called ===");
-        System.out.println("controller is null: " + (controller == null));
         this.addSectionController = controller;
     }
 
@@ -122,7 +134,7 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         if (SearchCoursesViewModel.SEARCH_RESULTS_UPDATED.equals(evt.getPropertyName())) {
             updateSearchResults();
         } else if (DisplayCourseDetailsViewModel.DISPLAY_COURSE_CONTEXT.equals(evt.getPropertyName())) {
-            updateCourseDetailsPanel(); // Calls the inline insertion logic
+            updateCourseDetailsPanel();
         }
     }
 
@@ -148,7 +160,7 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                     resultsContentPanel.add(createCourseResultWrapper(courseId));
                 }
             }
-            resultsContentPanel.add(Box.createVerticalGlue());
+            //resultsContentPanel.add(Box.createVerticalGlue());
         }
 
         resultsContentPanel.revalidate();
@@ -328,9 +340,9 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                 DisplayProfessorDetails prof = section.getProfessorDetails();
 
                 StringBuilder timeLocSb = new StringBuilder();
-                List<DisplayMeetingTime> mts = section.getMeetingTimes();
+                List<DisplayMeetingDetails> mts = section.getMeetingTimes();
                 for (int j = 0; j < mts.size(); j++) {
-                    DisplayMeetingTime mt = mts.get(j);
+                    DisplayMeetingDetails mt = mts.get(j);
                     if (j > 0) timeLocSb.append(", ");
                     timeLocSb.append(mt.getDayOfWeek())
                             .append(" ")
@@ -338,7 +350,7 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                             .append("-")
                             .append(mt.getEndTime())
                             .append(" in ")
-                            .append(section.getLocation());
+                            .append(mt.getLocation());
                 }
                 String timeLocation = mts.isEmpty() ? "TBA" : timeLocSb.toString();
 
@@ -369,12 +381,6 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                 final String sectionName = section.getSectionName();
 
                 toggleButton.addActionListener(e -> {
-                    // debug
-                    System.out.println("=== ADD BUTTON CLICKED ===");
-                    System.out.println("addSectionController is null: " + (addSectionController == null));
-                    System.out.println("courseDisplayString: " + courseDisplayString);
-                    System.out.println("sectionName: " + sectionName);
-
                     if (added[0]) {
                         // TODO: call remove section use case
                         toggleButton.setText("Add to timetable");

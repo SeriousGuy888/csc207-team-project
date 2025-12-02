@@ -1,5 +1,7 @@
 package use_case.display_course_context;
 
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayCourseDetails;
+
 public interface DisplayCourseDetailsDataAccessInterface {
     DisplayCourseDetails getCourseDetails(String courseId);
 
