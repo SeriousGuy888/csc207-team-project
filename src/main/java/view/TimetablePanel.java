@@ -3,6 +3,7 @@ package view;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
+import interface_adapter.ClearTimetableController;
 import interface_adapter.TimetableState;
 import interface_adapter.TimetableState.MeetingBlock;
 import interface_adapter.autogen.AutogenController;
@@ -59,6 +60,7 @@ public class TimetablePanel extends JPanel {
     private LockSectionController lockSectionController;
     private int tabIndex = -1;
 
+    private ClearTimetableController clearTimetableController;
     private AutogenController autogenController;
 
     /**
@@ -131,6 +133,35 @@ public class TimetablePanel extends JPanel {
     public void setLockSectionController(LockSectionController controller, int tabIndex) {
         this.lockSectionController = controller;
         this.tabIndex = tabIndex;
+    }
+
+    /**
+     * Sets the ClearTimetableController and activates the Clear All button.
+     * @param controller The controller to handle the clear action.
+     * @param tabIndex The index of this specific timetable tab.
+     */
+    public void setClearTimetableController(ClearTimetableController controller, int tabIndex) {
+        this.clearTimetableController = controller;
+        this.tabIndex = tabIndex;
+
+        // Remove existing listeners to avoid duplicates if re-initialized
+        for (ActionListener al : clearAllButton.getActionListeners()) {
+            clearAllButton.removeActionListener(al);
+        }
+
+        clearAllButton.addActionListener(e -> {
+            int response = JOptionPane.showConfirmDialog(
+                    this,
+                    "Are you sure you want to clear all courses from this timetable?",
+                    "Clear Timetable",
+                    JOptionPane.YES_NO_OPTION,
+                    JOptionPane.WARNING_MESSAGE
+            );
+
+            if (response == JOptionPane.YES_OPTION && clearTimetableController != null) {
+                clearTimetableController.execute(this.tabIndex);
+            }
+        });
     }
 
     private void initializeGrid() {

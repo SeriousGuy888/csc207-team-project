@@ -1,6 +1,6 @@
 package interface_adapter.search_courses;
 
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 import entity.CourseOffering;
@@ -16,7 +16,7 @@ public class SearchCoursesPresenter implements SearchCoursesOutputBoundary {
     }
 
     private Set<String> getCourseOfferingStrings(SearchCoursesOutputData outputData) {
-        Set<String> courseofferingstrings = new HashSet<>();
+        Set<String> courseofferingstrings = new LinkedHashSet<>();
         for (CourseOffering courseoffering : outputData.getMatchedCourses()){
             courseofferingstrings.add(getDisplayString(courseoffering));
         }

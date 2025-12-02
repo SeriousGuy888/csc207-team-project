@@ -2,10 +2,7 @@ package view;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
-import interface_adapter.GlobalViewController;
-import interface_adapter.GlobalViewModel;
-import interface_adapter.GlobalViewState;
-import interface_adapter.TimetableState;
+import interface_adapter.*;
 import interface_adapter.autogen.AutogenController;
 import interface_adapter.locksections.LockSectionController;
 
@@ -29,7 +26,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
 
     private final GlobalViewModel globalViewModel;
     private final GlobalViewController globalViewController;
-
+    private final ClearTimetableController clearTimetableController;
     private AutogenController autogenController;
     private LockSectionController lockSectionController;
 
@@ -43,11 +40,15 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
      *
      * @param globalViewModel      the GlobalViewModel to observe
      * @param globalViewController the GlobalViewController to call when user interacts with the UI
+     * @param clearTimetableController the ClearTimetableController that clears timetable
      */
-    public MainPanel(GlobalViewModel globalViewModel, GlobalViewController globalViewController) {
+    public MainPanel(GlobalViewModel globalViewModel,
+                     GlobalViewController globalViewController,
+                     ClearTimetableController clearTimetableController) {
         this.globalViewModel = globalViewModel;
         this.globalViewModel.addPropertyChangeListener(GlobalViewModel.TIMETABLE_CHANGED, this);
         this.globalViewController = globalViewController;
+        this.clearTimetableController = clearTimetableController;
 
         $$$setupUI$$$();
         SwingUtilities.invokeLater(() -> {
@@ -163,7 +164,7 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
             final String title = ts.getTimetableName();
 
             final TimetablePanel panel = new TimetablePanel();
-            panel.updateView(ts);
+            panel.setClearTimetableController(clearTimetableController, i);
 
             if (autogenController != null) {
                 panel.setAutogenController(autogenController);
