@@ -155,7 +155,13 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         currentDetailsPanel = null;
 
         if (state.isError()) {
-            resultsContentPanel.add(new JLabel("Error: " + state.getErrorMessage()));
+            JOptionPane.showMessageDialog(
+                    this,
+                    state.getErrorMessage(),
+                    "Search Error",
+                    JOptionPane.ERROR_MESSAGE
+            );
+            return;
         } else {
             Set<String> courses = state.getMatchedCourses();
             if (courses.isEmpty()) {
@@ -251,17 +257,29 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
 
         JPanel targetWrapper = findWrapperPanel(currentlyOpenCourseId);
         if (targetWrapper != null) {
+            // Expand the details panel
             if (currentDetailsPanel != null) {
                 targetWrapper.remove(currentDetailsPanel);
             }
-
             JPanel newDetailsPanel = buildDetailsPanel(state);
-
+// Set preferred size for proper expansion
+            newDetailsPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
+            newDetailsPanel.setPreferredSize(null);
+            newDetailsPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
             targetWrapper.add(newDetailsPanel);
+            currentDetailsPanel = newDetailsPanel;
+
+// Re-actions
+            targetWrapper.revalidate();
+            targetWrapper.repaint();
+            resultsContentPanel.revalidate();
+            resultsContentPanel.repaint();
+            resultsScrollPane.revalidate();
+            resultsScrollPane.repaint();
+
             for (Component c : targetWrapper.getComponents()) {
                 System.out.println("  -> " + c.getClass().getName());
             }
-            currentDetailsPanel = newDetailsPanel;
 
             // Full revalidation chain
             targetWrapper.revalidate();
@@ -426,11 +444,11 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         // Put the stacked content at the NORTH so it naturally hugs the top-left
         panel.add(content, BorderLayout.NORTH);
         // Make the details panel width follow the scrollpane viewport
-        resultsScrollPane.getViewport().addChangeListener(e -> {
-            int width = resultsScrollPane.getViewport().getWidth();
-            panel.setPreferredSize(new Dimension(width, panel.getPreferredSize().height));
-            panel.revalidate();
-        });
+//        resultsScrollPane.getViewport().addChangeListener(e -> {
+//            int width = resultsScrollPane.getViewport().getWidth();
+//            panel.setPreferredSize(new Dimension(width, panel.getPreferredSize().height));
+//            panel.revalidate();
+//        });
 
         return panel;
     }
