@@ -10,7 +10,8 @@ import java.util.Objects;
  * marked as either occupied or unoccupied.
  */
 public class WeeklyOccupancy {
-    private static final int MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
+    private static final int MILLISECONDS_PER_HOUR = 1000 * 60 * 60;
+    private static final int MILLISECONDS_PER_DAY = MILLISECONDS_PER_HOUR * 24;
 
     // This class uses milliseconds because I noticed the official TTB's data specifies
     // start and end times in milliseconds, and this constructor would be convenient if we
@@ -68,6 +69,39 @@ public class WeeklyOccupancy {
     private WeeklyOccupancy(List<MillisecondSpan> timespans) {
         this.timespans = new ArrayList<>(timespans);
     }
+
+    /**
+     * @return the zero-based index of the first day of the week that this {@link WeeklyOccupancy} occupies, or -1 if it does not occur on any day.
+     */
+    public int getDayOfTheWeek() {
+        if (timespans.isEmpty()) {
+            return -1;
+        }
+        return timespans.get(0).start / MILLISECONDS_PER_DAY;
+    }
+
+    /**
+     * @return the start time of this {@link WeeklyOccupancy} in its specific day in milliseconds,
+     * or -1 if it does not occur on any day.
+     */
+    public int getStartTimeInDay() {
+        if (timespans.isEmpty()) {
+            return -1;
+        }
+        return timespans.get(0).start % MILLISECONDS_PER_DAY;
+    }
+
+    /**
+     * @return the end time in milliseconds since the start of the day of the first occupied timespan of this {@link WeeklyOccupancy},
+     * or -1 if it does not occur on any day.
+     */
+    public int getEndTimeInDay() {
+        if (timespans.isEmpty()) {
+            return -1;
+        }
+        return timespans.get(0).end % MILLISECONDS_PER_DAY;
+    }
+
 
     /**
      * @param occupancies A collection of {@link WeeklyOccupancy} objects to union.
@@ -140,6 +174,28 @@ public class WeeklyOccupancy {
     }
 
     /**
+     * Check if the nth half hour has <em>any</em> millisecond marked occupied.
+     *
+     * @param halfHourIndex A <strong>zero-indexed</strong> number from 0 to 47 representing which
+     *                      thirty minute timespan to check.
+     *                      For example,
+     *                      <ul>
+     *                        <li>00:00 to 00:30 is {@code 0},</li>
+     *                        <li>00:30 to 01:00 is {@code 1},</li>
+     *                        <li>12:00 to 12:30 is {@code 24}, and</li>
+     *                        <li>23:30 to 00:00 is {@code 47}.</li>
+     *                      </ul>
+     * @return true if the specified half hour has at least one millisecond marked occupied, false otherwise.
+     */
+    public boolean checkOccupancyOfHalfHourSlot(DayOfTheWeek dayOfTheWeek, int halfHourIndex) {
+        int start = dayOfTheWeek.millisecondOffset + (MILLISECONDS_PER_HOUR / 2) * halfHourIndex;
+        int end = dayOfTheWeek.millisecondOffset + (MILLISECONDS_PER_HOUR / 2) * (halfHourIndex + 1);
+        MillisecondSpan halfHour = new MillisecondSpan(start, end);
+
+        return timespans.stream().anyMatch(timespan -> timespan.overlaps(halfHour));
+    }
+
+    /**
      * @return whether all occupied timeslots are contiguous.
      * <ul>
      * <li>"Contiguous" means every occupied timeslot is connected to every other occupied timeslot.</li>
@@ -190,9 +246,9 @@ public class WeeklyOccupancy {
     /**
      * A span of time over a week, denoted using an inclusive start millisecond and exclusive end millisecond.
      */
-    static final class MillisecondSpan {
+    public static final class MillisecondSpan {
+        // i marked it public to use in display course context dao to get meeting times - vic
         // class marked package-private (instead of private) so that i can access it from a test class
-
         // don't worry
         // Integer.MAX_VALUE is 2,147,483,647
         // and there are a measly 604,800,000 milliseconds in 1 week
@@ -264,4 +320,5 @@ public class WeeklyOccupancy {
             return Objects.hash(start, end);
         }
     }
+
 }
