@@ -4,6 +4,7 @@ import entity.Section;
 import entity.Timetable;
 import entity.Workbook;
 import use_case.timetable_update.TimetableUpdateOutputBoundary;
+import use_case.timetable_update.TimetableUpdateOutputData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,10 +25,10 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
 
     // also hardcoded we present tmrw sorry guys
     private String getCourseIdentifier(String courseDisplayString) {
-        if (courseDisplayString.endsWith('-F')) {
-            return courseDisplayString.substring(0, 9) + "20259";
+        if (courseDisplayString.endsWith("F") || courseDisplayString.endsWith("Y")) {
+            return courseDisplayString + "-20259";
         }
-        return courseDisplayString.substring(0, 9) + "20261";
+        return courseDisplayString + "-20261";
     }
 
     @Override
@@ -42,7 +43,7 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
         Optional<Section> sectionOpt = dataAccess.findSection(courseOfferingIdentifier, sectionName);
 
         if (sectionOpt.isEmpty()) {
-            presenter.prepareFailView("Section not found: " + courseOfferingAsString + " " + sectionName);
+            presenter.prepareFailView("Section not found: " + courseOfferingIdentifier + " " + sectionName);
             return;
         }
 
@@ -50,43 +51,24 @@ public class AddSectionInteractor implements AddSectionInputBoundary {
 
         // Check if already in timetable
         if (timetable.getSections().contains(sectionToAdd)) {
-            presenter.prepareFailView("Section already in timetable: " + courseOfferingAsString + " " + sectionName);
+            presenter.prepareFailView("Section already in timetable: " + courseOfferingIdentifier + " " + sectionName);
             return;
         }
-
-        // Check for time conflicts
-        List<String> conflicts = findConflicts(sectionToAdd, timetable);
 
         // Add the section
         boolean added = timetable.addSection(sectionToAdd);
 
         if (!added) {
-            presenter.prepareFailView("Failed to add section: " + courseOfferingAsString + " " + sectionName);
+            presenter.prepareFailView("Failed to add section: " + courseOfferingIdentifier + " " + sectionName);
             return;
         }
 
-        // Prepare output
-        AddSectionOutputData outputData = new AddSectionOutputData(
+        // Prepare timetable output
+
+        TimetableUpdateOutputData outputData = new TimetableUpdateOutputData(
             timetable,
-            selectedTabIndex,
-            courseOfferingAsString,
-            sectionName,
-            conflicts
+            selectedTabIndex
         );
         presenter.prepareSuccessView(outputData);
-    }
-
-    private List<String> findConflicts(Section sectionToAdd, Timetable timetable) {
-        List<String> conflicts = new ArrayList<>();
-
-        for (Section existing : timetable.getSections()) {
-            if (sectionToAdd.getOccupiedTime().doesIntersect(existing.getOccupiedTime())) {
-                String conflictName = existing.getCourseOffering().getCourseCode().toString()
-                        + " " + existing.getSectionName();
-                conflicts.add(conflictName);
-            }
-        }
-
-        return conflicts;
     }
 }

@@ -11,7 +11,7 @@ public class AddSectionInputData {
         this.selectedTabIndex = selectedTabIndex;
     }
 
-    public String getCourseOfferingAsString() {
+    public String getCourseDisplayString() {
         return courseDisplayString;
     }
 
