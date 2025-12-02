@@ -6,6 +6,8 @@ import use_case.WorkbookDataAccessInterface;
 import use_case.autogen.AutogenOutputBoundary;
 import use_case.autogen.AutogenOutputData;
 import interface_adapter.GlobalViewPresenter;
+import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
 
 public class AutogenPresenter implements AutogenOutputBoundary {
 
@@ -36,6 +38,13 @@ public class AutogenPresenter implements AutogenOutputBoundary {
 
     @Override
     public void prepareFailView(String errorMessage) {
-        System.out.println("Autogen failed: " + errorMessage);
+        SwingUtilities.invokeLater(() ->
+                JOptionPane.showMessageDialog(
+                        null,
+                        "Failed to generate timetable:\n" + errorMessage,
+                        "Autogen Failed",
+                        JOptionPane.ERROR_MESSAGE
+                )
+        );
     }
 }
