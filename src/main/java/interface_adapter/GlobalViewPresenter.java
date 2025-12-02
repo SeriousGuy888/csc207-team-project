@@ -140,11 +140,18 @@ public class GlobalViewPresenter implements
         for (Section section : timetable.getSections()) {
             final CourseCode courseCode = section.getCourseOffering().getCourseCode();
             final String sectionInfo = section.getSectionName();
+            final int colorIndex = Math.abs(courseCode.hashCode());
 
             for (Meeting meeting : section.getMeetings()) {
                 final int startRow = meeting.getStartTimeIndexInDay() - START_HOUR_INDEX;
                 final boolean isConflict = meeting.getNumConflicts() > 0;
-                final MeetingBlock block = new MeetingBlock(courseCode.toString(), sectionInfo, startRow, isConflict);
+                final MeetingBlock block = new MeetingBlock(
+                        courseCode.toString(),
+                        sectionInfo,
+                        startRow,
+                        isConflict,
+                        colorIndex
+                );
 
                 // 3. Map Meeting time to Grid Coordinates
                 if (meeting.getSemester() == Meeting.Semester.FIRST) {

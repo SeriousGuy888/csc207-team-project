@@ -41,33 +41,6 @@ public class TimetableState {
         this.timetableName = timetableName;
     }
 
-    // Inner Class: DTO for UI display
-    public static class MeetingBlock {
-        private final String courseCode;
-        private final String sectionInfo;
-        private final int startRow;
-        private final boolean isConflict;
-
-        public MeetingBlock(String courseCode, String sectionInfo, int startRow, boolean isConflict) {
-            this.courseCode = courseCode;
-            this.sectionInfo = sectionInfo;
-            this.startRow = startRow;
-            this.isConflict = isConflict;
-        }
-
-        public String getDisplayText() {
-            // HTML formatting for multiline text in JLabel
-            return "<html><center>" + courseCode + "<br>" + sectionInfo + "</center></html>";
-        }
-
-        public int getStartRow() {
-            return startRow;
-        }
-
-        public boolean isConflict() {
-            return isConflict;
-        }
-    }
     public List<SelectedSectionRow> getSelectedSections() {
         return selectedSections;
     }
@@ -102,4 +75,37 @@ public class TimetableState {
         }
     }
 
+    // Inner Class: DTO for UI display
+    public static class MeetingBlock {
+        private final String courseCode;
+        private final String sectionInfo;
+        private final int startRow;
+        private final boolean isConflict;
+        private final int colorIndex;
+
+        public MeetingBlock(String courseCode, String sectionInfo, int startRow, boolean isConflict, int colorIndex) {
+            this.courseCode = courseCode;
+            this.sectionInfo = sectionInfo;
+            this.startRow = startRow;
+            this.isConflict = isConflict;
+            this.colorIndex = colorIndex;
+        }
+
+        public String getDisplayText() {
+            // HTML formatting for multiline text in JLabel
+            return "<html><center>" + courseCode + "<br>" + sectionInfo + "</center></html>";
+        }
+
+        public int getStartRow() {
+            return startRow;
+        }
+
+        public boolean isConflict() {
+            return isConflict;
+        }
+
+        public int getColorIndex() {
+            return colorIndex;
+        }
+    }
 }
