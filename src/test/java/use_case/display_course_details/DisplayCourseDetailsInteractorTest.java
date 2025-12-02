@@ -3,6 +3,10 @@ package use_case.display_course_details;
 import entity.Professor;
 import org.junit.jupiter.api.Test;
 import use_case.display_course_context.*;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayCourseDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayMeetingDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayProfessorDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplaySectionDetails;
 import use_case.ratemyprof.RateMyProfInputBoundary;
 import use_case.ratemyprof.RateMyProfInputData;
 import use_case.ratemyprof.RateMyProfOutputData;
@@ -39,12 +43,11 @@ class MockCourseDetailsDAO implements DisplayCourseDetailsDataAccessInterface {
         );
 
         // Minimal dummy meeting/time/location for the test
-        DisplayMeetingTime mockTime = new DisplayMeetingTime("MON", "10:00", "11:00");
+        DisplayMeetingDetails mockTime = new DisplayMeetingDetails("MON", "10:00", "11:00", "BA");
 
         DisplaySectionDetails section = new DisplaySectionDetails(
                 "LEC 01",                     // display section name
-                List.of(mockTime),            // one arbitrary meeting time
-                "MY 150",                     // arbitrary location
+                List.of(mockTime),             // arbitrary location
                 placeholderProf               // professor before enrichment
         );
 

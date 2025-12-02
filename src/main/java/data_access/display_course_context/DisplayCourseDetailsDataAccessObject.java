@@ -1,13 +1,15 @@
 package data_access.display_course_context;
 
-import data_access.course_data.CourseDataRepository;
 import entity.CourseOffering;
 import entity.Section;
 import entity.WeeklyOccupancy;
 import use_case.display_course_context.*;
 import data_access.course_data.JsonCourseDataRepository;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayCourseDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayMeetingDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayProfessorDetails;
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplaySectionDetails;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -20,25 +22,30 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
 
     private final JsonCourseDataRepository courseRepository;
 
-    public DisplayCourseDetailsDataAccessObject(CourseDataRepository courseRepository) {
-        this.courseRepository = (JsonCourseDataRepository) courseRepository;
+    public DisplayCourseDetailsDataAccessObject(JsonCourseDataRepository courseRepository) {
+        this.courseRepository = courseRepository;
     }
 
+    /**
+     * @param courseId is the SIMPLIFIED course id from the UI. (e.g. CSC207H1-F).
+     * @return Course details for the given course id as DisplayCourseDetails Object.
+     */
     @Override
     public DisplayCourseDetails getCourseDetails(String courseId) {
-        // 1. Get the department code (first 3 letters) from the simplified courseId
+        // Get the department code (first 3 letters) from the simplified courseId (e.g. CSC207H1-F -> CSC)
         String deptCode = courseId.substring(0, 3).toUpperCase();
 
-        // 2. Fetch all known course offerings for that department (from the grouped repository)
-        Map<String, CourseOffering> deptOfferings =
+        // Fetch all known course offerings for that department
+        final Map<String, CourseOffering> deptOfferings =
                 courseRepository.getMatchingCourseInfo(deptCode);
 
         if (deptOfferings == null || deptOfferings.isEmpty()) {
-            return null; // Department not found or no offerings
+            // Department not found or no offerings
+            return null;
         }
 
-        // 3. Filter offerings to find all versions of the requested course
-        List<CourseOffering> matchingOfferings = deptOfferings.entrySet().stream()
+        // Filter offerings to find all offerings of the requested course based on UI
+        final List<CourseOffering> matchingOfferings = deptOfferings.entrySet().stream()
                 .filter(entry -> entry.getKey().startsWith(courseId))
                 .map(Map.Entry::getValue)
                 .collect(Collectors.toList());
@@ -50,24 +57,25 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
 
         // --- Aggregation ---
 
-        // Use the first match to get the title and description (which should be the same across all terms)
+        // Use the first match to get the title and description (which should be the same across all terms & offerings)
         final CourseOffering primaryOffering = matchingOfferings.get(0);
 
-        // 4. Combine ALL sections from ALL matching course offerings
+        // Combine ALL sections from ALL matching course offerings
         final List<DisplaySectionDetails> allDisplaySections = matchingOfferings.stream()
                 .flatMap(offering -> offering.getAvailableSections().stream())
                 // Map Section to a key and object pair
                 .collect(Collectors.toMap(
                         section -> section.getCourseOffering().getCourseCode().toString() + ":" + section.getSectionName(),
                         section -> section,
-                        (existing, replacement) -> existing // keep first encountered section
+                        // only keep first matching (no dupes)
+                        (existing, replacement) -> existing
                 ))
                 .values()
                 .stream()
                 .flatMap(this::mapSectionToDisplayDetails)
                 .collect(Collectors.toList());
 
-        // 5. Create the final DTO with combined data
+        // Create the final DTO with combined data
         return new DisplayCourseDetails(
                 courseId,
                 primaryOffering.getTitle(),
@@ -84,7 +92,7 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
 
         final String sectionName = section.getSectionName();
 
-        final List<DisplayMeetingTime> meetingTimes = section.getMeetingsCopy()
+        final List<DisplayMeetingDetails> meetingTimes = section.getMeetingsCopy()
                 .stream()
                 .map(meeting -> {
                     WeeklyOccupancy occ = meeting.getTime();
@@ -102,26 +110,21 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
                             .name()
                             .substring(0, 3);   // "MON", "TUE", ...
 
-                    String start = formatTimeOfDay(startMs);
-                    String end   = formatTimeOfDay(endMs);
+                    final String start = formatTimeOfDay(startMs);
+                    final String end = formatTimeOfDay(endMs);
+                    final String loc = meeting.getLocation() != null
+                            ? meeting.getLocation().toString()
+                            : "TBA";
 
-                    return new DisplayMeetingTime(dayOfWeek, start, end);
+                    return new DisplayMeetingDetails(dayOfWeek, start, end, loc);
                 })
                 .filter(mt -> mt != null)
                 .collect(Collectors.toList());
 
-        // Location: pick from first meeting (or set "TBA" if none)
-        String location = section.getMeetingsCopy().stream()
-                .findFirst()
-                .map(meeting -> meeting.getLocation().toString())  // adjust to your actual getter
-                .orElse("TBA");
-
 
         // Professor info
-        final String courseId = section.getCourseOffering().getCourseCode().toString(); // or courseOffering.getId() depending on your naming
+        final String courseId = section.getCourseOffering().getUniqueIdentifier();
         final String professorName = courseRepository.getProfessorNameByCourseAndSection(courseId, sectionName);
-        String profName = getProfessorNameByCourseAndSection(courseId, sectionName);
-        //System.out.println("Found professor name: '" + profName + "' for section: '" + sectionName + "'");
         final DisplayProfessorDetails placeholderProf = new DisplayProfessorDetails(
                 professorName != null ? professorName : "TBD",
                 0.0,
@@ -132,7 +135,6 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
         return Stream.of(new DisplaySectionDetails(
                 sectionName,
                 meetingTimes,
-                location,
                 placeholderProf
         ));
     }
@@ -144,7 +146,6 @@ public class DisplayCourseDetailsDataAccessObject implements DisplayCourseDetail
         int minute = totalMinutes % 60;
         return String.format("%02d:%02d", hour, minute);
     }
-
     @Override
     public String getProfessorNameByCourseAndSection(String courseId, String sectionId) {
         // This remains the same, delegating the lookup to the repository
