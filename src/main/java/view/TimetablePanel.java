@@ -25,6 +25,18 @@ public class TimetablePanel extends JPanel {
     };
     private static final int GRID_WIDTH = 80;
     private static final int GRID_HEIGHT = 70;
+    // --- PASTEL COLOR PALETTE ---
+    private static final Color[] COURSE_COLORS = {
+            new Color(173, 216, 230),
+            new Color(144, 238, 144),
+            new Color(255, 182, 193),
+            new Color(221, 160, 221),
+            new Color(240, 230, 140),
+            new Color(255, 160, 122),
+            new Color(32, 178, 170),
+            new Color(135, 206, 250),
+            new Color(255, 218, 185)
+    };
 
     private JPanel TimetablePanel;
     private JButton fallButton;
@@ -300,13 +312,13 @@ public class TimetablePanel extends JPanel {
             blockColor = new Color(255, 102, 102);
         }
         else {
-            blockColor = new Color(173, 216, 230);
+            blockColor = COURSE_COLORS[Math.abs(block.getColorIndex()) % COURSE_COLORS.length];
         }
         panel.setBackground(blockColor);
 
         // Text Logic: Only show text if this is the Start Row
         if (currentRow == block.getStartRow()) {
-            panel.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.WHITE));
+            panel.setBorder(BorderFactory.createMatteBorder(1, 1, 0, 1, Color.WHITE));
 
             // Use HTML to allow multi-line text
             final JLabel label = new JLabel("<html>" + block.getDisplayText() + "</html>");
@@ -316,7 +328,7 @@ public class TimetablePanel extends JPanel {
             panel.add(label, BorderLayout.CENTER);
         }
         else {
-            panel.setBorder(BorderFactory.createLineBorder(blockColor, 1));
+            panel.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 1, Color.WHITE));
         }
 
         return panel;
