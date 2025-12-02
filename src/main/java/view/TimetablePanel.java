@@ -68,7 +68,6 @@ public class TimetablePanel extends JPanel {
      */
     public TimetablePanel() {
         $$$setupUI$$$();
-
         initializeGrid();
 
         // fall/winter toggle buttons
@@ -180,12 +179,10 @@ public class TimetablePanel extends JPanel {
                 slot1.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
                 slot1.setBackground(Color.WHITE);
 
-                // Add to array (for logic access) AND container (for display)
                 firstSemesterPanel[row][col] = slot1;
                 firstSemesterGridContainer.add(slot1);
 
                 // --- SECOND SEMESTER SLOT ---
-                // We MUST create a new object. Cannot reuse slot1.
                 final JPanel slot2 = new JPanel(new BorderLayout());
                 slot2.setPreferredSize(new Dimension(GRID_WIDTH, GRID_HEIGHT));
                 slot2.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
@@ -329,12 +326,33 @@ public class TimetablePanel extends JPanel {
 
     /**
      * Creates the visual panel for a single meeting block.
-     *
-     * @param block      The MeetingBlock to render
+     * If a walking time exists, it creates a container holding both the note and the course.
+     * @param block The MeetingBlock to render
      * @param currentRow The current row index (0-23) used to check text visibility.
      */
     private JPanel createBlockPanel(MeetingBlock block, int currentRow) {
-        final JPanel panel = new JPanel(new BorderLayout());
+        // Container to hold (optional) walking bar and course block
+        final JPanel container = new JPanel(new BorderLayout());
+        container.setOpaque(false);
+
+        // --- 1. WALKING TIME BAR (Top) ---
+        // Insert only if this is the start of the block and a note exists
+        if (currentRow == block.getStartRow() && block.getWalktimeMessage() != null) {
+            JPanel walkPanel = new JPanel(new BorderLayout());
+            walkPanel.setBackground(new Color(255, 255, 224)); // Light Yellow
+            walkPanel.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.GRAY));
+            walkPanel.setPreferredSize(new Dimension(0, 15));
+
+            JLabel walkLabel = new JLabel(block.getWalktimeMessage());
+            walkLabel.setFont(new Font("SansSerif", Font.BOLD, 9));
+            walkLabel.setForeground(new Color(100, 100, 0));
+            walkLabel.setHorizontalAlignment(SwingConstants.CENTER);
+
+            walkPanel.add(walkLabel, BorderLayout.CENTER);
+            container.add(walkPanel, BorderLayout.NORTH);
+        }
+
+        final JPanel coursePanel = new JPanel(new BorderLayout());
 
         // Color Logic
         final Color blockColor;
@@ -344,24 +362,28 @@ public class TimetablePanel extends JPanel {
         else {
             blockColor = COURSE_COLORS[Math.abs(block.getColorIndex()) % COURSE_COLORS.length];
         }
-        panel.setBackground(blockColor);
+        coursePanel.setBackground(blockColor);
+
+        // Border to distinguish blocks
+        coursePanel.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
 
         // Text Logic: Only show text if this is the Start Row
         if (currentRow == block.getStartRow()) {
-            panel.setBorder(BorderFactory.createMatteBorder(1, 1, 0, 1, Color.WHITE));
+            coursePanel.setBorder(BorderFactory.createMatteBorder(1, 1, 0, 1, Color.WHITE));
 
             // Use HTML to allow multi-line text
             final JLabel label = new JLabel("<html>" + block.getDisplayText() + "</html>");
             label.setHorizontalAlignment(SwingConstants.CENTER);
             label.setVerticalAlignment(SwingConstants.TOP);
             label.setFont(new Font("SansSerif", Font.BOLD, 13));
-            panel.add(label, BorderLayout.CENTER);
+            coursePanel.add(label, BorderLayout.CENTER);
         }
         else {
-            panel.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 1, Color.WHITE));
+            coursePanel.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 1, Color.WHITE));
         }
 
-        return panel;
+        container.add(coursePanel, BorderLayout.CENTER);
+        return container;
     }
 
     private void updateLockedSectionsTable(java.util.List<TimetableState.SelectedSectionRow> rows) {
