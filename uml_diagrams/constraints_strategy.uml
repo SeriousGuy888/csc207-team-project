@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>entity.constraints</OriginalElement>
+  <nodes>
+    <node x="59.0" y="-87.0">entity.constraints.Constraint</node>
+    <node x="133.0" y="-18.5">entity.constraints.BlockedTimeConstraint</node>
+    <node x="-115.0" y="-18.5">entity.constraints.TimeConflictConstraint</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="entity.constraints.TimeConflictConstraint" target="entity.constraints.Constraint" relationship="REALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="-1.0" y="-38.5" />
+      <point x="124.0" y="-38.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="entity.constraints.BlockedTimeConstraint" target="entity.constraints.Constraint" relationship="REALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="248.0" y="-38.5" />
+      <point x="124.0" y="-38.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Generic" zoom="1.5" showDependencies="false" x="134.0" y="-28.5" />
+  <SelectedNodes>
+    <node>entity.constraints.Constraint</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
