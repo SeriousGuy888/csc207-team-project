@@ -387,6 +387,9 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                 toggleButton.addActionListener(e -> {
                     if (added[0]) {
                         // TODO: call remove section use case
+                          if (removeSectionController != null) {
+                            removeSectionController.removeSection(courseDisplayString, sectionName);
+                        }
                         toggleButton.setText("Add to timetable");
                     } else {
                         // Call add section use case
