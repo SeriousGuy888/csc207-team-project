@@ -4,7 +4,6 @@ package app;
 import data_access.SearchCoursesDataAccessObject;
 import data_access.WorkbookDataAccessObject;
 import data_access.course_data.CourseDataRepository;
-import data_access.course_data.CourseDataRepositoryGrouped;
 import data_access.course_data.JsonCourseDataRepository;
 import data_access.workbook_persistence.FileWorkbookDataAccessObject;
 import interface_adapter.GlobalViewController;
@@ -26,6 +25,24 @@ import use_case.search_courses.SearchCoursesDataAccessInterface;
 import use_case.search_courses.SearchCoursesInputBoundary;
 import use_case.search_courses.SearchCoursesInteractor;
 import use_case.search_courses.SearchCoursesOutputBoundary;
+import data_access.display_course_context.DisplayCourseDetailsDataAccessObject;
+import interface_adapter.display_course_context.DisplayCourseDetailsController;
+import interface_adapter.display_course_context.DisplayCourseDetailsPresenter;
+import interface_adapter.display_course_context.DisplayCourseDetailsViewModel;
+
+import use_case.display_course_context.DisplayCourseDetailsDataAccessInterface;
+import use_case.display_course_context.DisplayCourseDetailsInputBoundary;
+import use_case.display_course_context.DisplayCourseDetailsInteractor;
+import use_case.display_course_context.DisplayCourseDetailsOutputBoundary;
+import data_access.RateMyProfDataAccessObject;
+
+import use_case.ratemyprof.RateMyProfDataAccessInterface;
+import use_case.ratemyprof.RateMyProfInputBoundary;
+import use_case.ratemyprof.RateMyProfInteractor;
+import use_case.ratemyprof.RateMyProfOutputBoundary;
+import use_case.ratemyprof.RateMyProfPresenter;
+import data_access.RateMyProfAPI;
+
 import use_case.tab_actions.add_tab.AddTabInteractor;
 import use_case.tab_actions.delete_tab.DeleteTabInteractor;
 import use_case.tab_actions.rename_tab.RenameTabInteractor;
@@ -58,6 +75,13 @@ public class AppBuilder {
     private SearchCoursesController searchCoursesController;
     private SearchCoursesDataAccessInterface searchCoursesDataAccessObject;
 
+    // Course Context Components
+    private DisplayCourseDetailsViewModel displayCoursesViewModel;
+    private DisplayCourseDetailsController displayCoursesController;
+
+    // RMP components
+    private RateMyProfInputBoundary rateMyProfInteractor;
+
     private FileWorkbookDataAccessObject workbookPersistenceDataAccessObject;
     private SaveWorkbookViewModel saveWorkbookViewModel;
     private SaveWorkbookPresenter saveWorkbookPresenter;
@@ -80,12 +104,13 @@ public class AppBuilder {
 
     public AppBuilder initializeCourseRepository() {
         this.courseDataRepository = new JsonCourseDataRepository(CourseDataFilesToLoad.RESOURCE_NAMES_FOR_TESTING);
+
         return this;
     }
 
-
     /**
-     * Wire the search courses use case.
+     * Wire the search courses use case
+     *
      */
     public AppBuilder addSearchCoursesUseCase() {
         // 1. Create ViewModel (holds state for the View)
@@ -108,6 +133,35 @@ public class AppBuilder {
         return this;
     }
 
+    public AppBuilder addDisplayCourseContextUseCase() {
+
+        // 1. RATE MY PROF USE CASE SETUP (Dependency for Display Interactor)
+        RateMyProfAPI rmpFetcher = new RateMyProfAPI();
+        RateMyProfDataAccessInterface rmpDAO = new RateMyProfDataAccessObject(rmpFetcher);
+
+        RateMyProfOutputBoundary rmpPresenter = new RateMyProfPresenter();
+        this.rateMyProfInteractor = new RateMyProfInteractor(rmpDAO, rmpPresenter);
+
+        // 2. DISPLAY COURSE CONTEXT USE CASE SETUP
+        this.displayCoursesViewModel = new DisplayCourseDetailsViewModel();
+
+        // Create Presenter (implements OutputBoundary, updates Display ViewModel)
+        DisplayCourseDetailsOutputBoundary displayPresenter =
+                new DisplayCourseDetailsPresenter(displayCoursesViewModel);
+
+        // Create DAO (uses the repository, which has professor name lookup)
+        DisplayCourseDetailsDataAccessInterface displayDAO =
+                new DisplayCourseDetailsDataAccessObject(this.courseDataRepository);
+
+        // Create Interactor (injects DAO, Presenter, and the RMP Interactor)
+        DisplayCourseDetailsInputBoundary displayInteractor =
+                new DisplayCourseDetailsInteractor(displayDAO, displayPresenter, this.rateMyProfInteractor);
+
+        // Create Controller
+        this.displayCoursesController = new DisplayCourseDetailsController(displayInteractor);
+
+        return this;
+    }
     /**
      * Initializes workbook DAO, interface adapters, view models and view.
      *
@@ -143,6 +197,8 @@ public class AppBuilder {
         final SearchPanel searchPanel = mainPanel.getSearchPanel();
         searchPanel.setSearchCoursesController(searchCoursesController);
         searchPanel.setSearchCoursesViewModel(searchCoursesViewModel);
+        searchPanel.setDisplayCoursesController(displayCoursesController);
+        searchPanel.setDisplayCoursesViewModel(displayCoursesViewModel);
 
         return this;
     }
