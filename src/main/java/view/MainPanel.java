@@ -169,6 +169,10 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
             if (autogenController != null) {
                 panel.setAutogenController(autogenController);
             }
+            if (lockSectionController != null) {
+                panel.setLockSectionController(lockSectionController, i);
+            }
+
 
             // Note: We assume TimetablePanel extends JPanel and adds its content to itself.
             // If TimetablePanel relies on .getRootPanel(), use: panel.getRootPanel()
@@ -323,7 +327,16 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
 
     public void setLockSectionController(LockSectionController controller) {
         this.lockSectionController = controller;
+
+        for (int i = 0; i < tabbedPane.getTabCount() - 1; i++) {
+            Component comp = tabbedPane.getComponentAt(i);
+            if (comp instanceof TimetablePanel) {
+                TimetablePanel panel = (TimetablePanel) comp;
+                panel.setLockSectionController(controller, i);
+            }
+        }
     }
+
 
 
 
