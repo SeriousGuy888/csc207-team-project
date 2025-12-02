@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cce559-ce01-4a65-af95-dc36a4ca382d" name="Changes" comment="Added DAO Exception Test for Autogen">
+    <list default="true" id="b2cce559-ce01-4a65-af95-dc36a4ca382d" name="Changes" comment="Autogen Empty Variable Domain Test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/use_case/autogen/AutogenInteractorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/use_case/autogen/AutogenInteractorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +27,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
-    "JUnit.AutogenInteractorTest.executor": "Run",
+    "JUnit.AutogenInteractorTest.executor": "Coverage",
     "JUnit.DisplayCourseDetailsInteractorTest.executor": "Run",
     "git-widget-placeholder": "autogen-update-tests",
     "node.js.selected.package.tslint": "(autodetect)"
@@ -87,16 +88,34 @@
       <option name="project" value="LOCAL" />
       <updated>1764714601444</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Autogen Empty Constraints Test">
+      <option name="closed" value="true" />
+      <created>1764715015874</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764715015874</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Autogen Empty Variable Domain Test">
+      <option name="closed" value="true" />
+      <created>1764715069704</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764715069704</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added LockedSections and Null Blocked Time Test" />
     <MESSAGE value="Added DAO Exception Test for Autogen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added DAO Exception Test for Autogen" />
+    <MESSAGE value="Autogen Empty Constraints Test" />
+    <MESSAGE value="Autogen Empty Variable Domain Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Autogen Empty Variable Domain Test" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/csc207_team_project$AutogenInteractorTest.ic" NAME="AutogenInteractorTest Coverage Results" MODIFIED="1764714628153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/csc207_team_project$AutogenInteractorTest.ic" NAME="AutogenInteractorTest Coverage Results" MODIFIED="1764715872148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>use_case.autogen.*</FILTER>
     </SUITE>
   </component>

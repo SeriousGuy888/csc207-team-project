@@ -351,6 +351,36 @@ public class AutogenInteractorTest {
                 "Error message should include the underlying exception message");
     }
 
+    @Test
+    void generateTimetableFailsWhenVariableHasEmptyDomain() {
+        AutogenDataAccessInterface dao = selectedCourses -> List.of();
+        TestAutogenPresenter presenter = new TestAutogenPresenter();
+        AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
+
+        // Offering whose variable has an EMPTY domain
+        CourseOffering csc207 = new CourseOffering(
+                "CSC207H1",
+                new CourseCode("CSC207H1"),
+                "Software Design",
+                "desc"
+        );
+        CourseVariable variableWithEmptyDomain = new CourseVariable(csc207, Set.of());
+
+        // Empty domain -> timetableSearch's for-loop body never executes,
+        // so we hit 'return new PotentialTimetable(false, Set.of())'
+        PotentialTimetable result = interactor.generateTimetable(
+                List.of(variableWithEmptyDomain),
+                List.of()
+        );
+
+        assertFalse(result.getSuccess(),
+                "Timetable generation should fail when a course has no possible sections");
+
+        Timetable timetable = result.getTimetable();
+        assertTrue(timetable.getSections().isEmpty(),
+                "The resulting timetable should have no sections on failure");
+    }
+
     // ------------------------------------------------------------------------
     // Helper: print timetable
     // ------------------------------------------------------------------------
@@ -431,34 +461,92 @@ public class AutogenInteractorTest {
     }
 
     @Test
-    void generateTimetableFailsWhenVariableHasEmptyDomain() {
-        AutogenDataAccessInterface dao = selectedCourses -> List.of();
+    void dfsBacktracksAndIgnoresLocksForOtherCourses() {
+        // ----- Course 1: C1 with TWO sections at the SAME time -----
+        CourseOffering c1 = new CourseOffering(
+                "CSC207H1",
+                new CourseCode("CSC207H1"),
+                "Course 1",
+                "desc"
+        );
+
+        Section c1A = new Section(
+                c1,
+                "A",
+                Section.TeachingMethod.LECTURE
+        );
+        c1A.addMeeting(new Meeting(
+                new UofTLocation("BA", "100"),
+                FIRST_SEMESTER,
+                MONDAY_10_12      // same time for all three sections
+        ));
+
+        Section c1B = new Section(
+                c1,
+                "B",
+                Section.TeachingMethod.LECTURE
+        );
+        c1B.addMeeting(new Meeting(
+                new UofTLocation("BA", "101"),
+                FIRST_SEMESTER,
+                MONDAY_10_12
+        ));
+
+        c1.addAvailableSection(c1A);
+        c1.addAvailableSection(c1B);
+
+        // ----- Course 2: C2 with ONE section at the SAME time -----
+        CourseOffering c2 = new CourseOffering(
+                "CSC108H1",
+                new CourseCode("CSC108H1"),
+                "Course 2",
+                "desc"
+        );
+
+        Section c2A = new Section(
+                c2,
+                "A",
+                Section.TeachingMethod.LECTURE
+        );
+        c2A.addMeeting(new Meeting(
+                new UofTLocation("BA", "200"),
+                FIRST_SEMESTER,
+                MONDAY_10_12
+        ));
+
+        c2.addAvailableSection(c2A);
+
+        // DAO returns both offerings
+        AutogenDataAccessInterface dao = selectedCourses -> List.of(c1, c2);
+
         TestAutogenPresenter presenter = new TestAutogenPresenter();
         AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
 
-        // Offering whose variable has an EMPTY domain
-        CourseOffering csc207 = new CourseOffering(
-                "CSC207H1",
-                new CourseCode("CSC207H1"),
-                "Software Design",
-                "desc"
-        );
-        CourseVariable variableWithEmptyDomain = new CourseVariable(csc207, Set.of());
+        // Lock ONLY the section from course 2.
+        // For course 1, applyLock will iterate lockedSections,
+        // evaluate s.getCourseOffering().equals(c1) as FALSE,
+        // and so use allSections as its domain.
+        Set<Section> lockedSections = Set.of(c2A);
 
-        // Empty domain -> timetableSearch's for-loop body never executes,
-        // so we hit 'return new PotentialTimetable(false, Set.of())'
-        PotentialTimetable result = interactor.generateTimetable(
-                List.of(variableWithEmptyDomain),
-                List.of()
+        AutogenInputData inputData = new AutogenInputData(
+                Set.of(c1.getCourseCode(), c2.getCourseCode()),
+                lockedSections,
+                SUNDAY_00_01   // non-conflicting blocked time
         );
 
-        assertFalse(result.getSuccess(),
-                "Timetable generation should fail when a course has no possible sections");
+        interactor.execute(inputData);
 
-        Timetable timetable = result.getTimetable();
-        assertTrue(timetable.getSections().isEmpty(),
-                "The resulting timetable should have no sections on failure");
+        // Because EVERY combination {C1-section, C2A} has a time conflict,
+        // the recursive call inside timetableSearch always returns failure.
+        // So we exercise the branch where result.getSuccess() is FALSE.
+        assertNull(presenter.lastOutput,
+                "No timetable should be generated because all combos conflict");
+        assertNotNull(presenter.lastError,
+                "An error message should be produced when no valid timetable exists");
     }
+
+
+
 
 
 
