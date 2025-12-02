@@ -35,7 +35,7 @@ public class LoadWorkbookInteractorTest {
     void successfulLoad() {
         DAO_FOR_CURRENTLY_ACTIVE_WORKBOOK.reset();
 
-        LoadWorkbookOutputBoundary presenter = new LoadWorkbookOutputBoundary() {
+        LoadWorkbookOutputBoundary dialogPresenter = new LoadWorkbookOutputBoundary() {
             @Override
             public void prepareSuccessView(LoadWorkbookOutputData outputData) {
                 assertEquals(DESIRED_WORKBOOK, DAO_FOR_CURRENTLY_ACTIVE_WORKBOOK.getWorkbook());
@@ -47,11 +47,19 @@ public class LoadWorkbookInteractorTest {
             }
         };
 
+        LoadWorkbookGlobalStateOutputBoundary globalViewPresenter = new LoadWorkbookGlobalStateOutputBoundary() {
+            @Override
+            public void prepareSuccessView(Workbook loadedWorkbook) {
+                assertEquals(DESIRED_WORKBOOK, loadedWorkbook);
+            }
+        };
+
         LoadWorkbookInputData inputData = new LoadWorkbookInputData(SAVED_LOCATION);
         LoadWorkbookInteractor interactor = new LoadWorkbookInteractor(
                 DAO_FOR_CURRENTLY_ACTIVE_WORKBOOK,
                 FAKE_DAO,
-                presenter);
+                dialogPresenter,
+                globalViewPresenter);
         interactor.execute(inputData);
     }
 
@@ -59,7 +67,7 @@ public class LoadWorkbookInteractorTest {
     void unsuccessfulLoadDisplaysErrorMessage() {
         DAO_FOR_CURRENTLY_ACTIVE_WORKBOOK.reset();
 
-        LoadWorkbookOutputBoundary presenter = new LoadWorkbookOutputBoundary() {
+        LoadWorkbookOutputBoundary dialogPresenter = new LoadWorkbookOutputBoundary() {
             @Override
             public void prepareSuccessView(LoadWorkbookOutputData outputData) {
                 fail();
@@ -71,11 +79,19 @@ public class LoadWorkbookInteractorTest {
             }
         };
 
+        LoadWorkbookGlobalStateOutputBoundary globalViewPresenter = new LoadWorkbookGlobalStateOutputBoundary() {
+            @Override
+            public void prepareSuccessView(Workbook loadedWorkbook) {
+                fail();
+            }
+        };
+
         LoadWorkbookInputData inputData = new LoadWorkbookInputData(INCORRECT_LOCATION);
         LoadWorkbookInteractor interactor = new LoadWorkbookInteractor(
                 DAO_FOR_CURRENTLY_ACTIVE_WORKBOOK,
                 FAKE_DAO,
-                presenter);
+                dialogPresenter,
+                globalViewPresenter);
         interactor.execute(inputData);
     }
 }

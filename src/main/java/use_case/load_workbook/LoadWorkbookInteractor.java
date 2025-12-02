@@ -9,15 +9,18 @@ import java.nio.file.Path;
 public class LoadWorkbookInteractor implements LoadWorkbookInputBoundary {
     private final WorkbookDataAccessInterface currentWorkbookDao;
     private final LoadWorkbookDataAccessInterface loadingDao;
-    private final LoadWorkbookOutputBoundary presenter;
+    private final LoadWorkbookOutputBoundary dialogPresenter;
+    private final LoadWorkbookGlobalStateOutputBoundary globalViewPresenter;
 
 
     public LoadWorkbookInteractor(WorkbookDataAccessInterface currentWorkbookDao,
                                   LoadWorkbookDataAccessInterface loadingDao,
-                                  LoadWorkbookOutputBoundary presenter) {
+                                  LoadWorkbookOutputBoundary dialogPresenter,
+                                  LoadWorkbookGlobalStateOutputBoundary globalViewPresenter) {
         this.currentWorkbookDao = currentWorkbookDao;
         this.loadingDao = loadingDao;
-        this.presenter = presenter;
+        this.dialogPresenter = dialogPresenter;
+        this.globalViewPresenter = globalViewPresenter;
     }
 
     @Override
@@ -28,16 +31,17 @@ public class LoadWorkbookInteractor implements LoadWorkbookInputBoundary {
         try {
             workbook = loadingDao.load(source);
         } catch (IOException e) {
-            presenter.prepareFailView(e.getMessage());
+            dialogPresenter.prepareFailView(e.getMessage());
             return;
         }
 
         currentWorkbookDao.saveWorkbook(workbook);
+        globalViewPresenter.prepareSuccessView(workbook);
 
         final LoadWorkbookOutputData outputData = new LoadWorkbookOutputData(
                 "Successfully loaded workbook containing " + workbook.getTimetables().size() + " timetables"
                         + " from " + source.toAbsolutePath() + "."
         );
-        presenter.prepareSuccessView(outputData);
+        dialogPresenter.prepareSuccessView(outputData);
     }
 }
