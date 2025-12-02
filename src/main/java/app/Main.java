@@ -1,5 +1,8 @@
 package app;
 
+import data_access.course_data.JsonCourseDataRepository;
+import view.MainPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -15,6 +18,8 @@ public class Main {
                 .initializeWorkbookDataAccessObject()
                 .initializeCourseRepository()
                 .addSearchCoursesUseCase()
+                .addDisplayCourseContextUseCase()
+                .addAddSectionUseCase()
                 .addMainPanel()
                 .addWorkbookPersistenceDataAccessObject()
                 .addSaveWorkbookUseCase()

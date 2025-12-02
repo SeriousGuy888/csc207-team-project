@@ -163,7 +163,7 @@ public class GlobalViewPresenter implements
      * @param block The block to place.
      */
     private void placeBlockInGrid(MeetingBlock[][][] grid, Meeting meeting, MeetingBlock block) {
-        final int col = meeting.getStartTimeIndexInDay();
+        final int col = meeting.getDayOfTheWeek();
         final int startRow = block.getStartRow();
         int blockIndex = 0;
 
