@@ -430,6 +430,37 @@ public class AutogenInteractorTest {
                 "The single section should be chosen");
     }
 
+    @Test
+    void generateTimetableFailsWhenVariableHasEmptyDomain() {
+        AutogenDataAccessInterface dao = selectedCourses -> List.of();
+        TestAutogenPresenter presenter = new TestAutogenPresenter();
+        AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
+
+        // Offering whose variable has an EMPTY domain
+        CourseOffering csc207 = new CourseOffering(
+                "CSC207H1",
+                new CourseCode("CSC207H1"),
+                "Software Design",
+                "desc"
+        );
+        CourseVariable variableWithEmptyDomain = new CourseVariable(csc207, Set.of());
+
+        // Empty domain -> timetableSearch's for-loop body never executes,
+        // so we hit 'return new PotentialTimetable(false, Set.of())'
+        PotentialTimetable result = interactor.generateTimetable(
+                List.of(variableWithEmptyDomain),
+                List.of()
+        );
+
+        assertFalse(result.getSuccess(),
+                "Timetable generation should fail when a course has no possible sections");
+
+        Timetable timetable = result.getTimetable();
+        assertTrue(timetable.getSections().isEmpty(),
+                "The resulting timetable should have no sections on failure");
+    }
+
+
 
     // ------------------------------------------------------------------------
     // Fake DAOs
