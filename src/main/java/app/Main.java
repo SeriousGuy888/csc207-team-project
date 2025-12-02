@@ -1,5 +1,8 @@
 package app;
 
+import data_access.course_data.JsonCourseDataRepository;
+import view.MainPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -12,9 +15,14 @@ public class Main {
     public static void main(String[] args) {
         final AppBuilder appBuilder = new AppBuilder();
         final JFrame application = appBuilder
+                .initializeWorkbookDataAccessObject()
                 .initializeCourseRepository()
                 .addSearchCoursesUseCase()
+                .addDisplayCourseContextUseCase()
                 .addMainPanel()
+                .addWorkbookPersistenceDataAccessObject()
+                .addSaveWorkbookUseCase()
+                .addLoadWorkbookUseCase()
                 .build();
 
         application.pack();

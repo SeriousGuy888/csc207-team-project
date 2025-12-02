@@ -6,30 +6,57 @@ import data_access.SearchCoursesDataAccessObject;
 import data_access.UofTWalkTimeDataAccessObject;
 import data_access.WorkbookDataAccessObject;
 import data_access.course_data.CourseDataRepository;
-import data_access.course_data.CourseDataRepositoryGrouped;
 import data_access.course_data.JsonCourseDataRepository;
+import data_access.workbook_persistence.FileWorkbookDataAccessObject;
 import interface_adapter.GlobalViewController;
 import interface_adapter.GlobalViewModel;
 import interface_adapter.GlobalViewPresenter;
+import interface_adapter.load_workbook.LoadWorkbookController;
+import interface_adapter.load_workbook.LoadWorkbookPresenter;
+import interface_adapter.load_workbook.LoadWorkbookViewModel;
+import interface_adapter.save_workbook.SaveWorkbookController;
+import interface_adapter.save_workbook.SaveWorkbookPresenter;
+import interface_adapter.save_workbook.SaveWorkbookViewModel;
 import interface_adapter.search_courses.SearchCoursesController;
 import interface_adapter.search_courses.SearchCoursesPresenter;
 import interface_adapter.search_courses.SearchCoursesViewModel;
 import use_case.osrm_walktime.WalkTimeService;
+import use_case.WorkbookDataAccessInterface;
+import use_case.load_workbook.LoadWorkbookInteractor;
+import use_case.save_workbook.SaveWorkbookInteractor;
 import use_case.search_courses.SearchCoursesDataAccessInterface;
 import use_case.search_courses.SearchCoursesInputBoundary;
 import use_case.search_courses.SearchCoursesInteractor;
 import use_case.search_courses.SearchCoursesOutputBoundary;
+import data_access.display_course_context.DisplayCourseDetailsDataAccessObject;
+import interface_adapter.display_course_context.DisplayCourseDetailsController;
+import interface_adapter.display_course_context.DisplayCourseDetailsPresenter;
+import interface_adapter.display_course_context.DisplayCourseDetailsViewModel;
+
+import use_case.display_course_context.DisplayCourseDetailsDataAccessInterface;
+import use_case.display_course_context.DisplayCourseDetailsInputBoundary;
+import use_case.display_course_context.DisplayCourseDetailsInteractor;
+import use_case.display_course_context.DisplayCourseDetailsOutputBoundary;
+import data_access.RateMyProfDataAccessObject;
+
+import use_case.ratemyprof.RateMyProfDataAccessInterface;
+import use_case.ratemyprof.RateMyProfInputBoundary;
+import use_case.ratemyprof.RateMyProfInteractor;
+import use_case.ratemyprof.RateMyProfOutputBoundary;
+import use_case.ratemyprof.RateMyProfPresenter;
+import data_access.RateMyProfAPI;
+
 import use_case.tab_actions.add_tab.AddTabInteractor;
 import use_case.tab_actions.delete_tab.DeleteTabInteractor;
 import use_case.tab_actions.rename_tab.RenameTabInteractor;
 import use_case.tab_actions.switch_tab.SwitchTabInteractor;
+import view.LoadDialog;
 import view.MainPanel;
+import view.SaveDialog;
 import view.SearchPanel;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.IOException;
-import java.util.Arrays;
 
 public class AppBuilder {
     private final JPanel cardPanel = new JPanel();
@@ -37,26 +64,55 @@ public class AppBuilder {
 
     private MainPanel mainPanel;
 
+    // shared object to store the workbook that the user is currently working on
+    private WorkbookDataAccessInterface workbookDataAccessObject;
+
     // Shared data access
-    private CourseDataRepositoryGrouped courseDataRepository;
+    // todo: figure out why we can't use a shared interface here
+    //  like why does it have to be a JsonCourseDataRepository and not one of the interfaces
+    private JsonCourseDataRepository courseDataRepository;
 
     // Search courses components
     private SearchCoursesViewModel searchCoursesViewModel;
     private SearchCoursesController searchCoursesController;
     private SearchCoursesDataAccessInterface searchCoursesDataAccessObject;
 
+    // Course Context Components
+    private DisplayCourseDetailsViewModel displayCoursesViewModel;
+    private DisplayCourseDetailsController displayCoursesController;
+
+    // RMP components
+    private RateMyProfInputBoundary rateMyProfInteractor;
+
+    private FileWorkbookDataAccessObject workbookPersistenceDataAccessObject;
+    private SaveWorkbookViewModel saveWorkbookViewModel;
+    private SaveWorkbookPresenter saveWorkbookPresenter;
+    private SaveWorkbookInteractor saveWorkbookInteractor;
+    private SaveWorkbookController saveWorkbookController;
+    private LoadWorkbookViewModel loadWorkbookViewModel;
+    private LoadWorkbookPresenter loadWorkbookPresenter;
+    private LoadWorkbookInteractor loadWorkbookInteractor;
+    private LoadWorkbookController loadWorkbookController;
+
     public AppBuilder() {
         cardPanel.setLayout(cardLayout);
 
     }
 
+    public AppBuilder initializeWorkbookDataAccessObject() {
+        workbookDataAccessObject = new WorkbookDataAccessObject();
+        return this;
+    }
+
     public AppBuilder initializeCourseRepository() {
         this.courseDataRepository = new JsonCourseDataRepository(CourseDataFilesToLoad.RESOURCE_NAMES_FOR_TESTING);
+
         return this;
     }
 
     /**
-     * Wire the search courses use case.
+     * Wire the search courses use case
+     *
      */
     public AppBuilder addSearchCoursesUseCase() {
         // 1. Create ViewModel (holds state for the View)
@@ -79,6 +135,35 @@ public class AppBuilder {
         return this;
     }
 
+    public AppBuilder addDisplayCourseContextUseCase() {
+
+        // 1. RATE MY PROF USE CASE SETUP (Dependency for Display Interactor)
+        RateMyProfAPI rmpFetcher = new RateMyProfAPI();
+        RateMyProfDataAccessInterface rmpDAO = new RateMyProfDataAccessObject(rmpFetcher);
+
+        RateMyProfOutputBoundary rmpPresenter = new RateMyProfPresenter();
+        this.rateMyProfInteractor = new RateMyProfInteractor(rmpDAO, rmpPresenter);
+
+        // 2. DISPLAY COURSE CONTEXT USE CASE SETUP
+        this.displayCoursesViewModel = new DisplayCourseDetailsViewModel();
+
+        // Create Presenter (implements OutputBoundary, updates Display ViewModel)
+        DisplayCourseDetailsOutputBoundary displayPresenter =
+                new DisplayCourseDetailsPresenter(displayCoursesViewModel);
+
+        // Create DAO (uses the repository, which has professor name lookup)
+        DisplayCourseDetailsDataAccessInterface displayDAO =
+                new DisplayCourseDetailsDataAccessObject(this.courseDataRepository);
+
+        // Create Interactor (injects DAO, Presenter, and the RMP Interactor)
+        DisplayCourseDetailsInputBoundary displayInteractor =
+                new DisplayCourseDetailsInteractor(displayDAO, displayPresenter, this.rateMyProfInteractor);
+
+        // Create Controller
+        this.displayCoursesController = new DisplayCourseDetailsController(displayInteractor);
+
+        return this;
+    }
     /**
      * Initializes workbook DAO, interface adapters, view models and view.
      *
@@ -133,6 +218,71 @@ public class AppBuilder {
         final SearchPanel searchPanel = mainPanel.getSearchPanel();
         searchPanel.setSearchCoursesController(searchCoursesController);
         searchPanel.setSearchCoursesViewModel(searchCoursesViewModel);
+        searchPanel.setDisplayCoursesController(displayCoursesController);
+        searchPanel.setDisplayCoursesViewModel(displayCoursesViewModel);
+
+        return this;
+    }
+
+    public AppBuilder addWorkbookPersistenceDataAccessObject() {
+        if (courseDataRepository == null) {
+            throw new IllegalStateException(
+                    "Workbook Persistence Data Access Object cannot be created "
+                            + " before Course Data Repository has been created."
+            );
+        }
+        workbookPersistenceDataAccessObject = new FileWorkbookDataAccessObject(courseDataRepository);
+        return this;
+    }
+
+    public AppBuilder addSaveWorkbookUseCase() {
+        if (workbookDataAccessObject == null) {
+            throw new IllegalStateException(
+                    "Save Workbook use case cannot be initialised"
+                            + " before Workbook Data Access Object has been created."
+            );
+        }
+        if (workbookPersistenceDataAccessObject == null) {
+            throw new IllegalStateException(
+                    "Save Workbook use case cannot be initialised"
+                            + " before Workbook Persistence Data Access Object has been created."
+            );
+        }
+
+        saveWorkbookViewModel = new SaveWorkbookViewModel();
+        saveWorkbookPresenter = new SaveWorkbookPresenter(saveWorkbookViewModel);
+        saveWorkbookInteractor = new SaveWorkbookInteractor(
+                workbookDataAccessObject,
+                workbookPersistenceDataAccessObject,
+                saveWorkbookPresenter);
+        saveWorkbookController = new SaveWorkbookController(saveWorkbookInteractor);
+        SaveDialog.createSingletonInstance(saveWorkbookViewModel, saveWorkbookController);
+
+        return this;
+    }
+
+    public AppBuilder addLoadWorkbookUseCase() {
+        if (workbookDataAccessObject == null) {
+            throw new IllegalStateException(
+                    "Load Workbook use case cannot be initialised"
+                            + " before Workbook Data Access Object has been created."
+            );
+        }
+        if (workbookPersistenceDataAccessObject == null) {
+            throw new IllegalStateException(
+                    "Load Workbook use case cannot be initialised"
+                            + " before Workbook Persistence Data Access Object has been created."
+            );
+        }
+
+        loadWorkbookViewModel = new LoadWorkbookViewModel();
+        loadWorkbookPresenter = new LoadWorkbookPresenter(loadWorkbookViewModel);
+        loadWorkbookInteractor = new LoadWorkbookInteractor(
+                workbookDataAccessObject,
+                workbookPersistenceDataAccessObject,
+                loadWorkbookPresenter);
+        loadWorkbookController = new LoadWorkbookController(loadWorkbookInteractor);
+        LoadDialog.createSingletonInstance(loadWorkbookViewModel, loadWorkbookController);
 
         return this;
     }

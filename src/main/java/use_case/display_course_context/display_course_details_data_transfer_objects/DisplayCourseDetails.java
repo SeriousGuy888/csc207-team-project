@@ -1,13 +1,15 @@
-package use_case.display_course_context;
+package use_case.display_course_context.display_course_details_data_transfer_objects;
 
 import java.util.List;
 
 public class DisplayCourseDetails {
+    private final String courseId;
     private final String courseTitle;
     private final String courseDescription;
     private final List<DisplaySectionDetails> sections;
 
-    public DisplayCourseDetails(String courseTitle, String courseDescription, List<DisplaySectionDetails> sections) {
+    public DisplayCourseDetails(String courseId, String courseTitle, String courseDescription, List<DisplaySectionDetails> sections) {
+        this.courseId = courseId;
         this.courseTitle = courseTitle;
         this.courseDescription = courseDescription;
         this.sections = sections;
@@ -24,5 +26,9 @@ public class DisplayCourseDetails {
 
     public List<DisplaySectionDetails> getSections() {
         return sections;
+    }
+
+    public String getCourseId() {
+        return courseId;
     }
 }

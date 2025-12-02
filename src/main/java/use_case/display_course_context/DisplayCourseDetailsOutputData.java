@@ -1,6 +1,8 @@
 package use_case.display_course_context;
 
 
+import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayCourseDetails;
+
 /**
  * Contains the final course details structure for the Presenter to format.
  */
