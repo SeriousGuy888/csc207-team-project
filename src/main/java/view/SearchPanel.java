@@ -155,7 +155,13 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         currentDetailsPanel = null;
 
         if (state.isError()) {
-            resultsContentPanel.add(new JLabel("Error: " + state.getErrorMessage()));
+            JOptionPane.showMessageDialog(
+                    this,
+                    state.getErrorMessage(),
+                    "Search Error",
+                    JOptionPane.ERROR_MESSAGE
+            );
+            return;
         } else {
             Set<String> courses = state.getMatchedCourses();
             if (courses.isEmpty()) {
