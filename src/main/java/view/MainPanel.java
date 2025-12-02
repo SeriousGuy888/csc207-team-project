@@ -118,7 +118,6 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
         final ArrayList<TimetableState> stateList = (ArrayList<TimetableState>) state.getTimetableStateList();
 
         final int currentContentTabs = tabbedPane.getTabCount() - 1;
-
         if (stateList.size() != currentContentTabs) {
             rebuildTabs(stateList);
         } else {
@@ -172,7 +171,6 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
             if (lockSectionController != null) {
                 panel.setLockSectionController(lockSectionController, i);
             }
-
 
             // Note: We assume TimetablePanel extends JPanel and adds its content to itself.
             // If TimetablePanel relies on .getRootPanel(), use: panel.getRootPanel()

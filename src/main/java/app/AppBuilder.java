@@ -210,11 +210,6 @@ public class AppBuilder {
      * @return this builder
      */
     public AppBuilder addMainPanel() {
-        // 1. Create DAO
-        final WorkbookDataAccessObject dataAccess = new WorkbookDataAccessObject();
-
-        // 2. Create Panel and ViewModel
-        final GlobalViewModel globalViewModel = new GlobalViewModel();
 //        // 1. Create DAO
 //        final WorkbookDataAccessObject dataAccess = new WorkbookDataAccessObject();
 //

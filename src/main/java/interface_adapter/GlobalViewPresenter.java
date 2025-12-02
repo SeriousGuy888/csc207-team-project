@@ -41,7 +41,6 @@ public class GlobalViewPresenter implements
 
     public void setWalkTimeService(WalkTimeService walkTimeService) {
         this.walkTimeService = walkTimeService;
-        System.out.println("added service");
     }
 
     // --- HANDLE ADD / DELETE / RENAME ---
@@ -218,6 +217,7 @@ public class GlobalViewPresenter implements
     }
 
     private void injectWalkingTimes(TimetableState state) {
+        System.out.println("inject walking times");
         scanGridForWalking(state.getFirstSemesterGrid());
         scanGridForWalking(state.getSecondSemesterGrid());
     }
@@ -228,9 +228,11 @@ public class GlobalViewPresenter implements
 
             for (int row = 1; row < HALF_HOUR_SLOTS_PER_DAY; row++) {
                 final MeetingBlock[] currentSlot = grid[row][col];
+
                 if (checkSingleMeeting(previousSlot) && checkSingleMeeting(currentSlot)) {
                     final MeetingBlock firstMeeting = previousSlot[0] != null ? previousSlot[0] : previousSlot[1];
                     final MeetingBlock secondMeeting = currentSlot[0] != null ? currentSlot[0] : currentSlot[1];
+                    System.out.println(!firstMeeting.equals(secondMeeting));
                     if (!firstMeeting.equals(secondMeeting)) {
                         final int seconds = walkTimeService.calculateWalkingTime(
                                 firstMeeting.getBuildingCode(),
@@ -242,14 +244,15 @@ public class GlobalViewPresenter implements
                             secondMeeting.setWalktimeMessage(minutes);
                         }
                     }
-                    previousSlot = currentSlot;
                 }
+                previousSlot = currentSlot;
             }
         }
     }
 
     private boolean checkSingleMeeting(MeetingBlock[] timeSlot) {
-        return (timeSlot[0] != null && timeSlot[1] == null) || (timeSlot[0] == null && timeSlot[1] != null);
+        boolean result = (timeSlot[0] != null && timeSlot[1] == null) || (timeSlot[0] == null && timeSlot[1] != null);
+        return result;
     }
 
     /**

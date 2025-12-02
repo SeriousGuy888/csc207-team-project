@@ -73,6 +73,7 @@ public class UofTWalkTimeDataAccessObject implements WalkTimeDataAccessInterface
     @Override
     public int calculateWalkingTime(String startCode, String endCode) {
         try {
+            System.out.println("calculate");
             // Reuse the existing logic
             return getWalkTimeInSeconds(startCode, endCode);
         }
