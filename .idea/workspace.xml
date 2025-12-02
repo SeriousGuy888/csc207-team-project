@@ -4,36 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cce559-ce01-4a65-af95-dc36a4ca382d" name="Changes" comment="Autogen Empty Variable Domain Test">
+    <list default="true" id="b2cce559-ce01-4a65-af95-dc36a4ca382d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/use_case/autogen/AutogenInteractorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/use_case/autogen/AutogenInteractorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/AppBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/AppBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/interface_adapter/display_course_context/DisplayCourseDetailsViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interface_adapter/display_course_context/DisplayCourseDetailsViewModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\Victo\IdeaProjects\csc207-team-project\htmlReport" />
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.AutogenInteractorTest.executor": "Coverage",
-    "JUnit.DisplayCourseDetailsInteractorTest.executor": "Run",
-    "git-widget-placeholder": "autogen-update-tests",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DisplayCourseDetailsInteractorTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;use-case-display-course-context&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.DisplayCourseDetailsInteractorTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="TeamProject" />
@@ -54,9 +52,64 @@
           <option name="PATTERN" value="use_case.display_course_details.*" />
           <option name="ENABLED" value="true" />
         </pattern>
+        <pattern>
+          <option name="PATTERN" value="use_case.display_course_context.DisplayCourseDetailsInteractor" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="use_case.display_course_context.DisplayCourseDetailsDataAccessInterface" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="use_case.display_course_context.DisplayCourseDetailsInputBoundary" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="use_case.display_course_context.DisplayCourseDetailsOutputBoundary" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="use_case.display_course_context.DisplayCourseDetailsInputData" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="use_case.display_course_context.DisplayCourseDetailsOutputData" />
+          <option name="ENABLED" value="true" />
+        </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="use_case.display_course_details" />
       <option name="MAIN_CLASS_NAME" value="use_case.display_course_details.DisplayCourseDetailsInteractorTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RateMyProfInteractorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TeamProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="use_case.rate_my_prof.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="use_case.rate_my_prof" />
+      <option name="MAIN_CLASS_NAME" value="use_case.rate_my_prof.RateMyProfInteractorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaveWorkbookInteractorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TeamProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="use_case.save_workbook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="use_case.save_workbook" />
+      <option name="MAIN_CLASS_NAME" value="use_case.save_workbook.SaveWorkbookInteractorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -64,59 +117,16 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DisplayCourseDetailsInteractorTest" />
+        <item itemvalue="JUnit.SaveWorkbookInteractorTest" />
+        <item itemvalue="JUnit.RateMyProfInteractorTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DisplayCourseDetailsInteractorTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="Added LockedSections and Null Blocked Time Test">
-      <option name="closed" value="true" />
-      <created>1764714538886</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1764714538886</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added DAO Exception Test for Autogen">
-      <option name="closed" value="true" />
-      <created>1764714601444</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1764714601444</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Autogen Empty Constraints Test">
-      <option name="closed" value="true" />
-      <created>1764715015874</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1764715015874</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Autogen Empty Variable Domain Test">
-      <option name="closed" value="true" />
-      <created>1764715069704</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1764715069704</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added LockedSections and Null Blocked Time Test" />
-    <MESSAGE value="Added DAO Exception Test for Autogen" />
-    <MESSAGE value="Autogen Empty Constraints Test" />
-    <MESSAGE value="Autogen Empty Variable Domain Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Autogen Empty Variable Domain Test" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/csc207_team_project$AutogenInteractorTest.ic" NAME="AutogenInteractorTest Coverage Results" MODIFIED="1764715872148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>use_case.autogen.*</FILTER>
-    </SUITE>
   </component>
 </project>
