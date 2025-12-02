@@ -9,19 +9,23 @@ import entity.Section;
 import entity.Timetable;
 import entity.Workbook;
 import interface_adapter.TimetableState.MeetingBlock;
+import use_case.load_workbook.LoadWorkbookGlobalStateOutputBoundary;
 import use_case.timetable_update.TimetableUpdateOutputBoundary;
 import use_case.timetable_update.TimetableUpdateOutputData;
 import use_case.tab_actions.add_tab.AddTabOutputBoundary;
 import use_case.tab_actions.delete_tab.DeleteTabOutputBoundary;
 import use_case.tab_actions.rename_tab.RenameTabOutputBoundary;
 import use_case.tab_actions.switch_tab.SwitchTabOutputBoundary;
+import java.util.stream.Collectors;
+import interface_adapter.TimetableState.SelectedSectionRow;
 
 public class GlobalViewPresenter implements
         TimetableUpdateOutputBoundary,
         AddTabOutputBoundary,
         DeleteTabOutputBoundary,
         SwitchTabOutputBoundary,
-        RenameTabOutputBoundary {
+        RenameTabOutputBoundary,
+        LoadWorkbookGlobalStateOutputBoundary {
 
     // Constants for mapping Entity time to UI Grid
     private static final int START_HOUR_INDEX = 18;
@@ -136,11 +140,18 @@ public class GlobalViewPresenter implements
         for (Section section : timetable.getSections()) {
             final CourseCode courseCode = section.getCourseOffering().getCourseCode();
             final String sectionInfo = section.getSectionName();
+            final int colorIndex = Math.abs(courseCode.hashCode());
 
             for (Meeting meeting : section.getMeetings()) {
                 final int startRow = meeting.getStartTimeIndexInDay() - START_HOUR_INDEX;
                 final boolean isConflict = meeting.getNumConflicts() > 0;
-                final MeetingBlock block = new MeetingBlock(courseCode.toString(), sectionInfo, startRow, isConflict);
+                final MeetingBlock block = new MeetingBlock(
+                        courseCode.toString(),
+                        sectionInfo,
+                        startRow,
+                        isConflict,
+                        colorIndex
+                );
 
                 // 3. Map Meeting time to Grid Coordinates
                 if (meeting.getSemester() == Meeting.Semester.FIRST) {
@@ -152,6 +163,19 @@ public class GlobalViewPresenter implements
 
             }
         }
+
+        //3. Add Lock Section Table
+        java.util.List<TimetableState.SelectedSectionRow> rows = new java.util.ArrayList<>();
+        for (Section section : timetable.getSections()) {
+            boolean locked = timetable.isLocked(section);  // <--- use entity data
+            rows.add(new TimetableState.SelectedSectionRow(
+                    section.getCourseOffering().getCourseCode().toString(),
+                    section.getSectionName(),
+                    section.getTeachingMethod().toString(),
+                    locked
+            ));
+        }
+        state.setSelectedSections(rows);
         return state;
     }
 

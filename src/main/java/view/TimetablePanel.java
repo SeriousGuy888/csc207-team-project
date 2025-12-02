@@ -5,6 +5,8 @@ import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
 import interface_adapter.TimetableState;
 import interface_adapter.TimetableState.MeetingBlock;
+import interface_adapter.autogen.AutogenController;
+import interface_adapter.locksections.LockSectionController;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,14 +14,28 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class TimetablePanel extends JPanel {
-    public static final int NUM_ROWS = 24;
-    public static final int NUM_COLS = 5;
+    private static final int NUM_ROWS = 24;
+    private static final int NUM_COLS = 5;
     private static final String[] DAYS = {"Mon", "Tue", "Wed", "Thu", "Fri"};
     private static final String[] TIMES = {
             "9:00", "9:30", "10:00", "10:30", "11:00", "11:30",
             "12:00", "12:30", "1:00", "1:30", "2:00", "2:30",
             "3:00", "3:30", "4:00", "4:30", "5:00", "5:30",
             "6:00", "6:30", "7:00", "7:30", "8:00", "8:30"
+    };
+    private static final int GRID_WIDTH = 80;
+    private static final int GRID_HEIGHT = 70;
+    // --- PASTEL COLOR PALETTE ---
+    private static final Color[] COURSE_COLORS = {
+            new Color(173, 216, 230),
+            new Color(144, 238, 144),
+            new Color(255, 182, 193),
+            new Color(221, 160, 221),
+            new Color(240, 230, 140),
+            new Color(255, 160, 122),
+            new Color(32, 178, 170),
+            new Color(135, 206, 250),
+            new Color(255, 218, 185)
     };
 
     private JPanel TimetablePanel;
@@ -37,6 +53,14 @@ public class TimetablePanel extends JPanel {
     private JPanel secondSemesterGridContainer;
     private JPanel[][] firstSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
     private JPanel[][] secondSemesterPanel = new JPanel[NUM_ROWS][NUM_COLS];
+    private JPanel rightSidePanel;
+    private JTable lockedSectionsTable;
+    private TimetableState currentState;
+    private LockSectionController lockSectionController;
+    private int tabIndex = -1;
+
+
+    private AutogenController autogenController;
 
     /**
      * Creates a new TimetablePanel and initializes the term-selection controls.
@@ -90,8 +114,25 @@ public class TimetablePanel extends JPanel {
             }
         });
 
+        setupRightSidePanel();
+
+
         this.setLayout(new BorderLayout());
         this.add(TimetablePanel, BorderLayout.CENTER);
+    }
+
+    public void setAutogenController(AutogenController controller) {
+        this.autogenController = controller;
+        autogenerateButton.addActionListener(e -> {
+            if (autogenController != null) {
+                autogenController.autogenerate(this);
+            }
+        });
+    }
+
+    public void setLockSectionController(LockSectionController controller, int tabIndex) {
+        this.lockSectionController = controller;
+        this.tabIndex = tabIndex;
     }
 
     private void initializeGrid() {
@@ -105,7 +146,7 @@ public class TimetablePanel extends JPanel {
             for (int col = 0; col < NUM_COLS; col++) {
                 // --- FIRST SEMESTER SLOT ---
                 final JPanel slot1 = new JPanel(new BorderLayout());
-                slot1.setPreferredSize(new Dimension(80, 50));
+                slot1.setPreferredSize(new Dimension(GRID_WIDTH, GRID_HEIGHT));
                 slot1.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
                 slot1.setBackground(Color.WHITE);
 
@@ -116,7 +157,7 @@ public class TimetablePanel extends JPanel {
                 // --- SECOND SEMESTER SLOT ---
                 // We MUST create a new object. Cannot reuse slot1.
                 final JPanel slot2 = new JPanel(new BorderLayout());
-                slot2.setPreferredSize(new Dimension(80, 50));
+                slot2.setPreferredSize(new Dimension(GRID_WIDTH, GRID_HEIGHT));
                 slot2.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
                 slot2.setBackground(Color.WHITE);
 
@@ -125,11 +166,50 @@ public class TimetablePanel extends JPanel {
             }
         }
 
+        setupHeaders();
+
         // 3. Set Default View to First Semester
         scrollPane.setViewportView(firstSemesterGridContainer);
 
         // 4. Set Scroll Speed (Optional, makes scrolling smoother)
         scrollPane.getVerticalScrollBar().setUnitIncrement(16);
+    }
+
+    /**
+     * Configures the Row (Time Labels) and Column (Day) headers for the JScrollPane.
+     */
+    private void setupHeaders() {
+        // --- Day Header (Top) ---
+        final JPanel dayHeader = new JPanel(new GridLayout(1, NUM_COLS));
+        dayHeader.setBackground(Color.WHITE);
+        for (String day : DAYS) {
+            JLabel label = new JLabel(day, SwingConstants.CENTER);
+            label.setFont(new Font("SansSerif", Font.BOLD, 14));
+            label.setPreferredSize(new Dimension(GRID_WIDTH, 35));
+            label.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 1, Color.LIGHT_GRAY));
+            dayHeader.add(label);
+        }
+
+        // --- Time Header (Left) ---
+        final JPanel timeHeader = new JPanel(new GridLayout(NUM_ROWS, 1));
+        timeHeader.setBackground(Color.WHITE);
+        for (String time : TIMES) {
+            JLabel label = new JLabel(time, SwingConstants.CENTER);
+            label.setFont(new Font("SansSerif", Font.BOLD, 13));
+            label.setPreferredSize(new Dimension(50, GRID_HEIGHT));
+            label.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 1, Color.LIGHT_GRAY));
+            timeHeader.add(label);
+        }
+
+        // --- Corner ---
+        final JPanel corner = new JPanel();
+        corner.setBackground(Color.WHITE);
+        corner.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 1, Color.LIGHT_GRAY));
+
+        // Apply to ScrollPane
+        scrollPane.setColumnHeaderView(dayHeader);
+        scrollPane.setRowHeaderView(timeHeader);
+        scrollPane.setCorner(ScrollPaneConstants.UPPER_LEFT_CORNER, corner);
     }
 
     /**
@@ -142,6 +222,8 @@ public class TimetablePanel extends JPanel {
             return;
         }
 
+        this.currentState = state;
+
         final MeetingBlock[][][] firstSemesterGridData = state.getFirstSemesterGrid();
         final MeetingBlock[][][] secondSemesterGridData = state.getSecondSemesterGrid();
 
@@ -152,6 +234,11 @@ public class TimetablePanel extends JPanel {
                 updateSlot(secondSemesterPanel[row][col], secondSemesterGridData[row][col], row);
             }
         }
+        updateLockedSectionsTable(state.getSelectedSections());
+    }
+
+    public TimetableState getCurrentState() {
+        return currentState;
     }
 
     /**
@@ -220,27 +307,136 @@ public class TimetablePanel extends JPanel {
         final JPanel panel = new JPanel(new BorderLayout());
 
         // Color Logic
+        final Color blockColor;
         if (block.isConflict()) {
-            panel.setBackground(new Color(255, 102, 102));
-        } else {
-            panel.setBackground(new Color(173, 216, 230));
+            blockColor = new Color(255, 102, 102);
         }
-
-        // Border to distinguish blocks
-        panel.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        else {
+            blockColor = COURSE_COLORS[Math.abs(block.getColorIndex()) % COURSE_COLORS.length];
+        }
+        panel.setBackground(blockColor);
 
         // Text Logic: Only show text if this is the Start Row
         if (currentRow == block.getStartRow()) {
+            panel.setBorder(BorderFactory.createMatteBorder(1, 1, 0, 1, Color.WHITE));
+
             // Use HTML to allow multi-line text
             final JLabel label = new JLabel("<html>" + block.getDisplayText() + "</html>");
             label.setHorizontalAlignment(SwingConstants.CENTER);
             label.setVerticalAlignment(SwingConstants.TOP);
-            label.setFont(new Font("SansSerif", Font.PLAIN, 10));
+            label.setFont(new Font("SansSerif", Font.BOLD, 13));
             panel.add(label, BorderLayout.CENTER);
+        }
+        else {
+            panel.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 1, Color.WHITE));
         }
 
         return panel;
     }
+
+    private void updateLockedSectionsTable(java.util.List<TimetableState.SelectedSectionRow> rows) {
+        javax.swing.table.DefaultTableModel model =
+                (javax.swing.table.DefaultTableModel) lockedSectionsTable.getModel();
+
+        // Clear old rows
+        model.setRowCount(0);
+
+        // Add new rows
+        for (TimetableState.SelectedSectionRow row : rows) {
+            model.addRow(new Object[]{
+                    row.getCourseCode(),
+                    row.getSectionName(),
+                    row.isLocked()
+            });
+        }
+    }
+
+    private void setupRightSidePanel() {
+        // Panel that will live to the RIGHT of the timetable grid
+        rightSidePanel = new JPanel();
+        rightSidePanel.setLayout(new BorderLayout());
+        rightSidePanel.setBorder(BorderFactory.createTitledBorder("Locked Sections"));
+
+        // Simple 3-column table: [Course, Section, Locked?]
+        String[] columnNames = {"Course", "Section", "Locked"};
+        Object[][] data = {};  // initially empty, we'll fill later
+
+        lockedSectionsTable = new JTable(
+                new javax.swing.table.DefaultTableModel(data, columnNames) {
+                    @Override
+                    public Class<?> getColumnClass(int columnIndex) {
+                        if (columnIndex == 2) {
+                            return Boolean.class; // checkbox column
+                        }
+                        return String.class;
+                    }
+
+                    @Override
+                    public boolean isCellEditable(int row, int column) {
+                        // only the "Locked" checkbox is editable
+                        return column == 2;
+                    }
+                }
+        );
+        javax.swing.table.DefaultTableModel model =
+                (javax.swing.table.DefaultTableModel) lockedSectionsTable.getModel();
+
+        model.addTableModelListener(e -> {
+            if (e.getColumn() == 2 && currentState != null && lockSectionController != null) {
+                int row = e.getFirstRow();
+                if (row < 0 || row >= currentState.getSelectedSections().size()) {
+                    return;
+                }
+
+                boolean locked = Boolean.TRUE.equals(model.getValueAt(row, 2));
+                TimetableState.SelectedSectionRow rowObj =
+                        currentState.getSelectedSections().get(row);
+
+                // delegate to use case
+                lockSectionController.toggleLock(
+                        tabIndex,
+                        rowObj.getCourseCode(),
+                        rowObj.getSectionName(),
+                        locked
+                );
+            }
+        });
+
+
+
+        lockedSectionsTable.setRowHeight(18);
+        lockedSectionsTable.setFont(new Font("SansSerif", Font.PLAIN, 11));
+        lockedSectionsTable.getTableHeader().setFont(new Font("SansSerif", Font.PLAIN, 11));
+
+        lockedSectionsTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+
+        lockedSectionsTable.getColumnModel().getColumn(0).setPreferredWidth(90);  // Course
+        lockedSectionsTable.getColumnModel().getColumn(1).setPreferredWidth(75);  // Section
+        lockedSectionsTable.getColumnModel().getColumn(2).setPreferredWidth(60);  // Locked
+
+        JScrollPane tableScroll = new JScrollPane(lockedSectionsTable);
+        tableScroll.setPreferredSize(new Dimension(225, 200));
+
+        rightSidePanel.add(tableScroll, BorderLayout.CENTER);
+
+        TimetablePanel.add(
+                rightSidePanel,
+                new com.intellij.uiDesigner.core.GridConstraints(
+                        2, 7,       // row, col
+                        1, 3,       // rowSpan, colSpan
+                        com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER,
+                        com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH,
+                        com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK
+                                | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW,
+                        com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK
+                                | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW,
+                        null, null, null, 0, false
+                )
+        );
+    }
+
+
+
 
     /**
      * Creates a white/transparent spacer for when a slot is split but only one side has a course.

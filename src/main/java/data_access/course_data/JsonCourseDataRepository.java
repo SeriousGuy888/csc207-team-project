@@ -12,6 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.logging.Logger;
 
 public class JsonCourseDataRepository implements CourseDataRepository, CourseDataRepositoryGrouped {
     private final Map<String, Map<String, CourseOffering>> CourseInfobyCode;
@@ -121,6 +122,7 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                     String startTimeStr = scheduleEntry.optString("meetingStartTime", null);
                     String endTimeStr = scheduleEntry.optString("meetingEndTime", null);
                     String building = scheduleEntry.optString("assignedRoom1", "");
+                    String sessionCode = scheduleEntry.optString("sessioncode");
 
                     // i dont know where the rooms are in the data but add it here if u find its key
                     // String room = scheduleEntry.optString("assignedRoom2", "");
@@ -146,7 +148,7 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
                     UofTLocation location = new UofTLocation(building, "");
 
                     // Create the Meeting (semester can be determined or hardcoded)
-                    Meeting meeting = new Meeting(location, Meeting.Semester.FIRST, occupancy);
+                    Meeting meeting = new Meeting(location, getSemesterFromSessionCode(sessionCode), occupancy);
 
                     section.addMeeting(meeting);
                 }
@@ -160,6 +162,33 @@ public class JsonCourseDataRepository implements CourseDataRepository, CourseDat
         });
 
         return currentavailableCourseOfferings;
+    }
+
+    /**
+     * Figure out what semester a meeting should be considered to take place during,
+     * based on what the "sessioncode" value in the json data is.
+     * @param sessionCode the string value in the json course data
+     *                         indicating which semester a meeting is scheduled during
+     * @return which semester this meeting should be considered to be of
+     */
+    private Meeting.Semester getSemesterFromSessionCode(String sessionCode) {
+        if(sessionCode.isBlank() || sessionCode.length() != 5) {
+            System.out.println("Warning: course had invalid session code. Interpreting as first semester by default.");
+            return Meeting.Semester.FIRST;
+        }
+
+        // probably not a very good way to go about this
+        // will not work for summer session courses, presumably
+        final char fifthChar = sessionCode.charAt(4);
+        if (fifthChar == '9') {
+            return Meeting.Semester.FIRST;
+        } else if (fifthChar == '1') {
+            return Meeting.Semester.SECOND;
+        } else {
+            System.out.println("Warning: sessioncode \"" + sessionCode + "\" is incomprehensible."
+                    + "Interpreting as first semester by default.");
+            return Meeting.Semester.FIRST;
+        }
     }
 
     private WeeklyOccupancy.DayOfTheWeek mapDayCode(String code) {

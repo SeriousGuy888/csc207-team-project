@@ -2,12 +2,17 @@ package app;
 
 
 import data_access.*;
+import data_access.SearchCoursesDataAccessObject;
+import data_access.WorkbookDataAccessObject;
+import data_access.autogen.AutogenCourseDataAccess;
 import data_access.course_data.CourseDataRepository;
 import data_access.course_data.JsonCourseDataRepository;
 import data_access.workbook_persistence.FileWorkbookDataAccessObject;
 import interface_adapter.GlobalViewController;
 import interface_adapter.GlobalViewModel;
 import interface_adapter.GlobalViewPresenter;
+import interface_adapter.autogen.AutogenController;
+import interface_adapter.autogen.AutogenPresenter;
 import interface_adapter.load_workbook.LoadWorkbookController;
 import interface_adapter.load_workbook.LoadWorkbookPresenter;
 import interface_adapter.load_workbook.LoadWorkbookViewModel;
@@ -20,6 +25,10 @@ import interface_adapter.search_courses.SearchCoursesViewModel;
 import use_case.WorkbookDataAccessInterface;
 import use_case.add_section.AddSectionInteractor;
 import interface_adapter.add_section.AddSectionController;
+import use_case.autogen.AutogenDataAccessInterface;
+import use_case.autogen.AutogenInputBoundary;
+import use_case.autogen.AutogenInteractor;
+import use_case.autogen.AutogenOutputBoundary;
 import use_case.load_workbook.LoadWorkbookInteractor;
 import use_case.save_workbook.SaveWorkbookInteractor;
 import use_case.search_courses.SearchCoursesDataAccessInterface;
@@ -55,6 +64,10 @@ import view.LoadDialog;
 import view.MainPanel;
 import view.SaveDialog;
 import view.SearchPanel;
+import interface_adapter.locksections.LockSectionController;
+import use_case.locksections.LockSectionInputBoundary;
+import use_case.locksections.LockSectionInteractor;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -107,6 +120,7 @@ public class AppBuilder {
     private SaveWorkbookPresenter saveWorkbookPresenter;
     private SaveWorkbookInteractor saveWorkbookInteractor;
     private SaveWorkbookController saveWorkbookController;
+    private AutogenController autogenController;
     private LoadWorkbookViewModel loadWorkbookViewModel;
     private LoadWorkbookPresenter loadWorkbookPresenter;
     private LoadWorkbookInteractor loadWorkbookInteractor;
@@ -224,6 +238,30 @@ public class AppBuilder {
         searchPanel.setAddSectionController(addSectionController);
         searchPanel.setRemoveSectionController(removeSectionController);
 
+        final AutogenDataAccessInterface autogenDao = new AutogenCourseDataAccess(courseDataRepository);
+        final AutogenOutputBoundary autogenPresenter =
+                new AutogenPresenter(workbookDataAccessObject, globalViewPresenter);
+        final AutogenInputBoundary autogenInteractor =
+                new AutogenInteractor(autogenDao, autogenPresenter);
+
+        this.autogenController = new AutogenController(
+                autogenInteractor,
+                workbookDataAccessObject
+        );
+
+        mainPanel.setAutogenController(autogenController);
+
+        LockSectionInputBoundary lockSectionInteractor =
+                new LockSectionInteractor(
+                        workbookDataAccessObject,
+                        globalViewPresenter
+                );
+
+        LockSectionController lockSectionController =
+                new LockSectionController(lockSectionInteractor);
+
+        mainPanel.setLockSectionController(lockSectionController);
+
         return this;
     }
 
@@ -277,6 +315,10 @@ public class AppBuilder {
         return this;
     }
 
+
+
+
+
     public AppBuilder addSaveWorkbookUseCase() {
         if (workbookDataAccessObject == null) {
             throw new IllegalStateException(
@@ -322,7 +364,8 @@ public class AppBuilder {
         loadWorkbookInteractor = new LoadWorkbookInteractor(
                 workbookDataAccessObject,
                 workbookPersistenceDataAccessObject,
-                loadWorkbookPresenter);
+                loadWorkbookPresenter,
+                globalViewPresenter);
         loadWorkbookController = new LoadWorkbookController(loadWorkbookInteractor);
         LoadDialog.createSingletonInstance(loadWorkbookViewModel, loadWorkbookController);
 
