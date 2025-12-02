@@ -229,25 +229,6 @@ public class AppBuilder {
         searchPanel.setDisplayCoursesViewModel(displayCoursesViewModel);
         searchPanel.setAddSectionController(addSectionController);
 
-        return this;
-    }
-
-    public AppBuilder addAddSectionUseCase() {
-        // Create DAO
-        this.addSectionDataAccessObject = new AddSectionDataAccessObject(
-                this.courseDataRepository,
-                this.workbookDataAccessObject
-        );
-
-        this.addSectionInteractor = new AddSectionInteractor(
-                addSectionDataAccessObject,
-                globalViewPresenter
-        );
-
-        this.addSectionController = new AddSectionController(
-                addSectionInteractor,
-                globalViewModel);
-
         final AutogenDataAccessInterface autogenDao = new AutogenCourseDataAccess(courseDataRepository);
         final AutogenOutputBoundary autogenPresenter =
                 new AutogenPresenter(workbookDataAccessObject, globalViewPresenter);
@@ -271,6 +252,25 @@ public class AppBuilder {
                 new LockSectionController(lockSectionInteractor);
 
         mainPanel.setLockSectionController(lockSectionController);
+
+        return this;
+    }
+
+    public AppBuilder addAddSectionUseCase() {
+        // Create DAO
+        this.addSectionDataAccessObject = new AddSectionDataAccessObject(
+                this.courseDataRepository,
+                this.workbookDataAccessObject
+        );
+
+        this.addSectionInteractor = new AddSectionInteractor(
+                addSectionDataAccessObject,
+                globalViewPresenter
+        );
+
+        this.addSectionController = new AddSectionController(
+                addSectionInteractor,
+                globalViewModel);
 
         return this;
     }
