@@ -13,6 +13,8 @@ import entity.CourseOffering;
 import data_access.course_data.CourseDataRepositoryGrouped;
 import use_case.search_courses.SearchCoursesDataAccessInterface;
 
+private final List<String> IDENTIFIER_SUFFIXES = ['20251', '20261'];
+
 public class SearchCoursesDataAccessObject implements SearchCoursesDataAccessInterface {
     private final CourseDataRepositoryGrouped courseDataRepositoryGrouped;
      // use regex to identify if query is course code or dept code or neither
