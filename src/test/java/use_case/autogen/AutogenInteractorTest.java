@@ -323,6 +323,33 @@ public class AutogenInteractorTest {
                 "Generated timetable should contain the locked section");
     }
 
+    @Test
+    void autogenHandlesDaoExceptionGracefully() {
+        AutogenDataAccessInterface dao = new AutogenDataAccessInterface() {
+            @Override
+            public List<CourseOffering> getSelectedCourseOfferings(Set<CourseCode> selectedCourses) {
+                throw new RuntimeException("DAO exploded");
+            }
+        };
+
+        TestAutogenPresenter presenter = new TestAutogenPresenter();
+        AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
+
+        AutogenInputData inputData = new AutogenInputData(
+                Set.of(),
+                Set.of(),
+                SUNDAY_00_01
+        );
+
+        interactor.execute(inputData);
+
+        assertNull(presenter.lastOutput,
+                "No timetable should be produced when an exception occurs");
+        assertNotNull(presenter.lastError,
+                "Error message should be set when an exception occurs");
+        assertTrue(presenter.lastError.contains("DAO exploded"),
+                "Error message should include the underlying exception message");
+    }
 
     // ------------------------------------------------------------------------
     // Helper: print timetable
