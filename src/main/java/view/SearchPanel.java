@@ -118,10 +118,6 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         this.addSectionController = controller;
     }
 
-    public void setAddSectionController(AddSectionController controller) {
-        this.addSectionController = controller;
-    }
-
     public void setRemoveSectionController(RemoveSectionController controller) {
         this.removeSectionController = controller;
     }
