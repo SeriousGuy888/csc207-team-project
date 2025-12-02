@@ -1,5 +1,8 @@
 package interface_adapter;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class TimetableState {
 
     private static final int NUM_ROWS = 24;
@@ -10,6 +13,9 @@ public class TimetableState {
     // Each cell contains a list of blocks (to handle conflicts)
     private final MeetingBlock[][][] firstSemesterGrid;
     private final MeetingBlock[][][] secondSemesterGrid;
+    private List<SelectedSectionRow> selectedSections = new ArrayList<>();
+
+
 
     private String timetableName;
 
@@ -35,18 +41,54 @@ public class TimetableState {
         this.timetableName = timetableName;
     }
 
+    public List<SelectedSectionRow> getSelectedSections() {
+        return selectedSections;
+    }
+
+    public void setSelectedSections(List<SelectedSectionRow> selectedSections) {
+        this.selectedSections = selectedSections;
+    }
+
+    public static class SelectedSectionRow {
+        private final String courseCode;
+        private final String sectionName;
+        private final String teachingMethod;
+        private boolean locked;
+
+        public SelectedSectionRow(String courseCode,
+                                  String sectionName,
+                                  String teachingMethod,
+                                  boolean locked) {
+            this.courseCode = courseCode;
+            this.sectionName = sectionName;
+            this.teachingMethod = teachingMethod;
+            this.locked = locked;
+        }
+
+        public String getCourseCode() { return courseCode; }
+        public String getSectionName() { return sectionName; }
+        public String getTeachingMethod() { return teachingMethod; }
+        public boolean isLocked() { return locked; }
+
+        public void setLocked(boolean locked) {
+            this.locked = locked;
+        }
+    }
+
     // Inner Class: DTO for UI display
     public static class MeetingBlock {
         private final String courseCode;
         private final String sectionInfo;
         private final int startRow;
         private final boolean isConflict;
+        private final int colorIndex;
 
-        public MeetingBlock(String courseCode, String sectionInfo, int startRow, boolean isConflict) {
+        public MeetingBlock(String courseCode, String sectionInfo, int startRow, boolean isConflict, int colorIndex) {
             this.courseCode = courseCode;
             this.sectionInfo = sectionInfo;
             this.startRow = startRow;
             this.isConflict = isConflict;
+            this.colorIndex = colorIndex;
         }
 
         public String getDisplayText() {
@@ -60,6 +102,10 @@ public class TimetableState {
 
         public boolean isConflict() {
             return isConflict;
+        }
+
+        public int getColorIndex() {
+            return colorIndex;
         }
     }
 }

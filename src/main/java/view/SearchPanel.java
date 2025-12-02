@@ -12,6 +12,7 @@ import use_case.display_course_context.display_course_details_data_transfer_obje
 import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayProfessorDetails;
 import use_case.display_course_context.display_course_details_data_transfer_objects.DisplaySectionDetails;
 import interface_adapter.add_section.AddSectionController;
+import interface_adapter.remove_section.RemoveSectionController;
 
 import javax.swing.*;
 import java.awt.*;
@@ -43,6 +44,7 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
     private DisplayCourseDetailsViewModel displayCoursesViewModel;
 
     private AddSectionController addSectionController;
+    private RemoveSectionController removeSectionController;
 
     /**
      * Creates a new SearchPanel.
@@ -114,7 +116,10 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
 
     public void setAddSectionController(AddSectionController controller) {
         this.addSectionController = controller;
-        this.addSectionController = controller;
+    }
+
+    public void setRemoveSectionController(RemoveSectionController controller) {
+        this.removeSectionController = controller;
     }
 
     public void setSearchCoursesViewModel(SearchCoursesViewModel viewModel) {
@@ -150,7 +155,13 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         currentDetailsPanel = null;
 
         if (state.isError()) {
-            resultsContentPanel.add(new JLabel("Error: " + state.getErrorMessage()));
+            JOptionPane.showMessageDialog(
+                    this,
+                    state.getErrorMessage(),
+                    "Search Error",
+                    JOptionPane.ERROR_MESSAGE
+            );
+            return;
         } else {
             Set<String> courses = state.getMatchedCourses();
             if (courses.isEmpty()) {
@@ -246,17 +257,29 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
 
         JPanel targetWrapper = findWrapperPanel(currentlyOpenCourseId);
         if (targetWrapper != null) {
+            // Expand the details panel
             if (currentDetailsPanel != null) {
                 targetWrapper.remove(currentDetailsPanel);
             }
-
             JPanel newDetailsPanel = buildDetailsPanel(state);
-
+// Set preferred size for proper expansion
+            newDetailsPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
+            newDetailsPanel.setPreferredSize(null);
+            newDetailsPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
             targetWrapper.add(newDetailsPanel);
+            currentDetailsPanel = newDetailsPanel;
+
+// Re-actions
+            targetWrapper.revalidate();
+            targetWrapper.repaint();
+            resultsContentPanel.revalidate();
+            resultsContentPanel.repaint();
+            resultsScrollPane.revalidate();
+            resultsScrollPane.repaint();
+
             for (Component c : targetWrapper.getComponents()) {
                 System.out.println("  -> " + c.getClass().getName());
             }
-            currentDetailsPanel = newDetailsPanel;
 
             // Full revalidation chain
             targetWrapper.revalidate();
@@ -295,7 +318,6 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         }
         return null;
     }
-
 
     /**
      * Helper method to construct the detailed view of the course.
@@ -383,6 +405,9 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                 toggleButton.addActionListener(e -> {
                     if (added[0]) {
                         // TODO: call remove section use case
+                          if (removeSectionController != null) {
+                            removeSectionController.removeSection(courseDisplayString, sectionName);
+                        }
                         toggleButton.setText("Add to timetable");
                     } else {
                         // Call add section use case
@@ -419,11 +444,11 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         // Put the stacked content at the NORTH so it naturally hugs the top-left
         panel.add(content, BorderLayout.NORTH);
         // Make the details panel width follow the scrollpane viewport
-        resultsScrollPane.getViewport().addChangeListener(e -> {
-            int width = resultsScrollPane.getViewport().getWidth();
-            panel.setPreferredSize(new Dimension(width, panel.getPreferredSize().height));
-            panel.revalidate();
-        });
+//        resultsScrollPane.getViewport().addChangeListener(e -> {
+//            int width = resultsScrollPane.getViewport().getWidth();
+//            panel.setPreferredSize(new Dimension(width, panel.getPreferredSize().height));
+//            panel.revalidate();
+//        });
 
         return panel;
     }

@@ -2,12 +2,18 @@ package app;
 
 
 import data_access.*;
+import data_access.SearchCoursesDataAccessObject;
+import data_access.WorkbookDataAccessObject;
+import data_access.autogen.AutogenCourseDataAccess;
 import data_access.course_data.CourseDataRepository;
 import data_access.course_data.JsonCourseDataRepository;
 import data_access.workbook_persistence.FileWorkbookDataAccessObject;
+import interface_adapter.ClearTimetableController;
 import interface_adapter.GlobalViewController;
 import interface_adapter.GlobalViewModel;
 import interface_adapter.GlobalViewPresenter;
+import interface_adapter.autogen.AutogenController;
+import interface_adapter.autogen.AutogenPresenter;
 import interface_adapter.load_workbook.LoadWorkbookController;
 import interface_adapter.load_workbook.LoadWorkbookPresenter;
 import interface_adapter.load_workbook.LoadWorkbookViewModel;
@@ -20,6 +26,11 @@ import interface_adapter.search_courses.SearchCoursesViewModel;
 import use_case.WorkbookDataAccessInterface;
 import use_case.add_section.AddSectionInteractor;
 import interface_adapter.add_section.AddSectionController;
+import use_case.autogen.AutogenDataAccessInterface;
+import use_case.autogen.AutogenInputBoundary;
+import use_case.autogen.AutogenInteractor;
+import use_case.autogen.AutogenOutputBoundary;
+import use_case.clear_timetable.ClearTimetableInteractor;
 import use_case.load_workbook.LoadWorkbookInteractor;
 import use_case.save_workbook.SaveWorkbookInteractor;
 import use_case.search_courses.SearchCoursesDataAccessInterface;
@@ -31,6 +42,9 @@ import data_access.display_course_context.DisplayCourseDetailsDataAccessObject;
 import interface_adapter.display_course_context.DisplayCourseDetailsController;
 import interface_adapter.display_course_context.DisplayCourseDetailsPresenter;
 import interface_adapter.display_course_context.DisplayCourseDetailsViewModel;
+
+import use_case.remove_section.RemoveSectionInteractor;
+import interface_adapter.remove_section.RemoveSectionController;
 
 import use_case.display_course_context.DisplayCourseDetailsDataAccessInterface;
 import use_case.display_course_context.DisplayCourseDetailsInputBoundary;
@@ -52,6 +66,10 @@ import view.LoadDialog;
 import view.MainPanel;
 import view.SaveDialog;
 import view.SearchPanel;
+import interface_adapter.locksections.LockSectionController;
+import use_case.locksections.LockSectionInputBoundary;
+import use_case.locksections.LockSectionInteractor;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -93,12 +111,18 @@ public class AppBuilder {
     private AddSectionInteractor addSectionInteractor;
     private AddSectionController addSectionController;
 
+    // Remove section components
+    private RemoveSectionDataAccessObject removeSectionDataAccessObject;
+    private RemoveSectionInteractor removeSectionInteractor;
+    private RemoveSectionController removeSectionController;
+
     // Save and Load Components
     private FileWorkbookDataAccessObject workbookPersistenceDataAccessObject;
     private SaveWorkbookViewModel saveWorkbookViewModel;
     private SaveWorkbookPresenter saveWorkbookPresenter;
     private SaveWorkbookInteractor saveWorkbookInteractor;
     private SaveWorkbookController saveWorkbookController;
+    private AutogenController autogenController;
     private LoadWorkbookViewModel loadWorkbookViewModel;
     private LoadWorkbookPresenter loadWorkbookPresenter;
     private LoadWorkbookInteractor loadWorkbookInteractor;
@@ -191,9 +215,16 @@ public class AppBuilder {
 
         // 3. Add Interactors
         final AddTabInteractor addTabInteractor = new AddTabInteractor(workbookDataAccessObject, globalViewPresenter);
-        final DeleteTabInteractor removeTabInteractor = new DeleteTabInteractor(workbookDataAccessObject, globalViewPresenter);
+        final DeleteTabInteractor removeTabInteractor = new DeleteTabInteractor(workbookDataAccessObject,
+                globalViewPresenter);
         final SwitchTabInteractor switchTabInteractor = new SwitchTabInteractor(globalViewPresenter);
-        final RenameTabInteractor renameTabInteractor = new RenameTabInteractor(workbookDataAccessObject, globalViewPresenter);
+        final RenameTabInteractor renameTabInteractor = new RenameTabInteractor(workbookDataAccessObject,
+                globalViewPresenter);
+        final ClearTimetableInteractor clearTimetableInteractor = new ClearTimetableInteractor(workbookDataAccessObject,
+                globalViewPresenter);
+
+        final ClearTimetableController clearTimetableController = new ClearTimetableController(
+                clearTimetableInteractor);
 
         final GlobalViewController globalViewController = new GlobalViewController(
                 addTabInteractor,
@@ -202,7 +233,7 @@ public class AppBuilder {
                 renameTabInteractor
         );
 
-        mainPanel = new MainPanel(globalViewModel, globalViewController);
+        mainPanel = new MainPanel(globalViewModel, globalViewController, clearTimetableController);
         cardPanel.add(mainPanel.getRootPanel(), "main");
         globalViewPresenter.prepareSuccessView(workbookDataAccessObject.getWorkbook());
         cardLayout.show(cardPanel, "main");
@@ -214,6 +245,31 @@ public class AppBuilder {
         searchPanel.setDisplayCoursesController(displayCoursesController);
         searchPanel.setDisplayCoursesViewModel(displayCoursesViewModel);
         searchPanel.setAddSectionController(addSectionController);
+        searchPanel.setRemoveSectionController(removeSectionController);
+
+        final AutogenDataAccessInterface autogenDao = new AutogenCourseDataAccess(courseDataRepository);
+        final AutogenOutputBoundary autogenPresenter =
+                new AutogenPresenter(workbookDataAccessObject, globalViewPresenter);
+        final AutogenInputBoundary autogenInteractor =
+                new AutogenInteractor(autogenDao, autogenPresenter);
+
+        this.autogenController = new AutogenController(
+                autogenInteractor,
+                workbookDataAccessObject
+        );
+
+        mainPanel.setAutogenController(autogenController);
+
+        LockSectionInputBoundary lockSectionInteractor =
+                new LockSectionInteractor(
+                        workbookDataAccessObject,
+                        globalViewPresenter
+                );
+
+        LockSectionController lockSectionController =
+                new LockSectionController(lockSectionInteractor);
+
+        mainPanel.setLockSectionController(lockSectionController);
 
         return this;
     }
@@ -238,6 +294,25 @@ public class AppBuilder {
     }
 
 
+    public AppBuilder addRemoveSectionUseCase() {
+        // Create DAO
+        this.removeSectionDataAccessObject = new RemoveSectionDataAccessObject(
+                this.courseDataRepository,
+                this.workbookDataAccessObject
+        );
+
+        this.removeSectionInteractor = new RemoveSectionInteractor(
+                removeSectionDataAccessObject,
+                globalViewPresenter
+        );
+
+        this.removeSectionController = new RemoveSectionController(
+                removeSectionInteractor,
+                globalViewModel);
+
+        return this;
+    }
+
     public AppBuilder addWorkbookPersistenceDataAccessObject() {
         if (courseDataRepository == null) {
             throw new IllegalStateException(
@@ -248,6 +323,10 @@ public class AppBuilder {
         workbookPersistenceDataAccessObject = new FileWorkbookDataAccessObject(courseDataRepository);
         return this;
     }
+
+
+
+
 
     public AppBuilder addSaveWorkbookUseCase() {
         if (workbookDataAccessObject == null) {

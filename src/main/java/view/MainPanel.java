@@ -2,10 +2,10 @@ package view;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
-import interface_adapter.GlobalViewController;
-import interface_adapter.GlobalViewModel;
-import interface_adapter.GlobalViewState;
-import interface_adapter.TimetableState;
+import interface_adapter.*;
+import interface_adapter.autogen.AutogenController;
+import interface_adapter.locksections.LockSectionController;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,6 +14,7 @@ import java.awt.event.MouseEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
+
 
 public class MainPanel extends JPanel implements PropertyChangeListener {
     private JPanel MainPanel;
@@ -25,6 +26,9 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
 
     private final GlobalViewModel globalViewModel;
     private final GlobalViewController globalViewController;
+    private final ClearTimetableController clearTimetableController;
+    private AutogenController autogenController;
+    private LockSectionController lockSectionController;
 
     /**
      * Flag to prevent infinite loops when the View updates itself.
@@ -36,11 +40,15 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
      *
      * @param globalViewModel      the GlobalViewModel to observe
      * @param globalViewController the GlobalViewController to call when user interacts with the UI
+     * @param clearTimetableController the ClearTimetableController that clears timetable
      */
-    public MainPanel(GlobalViewModel globalViewModel, GlobalViewController globalViewController) {
+    public MainPanel(GlobalViewModel globalViewModel,
+                     GlobalViewController globalViewController,
+                     ClearTimetableController clearTimetableController) {
         this.globalViewModel = globalViewModel;
         this.globalViewModel.addPropertyChangeListener(GlobalViewModel.TIMETABLE_CHANGED, this);
         this.globalViewController = globalViewController;
+        this.clearTimetableController = clearTimetableController;
 
         $$$setupUI$$$();
         SwingUtilities.invokeLater(() -> {
@@ -157,6 +165,15 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
             final String title = ts.getTimetableName();
 
             final TimetablePanel panel = new TimetablePanel();
+            panel.setClearTimetableController(clearTimetableController, i);
+
+            if (autogenController != null) {
+                panel.setAutogenController(autogenController);
+            }
+            if (lockSectionController != null) {
+                panel.setLockSectionController(lockSectionController, i);
+            }
+
             panel.updateView(ts);
 
             // Note: We assume TimetablePanel extends JPanel and adds its content to itself.
@@ -298,6 +315,32 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
             }
         });
     }
+
+    public void setAutogenController(AutogenController autogenController) {
+        this.autogenController = autogenController;
+
+        for (int i = 0; i < tabbedPane.getTabCount() - 1; i++) { // skip the "+" tab
+            Component comp = tabbedPane.getComponentAt(i);
+            if (comp instanceof TimetablePanel) {
+                ((TimetablePanel) comp).setAutogenController(autogenController);
+            }
+        }
+    }
+
+    public void setLockSectionController(LockSectionController controller) {
+        this.lockSectionController = controller;
+
+        for (int i = 0; i < tabbedPane.getTabCount() - 1; i++) {
+            Component comp = tabbedPane.getComponentAt(i);
+            if (comp instanceof TimetablePanel) {
+                TimetablePanel panel = (TimetablePanel) comp;
+                panel.setLockSectionController(controller, i);
+            }
+        }
+    }
+
+
+
 
     public SearchPanel getSearchPanel() {
         return searchPanel;

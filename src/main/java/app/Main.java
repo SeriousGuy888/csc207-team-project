@@ -20,6 +20,7 @@ public class Main {
                 .addSearchCoursesUseCase()
                 .addDisplayCourseContextUseCase()
                 .addAddSectionUseCase()
+                .addRemoveSectionUseCase()
                 .addMainPanel()
                 .addWorkbookPersistenceDataAccessObject()
                 .addSaveWorkbookUseCase()
