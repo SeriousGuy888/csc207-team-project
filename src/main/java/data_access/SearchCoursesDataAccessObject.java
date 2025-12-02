@@ -15,12 +15,12 @@ import use_case.search_courses.SearchCoursesDataAccessInterface;
 
 public class SearchCoursesDataAccessObject implements SearchCoursesDataAccessInterface {
     private final CourseDataRepositoryGrouped courseDataRepositoryGrouped;
-     // use regex to identify if query is course code or dept code or neither
+    // use regex to identify if query is course code or dept code or neither
     private final Pattern COURSECODE = Pattern.compile("[A-Z]{3}\\d{3}");
     private final Pattern DEPTCODE = Pattern.compile("[A-Z]{3}");
 
-    public SearchCoursesDataAccessObject(CourseDataRepositoryGrouped courseDataRepositoryGrouped) {  
-        this.courseDataRepositoryGrouped = courseDataRepositoryGrouped; 
+    public SearchCoursesDataAccessObject(CourseDataRepositoryGrouped courseDataRepositoryGrouped) {
+        this.courseDataRepositoryGrouped = courseDataRepositoryGrouped;
     }
 
     @Override
@@ -32,8 +32,8 @@ public class SearchCoursesDataAccessObject implements SearchCoursesDataAccessInt
         }
         else if (DEPTCODE.matcher(normalizedQuery).matches()) {
             return searchByDept(normalizedQuery);
-        } 
-        throw new IOException("Please search by first three letters of the course (e.g., CSC) or specific course code (e.g., CSC207) only");        
+        }
+        throw new IOException("Please search by first three letters of the course (e.g., CSC) or specific course code (e.g., CSC207) only");
     }
 
     private Set<CourseOffering> searchByCourseCode(String normalizedQuery) throws IOException {
@@ -65,5 +65,5 @@ public class SearchCoursesDataAccessObject implements SearchCoursesDataAccessInt
         throw new IOException("This course code does not exist or is not offering any courses this term");
     }
 }
-  
+
 

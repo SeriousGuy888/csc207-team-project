@@ -11,6 +11,8 @@ import interface_adapter.search_courses.SearchCoursesController;
 import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayMeetingDetails;
 import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayProfessorDetails;
 import use_case.display_course_context.display_course_details_data_transfer_objects.DisplaySectionDetails;
+import interface_adapter.add_section.AddSectionController;
+import interface_adapter.remove_section.RemoveSectionController;
 
 import javax.swing.*;
 import java.awt.*;
@@ -40,6 +42,9 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
 
     private DisplayCourseDetailsController displayCoursesController;
     private DisplayCourseDetailsViewModel displayCoursesViewModel;
+
+    private AddSectionController addSectionController;
+    private RemoveSectionController removeSectionController;
 
     /**
      * Creates a new SearchPanel.
@@ -107,6 +112,14 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
 
     public void setDisplayCoursesController(DisplayCourseDetailsController controller) {
         this.displayCoursesController = controller;
+    }
+
+    public void setAddSectionController(AddSectionController controller) {
+        this.addSectionController = controller;
+    }
+
+    public void setRemoveSectionController(RemoveSectionController controller) {
+        this.removeSectionController = controller;
     }
 
     public void setSearchCoursesViewModel(SearchCoursesViewModel viewModel) {
@@ -288,7 +301,6 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         return null;
     }
 
-
     /**
      * Helper method to construct the detailed view of the course.
      */
@@ -345,6 +357,7 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                             .append(mt.getLocation());
                 }
                 String timeLocation = mts.isEmpty() ? "TBA" : timeLocSb.toString();
+
                 String sectionHtml = String.format(
                         "<html><b>%s</b><br/>%s<br/>Prof: %s (Rate My Prof Rating: <font color='green'>%.1f</font> " +
                                 "/ Difficulty Rating: %.1f)</html>",
@@ -364,17 +377,27 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
                 // Let label expand vertically and horizontally with the row
                 infoLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
 
+
                 JButton toggleButton = new JButton("Add to timetable");
                 final boolean[] added = {false};
+
+                final String courseDisplayString = state.getCourseId();
+                final String sectionName = section.getSectionName();
+
                 toggleButton.addActionListener(e -> {
                     if (added[0]) {
-                        // call remove section case
+                        // TODO: call remove section use case
+                          if (removeSectionController != null) {
+                            removeSectionController.removeSection(courseDisplayString, sectionName);
+                        }
                         toggleButton.setText("Add to timetable");
                     } else {
-                        // call add section case
+                        // Call add section use case
+                        if (addSectionController != null) {
+                            addSectionController.addSection(courseDisplayString, sectionName);
+                        }
                         toggleButton.setText("Remove from timetable");
                     }
-                    // change from added to not added or vice versa
                     added[0] = !added[0];
                 });
 
@@ -402,6 +425,13 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
 
         // Put the stacked content at the NORTH so it naturally hugs the top-left
         panel.add(content, BorderLayout.NORTH);
+        // Make the details panel width follow the scrollpane viewport
+        resultsScrollPane.getViewport().addChangeListener(e -> {
+            int width = resultsScrollPane.getViewport().getWidth();
+            panel.setPreferredSize(new Dimension(width, panel.getPreferredSize().height));
+            panel.revalidate();
+        });
+
         return panel;
     }
 

@@ -1,4 +1,4 @@
-package use_case.add_section;
+package use_case.remove_section;
 
 import entity.Section;
 import entity.Timetable;
@@ -7,7 +7,7 @@ import entity.Workbook;
 import java.util.List;
 import java.util.Optional;
 
-public interface AddSectionDataAccessInterface {
+public interface RemoveSectionDataAccessInterface {
 
     // Get the current workbook containing all timetables.
     List<Timetable> getTimetablesFromWorkbook();

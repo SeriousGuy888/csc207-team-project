@@ -1,19 +1,19 @@
-package interface_adapter.add_section;
+package interface_adapter.remove_section;
 
 import interface_adapter.GlobalViewModel;
-import use_case.add_section.AddSectionInputBoundary;
-import use_case.add_section.AddSectionInputData;
+import use_case.remove_section.RemoveSectionInputBoundary;
+import use_case.remove_section.RemoveSectionInputData;
 
 /**
- * Called by the View when user clicks "Add" on a section in expanded accordion view.
+ * Called by the View when user clicks "Remove" on a section in expanded accordion view.
  
  */
-public class AddSectionController {
+public class RemoveSectionController {
 
-    private final AddSectionInputBoundary interactor;
+    private final RemoveSectionInputBoundary interactor;
     private final GlobalViewModel globalViewModel;
 
-    public AddSectionController(AddSectionInputBoundary interactor,
+    public RemoveSectionController(RemoveSectionInputBoundary interactor,
                                  GlobalViewModel globalViewModel) {
         this.interactor = interactor;
         this.globalViewModel = globalViewModel;
@@ -25,10 +25,10 @@ public class AddSectionController {
      * @param displayString the course code from UI (e.g., "CSC207H1-F")
      * @param sectionName the section name from UI (e.g., "LEC0101")
      */
-    public void addSection(String displayString, String sectionName) {
+    public void removeSection(String displayString, String sectionName) {
         int selectedTabIndex = globalViewModel.getState().getSelectedTabIndex();
 
-        AddSectionInputData inputData = new AddSectionInputData(
+        RemoveSectionInputData inputData = new RemoveSectionInputData(
                 displayString,
                 sectionName,
                 selectedTabIndex

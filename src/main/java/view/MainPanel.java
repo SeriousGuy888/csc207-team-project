@@ -6,6 +6,9 @@ import interface_adapter.GlobalViewController;
 import interface_adapter.GlobalViewModel;
 import interface_adapter.GlobalViewState;
 import interface_adapter.TimetableState;
+import interface_adapter.autogen.AutogenController;
+import interface_adapter.locksections.LockSectionController;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,6 +17,7 @@ import java.awt.event.MouseEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
+
 
 public class MainPanel extends JPanel implements PropertyChangeListener {
     private JPanel MainPanel;
@@ -25,6 +29,9 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
 
     private final GlobalViewModel globalViewModel;
     private final GlobalViewController globalViewController;
+
+    private AutogenController autogenController;
+    private LockSectionController lockSectionController;
 
     /**
      * Flag to prevent infinite loops when the View updates itself.
@@ -159,10 +166,18 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
             final TimetablePanel panel = new TimetablePanel();
             panel.updateView(ts);
 
+            if (autogenController != null) {
+                panel.setAutogenController(autogenController);
+            }
+            if (lockSectionController != null) {
+                panel.setLockSectionController(lockSectionController, i);
+            }
+
+
             // Note: We assume TimetablePanel extends JPanel and adds its content to itself.
             // If TimetablePanel relies on .getRootPanel(), use: panel.getRootPanel()
             // However, we need to cast it back to TimetablePanel later, so extending JPanel is best.
-            tabbedPane.insertTab(title, null, panel.getRootPanel(), null, i);
+            tabbedPane.insertTab(title, null, panel, null, i);
             tabbedPane.setTabComponentAt(i, createTabHeader(title, i));
         }
 
@@ -298,6 +313,32 @@ public class MainPanel extends JPanel implements PropertyChangeListener {
             }
         });
     }
+
+    public void setAutogenController(AutogenController autogenController) {
+        this.autogenController = autogenController;
+
+        for (int i = 0; i < tabbedPane.getTabCount() - 1; i++) { // skip the "+" tab
+            Component comp = tabbedPane.getComponentAt(i);
+            if (comp instanceof TimetablePanel) {
+                ((TimetablePanel) comp).setAutogenController(autogenController);
+            }
+        }
+    }
+
+    public void setLockSectionController(LockSectionController controller) {
+        this.lockSectionController = controller;
+
+        for (int i = 0; i < tabbedPane.getTabCount() - 1; i++) {
+            Component comp = tabbedPane.getComponentAt(i);
+            if (comp instanceof TimetablePanel) {
+                TimetablePanel panel = (TimetablePanel) comp;
+                panel.setLockSectionController(controller, i);
+            }
+        }
+    }
+
+
+
 
     public SearchPanel getSearchPanel() {
         return searchPanel;
