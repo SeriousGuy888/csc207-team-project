@@ -19,6 +19,7 @@ public class Main {
                 .initializeCourseRepository()
                 .addSearchCoursesUseCase()
                 .addDisplayCourseContextUseCase()
+                .addAddSectionUseCase()
                 .addMainPanel()
                 .addWorkbookPersistenceDataAccessObject()
                 .addSaveWorkbookUseCase()

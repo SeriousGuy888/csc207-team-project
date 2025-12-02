@@ -22,14 +22,14 @@ public class AddSectionController {
     /**
      * Add a section to the currently selected timetable.
      *
-     * @param courseCode the course code from UI (e.g., "CSC207H1")
+     * @param displayString the course code from UI (e.g., "CSC207H1-F")
      * @param sectionName the section name from UI (e.g., "LEC0101")
      */
-    public void addSection(String courseCode, String sectionName) {
+    public void addSection(String displayString, String sectionName) {
         int selectedTabIndex = globalViewModel.getState().getSelectedTabIndex();
 
         AddSectionInputData inputData = new AddSectionInputData(
-                courseCode,
+                displayString,
                 sectionName,
                 selectedTabIndex
         );
