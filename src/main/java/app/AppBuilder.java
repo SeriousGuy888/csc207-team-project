@@ -2,7 +2,9 @@ package app;
 
 
 import data_access.*;
+import data_access.OsrmApiFetcher;
 import data_access.SearchCoursesDataAccessObject;
+import data_access.UofTWalkTimeDataAccessObject;
 import data_access.WorkbookDataAccessObject;
 import data_access.autogen.AutogenCourseDataAccess;
 import data_access.course_data.CourseDataRepository;
@@ -23,6 +25,7 @@ import interface_adapter.save_workbook.SaveWorkbookViewModel;
 import interface_adapter.search_courses.SearchCoursesController;
 import interface_adapter.search_courses.SearchCoursesPresenter;
 import interface_adapter.search_courses.SearchCoursesViewModel;
+import use_case.osrm_walktime.WalkTimeService;
 import use_case.WorkbookDataAccessInterface;
 import use_case.add_section.AddSectionInteractor;
 import interface_adapter.add_section.AddSectionController;
@@ -50,12 +53,14 @@ import use_case.display_course_context.DisplayCourseDetailsDataAccessInterface;
 import use_case.display_course_context.DisplayCourseDetailsInputBoundary;
 import use_case.display_course_context.DisplayCourseDetailsInteractor;
 import use_case.display_course_context.DisplayCourseDetailsOutputBoundary;
+import data_access.RateMyProfDataAccessObject;
 
 import use_case.ratemyprof.RateMyProfDataAccessInterface;
 import use_case.ratemyprof.RateMyProfInputBoundary;
 import use_case.ratemyprof.RateMyProfInteractor;
 import use_case.ratemyprof.RateMyProfOutputBoundary;
 import use_case.ratemyprof.RateMyProfPresenter;
+import data_access.RateMyProfAPI;
 
 import use_case.tab_actions.add_tab.AddTabInteractor;
 import use_case.tab_actions.delete_tab.DeleteTabInteractor;
@@ -73,6 +78,7 @@ import use_case.locksections.LockSectionInteractor;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
 
 public class AppBuilder {
     private final JPanel cardPanel = new JPanel();
@@ -225,6 +231,26 @@ public class AppBuilder {
 
         final ClearTimetableController clearTimetableController = new ClearTimetableController(
                 clearTimetableInteractor);
+
+        // initiate walktime service.
+        WalkTimeService walkTimeService;
+        try {
+            final OsrmApiFetcher apiFetcher = new OsrmApiFetcher();
+            walkTimeService = new UofTWalkTimeDataAccessObject(apiFetcher);
+        }
+        catch (IOException e) {
+            System.err.println("Warning: Could not load building codes. Walking times will be disabled.");
+
+            // Fallback: Create a dummy service that always returns -1 (Error)
+            // This allows the app to start even if the file is missing.
+            walkTimeService = new WalkTimeService() {
+                @Override
+                public int calculateWalkingTime(String startCode, String endCode) {
+                    return -1;
+                }
+            };
+        }
+        globalViewPresenter.setWalkTimeService(walkTimeService);
 
         final GlobalViewController globalViewController = new GlobalViewController(
                 addTabInteractor,

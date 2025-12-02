@@ -77,15 +77,21 @@ public class TimetableState {
 
     // Inner Class: DTO for UI display
     public static class MeetingBlock {
+        public static final int SECONDS_PER_MINUTE = 60;
+
         private final String courseCode;
         private final String sectionInfo;
+        private final String location;
         private final int startRow;
         private final boolean isConflict;
+        private String walktimeMessage;
         private final int colorIndex;
 
-        public MeetingBlock(String courseCode, String sectionInfo, int startRow, boolean isConflict, int colorIndex) {
+
+        public MeetingBlock(String courseCode, String sectionInfo, String location, int startRow, boolean isConflict, int colorIndex) {
             this.courseCode = courseCode;
             this.sectionInfo = sectionInfo;
+            this.location = location;
             this.startRow = startRow;
             this.isConflict = isConflict;
             this.colorIndex = colorIndex;
@@ -93,7 +99,7 @@ public class TimetableState {
 
         public String getDisplayText() {
             // HTML formatting for multiline text in JLabel
-            return "<html><center>" + courseCode + "<br>" + sectionInfo + "</center></html>";
+            return "<html><center>" + courseCode + "<br>" + sectionInfo + "<br>" + location + "</center></html>";
         }
 
         public int getStartRow() {
@@ -102,6 +108,23 @@ public class TimetableState {
 
         public boolean isConflict() {
             return isConflict;
+        }
+
+        public String getBuildingCode() {
+            return location.substring(0, 2);
+        }
+
+        public String getWalktimeMessage() {
+            return walktimeMessage;
+        }
+
+        public void setWalktimeMessage(double durationInMinutes) {
+            if (durationInMinutes >= 1) {
+                walktimeMessage = (int) Math.ceil(durationInMinutes) + "-minute walk";
+            }
+            else {
+                walktimeMessage = "Less than 1 minute walk";
+            }
         }
 
         public int getColorIndex() {

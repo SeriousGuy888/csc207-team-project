@@ -10,6 +10,7 @@ import entity.Timetable;
 import entity.Workbook;
 import interface_adapter.TimetableState.MeetingBlock;
 import use_case.load_workbook.LoadWorkbookGlobalStateOutputBoundary;
+import use_case.osrm_walktime.WalkTimeService;
 import use_case.timetable_update.TimetableUpdateOutputBoundary;
 import use_case.timetable_update.TimetableUpdateOutputData;
 import use_case.tab_actions.add_tab.AddTabOutputBoundary;
@@ -32,9 +33,14 @@ public class GlobalViewPresenter implements
     private static final int HALF_HOUR_SLOTS_PER_DAY = 24;
 
     private final GlobalViewModel globalViewModel;
+    private WalkTimeService walkTimeService;
 
     public GlobalViewPresenter(GlobalViewModel globalViewModel) {
         this.globalViewModel = globalViewModel;
+    }
+
+    public void setWalkTimeService(WalkTimeService walkTimeService) {
+        this.walkTimeService = walkTimeService;
     }
 
     // --- HANDLE ADD / DELETE / RENAME ---
@@ -62,8 +68,7 @@ public class GlobalViewPresenter implements
             state.setSelectedTabIndex(Math.max(0, newStates.size() - 1));
         }
 
-        globalViewModel.setState(state);
-        globalViewModel.firePropertyChange(GlobalViewModel.TIMETABLE_CHANGED);
+        updateAndFireState(state);
     }
 
     /**
@@ -74,8 +79,7 @@ public class GlobalViewPresenter implements
     public void prepareSuccessView(int newIndex) {
         final GlobalViewState state = globalViewModel.getState();
         state.setSelectedTabIndex(newIndex);
-        globalViewModel.setState(state);
-        globalViewModel.firePropertyChange(GlobalViewModel.TIMETABLE_CHANGED);
+        updateAndFireState(state);
     }
 
     /**
@@ -112,12 +116,7 @@ public class GlobalViewPresenter implements
 
         // 4. Update Global State
         globalState.setTimetableStateList(currentStates);
-        globalViewModel.setState(globalState);
-
-        // 5. Fire Event
-        // We can pass the index as the "property name" or part of the object if we want strictly optimized listening,
-        // but usually firing the standard state change is fine if the View handles it smartly.
-        globalViewModel.firePropertyChange(GlobalViewModel.TIMETABLE_CHANGED);
+        updateAndFireState(globalState);
     }
 
     /**
@@ -148,6 +147,7 @@ public class GlobalViewPresenter implements
                 final MeetingBlock block = new MeetingBlock(
                         courseCode.toString(),
                         sectionInfo,
+                        meeting.getLocation().toString(),
                         startRow,
                         isConflict,
                         colorIndex
@@ -203,6 +203,56 @@ public class GlobalViewPresenter implements
                 grid[row][col][blockIndex] = block;
             }
         }
+    }
+
+    // --- SHARED HELPER TO UPDATE VIEW ---
+    private void updateAndFireState(GlobalViewState state) {
+        // Scan all timetables in the state for consecutive blocks
+        for (TimetableState ts : state.getTimetableStateList()) {
+            injectWalkingTimes(ts);
+        }
+
+        globalViewModel.setState(state);
+        globalViewModel.firePropertyChange(GlobalViewModel.TIMETABLE_CHANGED);
+    }
+
+    private void injectWalkingTimes(TimetableState state) {
+        System.out.println("inject walking times");
+        scanGridForWalking(state.getFirstSemesterGrid());
+        scanGridForWalking(state.getSecondSemesterGrid());
+    }
+
+    private void scanGridForWalking(MeetingBlock[][][] grid) {
+        for (int col = 0; col < 5; col++) {
+            MeetingBlock[] previousSlot = grid[0][col];
+
+            for (int row = 1; row < HALF_HOUR_SLOTS_PER_DAY; row++) {
+                final MeetingBlock[] currentSlot = grid[row][col];
+
+                if (checkSingleMeeting(previousSlot) && checkSingleMeeting(currentSlot)) {
+                    final MeetingBlock firstMeeting = previousSlot[0] != null ? previousSlot[0] : previousSlot[1];
+                    final MeetingBlock secondMeeting = currentSlot[0] != null ? currentSlot[0] : currentSlot[1];
+                    System.out.println(!firstMeeting.equals(secondMeeting));
+                    if (!firstMeeting.equals(secondMeeting)) {
+                        final int seconds = walkTimeService.calculateWalkingTime(
+                                firstMeeting.getBuildingCode(),
+                                secondMeeting.getBuildingCode()
+                        );
+
+                        if (seconds != -1) {
+                            final double minutes = seconds / 60.0;
+                            secondMeeting.setWalktimeMessage(minutes);
+                        }
+                    }
+                }
+                previousSlot = currentSlot;
+            }
+        }
+    }
+
+    private boolean checkSingleMeeting(MeetingBlock[] timeSlot) {
+        boolean result = (timeSlot[0] != null && timeSlot[1] == null) || (timeSlot[0] == null && timeSlot[1] != null);
+        return result;
     }
 
     /**

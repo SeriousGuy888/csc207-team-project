@@ -3,6 +3,7 @@ package data_access;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import use_case.osrm_walktime.WalkTimeDataAccessInterface;
+import use_case.osrm_walktime.WalkTimeService;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,7 +11,7 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
-public class UofTWalkTimeDAO implements WalkTimeDataAccessInterface {
+public class UofTWalkTimeDataAccessObject implements WalkTimeDataAccessInterface, WalkTimeService {
 
     private static final String BUILDING_FILE_PATH = "src/main/resources/BuildingCodes.json";
 
@@ -24,7 +25,7 @@ public class UofTWalkTimeDAO implements WalkTimeDataAccessInterface {
      * Loads the JSON file immediately so we don't read from disk on every click.
      * @param apiFetcher The network tool we built earlier.
      */
-    public UofTWalkTimeDAO(OsrmApiFetcher apiFetcher) throws IOException {
+    public UofTWalkTimeDataAccessObject(OsrmApiFetcher apiFetcher) throws IOException {
         this.apiFetcher = apiFetcher;
         loadBuildingData();
     }
@@ -63,8 +64,24 @@ public class UofTWalkTimeDAO implements WalkTimeDataAccessInterface {
 
         try {
             return apiFetcher.fetchDuration(start[0], start[1], end[0], end[1]);
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
             throw new ApiConnectionException("Failed to reach OSRM: " + e.getMessage());
+        }
+    }
+
+    @Override
+    public int calculateWalkingTime(String startCode, String endCode) {
+        try {
+            System.out.println("calculate");
+            // Reuse the existing logic
+            return getWalkTimeInSeconds(startCode, endCode);
+        }
+        catch (InvalidLocationException | ApiConnectionException e) {
+            // Swallow exception and return specific failure code
+            // Presenter will see -1 and just not print the label.
+            System.err.println("Walking Service Error: " + e.getMessage());
+            return -1;
         }
     }
 }
