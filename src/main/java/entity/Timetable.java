@@ -65,6 +65,12 @@ public class Timetable {
     }
 
     /**
+     * Removes all sections from this timetable.
+     */
+    public void clear() {
+        sections.clear();
+    }
+    /**
      * Update the number of conflicts for each meeting in the timetable.
      * @return `true` if timetable does not contain any >2-course conflicts.
      */
