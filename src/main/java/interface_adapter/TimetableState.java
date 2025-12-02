@@ -80,7 +80,7 @@ public class TimetableState {
         private final String courseCode;
         private final String sectionName;
         private final String teachingMethod;
-        private boolean locked;  // <-- remove final
+        private boolean locked;
 
         public SelectedSectionRow(String courseCode,
                                   String sectionName,
