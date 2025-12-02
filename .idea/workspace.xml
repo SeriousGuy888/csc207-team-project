@@ -6,12 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b2cce559-ce01-4a65-af95-dc36a4ca382d" name="Changes" comment="Change that fixes ts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interface_adapter/autogen/AutogenPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interface_adapter/autogen/AutogenPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/use_case/display_course_details/DisplayCourseDetailsInteractorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/use_case/display_course_details/DisplayCourseDetailsInteractorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\Victo\IdeaProjects\csc207-team-project\htmlReport" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -44,21 +47,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#76 on usecase-locksections-revised&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.DisplayCourseDetailsInteractorTest.executor": "Coverage",
+    "JUnit.RateMyProfInteractorTest.executor": "Coverage",
+    "JUnit.SaveWorkbookInteractorTest.executor": "Coverage",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.Main">
+}]]></component>
+  <component name="RunManager" selected="JUnit.DisplayCourseDetailsInteractorTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="TeamProject" />
@@ -79,9 +85,64 @@
           <option name="PATTERN" value="use_case.display_course_details.*" />
           <option name="ENABLED" value="true" />
         </pattern>
+        <pattern>
+          <option name="PATTERN" value="use_case.display_course_context.DisplayCourseDetailsInteractor" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="use_case.display_course_context.DisplayCourseDetailsDataAccessInterface" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="use_case.display_course_context.DisplayCourseDetailsInputBoundary" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="use_case.display_course_context.DisplayCourseDetailsOutputBoundary" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="use_case.display_course_context.DisplayCourseDetailsInputData" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="use_case.display_course_context.DisplayCourseDetailsOutputData" />
+          <option name="ENABLED" value="true" />
+        </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="use_case.display_course_details" />
       <option name="MAIN_CLASS_NAME" value="use_case.display_course_details.DisplayCourseDetailsInteractorTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RateMyProfInteractorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TeamProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="use_case.rate_my_prof.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="use_case.rate_my_prof" />
+      <option name="MAIN_CLASS_NAME" value="use_case.rate_my_prof.RateMyProfInteractorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaveWorkbookInteractorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TeamProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="use_case.save_workbook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="use_case.save_workbook" />
+      <option name="MAIN_CLASS_NAME" value="use_case.save_workbook.SaveWorkbookInteractorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -89,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DisplayCourseDetailsInteractorTest" />
+        <item itemvalue="JUnit.SaveWorkbookInteractorTest" />
+        <item itemvalue="JUnit.RateMyProfInteractorTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.DisplayCourseDetailsInteractorTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.DisplayCourseDetailsInteractorTest" />
-        <item itemvalue="JUnit.DisplayCourseDetailsInteractorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -129,5 +190,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/csc207_team_project$DisplayCourseDetailsInteractorTest.ic" NAME="DisplayCourseDetailsInteractorTest Coverage Results" MODIFIED="1764710310575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>use_case.display_course_details.*</FILTER>
+      <FILTER>use_case.display_course_context.DisplayCourseDetailsInteractor</FILTER>
+      <FILTER>use_case.display_course_context.DisplayCourseDetailsDataAccessInterface</FILTER>
+      <FILTER>use_case.display_course_context.DisplayCourseDetailsInputBoundary</FILTER>
+      <FILTER>use_case.display_course_context.DisplayCourseDetailsOutputBoundary</FILTER>
+      <FILTER>use_case.display_course_context.DisplayCourseDetailsInputData</FILTER>
+      <FILTER>use_case.display_course_context.DisplayCourseDetailsOutputData</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/csc207_team_project$SaveWorkbookInteractorTest.ic" NAME="SaveWorkbookInteractorTest Coverage Results" MODIFIED="1764705382460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>use_case.save_workbook.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/csc207_team_project$RateMyProfInteractorTest.ic" NAME="RateMyProfInteractorTest Coverage Results" MODIFIED="1764705347078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>use_case.rate_my_prof.*</FILTER>
+    </SUITE>
   </component>
 </project>
