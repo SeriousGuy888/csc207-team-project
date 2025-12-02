@@ -256,6 +256,74 @@ public class AutogenInteractorTest {
                 "Expected 2 sections in the generated timetable");
     }
 
+    @Test
+    void autogenRespectsLockedSectionsAndNullBlockedTimes() {
+        // Build a single course offering with two sections
+        CourseOffering csc207 = new CourseOffering(
+                "CSC207H1",
+                new CourseCode("CSC207H1"),
+                "Software Design",
+                "pain but with Java"
+        );
+
+        Section lec0101 = new Section(
+                csc207,
+                "LEC0101",
+                Section.TeachingMethod.LECTURE
+        );
+        lec0101.addMeeting(new Meeting(
+                new UofTLocation("BA", "2175"), FIRST_SEMESTER,
+                MONDAY_10_12
+        ));
+
+        Section lec0201 = new Section(
+                csc207,
+                "LEC0201",
+                Section.TeachingMethod.LECTURE
+        );
+        lec0201.addMeeting(new Meeting(
+                new UofTLocation("BA", "2175"), FIRST_SEMESTER,
+                THURSDAY_13_15
+        ));
+
+        csc207.addAvailableSection(lec0101);
+        csc207.addAvailableSection(lec0201);
+
+        // DAO that always returns this offering
+        AutogenDataAccessInterface dao = new AutogenDataAccessInterface() {
+            @Override
+            public List<CourseOffering> getSelectedCourseOfferings(Set<CourseCode> selectedCourses) {
+                return List.of(csc207);
+            }
+        };
+
+        TestAutogenPresenter presenter = new TestAutogenPresenter();
+        AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
+
+        // Lock one specific section for this course
+        Set<Section> lockedSections = Set.of(lec0201);
+
+        AutogenInputData inputData = new AutogenInputData(
+                Set.of(csc207.getCourseCode()),
+                lockedSections,
+                null          // blockedTimes == null branch in buildConstraints
+        );
+
+        interactor.execute(inputData);
+
+        assertNull(presenter.lastError, "Should succeed when locked section is consistent");
+        assertNotNull(presenter.lastOutput, "Should generate a timetable");
+
+        Timetable timetable = presenter.lastOutput.getGeneratedTimetable();
+        Set<Section> resultSections = timetable.getSections();
+
+        // Only the locked section should appear in the timetable
+        assertEquals(1, resultSections.size(), "Exactly one section should be chosen");
+        assertTrue(resultSections.contains(lec0201),
+                "Generated timetable should contain the locked section");
+    }
+
+
     // ------------------------------------------------------------------------
     // Helper: print timetable
     // ------------------------------------------------------------------------
