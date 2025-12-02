@@ -16,6 +16,8 @@ import use_case.tab_actions.add_tab.AddTabOutputBoundary;
 import use_case.tab_actions.delete_tab.DeleteTabOutputBoundary;
 import use_case.tab_actions.rename_tab.RenameTabOutputBoundary;
 import use_case.tab_actions.switch_tab.SwitchTabOutputBoundary;
+import java.util.stream.Collectors;
+import interface_adapter.TimetableState.SelectedSectionRow;
 
 public class GlobalViewPresenter implements
         TimetableUpdateOutputBoundary,
@@ -154,6 +156,18 @@ public class GlobalViewPresenter implements
 
             }
         }
+
+        //3. Add Lock Section Table
+        java.util.List<TimetableState.SelectedSectionRow> rows = new java.util.ArrayList<>();
+        for (Section section : timetable.getSections()) {
+            rows.add(new TimetableState.SelectedSectionRow(
+                    section.getCourseOffering().getCourseCode().toString(),
+                    section.getSectionName(),
+                    section.getTeachingMethod().toString(),
+                    false
+            ));
+        }
+        state.setSelectedSections(rows);
         return state;
     }
 
