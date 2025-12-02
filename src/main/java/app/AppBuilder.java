@@ -8,8 +8,6 @@ import data_access.workbook_persistence.FileWorkbookDataAccessObject;
 import interface_adapter.GlobalViewController;
 import interface_adapter.GlobalViewModel;
 import interface_adapter.GlobalViewPresenter;
-import interface_adapter.add_section.AddSectionController;
-import interface_adapter.add_section.AddSectionPresenter;
 import interface_adapter.load_workbook.LoadWorkbookController;
 import interface_adapter.load_workbook.LoadWorkbookPresenter;
 import interface_adapter.load_workbook.LoadWorkbookViewModel;
@@ -21,12 +19,14 @@ import interface_adapter.search_courses.SearchCoursesPresenter;
 import interface_adapter.search_courses.SearchCoursesViewModel;
 import use_case.WorkbookDataAccessInterface;
 import use_case.add_section.AddSectionInteractor;
+import interface_adapter.add_section.AddSectionController;
 import use_case.load_workbook.LoadWorkbookInteractor;
 import use_case.save_workbook.SaveWorkbookInteractor;
 import use_case.search_courses.SearchCoursesDataAccessInterface;
 import use_case.search_courses.SearchCoursesInputBoundary;
 import use_case.search_courses.SearchCoursesInteractor;
 import use_case.search_courses.SearchCoursesOutputBoundary;
+import use_case.timetable_update.TimetableUpdateOutputBoundary;
 import data_access.display_course_context.DisplayCourseDetailsDataAccessObject;
 import interface_adapter.display_course_context.DisplayCourseDetailsController;
 import interface_adapter.display_course_context.DisplayCourseDetailsPresenter;
@@ -47,6 +47,7 @@ import use_case.tab_actions.add_tab.AddTabInteractor;
 import use_case.tab_actions.delete_tab.DeleteTabInteractor;
 import use_case.tab_actions.rename_tab.RenameTabInteractor;
 import use_case.tab_actions.switch_tab.SwitchTabInteractor;
+import use_case.timetable_update.TimetableUpdateOutputBoundary;
 import view.LoadDialog;
 import view.MainPanel;
 import view.SaveDialog;
@@ -60,10 +61,13 @@ public class AppBuilder {
     private final CardLayout cardLayout = new CardLayout();
 
     private MainPanel mainPanel;
-    private GlobalViewModel globalViewModel;
+
+    // shared view and presenter
+    private final GlobalViewModel globalViewModel = new GlobalViewModel();
+    private final GlobalViewPresenter globalViewPresenter = new GlobalViewPresenter(this.globalViewModel);
 
     // shared object to store the workbook that the user is currently working on
-    private WorkbookDataAccessInterface workbookDataAccessObject;
+    private WorkbookDataAccessObject workbookDataAccessObject;
 
     // Shared data access
     // todo: figure out why we can't use a shared interface here
@@ -71,9 +75,11 @@ public class AppBuilder {
     private JsonCourseDataRepository courseDataRepository;
 
     // Search courses components
+    private SearchCoursesDataAccessObject searchCoursesDataAccessObject;
     private SearchCoursesViewModel searchCoursesViewModel;
+    private SearchCoursesPresenter searchCoursesPresenter;
+    private SearchCoursesInteractor searchCoursesInteractor;
     private SearchCoursesController searchCoursesController;
-    private SearchCoursesDataAccessInterface searchCoursesDataAccessObject;
 
     // Course Context Components
     private DisplayCourseDetailsViewModel displayCoursesViewModel;
@@ -83,7 +89,7 @@ public class AppBuilder {
     private RateMyProfInputBoundary rateMyProfInteractor;
 
     // Add section components
-    private AddSectionPresenter addSectionPresenter;
+    private AddSectionDataAccessObject addSectionDataAccessObject;
     private AddSectionInteractor addSectionInteractor;
     private AddSectionController addSectionController;
 
@@ -123,14 +129,14 @@ public class AppBuilder {
         this.searchCoursesViewModel = new SearchCoursesViewModel();
 
         // 2. Create Presenter (implements OutputBoundary, updates ViewModel)
-        SearchCoursesOutputBoundary searchCoursesPresenter =
+        this.searchCoursesPresenter =
                 new SearchCoursesPresenter(searchCoursesViewModel);
 
         // 3. DAO
         this.searchCoursesDataAccessObject = new SearchCoursesDataAccessObject(this.courseDataRepository);
 
         // 4. Create Interactor
-        SearchCoursesInputBoundary searchCoursesInteractor =
+        this.searchCoursesInteractor =
                 new SearchCoursesInteractor(searchCoursesDataAccessObject, searchCoursesPresenter);
 
         // 5. Create Controller
@@ -171,30 +177,25 @@ public class AppBuilder {
         return this;
     }
 
-    public AppBuilder addAddCourseUseCase() {
-        // Create DAO (uses the repository, which has professor name lookup)
-        this.addSectionDataAccessObject = new AddSectionDataAccessObject(this.workbookDataAccessObject, this.courseDataRepository);
 
-        return this;
-    }
     /**
      * Initializes workbook DAO, interface adapters, view models and view.
      *
      * @return this builder
      */
     public AppBuilder addMainPanel() {
-        // 1. Create DAO
-        final WorkbookDataAccessObject dataAccess = new WorkbookDataAccessObject();
-
-        // 2. Create Panel and ViewModel
-        final GlobalViewModel globalViewModel = new GlobalViewModel();
-        final GlobalViewPresenter presenter = new GlobalViewPresenter(globalViewModel);
+//        // 1. Create DAO
+//        final WorkbookDataAccessObject dataAccess = new WorkbookDataAccessObject();
+//
+//        // 2. Create Panel and ViewModel
+//        final GlobalViewModel globalViewModel = new GlobalViewModel();
+//        final GlobalViewPresenter presenter = new GlobalViewPresenter(globalViewModel);
 
         // 3. Add Interactors
-        final AddTabInteractor addTabInteractor = new AddTabInteractor(dataAccess, presenter);
-        final DeleteTabInteractor removeTabInteractor = new DeleteTabInteractor(dataAccess, presenter);
-        final SwitchTabInteractor switchTabInteractor = new SwitchTabInteractor(presenter);
-        final RenameTabInteractor renameTabInteractor = new RenameTabInteractor(dataAccess, presenter);
+        final AddTabInteractor addTabInteractor = new AddTabInteractor(workbookDataAccessObject, globalViewPresenter);
+        final DeleteTabInteractor removeTabInteractor = new DeleteTabInteractor(workbookDataAccessObject, globalViewPresenter);
+        final SwitchTabInteractor switchTabInteractor = new SwitchTabInteractor(globalViewPresenter);
+        final RenameTabInteractor renameTabInteractor = new RenameTabInteractor(workbookDataAccessObject, globalViewPresenter);
 
         final GlobalViewController globalViewController = new GlobalViewController(
                 addTabInteractor,
@@ -205,7 +206,7 @@ public class AppBuilder {
 
         mainPanel = new MainPanel(globalViewModel, globalViewController);
         cardPanel.add(mainPanel.getRootPanel(), "main");
-        presenter.prepareSuccessView(dataAccess.getWorkbook());
+        globalViewPresenter.prepareSuccessView(workbookDataAccessObject.getWorkbook());
         cardLayout.show(cardPanel, "main");
 
         // Wire the SearchPanel with controller and viewModel
@@ -214,9 +215,30 @@ public class AppBuilder {
         searchPanel.setSearchCoursesViewModel(searchCoursesViewModel);
         searchPanel.setDisplayCoursesController(displayCoursesController);
         searchPanel.setDisplayCoursesViewModel(displayCoursesViewModel);
+        searchPanel.setAddSectionController(addSectionController);
 
         return this;
     }
+
+    public AppBuilder addAddSectionUseCase() {
+        // Create DAO
+        this.addSectionDataAccessObject = new AddSectionDataAccessObject(
+                this.courseDataRepository,
+                this.workbookDataAccessObject
+        );
+
+        this.addSectionInteractor = new AddSectionInteractor(
+                addSectionDataAccessObject,
+                globalViewPresenter
+        );
+
+        this.addSectionController = new AddSectionController(
+                addSectionInteractor,
+                globalViewModel);
+
+        return this;
+    }
+
 
     public AppBuilder addWorkbookPersistenceDataAccessObject() {
         if (courseDataRepository == null) {

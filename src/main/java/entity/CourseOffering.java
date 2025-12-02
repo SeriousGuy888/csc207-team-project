@@ -19,10 +19,6 @@ public class CourseOffering {
         this.description = description;
     }
 
-    public String getUniqueIdentifier() {
-        return uniqueIdentifier;
-    }
-
     public static CourseOffering createUnknownCourseOffering(String uniqueIdentifier) {
         CourseOffering offering = new CourseOffering(
                 uniqueIdentifier,
