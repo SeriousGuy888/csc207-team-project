@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cce559-ce01-4a65-af95-dc36a4ca382d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b2cce559-ce01-4a65-af95-dc36a4ca382d" name="Changes" comment="Added DAO Exception Test for Autogen">
       <change beforePath="$PROJECT_DIR$/src/test/java/use_case/autogen/AutogenInteractorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/use_case/autogen/AutogenInteractorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +26,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
-    "JUnit.AutogenInteractorTest.executor": "Coverage",
+    "JUnit.AutogenInteractorTest.executor": "Run",
     "JUnit.DisplayCourseDetailsInteractorTest.executor": "Run",
     "git-widget-placeholder": "autogen-update-tests",
     "node.js.selected.package.tslint": "(autodetect)"
@@ -72,10 +71,32 @@
     </recent_temporary>
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Added LockedSections and Null Blocked Time Test">
+      <option name="closed" value="true" />
+      <created>1764714538886</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764714538886</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added DAO Exception Test for Autogen">
+      <option name="closed" value="true" />
+      <created>1764714601444</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764714601444</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added LockedSections and Null Blocked Time Test" />
+    <MESSAGE value="Added DAO Exception Test for Autogen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added DAO Exception Test for Autogen" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/csc207_team_project$AutogenInteractorTest.ic" NAME="AutogenInteractorTest Coverage Results" MODIFIED="1764714015166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/csc207_team_project$AutogenInteractorTest.ic" NAME="AutogenInteractorTest Coverage Results" MODIFIED="1764714628153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>use_case.autogen.*</FILTER>
     </SUITE>
   </component>

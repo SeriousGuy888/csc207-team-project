@@ -389,6 +389,48 @@ public class AutogenInteractorTest {
         }
     }
 
+    @Test
+    void generateTimetableSucceedsWithEmptyConstraints() {
+        // DAO is irrelevant because we call generateTimetable directly
+        AutogenDataAccessInterface dao = selectedCourses -> List.of();
+        TestAutogenPresenter presenter = new TestAutogenPresenter();
+        AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
+
+        // One offering with one section in its domain
+        CourseOffering csc207 = new CourseOffering(
+                "CSC207H1",
+                new CourseCode("CSC207H1"),
+                "Software Design",
+                "desc"
+        );
+        Section lec0101 = new Section(
+                csc207,
+                "LEC0101",
+                Section.TeachingMethod.LECTURE
+        );
+        lec0101.addMeeting(new Meeting(
+                new UofTLocation("BA", "2175"),
+                FIRST_SEMESTER,
+                MONDAY_10_12
+        ));
+        csc207.addAvailableSection(lec0101);
+
+        CourseVariable variable = new CourseVariable(csc207, Set.of(lec0101));
+
+        // Empty constraints list -> isConsistent's loop never runs, returns true
+        PotentialTimetable result = interactor.generateTimetable(
+                List.of(variable),
+                List.of()
+        );
+
+        assertTrue(result.getSuccess(), "With no constraints, a timetable should be found");
+
+        Timetable timetable = result.getTimetable();
+        assertEquals(Set.of(lec0101), timetable.getSections(),
+                "The single section should be chosen");
+    }
+
+
     // ------------------------------------------------------------------------
     // Fake DAOs
     // ------------------------------------------------------------------------
