@@ -3,12 +3,15 @@ package app;
 
 import data_access.SearchCoursesDataAccessObject;
 import data_access.WorkbookDataAccessObject;
+import data_access.autogen.AutogenCourseDataAccess;
 import data_access.course_data.CourseDataRepository;
 import data_access.course_data.JsonCourseDataRepository;
 import data_access.workbook_persistence.FileWorkbookDataAccessObject;
 import interface_adapter.GlobalViewController;
 import interface_adapter.GlobalViewModel;
 import interface_adapter.GlobalViewPresenter;
+import interface_adapter.autogen.AutogenController;
+import interface_adapter.autogen.AutogenPresenter;
 import interface_adapter.load_workbook.LoadWorkbookController;
 import interface_adapter.load_workbook.LoadWorkbookPresenter;
 import interface_adapter.load_workbook.LoadWorkbookViewModel;
@@ -19,6 +22,10 @@ import interface_adapter.search_courses.SearchCoursesController;
 import interface_adapter.search_courses.SearchCoursesPresenter;
 import interface_adapter.search_courses.SearchCoursesViewModel;
 import use_case.WorkbookDataAccessInterface;
+import use_case.autogen.AutogenDataAccessInterface;
+import use_case.autogen.AutogenInputBoundary;
+import use_case.autogen.AutogenInteractor;
+import use_case.autogen.AutogenOutputBoundary;
 import use_case.load_workbook.LoadWorkbookInteractor;
 import use_case.save_workbook.SaveWorkbookInteractor;
 import use_case.search_courses.SearchCoursesDataAccessInterface;
@@ -51,6 +58,10 @@ import view.LoadDialog;
 import view.MainPanel;
 import view.SaveDialog;
 import view.SearchPanel;
+import interface_adapter.locksections.LockSectionController;
+import use_case.locksections.LockSectionInputBoundary;
+import use_case.locksections.LockSectionInteractor;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -61,6 +72,7 @@ public class AppBuilder {
 
     private MainPanel mainPanel;
     private GlobalViewModel globalViewModel;
+    private GlobalViewPresenter globalViewPresenter;
 
     // shared object to store the workbook that the user is currently working on
     private WorkbookDataAccessInterface workbookDataAccessObject;
@@ -87,6 +99,7 @@ public class AppBuilder {
     private SaveWorkbookPresenter saveWorkbookPresenter;
     private SaveWorkbookInteractor saveWorkbookInteractor;
     private SaveWorkbookController saveWorkbookController;
+    private AutogenController autogenController;
     private LoadWorkbookViewModel loadWorkbookViewModel;
     private LoadWorkbookPresenter loadWorkbookPresenter;
     private LoadWorkbookInteractor loadWorkbookInteractor;
@@ -168,18 +181,25 @@ public class AppBuilder {
      * @return this builder
      */
     public AppBuilder addMainPanel() {
-        // 1. Create DAO
-        final WorkbookDataAccessObject dataAccess = new WorkbookDataAccessObject();
+        WorkbookDataAccessInterface dataAccess;
 
-        // 2. Create Panel and ViewModel
+        if (workbookDataAccessObject != null) {
+            // Use the shared, already-initialized DAO
+            dataAccess = workbookDataAccessObject;
+        } else {
+            dataAccess = new WorkbookDataAccessObject();
+            workbookDataAccessObject = dataAccess;
+        }
+
+
         final GlobalViewModel globalViewModel = new GlobalViewModel();
-        final GlobalViewPresenter presenter = new GlobalViewPresenter(globalViewModel);
+        globalViewPresenter = new GlobalViewPresenter(globalViewModel);
 
         // 3. Add Interactors
-        final AddTabInteractor addTabInteractor = new AddTabInteractor(dataAccess, presenter);
-        final DeleteTabInteractor removeTabInteractor = new DeleteTabInteractor(dataAccess, presenter);
-        final SwitchTabInteractor switchTabInteractor = new SwitchTabInteractor(presenter);
-        final RenameTabInteractor renameTabInteractor = new RenameTabInteractor(dataAccess, presenter);
+        final AddTabInteractor addTabInteractor = new AddTabInteractor(dataAccess, globalViewPresenter);
+        final DeleteTabInteractor removeTabInteractor = new DeleteTabInteractor(dataAccess, globalViewPresenter);
+        final SwitchTabInteractor switchTabInteractor = new SwitchTabInteractor(globalViewPresenter);
+        final RenameTabInteractor renameTabInteractor = new RenameTabInteractor(dataAccess, globalViewPresenter);
 
         final GlobalViewController globalViewController = new GlobalViewController(
                 addTabInteractor,
@@ -190,7 +210,7 @@ public class AppBuilder {
 
         mainPanel = new MainPanel(globalViewModel, globalViewController);
         cardPanel.add(mainPanel.getRootPanel(), "main");
-        presenter.prepareSuccessView(dataAccess.getWorkbook());
+        globalViewPresenter.prepareSuccessView(dataAccess.getWorkbook());
         cardLayout.show(cardPanel, "main");
 
         // Wire the SearchPanel with controller and viewModel
@@ -199,6 +219,30 @@ public class AppBuilder {
         searchPanel.setSearchCoursesViewModel(searchCoursesViewModel);
         searchPanel.setDisplayCoursesController(displayCoursesController);
         searchPanel.setDisplayCoursesViewModel(displayCoursesViewModel);
+
+        final AutogenDataAccessInterface autogenDao = new AutogenCourseDataAccess(courseDataRepository);
+        final AutogenOutputBoundary autogenPresenter =
+                new AutogenPresenter(workbookDataAccessObject, globalViewPresenter);
+        final AutogenInputBoundary autogenInteractor =
+                new AutogenInteractor(autogenDao, autogenPresenter);
+
+        this.autogenController = new AutogenController(
+                autogenInteractor,
+                workbookDataAccessObject
+        );
+
+        mainPanel.setAutogenController(autogenController);
+
+        LockSectionInputBoundary lockSectionInteractor =
+                new LockSectionInteractor(
+                        workbookDataAccessObject,
+                        globalViewPresenter
+                );
+
+        LockSectionController lockSectionController =
+                new LockSectionController(lockSectionInteractor);
+
+        mainPanel.setLockSectionController(lockSectionController);
 
         return this;
     }
@@ -213,6 +257,10 @@ public class AppBuilder {
         workbookPersistenceDataAccessObject = new FileWorkbookDataAccessObject(courseDataRepository);
         return this;
     }
+
+
+
+
 
     public AppBuilder addSaveWorkbookUseCase() {
         if (workbookDataAccessObject == null) {

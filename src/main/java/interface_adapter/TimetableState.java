@@ -1,5 +1,8 @@
 package interface_adapter;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class TimetableState {
 
     private static final int NUM_ROWS = 24;
@@ -10,6 +13,9 @@ public class TimetableState {
     // Each cell contains a list of blocks (to handle conflicts)
     private final MeetingBlock[][][] firstSemesterGrid;
     private final MeetingBlock[][][] secondSemesterGrid;
+    private List<SelectedSectionRow> selectedSections = new ArrayList<>();
+
+
 
     private String timetableName;
 
@@ -62,4 +68,38 @@ public class TimetableState {
             return isConflict;
         }
     }
+    public List<SelectedSectionRow> getSelectedSections() {
+        return selectedSections;
+    }
+
+    public void setSelectedSections(List<SelectedSectionRow> selectedSections) {
+        this.selectedSections = selectedSections;
+    }
+
+    public static class SelectedSectionRow {
+        private final String courseCode;
+        private final String sectionName;
+        private final String teachingMethod;
+        private boolean locked;  // <-- remove final
+
+        public SelectedSectionRow(String courseCode,
+                                  String sectionName,
+                                  String teachingMethod,
+                                  boolean locked) {
+            this.courseCode = courseCode;
+            this.sectionName = sectionName;
+            this.teachingMethod = teachingMethod;
+            this.locked = locked;
+        }
+
+        public String getCourseCode() { return courseCode; }
+        public String getSectionName() { return sectionName; }
+        public String getTeachingMethod() { return teachingMethod; }
+        public boolean isLocked() { return locked; }
+
+        public void setLocked(boolean locked) {
+            this.locked = locked;
+        }
+    }
+
 }

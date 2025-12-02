@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 public class Timetable {
     private final Set<Section> sections;
     private String timetableName = "Default Timetable";
+    private final Set<Section> lockedSections = new HashSet<>();
 
     public Timetable() {
         this.sections = new HashSet<>();
@@ -95,5 +96,21 @@ public class Timetable {
             }
         }
         return true;
+    }
+
+    public void lockSection(Section section) {
+        lockedSections.add(section);
+    }
+
+    public void unlockSection(Section section) {
+        lockedSections.remove(section);
+    }
+
+    public boolean isLocked(Section section) {
+        return lockedSections.contains(section);
+    }
+
+    public Set<Section> getLockedSections() {
+        return new HashSet<>(lockedSections);
     }
 }
