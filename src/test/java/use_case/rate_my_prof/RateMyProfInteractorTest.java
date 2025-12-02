@@ -1,3 +1,5 @@
+package use_case.rate_my_prof;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
