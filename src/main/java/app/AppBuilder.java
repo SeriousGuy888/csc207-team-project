@@ -41,6 +41,9 @@ import interface_adapter.display_course_context.DisplayCourseDetailsController;
 import interface_adapter.display_course_context.DisplayCourseDetailsPresenter;
 import interface_adapter.display_course_context.DisplayCourseDetailsViewModel;
 
+import use_case.remove_section.RemoveSectionInteractor;
+import interface_adapter.remove_section.RemoveSectionController;
+
 import use_case.display_course_context.DisplayCourseDetailsDataAccessInterface;
 import use_case.display_course_context.DisplayCourseDetailsInputBoundary;
 import use_case.display_course_context.DisplayCourseDetailsInteractor;
@@ -105,6 +108,11 @@ public class AppBuilder {
     private AddSectionDataAccessObject addSectionDataAccessObject;
     private AddSectionInteractor addSectionInteractor;
     private AddSectionController addSectionController;
+
+    // Remove section components
+    private RemoveSectionDataAccessObject removeSectionDataAccessObject;
+    private RemoveSectionInteractor removeSectionInteractor;
+    private RemoveSectionController removeSectionController;
 
     // Save and Load Components
     private FileWorkbookDataAccessObject workbookPersistenceDataAccessObject;
@@ -228,6 +236,7 @@ public class AppBuilder {
         searchPanel.setDisplayCoursesController(displayCoursesController);
         searchPanel.setDisplayCoursesViewModel(displayCoursesViewModel);
         searchPanel.setAddSectionController(addSectionController);
+        searchPanel.setRemoveSectionController(removeSectionController);
 
         final AutogenDataAccessInterface autogenDao = new AutogenCourseDataAccess(courseDataRepository);
         final AutogenOutputBoundary autogenPresenter =
@@ -275,6 +284,25 @@ public class AppBuilder {
         return this;
     }
 
+
+    public AppBuilder addRemoveSectionUseCase() {
+        // Create DAO
+        this.removeSectionDataAccessObject = new RemoveSectionDataAccessObject(
+                this.courseDataRepository,
+                this.workbookDataAccessObject
+        );
+
+        this.removeSectionInteractor = new RemoveSectionInteractor(
+                removeSectionDataAccessObject,
+                globalViewPresenter
+        );
+
+        this.removeSectionController = new RemoveSectionController(
+                removeSectionInteractor,
+                globalViewModel);
+
+        return this;
+    }
 
     public AppBuilder addWorkbookPersistenceDataAccessObject() {
         if (courseDataRepository == null) {
@@ -336,7 +364,8 @@ public class AppBuilder {
         loadWorkbookInteractor = new LoadWorkbookInteractor(
                 workbookDataAccessObject,
                 workbookPersistenceDataAccessObject,
-                loadWorkbookPresenter);
+                loadWorkbookPresenter,
+                globalViewPresenter);
         loadWorkbookController = new LoadWorkbookController(loadWorkbookInteractor);
         LoadDialog.createSingletonInstance(loadWorkbookViewModel, loadWorkbookController);
 

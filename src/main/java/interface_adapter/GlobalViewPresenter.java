@@ -9,6 +9,7 @@ import entity.Section;
 import entity.Timetable;
 import entity.Workbook;
 import interface_adapter.TimetableState.MeetingBlock;
+import use_case.load_workbook.LoadWorkbookGlobalStateOutputBoundary;
 import use_case.timetable_update.TimetableUpdateOutputBoundary;
 import use_case.timetable_update.TimetableUpdateOutputData;
 import use_case.tab_actions.add_tab.AddTabOutputBoundary;
@@ -23,7 +24,8 @@ public class GlobalViewPresenter implements
         AddTabOutputBoundary,
         DeleteTabOutputBoundary,
         SwitchTabOutputBoundary,
-        RenameTabOutputBoundary {
+        RenameTabOutputBoundary,
+        LoadWorkbookGlobalStateOutputBoundary {
 
     // Constants for mapping Entity time to UI Grid
     private static final int START_HOUR_INDEX = 18;
