@@ -12,6 +12,7 @@ import use_case.display_course_context.display_course_details_data_transfer_obje
 import use_case.display_course_context.display_course_details_data_transfer_objects.DisplayProfessorDetails;
 import use_case.display_course_context.display_course_details_data_transfer_objects.DisplaySectionDetails;
 import interface_adapter.add_section.AddSectionController;
+import interface_adapter.remove_section.RemoveSectionController;
 
 import javax.swing.*;
 import java.awt.*;
@@ -43,6 +44,7 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
     private DisplayCourseDetailsViewModel displayCoursesViewModel;
 
     private AddSectionController addSectionController;
+    private RemoveSectionController removeSectionController;
 
     /**
      * Creates a new SearchPanel.
@@ -114,7 +116,14 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
 
     public void setAddSectionController(AddSectionController controller) {
         this.addSectionController = controller;
+    }
+
+    public void setAddSectionController(AddSectionController controller) {
         this.addSectionController = controller;
+    }
+
+    public void setRemoveSectionController(RemoveSectionController controller) {
+        this.removeSectionController = controller;
     }
 
     public void setSearchCoursesViewModel(SearchCoursesViewModel viewModel) {
@@ -295,7 +304,6 @@ public class SearchPanel extends JPanel implements PropertyChangeListener {
         }
         return null;
     }
-
 
     /**
      * Helper method to construct the detailed view of the course.
