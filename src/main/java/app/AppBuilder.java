@@ -294,7 +294,8 @@ public class AppBuilder {
         loadWorkbookInteractor = new LoadWorkbookInteractor(
                 workbookDataAccessObject,
                 workbookPersistenceDataAccessObject,
-                loadWorkbookPresenter);
+                loadWorkbookPresenter,
+                globalViewPresenter);
         loadWorkbookController = new LoadWorkbookController(loadWorkbookInteractor);
         LoadDialog.createSingletonInstance(loadWorkbookViewModel, loadWorkbookController);
 
