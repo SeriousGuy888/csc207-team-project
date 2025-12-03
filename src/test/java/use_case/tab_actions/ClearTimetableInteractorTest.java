@@ -1,10 +1,11 @@
-package use_case;
+package use_case.tab_actions;
 
 import entity.CourseOffering;
 import entity.Section;
 import entity.Timetable;
 import entity.Workbook;
 import org.junit.jupiter.api.Test;
+import use_case.WorkbookDataAccessInterface;
 import use_case.clear_timetable.ClearTimetableInteractor;
 import use_case.timetable_update.TimetableUpdateOutputBoundary;
 import use_case.timetable_update.TimetableUpdateOutputData;

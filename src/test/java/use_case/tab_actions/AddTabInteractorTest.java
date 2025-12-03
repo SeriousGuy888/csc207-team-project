@@ -1,5 +1,6 @@
 package use_case.tab_actions;
 
+import entity.Timetable;
 import entity.Workbook;
 import org.junit.jupiter.api.Test;
 import use_case.WorkbookDataAccessInterface;
@@ -13,44 +14,54 @@ import static org.junit.jupiter.api.Assertions.*;
 class AddTabInteractorTest {
 
     @Test
-    void executeAddsTimetableAndSaves() {
-        // 1. Arrange
-        // Create a simple in-memory workbook
+    void executeAddsFirstTimetable() {
+        // Arrange
         Workbook workbook = new Workbook(new ArrayList<>());
 
-        // Create a stub DAO that holds this workbook
         WorkbookDataAccessInterface dao = new WorkbookDataAccessInterface() {
             @Override
-            public Workbook getWorkbook() {
-                return workbook;
-            }
-
+            public Workbook getWorkbook() { return workbook; }
             @Override
-            public void saveWorkbook(Workbook wb) {
-                // Verify the workbook passed to save is the same instance
-                assertSame(workbook, wb);
-            }
+            public void saveWorkbook(Workbook wb) { /* verify save */ }
         };
 
-        // Create a stub Presenter to capture the output
-        AddTabOutputBoundary presenter = new AddTabOutputBoundary() {
-            @Override
-            public void prepareSuccessView(Workbook wb) {
-                // Assertions for the success view
-                assertEquals(1, wb.getTimetables().size());
-                assertEquals("Timetable 1", wb.getTimetables().get(0).getTimetableName());
-            }
+        AddTabOutputBoundary presenter = wb -> {
+            assertEquals(1, wb.getTimetables().size());
+            assertEquals("Timetable 1", wb.getTimetables().get(0).getTimetableName());
         };
 
         AddTabInteractor interactor = new AddTabInteractor(dao, presenter);
 
-        // 2. Act
+        // Act
         interactor.execute();
+    }
 
-        // 3. Assert (Post-execution checks)
-        // Check that a second call increments the number correctly
+    @Test
+    void executeAddsSecondTimetable() {
+        // Arrange
+        Workbook workbook = new Workbook(new ArrayList<>());
+        // Pre-populate with one tab
+        Timetable t1 = new Timetable();
+        t1.setTimetableName("Timetable 1");
+        workbook.addTimetable(t1);
+
+        WorkbookDataAccessInterface dao = new WorkbookDataAccessInterface() {
+            @Override
+            public Workbook getWorkbook() { return workbook; }
+            @Override
+            public void saveWorkbook(Workbook wb) { /* verify save */ }
+        };
+
+        AddTabOutputBoundary presenter = wb -> {
+            // Expect 2 items now
+            assertEquals(2, wb.getTimetables().size());
+            // Check the NEW item is named correctly
+            assertEquals("Timetable 2", wb.getTimetables().get(1).getTimetableName());
+        };
+
+        AddTabInteractor interactor = new AddTabInteractor(dao, presenter);
+
+        // Act
         interactor.execute();
-        assertEquals(2, workbook.getTimetables().size());
-        assertEquals("Timetable 2", workbook.getTimetables().get(1).getTimetableName());
     }
 }

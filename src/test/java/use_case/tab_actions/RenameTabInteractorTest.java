@@ -44,9 +44,9 @@ class RenameTabInteractorTest {
     }
 
     @Test
-    void executeInvalidIndex() {
+    void executeIndexTooLarge() {
         // Arrange
-        Workbook workbook = new Workbook(new ArrayList<>()); // Empty
+        Workbook workbook = new Workbook(new ArrayList<>()); // Empty, size 0
 
         WorkbookDataAccessInterface dao = new WorkbookDataAccessInterface() {
             @Override
@@ -60,6 +60,29 @@ class RenameTabInteractorTest {
         RenameTabInteractor interactor = new RenameTabInteractor(dao, presenter);
 
         // Act
-        interactor.execute(0, "New Name"); // Index 0 is invalid for empty list
+        interactor.execute(0, "New Name"); // 0 is >= size (0)
+    }
+
+    @Test
+    void executeNegativeIndex() {
+        // Arrange
+        Timetable t1 = new Timetable();
+        List<Timetable> list = new ArrayList<>();
+        list.add(t1);
+        Workbook workbook = new Workbook(list); // Size 1
+
+        WorkbookDataAccessInterface dao = new WorkbookDataAccessInterface() {
+            @Override
+            public Workbook getWorkbook() { return workbook; }
+            @Override
+            public void saveWorkbook(Workbook wb) { fail("Should not save"); }
+        };
+
+        RenameTabOutputBoundary presenter = wb -> fail("Should not present");
+
+        RenameTabInteractor interactor = new RenameTabInteractor(dao, presenter);
+
+        // Act
+        interactor.execute(-1, "New Name"); // Negative index
     }
 }
