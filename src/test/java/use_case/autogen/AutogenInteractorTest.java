@@ -256,6 +256,131 @@ public class AutogenInteractorTest {
                 "Expected 2 sections in the generated timetable");
     }
 
+    @Test
+    void autogenRespectsLockedSectionsAndNullBlockedTimes() {
+        // Build a single course offering with two sections
+        CourseOffering csc207 = new CourseOffering(
+                "CSC207H1",
+                new CourseCode("CSC207H1"),
+                "Software Design",
+                "pain but with Java"
+        );
+
+        Section lec0101 = new Section(
+                csc207,
+                "LEC0101",
+                Section.TeachingMethod.LECTURE
+        );
+        lec0101.addMeeting(new Meeting(
+                new UofTLocation("BA", "2175"), FIRST_SEMESTER,
+                MONDAY_10_12
+        ));
+
+        Section lec0201 = new Section(
+                csc207,
+                "LEC0201",
+                Section.TeachingMethod.LECTURE
+        );
+        lec0201.addMeeting(new Meeting(
+                new UofTLocation("BA", "2175"), FIRST_SEMESTER,
+                THURSDAY_13_15
+        ));
+
+        csc207.addAvailableSection(lec0101);
+        csc207.addAvailableSection(lec0201);
+
+        // DAO that always returns this offering
+        AutogenDataAccessInterface dao = new AutogenDataAccessInterface() {
+            @Override
+            public List<CourseOffering> getSelectedCourseOfferings(Set<CourseCode> selectedCourses) {
+                return List.of(csc207);
+            }
+        };
+
+        TestAutogenPresenter presenter = new TestAutogenPresenter();
+        AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
+
+        // Lock one specific section for this course
+        Set<Section> lockedSections = Set.of(lec0201);
+
+        AutogenInputData inputData = new AutogenInputData(
+                Set.of(csc207.getCourseCode()),
+                lockedSections,
+                null          // blockedTimes == null branch in buildConstraints
+        );
+
+        interactor.execute(inputData);
+
+        assertNull(presenter.lastError, "Should succeed when locked section is consistent");
+        assertNotNull(presenter.lastOutput, "Should generate a timetable");
+
+        Timetable timetable = presenter.lastOutput.getGeneratedTimetable();
+        Set<Section> resultSections = timetable.getSections();
+
+        // Only the locked section should appear in the timetable
+        assertEquals(1, resultSections.size(), "Exactly one section should be chosen");
+        assertTrue(resultSections.contains(lec0201),
+                "Generated timetable should contain the locked section");
+    }
+
+    @Test
+    void autogenHandlesDaoExceptionGracefully() {
+        AutogenDataAccessInterface dao = new AutogenDataAccessInterface() {
+            @Override
+            public List<CourseOffering> getSelectedCourseOfferings(Set<CourseCode> selectedCourses) {
+                throw new RuntimeException("DAO exploded");
+            }
+        };
+
+        TestAutogenPresenter presenter = new TestAutogenPresenter();
+        AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
+
+        AutogenInputData inputData = new AutogenInputData(
+                Set.of(),
+                Set.of(),
+                SUNDAY_00_01
+        );
+
+        interactor.execute(inputData);
+
+        assertNull(presenter.lastOutput,
+                "No timetable should be produced when an exception occurs");
+        assertNotNull(presenter.lastError,
+                "Error message should be set when an exception occurs");
+        assertTrue(presenter.lastError.contains("DAO exploded"),
+                "Error message should include the underlying exception message");
+    }
+
+    @Test
+    void generateTimetableFailsWhenVariableHasEmptyDomain() {
+        AutogenDataAccessInterface dao = selectedCourses -> List.of();
+        TestAutogenPresenter presenter = new TestAutogenPresenter();
+        AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
+
+        // Offering whose variable has an EMPTY domain
+        CourseOffering csc207 = new CourseOffering(
+                "CSC207H1",
+                new CourseCode("CSC207H1"),
+                "Software Design",
+                "desc"
+        );
+        CourseVariable variableWithEmptyDomain = new CourseVariable(csc207, Set.of());
+
+        // Empty domain -> timetableSearch's for-loop body never executes,
+        // so we hit 'return new PotentialTimetable(false, Set.of())'
+        PotentialTimetable result = interactor.generateTimetable(
+                List.of(variableWithEmptyDomain),
+                List.of()
+        );
+
+        assertFalse(result.getSuccess(),
+                "Timetable generation should fail when a course has no possible sections");
+
+        Timetable timetable = result.getTimetable();
+        assertTrue(timetable.getSections().isEmpty(),
+                "The resulting timetable should have no sections on failure");
+    }
+
     // ------------------------------------------------------------------------
     // Helper: print timetable
     // ------------------------------------------------------------------------
@@ -293,6 +418,137 @@ public class AutogenInteractorTest {
             this.lastOutput = null;
         }
     }
+
+    @Test
+    void generateTimetableSucceedsWithEmptyConstraints() {
+        // DAO is irrelevant because we call generateTimetable directly
+        AutogenDataAccessInterface dao = selectedCourses -> List.of();
+        TestAutogenPresenter presenter = new TestAutogenPresenter();
+        AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
+
+        // One offering with one section in its domain
+        CourseOffering csc207 = new CourseOffering(
+                "CSC207H1",
+                new CourseCode("CSC207H1"),
+                "Software Design",
+                "desc"
+        );
+        Section lec0101 = new Section(
+                csc207,
+                "LEC0101",
+                Section.TeachingMethod.LECTURE
+        );
+        lec0101.addMeeting(new Meeting(
+                new UofTLocation("BA", "2175"),
+                FIRST_SEMESTER,
+                MONDAY_10_12
+        ));
+        csc207.addAvailableSection(lec0101);
+
+        CourseVariable variable = new CourseVariable(csc207, Set.of(lec0101));
+
+        // Empty constraints list -> isConsistent's loop never runs, returns true
+        PotentialTimetable result = interactor.generateTimetable(
+                List.of(variable),
+                List.of()
+        );
+
+        assertTrue(result.getSuccess(), "With no constraints, a timetable should be found");
+
+        Timetable timetable = result.getTimetable();
+        assertEquals(Set.of(lec0101), timetable.getSections(),
+                "The single section should be chosen");
+    }
+
+    @Test
+    void dfsBacktracksAndIgnoresLocksForOtherCourses() {
+        // ----- Course 1: C1 with TWO sections at the SAME time -----
+        CourseOffering c1 = new CourseOffering(
+                "CSC207H1",
+                new CourseCode("CSC207H1"),
+                "Course 1",
+                "desc"
+        );
+
+        Section c1A = new Section(
+                c1,
+                "A",
+                Section.TeachingMethod.LECTURE
+        );
+        c1A.addMeeting(new Meeting(
+                new UofTLocation("BA", "100"),
+                FIRST_SEMESTER,
+                MONDAY_10_12      // same time for all three sections
+        ));
+
+        Section c1B = new Section(
+                c1,
+                "B",
+                Section.TeachingMethod.LECTURE
+        );
+        c1B.addMeeting(new Meeting(
+                new UofTLocation("BA", "101"),
+                FIRST_SEMESTER,
+                MONDAY_10_12
+        ));
+
+        c1.addAvailableSection(c1A);
+        c1.addAvailableSection(c1B);
+
+        // ----- Course 2: C2 with ONE section at the SAME time -----
+        CourseOffering c2 = new CourseOffering(
+                "CSC108H1",
+                new CourseCode("CSC108H1"),
+                "Course 2",
+                "desc"
+        );
+
+        Section c2A = new Section(
+                c2,
+                "A",
+                Section.TeachingMethod.LECTURE
+        );
+        c2A.addMeeting(new Meeting(
+                new UofTLocation("BA", "200"),
+                FIRST_SEMESTER,
+                MONDAY_10_12
+        ));
+
+        c2.addAvailableSection(c2A);
+
+        // DAO returns both offerings
+        AutogenDataAccessInterface dao = selectedCourses -> List.of(c1, c2);
+
+        TestAutogenPresenter presenter = new TestAutogenPresenter();
+        AutogenInteractor interactor = new AutogenInteractor(dao, presenter);
+
+        // Lock ONLY the section from course 2.
+        // For course 1, applyLock will iterate lockedSections,
+        // evaluate s.getCourseOffering().equals(c1) as FALSE,
+        // and so use allSections as its domain.
+        Set<Section> lockedSections = Set.of(c2A);
+
+        AutogenInputData inputData = new AutogenInputData(
+                Set.of(c1.getCourseCode(), c2.getCourseCode()),
+                lockedSections,
+                SUNDAY_00_01   // non-conflicting blocked time
+        );
+
+        interactor.execute(inputData);
+
+        // Because EVERY combination {C1-section, C2A} has a time conflict,
+        // the recursive call inside timetableSearch always returns failure.
+        // So we exercise the branch where result.getSuccess() is FALSE.
+        assertNull(presenter.lastOutput,
+                "No timetable should be generated because all combos conflict");
+        assertNotNull(presenter.lastError,
+                "An error message should be produced when no valid timetable exists");
+    }
+
+
+
+
+
 
     // ------------------------------------------------------------------------
     // Fake DAOs
