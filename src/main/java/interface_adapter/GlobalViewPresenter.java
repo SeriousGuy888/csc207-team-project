@@ -261,7 +261,6 @@ public class GlobalViewPresenter implements
      */
     @Override
     public void prepareFailView(String error) {
-        // TODO: Handle error
         System.out.println(error);
     }
 }
