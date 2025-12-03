@@ -1,17 +1,14 @@
 package use_case.load_workbook;
 
-import data_access.WorkbookDataAccessObject;
 import data_access.workbook_instance.TestWorkbookDataAccessObject;
 import entity.Workbook;
 import org.junit.jupiter.api.Test;
 import use_case.TestConstants;
-import use_case.WorkbookDataAccessInterface;
 
 import java.io.IOException;
 import java.nio.file.Path;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class LoadWorkbookInteractorTest {
     private static final Path SAVED_LOCATION = Path.of("correct");
@@ -38,6 +35,7 @@ public class LoadWorkbookInteractorTest {
         LoadWorkbookOutputBoundary dialogPresenter = new LoadWorkbookOutputBoundary() {
             @Override
             public void prepareSuccessView(LoadWorkbookOutputData outputData) {
+                assertFalse(outputData.getMessage().isBlank());
                 assertEquals(DESIRED_WORKBOOK, DAO_FOR_CURRENTLY_ACTIVE_WORKBOOK.getWorkbook());
             }
 
